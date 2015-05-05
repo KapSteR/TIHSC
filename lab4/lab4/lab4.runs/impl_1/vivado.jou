@@ -2,9 +2,9 @@
 # Vivado v2014.4 (64-bit)
 # SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
 # IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
-# Start of session at: Fri May 01 12:30:12 2015
-# Process ID: 9824
-# Log file: C:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.runs/impl_1/system_wrapper.vdi
-# Journal file: C:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.runs/impl_1\vivado.jou
+# Start of session at: Fri May 01 13:30:33 2015
+# Process ID: 5220
+# Log file: C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.runs/impl_1/system_wrapper.vdi
+# Journal file: C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source system_wrapper.tcl -notrace

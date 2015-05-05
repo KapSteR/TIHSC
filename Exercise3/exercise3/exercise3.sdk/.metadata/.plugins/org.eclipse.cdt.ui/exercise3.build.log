@@ -1,0 +1,25 @@
+15:50:15 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25284	   1200	  22564	  49048	   bf98	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+
+15:50:16 Build Finished (took 902ms)
+

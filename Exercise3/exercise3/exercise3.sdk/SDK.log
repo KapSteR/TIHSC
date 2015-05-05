@@ -1,0 +1,15 @@
+15:01:48 INFO  : Processing command line option -hwspec C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise3/exercise3/exercise3.sdk/system_wrapper.hdf.
+15:01:55 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:03:20 INFO  : BSP Project P/standalone_bsp_0 has been successfully migrated.
+15:31:13 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise3/exercise3/exercise3.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:32:49 INFO  : ps7_init is completed.
+15:32:49 INFO  : ps7_post_config is completed.
+15:32:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:37:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:37:40 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:37:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:40:38 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:40:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:47:49 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:47:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:00:40 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

@@ -53,32 +53,32 @@ set rc [catch {
   create_project -in_memory -part xc7z010clg400-1
   set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
-  set_property webtalk.parent_dir C:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.xpr [current_project]
+  set_property webtalk.parent_dir C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.xpr [current_project]
   set_property ip_repo_paths {
-  c:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.cache/ip
+  c:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.cache/ip
   C:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab_ip
 } [current_project]
-  set_property ip_output_repo c:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.cache/ip [current_project]
-  add_files -quiet C:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.runs/synth_1/system_wrapper.dcp
-  add_files C:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/system.bmm
-  set_property SCOPED_TO_REF system [get_files -all C:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/system.bmm]
-  set_property SCOPED_TO_CELLS {} [get_files -all C:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/system.bmm]
-  read_xdc -ref system_processing_system7_0_0 -cells inst c:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc
-  set_property processing_order EARLY [get_files c:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]
-  read_xdc -prop_thru_buffers -ref system_axi_gpio_0_0 -cells U0 c:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc
-  set_property processing_order EARLY [get_files c:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc]
-  read_xdc -ref system_axi_gpio_0_0 -cells U0 c:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc
-  set_property processing_order EARLY [get_files c:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc]
-  read_xdc -prop_thru_buffers -ref system_rst_processing_system7_0_100M_0 c:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0_board.xdc
-  set_property processing_order EARLY [get_files c:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0_board.xdc]
-  read_xdc -ref system_rst_processing_system7_0_100M_0 c:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0.xdc
-  set_property processing_order EARLY [get_files c:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0.xdc]
-  read_xdc -prop_thru_buffers -ref system_axi_gpio_1_0 -cells U0 c:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc
-  set_property processing_order EARLY [get_files c:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc]
-  read_xdc -ref system_axi_gpio_1_0 -cells U0 c:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc
-  set_property processing_order EARLY [get_files c:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc]
-  read_xdc C:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.srcs/constrs_1/imports/lab3/lab3_zybo.xdc
+  set_property ip_output_repo c:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.cache/ip [current_project]
+  add_files -quiet C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.runs/synth_1/system_wrapper.dcp
+  add_files C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/system.bmm
+  set_property SCOPED_TO_REF system [get_files -all C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/system.bmm]
+  set_property SCOPED_TO_CELLS {} [get_files -all C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/system.bmm]
+  read_xdc -ref system_processing_system7_0_0 -cells inst C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc
+  set_property processing_order EARLY [get_files C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]
+  read_xdc -prop_thru_buffers -ref system_axi_gpio_0_0 -cells U0 C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc
+  set_property processing_order EARLY [get_files C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc]
+  read_xdc -ref system_axi_gpio_0_0 -cells U0 C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc
+  set_property processing_order EARLY [get_files C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc]
+  read_xdc -prop_thru_buffers -ref system_rst_processing_system7_0_100M_0 C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0_board.xdc
+  set_property processing_order EARLY [get_files C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0_board.xdc]
+  read_xdc -ref system_rst_processing_system7_0_100M_0 C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0.xdc
+  set_property processing_order EARLY [get_files C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/ip/system_rst_processing_system7_0_100M_0/system_rst_processing_system7_0_100M_0.xdc]
+  read_xdc -prop_thru_buffers -ref system_axi_gpio_1_0 -cells U0 C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc
+  set_property processing_order EARLY [get_files C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc]
+  read_xdc -ref system_axi_gpio_1_0 -cells U0 C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc
+  set_property processing_order EARLY [get_files C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc]
+  read_xdc C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.srcs/constrs_1/imports/lab3/lab3_zybo.xdc
   link_design -top system_wrapper -part xc7z010clg400-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -147,8 +147,8 @@ set rc [catch {
   catch { write_mem_info -force system_wrapper.mmi }
   catch { write_bmm -force system_wrapper_bd.bmm }
   write_bitstream -force system_wrapper.bit 
-  if { [file exists C:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.runs/synth_1/system_wrapper.hwdef] } {
-    catch { write_sysdef -hwdef C:/Users/Kasper/Documents/GitHub/TIHSC/lab3/lab3/lab3.runs/synth_1/system_wrapper.hwdef -bitfile system_wrapper.bit -meminfo system_wrapper.mmi -file system_wrapper.sysdef }
+  if { [file exists C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.runs/synth_1/system_wrapper.hwdef] } {
+    catch { write_sysdef -hwdef C:/Users/Kasper/Documents/GitHub/TIHSC/lab4/lab4/lab4.runs/synth_1/system_wrapper.hwdef -bitfile system_wrapper.bit -meminfo system_wrapper.mmi -file system_wrapper.sysdef }
   }
   close_msg_db -file write_bitstream.pb
 } RESULT]

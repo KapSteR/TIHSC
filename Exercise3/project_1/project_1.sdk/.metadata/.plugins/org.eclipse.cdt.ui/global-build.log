@@ -1,0 +1,1071 @@
+15:03:30 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/bram_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/bram_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/led_ip_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/led_ip_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/bram_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/led_ip_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/led_ip_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling led_ip..."
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+15:04:19 **** Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22920	   1152	  22564	  46636	   b62c	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+
+**** Build of configuration Debug for project exercise3 ****
+
+Nothing to build for project exercise3
+15:05:06 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../standalone_bsp_0/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
+C:\Users\Kasper\Documents\GitHub\TIHSC\Exercise3\exercise3\exercise3.sdk\standalone_bsp_0\ps7_cortexa9_0\libsrc\standalone_v4_2\src/xil-crt0.S:128: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [exercise3.elf] Fejl 1
+15:05:21 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25136	   1200	  22564	  48900	   bf04	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:12:44 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:19:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check;
+                    ^
+../src/exercise3.c:19:9: warning: unused variable 'psb_check' [-Wunused-variable]
+  int i, psb_check, dip_check;
+         ^
+../src/exercise3.c:19:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, psb_check, dip_check;
+      ^
+../src/exercise3.c: At top level:
+../src/exercise3.c:52:1: error: unknown type name 'imer'
+ imer expired
+ ^
+../src/exercise3.c:53:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'if'
+  if (XScuTimer_IsExpired(TimerInstancePtr)) {
+  ^
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:51:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/exercise3.o] Fejl 1
+15:13:18 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:19:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check;
+                    ^
+../src/exercise3.c:19:9: warning: unused variable 'psb_check' [-Wunused-variable]
+  int i, psb_check, dip_check;
+         ^
+../src/exercise3.c:19:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, psb_check, dip_check;
+      ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24892	   1200	  22564	  48656	   be10	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:13:49 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:19:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check;
+                    ^
+../src/exercise3.c:19:9: warning: unused variable 'psb_check' [-Wunused-variable]
+  int i, psb_check, dip_check;
+         ^
+../src/exercise3.c:19:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, psb_check, dip_check;
+      ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24892	   1200	  22564	  48656	   be10	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:14:09 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:19:20: warning: unused variable 'dip_check' [-Wunused-variable]
+  int i, psb_check, dip_check;
+                    ^
+../src/exercise3.c:19:9: warning: unused variable 'psb_check' [-Wunused-variable]
+  int i, psb_check, dip_check;
+         ^
+../src/exercise3.c:19:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, psb_check, dip_check;
+      ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24892	   1200	  22564	  48656	   be10	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:16:49 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:31:2: error: 'value' undeclared (first use in this function)
+  value = inbyte();
+  ^
+../src/exercise3.c:31:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/exercise3.c:32:2: error: 'skip' undeclared (first use in this function)
+  skip = inbyte(); //CR
+  ^
+../src/exercise3.c:45:2: error: expected ';' before 'XScuTimer'
+  XScuTimer Timer; /* Cortex A9 SCU Private Timer Instance */
+  ^
+../src/exercise3.c:49:33: error: 'Timer' undeclared (first use in this function)
+  int Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+                                 ^
+../src/exercise3.c:77:1: error: expected declaration or statement at end of input
+../src/exercise3.c:19:9: warning: unused variable 'psb_check' [-Wunused-variable]
+  int i, psb_check, dip_check;
+         ^
+../src/exercise3.c:19:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, psb_check, dip_check;
+      ^
+../src/exercise3.c:77:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/exercise3.o] Fejl 1
+15:17:12 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:32:2: error: 'skip' undeclared (first use in this function)
+  skip = inbyte(); //CR
+  ^
+../src/exercise3.c:32:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/exercise3.c:77:1: error: expected declaration or statement at end of input
+../src/exercise3.c:19:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, value, dip_check;
+      ^
+../src/exercise3.c:77:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/exercise3.o] Fejl 1
+15:17:20 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:77:1: error: expected declaration or statement at end of input
+../src/exercise3.c:19:16: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  int i, value, skip, dip_check;
+                ^
+../src/exercise3.c:19:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, value, skip, dip_check;
+      ^
+../src/exercise3.c:77:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/exercise3.o] Fejl 1
+15:18:03 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:43:3: error: a label can only be part of a statement and a declaration is not a statement
+   XScuTimer Timer; /* Cortex A9 SCU Private Timer Instance */
+   ^
+../src/exercise3.c:46:2: error: expected expression before 'XScuTimer_Config'
+   int Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+  ^
+../src/exercise3.c:48:3: error: 'ConfigPtr' undeclared (first use in this function)
+ 
+   ^
+../src/exercise3.c:48:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/exercise3.c:76:1: error: expected ';' before '}' token
+../src/exercise3.c:19:16: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  int i, value, skip, dip_check;
+                ^
+../src/exercise3.c:19:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, value, skip, dip_check;
+      ^
+../src/exercise3.c:77:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/exercise3.o] Fejl 1
+15:19:40 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:44:3: error: a label can only be part of a statement and a declaration is not a statement
+   XScuTimer Timer; /* Cortex A9 SCU Private Timer Instance */
+   ^
+../src/exercise3.c:47:3: error: expected expression before 'XScuTimer_Config'
+   int Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+   ^
+../src/exercise3.c:49:3: error: 'ConfigPtr' undeclared (first use in this function)
+ 
+   ^
+../src/exercise3.c:49:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/exercise3.c:21:16: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  int i, value, skip, dip_check;
+                ^
+../src/exercise3.c:21:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, value, skip, dip_check;
+      ^
+../src/exercise3.c:78:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/exercise3.o] Fejl 1
+15:20:05 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:44:3: error: a label can only be part of a statement and a declaration is not a statement
+   XScuTimer Timer; /* Cortex A9 SCU Private Timer Instance */
+   ^
+../src/exercise3.c:47:3: error: expected expression before 'XScuTimer_Config'
+   int Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+   ^
+../src/exercise3.c:49:3: error: 'ConfigPtr' undeclared (first use in this function)
+ 
+   ^
+../src/exercise3.c:49:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/exercise3.c:21:16: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  int i, value, skip, dip_check;
+                ^
+../src/exercise3.c:21:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, value, skip, dip_check;
+      ^
+make: *** [src/exercise3.o] Fejl 1
+15:20:15 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:43:3: error: a label can only be part of a statement and a declaration is not a statement
+   XScuTimer Timer; /* Cortex A9 SCU Private Timer Instance */
+   ^
+../src/exercise3.c:46:3: error: 'ConfigPtr' undeclared (first use in this function)
+   ConfigPtr = XScuTimer_LookupConfig(XPAR_PS7_SCUTIMER_0_DEVICE_ID);
+   ^
+../src/exercise3.c:46:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/exercise3.c:47:40: error: 'TimerInstancePtr' undeclared (first use in this function)
+   int Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+                                        ^
+../src/exercise3.c:43:13: warning: unused variable 'Timer' [-Wunused-variable]
+   XScuTimer Timer; /* Cortex A9 SCU Private Timer Instance */
+             ^
+../src/exercise3.c:20:16: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  int i, value, skip, dip_check;
+                ^
+../src/exercise3.c:20:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, value, skip, dip_check;
+      ^
+make: *** [src/exercise3.o] Fejl 1
+15:20:55 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:34:2: error: 'ConfigPtr' undeclared (first use in this function)
+  ConfigPtr = XScuTimer_LookupConfig(XPAR_PS7_SCUTIMER_0_DEVICE_ID);
+  ^
+../src/exercise3.c:34:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/exercise3.c:35:39: error: 'TimerInstancePtr' undeclared (first use in this function)
+  int Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+                                       ^
+../src/exercise3.c:31:12: warning: unused variable 'Timer' [-Wunused-variable]
+  XScuTimer Timer; /* Cortex A9 SCU Private Timer Instance */
+            ^
+../src/exercise3.c:20:16: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  int i, value, skip, dip_check;
+                ^
+../src/exercise3.c:20:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, value, skip, dip_check;
+      ^
+make: *** [src/exercise3.o] Fejl 1
+15:21:37 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:20:16: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  int i, value, skip, dip_check;
+                ^
+../src/exercise3.c:20:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, value, skip, dip_check;
+      ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25092	   1200	  22564	  48856	   bed8	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:22:28 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  char value, skip;
+              ^
+../src/exercise3.c:20:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, dip_check;
+      ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25092	   1200	  22564	  48856	   bed8	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:22:42 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  char value, skip;
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25092	   1200	  22564	  48856	   bed8	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:23:01 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  char value, skip;
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25092	   1200	  22564	  48856	   bed8	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:23:36 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:7: warning: variable 'value' set but not used [-Wunused-but-set-variable]
+  char value, skip;
+       ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25092	   1200	  22564	  48856	   bed8	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:28:06 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25156	   1200	  22564	  48920	   bf18	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:28:57 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25156	   1200	  22564	  48920	   bf18	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:30:42 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25200	   1200	  22564	  48964	   bf44	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:30:51 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+make: Ingenting at gøre for 'all'.
+15:31:14 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/bram_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/bram_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/led_ip_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/led_ip_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/bram_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/led_ip_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/led_ip_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling led_ip..."
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+15:32:08 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25200	   1200	  22564	  48964	   bf44	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:32:38 **** Incremental Build of configuration Debug for project exercise3 ****
+make all 
+make: Ingenting at gøre for 'all'.
+15:34:57 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25200	   1200	  22564	  48964	   bf44	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:36:51 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25220	   1200	  22564	  48984	   bf58	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:36:57 **** Incremental Build of configuration Debug for project exercise3 ****
+make all 
+make: Ingenting at gøre for 'all'.
+15:37:33 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25220	   1200	  22564	  48984	   bf58	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:37:39 **** Incremental Build of configuration Debug for project exercise3 ****
+make all 
+make: Ingenting at gøre for 'all'.
+15:40:28 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25284	   1200	  22564	  49048	   bf98	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:40:37 **** Incremental Build of configuration Debug for project exercise3 ****
+make all 
+make: Ingenting at gøre for 'all'.
+15:42:09 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:92:3: error: 'default' label not within a switch statement
+   xil_printf("Invalid input: %c\n\r", value);
+   ^
+../src/exercise3.c:20:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+../src/exercise3.c: At top level:
+../src/exercise3.c:96:1: error: expected identifier or '(' before 'return'
+ }
+ ^
+../src/exercise3.c:97:1: error: expected identifier or '(' before '}' token
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:95:1: warning: control reaches end of non-void function [-Wreturn-type]
+ return 0;
+ ^
+make: *** [src/exercise3.o] Fejl 1
+15:42:14 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:92:3: error: 'default' label not within a switch statement
+  }
+   ^
+../src/exercise3.c:20:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  xil_printf("-- Start of the Program --\r\n");
+              ^
+../src/exercise3.c: At top level:
+../src/exercise3.c:96:1: error: expected identifier or '(' before 'return'
+../src/exercise3.c:97:1: error: expected identifier or '(' before '}' token
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:95:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/exercise3.o] Fejl 1
+15:42:50 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:92:3: error: 'default' label not within a switch statement
+   xil_printf("Invalid input: %c\n\r", value);
+   ^
+../src/exercise3.c:20:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+../src/exercise3.c: At top level:
+../src/exercise3.c:96:1: error: expected identifier or '(' before 'return'
+ }
+ ^
+../src/exercise3.c:97:1: error: expected identifier or '(' before '}' token
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:95:1: warning: control reaches end of non-void function [-Wreturn-type]
+ return 0;
+ ^
+make: *** [src/exercise3.o] Fejl 1
+15:44:14 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:20:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  xil_printf("-- Start of the Program --\r\n");
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25284	   1200	  22564	  49048	   bf98	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:44:26 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:20:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  xil_printf("-- Start of the Program --\r\n");
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25220	   1200	  22564	  48984	   bf58	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:44:46 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:20:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  xil_printf("-- Start of the Program --\r\n");
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25220	   1200	  22564	  48984	   bf58	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:45:08 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:94:3: error: 'default' label not within a switch statement
+    xil_printf("Invalid input: %c\n\r",value);
+   ^
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+../src/exercise3.c: At top level:
+../src/exercise3.c:98:2: error: expected identifier or '(' before 'return'
+ }
+  ^
+../src/exercise3.c:99:1: error: expected identifier or '(' before '}' token
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:97:2: warning: control reaches end of non-void function [-Wreturn-type]
+  return 0;
+  ^
+make: *** [src/exercise3.o] Fejl 1
+15:45:46 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25284	   1200	  22564	  49048	   bf98	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:45:57 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25284	   1200	  22564	  49048	   bf98	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:46:27 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25284	   1200	  22564	  49048	   bf98	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:47:27 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25284	   1200	  22564	  49048	   bf98	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:47:45 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25284	   1200	  22564	  49048	   bf98	exercise3.elf
+Finished building: exercise3.elf.size
+ 
+15:47:48 **** Incremental Build of configuration Debug for project exercise3 ****
+make all 
+make: Ingenting at gøre for 'all'.
+15:50:15 **** Auto Build of configuration Debug for project exercise3 ****
+make all 
+Building file: ../src/exercise3.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/exercise3.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/exercise3.d" -MT"src/exercise3.d" -o "src/exercise3.o" "../src/exercise3.c"
+../src/exercise3.c: In function 'main':
+../src/exercise3.c:21:14: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+ 
+              ^
+Finished building: ../src/exercise3.c
+ 
+Building target: exercise3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "exercise3.elf"  ./src/exercise3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise3.elf  |tee "exercise3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25284	   1200	  22564	  49048	   bf98	exercise3.elf
+Finished building: exercise3.elf.size
+ 

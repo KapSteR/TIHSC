@@ -1,0 +1,45 @@
+15:01:48 INFO  : Processing command line option -hwspec C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise3/exercise3/exercise3.sdk/system_wrapper.hdf.
+15:01:55 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:03:20 INFO  : BSP Project P/standalone_bsp_0 has been successfully migrated.
+15:31:13 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise3/exercise3/exercise3.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:32:49 INFO  : ps7_init is completed.
+15:32:49 INFO  : ps7_post_config is completed.
+15:32:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:37:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:37:40 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:37:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:40:38 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:40:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:47:49 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:47:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:00:40 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:43:19 INFO  : Processing command line option -hwspec C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise4/exercise4/exercise4.sdk/system_wrapper.hdf.
+12:43:21 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+12:45:14 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Users\Kasper\Documents\GitHub\TIHSC\Exercise3\exercise3\exercise3.sdk\standalone_bsp_0\system.mss
+12:45:14 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Users\Kasper\Documents\GitHub\TIHSC\Exercise3\exercise3\exercise3.sdk\standalone_bsp_0\system.mss
+12:45:14 WARN  :  [Hsi 55-1559] Software Design already exists with Name C:\Users\Kasper\Documents\GitHub\TIHSC\Exercise3\exercise3\exercise3.sdk\standalone_bsp_0\system.mss
+ [Hsi 55-1559] Software Design already exists with Name C:\Users\Kasper\Documents\GitHub\TIHSC\Exercise3\exercise3\exercise3.sdk\standalone_bsp_0\system.mss
+12:46:34 INFO  : Processing command line option -hwspec C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise4/exercise4/exercise4.sdk/system_wrapper.hdf.
+12:46:36 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+12:49:36 INFO  : Processing command line option -hwspec C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise4/exercise4/exercise4.sdk/system_wrapper.hdf.
+12:49:38 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+12:50:23 INFO  : BSP Project P/standalone_exercise4_bsp has been successfully migrated.
+13:36:15 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise4/exercise4/exercise4.sdk/system_wrapper_hw_platform_2/system_wrapper.bit"
+13:37:08 INFO  : ps7_init is completed.
+13:37:08 INFO  : ps7_post_config is completed.
+13:37:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:38:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:51:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:52:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:54:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:57:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:01:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:09:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:11:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:12:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:13:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:18:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:19:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:21:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:21:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:32:52 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

@@ -1,0 +1,49 @@
+/*
+ * main.c
+ *
+ *  Created on: 05/05/2015
+ *      Author: Kasper
+ */
+
+// Matrix size
+#define MSIZE 4
+
+typedef union {
+	unsigned char comp[MSIZE];
+	unsigned int vect;
+} vectorType;
+
+typedef vectorType VectorArray[MSIZE];
+
+void setInputMatrices(VectorArray A, VectorArray B);
+void dsiplayMatrix(VectorArray input);
+void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P);
+void multiMatrixHard(VectorArray A, VectorArray B, VectorArray P);
+
+VectorArray pInst, aInst, bInst;
+
+int main(void) {
+
+	return 1;
+};
+
+void setInputMatrices(VectorArray A, VectorArray B) {
+
+	int row, col, k;
+	k = 1;
+	for (row = 0; row < MSIZE; ++row) {
+		for (col = 0; col < MSIZE; ++col) {
+			A[row].comp[col] = k++;
+		}
+	}
+
+	k = 1;
+	for (row = 0; row < MSIZE; ++row) {
+		for (col = 0; col < MSIZE; ++col) {
+			B[row].comp[col] = k;
+		}
+		k++;
+	}
+
+}
+
