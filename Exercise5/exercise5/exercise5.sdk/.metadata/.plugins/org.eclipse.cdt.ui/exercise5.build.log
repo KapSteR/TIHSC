@@ -1,6 +1,21 @@
-15:59:42 **** Incremental Build of configuration Debug for project exercise5 ****
+10:40:06 **** Auto Build of configuration Debug for project exercise5 ****
 make all 
-make: Ingenting at gøre for 'all'.
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exerise5_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: exercise5.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exerise5_bsp_0/ps7_cortexa9_0/lib -o "exercise5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise5.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise5.elf  |tee "exercise5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25388	   1168	  22628	  49184	   c020	exercise5.elf
+Finished building: exercise5.elf.size
+ 
 
-15:59:43 Build Finished (took 201ms)
+10:40:07 Build Finished (took 1s.378ms)
 

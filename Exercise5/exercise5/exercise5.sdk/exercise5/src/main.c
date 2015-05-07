@@ -13,6 +13,7 @@
 // Matrix size
 #define MSIZE 4
 #define ONE_SECOND 325000000 // half of the CPU clock speed
+
 typedef union {
 	unsigned char comp[MSIZE];
 	unsigned int vect;

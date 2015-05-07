@@ -58,3 +58,4 @@
 15:59:11 INFO  : Processor reset is completed for ps7_cortexa9_0
 15:59:31 INFO  : Processor reset is completed for ps7_cortexa9_0
 15:59:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:40:09 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
