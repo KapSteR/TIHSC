@@ -1,0 +1,1276 @@
+
+
+================================================================
+== Vivado HLS Report for 'yuv_filter'
+================================================================
+* Date:           Fri May 08 12:54:55 2015
+
+* Version:        2014.4 (Build 1071461 on Tue Nov 18 16:42:57 PM 2014)
+* Project:        yuv_filter.prj
+* Solution:       solution2
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |   8.00|      6.75|        1.00|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+---------+--------+---------+---------+
+    |      Latency     |     Interval     | Pipeline|
+    |   min  |   max   |   min  |   max   |   Type  |
+    +--------+---------+--------+---------+---------+
+    |  120024|  7372824|  120025|  7372825|   none  |
+    +--------+---------+--------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------+----------------------+-------+---------+-------+---------+---------+
+        |                                 |                      |     Latency     |     Interval    | Pipeline|
+        |             Instance            |        Module        |  min  |   max   |  min  |   max   |   Type  |
+        +---------------------------------+----------------------+-------+---------+-------+---------+---------+
+        |grp_yuv_filter_rgb2yuv_fu_115    |yuv_filter_rgb2yuv    |  40007|  2457607|  40007|  2457607|   none  |
+        |grp_yuv_filter_yuv2rgb_fu_135    |yuv_filter_yuv2rgb    |  40007|  2457607|  40007|  2457607|   none  |
+        |grp_yuv_filter_yuv_scale_fu_150  |yuv_filter_yuv_scale  |  40005|  2457605|  40005|  2457605|   none  |
+        +---------------------------------+----------------------+-------+---------+-------+---------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|Expression       |        -|      -|      -|      -|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|     15|    846|   1151|
+|Memory           |     7200|      -|      0|      0|
+|Multiplexer      |        -|      -|      -|    154|
+|Register         |        -|      -|     73|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |     7200|     15|    919|   1305|
++-----------------+---------+-------+-------+-------+
+|Available        |      120|     80|  35200|  17600|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |     6000|     18|      2|      7|
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------+----------------------+---------+-------+-----+-----+
+    |             Instance            |        Module        | BRAM_18K| DSP48E|  FF | LUT |
+    +---------------------------------+----------------------+---------+-------+-----+-----+
+    |grp_yuv_filter_rgb2yuv_fu_115    |yuv_filter_rgb2yuv    |        0|      6|  344|  470|
+    |grp_yuv_filter_yuv2rgb_fu_135    |yuv_filter_yuv2rgb    |        0|      5|  266|  388|
+    |grp_yuv_filter_yuv_scale_fu_150  |yuv_filter_yuv_scale  |        0|      4|  236|  293|
+    +---------------------------------+----------------------+---------+-------+-----+-----+
+    |Total                            |                      |        0|     15|  846| 1151|
+    +---------------------------------+----------------------+---------+-------+-----+-----+
+
+    * Memory: 
+    +------------------------+-------------------------------+---------+---+----+---------+-----+------+-------------+
+    |         Memory         |             Module            | BRAM_18K| FF| LUT|  Words  | Bits| Banks| W*Bits*Banks|
+    +------------------------+-------------------------------+---------+---+----+---------+-----+------+-------------+
+    |p_yuv_channels_ch1_U    |yuv_filter_p_yuv_channels_ch1  |     1200|  0|   0|  2457600|    8|     1|     19660800|
+    |p_yuv_channels_ch2_U    |yuv_filter_p_yuv_channels_ch1  |     1200|  0|   0|  2457600|    8|     1|     19660800|
+    |p_yuv_channels_ch3_U    |yuv_filter_p_yuv_channels_ch1  |     1200|  0|   0|  2457600|    8|     1|     19660800|
+    |p_scale_channels_ch1_U  |yuv_filter_p_yuv_channels_ch1  |     1200|  0|   0|  2457600|    8|     1|     19660800|
+    |p_scale_channels_ch2_U  |yuv_filter_p_yuv_channels_ch1  |     1200|  0|   0|  2457600|    8|     1|     19660800|
+    |p_scale_channels_ch3_U  |yuv_filter_p_yuv_channels_ch1  |     1200|  0|   0|  2457600|    8|     1|     19660800|
+    +------------------------+-------------------------------+---------+---+----+---------+-----+------+-------------+
+    |Total                   |                               |     7200|  0|   0| 14745600|   48|     6|    117964800|
+    +------------------------+-------------------------------+---------+---+----+---------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-------------------------------+----+-----------+-----+-----------+
+    |              Name             | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                      |   1|          7|    1|          7|
+    |in_channels_ch1_ce0            |   1|          2|    1|          2|
+    |in_channels_ch2_ce0            |   1|          2|    1|          2|
+    |in_channels_ch3_ce0            |   1|          2|    1|          2|
+    |out_channels_ch1_ce0           |   1|          2|    1|          2|
+    |out_channels_ch1_we0           |   1|          2|    1|          2|
+    |out_channels_ch2_ce0           |   1|          2|    1|          2|
+    |out_channels_ch2_we0           |   1|          2|    1|          2|
+    |out_channels_ch3_ce0           |   1|          2|    1|          2|
+    |out_channels_ch3_we0           |   1|          2|    1|          2|
+    |p_scale_channels_ch1_address0  |  22|          3|   22|         66|
+    |p_scale_channels_ch1_ce0       |   1|          3|    1|          3|
+    |p_scale_channels_ch1_we0       |   1|          2|    1|          2|
+    |p_scale_channels_ch2_address0  |  22|          3|   22|         66|
+    |p_scale_channels_ch2_ce0       |   1|          3|    1|          3|
+    |p_scale_channels_ch2_we0       |   1|          2|    1|          2|
+    |p_scale_channels_ch3_address0  |  22|          3|   22|         66|
+    |p_scale_channels_ch3_ce0       |   1|          3|    1|          3|
+    |p_scale_channels_ch3_we0       |   1|          2|    1|          2|
+    |p_yuv_channels_ch1_address0    |  22|          3|   22|         66|
+    |p_yuv_channels_ch1_ce0         |   1|          3|    1|          3|
+    |p_yuv_channels_ch1_we0         |   1|          2|    1|          2|
+    |p_yuv_channels_ch2_address0    |  22|          3|   22|         66|
+    |p_yuv_channels_ch2_ce0         |   1|          3|    1|          3|
+    |p_yuv_channels_ch2_we0         |   1|          2|    1|          2|
+    |p_yuv_channels_ch3_address0    |  22|          3|   22|         66|
+    |p_yuv_channels_ch3_ce0         |   1|          3|    1|          3|
+    |p_yuv_channels_ch3_we0         |   1|          2|    1|          2|
+    +-------------------------------+----+-----------+-----+-----------+
+    |Total                          | 154|         73|  154|        451|
+    +-------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------------+----+----+-----+-----------+
+    |                          Name                         | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                              |   6|   0|    6|          0|
+    |grp_yuv_filter_rgb2yuv_fu_115_ap_start_ap_start_reg    |   1|   0|    1|          0|
+    |grp_yuv_filter_yuv2rgb_fu_135_ap_start_ap_start_reg    |   1|   0|    1|          0|
+    |grp_yuv_filter_yuv_scale_fu_150_ap_start_ap_start_reg  |   1|   0|    1|          0|
+    |p_scale_height_reg_234                                 |  16|   0|   16|          0|
+    |p_scale_width_reg_229                                  |  16|   0|   16|          0|
+    |p_yuv_height_reg_209                                   |  16|   0|   16|          0|
+    |p_yuv_width_reg_204                                    |  16|   0|   16|          0|
+    +-------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                  |  73|   0|   73|          0|
+    +-------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+------------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++---------------------------+-----+-----+------------+------------------+--------------+
+|ap_clk                     |  in |    1| ap_ctrl_hs |    yuv_filter    | return value |
+|ap_rst                     |  in |    1| ap_ctrl_hs |    yuv_filter    | return value |
+|ap_start                   |  in |    1| ap_ctrl_hs |    yuv_filter    | return value |
+|ap_done                    | out |    1| ap_ctrl_hs |    yuv_filter    | return value |
+|ap_idle                    | out |    1| ap_ctrl_hs |    yuv_filter    | return value |
+|ap_ready                   | out |    1| ap_ctrl_hs |    yuv_filter    | return value |
+|in_channels_ch1_address0   | out |   22|  ap_memory |  in_channels_ch1 |     array    |
+|in_channels_ch1_ce0        | out |    1|  ap_memory |  in_channels_ch1 |     array    |
+|in_channels_ch1_q0         |  in |    8|  ap_memory |  in_channels_ch1 |     array    |
+|in_channels_ch2_address0   | out |   22|  ap_memory |  in_channels_ch2 |     array    |
+|in_channels_ch2_ce0        | out |    1|  ap_memory |  in_channels_ch2 |     array    |
+|in_channels_ch2_q0         |  in |    8|  ap_memory |  in_channels_ch2 |     array    |
+|in_channels_ch3_address0   | out |   22|  ap_memory |  in_channels_ch3 |     array    |
+|in_channels_ch3_ce0        | out |    1|  ap_memory |  in_channels_ch3 |     array    |
+|in_channels_ch3_q0         |  in |    8|  ap_memory |  in_channels_ch3 |     array    |
+|in_width                   |  in |   16|   ap_none  |     in_width     |    pointer   |
+|in_height                  |  in |   16|   ap_none  |     in_height    |    pointer   |
+|out_channels_ch1_address0  | out |   22|  ap_memory | out_channels_ch1 |     array    |
+|out_channels_ch1_ce0       | out |    1|  ap_memory | out_channels_ch1 |     array    |
+|out_channels_ch1_we0       | out |    1|  ap_memory | out_channels_ch1 |     array    |
+|out_channels_ch1_d0        | out |    8|  ap_memory | out_channels_ch1 |     array    |
+|out_channels_ch2_address0  | out |   22|  ap_memory | out_channels_ch2 |     array    |
+|out_channels_ch2_ce0       | out |    1|  ap_memory | out_channels_ch2 |     array    |
+|out_channels_ch2_we0       | out |    1|  ap_memory | out_channels_ch2 |     array    |
+|out_channels_ch2_d0        | out |    8|  ap_memory | out_channels_ch2 |     array    |
+|out_channels_ch3_address0  | out |   22|  ap_memory | out_channels_ch3 |     array    |
+|out_channels_ch3_ce0       | out |    1|  ap_memory | out_channels_ch3 |     array    |
+|out_channels_ch3_we0       | out |    1|  ap_memory | out_channels_ch3 |     array    |
+|out_channels_ch3_d0        | out |    8|  ap_memory | out_channels_ch3 |     array    |
+|out_width                  | out |   16|   ap_vld   |     out_width    |    pointer   |
+|out_width_ap_vld           | out |    1|   ap_vld   |     out_width    |    pointer   |
+|out_height                 | out |   16|   ap_vld   |    out_height    |    pointer   |
+|out_height_ap_vld          | out |    1|   ap_vld   |    out_height    |    pointer   |
+|Y_scale                    |  in |    8|   ap_none  |      Y_scale     |    scalar    |
+|U_scale                    |  in |    8|   ap_none  |      U_scale     |    scalar    |
+|V_scale                    |  in |    8|   ap_none  |      V_scale     |    scalar    |
++---------------------------+-----+-----+------------+------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 6
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+* FSM state operations: 
+
+ <State 1>: 8.77ns
+ST_1: p_yuv_channels_ch1 [1/1] 2.39ns
+:17  %p_yuv_channels_ch1 = alloca [2457600 x i8], align 1
+
+ST_1: p_yuv_channels_ch2 [1/1] 2.39ns
+:18  %p_yuv_channels_ch2 = alloca [2457600 x i8], align 1
+
+ST_1: p_yuv_channels_ch3 [1/1] 2.39ns
+:19  %p_yuv_channels_ch3 = alloca [2457600 x i8], align 1
+
+ST_1: p_scale_channels_ch1 [1/1] 2.39ns
+:20  %p_scale_channels_ch1 = alloca [2457600 x i8], align 1
+
+ST_1: p_scale_channels_ch2 [1/1] 2.39ns
+:21  %p_scale_channels_ch2 = alloca [2457600 x i8], align 1
+
+ST_1: p_scale_channels_ch3 [1/1] 2.39ns
+:22  %p_scale_channels_ch3 = alloca [2457600 x i8], align 1
+
+ST_1: in_width_read [1/1] 0.00ns
+:23  %in_width_read = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %in_width)
+
+ST_1: in_height_read [1/1] 0.00ns
+:24  %in_height_read = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %in_height)
+
+ST_1: call_ret [2/2] 6.38ns
+:25  %call_ret = call fastcc { i16, i16 } @yuv_filter_rgb2yuv([2457600 x i8]* nocapture %in_channels_ch1, [2457600 x i8]* nocapture %in_channels_ch2, [2457600 x i8]* nocapture %in_channels_ch3, i16 %in_width_read, i16 %in_height_read, [2457600 x i8]* nocapture %p_yuv_channels_ch1, [2457600 x i8]* nocapture %p_yuv_channels_ch2, [2457600 x i8]* nocapture %p_yuv_channels_ch3)
+
+
+ <State 2>: 0.00ns
+ST_2: call_ret [1/2] 0.00ns
+:25  %call_ret = call fastcc { i16, i16 } @yuv_filter_rgb2yuv([2457600 x i8]* nocapture %in_channels_ch1, [2457600 x i8]* nocapture %in_channels_ch2, [2457600 x i8]* nocapture %in_channels_ch3, i16 %in_width_read, i16 %in_height_read, [2457600 x i8]* nocapture %p_yuv_channels_ch1, [2457600 x i8]* nocapture %p_yuv_channels_ch2, [2457600 x i8]* nocapture %p_yuv_channels_ch3)
+
+ST_2: p_yuv_width [1/1] 0.00ns
+:26  %p_yuv_width = extractvalue { i16, i16 } %call_ret, 0
+
+ST_2: p_yuv_height [1/1] 0.00ns
+:27  %p_yuv_height = extractvalue { i16, i16 } %call_ret, 1
+
+
+ <State 3>: 6.38ns
+ST_3: V_scale_read [1/1] 0.00ns
+:14  %V_scale_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %V_scale)
+
+ST_3: U_scale_read [1/1] 0.00ns
+:15  %U_scale_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %U_scale)
+
+ST_3: Y_scale_read [1/1] 0.00ns
+:16  %Y_scale_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %Y_scale)
+
+ST_3: call_ret1 [2/2] 6.38ns
+:28  %call_ret1 = call fastcc { i16, i16 } @yuv_filter_yuv_scale([2457600 x i8]* nocapture %p_yuv_channels_ch1, [2457600 x i8]* nocapture %p_yuv_channels_ch2, [2457600 x i8]* nocapture %p_yuv_channels_ch3, i16 %p_yuv_width, i16 %p_yuv_height, [2457600 x i8]* nocapture %p_scale_channels_ch1, [2457600 x i8]* nocapture %p_scale_channels_ch2, [2457600 x i8]* nocapture %p_scale_channels_ch3, i8 zeroext %Y_scale_read, i8 zeroext %U_scale_read, i8 zeroext %V_scale_read)
+
+
+ <State 4>: 0.00ns
+ST_4: call_ret1 [1/2] 0.00ns
+:28  %call_ret1 = call fastcc { i16, i16 } @yuv_filter_yuv_scale([2457600 x i8]* nocapture %p_yuv_channels_ch1, [2457600 x i8]* nocapture %p_yuv_channels_ch2, [2457600 x i8]* nocapture %p_yuv_channels_ch3, i16 %p_yuv_width, i16 %p_yuv_height, [2457600 x i8]* nocapture %p_scale_channels_ch1, [2457600 x i8]* nocapture %p_scale_channels_ch2, [2457600 x i8]* nocapture %p_scale_channels_ch3, i8 zeroext %Y_scale_read, i8 zeroext %U_scale_read, i8 zeroext %V_scale_read)
+
+ST_4: p_scale_width [1/1] 0.00ns
+:29  %p_scale_width = extractvalue { i16, i16 } %call_ret1, 0
+
+ST_4: p_scale_height [1/1] 0.00ns
+:30  %p_scale_height = extractvalue { i16, i16 } %call_ret1, 1
+
+
+ <State 5>: 6.38ns
+ST_5: call_ret2 [2/2] 6.38ns
+:31  %call_ret2 = call fastcc { i16, i16 } @yuv_filter_yuv2rgb([2457600 x i8]* nocapture %p_scale_channels_ch1, [2457600 x i8]* nocapture %p_scale_channels_ch2, [2457600 x i8]* nocapture %p_scale_channels_ch3, i16 %p_scale_width, i16 %p_scale_height, [2457600 x i8]* nocapture %out_channels_ch1, [2457600 x i8]* nocapture %out_channels_ch2, [2457600 x i8]* nocapture %out_channels_ch3)
+
+
+ <State 6>: 0.00ns
+ST_6: stg_27 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap([2457600 x i8]* %in_channels_ch1), !map !0
+
+ST_6: stg_28 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap([2457600 x i8]* %in_channels_ch2), !map !7
+
+ST_6: stg_29 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap([2457600 x i8]* %in_channels_ch3), !map !11
+
+ST_6: stg_30 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i16* %in_width), !map !15
+
+ST_6: stg_31 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecBitsMap(i16* %in_height), !map !21
+
+ST_6: stg_32 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecBitsMap([2457600 x i8]* %out_channels_ch1), !map !25
+
+ST_6: stg_33 [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecBitsMap([2457600 x i8]* %out_channels_ch2), !map !29
+
+ST_6: stg_34 [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecBitsMap([2457600 x i8]* %out_channels_ch3), !map !33
+
+ST_6: stg_35 [1/1] 0.00ns
+:8  call void (...)* @_ssdm_op_SpecBitsMap(i16* %out_width), !map !37
+
+ST_6: stg_36 [1/1] 0.00ns
+:9  call void (...)* @_ssdm_op_SpecBitsMap(i16* %out_height), !map !41
+
+ST_6: stg_37 [1/1] 0.00ns
+:10  call void (...)* @_ssdm_op_SpecBitsMap(i8 %Y_scale), !map !45
+
+ST_6: stg_38 [1/1] 0.00ns
+:11  call void (...)* @_ssdm_op_SpecBitsMap(i8 %U_scale), !map !51
+
+ST_6: stg_39 [1/1] 0.00ns
+:12  call void (...)* @_ssdm_op_SpecBitsMap(i8 %V_scale), !map !55
+
+ST_6: stg_40 [1/1] 0.00ns
+:13  call void (...)* @_ssdm_op_SpecTopModule([11 x i8]* @str) nounwind
+
+ST_6: call_ret2 [1/2] 0.00ns
+:31  %call_ret2 = call fastcc { i16, i16 } @yuv_filter_yuv2rgb([2457600 x i8]* nocapture %p_scale_channels_ch1, [2457600 x i8]* nocapture %p_scale_channels_ch2, [2457600 x i8]* nocapture %p_scale_channels_ch3, i16 %p_scale_width, i16 %p_scale_height, [2457600 x i8]* nocapture %out_channels_ch1, [2457600 x i8]* nocapture %out_channels_ch2, [2457600 x i8]* nocapture %out_channels_ch3)
+
+ST_6: out_width_ret [1/1] 0.00ns
+:32  %out_width_ret = extractvalue { i16, i16 } %call_ret2, 0
+
+ST_6: stg_43 [1/1] 0.00ns
+:33  call void @_ssdm_op_Write.ap_auto.i16P(i16* %out_width, i16 %out_width_ret)
+
+ST_6: out_height_ret [1/1] 0.00ns
+:34  %out_height_ret = extractvalue { i16, i16 } %call_ret2, 1
+
+ST_6: stg_45 [1/1] 0.00ns
+:35  call void @_ssdm_op_Write.ap_auto.i16P(i16* %out_height, i16 %out_height_ret)
+
+ST_6: stg_46 [1/1] 0.00ns
+:36  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is clock enabled: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ in_channels_ch1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x763e15a630; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ in_channels_ch2]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x763e15b050; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ in_channels_ch3]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; mode=0x763e15ac60; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ in_width]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x763e159e50; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ in_height]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x763e15a090; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ out_channels_ch1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; mode=0x763e15a120; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
+Port [ out_channels_ch2]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; mode=0x763e15b440; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
+Port [ out_channels_ch3]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; mode=0x763e15a5a0; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
+Port [ out_width]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x763e15a480; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ out_height]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x763e15abd0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ Y_scale]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x763e15a510; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ U_scale]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x763e15a750; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ V_scale]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x763e15afc0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+p_yuv_channels_ch1   (alloca       ) [ 0011100]
+p_yuv_channels_ch2   (alloca       ) [ 0011100]
+p_yuv_channels_ch3   (alloca       ) [ 0011100]
+p_scale_channels_ch1 (alloca       ) [ 0011111]
+p_scale_channels_ch2 (alloca       ) [ 0011111]
+p_scale_channels_ch3 (alloca       ) [ 0011111]
+in_width_read        (read         ) [ 0010000]
+in_height_read       (read         ) [ 0010000]
+call_ret             (call         ) [ 0000000]
+p_yuv_width          (extractvalue ) [ 0001100]
+p_yuv_height         (extractvalue ) [ 0001100]
+V_scale_read         (read         ) [ 0000100]
+U_scale_read         (read         ) [ 0000100]
+Y_scale_read         (read         ) [ 0000100]
+call_ret1            (call         ) [ 0000000]
+p_scale_width        (extractvalue ) [ 0000011]
+p_scale_height       (extractvalue ) [ 0000011]
+stg_27               (specbitsmap  ) [ 0000000]
+stg_28               (specbitsmap  ) [ 0000000]
+stg_29               (specbitsmap  ) [ 0000000]
+stg_30               (specbitsmap  ) [ 0000000]
+stg_31               (specbitsmap  ) [ 0000000]
+stg_32               (specbitsmap  ) [ 0000000]
+stg_33               (specbitsmap  ) [ 0000000]
+stg_34               (specbitsmap  ) [ 0000000]
+stg_35               (specbitsmap  ) [ 0000000]
+stg_36               (specbitsmap  ) [ 0000000]
+stg_37               (specbitsmap  ) [ 0000000]
+stg_38               (specbitsmap  ) [ 0000000]
+stg_39               (specbitsmap  ) [ 0000000]
+stg_40               (spectopmodule) [ 0000000]
+call_ret2            (call         ) [ 0000000]
+out_width_ret        (extractvalue ) [ 0000000]
+stg_43               (write        ) [ 0000000]
+out_height_ret       (extractvalue ) [ 0000000]
+stg_45               (write        ) [ 0000000]
+stg_46               (ret          ) [ 0000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="in_channels_ch1">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="in_channels_ch1"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="in_channels_ch2">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="in_channels_ch2"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="in_channels_ch3">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="in_channels_ch3"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="in_width">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="in_width"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="in_height">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="in_height"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="out_channels_ch1">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="out_channels_ch1"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="out_channels_ch2">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="out_channels_ch2"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="out_channels_ch3">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="out_channels_ch3"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="out_width">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="out_width"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="out_height">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="out_height"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="Y_scale">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Y_scale"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="U_scale">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="U_scale"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1000" name="V_scale">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="V_scale"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i16P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="yuv_filter_rgb2yuv"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="yuv_filter_yuv_scale"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="yuv_filter_yuv2rgb"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i16P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1004" name="p_yuv_channels_ch1_alloca_fu_46">
+<pin_list>
+<pin id="47" dir="0" index="0" bw="1" slack="0"/>
+<pin id="48" dir="1" index="1" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="p_yuv_channels_ch1/1 "/>
+</bind>
+</comp>
+
+<comp id="50" class="1004" name="p_yuv_channels_ch2_alloca_fu_50">
+<pin_list>
+<pin id="51" dir="0" index="0" bw="1" slack="0"/>
+<pin id="52" dir="1" index="1" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="p_yuv_channels_ch2/1 "/>
+</bind>
+</comp>
+
+<comp id="54" class="1004" name="p_yuv_channels_ch3_alloca_fu_54">
+<pin_list>
+<pin id="55" dir="0" index="0" bw="1" slack="0"/>
+<pin id="56" dir="1" index="1" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="p_yuv_channels_ch3/1 "/>
+</bind>
+</comp>
+
+<comp id="58" class="1004" name="p_scale_channels_ch1_alloca_fu_58">
+<pin_list>
+<pin id="59" dir="0" index="0" bw="1" slack="0"/>
+<pin id="60" dir="1" index="1" bw="8" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="p_scale_channels_ch1/1 "/>
+</bind>
+</comp>
+
+<comp id="62" class="1004" name="p_scale_channels_ch2_alloca_fu_62">
+<pin_list>
+<pin id="63" dir="0" index="0" bw="1" slack="0"/>
+<pin id="64" dir="1" index="1" bw="8" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="p_scale_channels_ch2/1 "/>
+</bind>
+</comp>
+
+<comp id="66" class="1004" name="p_scale_channels_ch3_alloca_fu_66">
+<pin_list>
+<pin id="67" dir="0" index="0" bw="1" slack="0"/>
+<pin id="68" dir="1" index="1" bw="8" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="p_scale_channels_ch3/1 "/>
+</bind>
+</comp>
+
+<comp id="70" class="1004" name="in_width_read_read_fu_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="16" slack="0"/>
+<pin id="72" dir="0" index="1" bw="16" slack="0"/>
+<pin id="73" dir="1" index="2" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="in_width_read/1 "/>
+</bind>
+</comp>
+
+<comp id="76" class="1004" name="in_height_read_read_fu_76">
+<pin_list>
+<pin id="77" dir="0" index="0" bw="16" slack="0"/>
+<pin id="78" dir="0" index="1" bw="16" slack="0"/>
+<pin id="79" dir="1" index="2" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="in_height_read/1 "/>
+</bind>
+</comp>
+
+<comp id="82" class="1004" name="V_scale_read_read_fu_82">
+<pin_list>
+<pin id="83" dir="0" index="0" bw="8" slack="0"/>
+<pin id="84" dir="0" index="1" bw="8" slack="0"/>
+<pin id="85" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="V_scale_read/3 "/>
+</bind>
+</comp>
+
+<comp id="88" class="1004" name="U_scale_read_read_fu_88">
+<pin_list>
+<pin id="89" dir="0" index="0" bw="8" slack="0"/>
+<pin id="90" dir="0" index="1" bw="8" slack="0"/>
+<pin id="91" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="U_scale_read/3 "/>
+</bind>
+</comp>
+
+<comp id="94" class="1004" name="Y_scale_read_read_fu_94">
+<pin_list>
+<pin id="95" dir="0" index="0" bw="8" slack="0"/>
+<pin id="96" dir="0" index="1" bw="8" slack="0"/>
+<pin id="97" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="Y_scale_read/3 "/>
+</bind>
+</comp>
+
+<comp id="100" class="1004" name="stg_43_write_fu_100">
+<pin_list>
+<pin id="101" dir="0" index="0" bw="0" slack="0"/>
+<pin id="102" dir="0" index="1" bw="16" slack="0"/>
+<pin id="103" dir="0" index="2" bw="16" slack="0"/>
+<pin id="104" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="stg_43/6 "/>
+</bind>
+</comp>
+
+<comp id="107" class="1004" name="stg_45_write_fu_107">
+<pin_list>
+<pin id="108" dir="0" index="0" bw="0" slack="0"/>
+<pin id="109" dir="0" index="1" bw="16" slack="0"/>
+<pin id="110" dir="0" index="2" bw="16" slack="0"/>
+<pin id="111" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="stg_45/6 "/>
+</bind>
+</comp>
+
+<comp id="115" class="1004" name="grp_yuv_filter_rgb2yuv_fu_115">
+<pin_list>
+<pin id="116" dir="0" index="0" bw="32" slack="0"/>
+<pin id="117" dir="0" index="1" bw="8" slack="0"/>
+<pin id="118" dir="0" index="2" bw="8" slack="0"/>
+<pin id="119" dir="0" index="3" bw="8" slack="0"/>
+<pin id="120" dir="0" index="4" bw="16" slack="0"/>
+<pin id="121" dir="0" index="5" bw="16" slack="0"/>
+<pin id="122" dir="0" index="6" bw="8" slack="0"/>
+<pin id="123" dir="0" index="7" bw="8" slack="0"/>
+<pin id="124" dir="0" index="8" bw="8" slack="0"/>
+<pin id="125" dir="1" index="9" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ret/1 "/>
+</bind>
+</comp>
+
+<comp id="135" class="1004" name="grp_yuv_filter_yuv2rgb_fu_135">
+<pin_list>
+<pin id="136" dir="0" index="0" bw="32" slack="0"/>
+<pin id="137" dir="0" index="1" bw="8" slack="2147483647"/>
+<pin id="138" dir="0" index="2" bw="8" slack="2147483647"/>
+<pin id="139" dir="0" index="3" bw="8" slack="2147483647"/>
+<pin id="140" dir="0" index="4" bw="16" slack="1"/>
+<pin id="141" dir="0" index="5" bw="16" slack="1"/>
+<pin id="142" dir="0" index="6" bw="8" slack="0"/>
+<pin id="143" dir="0" index="7" bw="8" slack="0"/>
+<pin id="144" dir="0" index="8" bw="8" slack="0"/>
+<pin id="145" dir="1" index="9" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ret2/5 "/>
+</bind>
+</comp>
+
+<comp id="150" class="1004" name="grp_yuv_filter_yuv_scale_fu_150">
+<pin_list>
+<pin id="151" dir="0" index="0" bw="32" slack="0"/>
+<pin id="152" dir="0" index="1" bw="8" slack="2147483647"/>
+<pin id="153" dir="0" index="2" bw="8" slack="2147483647"/>
+<pin id="154" dir="0" index="3" bw="8" slack="2147483647"/>
+<pin id="155" dir="0" index="4" bw="16" slack="1"/>
+<pin id="156" dir="0" index="5" bw="16" slack="1"/>
+<pin id="157" dir="0" index="6" bw="8" slack="2147483647"/>
+<pin id="158" dir="0" index="7" bw="8" slack="2147483647"/>
+<pin id="159" dir="0" index="8" bw="8" slack="2147483647"/>
+<pin id="160" dir="0" index="9" bw="8" slack="0"/>
+<pin id="161" dir="0" index="10" bw="8" slack="0"/>
+<pin id="162" dir="0" index="11" bw="8" slack="0"/>
+<pin id="163" dir="1" index="12" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ret1/3 "/>
+</bind>
+</comp>
+
+<comp id="168" class="1004" name="p_yuv_width_fu_168">
+<pin_list>
+<pin id="169" dir="0" index="0" bw="32" slack="0"/>
+<pin id="170" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="p_yuv_width/2 "/>
+</bind>
+</comp>
+
+<comp id="172" class="1004" name="p_yuv_height_fu_172">
+<pin_list>
+<pin id="173" dir="0" index="0" bw="32" slack="0"/>
+<pin id="174" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="p_yuv_height/2 "/>
+</bind>
+</comp>
+
+<comp id="176" class="1004" name="p_scale_width_fu_176">
+<pin_list>
+<pin id="177" dir="0" index="0" bw="32" slack="0"/>
+<pin id="178" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="p_scale_width/4 "/>
+</bind>
+</comp>
+
+<comp id="180" class="1004" name="p_scale_height_fu_180">
+<pin_list>
+<pin id="181" dir="0" index="0" bw="32" slack="0"/>
+<pin id="182" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="p_scale_height/4 "/>
+</bind>
+</comp>
+
+<comp id="184" class="1004" name="out_width_ret_fu_184">
+<pin_list>
+<pin id="185" dir="0" index="0" bw="32" slack="0"/>
+<pin id="186" dir="1" index="1" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="out_width_ret/6 "/>
+</bind>
+</comp>
+
+<comp id="189" class="1004" name="out_height_ret_fu_189">
+<pin_list>
+<pin id="190" dir="0" index="0" bw="32" slack="0"/>
+<pin id="191" dir="1" index="1" bw="16" slack="0"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="out_height_ret/6 "/>
+</bind>
+</comp>
+
+<comp id="194" class="1005" name="in_width_read_reg_194">
+<pin_list>
+<pin id="195" dir="0" index="0" bw="16" slack="1"/>
+<pin id="196" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="in_width_read "/>
+</bind>
+</comp>
+
+<comp id="199" class="1005" name="in_height_read_reg_199">
+<pin_list>
+<pin id="200" dir="0" index="0" bw="16" slack="1"/>
+<pin id="201" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="in_height_read "/>
+</bind>
+</comp>
+
+<comp id="204" class="1005" name="p_yuv_width_reg_204">
+<pin_list>
+<pin id="205" dir="0" index="0" bw="16" slack="1"/>
+<pin id="206" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="p_yuv_width "/>
+</bind>
+</comp>
+
+<comp id="209" class="1005" name="p_yuv_height_reg_209">
+<pin_list>
+<pin id="210" dir="0" index="0" bw="16" slack="1"/>
+<pin id="211" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="p_yuv_height "/>
+</bind>
+</comp>
+
+<comp id="214" class="1005" name="V_scale_read_reg_214">
+<pin_list>
+<pin id="215" dir="0" index="0" bw="8" slack="1"/>
+<pin id="216" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="V_scale_read "/>
+</bind>
+</comp>
+
+<comp id="219" class="1005" name="U_scale_read_reg_219">
+<pin_list>
+<pin id="220" dir="0" index="0" bw="8" slack="1"/>
+<pin id="221" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="U_scale_read "/>
+</bind>
+</comp>
+
+<comp id="224" class="1005" name="Y_scale_read_reg_224">
+<pin_list>
+<pin id="225" dir="0" index="0" bw="8" slack="1"/>
+<pin id="226" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="Y_scale_read "/>
+</bind>
+</comp>
+
+<comp id="229" class="1005" name="p_scale_width_reg_229">
+<pin_list>
+<pin id="230" dir="0" index="0" bw="16" slack="1"/>
+<pin id="231" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="p_scale_width "/>
+</bind>
+</comp>
+
+<comp id="234" class="1005" name="p_scale_height_reg_234">
+<pin_list>
+<pin id="235" dir="0" index="0" bw="16" slack="1"/>
+<pin id="236" dir="1" index="1" bw="16" slack="1"/>
+</pin_list>
+<bind>
+<opset="p_scale_height "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="49"><net_src comp="26" pin="0"/><net_sink comp="46" pin=0"/></net>
+
+<net id="53"><net_src comp="26" pin="0"/><net_sink comp="50" pin=0"/></net>
+
+<net id="57"><net_src comp="26" pin="0"/><net_sink comp="54" pin=0"/></net>
+
+<net id="61"><net_src comp="26" pin="0"/><net_sink comp="58" pin=0"/></net>
+
+<net id="65"><net_src comp="26" pin="0"/><net_sink comp="62" pin=0"/></net>
+
+<net id="69"><net_src comp="26" pin="0"/><net_sink comp="66" pin=0"/></net>
+
+<net id="74"><net_src comp="28" pin="0"/><net_sink comp="70" pin=0"/></net>
+
+<net id="75"><net_src comp="6" pin="0"/><net_sink comp="70" pin=1"/></net>
+
+<net id="80"><net_src comp="28" pin="0"/><net_sink comp="76" pin=0"/></net>
+
+<net id="81"><net_src comp="8" pin="0"/><net_sink comp="76" pin=1"/></net>
+
+<net id="86"><net_src comp="32" pin="0"/><net_sink comp="82" pin=0"/></net>
+
+<net id="87"><net_src comp="24" pin="0"/><net_sink comp="82" pin=1"/></net>
+
+<net id="92"><net_src comp="32" pin="0"/><net_sink comp="88" pin=0"/></net>
+
+<net id="93"><net_src comp="22" pin="0"/><net_sink comp="88" pin=1"/></net>
+
+<net id="98"><net_src comp="32" pin="0"/><net_sink comp="94" pin=0"/></net>
+
+<net id="99"><net_src comp="20" pin="0"/><net_sink comp="94" pin=1"/></net>
+
+<net id="105"><net_src comp="44" pin="0"/><net_sink comp="100" pin=0"/></net>
+
+<net id="106"><net_src comp="16" pin="0"/><net_sink comp="100" pin=1"/></net>
+
+<net id="112"><net_src comp="44" pin="0"/><net_sink comp="107" pin=0"/></net>
+
+<net id="113"><net_src comp="18" pin="0"/><net_sink comp="107" pin=1"/></net>
+
+<net id="126"><net_src comp="30" pin="0"/><net_sink comp="115" pin=0"/></net>
+
+<net id="127"><net_src comp="0" pin="0"/><net_sink comp="115" pin=1"/></net>
+
+<net id="128"><net_src comp="2" pin="0"/><net_sink comp="115" pin=2"/></net>
+
+<net id="129"><net_src comp="4" pin="0"/><net_sink comp="115" pin=3"/></net>
+
+<net id="130"><net_src comp="70" pin="2"/><net_sink comp="115" pin=4"/></net>
+
+<net id="131"><net_src comp="76" pin="2"/><net_sink comp="115" pin=5"/></net>
+
+<net id="132"><net_src comp="46" pin="1"/><net_sink comp="115" pin=6"/></net>
+
+<net id="133"><net_src comp="50" pin="1"/><net_sink comp="115" pin=7"/></net>
+
+<net id="134"><net_src comp="54" pin="1"/><net_sink comp="115" pin=8"/></net>
+
+<net id="146"><net_src comp="36" pin="0"/><net_sink comp="135" pin=0"/></net>
+
+<net id="147"><net_src comp="10" pin="0"/><net_sink comp="135" pin=6"/></net>
+
+<net id="148"><net_src comp="12" pin="0"/><net_sink comp="135" pin=7"/></net>
+
+<net id="149"><net_src comp="14" pin="0"/><net_sink comp="135" pin=8"/></net>
+
+<net id="164"><net_src comp="34" pin="0"/><net_sink comp="150" pin=0"/></net>
+
+<net id="165"><net_src comp="94" pin="2"/><net_sink comp="150" pin=9"/></net>
+
+<net id="166"><net_src comp="88" pin="2"/><net_sink comp="150" pin=10"/></net>
+
+<net id="167"><net_src comp="82" pin="2"/><net_sink comp="150" pin=11"/></net>
+
+<net id="171"><net_src comp="115" pin="9"/><net_sink comp="168" pin=0"/></net>
+
+<net id="175"><net_src comp="115" pin="9"/><net_sink comp="172" pin=0"/></net>
+
+<net id="179"><net_src comp="150" pin="12"/><net_sink comp="176" pin=0"/></net>
+
+<net id="183"><net_src comp="150" pin="12"/><net_sink comp="180" pin=0"/></net>
+
+<net id="187"><net_src comp="135" pin="9"/><net_sink comp="184" pin=0"/></net>
+
+<net id="188"><net_src comp="184" pin="1"/><net_sink comp="100" pin=2"/></net>
+
+<net id="192"><net_src comp="135" pin="9"/><net_sink comp="189" pin=0"/></net>
+
+<net id="193"><net_src comp="189" pin="1"/><net_sink comp="107" pin=2"/></net>
+
+<net id="197"><net_src comp="70" pin="2"/><net_sink comp="194" pin=0"/></net>
+
+<net id="198"><net_src comp="194" pin="1"/><net_sink comp="115" pin=4"/></net>
+
+<net id="202"><net_src comp="76" pin="2"/><net_sink comp="199" pin=0"/></net>
+
+<net id="203"><net_src comp="199" pin="1"/><net_sink comp="115" pin=5"/></net>
+
+<net id="207"><net_src comp="168" pin="1"/><net_sink comp="204" pin=0"/></net>
+
+<net id="208"><net_src comp="204" pin="1"/><net_sink comp="150" pin=4"/></net>
+
+<net id="212"><net_src comp="172" pin="1"/><net_sink comp="209" pin=0"/></net>
+
+<net id="213"><net_src comp="209" pin="1"/><net_sink comp="150" pin=5"/></net>
+
+<net id="217"><net_src comp="82" pin="2"/><net_sink comp="214" pin=0"/></net>
+
+<net id="218"><net_src comp="214" pin="1"/><net_sink comp="150" pin=11"/></net>
+
+<net id="222"><net_src comp="88" pin="2"/><net_sink comp="219" pin=0"/></net>
+
+<net id="223"><net_src comp="219" pin="1"/><net_sink comp="150" pin=10"/></net>
+
+<net id="227"><net_src comp="94" pin="2"/><net_sink comp="224" pin=0"/></net>
+
+<net id="228"><net_src comp="224" pin="1"/><net_sink comp="150" pin=9"/></net>
+
+<net id="232"><net_src comp="176" pin="1"/><net_sink comp="229" pin=0"/></net>
+
+<net id="233"><net_src comp="229" pin="1"/><net_sink comp="135" pin=4"/></net>
+
+<net id="237"><net_src comp="180" pin="1"/><net_sink comp="234" pin=0"/></net>
+
+<net id="238"><net_src comp="234" pin="1"/><net_sink comp="135" pin=5"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: out_width | {6 }
+	Port: out_height | {6 }
+  - Chain level:
+	State 1
+	State 2
+		p_yuv_width : 1
+		p_yuv_height : 1
+	State 3
+	State 4
+		p_scale_width : 1
+		p_scale_height : 1
+	State 5
+	State 6
+		out_width_ret : 1
+		stg_43 : 2
+		out_height_ret : 1
+		stg_45 : 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|---------------------------------|---------|---------|---------|---------|
+| Operation|         Functional Unit         |  DSP48E |  Delay  |    FF   |   LUT   |
+|----------|---------------------------------|---------|---------|---------|---------|
+|          |  grp_yuv_filter_rgb2yuv_fu_115  |    3    |  4.713  |   513   |   421   |
+|   call   |  grp_yuv_filter_yuv2rgb_fu_135  |    1    |  4.713  |   433   |   359   |
+|          | grp_yuv_filter_yuv_scale_fu_150 |    4    |  4.713  |   432   |   249   |
+|----------|---------------------------------|---------|---------|---------|---------|
+|          |     in_width_read_read_fu_70    |    0    |    0    |    0    |    0    |
+|          |    in_height_read_read_fu_76    |    0    |    0    |    0    |    0    |
+|   read   |     V_scale_read_read_fu_82     |    0    |    0    |    0    |    0    |
+|          |     U_scale_read_read_fu_88     |    0    |    0    |    0    |    0    |
+|          |     Y_scale_read_read_fu_94     |    0    |    0    |    0    |    0    |
+|----------|---------------------------------|---------|---------|---------|---------|
+|   write  |       stg_43_write_fu_100       |    0    |    0    |    0    |    0    |
+|          |       stg_45_write_fu_107       |    0    |    0    |    0    |    0    |
+|----------|---------------------------------|---------|---------|---------|---------|
+|          |        p_yuv_width_fu_168       |    0    |    0    |    0    |    0    |
+|          |       p_yuv_height_fu_172       |    0    |    0    |    0    |    0    |
+|extractvalue|       p_scale_width_fu_176      |    0    |    0    |    0    |    0    |
+|          |      p_scale_height_fu_180      |    0    |    0    |    0    |    0    |
+|          |       out_width_ret_fu_184      |    0    |    0    |    0    |    0    |
+|          |      out_height_ret_fu_189      |    0    |    0    |    0    |    0    |
+|----------|---------------------------------|---------|---------|---------|---------|
+|   Total  |                                 |    8    |  14.139 |   1378  |   1029  |
+|----------|---------------------------------|---------|---------|---------|---------|
+
+Memories:
++--------------------+--------+--------+--------+
+|                    |  BRAM  |   FF   |   LUT  |
++--------------------+--------+--------+--------+
+|p_scale_channels_ch1|  1200  |    0   |    0   |
+|p_scale_channels_ch2|  1200  |    0   |    0   |
+|p_scale_channels_ch3|  1200  |    0   |    0   |
+| p_yuv_channels_ch1 |  1200  |    0   |    0   |
+| p_yuv_channels_ch2 |  1200  |    0   |    0   |
+| p_yuv_channels_ch3 |  1200  |    0   |    0   |
++--------------------+--------+--------+--------+
+|        Total       |  7200  |    0   |    0   |
++--------------------+--------+--------+--------+
+
+* Register list:
++----------------------+--------+
+|                      |   FF   |
++----------------------+--------+
+| U_scale_read_reg_219 |    8   |
+| V_scale_read_reg_214 |    8   |
+| Y_scale_read_reg_224 |    8   |
+|in_height_read_reg_199|   16   |
+| in_width_read_reg_194|   16   |
+|p_scale_height_reg_234|   16   |
+| p_scale_width_reg_229|   16   |
+| p_yuv_height_reg_209 |   16   |
+|  p_yuv_width_reg_204 |   16   |
++----------------------+--------+
+|         Total        |   120  |
++----------------------+--------+
+
+* Multiplexer (MUX) list: 
+|---------------------------------|------|------|------|--------||---------||---------|
+|               Comp              |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|---------------------------------|------|------|------|--------||---------||---------|
+|  grp_yuv_filter_rgb2yuv_fu_115  |  p4  |   2  |  16  |   32   ||    16   |
+|  grp_yuv_filter_rgb2yuv_fu_115  |  p5  |   2  |  16  |   32   ||    16   |
+| grp_yuv_filter_yuv_scale_fu_150 |  p9  |   2  |   8  |   16   ||    8    |
+| grp_yuv_filter_yuv_scale_fu_150 |  p10 |   2  |   8  |   16   ||    8    |
+| grp_yuv_filter_yuv_scale_fu_150 |  p11 |   2  |   8  |   16   ||    8    |
+|---------------------------------|------|------|------|--------||---------||---------|
+|              Total              |      |      |      |   112  ||  7.855  ||    56   |
+|---------------------------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+
+|           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+--------+
+|  Function |    -   |    8   |   14   |  1378  |  1029  |
+|   Memory  |  7200  |    -   |    -   |    0   |    0   |
+|Multiplexer|    -   |    -   |    7   |    -   |   56   |
+|  Register |    -   |    -   |    -   |   120  |    -   |
++-----------+--------+--------+--------+--------+--------+
+|   Total   |  7200  |    8   |   21   |  1498  |  1085  |
++-----------+--------+--------+--------+--------+--------+

@@ -47,10 +47,10 @@ void rgb2yuv (
 
 RGB2YUV_LOOP_X:
    for (x=0; x<width; x++) {
-// #pragma HLS loop_tripcount min=200 max=1920
+ #pragma HLS loop_tripcount min=200 max=1920
 RGB2YUV_LOOP_Y:
       for (y=0; y<height; y++) {
-// #pragma HLS loop_tripcount min=200 max=1280
+ #pragma HLS loop_tripcount min=200 max=1280
          R = in->channels.ch1[x][y];
          G = in->channels.ch2[x][y];
          B = in->channels.ch3[x][y];
@@ -87,10 +87,10 @@ void yuv2rgb (
 
 YUV2RGB_LOOP_X:
    for (x=0; x<width; x++) {
-// #pragma HLS loop_tripcount min=200 max=1920
+ #pragma HLS loop_tripcount min=200 max=1920
 YUV2RGB_LOOP_Y:
       for (y=0; y<height; y++) {
-// #pragma HLS loop_tripcount min=200 max=1280
+ #pragma HLS loop_tripcount min=200 max=1280
          Y = in->channels.ch1[x][y];
          U = in->channels.ch2[x][y];
          V = in->channels.ch3[x][y];
@@ -127,10 +127,10 @@ void yuv_scale (
 
 YUV_SCALE_LOOP_X:
    for (x=0; x<width; x++) {
-// #pragma HLS loop_tripcount min=200 max=1920
+ #pragma HLS loop_tripcount min=200 max=1920
 YUV_SCALE_LOOP_Y:
       for (y=0; y<height; y++) {
-// #pragma HLS loop_tripcount min=200 max=1280
+ #pragma HLS loop_tripcount min=200 max=1280
          Y = in->channels.ch1[x][y];
          U = in->channels.ch2[x][y];
          V = in->channels.ch3[x][y];

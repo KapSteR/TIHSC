@@ -1,0 +1,11 @@
+================================================================
+  Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC
+  Version 2014.4
+  Build 1071461 on Tue Nov 18 16:42:57 PM 2014
+  Copyright (C) 2014 Xilinx Inc. All rights reserved.
+================================================================
+@I [LIC-101] Checked out feature [VIVADO_HLS]
+@I [HLS-10] Running 'C:/Xilinx/Vivado_HLS/2014.4/bin/unwrapped/win64.o/vivado_hls.exe'
+            for user 'Kasper' on host 'kasper-pc' (Windows NT_amd64 version 6.2) on Fri May 08 12:29:34 +0200 2015
+            in directory 'C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/HLS_labs/lab2/yuv_filter.prj'
+@I [HLS-10] Bringing up Vivado HLS GUI ... 

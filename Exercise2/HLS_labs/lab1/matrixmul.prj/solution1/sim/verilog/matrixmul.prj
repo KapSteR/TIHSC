@@ -1,0 +1,6 @@
+verilog xil_defaultlib "AESL_automem_a.v"
+verilog xil_defaultlib "AESL_automem_b.v"
+verilog xil_defaultlib "AESL_automem_res.v"
+verilog xil_defaultlib "matrixmul.autotb.v"
+verilog xil_defaultlib "matrixmul.v"
+

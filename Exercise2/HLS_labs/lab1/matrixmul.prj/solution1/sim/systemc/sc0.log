@@ -1,0 +1,7 @@
+   Build using "C:/Xilinx/Vivado_HLS/2014.4/msys/bin/g++.exe"
+   Compiling AESL_automem_a.cpp
+   Compiling AESL_automem_b.cpp
+   Compiling AESL_automem_res.cpp
+   Compiling matrixmul.autotb.cpp
+   Compiling matrixmul.cpp
+   Generating cosim.sc.exe

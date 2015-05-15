@@ -1,0 +1,7 @@
+   Compiling ../../../../ios.cpp in debug mode
+   Generating csim.exe
+Note: VCD trace timescale unit is set by user to 1.000000e-009 sec.
+INFO: Simulating
+Test passed !
+Created IOSC_Wave.vcd
+@I [SIM-1] CSim done with 0 errors.

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu May 07 13:45:15 2015
+# Process ID: 14588
+# Log file: C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/HLS_labs/lab1/matrixmul.prj/solution1/sim/verilog/webtalk.log
+# Journal file: C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/HLS_labs/lab1/matrixmul.prj/solution1/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/HLS_labs/lab1/matrixmul.prj/solution1/sim/verilog/xsim.dir/matrixmul/webtalk/xsim_webtalk.tcl -notrace

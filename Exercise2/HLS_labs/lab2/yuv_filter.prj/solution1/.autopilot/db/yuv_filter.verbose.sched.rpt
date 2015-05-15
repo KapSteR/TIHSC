@@ -1,0 +1,458 @@
+
+
+================================================================
+== Vivado HLS Report for 'yuv_filter'
+================================================================
+* Date:           Fri May 08 12:32:56 2015
+
+* Version:        2014.4 (Build 1071461 on Tue Nov 18 16:42:57 PM 2014)
+* Project:        yuv_filter.prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |   8.00|      6.75|        1.00|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+----------+--------+----------+---------+
+    |      Latency      |      Interval     | Pipeline|
+    |   min  |    max   |   min  |    max   |   Type  |
+    +--------+----------+--------+----------+---------+
+    |  641205|  39333125|  641206|  39333126|   none  |
+    +--------+----------+--------+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+--------+---------+------------+-----------+-----------+------------+----------+
+        |                     |      Latency     |  Iteration |  Initiation Interval  |    Trip    |          |
+        |      Loop Name      |   min  |   max   |   Latency  |  achieved |   target  |    Count   | Pipelined|
+        +---------------------+--------+---------+------------+-----------+-----------+------------+----------+
+        |- YUV_SCALE_LOOP_X   |  160400|  9834240| 802 ~ 5122 |          -|          -| 200 ~ 1920 |    no    |
+        | + YUV_SCALE_LOOP_Y  |     800|     5120|           4|          -|          -| 200 ~ 1280 |    no    |
+        +---------------------+--------+---------+------------+-----------+-----------+------------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|Expression       |        -|      -|      -|      -|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|      -|
+|Register         |        -|      -|      -|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      0|      0|      0|
++-----------------+---------+-------+-------+-------+
+|Available        |      120|     80|  35200|  17600|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|      0|      0|      0|
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 8
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	8  / (exitcond1_i)
+	4  / (!exitcond1_i)
+4 --> 
+	5  / (!exitcond_i)
+	3  / (exitcond_i)
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	4  / true
+8 --> 
+* FSM state operations: 
+
+ <State 1>: 0.00ns
+ST_1: p_yuv_channels_ch1 [1/1] 0.00ns
+:17  %p_yuv_channels_ch1 = alloca [2457600 x i8], align 1
+
+ST_1: p_yuv_channels_ch2 [1/1] 0.00ns
+:18  %p_yuv_channels_ch2 = alloca [2457600 x i8], align 1
+
+ST_1: p_yuv_channels_ch3 [1/1] 0.00ns
+:19  %p_yuv_channels_ch3 = alloca [2457600 x i8], align 1
+
+ST_1: p_scale_channels_ch1 [1/1] 0.00ns
+:20  %p_scale_channels_ch1 = alloca [2457600 x i8], align 1
+
+ST_1: p_scale_channels_ch2 [1/1] 0.00ns
+:21  %p_scale_channels_ch2 = alloca [2457600 x i8], align 1
+
+ST_1: p_scale_channels_ch3 [1/1] 0.00ns
+:22  %p_scale_channels_ch3 = alloca [2457600 x i8], align 1
+
+ST_1: in_width_read [1/1] 0.00ns
+:23  %in_width_read = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %in_width)
+
+ST_1: in_height_read [1/1] 0.00ns
+:24  %in_height_read = call i16 @_ssdm_op_Read.ap_auto.i16P(i16* %in_height)
+
+ST_1: call_ret [2/2] 0.00ns
+:25  %call_ret = call fastcc { i16, i16 } @yuv_filter_rgb2yuv([2457600 x i8]* nocapture %in_channels_ch1, [2457600 x i8]* nocapture %in_channels_ch2, [2457600 x i8]* nocapture %in_channels_ch3, i16 %in_width_read, i16 %in_height_read, [2457600 x i8]* nocapture %p_yuv_channels_ch1, [2457600 x i8]* nocapture %p_yuv_channels_ch2, [2457600 x i8]* nocapture %p_yuv_channels_ch3)
+
+
+ <State 2>: 1.57ns
+ST_2: stg_18 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap([2457600 x i8]* %in_channels_ch1), !map !0
+
+ST_2: stg_19 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap([2457600 x i8]* %in_channels_ch2), !map !7
+
+ST_2: stg_20 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap([2457600 x i8]* %in_channels_ch3), !map !11
+
+ST_2: stg_21 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i16* %in_width), !map !15
+
+ST_2: stg_22 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecBitsMap(i16* %in_height), !map !21
+
+ST_2: stg_23 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecBitsMap([2457600 x i8]* %out_channels_ch1), !map !25
+
+ST_2: stg_24 [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecBitsMap([2457600 x i8]* %out_channels_ch2), !map !29
+
+ST_2: stg_25 [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecBitsMap([2457600 x i8]* %out_channels_ch3), !map !33
+
+ST_2: stg_26 [1/1] 0.00ns
+:8  call void (...)* @_ssdm_op_SpecBitsMap(i16* %out_width), !map !37
+
+ST_2: stg_27 [1/1] 0.00ns
+:9  call void (...)* @_ssdm_op_SpecBitsMap(i16* %out_height), !map !41
+
+ST_2: stg_28 [1/1] 0.00ns
+:10  call void (...)* @_ssdm_op_SpecBitsMap(i8 %Y_scale), !map !45
+
+ST_2: stg_29 [1/1] 0.00ns
+:11  call void (...)* @_ssdm_op_SpecBitsMap(i8 %U_scale), !map !51
+
+ST_2: stg_30 [1/1] 0.00ns
+:12  call void (...)* @_ssdm_op_SpecBitsMap(i8 %V_scale), !map !55
+
+ST_2: stg_31 [1/1] 0.00ns
+:13  call void (...)* @_ssdm_op_SpecTopModule([11 x i8]* @str) nounwind
+
+ST_2: V_scale_read [1/1] 0.00ns
+:14  %V_scale_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %V_scale)
+
+ST_2: U_scale_read [1/1] 0.00ns
+:15  %U_scale_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %U_scale)
+
+ST_2: Y_scale_read [1/1] 0.00ns
+:16  %Y_scale_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %Y_scale)
+
+ST_2: call_ret [1/2] 0.00ns
+:25  %call_ret = call fastcc { i16, i16 } @yuv_filter_rgb2yuv([2457600 x i8]* nocapture %in_channels_ch1, [2457600 x i8]* nocapture %in_channels_ch2, [2457600 x i8]* nocapture %in_channels_ch3, i16 %in_width_read, i16 %in_height_read, [2457600 x i8]* nocapture %p_yuv_channels_ch1, [2457600 x i8]* nocapture %p_yuv_channels_ch2, [2457600 x i8]* nocapture %p_yuv_channels_ch3)
+
+ST_2: p_yuv_width [1/1] 0.00ns
+:26  %p_yuv_width = extractvalue { i16, i16 } %call_ret, 0
+
+ST_2: p_yuv_height [1/1] 0.00ns
+:27  %p_yuv_height = extractvalue { i16, i16 } %call_ret, 1
+
+ST_2: tmp_i_cast [1/1] 0.00ns
+:28  %tmp_i_cast = zext i8 %Y_scale_read to i15
+
+ST_2: tmp_i_cast_15 [1/1] 0.00ns
+:29  %tmp_i_cast_15 = zext i8 %U_scale_read to i15
+
+ST_2: tmp_28_i_cast [1/1] 0.00ns
+:30  %tmp_28_i_cast = zext i8 %V_scale_read to i15
+
+ST_2: stg_41 [1/1] 1.57ns
+:31  br label %1
+
+
+ <State 3>: 2.32ns
+ST_3: x_i [1/1] 0.00ns
+:0  %x_i = phi i16 [ 0, %0 ], [ %x, %5 ]
+
+ST_3: exitcond1_i [1/1] 2.28ns
+:1  %exitcond1_i = icmp eq i16 %x_i, %p_yuv_width
+
+ST_3: x [1/1] 1.96ns
+:2  %x = add i16 %x_i, 1
+
+ST_3: stg_45 [1/1] 0.00ns
+:3  br i1 %exitcond1_i, label %yuv_scale.exit, label %2
+
+ST_3: stg_46 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str5) nounwind
+
+ST_3: tmp_40_i [1/1] 0.00ns
+:1  %tmp_40_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str5)
+
+ST_3: stg_48 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecLoopTripCount(i32 200, i32 1920, i32 1060, [1 x i8]* @p_str1) nounwind
+
+ST_3: tmp [1/1] 0.00ns
+:3  %tmp = call i26 @_ssdm_op_BitConcatenate.i26.i16.i10(i16 %x_i, i10 0)
+
+ST_3: p_shl_cast [1/1] 0.00ns
+:4  %p_shl_cast = zext i26 %tmp to i27
+
+ST_3: tmp_1 [1/1] 0.00ns
+:5  %tmp_1 = call i24 @_ssdm_op_BitConcatenate.i24.i16.i8(i16 %x_i, i8 0)
+
+ST_3: p_shl1_cast [1/1] 0.00ns
+:6  %p_shl1_cast = zext i24 %tmp_1 to i27
+
+ST_3: p_addr [1/1] 2.32ns
+:7  %p_addr = add i27 %p_shl_cast, %p_shl1_cast
+
+ST_3: stg_54 [1/1] 1.57ns
+:8  br label %3
+
+ST_3: call_ret2 [2/2] 0.00ns
+yuv_scale.exit:0  %call_ret2 = call fastcc { i16, i16 } @yuv_filter_yuv2rgb([2457600 x i8]* nocapture %p_scale_channels_ch1, [2457600 x i8]* nocapture %p_scale_channels_ch2, [2457600 x i8]* nocapture %p_scale_channels_ch3, i16 %p_yuv_width, i16 %p_yuv_height, [2457600 x i8]* nocapture %out_channels_ch1, [2457600 x i8]* nocapture %out_channels_ch2, [2457600 x i8]* nocapture %out_channels_ch3)
+
+
+ <State 4>: 4.71ns
+ST_4: y_i [1/1] 0.00ns
+:0  %y_i = phi i16 [ 0, %2 ], [ %y, %4 ]
+
+ST_4: exitcond_i [1/1] 2.28ns
+:1  %exitcond_i = icmp eq i16 %y_i, %p_yuv_height
+
+ST_4: y [1/1] 1.96ns
+:2  %y = add i16 %y_i, 1
+
+ST_4: stg_59 [1/1] 0.00ns
+:3  br i1 %exitcond_i, label %5, label %4
+
+ST_4: tmp_30_i_trn_cast [1/1] 0.00ns
+:3  %tmp_30_i_trn_cast = zext i16 %y_i to i27
+
+ST_4: p_addr1 [1/1] 2.32ns
+:4  %p_addr1 = add i27 %p_addr, %tmp_30_i_trn_cast
+
+ST_4: tmp_2 [1/1] 0.00ns
+:5  %tmp_2 = zext i27 %p_addr1 to i64
+
+ST_4: p_yuv_channels_ch1_addr [1/1] 0.00ns
+:6  %p_yuv_channels_ch1_addr = getelementptr [2457600 x i8]* %p_yuv_channels_ch1, i64 0, i64 %tmp_2
+
+ST_4: Y [2/2] 2.39ns
+:7  %Y = load i8* %p_yuv_channels_ch1_addr, align 1
+
+ST_4: p_yuv_channels_ch2_addr [1/1] 0.00ns
+:8  %p_yuv_channels_ch2_addr = getelementptr [2457600 x i8]* %p_yuv_channels_ch2, i64 0, i64 %tmp_2
+
+ST_4: U [2/2] 2.39ns
+:9  %U = load i8* %p_yuv_channels_ch2_addr, align 1
+
+ST_4: p_yuv_channels_ch3_addr [1/1] 0.00ns
+:10  %p_yuv_channels_ch3_addr = getelementptr [2457600 x i8]* %p_yuv_channels_ch3, i64 0, i64 %tmp_2
+
+ST_4: V [2/2] 2.39ns
+:11  %V = load i8* %p_yuv_channels_ch3_addr, align 1
+
+ST_4: empty_16 [1/1] 0.00ns
+:0  %empty_16 = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str5, i32 %tmp_40_i)
+
+ST_4: stg_70 [1/1] 0.00ns
+:1  br label %1
+
+
+ <State 5>: 2.39ns
+ST_5: Y [1/2] 2.39ns
+:7  %Y = load i8* %p_yuv_channels_ch1_addr, align 1
+
+ST_5: U [1/2] 2.39ns
+:9  %U = load i8* %p_yuv_channels_ch2_addr, align 1
+
+ST_5: V [1/2] 2.39ns
+:11  %V = load i8* %p_yuv_channels_ch3_addr, align 1
+
+
+ <State 6>: 6.38ns
+ST_6: tmp_31_i_cast [1/1] 0.00ns
+:12  %tmp_31_i_cast = zext i8 %Y to i15
+
+ST_6: tmp_32_i [1/1] 6.38ns
+:13  %tmp_32_i = mul i15 %tmp_31_i_cast, %tmp_i_cast
+
+ST_6: tmp_33_i_cast [1/1] 0.00ns
+:14  %tmp_33_i_cast = zext i8 %U to i15
+
+ST_6: tmp_34_i [1/1] 6.38ns
+:15  %tmp_34_i = mul i15 %tmp_33_i_cast, %tmp_i_cast_15
+
+ST_6: tmp_35_i_cast [1/1] 0.00ns
+:16  %tmp_35_i_cast = zext i8 %V to i15
+
+ST_6: tmp_36_i [1/1] 6.38ns
+:17  %tmp_36_i = mul i15 %tmp_35_i_cast, %tmp_28_i_cast
+
+ST_6: tmp_37_i [1/1] 0.00ns
+:18  %tmp_37_i = call i8 @_ssdm_op_PartSelect.i8.i15.i32.i32(i15 %tmp_32_i, i32 7, i32 14)
+
+ST_6: tmp_38_i [1/1] 0.00ns
+:21  %tmp_38_i = call i8 @_ssdm_op_PartSelect.i8.i15.i32.i32(i15 %tmp_34_i, i32 7, i32 14)
+
+ST_6: tmp_39_i [1/1] 0.00ns
+:24  %tmp_39_i = call i8 @_ssdm_op_PartSelect.i8.i15.i32.i32(i15 %tmp_36_i, i32 7, i32 14)
+
+
+ <State 7>: 2.39ns
+ST_7: stg_83 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str6) nounwind
+
+ST_7: tmp_41_i [1/1] 0.00ns
+:1  %tmp_41_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str6)
+
+ST_7: stg_85 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecLoopTripCount(i32 200, i32 1280, i32 740, [1 x i8]* @p_str1) nounwind
+
+ST_7: p_scale_channels_ch1_addr [1/1] 0.00ns
+:19  %p_scale_channels_ch1_addr = getelementptr [2457600 x i8]* %p_scale_channels_ch1, i64 0, i64 %tmp_2
+
+ST_7: stg_87 [1/1] 2.39ns
+:20  store i8 %tmp_37_i, i8* %p_scale_channels_ch1_addr, align 1
+
+ST_7: p_scale_channels_ch2_addr [1/1] 0.00ns
+:22  %p_scale_channels_ch2_addr = getelementptr [2457600 x i8]* %p_scale_channels_ch2, i64 0, i64 %tmp_2
+
+ST_7: stg_89 [1/1] 2.39ns
+:23  store i8 %tmp_38_i, i8* %p_scale_channels_ch2_addr, align 1
+
+ST_7: p_scale_channels_ch3_addr [1/1] 0.00ns
+:25  %p_scale_channels_ch3_addr = getelementptr [2457600 x i8]* %p_scale_channels_ch3, i64 0, i64 %tmp_2
+
+ST_7: stg_91 [1/1] 2.39ns
+:26  store i8 %tmp_39_i, i8* %p_scale_channels_ch3_addr, align 1
+
+ST_7: empty [1/1] 0.00ns
+:27  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str6, i32 %tmp_41_i)
+
+ST_7: stg_93 [1/1] 0.00ns
+:28  br label %3
+
+
+ <State 8>: 0.00ns
+ST_8: call_ret2 [1/2] 0.00ns
+yuv_scale.exit:0  %call_ret2 = call fastcc { i16, i16 } @yuv_filter_yuv2rgb([2457600 x i8]* nocapture %p_scale_channels_ch1, [2457600 x i8]* nocapture %p_scale_channels_ch2, [2457600 x i8]* nocapture %p_scale_channels_ch3, i16 %p_yuv_width, i16 %p_yuv_height, [2457600 x i8]* nocapture %out_channels_ch1, [2457600 x i8]* nocapture %out_channels_ch2, [2457600 x i8]* nocapture %out_channels_ch3)
+
+ST_8: out_width_ret [1/1] 0.00ns
+yuv_scale.exit:1  %out_width_ret = extractvalue { i16, i16 } %call_ret2, 0
+
+ST_8: stg_96 [1/1] 0.00ns
+yuv_scale.exit:2  call void @_ssdm_op_Write.ap_auto.i16P(i16* %out_width, i16 %out_width_ret)
+
+ST_8: out_height_ret [1/1] 0.00ns
+yuv_scale.exit:3  %out_height_ret = extractvalue { i16, i16 } %call_ret2, 1
+
+ST_8: stg_98 [1/1] 0.00ns
+yuv_scale.exit:4  call void @_ssdm_op_Write.ap_auto.i16P(i16* %out_height, i16 %out_height_ret)
+
+ST_8: stg_99 [1/1] 0.00ns
+yuv_scale.exit:5  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

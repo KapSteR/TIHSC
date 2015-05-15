@@ -1,0 +1,15 @@
+{
+{870,906,942}
+{1086,1131,1176}
+{1302,1356,1410}
+}
+Test passed.
+Note: VCD trace timescale unit is set by user to 1.000000e-012 sec.
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+{
+{870,906,942}
+{1086,1131,1176}
+{1302,1356,1410}
+}
+Test passed.

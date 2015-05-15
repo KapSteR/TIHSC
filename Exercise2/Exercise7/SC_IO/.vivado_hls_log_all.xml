@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [SCA-202] Found reading to uninitialized signal/variable 'iosc_timerCount_V'('t_V', 't.V', ios.cpp:39), the signal/variable should be written or reset firstly, or it may introduce RTL simulation mismatch." projectName="SC_IO" solutionName="solution1" date="2015-05-15T11:10:03.994+0200" type="Warning"/>
+        <logs message="@W [SCA-202] Signal 'iosc_timerCount_V' has no reset." projectName="SC_IO" solutionName="solution1" date="2015-05-15T11:10:03.964+0200" type="Warning"/>
+        <logs message="@W [SCA-202] Signal 'iosc_second' has no reset." projectName="SC_IO" solutionName="solution1" date="2015-05-15T11:10:03.944+0200" type="Warning"/>
+        <logs message="@W [SCA-202] Found reading to uninitialized signal/variable 'iosc_second_count_V'('t_V', 't.V', ios.cpp:24), the signal/variable should be written or reset firstly, or it may introduce RTL simulation mismatch." projectName="SC_IO" solutionName="solution1" date="2015-05-15T11:10:03.924+0200" type="Warning"/>
+        <logs message="@W [SCA-202] Signal 'iosc_second_count_V' has no reset." projectName="SC_IO" solutionName="solution1" date="2015-05-15T11:10:03.894+0200" type="Warning"/>
+        <logs message="@W [SCA-202] Port 'outLeds' has no reset." projectName="SC_IO" solutionName="solution1" date="2015-05-15T11:10:03.874+0200" type="Warning"/>
+        <logs message="@W [SCA-202] Non-channel variable 'iosc_second' of module 'iosc' is used for inter-process communications which may result in nondeterministic simulation behavior. Please consider changing it to an sc_signal." projectName="SC_IO" solutionName="solution1" date="2015-05-15T11:10:03.864+0200" type="Warning"/>
+        <logs message="@W [XFORM-561] 'Loop-1' (ios.cpp:39:7) in function 'iosc::timerThread' is an infinite loop." projectName="SC_IO" solutionName="solution1" date="2015-05-15T11:10:03.844+0200" type="Warning"/>
+        <logs message="@W [XFORM-561] 'Loop-1' (ios.cpp:18:7) in function 'iosc::iosThread' is an infinite loop." projectName="SC_IO" solutionName="solution1" date="2015-05-15T11:10:03.154+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

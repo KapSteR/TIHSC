@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="ios.cpp" path="C:\Users\Kasper\Documents\GitHub\TIHSC\Exercise2\Exercise7\ios.cpp"/>
+    <originFiles name="ios.h" path="C:\Users\Kasper\Documents\GitHub\TIHSC\Exercise2\Exercise7\ios.h"/>
+  </source>
+  <testbench>
+    <originFiles name="ios_driver.cpp" path="C:\Users\Kasper\Documents\GitHub\TIHSC\Exercise2\Exercise7\ios_driver.cpp"/>
+    <originFiles name="ios_driver.h" path="C:\Users\Kasper\Documents\GitHub\TIHSC\Exercise2\Exercise7\ios_driver.h"/>
+    <originFiles name="tb_ios.cpp" path="C:\Users\Kasper\Documents\GitHub\TIHSC\Exercise2\Exercise7\tb_ios.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

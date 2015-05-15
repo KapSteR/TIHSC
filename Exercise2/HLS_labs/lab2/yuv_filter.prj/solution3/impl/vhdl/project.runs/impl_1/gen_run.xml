@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1431084017">
+  <File Type="PWROPT-DCP" Name="yuv_filter_pwropt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="yuv_filter_timing_summary_postroute_physopted.pb"/>
+  <File Type="PA-DCP" Name="yuv_filter.dcp"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PWROPT-DRC" Name="yuv_filter_drc_pwropted.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="yuv_filter_timing_summary_routed.rpt"/>
+  <File Type="PA-TCL" Name="yuv_filter.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DCP" Name="yuv_filter_opt.dcp"/>
+  <File Type="OPT-DRC" Name="yuv_filter_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="yuv_filter_placed.dcp"/>
+  <File Type="PLACE-IO" Name="yuv_filter_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="yuv_filter_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="yuv_filter_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="yuv_filter_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="yuv_filter_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="yuv_filter_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="yuv_filter_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="yuv_filter_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="yuv_filter_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="yuv_filter_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="yuv_filter_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="yuv_filter_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="yuv_filter_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="yuv_filter_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="yuv_filter_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="yuv_filter_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="yuv_filter_route_status.pb"/>
+  <File Type="ROUTE-TIMING-PB" Name="yuv_filter_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="yuv_filter_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="yuv_filter_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="yuv_filter_postroute_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="yuv_filter.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="yuv_filter_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="yuv_filter_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="yuv_filter.bit"/>
+  <File Type="BG-BIN" Name="yuv_filter.bin"/>
+  <File Type="BITSTR-MSK" Name="yuv_filter.msk"/>
+  <File Type="BITSTR-RBT" Name="yuv_filter.rbt"/>
+  <File Type="BITSTR-NKY" Name="yuv_filter.nky"/>
+  <File Type="BITSTR-BMM" Name="yuv_filter_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="yuv_filter.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="yuv_filter.sysdef"/>
+  <File Type="BG-BGN" Name="yuv_filter.bgn"/>
+  <File Type="BG-DRC" Name="yuv_filter.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/FIFO_yuv_filter_p_scale_channels_ch1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/FIFO_yuv_filter_p_scale_channels_ch2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/FIFO_yuv_filter_p_scale_channels_ch3.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/FIFO_yuv_filter_p_scale_height.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/FIFO_yuv_filter_p_scale_width.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/FIFO_yuv_filter_p_yuv_channels_ch1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/FIFO_yuv_filter_p_yuv_channels_ch2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/FIFO_yuv_filter_p_yuv_channels_ch3.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/FIFO_yuv_filter_p_yuv_height.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/FIFO_yuv_filter_p_yuv_width.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/yuv_filter_rgb2yuv.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/yuv_filter_yuv2rgb.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/yuv_filter_yuv_scale.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/yuv_filter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="yuv_filter"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/yuv_filter.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014">
+      <Desc>Vivado Implementation Defaults</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

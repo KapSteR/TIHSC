@@ -1,0 +1,59 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date         : Thu May 07 14:06:32 2015
+| Host         : KASPER-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file matrixmul_control_sets_placed.rpt
+| Design       : matrixmul
+| Device       : xc7z010
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     6 |
+| Minimum Number of register sites lost to control set restrictions |    20 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               6 |            5 |
+| Yes          | No                    | No                     |              26 |            9 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              18 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+----------------+-----------------------------+------------------+----------------+
+| Clock Signal |  Enable Signal |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++--------------+----------------+-----------------------------+------------------+----------------+
+|  ap_clk      | j_reg_860      |                             |                1 |              4 |
+|  ap_clk      |                | ap_rst                      |                5 |              6 |
+|  ap_clk      | k_reg_1100     |                             |                2 |              6 |
+|  ap_clk      |                |                             |                3 |             10 |
+|  ap_clk      | CEB2           |                             |                6 |             16 |
+|  ap_clk      | ap_sig_bdd_111 | n_2_res_load_reg_97[15]_i_1 |                5 |             18 |
++--------------+----------------+-----------------------------+------------------+----------------+
+
+

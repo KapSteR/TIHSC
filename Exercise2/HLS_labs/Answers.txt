@@ -1,0 +1,7 @@
+HLSlab 1 Answers:
+- Q1:
+	- Estimated clock period:	6.38
+	- Worst case latency: 		106
+	- Number of DSP48E used: 	1
+	- Number of FFs used: 		62
+	- Number of LUTs used:		63

@@ -1,0 +1,252 @@
+
+
+================================================================
+== Vivado HLS Report for 'iosc'
+================================================================
+* Date:           Fri May 15 11:10:05 2015
+
+* Version:        2014.4 (Build 1071461 on Tue Nov 18 16:42:57 PM 2014)
+* Project:        SC_IO
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |  10.00|      2.52|        1.25|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    5|    1|    6|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|Expression       |        -|      -|      -|      -|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|      -|
+|Register         |        -|      -|      -|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      0|      0|      0|
++-----------------+---------+-------+-------+-------+
+|Available        |      120|     80|  35200|  17600|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|      0|      0|      0|
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 2
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / (iosc_ssdm_thread_M_iosThrea) | (iosc_ssdm_thread_M_timerThr)
+2 --> 
+* FSM state operations: 
+
+ <State 1>: 2.52ns
+ST_1: stg_3 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i1* %clk), !map !72
+
+ST_1: stg_4 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset), !map !76
+
+ST_1: stg_5 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i4* %ctrl), !map !80
+
+ST_1: stg_6 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i4* %inSwitch), !map !84
+
+ST_1: stg_7 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecBitsMap(i4* %outLeds), !map !88
+
+ST_1: stg_8 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecBitsMap(i4* %iosc_switchs_V), !map !92
+
+ST_1: stg_9 [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecBitsMap(i4* %iosc_switchs_in_V), !map !96
+
+ST_1: stg_10 [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecBitsMap(i4* %iosc_ctrl_in_V), !map !100
+
+ST_1: stg_11 [1/1] 0.00ns
+:8  call void (...)* @_ssdm_op_SpecBitsMap(i4* %iosc_second_count_V), !map !104
+
+ST_1: stg_12 [1/1] 0.00ns
+:9  call void (...)* @_ssdm_op_SpecBitsMap(i1* %iosc_second), !map !108
+
+ST_1: stg_13 [1/1] 0.00ns
+:10  call void (...)* @_ssdm_op_SpecBitsMap(i32* %iosc_timerCount_V), !map !112
+
+ST_1: stg_14 [1/1] 0.00ns
+:11  call void (...)* @_ssdm_op_SpecIFCore(i4* %ctrl, [1 x i8]* @p_str10, [10 x i8]* @p_str18, [1 x i8]* @p_str10, i32 -1, [1 x i8]* @p_str10, [1 x i8]* @p_str10, [17 x i8]* @p_str19)
+
+ST_1: stg_15 [1/1] 0.00ns
+:12  call void (...)* @_ssdm_op_SpecTopModule([5 x i8]* @p_str, [5 x i8]* @p_str) nounwind
+
+ST_1: iosc_ssdm_thread_M_iosThrea [1/1] 0.00ns
+:13  %iosc_ssdm_thread_M_iosThrea = load i1* @iosc_ssdm_thread_M_iosThread, align 1
+
+ST_1: stg_17 [1/1] 0.00ns
+:14  br i1 %iosc_ssdm_thread_M_iosThrea, label %1, label %2
+
+ST_1: stg_18 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecProcessDecl([5 x i8]* @p_str, i32 2, [10 x i8]* @p_str8) nounwind
+
+ST_1: stg_19 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecSensitive([10 x i8]* @p_str8, [4 x i8]* @p_str2, i1* %clk, i32 1) nounwind
+
+ST_1: iosc_ssdm_thread_M_timerThr [1/1] 0.00ns
+:2  %iosc_ssdm_thread_M_timerThr = load i1* @iosc_ssdm_thread_M_timerThread, align 1
+
+ST_1: stg_21 [1/1] 0.00ns
+:3  br i1 %iosc_ssdm_thread_M_timerThr, label %3, label %4
+
+ST_1: stg_22 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecProcessDecl([5 x i8]* @p_str, i32 2, [12 x i8]* @p_str20) nounwind
+
+ST_1: stg_23 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecSensitive([12 x i8]* @p_str20, [4 x i8]* @p_str2, i1* %clk, i32 1) nounwind
+
+ST_1: stg_24 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecSensitive([12 x i8]* @p_str20, [6 x i8]* @p_str3, i1* %reset, i32 3) nounwind
+
+ST_1: stg_25 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecPort([5 x i8]* @p_str, i32 0, [7 x i8]* @p_str1, [4 x i8]* @p_str2, i32 0, i32 0, i1* %clk) nounwind
+
+ST_1: stg_26 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecPort([5 x i8]* @p_str, i32 0, [7 x i8]* @p_str1, [6 x i8]* @p_str3, i32 0, i32 0, i1* %reset) nounwind
+
+ST_1: stg_27 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecPort([5 x i8]* @p_str, i32 0, [13 x i8]* @p_str4, [5 x i8]* @p_str5, i32 0, i32 0, i4* %ctrl) nounwind
+
+ST_1: stg_28 [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecPort([5 x i8]* @p_str, i32 0, [13 x i8]* @p_str4, [9 x i8]* @p_str6, i32 0, i32 0, i4* %inSwitch) nounwind
+
+ST_1: stg_29 [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecPort([5 x i8]* @p_str, i32 1, [13 x i8]* @p_str4, [8 x i8]* @p_str7, i32 0, i32 0, i4* %outLeds) nounwind
+
+ST_1: stg_30 [1/1] 0.00ns
+:8  ret void
+
+ST_1: stg_31 [2/2] 2.52ns
+:0  call void @"iosc::iosc_iosc::timerThread"(i1* %clk, i1* %reset, i4* %ctrl, i4* %inSwitch, i4* %outLeds, i4* %iosc_switchs_V, i4* %iosc_switchs_in_V, i4* %iosc_ctrl_in_V, i4* %iosc_second_count_V, i1* %iosc_second, i32* %iosc_timerCount_V)
+
+ST_1: stg_32 [2/2] 1.88ns
+:0  call void @"iosc::iosc_iosc::iosThread"(i1* %clk, i1* %reset, i4* %ctrl, i4* %inSwitch, i4* %outLeds, i4* %iosc_switchs_V, i4* %iosc_switchs_in_V, i4* %iosc_ctrl_in_V, i4* %iosc_second_count_V, i1* %iosc_second, i32* %iosc_timerCount_V)
+
+
+ <State 2>: 2.44ns
+ST_2: stg_33 [1/2] 2.44ns
+:0  call void @"iosc::iosc_iosc::timerThread"(i1* %clk, i1* %reset, i4* %ctrl, i4* %inSwitch, i4* %outLeds, i4* %iosc_switchs_V, i4* %iosc_switchs_in_V, i4* %iosc_ctrl_in_V, i4* %iosc_second_count_V, i1* %iosc_second, i32* %iosc_timerCount_V)
+
+ST_2: stg_34 [1/1] 0.00ns
+:1  br label %UnifiedUnreachableBlock
+
+ST_2: stg_35 [1/2] 1.37ns
+:0  call void @"iosc::iosc_iosc::iosThread"(i1* %clk, i1* %reset, i4* %ctrl, i4* %inSwitch, i4* %outLeds, i4* %iosc_switchs_V, i4* %iosc_switchs_in_V, i4* %iosc_ctrl_in_V, i4* %iosc_second_count_V, i1* %iosc_second, i32* %iosc_timerCount_V)
+
+ST_2: stg_36 [1/1] 0.00ns
+:1  br label %UnifiedUnreachableBlock
+
+ST_2: stg_37 [1/1] 0.00ns
+UnifiedUnreachableBlock:0  unreachable
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

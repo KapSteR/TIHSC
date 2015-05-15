@@ -1,0 +1,26 @@
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: c:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_matrixmul_top -prj matrixmul.prj --lib ieee_proposed=./ieee_proposed -s matrixmul -debug wave 
+Multi-threading is on. Using 6 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/HLS_labs/lab1/matrixmul.prj/solution1/sim/verilog/AESL_automem_a.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/HLS_labs/lab1/matrixmul.prj/solution1/sim/verilog/AESL_automem_b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_b
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/HLS_labs/lab1/matrixmul.prj/solution1/sim/verilog/AESL_automem_res.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/HLS_labs/lab1/matrixmul.prj/solution1/sim/verilog/matrixmul.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_matrixmul_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/HLS_labs/lab1/matrixmul.prj/solution1/sim/verilog/matrixmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.matrixmul
+Compiling module xil_defaultlib.AESL_automem_a
+Compiling module xil_defaultlib.AESL_automem_b
+Compiling module xil_defaultlib.AESL_automem_res
+Compiling module xil_defaultlib.apatb_matrixmul_top
+Built simulation snapshot matrixmul

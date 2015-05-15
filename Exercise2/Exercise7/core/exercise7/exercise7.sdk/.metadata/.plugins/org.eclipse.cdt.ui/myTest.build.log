@@ -1,0 +1,8 @@
+16:17:40 **** Build of configuration Debug for project myTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+make: Interrupt/Exception caught (code = 0xc00000fd, addr = 0x4227d3)
+
+16:17:40 Build Finished (took 300ms)
+

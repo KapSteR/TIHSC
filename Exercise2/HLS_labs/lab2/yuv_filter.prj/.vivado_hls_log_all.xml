@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [XFORM-124] Array '_scale.channels.ch3' (yuv_filter.c:18) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="yuv_filter.prj" solutionName="solution3" date="2015-05-08T13:11:19.470+0200" type="Warning"/>
+        <logs message="@W [XFORM-124] Array '_scale.channels.ch2' (yuv_filter.c:18) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="yuv_filter.prj" solutionName="solution3" date="2015-05-08T13:11:19.370+0200" type="Warning"/>
+        <logs message="@W [XFORM-124] Array '_scale.channels.ch1' (yuv_filter.c:18) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="yuv_filter.prj" solutionName="solution3" date="2015-05-08T13:11:19.360+0200" type="Warning"/>
+        <logs message="@W [XFORM-124] Array '_yuv.channels.ch3' (yuv_filter.c:17) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="yuv_filter.prj" solutionName="solution3" date="2015-05-08T13:11:19.350+0200" type="Warning"/>
+        <logs message="@W [XFORM-124] Array '_yuv.channels.ch2' (yuv_filter.c:17) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="yuv_filter.prj" solutionName="solution3" date="2015-05-08T13:11:19.340+0200" type="Warning"/>
+        <logs message="@W [XFORM-124] Array '_yuv.channels.ch1' (yuv_filter.c:17) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="yuv_filter.prj" solutionName="solution3" date="2015-05-08T13:11:19.330+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

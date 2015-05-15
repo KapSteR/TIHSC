@@ -1,0 +1,34 @@
+@I [SIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vivado_HLS/2014.4/msys/bin/g++.exe"
+   Compiling apatb_matrixmul.cpp
+   Compiling matrixmul.cpp_pre.cpp.tb.cpp
+   Compiling matrixmul_test.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+@I [SIM-302] Starting C TB testing ... 
+@I [SIM-333] Generating C post check test bench ...
+@I [SIM-12] Generating RTL test bench ...
+   Build using "C:/Xilinx/Vivado_HLS/2014.4/msys/bin/g++.exe"
+   Compiling AESL_automem_a.cpp
+   Compiling AESL_automem_b.cpp
+   Compiling AESL_automem_res.cpp
+   Compiling matrixmul.autotb.cpp
+   Compiling matrixmul.cpp
+   Generating cosim.sc.exe
+@I [SIM-11] Starting SystemC simulation ...
+@I [SIM-316] Starting C post checking ...
+{
+{870,906,942}
+{1086,1131,1176}
+{1302,1356,1410}
+}
+Test passed.
+Note: VCD trace timescale unit is set by user to 1.000000e-012 sec.
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+{
+{870,906,942}
+{1086,1131,1176}
+{1302,1356,1410}
+}
+Test passed.
+@I [SIM-1000] *** C/RTL co-simulation finished: PASS ***
