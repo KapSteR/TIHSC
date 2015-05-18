@@ -1,6 +1,37 @@
-10:26:16 **** Incremental Build of configuration Debug for project exercise7 ****
+23:51:43 **** Auto Build of configuration Debug for project exercise7 ****
 make all 
-make: Ingenting at gøre for 'all'.
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(void) {
+      ^
+../src/main.c: In function 'main':
+../src/main.c:13:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+   xil_printf("CMD:> ");
+   ^
+../src/main.c:14:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
+   value = inbyte(); // Read char from console
+   ^
+../src/main.c:39:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
+   Xil_Out8(XPAR_IOSC_0_S_AXI_SLV0_BASEADDR+0xf4, ctrlVal); // Offset because magic +0xf4
+   ^
+../src/main.c:10:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  char ctrlVal, value, skip;
+                       ^
+Finished building: ../src/main.c
+ 
+Building target: exercise7.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp_2/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise7.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22816	   1152	  22564	  46532	   b5c4	exercise7.elf
+Finished building: exercise7.elf.size
+ 
 
-10:26:17 Build Finished (took 270ms)
+23:51:44 Build Finished (took 950ms)
 

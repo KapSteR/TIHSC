@@ -192,3 +192,4 @@ java.lang.RuntimeException: The program file specified in the launch configurati
 23:01:12 INFO  : Processor reset is completed for ps7_cortexa9_0
 23:02:20 INFO  : Processor reset is completed for ps7_cortexa9_0
 23:02:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:38:18 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

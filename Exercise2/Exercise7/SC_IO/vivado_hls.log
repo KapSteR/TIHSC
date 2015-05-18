@@ -6,7 +6,7 @@
 ================================================================
 @I [LIC-101] Checked out feature [VIVADO_HLS]
 @I [HLS-10] Running 'C:/Xilinx/Vivado_HLS/2014.4/bin/unwrapped/win64.o/vivado_hls.exe'
-            for user 'Kasper' on host 'kasper-pc' (Windows NT_amd64 version 6.2) on Mon May 18 10:20:15 +0200 2015
+            for user 'Kasper' on host 'kasper-pc' (Windows NT_amd64 version 6.2) on Mon May 18 23:38:35 +0200 2015
             in directory 'C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7/SC_IO'
 @I [HLS-10] Bringing up Vivado HLS GUI ... 
 @I [LIC-101] Checked in feature [VIVADO_HLS]
