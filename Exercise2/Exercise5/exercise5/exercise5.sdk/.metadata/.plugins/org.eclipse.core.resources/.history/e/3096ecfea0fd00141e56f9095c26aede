@@ -26,7 +26,7 @@ void displayMatrix(VectorArray input);
 void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P);
 void multiMatrixHard(VectorArray A, VectorArray B, VectorArray P);
 
-VectorArray pInst, pInstHard, aInst, bInst;
+VectorArray pInst, pInstHard, aInst, bTInst;
 
 int main(void) {
 
@@ -47,7 +47,7 @@ int main(void) {
 	}
 
 	// Put data in matrices
-	setInputMatrices(aInst, bInst);
+	setInputMatrices(aInst, bTInst);
 
 	// Load timer with delay in multiple of ONE_SECOND
 	XScuTimer_LoadTimer(TimerInstancePtr, ONE_SECOND);
@@ -57,7 +57,7 @@ int main(void) {
 	XScuTimer_Start(TimerInstancePtr);
 
 	// Multiply
-	multiMatrixSoft(aInst, bInst, pInst);
+	multiMatrixSoft(aInst, bTInst, pInst);
 
 	// Stop timer
 	XScuTimer_Stop(TimerInstancePtr);
@@ -71,7 +71,7 @@ int main(void) {
 	XScuTimer_Start(TimerInstancePtr);
 
 	// Multiply
-	multiMatrixHard(aInst, bInst, pInstHard);
+	multiMatrixHard(aInst, bTInst, pInstHard);
 
 	// Stop timer
 	XScuTimer_Stop(TimerInstancePtr);
@@ -81,8 +81,8 @@ int main(void) {
 	xil_printf("A matrix:\r\n");
 	displayMatrix(aInst);
 
-	xil_printf("B matrix:\r\n");
-	displayMatrix(bInst);
+	xil_printf("B^T matrix:\r\n");
+	displayMatrix(bTInst);
 
 	xil_printf("Soft result:\r\n");
 	displayMatrix(pInst);
@@ -114,8 +114,8 @@ void setInputMatrices(VectorArray A, VectorArray B) {
 	}
 
 	k = 1;
-	for (col = 0; col < MSIZE; ++col) {
-		for (row = 0; row < MSIZE; ++row) {
+	for (row = 0; row < MSIZE; ++row) {
+		for (col = 0; col < MSIZE; ++col) {
 			B[row].comp[col] = k;
 		}
 		k++;
@@ -144,7 +144,7 @@ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P) {
 			P[row].comp[col] = 0;
 			for (k = 0; k < MSIZE; ++k) {
 				P[row].comp[col] = P[row].comp[col]
-						+ (A[row].comp[k] * B[row].comp[k]);
+						+ (A[row].comp[k] * B[k].comp[col]);
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-15:57:53 **** Auto Build of project exerise5_bsp_0 ****
+22:59:07 **** Build of project exerise5_bsp_0 ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/bram_v4_0/src"
 make -C ps7_cortexa9_0/libsrc/bram_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
@@ -29,6 +29,7 @@ make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=
 "Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_0/src"
 make -C ps7_cortexa9_0/libsrc/bram_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 "Compiling bram"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
 "Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
 make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 "Compiling cpu_cortexa9"
@@ -67,5 +68,5 @@ make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm
 "Compiling xadcps"
 'Finished building libraries'
 
-15:58:26 Build Finished (took 32s.827ms)
+22:59:46 Build Finished (took 39s.608ms)
 

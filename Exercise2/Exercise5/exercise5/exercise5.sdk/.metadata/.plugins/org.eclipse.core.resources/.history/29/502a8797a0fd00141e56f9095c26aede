@@ -144,7 +144,7 @@ void multiMatrixSoft(VectorArray A, VectorArray B, VectorArray P) {
 			P[row].comp[col] = 0;
 			for (k = 0; k < MSIZE; ++k) {
 				P[row].comp[col] = P[row].comp[col]
-						+ (A[row].comp[k] * B[row].comp[k]);
+						+ (A[row].comp[k] * B[k].comp[col]);
 			}
 		}
 	}
