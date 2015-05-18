@@ -1208,3 +1208,6 @@ Finished building: exercise7.elf.size
 11:28:56 **** Incremental Build of configuration Debug for project exercise7 ****
 make all 
 make: Ingenting at gøre for 'all'.
+10:26:16 **** Incremental Build of configuration Debug for project exercise7 ****
+make all 
+make: Ingenting at gøre for 'all'.

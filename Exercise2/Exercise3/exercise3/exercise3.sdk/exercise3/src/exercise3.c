@@ -10,14 +10,15 @@
 #include "led_ip.h"
 #include "xscutimer.h"
 
-#define ONE_SECOND 325000000 // half of the CPU clock speed//====================================================
+#define ONE_SECOND 325000000 // half of the CPU clock speed
+//====================================================
 
 int main(void) {
 
 	// Initialize I/O
 	XGpio dip, push;
 	int dip_check, count;
-	char value, skip;
+	char value;
 
 	xil_printf("-- Start of the Program --\r\n");
 
@@ -52,8 +53,8 @@ int main(void) {
 		// Start console interpreter
 		xil_printf("CMD:> ");
 		value = inbyte(); // Read char from console
-		skip = inbyte(); // skip CR
-		skip = inbyte(); //skip LF
+		inbyte(); // skip CR
+		inbyte(); //skip LF
 
 
 		switch (value) {

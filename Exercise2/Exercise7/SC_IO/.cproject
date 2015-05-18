@@ -26,11 +26,12 @@
 								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.1530101155" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.1553403143" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/include/ap_sysc"/>
+									<listOptionValue builtIn="false" value="C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/include/etc"/>
-									<listOptionValue builtIn="false" value="E:/RD_HLS_2014"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/auto_cc/include"/>
+									<listOptionValue builtIn="false" value="E:/RD_HLS_2014"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1816361184" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="AESL_TB"/>
@@ -53,11 +54,12 @@
 								<option id="gnu.c.compiler.exe.debug.option.debugging.level.430585547" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.244871723" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/include/ap_sysc"/>
+									<listOptionValue builtIn="false" value="C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/include/etc"/>
-									<listOptionValue builtIn="false" value="E:/RD_HLS_2014"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/auto_cc/include"/>
+									<listOptionValue builtIn="false" value="E:/RD_HLS_2014"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.878131703" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="AESL_TB"/>
@@ -134,11 +136,12 @@
 								<option id="gnu.cpp.compiler.exe.release.option.debugging.level.186126334" name="Debug Level" superClass="gnu.cpp.compiler.exe.release.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.665340994" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/include/ap_sysc"/>
+									<listOptionValue builtIn="false" value="C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/include/etc"/>
-									<listOptionValue builtIn="false" value="E:/RD_HLS_2014"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/auto_cc/include"/>
+									<listOptionValue builtIn="false" value="E:/RD_HLS_2014"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.698501604" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -147,11 +150,12 @@
 								<option id="gnu.c.compiler.exe.release.option.debugging.level.855420662" name="Debug Level" superClass="gnu.c.compiler.exe.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1098342952" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/include/ap_sysc"/>
+									<listOptionValue builtIn="false" value="C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/include/etc"/>
-									<listOptionValue builtIn="false" value="E:/RD_HLS_2014"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/auto_cc/include"/>
+									<listOptionValue builtIn="false" value="E:/RD_HLS_2014"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.158177525" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
