@@ -1245,3 +1245,94 @@ arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
   22816	   1152	  22564	  46532	   b5c4	exercise7.elf
 Finished building: exercise7.elf.size
  
+13:22:50 **** Auto Build of configuration Debug for project exercise7 ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(void) {
+      ^
+../src/main.c: In function 'main':
+../src/main.c:42:3: error: unknown type name 'Xio'
+   Xio
+   ^
+../src/main.c:43:14: error: expected declaration specifiers or '...' before string constant
+   xil_printf("Value: %X written to ctrl \r\n", ctrlVal);
+              ^
+../src/main.c:43:48: error: expected declaration specifiers or '...' before 'ctrlVal'
+   xil_printf("Value: %X written to ctrl \r\n", ctrlVal);
+                                                ^
+../src/main.c:12:8: warning: unused variable 'IOsys' [-Wunused-variable]
+  XIosc IOsys;
+        ^
+../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  char ctrlVal, value, skip;
+                       ^
+make: *** [src/main.o] Fejl 1
+13:26:29 **** Auto Build of configuration Debug for project exercise7 ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(void) {
+      ^
+../src/main.c: In function 'main':
+../src/main.c:15:24: error: 'ioscHLS' undeclared (first use in this function)
+  if (XIosc_Initialize(&ioscHLS, XPAR_IOSC_0_DEVICE_ID) != XST_SUCCESS) {
+                        ^
+../src/main.c:15:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:16:3: warning: 'return' with a value, in function returning void [enabled by default]
+   return XST_FAILURE;
+   ^
+../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  char ctrlVal, value, skip;
+                       ^
+make: *** [src/main.o] Fejl 1
+13:32:39 **** Auto Build of configuration Debug for project exercise7 ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(void) {
+      ^
+../src/main.c: In function 'main':
+../src/main.c:16:3: warning: 'return' with a value, in function returning void [enabled by default]
+   return XST_FAILURE;
+   ^
+../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
+  char ctrlVal, value, skip;
+                       ^
+Finished building: ../src/main.c
+ 
+Building target: exercise7.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp_2/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise7.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23480	   1168	  22564	  47212	   b86c	exercise7.elf
+Finished building: exercise7.elf.size
+ 
+13:33:43 **** Auto Build of configuration Debug for project exercise7 ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: exercise7.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp_2/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise7.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23480	   1168	  22564	  47212	   b86c	exercise7.elf
+Finished building: exercise7.elf.size
+ 

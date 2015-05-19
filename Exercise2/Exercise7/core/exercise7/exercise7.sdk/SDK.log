@@ -178,3 +178,6 @@ java.lang.RuntimeException: The program file specified in the launch configurati
 23:51:12 INFO  : Processing command line option -hwspec C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7/core/exercise7/exercise7.sdk/system_wrapper.hdf.
 23:51:15 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_1.
 23:51:15 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+13:21:45 INFO  : Processing command line option -hwspec C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7/core/exercise7/exercise7.sdk/system_wrapper.hdf.
+13:21:47 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_1.
+13:21:47 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450

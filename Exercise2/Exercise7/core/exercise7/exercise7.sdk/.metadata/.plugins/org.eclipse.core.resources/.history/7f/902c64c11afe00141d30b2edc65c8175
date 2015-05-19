@@ -7,20 +7,20 @@
 #include "xparameters.h"
 #include "xiosc.h"
 
-int main(void) {
-	char ctrlVal, value;
+void main(void) {
+	char ctrlVal, value, skip;
 	XIosc IOsys;
 
 	// Initialize the iosc driver
-	if (XIosc_Initialize(&IOsys, XPAR_IOSC_0_DEVICE_ID) != XST_SUCCESS) {
+	if (XIosc_Initialize(&ioscHLS, XPAR_IOSC_0_DEVICE_ID) != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
 
 	while (1) {
 		xil_printf("CMD:> ");
 		value = inbyte(); // Read char from console
-		inbyte(); // skip CR
-		inbyte(); //skip LF
+		skip = inbyte(); // skip CR
+		skip = inbyte(); //skip LF
 
 
 		if (value >= 'A' && value <= 'F') {
@@ -49,6 +49,5 @@ int main(void) {
 		xil_printf("Value: %X written to ctrl \r\n", ctrlVal);
 
 	}
-	return 1;
 }
 
