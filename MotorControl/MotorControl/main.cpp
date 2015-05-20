@@ -2,8 +2,8 @@
 
 void MotorControl::pwmThread() {
 	//Group ports into AXI4 slave slv0
-	#pragma HLS resource core=AXI4LiteS metadata="-bus_bundle slv0" variable=speed
-	#pragma HLS resource core=AXI4LiteS metadata="-bus_bundle slv0" variable=angle
+	#pragma HLS resource core=AXI4LiteS metadata="-bus_bundle slv0" variable=pwmR
+	#pragma HLS resource core=AXI4LiteS metadata="-bus_bundle slv0" variable=pwmL
 
 	//Initialization
 	wait();
@@ -13,30 +13,20 @@ void MotorControl::pwmThread() {
 		wait();
 		if (pwmClock == true) {
 
-			// calc pwm form angle+speed
-
-//			pwmR =
-//			pwmL =
-
-// Set DIR
-			if (speed >= 0) {
-				DIR1.write(true);
-				DIR2.write(true);
-			} else {
-				DIR1.write(false);
-				DIR2.write(false);
-			}
+			// Set DIR
+			DIR1.write(Direction.read());
+			DIR2.write(Direction.read());
 
 			// Handle pwm count
 			// Right motor
-			if (pwmCount < pwmR) {
+			if (pwmCount < pwmR.read()) {
 				EN1.write(true);
 			} else {
 				EN1.write(false);
 			}
 
 			// Left motor
-			if (pwmCount < pwmR) {
+			if (pwmCount < pwmR.read()) {
 				EN2.write(true);
 			} else {
 				EN2.write(false);

@@ -11,8 +11,9 @@ SC_MODULE(MotorControl) {
 	sc_in <bool> clk;
 	sc_in <bool> reset;
 
-	sc_in<sc_int<16> > angle;
-	sc_in<sc_int<16> > speed;
+	sc_in<sc_int<10> > pwmR;
+	sc_in<sc_int<10> > pwmL;
+	sc_in<bool> Direction;
 	sc_out<bool> EN1;
 	sc_out<bool> EN2;
 	sc_out<bool> DIR1;
@@ -24,8 +25,6 @@ SC_MODULE(MotorControl) {
 
 
 	//Variables
-	sc_uint<10> pwmR;
-	sc_uint<10> pwmL;
 	sc_uint<16> pwmCount;
 	sc_uint<32> dividerCount;
 
