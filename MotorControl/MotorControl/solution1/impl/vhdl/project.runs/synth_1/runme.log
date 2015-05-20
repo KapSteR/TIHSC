@@ -1,0 +1,361 @@
+
+*** Running vivado
+    with args -log MotorCtrl.vds -m64 -mode batch -messageDb vivado.pb -source MotorCtrl.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source MotorCtrl.tcl
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7z010clg400-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/project.cache/wt [current_project]
+# set_property parent.project_path C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/project.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language VHDL [current_project]
+# read_vhdl -library xil_defaultlib {
+#   C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl_clockDividerThread.vhd
+#   C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl_pwmThread.vhd
+#   C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl.vhd
+# }
+# read_xdc C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl.xdc
+# set_property used_in_implementation false [get_files C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl.xdc]
+# catch { write_hwdef -file MotorCtrl.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top MotorCtrl -part xc7z010clg400-1 -no_iobuf -mode out_of_context
+Command: synth_design -top MotorCtrl -part xc7z010clg400-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 228.918 ; gain = 69.461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MotorCtrl' [C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl.vhd:26]
+INFO: [Synth 8-4472] Detected and applied attribute fsm_encoding = none [C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl.vhd:41]
+INFO: [Synth 8-3491] module 'MotorCtrl_clockDividerThread' declared at 'C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl_clockDividerThread.vhd:12' bound to instance 'grp_MotorCtrl_clockDividerThread_fu_88' of component 'MotorCtrl_clockDividerThread' [C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'MotorCtrl_clockDividerThread' [C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl_clockDividerThread.vhd:24]
+INFO: [Synth 8-4472] Detected and applied attribute fsm_encoding = none [C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl_clockDividerThread.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'MotorCtrl_clockDividerThread' (1#1) [C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl_clockDividerThread.vhd:24]
+INFO: [Synth 8-3491] module 'MotorCtrl_pwmThread' declared at 'C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl_pwmThread.vhd:12' bound to instance 'grp_MotorCtrl_pwmThread_fu_116' of component 'MotorCtrl_pwmThread' [C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'MotorCtrl_pwmThread' [C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl_pwmThread.vhd:31]
+INFO: [Synth 8-4472] Detected and applied attribute fsm_encoding = none [C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl_pwmThread.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'MotorCtrl_pwmThread' (2#1) [C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl_pwmThread.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'MotorCtrl' (3#1) [C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl.vhd:26]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[9]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[8]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[7]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[6]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[5]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[4]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[3]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[2]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[1]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 263.113 ; gain = 103.656
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 263.113 ; gain = 103.656
+---------------------------------------------------------------------------------
+Loading clock regions from c:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z010/ClockRegion.xml
+Loading clock buffers from c:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z010/ClockBuffers.xml
+Loading clock placement rules from c:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from c:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from c:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z010/clg400/Package.xml
+Loading io standards from c:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl.xdc]
+Finished Parsing XDC File [C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl/MotorControl/solution1/impl/vhdl/MotorCtrl.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 566.148 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 566.148 ; gain = 406.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 566.148 ; gain = 406.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 566.148 ; gain = 406.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+ROM "tmp_7_fu_129_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 566.148 ; gain = 406.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MotorCtrl 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
+Module MotorCtrl_clockDividerThread 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module MotorCtrl_pwmThread 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 566.148 ; gain = 406.691
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "grp_MotorCtrl_clockDividerThread_fu_88/tmp_7_fu_129_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[9]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[8]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[7]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[6]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[5]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[4]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[3]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[2]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[1]
+WARNING: [Synth 8-3331] design MotorCtrl has unconnected port pwmL[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 566.148 ; gain = 406.691
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 566.148 ; gain = 406.691
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\grp_MotorCtrl_clockDividerThread_fu_88/ap_CS_fsm_reg[0] ) is unused and will be removed from module MotorCtrl.
+WARNING: [Synth 8-3332] Sequential element (\grp_MotorCtrl_pwmThread_fu_116/ap_CS_fsm_reg[1] ) is unused and will be removed from module MotorCtrl.
+WARNING: [Synth 8-3332] Sequential element (\grp_MotorCtrl_pwmThread_fu_116/ap_CS_fsm_reg[0] ) is unused and will be removed from module MotorCtrl.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 566.148 ; gain = 406.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 566.148 ; gain = 406.691
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 566.148 ; gain = 406.691
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 566.148 ; gain = 406.691
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 566.148 ; gain = 406.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 566.148 ; gain = 406.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 566.148 ; gain = 406.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 566.148 ; gain = 406.691
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 566.148 ; gain = 406.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 566.148 ; gain = 406.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     8|
+|2     |LUT1   |     2|
+|3     |LUT2   |     2|
+|4     |LUT3   |    37|
+|5     |LUT4   |     1|
+|6     |LUT5   |     1|
+|7     |LUT6   |    10|
+|8     |FDRE   |    51|
+|9     |FDSE   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------------------+-----------------------------+------+
+|      |Instance                                 |Module                       |Cells |
++------+-----------------------------------------+-----------------------------+------+
+|1     |top                                      |                             |   113|
+|2     |  grp_MotorCtrl_clockDividerThread_fu_88 |MotorCtrl_clockDividerThread |    55|
+|3     |  grp_MotorCtrl_pwmThread_fu_116         |MotorCtrl_pwmThread          |    19|
++------+-----------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 566.148 ; gain = 406.691
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:27 . Memory (MB): peak = 566.148 ; gain = 88.328
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 566.148 ; gain = 406.691
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 566.148 ; gain = 391.445
+# write_checkpoint -noxdef MotorCtrl.dcp
+# catch { report_utilization -file MotorCtrl_utilization_synth.rpt -pb MotorCtrl_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 566.148 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 20 15:27:18 2015...

@@ -1,0 +1,24 @@
+/*
+ * Empty C++ Application
+ */
+
+#include "xparameters.h"
+#include "xmotorctrl.h"
+
+#include <vector>
+
+int main() {
+
+	char input;
+
+	while (1) {
+
+		xil_printf("CMD:>");
+
+
+
+
+	}
+
+	return 0;
+}

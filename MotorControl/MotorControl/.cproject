@@ -30,7 +30,6 @@
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/include/etc"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/auto_cc/include"/>
-									<listOptionValue builtIn="false" value="C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1819585262" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="AESL_TB"/>
@@ -57,7 +56,6 @@
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/include/etc"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/auto_cc/include"/>
-									<listOptionValue builtIn="false" value="C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.650794384" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="AESL_TB"/>
@@ -79,14 +77,18 @@
 								<option id="gnu.c.link.option.paths.1469607683" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/systemc/lib"/>
 								</option>
-								<option id="gnu.c.link.option.libs.1104205335" name="Libraries (-l)" superClass="gnu.c.link.option.libs"/>
+								<option id="gnu.c.link.option.libs.1104205335" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="systemc_debug"/>
+								</option>
 								<option id="gnu.c.link.option.ldflags.1078754101" name="Linker flags" superClass="gnu.c.link.option.ldflags"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.756287778" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
 								<option id="gnu.cpp.link.option.paths.165290624" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/systemc/lib"/>
 								</option>
-								<option id="gnu.cpp.link.option.libs.543485351" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs"/>
+								<option id="gnu.cpp.link.option.libs.543485351" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="systemc_debug"/>
+								</option>
 								<option id="gnu.cpp.link.option.flags.742740099" name="Linker flags" superClass="gnu.cpp.link.option.flags"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.137934218" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -134,7 +136,6 @@
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/include/etc"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/auto_cc/include"/>
-									<listOptionValue builtIn="false" value="C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.54665748" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -147,7 +148,6 @@
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/include/etc"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/auto_cc/include"/>
-									<listOptionValue builtIn="false" value="C:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.217903001" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
@@ -155,14 +155,18 @@
 								<option id="gnu.c.link.option.paths.827895492" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/systemc/lib"/>
 								</option>
-								<option id="gnu.c.link.option.libs.758989855" name="Libraries (-l)" superClass="gnu.c.link.option.libs"/>
+								<option id="gnu.c.link.option.libs.758989855" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="systemc_debug"/>
+								</option>
 								<option id="gnu.c.link.option.ldflags.84709443" name="Linker flags" superClass="gnu.c.link.option.ldflags"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.release.1459222095" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.release">
 								<option id="gnu.cpp.link.option.paths.918879313" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado_HLS/2014.4/win64/tools/systemc/lib"/>
 								</option>
-								<option id="gnu.cpp.link.option.libs.713084661" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs"/>
+								<option id="gnu.cpp.link.option.libs.713084661" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="systemc_debug"/>
+								</option>
 								<option id="gnu.cpp.link.option.flags.215042337" name="Linker flags" superClass="gnu.cpp.link.option.flags"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.846145864" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -201,4 +205,5 @@
 		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
 </cproject>

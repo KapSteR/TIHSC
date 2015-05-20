@@ -48,7 +48,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 279.684 ; gain = 120.152
+Starting RTL Elaboration : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 279.734 ; gain = 120.301
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'system_wrapper' [C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7/core/exercise7/exercise7.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:42]
 INFO: [Synth 8-3491] module 'system' declared at 'C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7/core/exercise7/exercise7.srcs/sources_1/bd/system/hdl/system.vhd:1146' bound to instance 'system_i' of component 'system' [C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7/core/exercise7/exercise7.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:71]
@@ -1294,7 +1294,7 @@ INFO: [Synth 8-256] done synthesizing module 'system_rst_processing_system7_0_10
 INFO: [Synth 8-256] done synthesizing module 'system' (51#1) [C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7/core/exercise7/exercise7.srcs/sources_1/bd/system/hdl/system.vhd:1174]
 INFO: [Synth 8-256] done synthesizing module 'system_wrapper' (52#1) [C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7/core/exercise7/exercise7.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:42]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:47 ; elapsed = 00:01:50 . Memory (MB): peak = 403.363 ; gain = 243.832
+Finished RTL Elaboration : Time (s): cpu = 00:01:49 ; elapsed = 00:01:52 . Memory (MB): peak = 403.434 ; gain = 244.000
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1304,7 +1304,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:48 ; elapsed = 00:01:50 . Memory (MB): peak = 403.363 ; gain = 243.832
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:50 ; elapsed = 00:01:52 . Memory (MB): peak = 403.434 ; gain = 244.000
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1339,16 +1339,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 627.941 ; gain = 0.016
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 627.965 ; gain = 0.016
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:02:02 ; elapsed = 00:02:05 . Memory (MB): peak = 627.941 ; gain = 468.410
+Finished Constraint Validation : Time (s): cpu = 00:02:05 ; elapsed = 00:02:07 . Memory (MB): peak = 627.965 ; gain = 468.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:02:02 ; elapsed = 00:02:05 . Memory (MB): peak = 627.941 ; gain = 468.410
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:05 ; elapsed = 00:02:07 . Memory (MB): peak = 627.965 ; gain = 468.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1362,7 +1362,7 @@ Applied set_property DONT_TOUCH = true for system_i/iosc_0. (constraint file  C:
 Applied set_property DONT_TOUCH = true for system_i/processing_system7_0_axi_periph/s00_couplers/auto_pc. (constraint file  C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7/core/exercise7/exercise7.runs/synth_1/dont_touch.xdc, line 25).
 Applied set_property DONT_TOUCH = true for system_i/processing_system7_0/inst. (constraint file  C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7/core/exercise7/exercise7.runs/synth_1/dont_touch.xdc, line 28).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:04 ; elapsed = 00:02:07 . Memory (MB): peak = 627.941 ; gain = 468.410
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:07 ; elapsed = 00:02:09 . Memory (MB): peak = 627.965 ; gain = 468.531
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 ROM "tmp_4_fu_119_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
@@ -1405,7 +1405,7 @@ WARNING: [Synth 8-3848] Net FTMD_TRACEIN_ATID_i in module/entity processing_syst
 WARNING: [Synth 8-3848] Net FTMD_TRACEIN_DATA_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [c:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7/core/exercise7/exercise7.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1070]
 WARNING: [Synth 8-3848] Net FTMD_TRACEIN_VALID_i in module/entity processing_system7_v5_5_processing_system7 does not have driver. [c:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7/core/exercise7/exercise7.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1071]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:07 ; elapsed = 00:02:10 . Memory (MB): peak = 627.941 ; gain = 468.410
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:09 ; elapsed = 00:02:12 . Memory (MB): peak = 627.965 ; gain = 468.531
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1796,7 +1796,7 @@ BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:02:07 ; elapsed = 00:02:10 . Memory (MB): peak = 627.941 ; gain = 468.410
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:02:09 ; elapsed = 00:02:12 . Memory (MB): peak = 627.965 ; gain = 468.531
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -1806,9 +1806,9 @@ INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7/core/exercise7/exercise7.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/353278bf/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7/core/exercise7/exercise7.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/353278bf/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:02:07 ; elapsed = 00:02:11 . Memory (MB): peak = 627.941 ; gain = 468.410
+Finished Cross Boundary Optimization : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 627.965 ; gain = 468.531
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:02:07 ; elapsed = 00:02:11 . Memory (MB): peak = 627.941 ; gain = 468.410
+Finished Parallel Reinference  : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 627.965 ; gain = 468.531
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -1825,19 +1825,19 @@ Finished RAM, DSP and Shift Register Reporting
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 627.941 ; gain = 468.410
+Finished Area Optimization : Time (s): cpu = 00:02:12 ; elapsed = 00:02:15 . Memory (MB): peak = 627.965 ; gain = 468.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 627.941 ; gain = 468.410
+Finished Area Optimization : Time (s): cpu = 00:02:12 ; elapsed = 00:02:15 . Memory (MB): peak = 627.965 ; gain = 468.531
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 627.941 ; gain = 468.410
+Finished Parallel Area Optimization  : Time (s): cpu = 00:02:12 ; elapsed = 00:02:15 . Memory (MB): peak = 627.965 ; gain = 468.531
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 627.941 ; gain = 468.410
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:12 ; elapsed = 00:02:15 . Memory (MB): peak = 627.965 ; gain = 468.531
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -1845,10 +1845,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:28 ; elapsed = 00:02:32 . Memory (MB): peak = 774.836 ; gain = 615.305
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:31 ; elapsed = 00:02:35 . Memory (MB): peak = 774.859 ; gain = 615.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:29 ; elapsed = 00:02:33 . Memory (MB): peak = 790.332 ; gain = 630.801
+Finished Timing Optimization : Time (s): cpu = 00:02:32 ; elapsed = 00:02:36 . Memory (MB): peak = 791.008 ; gain = 631.574
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1921,7 +1921,7 @@ INFO: [Synth 8-3332] Sequential element (\U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/G
 INFO: [Synth 8-3332] Sequential element (\U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5 ) is unused and will be removed from module system_rst_processing_system7_0_100M_0.
 INFO: [Synth 8-3332] Sequential element (\U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6 ) is unused and will be removed from module system_rst_processing_system7_0_100M_0.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:32 ; elapsed = 00:02:36 . Memory (MB): peak = 798.438 ; gain = 638.906
+Finished Technology Mapping : Time (s): cpu = 00:02:35 ; elapsed = 00:02:39 . Memory (MB): peak = 798.195 ; gain = 638.762
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1969,7 +1969,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \n_0_inst/gen_a
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:35 ; elapsed = 00:02:39 . Memory (MB): peak = 798.438 ; gain = 638.906
+Finished IO Insertion : Time (s): cpu = 00:02:37 ; elapsed = 00:02:41 . Memory (MB): peak = 798.195 ; gain = 638.762
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1982,7 +1982,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:35 ; elapsed = 00:02:39 . Memory (MB): peak = 798.438 ; gain = 638.906
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:37 ; elapsed = 00:02:41 . Memory (MB): peak = 798.195 ; gain = 638.762
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1994,7 +1994,7 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:35 ; elapsed = 00:02:40 . Memory (MB): peak = 798.438 ; gain = 638.906
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:37 ; elapsed = 00:02:42 . Memory (MB): peak = 798.195 ; gain = 638.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
@@ -2110,11 +2110,11 @@ Report Instance Areas:
 |51    |          SEQ_COUNTER                              |upcnt_n                                                     |    14|
 +------+---------------------------------------------------+------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:35 ; elapsed = 00:02:40 . Memory (MB): peak = 798.438 ; gain = 638.906
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:37 ; elapsed = 00:02:42 . Memory (MB): peak = 798.195 ; gain = 638.762
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:02:22 . Memory (MB): peak = 798.438 ; gain = 338.957
-Synthesis Optimization Complete : Time (s): cpu = 00:02:35 ; elapsed = 00:02:40 . Memory (MB): peak = 798.438 ; gain = 638.906
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:02:24 . Memory (MB): peak = 798.195 ; gain = 337.863
+Synthesis Optimization Complete : Time (s): cpu = 00:02:37 ; elapsed = 00:02:42 . Memory (MB): peak = 798.195 ; gain = 638.762
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 134 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -2131,8 +2131,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 270 Infos, 147 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:32 ; elapsed = 00:02:36 . Memory (MB): peak = 805.637 ; gain = 570.734
+synth_design: Time (s): cpu = 00:02:34 ; elapsed = 00:02:38 . Memory (MB): peak = 804.707 ; gain = 568.906
 # write_checkpoint -noxdef system_wrapper.dcp
 # catch { report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb }
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 805.637 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri May 15 11:20:40 2015...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 804.707 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 20 14:57:24 2015...

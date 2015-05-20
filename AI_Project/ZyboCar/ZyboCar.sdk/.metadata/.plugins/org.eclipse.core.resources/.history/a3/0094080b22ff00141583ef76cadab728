@@ -1,0 +1,22 @@
+/*
+ * Empty C++ Application
+ */
+
+#include "xparameters.h"
+#include "xmotorctrl.h"
+
+int main()
+{
+	while(1){
+
+
+
+
+	}
+
+
+
+
+
+	return 0;
+}

@@ -1,0 +1,7 @@
+15:42:04 INFO  : Processing command line option -hwspec C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper.hdf.
+15:42:10 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:42:49 INFO  : BSP Project P/ZyboMotorTest_bsp has been successfully migrated.
+15:57:05 INFO  : Project ZyboMotorTest_bsp was a BSP project. Please update references.
+15:57:05 ERROR : SDK has detected that project ZyboMotorTest_bsp has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references.
+15:57:21 INFO  : BSP Project P/standalone_bsp_0_lol has been successfully migrated.

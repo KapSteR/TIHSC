@@ -1,984 +1,11 @@
-16:46:18 **** Incremental Build of configuration Debug for project lab1 ****
-make all 
-make: Ingenting at gøre for 'all'.
-16:46:47 **** Incremental Build of configuration Debug for project lab1 ****
-make all 
-make: Ingenting at gøre for 'all'.
-16:47:32 **** Incremental Build of configuration Debug for project lab1 ****
-make all 
-make: Ingenting at gøre for 'all'.
-16:47:52 **** Incremental Build of configuration Debug for project lab1 ****
-make all 
-make: Ingenting at gøre for 'all'.
-16:48:55 **** Incremental Build of configuration Debug for project lab1 ****
-make all 
-make: Ingenting at gøre for 'all'.
-16:49:26 **** Incremental Build of configuration Debug for project lab1 ****
-make all 
-make: Ingenting at gøre for 'all'.
-16:50:24 **** Incremental Build of configuration Debug for project lab1 ****
-make all 
-make: Ingenting at gøre for 'all'.
-16:51:08 **** Incremental Build of configuration Debug for project lab1 ****
-make all 
-make: Ingenting at gøre for 'all'.
-16:51:33 **** Incremental Build of configuration Debug for project lab1 ****
-make all 
-make: Ingenting at gøre for 'all'.
-10:09:26 **** Auto Build of project standalone_bsp_0 ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
-make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/gpiops_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
-make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling gpio"
-"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/gpiops_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling gpiops"
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling xadcps"
-'Finished building libraries'
-10:10:06 **** Auto Build of configuration Debug for project lab1 ****
-make all 
-Building file: ../src/lab1.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab1.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab1.d" -MT"src/lab1.d" -o "src/lab1.o" "../src/lab1.c"
-Finished building: ../src/lab1.c
+13:23:10 **** Clean-only build of configuration Debug for project exercise7 ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  exercise7.elf.size  exercise7.elf
  
-Building target: lab1.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "lab1.elf"  ./src/lab1.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: lab1.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size lab1.elf  |tee "lab1.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  31460	   1216	  22596	  55272	   d7e8	lab1.elf
-Finished building: lab1.elf.size
- 
-10:11:15 **** Build of project exercise7 ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling devcfg"
-arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling xadcps"
-'Finished building libraries'
-10:12:08 **** Build of project exercise7_bsp ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling devcfg"
-arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling xadcps"
-'Finished building libraries'
-
-**** Build of configuration Debug for project exercise7 ****
-
-Nothing to build for project exercise7
-10:13:04 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-../../exercise7_bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
-C:\Users\Kasper\Documents\GitHub\TIHSC\Exercise2\Exercise7\core\exercise7\exercise7.sdk\exercise7_bsp\ps7_cortexa9_0\libsrc\standalone_v4_2\src/xil-crt0.S:128: undefined reference to `main'
-collect2.exe: error: ld returned 1 exit status
-make: *** [exercise7.elf] Fejl 1
-10:29:45 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:8:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:12:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:13:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:9:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-../src/main.c:9:7: warning: variable 'ctrlVal' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22784	   1152	  22564	  46500	   b5a4	exercise7.elf
-Finished building: exercise7.elf.size
- 
-10:30:29 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-../src/main.c:11:7: warning: variable 'ctrlVal' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22784	   1152	  22564	  46500	   b5a4	exercise7.elf
-Finished building: exercise7.elf.size
- 
-10:30:54 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-../src/main.c:11:7: warning: variable 'ctrlVal' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22784	   1152	  22564	  46500	   b5a4	exercise7.elf
-Finished building: exercise7.elf.size
- 
-10:33:02 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR, ctrlVal);
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22784	   1152	  22564	  46500	   b5a4	exercise7.elf
-Finished building: exercise7.elf.size
- 
-10:34:42 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR, ctrlVal);
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22812	   1152	  22564	  46528	   b5c0	exercise7.elf
-Finished building: exercise7.elf.size
- 
-10:35:04 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-10:35:23 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR, ctrlVal);
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22816	   1152	  22564	  46532	   b5c4	exercise7.elf
-Finished building: exercise7.elf.size
- 
-10:35:33 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-10:35:46 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-10:39:51 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR, ctrlVal);
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22816	   1152	  22564	  46532	   b5c4	exercise7.elf
-Finished building: exercise7.elf.size
- 
-10:39:53 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-10:40:17 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR, ctrlVal);
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22816	   1152	  22564	  46532	   b5c4	exercise7.elf
-Finished building: exercise7.elf.size
- 
-10:40:18 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-10:41:29 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-10:41:40 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR, ctrlVal);
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22816	   1152	  22564	  46532	   b5c4	exercise7.elf
-Finished building: exercise7.elf.size
- 
-10:41:42 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-10:42:02 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR, ctrlVal);
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22816	   1152	  22564	  46532	   b5c4	exercise7.elf
-Finished building: exercise7.elf.size
- 
-10:42:03 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-10:43:18 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-10:43:24 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-10:43:48 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-10:45:27 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-10:52:18 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR, ctrlVal);
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22900	   1152	  22564	  46616	   b618	exercise7.elf
-Finished building: exercise7.elf.size
- 
-10:52:19 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-10:59:19 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-11:00:06 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR, ctrlVal);
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22900	   1152	  22564	  46616	   b618	exercise7.elf
-Finished building: exercise7.elf.size
- 
-11:00:10 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-11:02:13 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-11:03:58 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR, ctrlVal);
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22900	   1152	  22564	  46616	   b618	exercise7.elf
-Finished building: exercise7.elf.size
- 
-11:04:04 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR, ctrlVal);
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22816	   1152	  22564	  46532	   b5c4	exercise7.elf
-Finished building: exercise7.elf.size
- 
-11:04:11 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8BE' [-Wimplicit-function-declaration]
-   Xil_Out8BE(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR, ctrlVal);
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-./src/main.o: In function `main':
-C:\Users\Kasper\Documents\GitHub\TIHSC\Exercise2\Exercise7\core\exercise7\exercise7.sdk\exercise7\Debug/../src/main.c:40: undefined reference to `Xil_Out8BE'
-collect2.exe: error: ld returned 1 exit status
-make: *** [exercise7.elf] Fejl 1
-11:04:13 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-./src/main.o: In function `main':
-C:\Users\Kasper\Documents\GitHub\TIHSC\Exercise2\Exercise7\core\exercise7\exercise7.sdk\exercise7\Debug/../src/main.c:40: undefined reference to `Xil_Out8BE'
-collect2.exe: error: ld returned 1 exit status
-make: *** [exercise7.elf] Fejl 1
-11:04:26 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR, ctrlVal);
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22816	   1152	  22564	  46532	   b5c4	exercise7.elf
-Finished building: exercise7.elf.size
- 
-11:04:32 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-11:07:28 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-11:23:24 **** Auto Build of project exercise7_bsp ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling xadcps"
-'Finished building libraries'
-11:23:54 **** Auto Build of project exercise7_bsp ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling xadcps"
-'Finished building libraries'
-11:24:23 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR+0xf4, ctrlVal); // Offset because magic
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22816	   1152	  22564	  46532	   b5c4	exercise7.elf
-Finished building: exercise7.elf.size
- 
-11:24:52 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-11:25:12 **** Build of project exercise7_bsp_2 ****
+13:23:11 **** Clean-only build of project exercise7_bsp_2 ****
+make -k clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+13:23:11 **** Build of project exercise7_bsp_2 ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
 make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
@@ -1037,288 +64,246 @@ make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm
 make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 "Compiling xadcps"
 'Finished building libraries'
-11:25:43 **** Clean-only build of configuration Debug for project exercise7 ****
+13:23:43 **** Build of configuration Debug for project exercise7 ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: exercise7.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp_2/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise7.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23480	   1168	  22564	  47212	   b86c	exercise7.elf
+Finished building: exercise7.elf.size
+ 
+13:24:13 **** Incremental Build of configuration Debug for project exercise7 ****
+make all 
+make: Ingenting at gøre for 'all'.
+15:03:58 **** Build of project exercise7_bsp_2 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/iosc_top_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/iosc_top_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/iosc_top_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/iosc_top_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iosc_top"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+15:04:28 **** Build of configuration Debug for project exercise7 ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: exercise7.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp_2/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise7.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23480	   1168	  22564	  47212	   b86c	exercise7.elf
+Finished building: exercise7.elf.size
+ 
+15:05:02 **** Auto Build of project exercise7_bsp_2 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/iosc_top_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/iosc_top_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/iosc_top_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/iosc_top_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iosc_top"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+15:05:32 **** Auto Build of configuration Debug for project exercise7 ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: exercise7.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp_2/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: exercise7.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23480	   1168	  22564	  47212	   b86c	exercise7.elf
+Finished building: exercise7.elf.size
+ 
+15:05:34 **** Clean-only build of project exercise7_bsp_2 ****
+make -k clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+15:05:34 **** Clean-only build of configuration Debug for project exercise7 ****
 make clean 
 rm -rf  ./src/main.o  ./src/main.d  exercise7.elf.size  exercise7.elf
  
-11:25:43 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR+0xf4, ctrlVal); // Offset because magic
-   ^
-../src/main.c:40:12: error: 'XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR' undeclared (first use in this function)
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR+0xf4, ctrlVal); // Offset because magic
-            ^
-../src/main.c:40:12: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-make: *** [src/main.o] Fejl 1
-11:25:58 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR+0xf4, ctrlVal); // Offset because magic
-   ^
-../src/main.c:40:12: error: 'XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR' undeclared (first use in this function)
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR+0xf4, ctrlVal); // Offset because magic
-            ^
-../src/main.c:40:12: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-make: *** [src/main.o] Fejl 1
-11:26:39 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR+0xf4, ctrlVal); // Offset because magic
-   ^
-../src/main.c:40:12: error: 'XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR' undeclared (first use in this function)
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR+0xf4, ctrlVal); // Offset because magic
-            ^
-../src/main.c:40:12: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-make: *** [src/main.o] Fejl 1
-11:26:56 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR+0xf4, ctrlVal); // Offset because magic
-   ^
-../src/main.c:40:12: error: 'XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR' undeclared (first use in this function)
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR+0xf4, ctrlVal); // Offset because magic
-            ^
-../src/main.c:40:12: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-make: *** [src/main.o] Fejl 1
-11:27:25 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR, ctrlVal); // Offset because magic +0xf4
-   ^
-../src/main.c:40:12: error: 'XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR' undeclared (first use in this function)
-   Xil_Out8(XPAR_ADVIOS_0_S_AXI_SLV0_BASEADDR, ctrlVal); // Offset because magic +0xf4
-            ^
-../src/main.c:40:12: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-make: *** [src/main.o] Fejl 1
-11:28:48 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:14:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:15:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:40:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_IOSC_0_S_AXI_SLV0_BASEADDR+0xf4, ctrlVal); // Offset because magic +0xf4
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp_2/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22816	   1152	  22564	  46532	   b5c4	exercise7.elf
-Finished building: exercise7.elf.size
- 
-11:28:56 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-10:26:16 **** Incremental Build of configuration Debug for project exercise7 ****
-make all 
-make: Ingenting at gøre for 'all'.
-23:51:43 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:13:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-   xil_printf("CMD:> ");
-   ^
-../src/main.c:14:3: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
-   value = inbyte(); // Read char from console
-   ^
-../src/main.c:39:3: warning: implicit declaration of function 'Xil_Out8' [-Wimplicit-function-declaration]
-   Xil_Out8(XPAR_IOSC_0_S_AXI_SLV0_BASEADDR+0xf4, ctrlVal); // Offset because magic +0xf4
-   ^
-../src/main.c:10:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp_2/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22816	   1152	  22564	  46532	   b5c4	exercise7.elf
-Finished building: exercise7.elf.size
- 
-13:22:50 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:42:3: error: unknown type name 'Xio'
-   Xio
-   ^
-../src/main.c:43:14: error: expected declaration specifiers or '...' before string constant
-   xil_printf("Value: %X written to ctrl \r\n", ctrlVal);
-              ^
-../src/main.c:43:48: error: expected declaration specifiers or '...' before 'ctrlVal'
-   xil_printf("Value: %X written to ctrl \r\n", ctrlVal);
-                                                ^
-../src/main.c:12:8: warning: unused variable 'IOsys' [-Wunused-variable]
-  XIosc IOsys;
-        ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-make: *** [src/main.o] Fejl 1
-13:26:29 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:15:24: error: 'ioscHLS' undeclared (first use in this function)
-  if (XIosc_Initialize(&ioscHLS, XPAR_IOSC_0_DEVICE_ID) != XST_SUCCESS) {
-                        ^
-../src/main.c:15:24: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:16:3: warning: 'return' with a value, in function returning void [enabled by default]
-   return XST_FAILURE;
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-make: *** [src/main.o] Fejl 1
-13:32:39 **** Auto Build of configuration Debug for project exercise7 ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_2/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void) {
-      ^
-../src/main.c: In function 'main':
-../src/main.c:16:3: warning: 'return' with a value, in function returning void [enabled by default]
-   return XST_FAILURE;
-   ^
-../src/main.c:11:23: warning: variable 'skip' set but not used [-Wunused-but-set-variable]
-  char ctrlVal, value, skip;
-                       ^
-Finished building: ../src/main.c
- 
-Building target: exercise7.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../exercise7_bsp_2/ps7_cortexa9_0/lib -o "exercise7.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: exercise7.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  23480	   1168	  22564	  47212	   b86c	exercise7.elf
-Finished building: exercise7.elf.size
- 
-13:33:43 **** Auto Build of configuration Debug for project exercise7 ****
+15:05:35 **** Build of project exercise7_bsp_2 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/iosc_top_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/iosc_top_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/iosc_top_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/iosc_top_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iosc_top"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+15:06:03 **** Build of configuration Debug for project exercise7 ****
 make all 
 Building file: ../src/main.c
 Invoking: ARM gcc compiler
@@ -1336,3 +321,74 @@ arm-xilinx-eabi-size exercise7.elf  |tee "exercise7.elf.size"
   23480	   1168	  22564	  47212	   b86c	exercise7.elf
 Finished building: exercise7.elf.size
  
+15:12:05 **** Auto Build of configuration Debug for project exercise7 ****
+make all 
+make: Ingenting at gøre for 'all'.
+15:12:47 **** Build of project exercise7_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+15:13:36 **** Clean-only build of configuration Debug for project exercise7 ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  exercise7.elf.size  exercise7.elf
+ 
+15:13:36 **** Auto Build of configuration Debug for project exercise7 ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../exercise7_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:8:19: fatal error: xiosc.h: No such file or directory
+ #include "xiosc.h"
+                   ^
+compilation terminated.
+make: *** [src/main.o] Fejl 1

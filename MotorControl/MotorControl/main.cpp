@@ -1,16 +1,16 @@
 #include "main.h"
 
-void MotorControl::pwmThread() {
+void MotorCtrl::pwmThread() {
 	//Group ports into AXI4 slave slv0
 	#pragma HLS resource core=AXI4LiteS metadata="-bus_bundle slv0" variable=pwmR
 	#pragma HLS resource core=AXI4LiteS metadata="-bus_bundle slv0" variable=pwmL
+	#pragma HLS resource core=AXI4LiteS metadata="-bus_bundle slv0" variable=Direction
 
 	//Initialization
 	wait();
 
 	while (true) {
 
-		wait();
 		if (pwmClock == true) {
 
 			// Set DIR
@@ -31,11 +31,13 @@ void MotorControl::pwmThread() {
 			} else {
 				EN2.write(false);
 			}
+
+			wait();
 		}
 	}
 }
 
-void MotorControl::clockDividerThread() {
+void MotorCtrl::clockDividerThread() {
 	while (1) {
 		wait();
 

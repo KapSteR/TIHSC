@@ -1,0 +1,13 @@
+/*
+ * main.c
+ *
+ *  Created on: 20/05/2015
+ *      Author: Kasper
+ */
+
+#include "xparameters.h"
+
+int main(void){
+
+	return 1
+}

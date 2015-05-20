@@ -5,7 +5,7 @@
 
 #include <systemc.h>
 
-SC_MODULE(MotorControl) {
+SC_MODULE(MotorCtrl) {
 
 	//Ports
 	sc_in <bool> clk;
@@ -25,7 +25,7 @@ SC_MODULE(MotorControl) {
 
 
 	//Variables
-	sc_uint<16> pwmCount;
+	sc_uint<10> pwmCount;
 	sc_uint<32> dividerCount;
 
 
@@ -39,7 +39,7 @@ SC_MODULE(MotorControl) {
 	void clockDividerThread();
 
 	//Constructor
-	SC_CTOR(MotorControl) {
+	SC_CTOR(MotorCtrl) {
 		//Process Registration
 		SC_CTHREAD(pwmThread, clk.pos());
 		SC_CTHREAD(clockDividerThread, clk.pos());

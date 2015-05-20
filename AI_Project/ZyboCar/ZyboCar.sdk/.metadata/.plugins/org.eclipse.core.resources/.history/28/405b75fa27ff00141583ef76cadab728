@@ -1,0 +1,60 @@
+/*
+ * Empty C++ Application
+ */
+
+#include "xparameters.h"
+#include "xmotorctrl.h"
+#include <stdlib.h>
+
+int getNumber();
+
+int main() {
+
+	XMotorctrl motor;
+	XMotorctrl_Initialize(&motor, XPAR_MOTORCTRL_0_DEVICE_ID);
+
+	char inputByte;
+	int pwmLeft, pwmRight;
+
+	while (1) {
+
+		xil_printf("Input R/L to set PWN Duty Cycle for Right/Left:>");
+
+		inputByte = inbyte();
+
+		if (inputByte == 'R') {
+			xil_printf("Input 4 digit value (0-1023) for right motor duty-cycle:>");
+			pwmRight = getNumber();
+
+		}
+
+		else if (inputByte == 'L') {
+			xil_printf("Input 4 digit value (0-1023) for LEFT motor duty-cycle:>");
+			pwmLeft = getNumber();
+
+		}
+
+		else {
+			xil_printf("Invalid input \r\n");
+		}
+
+
+
+	}
+
+	return 0;
+}
+
+int getNumber(void) {
+
+	char in_byte;
+	char in_string[4];
+
+	for (int i = 3; i > 0; i--) {
+
+		in_byte = inbyte();
+		in_string[i] = in_byte;
+	}
+
+	return atoi(in_string);
+}

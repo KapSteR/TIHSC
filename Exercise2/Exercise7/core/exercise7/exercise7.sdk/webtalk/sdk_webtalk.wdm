@@ -20,9 +20,9 @@ clients =
 	{ client_name = "sdk"; 
 		rules = (
 			{
-				context="sdk\\\\bsp/1431681905023";
-				xml_map="sdk\\\\bsp/1431681905023";
-				html_map="sdk\\\\bsp/1431681905023";
+				context="sdk\\\\bsp/1432127544903";
+				xml_map="sdk\\\\bsp/1432127544903";
+				html_map="sdk\\\\bsp/1432127544903";
 				html_format="UnisimStatsStyle";
 			}
 		);

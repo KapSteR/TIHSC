@@ -3,6 +3,7 @@
 	<name>exercise7</name>
 	<comment></comment>
 	<projects>
+		<project>exercise7_bsp_0</project>
 		<project>exercise7_bsp_2</project>
 		<project>exercise7_bsp</project>
 	</projects>

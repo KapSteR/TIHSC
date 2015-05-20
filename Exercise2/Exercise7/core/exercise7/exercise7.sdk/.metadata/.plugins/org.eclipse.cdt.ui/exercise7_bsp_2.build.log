@@ -1,4 +1,4 @@
-11:25:12 **** Build of project exercise7_bsp_2 ****
+15:05:35 **** Build of project exercise7_bsp_2 ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
 make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
@@ -58,5 +58,5 @@ make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm
 "Compiling xadcps"
 'Finished building libraries'
 
-11:25:42 Build Finished (took 30s.202ms)
+15:06:03 Build Finished (took 28s.126ms)
 

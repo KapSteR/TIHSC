@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:\\Users\\Kasper\\Documents\\GitHub\\TIHSC\\Exercise2\\Exercise7\\core\\exercise7\\exercise7.sdk\\webtalk
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "fr maj 15 11:58:42 2015" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "on maj 20 15:13:43 2015" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "SDK v2014.4" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2014.4" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "amd64" -context "software_version_and_target_device"
@@ -12,9 +12,9 @@ webtalk_add_data -client project -key target_family -value "NA" -context "softwa
 webtalk_add_data -client project -key target_device -value "NA" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_package -value "NA" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_speed -value "NA" -context "software_version_and_target_device"
-webtalk_add_data -client project -key random_id -value "9mg31647idcil6o5jb1l8u6e0v" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_id -value "2014.4_12" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "12" -context "software_version_and_target_device"
+webtalk_add_data -client project -key random_id -value "t14fd01slrp28un1igt72ae1ll" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_id -value "2014.4_20" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "20" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7 CPU       Q 820  @ 1.73GHz" -context "user_environment"
@@ -22,9 +22,9 @@ webtalk_add_data -client project -key cpu_speed -value "1729 MHz" -context "user
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "8.000 GB" -context "user_environment"
 webtalk_register_client -client sdk
-webtalk_add_data -client sdk -key uid -value "1431681905023" -context "sdk\\\\bsp/1431681905023"
-webtalk_add_data -client sdk -key hwid -value "1431677405626" -context "sdk\\\\bsp/1431681905023"
-webtalk_add_data -client sdk -key os -value "standalone" -context "sdk\\\\bsp/1431681905023"
-webtalk_add_data -client sdk -key apptemplate -value "null" -context "sdk\\\\bsp/1431681905023"
-webtalk_transmit -clientid 2489645717 -regid "211042119_0_0_130" -xml C:\\Users\\Kasper\\Documents\\GitHub\\TIHSC\\Exercise2\\Exercise7\\core\\exercise7\\exercise7.sdk\\webtalk\\usage_statistics_ext_sdk.xml -html C:\\Users\\Kasper\\Documents\\GitHub\\TIHSC\\Exercise2\\Exercise7\\core\\exercise7\\exercise7.sdk\\webtalk\\usage_statistics_ext_sdk.html -wdm C:\\Users\\Kasper\\Documents\\GitHub\\TIHSC\\Exercise2\\Exercise7\\core\\exercise7\\exercise7.sdk\\webtalk\\sdk_webtalk.wdm -intro "<H3>SDK Usage Report</H3><BR>"
+webtalk_add_data -client sdk -key uid -value "1432127544903" -context "sdk\\\\bsp/1432127544903"
+webtalk_add_data -client sdk -key hwid -value "1431677405626" -context "sdk\\\\bsp/1432127544903"
+webtalk_add_data -client sdk -key os -value "standalone" -context "sdk\\\\bsp/1432127544903"
+webtalk_add_data -client sdk -key apptemplate -value "null" -context "sdk\\\\bsp/1432127544903"
+webtalk_transmit -clientid 4294387266 -regid "211042119_0_0_130" -xml C:\\Users\\Kasper\\Documents\\GitHub\\TIHSC\\Exercise2\\Exercise7\\core\\exercise7\\exercise7.sdk\\webtalk\\usage_statistics_ext_sdk.xml -html C:\\Users\\Kasper\\Documents\\GitHub\\TIHSC\\Exercise2\\Exercise7\\core\\exercise7\\exercise7.sdk\\webtalk\\usage_statistics_ext_sdk.html -wdm C:\\Users\\Kasper\\Documents\\GitHub\\TIHSC\\Exercise2\\Exercise7\\core\\exercise7\\exercise7.sdk\\webtalk\\sdk_webtalk.wdm -intro "<H3>SDK Usage Report</H3><BR>"
 webtalk_terminate
