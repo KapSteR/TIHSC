@@ -1,0 +1,21 @@
+/*
+ * main.c
+ *
+ *  Created on: 21/05/2015
+ *      Author: Kasper
+ */
+
+#include "xparameters.h"
+#include "xmotorctrl.h"
+#define XPAR_MOTORCTRL_DEVICE_ID 0
+
+int main(void) {
+
+	XMotorctrl motor;
+
+	motor.IsReady = 1;
+	motor.Slv0_BaseAddress = ;
+
+	return 0;
+}
+

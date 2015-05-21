@@ -1,0 +1,22 @@
+/*
+ * main.c
+ *
+ *  Created on: 21/05/2015
+ *      Author: Kasper
+ */
+
+#include "xparameters.h"
+#include "xmotorctrl.h"
+#define XPAR_MOTORCTRL_DEVICE_ID 0
+
+int main(void) {
+
+	XMotorctrl motor;
+	if (!XMotorctrl_Initialize(&motor, XPAR_MOTORCTRL_DEVICE_ID) == XST_SUCCESS) {
+		xil_printf("MotorControl Setup error\n\r");
+		return 1;
+	}
+
+	return 0;
+}
+

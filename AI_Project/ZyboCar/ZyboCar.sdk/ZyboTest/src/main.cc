@@ -1,0 +1,90 @@
+/*
+ * Empty C++ Application
+ */
+#include "xparameters.h"
+#include "xmotorctrl.h"
+#include <stdlib.h>
+
+int getNumber();
+
+int main() {
+
+	XMotorctrl motor;
+//	if (!XMotorctrl_Initialize(&motor, XPAR_MOTORCTRL_DEVICE_ID) == XST_SUCCESS) {
+//		xil_printf("MotorControl Setup error\n\r");
+//		return 1;
+//	}
+
+	// #HAXXOR
+	motor.IsReady = 1;
+	motor.Slv0_BaseAddress = XPAR_MOTORCTRL_0_S_AXI_SLV0_BASEADDR;
+
+	char inputByte;
+	u32 pwmLeft, pwmRight;
+
+	while (1) {
+
+		xil_printf(
+				"Input R/L to set PWN Duty Cycle for Right/Left | Input D to set direction:>");
+
+		inputByte = inbyte();
+		inbyte(); // Skip CR
+		inbyte(); // Skip LF
+
+		if (inputByte == 'R') {
+			xil_printf(
+					"Input 4 digit value (0-1023) for right motor duty-cycle:>");
+			pwmRight = getNumber();
+			XMotorctrl_SetPwml(&motor, pwmRight);
+
+		}
+
+		else if (inputByte == 'L') {
+			xil_printf("Input 4 digit value (0-1023) for LEFT motor duty-cycle:>");
+			pwmLeft = getNumber();
+			XMotorctrl_SetPwml(&motor, pwmLeft);
+
+		}
+
+		else if (inputByte == 'D') {
+			xil_printf("Input 1/0 for forward/backward:>");
+			inputByte = inbyte();
+			inbyte(); // Skip CR
+			inbyte(); // Skip LF
+			if (inputByte == '1') {
+				XMotorctrl_SetDirection(&motor, 1);
+			}
+
+			else if (inputByte == '0') {
+				XMotorctrl_SetDirection(&motor, 0);
+			}
+
+			else {
+				xil_printf("Invalid input \r\n");
+			}
+		}
+
+		else {
+			xil_printf("Invalid input \r\n");
+		}
+	}
+
+	return 0;
+}
+
+int getNumber(void) {
+
+	char in_byte;
+	char in_string[4];
+
+	for (int i = 3; i > 0; i--) {
+
+		in_byte = inbyte();
+		in_string[i] = in_byte;
+	}
+
+	inbyte(); // Skip CR
+	inbyte(); // Skip LF
+
+	return atoi(in_string);
+}

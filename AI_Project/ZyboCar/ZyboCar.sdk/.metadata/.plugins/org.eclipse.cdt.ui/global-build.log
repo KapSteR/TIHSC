@@ -1,4 +1,4 @@
-15:43:00 **** Build of project ZyboMotorTest_bsp ****
+11:14:44 **** Build of project ZyboCar_Motor_Test_bsp ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
 make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
@@ -52,7 +52,175 @@ make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm
 make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 "Compiling xadcps"
 'Finished building libraries'
-15:52:29 **** Auto Build of project ZyboMotorTest_bsp ****
+11:15:35 **** Clean-only build of project ZyboCar_Motor_Test_bsp ****
+make -k clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+11:15:36 **** Build of project ZyboCar_Motor_Test_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+11:16:08 **** Auto Build of project ZyboCar_Motor_Test_bsp ****
+make -k all 
+'Finished building libraries'
+11:16:36 **** Auto Build of project ZyboCar_Motor_Test_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+11:19:16 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+11:20:22 **** Auto Build of project standalone_bsp_0 ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
 make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
@@ -117,245 +285,7 @@ make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm
 make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 "Compiling xadcps"
 make: Målet 'all' ikke genskabt på grund af fejl.
-
-**** Build of configuration Debug for project ZyboMotorTest ****
-
-Nothing to build for project ZyboMotorTest
-15:54:24 **** Auto Build of configuration Debug for project ZyboMotorTest ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ZyboMotorTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: ZyboMotorTest.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ZyboMotorTest_bsp/ps7_cortexa9_0/lib -o "ZyboMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-../../ZyboMotorTest_bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboMotorTest_bsp\ps7_cortexa9_0\libsrc\standalone_v4_2\src/xil-crt0.S:128: undefined reference to `main'
-collect2.exe: error: ld returned 1 exit status
-make: *** [ZyboMotorTest.elf] Fejl 1
-15:55:50 **** Auto Build of configuration Debug for project ZyboMotorTest ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ZyboMotorTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: ZyboMotorTest.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ZyboMotorTest_bsp/ps7_cortexa9_0/lib -o "ZyboMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-../../ZyboMotorTest_bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboMotorTest_bsp\ps7_cortexa9_0\libsrc\standalone_v4_2\src/xil-crt0.S:128: undefined reference to `main'
-collect2.exe: error: ld returned 1 exit status
-make: *** [ZyboMotorTest.elf] Fejl 1
-15:56:04 **** Auto Build of configuration Debug for project ZyboMotorTest ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ZyboMotorTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void){
-      ^
-../src/main.c: In function 'main':
-../src/main.c:13:1: error: expected expression before '}' token
- }
- ^
-../src/main.c:12:2: warning: 'return' with a value, in function returning void [enabled by default]
-  return
-  ^
-make: *** [src/main.o] Fejl 1
-15:56:15 **** Auto Build of configuration Debug for project ZyboMotorTest ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ZyboMotorTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:13:1: error: expected ';' before '}' token
- }
- ^
-make: *** [src/main.o] Fejl 1
-15:56:18 **** Auto Build of configuration Debug for project ZyboMotorTest ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ZyboMotorTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: ZyboMotorTest.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ZyboMotorTest_bsp/ps7_cortexa9_0/lib -o "ZyboMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: ZyboMotorTest.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size ZyboMotorTest.elf  |tee "ZyboMotorTest.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  19492	   1152	  22564	  43208	   a8c8	ZyboMotorTest.elf
-Finished building: ZyboMotorTest.elf.size
- 
-15:57:06 **** Auto Build of configuration Debug for project ZyboMotorTest ****
-make all 
-make: Ingenting at gøre for 'all'.
-15:57:29 **** Build of project standalone_bsp_0_lol ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling devcfg"
-arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling xadcps"
-'Finished building libraries'
-15:57:57 **** Clean-only build of configuration Debug for project ZyboMotorTest ****
-make clean 
-rm -rf  ./src/main.o  ./src/main.d  ZyboMotorTest.elf.size  ZyboMotorTest.elf
- 
-15:57:57 **** Auto Build of configuration Debug for project ZyboMotorTest ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: ZyboMotorTest.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: ZyboMotorTest.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size ZyboMotorTest.elf  |tee "ZyboMotorTest.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  19492	   1152	  22564	  43208	   a8c8	ZyboMotorTest.elf
-Finished building: ZyboMotorTest.elf.size
- 
-15:59:00 **** Auto Build of project standalone_bsp_0_lol ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling motorctrl_top"
-xmotorctrl_sinit.c: In function 'XMotorctrl_LookupConfig':
-xmotorctrl_sinit.c:21:26: error: 'XPAR_XMOTORCTRL_NUM_INSTANCES' undeclared (first use in this function)
-  for (Index = 0; Index < XPAR_XMOTORCTRL_NUM_INSTANCES; Index++) {
-                          ^
-xmotorctrl_sinit.c:21:26: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [libs] Fejl 1
-make: *** [ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src/make.libs] Fejl 2
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling xadcps"
-make: Målet 'all' ikke genskabt på grund af fejl.
-15:59:28 **** Auto Build of configuration Debug for project ZyboMotorTest ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: ZyboMotorTest.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: ZyboMotorTest.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size ZyboMotorTest.elf  |tee "ZyboMotorTest.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  19492	   1152	  22564	  43208	   a8c8	ZyboMotorTest.elf
-Finished building: ZyboMotorTest.elf.size
- 
-20:22:02 **** Auto Build of project standalone_bsp_0_lol ****
+11:22:11 **** Auto Build of project standalone_bsp_0 ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
 make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
@@ -413,1180 +343,275 @@ make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm
 make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 "Compiling xadcps"
 'Finished building libraries'
-20:22:34 **** Auto Build of configuration Debug for project ZyboMotorTest ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: ZyboMotorTest.elf
-Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: ZyboMotorTest.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size ZyboMotorTest.elf  |tee "ZyboMotorTest.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  19492	   1152	  22564	  43208	   a8c8	ZyboMotorTest.elf
-Finished building: ZyboMotorTest.elf.size
- 
-20:28:12 **** Auto Build of configuration Debug for project ZyboMotorTest ****
-make all 
-Building file: ../src/main.c
-Invoking: ARM gcc compiler
-arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:21:2: error: expected ';' before '}' token
-  }
-  ^
-make: *** [src/main.o] Fejl 1
-20:44:17 **** Build of configuration Debug for project ZyboCarMotorTest ****
+11:24:42 **** Build of configuration Debug for project ZyboTest ****
 make all 
 Building file: ../src/main.cc
 Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
 Finished building: ../src/main.cc
  
-Building target: ZyboCarMotorTest.elf
+Building target: ZyboTest.elf
 Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-Finished building target: ZyboCarMotorTest.elf
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: ZyboTest.elf
  
 Invoking: ARM Print Size
-arm-xilinx-eabi-size ZyboCarMotorTest.elf  |tee "ZyboCarMotorTest.elf.size"
+arm-xilinx-eabi-size ZyboTest.elf  |tee "ZyboTest.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  19500	   1152	  22556	  43208	   a8c8	ZyboCarMotorTest.elf
-Finished building: ZyboCarMotorTest.elf.size
+  19500	   1152	  22556	  43208	   a8c8	ZyboTest.elf
+Finished building: ZyboTest.elf.size
  
-20:44:30 **** Clean-only build of configuration Debug for project ZyboCarMotorTest ****
-make clean 
-rm -rf  ./src/main.d  ./src/main.o  ZyboCarMotorTest.elf.size  ZyboCarMotorTest.elf
- 
-20:44:30 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
+11:26:19 **** Auto Build of configuration Debug for project ZyboTest ****
 make all 
-Building file: ../src/main.cpp
+Building file: ../src/main.cc
 Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: ZyboCarMotorTest.elf
-Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-Finished building target: ZyboCarMotorTest.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size ZyboCarMotorTest.elf  |tee "ZyboCarMotorTest.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  19500	   1152	  22556	  43208	   a8c8	ZyboCarMotorTest.elf
-Finished building: ZyboCarMotorTest.elf.size
- 
-20:45:21 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:13:37: error: 'XPAR_MOTORCTRL_DEVICE_ID' was not declared in this scope
+  if (!XMotorctrl_Initialize(&motor, XPAR_MOTORCTRL_DEVICE_ID) == XST_SUCCESS) {
+                                     ^
+make: *** [src/main.o] Fejl 1
+11:26:23 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling motorctrl_top"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+11:26:58 **** Auto Build of configuration Debug for project ZyboTest ****
 make all 
-Building file: ../src/main.cpp
+Building file: ../src/main.cc
 Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
- 
-Building target: ZyboCarMotorTest.elf
-Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-Finished building target: ZyboCarMotorTest.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size ZyboCarMotorTest.elf  |tee "ZyboCarMotorTest.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  19484	   1152	  22556	  43192	   a8b8	ZyboCarMotorTest.elf
-Finished building: ZyboCarMotorTest.elf.size
- 
-20:57:20 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:13:37: error: 'XPAR_MOTORCTRL_DEVICE_ID' was not declared in this scope
+  if (!XMotorctrl_Initialize(&motor, XPAR_MOTORCTRL_DEVICE_ID) == XST_SUCCESS) {
+                                     ^
+make: *** [src/main.o] Fejl 1
+
+**** Build of configuration Debug for project Simple_motor_test ****
+
+Nothing to build for project Simple_motor_test
+11:27:23 **** Auto Build of configuration Debug for project Simple_motor_test ****
 make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:14:2: error: expected initializer before 'while'
-  while (1) {
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Simple_motor_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Simple_motor_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../standalone_bsp_0/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0\ps7_cortexa9_0\libsrc\standalone_v4_2\src/xil-crt0.S:128: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Simple_motor_test.elf] Fejl 1
+11:27:54 **** Auto Build of configuration Debug for project Simple_motor_test ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:10:2: error: unknown type name 'XMotorctrl'
+  XMotorctrl motor;
   ^
-make: *** [src/main.o] Fejl 1
-20:59:55 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:12:7: warning: unused variable 'input' [-Wunused-variable]
-  char input;
-       ^
-Finished building: ../src/main.cpp
- 
-Building target: ZyboCarMotorTest.elf
-Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-Finished building target: ZyboCarMotorTest.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size ZyboCarMotorTest.elf  |tee "ZyboCarMotorTest.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  33780	   2192	  22628	  58600	   e4e8	ZyboCarMotorTest.elf
-Finished building: ZyboCarMotorTest.elf.size
- 
-21:00:03 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp:8:23: fatal error: ../../standalone_bsp_0_lol/ps7_cortexa9_0/include/std::vector: Invalid argument
- #include <std::vector>
-                       ^
-compilation terminated.
-make: *** [src/main.o] Fejl 1
-21:00:14 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:12:7: warning: unused variable 'input' [-Wunused-variable]
-  char input;
-       ^
-Finished building: ../src/main.cpp
- 
-Building target: ZyboCarMotorTest.elf
-Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-Finished building target: ZyboCarMotorTest.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size ZyboCarMotorTest.elf  |tee "ZyboCarMotorTest.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  33780	   2192	  22628	  58600	   e4e8	ZyboCarMotorTest.elf
-Finished building: ZyboCarMotorTest.elf.size
- 
-21:01:29 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:10:7: warning: unused variable 'input' [-Wunused-variable]
-  char input[4];
-       ^
-Finished building: ../src/main.cpp
- 
-Building target: ZyboCarMotorTest.elf
-Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-Finished building target: ZyboCarMotorTest.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size ZyboCarMotorTest.elf  |tee "ZyboCarMotorTest.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  33780	   2192	  22628	  58600	   e4e8	ZyboCarMotorTest.elf
-Finished building: ZyboCarMotorTest.elf.size
- 
-21:03:01 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:10:7: warning: unused variable 'input' [-Wunused-variable]
-  char input[4];
-       ^
-../src/main.cpp:11:6: warning: unused variable 'pwmLeft' [-Wunused-variable]
-  int pwmLeft, pwmRight;
-      ^
-../src/main.cpp:11:15: warning: unused variable 'pwmRight' [-Wunused-variable]
-  int pwmLeft, pwmRight;
-               ^
-Finished building: ../src/main.cpp
- 
-Building target: ZyboCarMotorTest.elf
-Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-Finished building target: ZyboCarMotorTest.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size ZyboCarMotorTest.elf  |tee "ZyboCarMotorTest.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  33780	   2192	  22628	  58600	   e4e8	ZyboCarMotorTest.elf
-Finished building: ZyboCarMotorTest.elf.size
- 
-21:14:09 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:38:13: error: expected primary-expression before ')' token
-    else if (){
-             ^
-../src/main.cpp:12:6: warning: unused variable 'pwmLeft' [-Wunused-variable]
-  int pwmLeft, pwmRight;
-      ^
-../src/main.cpp:12:15: warning: unused variable 'pwmRight' [-Wunused-variable]
-  int pwmLeft, pwmRight;
-               ^
-make: *** [src/main.o] Fejl 1
-21:21:53 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:12:7: warning: unused variable 'inString' [-Wunused-variable]
-  char inString[4];
-       ^
-../src/main.cpp:14:6: warning: unused variable 'pwmLeft' [-Wunused-variable]
-  int pwmLeft, pwmRight;
-      ^
-../src/main.cpp:14:15: warning: unused variable 'pwmRight' [-Wunused-variable]
-  int pwmLeft, pwmRight;
-               ^
-../src/main.cpp: In function 'int getNumber()':
-../src/main.cpp:50:23: error: 'atoi' was not declared in this scope
-  return atoi(in_string);
-                       ^
-../src/main.cpp: At global scope:
-../src/main.cpp:53:1: error: expected declaration before '}' token
- }
- ^
-../src/main.cpp: In function 'int getNumber()':
-../src/main.cpp:51:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-make: *** [src/main.o] Fejl 1
-21:22:57 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:13:7: warning: unused variable 'inString' [-Wunused-variable]
-  char inString[4];
-       ^
-../src/main.cpp:15:6: warning: unused variable 'pwmLeft' [-Wunused-variable]
-  int pwmLeft, pwmRight;
-      ^
-../src/main.cpp:15:15: warning: unused variable 'pwmRight' [-Wunused-variable]
-  int pwmLeft, pwmRight;
-               ^
-../src/main.cpp: At global scope:
-../src/main.cpp:54:1: error: expected declaration before '}' token
- }
- ^
-make: *** [src/main.o] Fejl 1
-21:23:14 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:13:7: warning: unused variable 'inString' [-Wunused-variable]
-  char inString[4];
-       ^
-../src/main.cpp:15:6: warning: unused variable 'pwmLeft' [-Wunused-variable]
-  int pwmLeft, pwmRight;
-      ^
-../src/main.cpp:15:15: warning: unused variable 'pwmRight' [-Wunused-variable]
-  int pwmLeft, pwmRight;
-               ^
-Finished building: ../src/main.cpp
- 
-Building target: ZyboCarMotorTest.elf
-Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-Finished building target: ZyboCarMotorTest.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size ZyboCarMotorTest.elf  |tee "ZyboCarMotorTest.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  34560	   2192	  22620	  59372	   e7ec	ZyboCarMotorTest.elf
-Finished building: ZyboCarMotorTest.elf.size
- 
-21:27:57 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:13:7: warning: unused variable 'inString' [-Wunused-variable]
-  char inString[4];
-       ^
-../src/main.cpp:15:6: warning: variable 'pwmLeft' set but not used [-Wunused-but-set-variable]
-  int pwmLeft, pwmRight;
-      ^
-../src/main.cpp:15:15: warning: variable 'pwmRight' set but not used [-Wunused-but-set-variable]
-  int pwmLeft, pwmRight;
-               ^
-Finished building: ../src/main.cpp
- 
-Building target: ZyboCarMotorTest.elf
-Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-Finished building target: ZyboCarMotorTest.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size ZyboCarMotorTest.elf  |tee "ZyboCarMotorTest.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  34744	   2192	  22620	  59556	   e8a4	ZyboCarMotorTest.elf
-Finished building: ZyboCarMotorTest.elf.size
- 
-21:29:32 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:41:3: error: 'XM' was not declared in this scope
-   XM
+../src/main.c:11:2: warning: implicit declaration of function 'XMotorctrl_Initialize' [-Wimplicit-function-declaration]
+  if (!XMotorctrl_Initialize(&motor, XPAR_MOTORCTRL_DEVICE_ID) == XST_SUCCESS) {
+  ^
+../src/main.c:11:37: error: 'XPAR_MOTORCTRL_DEVICE_ID' undeclared (first use in this function)
+  if (!XMotorctrl_Initialize(&motor, XPAR_MOTORCTRL_DEVICE_ID) == XST_SUCCESS) {
+                                     ^
+../src/main.c:11:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:11:66: error: 'XST_SUCCESS' undeclared (first use in this function)
+  if (!XMotorctrl_Initialize(&motor, XPAR_MOTORCTRL_DEVICE_ID) == XST_SUCCESS) {
+                                                                  ^
+../src/main.c:12:3: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+   xil_printf("MotorControl Setup error\n\r");
    ^
-../src/main.cpp:43:2: error: expected ';' before '}' token
-  }
-  ^
-../src/main.cpp:13:13: warning: unused variable 'motor' [-Wunused-variable]
+make: *** [src/main.o] Fejl 1
+11:28:09 **** Auto Build of configuration Debug for project Simple_motor_test ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:14:37: error: 'XPAR_MOTORCTRL_DEVICE_ID' undeclared (first use in this function)
+  if (!XMotorctrl_Initialize(&motor, XPAR_MOTORCTRL_DEVICE_ID) == XST_SUCCESS) {
+                                     ^
+../src/main.c:14:37: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Fejl 1
+11:28:59 **** Auto Build of configuration Debug for project Simple_motor_test ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Simple_motor_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Simple_motor_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../standalone_bsp_0/ps7_cortexa9_0/lib\libxil.a(xmotorctrl_sinit.o): In function `XMotorctrl_LookupConfig':
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Simple_motor_test.elf] Fejl 1
+11:31:28 **** Auto Build of configuration Debug for project Simple_motor_test ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:17:27: error: expected expression before ';' token
+  motor.Slv0_BaseAddress = ;
+                           ^
+../src/main.c:14:13: warning: variable 'motor' set but not used [-Wunused-but-set-variable]
   XMotorctrl motor;
              ^
-../src/main.cpp:15:7: warning: unused variable 'inString' [-Wunused-variable]
-  char inString[4];
-       ^
 make: *** [src/main.o] Fejl 1
-21:32:37 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
+11:31:41 **** Auto Build of configuration Debug for project Simple_motor_test ****
 make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:14:32: error: 'XMOT' was not declared in this scope
-  XMotorctrl_Initialize(&motor, XMOT)
-                                ^
-../src/main.cpp:16:2: error: expected ';' before 'char'
-  char inString[4];
-  ^
-../src/main.cpp:42:3: error: 'XM' was not declared in this scope
-   XM
-   ^
-../src/main.cpp:44:2: error: expected ';' before '}' token
-  }
-  ^
-make: *** [src/main.o] Fejl 1
-21:34:47 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:14:32: error: 'XPAR_MOTORCTRL_0_DEVICE_ID' was not declared in this scope
-  XMotorctrl_Initialize(&motor, XPAR_MOTORCTRL_0_DEVICE_ID)
-                                ^
-../src/main.cpp:16:2: error: expected ';' before 'char'
-  char inString[4];
-  ^
-../src/main.cpp:42:3: error: 'XM' was not declared in this scope
-   XM
-   ^
-../src/main.cpp:44:2: error: expected ';' before '}' token
-  }
-  ^
-make: *** [src/main.o] Fejl 1
-21:34:55 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:14:32: error: 'XPAR_MOTORCTRL_0_DEVICE_ID' was not declared in this scope
-  XMotorctrl_Initialize(&motor, XPAR_MOTORCTRL_0_DEVICE_ID);
-                                ^
-../src/main.cpp:42:3: error: 'XM' was not declared in this scope
-   XM
-   ^
-../src/main.cpp:44:2: error: expected ';' before '}' token
-  }
-  ^
-../src/main.cpp:16:7: warning: unused variable 'inString' [-Wunused-variable]
-  char inString[4];
-       ^
-make: *** [src/main.o] Fejl 1
-21:35:28 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:14:32: error: 'XPAR_MOTORCTRL_0_DEVICE_ID' was not declared in this scope
-  XMotorctrl_Initialize(&motor, XPAR_MOTORCTRL_0_DEVICE_ID);
-                                ^
-../src/main.cpp:41:3: error: 'XM' was not declared in this scope
-   XM
-   ^
-../src/main.cpp:43:2: error: expected ';' before '}' token
-  }
-  ^
-make: *** [src/main.o] Fejl 1
-21:35:33 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:14:32: error: 'XPAR_MOTORCTRL_0_DEVICE_ID' was not declared in this scope
-  XMotorctrl_Initialize(&motor, XPAR_MOTORCTRL_0_DEVICE_ID);
-                                ^
-make: *** [src/main.o] Fejl 1
-21:38:18 **** Auto Build of project standalone_bsp_0_lol ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling motorctrl_top"
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling xadcps"
-'Finished building libraries'
-21:38:51 **** Auto Build of project standalone_bsp_0_lol ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling motorctrl_top"
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling xadcps"
-'Finished building libraries'
-21:39:25 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:14:32: error: 'XPAR_MOTORCTRL_0_DEVICE_ID' was not declared in this scope
-  XMotorctrl_Initialize(&motor, XPAR_MOTORCTRL_0_DEVICE_ID);
-                                ^
-make: *** [src/main.o] Fejl 1
-21:39:50 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:14:32: error: 'XPAR_XMOTORCTRL_0_DEVICE_ID' was not declared in this scope
-  XMotorctrl_Initialize(&motor, XPAR_XMOTORCTRL_0_DEVICE_ID);
-                                ^
-make: *** [src/main.o] Fejl 1
-21:40:13 **** Auto Build of project standalone_bsp_0_lol ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling motorctrl_top"
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling xadcps"
-'Finished building libraries'
-21:40:45 **** Auto Build of project standalone_bsp_0_lol ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling motorctrl_top"
-xmotorctrl_sinit.c: In function 'XMotorctrl_LookupConfig':
-xmotorctrl_sinit.c:21:26: error: 'XPAR_XMOTORCTRL_NUM_INSTANCES' undeclared (first use in this function)
-  for (Index = 0; Index < XPAR_XMOTORCTRL_NUM_INSTANCES; Index++) {
-                          ^
-xmotorctrl_sinit.c:21:26: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [libs] Fejl 1
-make: *** [ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src/make.libs] Fejl 2
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling xadcps"
-make: Målet 'all' ikke genskabt på grund af fejl.
-21:41:18 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:14:32: error: expected primary-expression before ')' token
-  XMotorctrl_Initialize(&motor, );
-                                ^
-make: *** [src/main.o] Fejl 1
-21:42:43 **** Auto Build of project standalone_bsp_0_lol ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling motorctrl_top"
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling xadcps"
-'Finished building libraries'
-21:43:15 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:14:32: error: 'XPAR_Mo' was not declared in this scope
-  XMotorctrl_Initialize(&motor, XPAR_Mo);
-                                ^
-make: *** [src/main.o] Fejl 1
-21:45:06 **** Auto Build of project standalone_bsp_0_lol ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling motorctrl_top"
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling xadcps"
-'Finished building libraries'
-21:45:38 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:14:32: error: 'XPAR_Mo' was not declared in this scope
-  XMotorctrl_Initialize(&motor, XPAR_Mo);
-                                ^
-make: *** [src/main.o] Fejl 1
-21:45:41 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:17:6: warning: variable 'pwmLeft' set but not used [-Wunused-but-set-variable]
-  int pwmLeft, pwmRight;
-      ^
-../src/main.cpp:17:15: warning: variable 'pwmRight' set but not used [-Wunused-but-set-variable]
-  int pwmLeft, pwmRight;
-               ^
-Finished building: ../src/main.cpp
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:14:13: warning: variable 'motor' set but not used [-Wunused-but-set-variable]
+  XMotorctrl motor;
+             ^
+Finished building: ../src/main.c
  
-Building target: ZyboCarMotorTest.elf
-Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-../../standalone_bsp_0_lol/ps7_cortexa9_0/lib\libxil.a(xmotorctrl_sinit.o): In function `XMotorctrl_LookupConfig':
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-collect2.exe: error: ld returned 1 exit status
-make: *** [ZyboCarMotorTest.elf] Fejl 1
-21:47:03 **** Auto Build of project standalone_bsp_0_lol ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling motorctrl_top"
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling xadcps"
-'Finished building libraries'
-21:47:36 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:17:6: warning: variable 'pwmLeft' set but not used [-Wunused-but-set-variable]
-  int pwmLeft, pwmRight;
-      ^
-../src/main.cpp:17:15: warning: variable 'pwmRight' set but not used [-Wunused-but-set-variable]
-  int pwmLeft, pwmRight;
-               ^
-Finished building: ../src/main.cpp
+Building target: Simple_motor_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Simple_motor_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Simple_motor_test.elf
  
-Building target: ZyboCarMotorTest.elf
-Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-../../standalone_bsp_0_lol/ps7_cortexa9_0/lib\libxil.a(xmotorctrl_sinit.o): In function `XMotorctrl_LookupConfig':
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-collect2.exe: error: ld returned 1 exit status
-make: *** [ZyboCarMotorTest.elf] Fejl 1
-21:51:21 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:20:6: warning: variable 'pwmLeft' set but not used [-Wunused-but-set-variable]
-  int pwmLeft, pwmRight;
-      ^
-../src/main.cpp:20:15: warning: variable 'pwmRight' set but not used [-Wunused-but-set-variable]
-  int pwmLeft, pwmRight;
-               ^
-Finished building: ../src/main.cpp
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Simple_motor_test.elf  |tee "Simple_motor_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19516	   1152	  22564	  43232	   a8e0	Simple_motor_test.elf
+Finished building: Simple_motor_test.elf.size
  
-Building target: ZyboCarMotorTest.elf
-Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-../../standalone_bsp_0_lol/ps7_cortexa9_0/lib\libxil.a(xmotorctrl_sinit.o): In function `XMotorctrl_LookupConfig':
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-collect2.exe: error: ld returned 1 exit status
-make: *** [ZyboCarMotorTest.elf] Fejl 1
-21:56:42 **** Auto Build of project standalone_bsp_0_lol ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling motorctrl_top"
-xmotorctrl_sinit.c: In function 'XMotorctrl_LookupConfig':
-xmotorctrl_sinit.c:21:26: error: 'XPAR_XMOTORCTRL_NUM_INSTANCES' undeclared (first use in this function)
-  for (Index = 0; Index < XPAR_XMOTORCTRL_NUM_INSTANCES; Index++) {
-                          ^
-xmotorctrl_sinit.c:21:26: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [libs] Fejl 1
-make: *** [ps7_cortexa9_0/libsrc/motorctrl_top_v1_0/src/make.libs] Fejl 2
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
-"Compiling xadcps"
-make: Målet 'all' ikke genskabt på grund af fejl.
-21:57:14 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
+11:32:28 **** Auto Build of configuration Debug for project Simple_motor_test ****
 make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:20:6: warning: variable 'pwmLeft' set but not used [-Wunused-but-set-variable]
-  int pwmLeft, pwmRight;
-      ^
-../src/main.cpp:20:15: warning: variable 'pwmRight' set but not used [-Wunused-but-set-variable]
-  int pwmLeft, pwmRight;
-               ^
-Finished building: ../src/main.cpp
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
  
-Building target: ZyboCarMotorTest.elf
-Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-../../standalone_bsp_0_lol/ps7_cortexa9_0/lib\libxil.a(xmotorctrl_sinit.o): In function `XMotorctrl_LookupConfig':
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-collect2.exe: error: ld returned 1 exit status
-make: *** [ZyboCarMotorTest.elf] Fejl 1
-22:02:28 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:33:31: error: invalid conversion from 'int' to 'XMotorctrl*' [-fpermissive]
-    XMotorctrl_SetPwml(pwmRight);
-                               ^
-../src/main.cpp:33:31: error: too few arguments to function 'void XMotorctrl_SetPwml(XMotorctrl*, u32)'
-In file included from ../src/main.cpp:6:0:
-../../standalone_bsp_0_lol/ps7_cortexa9_0/include/xmotorctrl.h:86:6: note: declared here
- void XMotorctrl_SetPwml(XMotorctrl *InstancePtr, u32 Data);
-      ^
-../src/main.cpp:40:31: error: invalid conversion from 'int' to 'XMotorctrl*' [-fpermissive]
-    XMotorctrl_SetPwml(pwmRight);
-                               ^
-../src/main.cpp:40:31: error: too few arguments to function 'void XMotorctrl_SetPwml(XMotorctrl*, u32)'
-In file included from ../src/main.cpp:6:0:
-../../standalone_bsp_0_lol/ps7_cortexa9_0/include/xmotorctrl.h:86:6: note: declared here
- void XMotorctrl_SetPwml(XMotorctrl *InstancePtr, u32 Data);
-      ^
-../src/main.cpp:46:4: error: 'input' was not declared in this scope
-    input
-    ^
-../src/main.cpp:47:3: error: expected ';' before '}' token
-   }
-   ^
-make: *** [src/main.o] Fejl 1
-22:03:23 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:40:31: error: invalid conversion from 'u32 {aka long unsigned int}' to 'XMotorctrl*' [-fpermissive]
-    XMotorctrl_SetPwml(pwmRight);
-                               ^
-../src/main.cpp:40:31: error: too few arguments to function 'void XMotorctrl_SetPwml(XMotorctrl*, u32)'
-In file included from ../src/main.cpp:6:0:
-../../standalone_bsp_0_lol/ps7_cortexa9_0/include/xmotorctrl.h:86:6: note: declared here
- void XMotorctrl_SetPwml(XMotorctrl *InstancePtr, u32 Data);
-      ^
-../src/main.cpp:46:4: error: 'input' was not declared in this scope
-    input
-    ^
-../src/main.cpp:47:3: error: expected ';' before '}' token
-   }
-   ^
-make: *** [src/main.o] Fejl 1
-22:04:06 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-../src/main.cpp: In function 'int main()':
-../src/main.cpp:46:4: error: 'input' was not declared in this scope
-    input
-    ^
-../src/main.cpp:47:3: error: expected ';' before '}' token
-   }
-   ^
-make: *** [src/main.o] Fejl 1
-22:05:34 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
+Building target: Simple_motor_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Simple_motor_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Simple_motor_test.elf
  
-Building target: ZyboCarMotorTest.elf
-Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-../../standalone_bsp_0_lol/ps7_cortexa9_0/lib\libxil.a(xmotorctrl_sinit.o): In function `XMotorctrl_LookupConfig':
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-collect2.exe: error: ld returned 1 exit status
-make: *** [ZyboCarMotorTest.elf] Fejl 1
-22:06:56 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
-make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Simple_motor_test.elf  |tee "Simple_motor_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20520	   1152	  22564	  44236	   accc	Simple_motor_test.elf
+Finished building: Simple_motor_test.elf.size
  
-Building target: ZyboCarMotorTest.elf
-Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-../../standalone_bsp_0_lol/ps7_cortexa9_0/lib\libxil.a(xmotorctrl_sinit.o): In function `XMotorctrl_LookupConfig':
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-collect2.exe: error: ld returned 1 exit status
-make: *** [ZyboCarMotorTest.elf] Fejl 1
-22:24:28 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
+11:32:42 **** Auto Build of configuration Debug for project Simple_motor_test ****
 make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
  
-Building target: ZyboCarMotorTest.elf
-Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-../../standalone_bsp_0_lol/ps7_cortexa9_0/lib\libxil.a(xmotorctrl_sinit.o): In function `XMotorctrl_LookupConfig':
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-collect2.exe: error: ld returned 1 exit status
-make: *** [ZyboCarMotorTest.elf] Fejl 1
-22:25:01 **** Auto Build of configuration Debug for project ZyboCarMotorTest ****
+Building target: Simple_motor_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Simple_motor_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Simple_motor_test.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Simple_motor_test.elf  |tee "Simple_motor_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20520	   1152	  22564	  44236	   accc	Simple_motor_test.elf
+Finished building: Simple_motor_test.elf.size
+ 
+11:33:06 **** Auto Build of configuration Debug for project Simple_motor_test ****
 make all 
-Building file: ../src/main.cpp
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0_lol/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
-Finished building: ../src/main.cpp
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
  
-Building target: ZyboCarMotorTest.elf
+Building target: Simple_motor_test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "Simple_motor_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Simple_motor_test.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Simple_motor_test.elf  |tee "Simple_motor_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20520	   1152	  22564	  44236	   accc	Simple_motor_test.elf
+Finished building: Simple_motor_test.elf.size
+ 
+11:41:40 **** Auto Build of configuration Debug for project ZyboTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboTest.elf
 Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0_lol/ps7_cortexa9_0/lib -o "ZyboCarMotorTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-../../standalone_bsp_0_lol/ps7_cortexa9_0/lib\libxil.a(xmotorctrl_sinit.o): In function `XMotorctrl_LookupConfig':
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\standalone_bsp_0_lol\ps7_cortexa9_0\libsrc\motorctrl_top_v1_0\src/xmotorctrl_sinit.c:22: undefined reference to `XMotorctrl_ConfigTable'
-collect2.exe: error: ld returned 1 exit status
-make: *** [ZyboCarMotorTest.elf] Fejl 1
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: ZyboTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboTest.elf  |tee "ZyboTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35972	   2200	  22636	  60808	   ed88	ZyboTest.elf
+Finished building: ZyboTest.elf.size
+ 
