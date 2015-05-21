@@ -29,29 +29,29 @@ MotorCtrl_clockDividerThread::MotorCtrl_clockDividerThread(sc_module_name name) 
     dont_initialize();
     sensitive << ( ap_clk.pos() );
 
-    SC_METHOD(thread_MotorCtrl_dividerCount_V_assig_fu_122_p2);
+    SC_METHOD(thread_MotorCtrl_dividerCount_V_assig_fu_124_p2);
     sensitive << ( MotorCtrl_dividerCount_V_i );
 
     SC_METHOD(thread_MotorCtrl_dividerCount_V_o);
-    sensitive << ( tmp_7_reg_135 );
+    sensitive << ( tmp_5_reg_137 );
     sensitive << ( ap_sig_cseq_ST_st2_fsm_1 );
-    sensitive << ( MotorCtrl_dividerCount_V_assig_fu_122_p2 );
+    sensitive << ( MotorCtrl_dividerCount_V_assig_fu_124_p2 );
     sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
 
     SC_METHOD(thread_MotorCtrl_dividerCount_V_o_ap_vld);
-    sensitive << ( tmp_7_reg_135 );
+    sensitive << ( tmp_5_reg_137 );
     sensitive << ( ap_sig_cseq_ST_st2_fsm_1 );
     sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
 
     SC_METHOD(thread_MotorCtrl_pwmClock_V);
-    sensitive << ( tmp_7_fu_129_p2 );
-    sensitive << ( tmp_7_reg_135 );
+    sensitive << ( tmp_5_fu_131_p2 );
+    sensitive << ( tmp_5_reg_137 );
     sensitive << ( ap_sig_cseq_ST_st2_fsm_1 );
     sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
 
     SC_METHOD(thread_MotorCtrl_pwmClock_V_ap_vld);
-    sensitive << ( tmp_7_fu_129_p2 );
-    sensitive << ( tmp_7_reg_135 );
+    sensitive << ( tmp_5_fu_131_p2 );
+    sensitive << ( tmp_5_reg_137 );
     sensitive << ( ap_sig_cseq_ST_st2_fsm_1 );
     sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
 
@@ -67,7 +67,7 @@ MotorCtrl_clockDividerThread::MotorCtrl_clockDividerThread(sc_module_name name) 
     SC_METHOD(thread_ap_sig_cseq_ST_st3_fsm_2);
     sensitive << ( ap_sig_bdd_34 );
 
-    SC_METHOD(thread_tmp_7_fu_129_p2);
+    SC_METHOD(thread_tmp_5_fu_131_p2);
     sensitive << ( MotorCtrl_dividerCount_V_i );
     sensitive << ( ap_sig_cseq_ST_st2_fsm_1 );
 
@@ -92,12 +92,12 @@ MotorCtrl_clockDividerThread::MotorCtrl_clockDividerThread(sc_module_name name) 
     sc_trace(mVcdFile, MotorCtrl_pwmClock_V_ap_vld, "(port)MotorCtrl_pwmClock_V_ap_vld");
 #endif
 #ifdef __HLS_TRACE_LEVEL_INT__
-    sc_trace(mVcdFile, tmp_7_fu_129_p2, "tmp_7_fu_129_p2");
-    sc_trace(mVcdFile, tmp_7_reg_135, "tmp_7_reg_135");
+    sc_trace(mVcdFile, tmp_5_fu_131_p2, "tmp_5_fu_131_p2");
+    sc_trace(mVcdFile, tmp_5_reg_137, "tmp_5_reg_137");
     sc_trace(mVcdFile, ap_CS_fsm, "ap_CS_fsm");
     sc_trace(mVcdFile, ap_sig_cseq_ST_st2_fsm_1, "ap_sig_cseq_ST_st2_fsm_1");
     sc_trace(mVcdFile, ap_sig_bdd_23, "ap_sig_bdd_23");
-    sc_trace(mVcdFile, MotorCtrl_dividerCount_V_assig_fu_122_p2, "MotorCtrl_dividerCount_V_assig_fu_122_p2");
+    sc_trace(mVcdFile, MotorCtrl_dividerCount_V_assig_fu_124_p2, "MotorCtrl_dividerCount_V_assig_fu_124_p2");
     sc_trace(mVcdFile, ap_sig_cseq_ST_st3_fsm_2, "ap_sig_cseq_ST_st3_fsm_2");
     sc_trace(mVcdFile, ap_sig_bdd_34, "ap_sig_bdd_34");
     sc_trace(mVcdFile, ap_NS_fsm, "ap_NS_fsm");
@@ -119,20 +119,20 @@ void MotorCtrl_clockDividerThread::thread_ap_clk_no_reset_() {
         ap_CS_fsm = ap_NS_fsm.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st2_fsm_1.read())) {
-        tmp_7_reg_135 = tmp_7_fu_129_p2.read();
+        tmp_5_reg_137 = tmp_5_fu_131_p2.read();
     }
 }
 
-void MotorCtrl_clockDividerThread::thread_MotorCtrl_dividerCount_V_assig_fu_122_p2() {
-    MotorCtrl_dividerCount_V_assig_fu_122_p2 = (!MotorCtrl_dividerCount_V_i.read().is_01() || !ap_const_lv32_1.is_01())? sc_lv<32>(): (sc_biguint<32>(MotorCtrl_dividerCount_V_i.read()) + sc_biguint<32>(ap_const_lv32_1));
+void MotorCtrl_clockDividerThread::thread_MotorCtrl_dividerCount_V_assig_fu_124_p2() {
+    MotorCtrl_dividerCount_V_assig_fu_124_p2 = (!MotorCtrl_dividerCount_V_i.read().is_01() || !ap_const_lv32_1.is_01())? sc_lv<32>(): (sc_biguint<32>(MotorCtrl_dividerCount_V_i.read()) + sc_biguint<32>(ap_const_lv32_1));
 }
 
 void MotorCtrl_clockDividerThread::thread_MotorCtrl_dividerCount_V_o() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st3_fsm_2.read()) && 
-         !esl_seteq<1,1,1>(tmp_7_reg_135.read(), ap_const_lv1_0))) {
+         !esl_seteq<1,1,1>(tmp_5_reg_137.read(), ap_const_lv1_0))) {
         MotorCtrl_dividerCount_V_o = ap_const_lv32_0;
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st2_fsm_1.read())) {
-        MotorCtrl_dividerCount_V_o = MotorCtrl_dividerCount_V_assig_fu_122_p2.read();
+        MotorCtrl_dividerCount_V_o = MotorCtrl_dividerCount_V_assig_fu_124_p2.read();
     } else {
         MotorCtrl_dividerCount_V_o = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
     }
@@ -141,7 +141,7 @@ void MotorCtrl_clockDividerThread::thread_MotorCtrl_dividerCount_V_o() {
 void MotorCtrl_clockDividerThread::thread_MotorCtrl_dividerCount_V_o_ap_vld() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st2_fsm_1.read()) || 
          (esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st3_fsm_2.read()) && 
-          !esl_seteq<1,1,1>(tmp_7_reg_135.read(), ap_const_lv1_0)))) {
+          !esl_seteq<1,1,1>(tmp_5_reg_137.read(), ap_const_lv1_0)))) {
         MotorCtrl_dividerCount_V_o_ap_vld = ap_const_logic_1;
     } else {
         MotorCtrl_dividerCount_V_o_ap_vld = ap_const_logic_0;
@@ -150,10 +150,10 @@ void MotorCtrl_clockDividerThread::thread_MotorCtrl_dividerCount_V_o_ap_vld() {
 
 void MotorCtrl_clockDividerThread::thread_MotorCtrl_pwmClock_V() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st3_fsm_2.read()) && 
-         !esl_seteq<1,1,1>(tmp_7_reg_135.read(), ap_const_lv1_0))) {
+         !esl_seteq<1,1,1>(tmp_5_reg_137.read(), ap_const_lv1_0))) {
         MotorCtrl_pwmClock_V = ap_const_lv1_1;
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st2_fsm_1.read()) && 
-                esl_seteq<1,1,1>(tmp_7_fu_129_p2.read(), ap_const_lv1_0))) {
+                esl_seteq<1,1,1>(tmp_5_fu_131_p2.read(), ap_const_lv1_0))) {
         MotorCtrl_pwmClock_V = ap_const_lv1_0;
     } else {
         MotorCtrl_pwmClock_V =  (sc_lv<1>) ("X");
@@ -162,9 +162,9 @@ void MotorCtrl_clockDividerThread::thread_MotorCtrl_pwmClock_V() {
 
 void MotorCtrl_clockDividerThread::thread_MotorCtrl_pwmClock_V_ap_vld() {
     if (((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st3_fsm_2.read()) && 
-          !esl_seteq<1,1,1>(tmp_7_reg_135.read(), ap_const_lv1_0)) || 
+          !esl_seteq<1,1,1>(tmp_5_reg_137.read(), ap_const_lv1_0)) || 
          (esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st2_fsm_1.read()) && 
-          esl_seteq<1,1,1>(tmp_7_fu_129_p2.read(), ap_const_lv1_0)))) {
+          esl_seteq<1,1,1>(tmp_5_fu_131_p2.read(), ap_const_lv1_0)))) {
         MotorCtrl_pwmClock_V_ap_vld = ap_const_logic_1;
     } else {
         MotorCtrl_pwmClock_V_ap_vld = ap_const_logic_0;
@@ -195,8 +195,8 @@ void MotorCtrl_clockDividerThread::thread_ap_sig_cseq_ST_st3_fsm_2() {
     }
 }
 
-void MotorCtrl_clockDividerThread::thread_tmp_7_fu_129_p2() {
-    tmp_7_fu_129_p2 = (!MotorCtrl_dividerCount_V_i.read().is_01() || !ap_const_lv32_19.is_01())? sc_lv<1>(): sc_lv<1>(MotorCtrl_dividerCount_V_i.read() == ap_const_lv32_19);
+void MotorCtrl_clockDividerThread::thread_tmp_5_fu_131_p2() {
+    tmp_5_fu_131_p2 = (!MotorCtrl_dividerCount_V_i.read().is_01() || !ap_const_lv32_19.is_01())? sc_lv<1>(): sc_lv<1>(MotorCtrl_dividerCount_V_i.read() == ap_const_lv32_19);
 }
 
 void MotorCtrl_clockDividerThread::thread_ap_NS_fsm() {

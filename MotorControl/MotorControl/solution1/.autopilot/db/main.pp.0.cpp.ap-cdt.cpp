@@ -34245,28 +34245,20 @@ struct MotorCtrl : ::sc_core::sc_module {
  sc_in <bool> clk;
  sc_in <bool> reset;
 #pragma empty_line
- sc_in<sc_int<10> > pwmR;
- sc_in<sc_int<10> > pwmL;
+ sc_in<sc_uint<10> > pwmR;
+ sc_in<sc_uint<10> > pwmL;
  sc_in<bool> Direction;
  sc_out<bool> EN1;
  sc_out<bool> EN2;
  sc_out<bool> DIR1;
  sc_out<bool> DIR2;
 #pragma empty_line
-#pragma empty_line
- // Events
-//	sc_event pwmClock;
-#pragma empty_line
-#pragma empty_line
  //Variables
  sc_uint<10> pwmCount;
  sc_uint<32> dividerCount;
-#pragma empty_line
-#pragma empty_line
+ bool DIR;
 #pragma empty_line
  sc_logic pwmClock;
-#pragma empty_line
-#pragma empty_line
 #pragma empty_line
  //Process Declaration
  void pwmThread();
@@ -34295,9 +34287,14 @@ void MotorCtrl::pwmThread() {
 #pragma empty_line
   if (pwmClock == true) {
 #pragma empty_line
+   pwmCount++;
+#pragma empty_line
    // Set DIR
-   DIR1.write(Direction.read());
-   DIR2.write(Direction.read());
+   DIR = Direction.read();
+   DIR1.write(DIR);
+   DIR2.write(DIR);
+   // DIR1.write(Direction.read());
+   // DIR2.write(Direction.read());
 #pragma empty_line
    // Handle pwm count
    // Right motor
@@ -34308,14 +34305,13 @@ void MotorCtrl::pwmThread() {
    }
 #pragma empty_line
    // Left motor
-   if (pwmCount < pwmR.read()) {
+   if (pwmCount < pwmL.read()) {
     EN2.write(true);
    } else {
     EN2.write(false);
    }
-#pragma empty_line
-   wait();
   }
+  wait();
  }
 }
 #pragma empty_line
@@ -34323,7 +34319,7 @@ void MotorCtrl::clockDividerThread() {
  while (1) {
   wait();
 #pragma empty_line
-  if (dividerCount++ == 25 /* 50MHz / 25 = 2 MHz*/) {
+  if (dividerCount++ == 25 /* 50MHz / 25 = 2 MHz --> ~2 kHz, 10bit PWM*/) {
    pwmClock = true;
    dividerCount = 0;
   } else {

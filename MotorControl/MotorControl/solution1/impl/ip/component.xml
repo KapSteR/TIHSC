@@ -5,7 +5,7 @@
 	<spirit:vendor>xilinx.com</spirit:vendor>
 	<spirit:library>hls</spirit:library>
 	<spirit:name>MotorCtrl</spirit:name>
-	<spirit:version>1.0</spirit:version>
+	<spirit:version>1.1</spirit:version>
 	<spirit:busInterfaces>
 		<spirit:busInterface>
 			<spirit:name>S_AXI_SLV0</spirit:name>
@@ -750,42 +750,42 @@
 		<spirit:fileSet>
 			<spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
 			<spirit:file>
-				<spirit:name>drivers/motorctrl_top_v1_0/data/motorctrl_top.mdd</spirit:name>
+				<spirit:name>drivers/motorctrl_top_v1_1/data/motorctrl_top.mdd</spirit:name>
 				<spirit:userFileType>mdd</spirit:userFileType>
 				<spirit:userFileType>USED_IN_hw_handoff</spirit:userFileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/motorctrl_top_v1_0/data/motorctrl_top.tcl</spirit:name>
+				<spirit:name>drivers/motorctrl_top_v1_1/data/motorctrl_top.tcl</spirit:name>
 				<spirit:fileType>tclSource</spirit:fileType>
 				<spirit:userFileType>USED_IN_hw_handoff</spirit:userFileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/motorctrl_top_v1_0/src/Makefile</spirit:name>
+				<spirit:name>drivers/motorctrl_top_v1_1/src/Makefile</spirit:name>
 				<spirit:userFileType>unknown</spirit:userFileType>
 				<spirit:userFileType>USED_IN_hw_handoff</spirit:userFileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/motorctrl_top_v1_0/src/xmotorctrl.c</spirit:name>
+				<spirit:name>drivers/motorctrl_top_v1_1/src/xmotorctrl.c</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
 				<spirit:userFileType>USED_IN_hw_handoff</spirit:userFileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/motorctrl_top_v1_0/src/xmotorctrl.h</spirit:name>
+				<spirit:name>drivers/motorctrl_top_v1_1/src/xmotorctrl.h</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
 				<spirit:userFileType>USED_IN_hw_handoff</spirit:userFileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/motorctrl_top_v1_0/src/xmotorctrl_hw.h</spirit:name>
+				<spirit:name>drivers/motorctrl_top_v1_1/src/xmotorctrl_hw.h</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
 				<spirit:userFileType>USED_IN_hw_handoff</spirit:userFileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/motorctrl_top_v1_0/src/xmotorctrl_linux.c</spirit:name>
+				<spirit:name>drivers/motorctrl_top_v1_1/src/xmotorctrl_linux.c</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
 				<spirit:userFileType>USED_IN_hw_handoff</spirit:userFileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>drivers/motorctrl_top_v1_0/src/xmotorctrl_sinit.c</spirit:name>
+				<spirit:name>drivers/motorctrl_top_v1_1/src/xmotorctrl_sinit.c</spirit:name>
 				<spirit:fileType>cSource</spirit:fileType>
 				<spirit:userFileType>USED_IN_hw_handoff</spirit:userFileType>
 			</spirit:file>
@@ -807,7 +807,7 @@
 		<spirit:fileSet>
 			<spirit:name>xilinx_xpgui_view_fileset</spirit:name>
 			<spirit:file>
-				<spirit:name>xgui/MotorCtrl_v1_0.tcl</spirit:name>
+				<spirit:name>xgui/MotorCtrl_v1_1.tcl</spirit:name>
 				<spirit:fileType>tclSource</spirit:fileType>
 				<spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
 				<spirit:userFileType>CHECKSUM_c2c1b28f</spirit:userFileType>
@@ -839,7 +839,7 @@
 			<spirit:name>Component_Name</spirit:name>
 			<spirit:value spirit:resolve="user"
 					spirit:id="PARAM_VALUE.Component_Name"
-					spirit:order="1">MotorCtrl_v1_0</spirit:value>
+					spirit:order="1">MotorCtrl_v1_1</spirit:value>
 		</spirit:parameter>
 	</spirit:parameters>
 	<spirit:vendorExtensions>
@@ -851,8 +851,8 @@
 				<xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
 			</xilinx:taxonomies>
 			<xilinx:displayName>Motorctrl</xilinx:displayName>
-			<xilinx:coreRevision>1505201526</xilinx:coreRevision>
-			<xilinx:coreCreationDateTime>2015-05-20T13:26:28Z</xilinx:coreCreationDateTime>
+			<xilinx:coreRevision>1505211945</xilinx:coreRevision>
+			<xilinx:coreCreationDateTime>2015-05-21T17:45:23Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
 			<xilinx:xilinxVersion>2014.4</xilinx:xilinxVersion>

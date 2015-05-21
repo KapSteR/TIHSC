@@ -41,12 +41,12 @@ reg[31:0] MotorCtrl_dividerCount_V_o;
 reg MotorCtrl_dividerCount_V_o_ap_vld;
 reg[0:0] MotorCtrl_pwmClock_V;
 reg MotorCtrl_pwmClock_V_ap_vld;
-wire   [0:0] tmp_7_fu_129_p2;
-reg   [0:0] tmp_7_reg_135;
+wire   [0:0] tmp_5_fu_131_p2;
+reg   [0:0] tmp_5_reg_137;
 (* fsm_encoding = "none" *) reg   [2:0] ap_CS_fsm = 3'b10;
 reg    ap_sig_cseq_ST_st2_fsm_1;
 reg    ap_sig_bdd_23;
-wire   [31:0] MotorCtrl_dividerCount_V_assig_fu_122_p2;
+wire   [31:0] MotorCtrl_dividerCount_V_assig_fu_124_p2;
 reg    ap_sig_cseq_ST_st3_fsm_2;
 reg    ap_sig_bdd_34;
 reg   [2:0] ap_NS_fsm;
@@ -68,26 +68,26 @@ end
 always @(posedge ap_clk)
 begin
     if ((ap_const_logic_1 == ap_sig_cseq_ST_st2_fsm_1)) begin
-        tmp_7_reg_135 <= tmp_7_fu_129_p2;
+        tmp_5_reg_137 <= tmp_5_fu_131_p2;
     end
 end
 
 /// MotorCtrl_dividerCount_V_o assign process. ///
-always @ (tmp_7_reg_135 or ap_sig_cseq_ST_st2_fsm_1 or MotorCtrl_dividerCount_V_assig_fu_122_p2 or ap_sig_cseq_ST_st3_fsm_2)
+always @ (tmp_5_reg_137 or ap_sig_cseq_ST_st2_fsm_1 or MotorCtrl_dividerCount_V_assig_fu_124_p2 or ap_sig_cseq_ST_st3_fsm_2)
 begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_st3_fsm_2) & ~(tmp_7_reg_135 == ap_const_lv1_0))) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_st3_fsm_2) & ~(tmp_5_reg_137 == ap_const_lv1_0))) begin
         MotorCtrl_dividerCount_V_o = ap_const_lv32_0;
     end else if ((ap_const_logic_1 == ap_sig_cseq_ST_st2_fsm_1)) begin
-        MotorCtrl_dividerCount_V_o = MotorCtrl_dividerCount_V_assig_fu_122_p2;
+        MotorCtrl_dividerCount_V_o = MotorCtrl_dividerCount_V_assig_fu_124_p2;
     end else begin
         MotorCtrl_dividerCount_V_o = 'bx;
     end
 end
 
 /// MotorCtrl_dividerCount_V_o_ap_vld assign process. ///
-always @ (tmp_7_reg_135 or ap_sig_cseq_ST_st2_fsm_1 or ap_sig_cseq_ST_st3_fsm_2)
+always @ (tmp_5_reg_137 or ap_sig_cseq_ST_st2_fsm_1 or ap_sig_cseq_ST_st3_fsm_2)
 begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_st2_fsm_1) | ((ap_const_logic_1 == ap_sig_cseq_ST_st3_fsm_2) & ~(tmp_7_reg_135 == ap_const_lv1_0)))) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_st2_fsm_1) | ((ap_const_logic_1 == ap_sig_cseq_ST_st3_fsm_2) & ~(tmp_5_reg_137 == ap_const_lv1_0)))) begin
         MotorCtrl_dividerCount_V_o_ap_vld = ap_const_logic_1;
     end else begin
         MotorCtrl_dividerCount_V_o_ap_vld = ap_const_logic_0;
@@ -95,11 +95,11 @@ begin
 end
 
 /// MotorCtrl_pwmClock_V assign process. ///
-always @ (tmp_7_fu_129_p2 or tmp_7_reg_135 or ap_sig_cseq_ST_st2_fsm_1 or ap_sig_cseq_ST_st3_fsm_2)
+always @ (tmp_5_fu_131_p2 or tmp_5_reg_137 or ap_sig_cseq_ST_st2_fsm_1 or ap_sig_cseq_ST_st3_fsm_2)
 begin
-    if (((ap_const_logic_1 == ap_sig_cseq_ST_st3_fsm_2) & ~(tmp_7_reg_135 == ap_const_lv1_0))) begin
+    if (((ap_const_logic_1 == ap_sig_cseq_ST_st3_fsm_2) & ~(tmp_5_reg_137 == ap_const_lv1_0))) begin
         MotorCtrl_pwmClock_V = ap_const_lv1_1;
-    end else if (((ap_const_logic_1 == ap_sig_cseq_ST_st2_fsm_1) & (tmp_7_fu_129_p2 == ap_const_lv1_0))) begin
+    end else if (((ap_const_logic_1 == ap_sig_cseq_ST_st2_fsm_1) & (tmp_5_fu_131_p2 == ap_const_lv1_0))) begin
         MotorCtrl_pwmClock_V = ap_const_lv1_0;
     end else begin
         MotorCtrl_pwmClock_V = 'bx;
@@ -107,9 +107,9 @@ begin
 end
 
 /// MotorCtrl_pwmClock_V_ap_vld assign process. ///
-always @ (tmp_7_fu_129_p2 or tmp_7_reg_135 or ap_sig_cseq_ST_st2_fsm_1 or ap_sig_cseq_ST_st3_fsm_2)
+always @ (tmp_5_fu_131_p2 or tmp_5_reg_137 or ap_sig_cseq_ST_st2_fsm_1 or ap_sig_cseq_ST_st3_fsm_2)
 begin
-    if ((((ap_const_logic_1 == ap_sig_cseq_ST_st3_fsm_2) & ~(tmp_7_reg_135 == ap_const_lv1_0)) | ((ap_const_logic_1 == ap_sig_cseq_ST_st2_fsm_1) & (tmp_7_fu_129_p2 == ap_const_lv1_0)))) begin
+    if ((((ap_const_logic_1 == ap_sig_cseq_ST_st3_fsm_2) & ~(tmp_5_reg_137 == ap_const_lv1_0)) | ((ap_const_logic_1 == ap_sig_cseq_ST_st2_fsm_1) & (tmp_5_fu_131_p2 == ap_const_lv1_0)))) begin
         MotorCtrl_pwmClock_V_ap_vld = ap_const_logic_1;
     end else begin
         MotorCtrl_pwmClock_V_ap_vld = ap_const_logic_0;
@@ -154,7 +154,7 @@ begin
     endcase
 end
 
-assign MotorCtrl_dividerCount_V_assig_fu_122_p2 = (MotorCtrl_dividerCount_V_i + ap_const_lv32_1);
+assign MotorCtrl_dividerCount_V_assig_fu_124_p2 = (MotorCtrl_dividerCount_V_i + ap_const_lv32_1);
 
 /// ap_sig_bdd_23 assign process. ///
 always @ (ap_CS_fsm)
@@ -167,7 +167,7 @@ always @ (ap_CS_fsm)
 begin
     ap_sig_bdd_34 = (ap_const_lv1_1 == ap_CS_fsm[ap_const_lv32_2]);
 end
-assign tmp_7_fu_129_p2 = (MotorCtrl_dividerCount_V_i == ap_const_lv32_19? 1'b1: 1'b0);
+assign tmp_5_fu_131_p2 = (MotorCtrl_dividerCount_V_i == ap_const_lv32_19? 1'b1: 1'b0);
 
 
 endmodule //MotorCtrl_clockDividerThread

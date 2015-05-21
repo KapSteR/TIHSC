@@ -1,7 +1,7 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
---Date        : Wed May 20 15:33:35 2015
+--Date        : Thu May 21 19:54:55 2015
 --Host        : KASPER-PC running 64-bit major release  (build 9200)
 --Command     : generate_target ZyboCarDesign.bd
 --Design      : ZyboCarDesign
@@ -687,7 +687,7 @@ architecture STRUCTURE of ZyboCarDesign is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component ZyboCarDesign_rst_processing_system7_0_100M_0;
-  component ZyboCarDesign_MotorCtrl_0_0 is
+  component ZyboCarDesign_MotorCtrl_0_1 is
   port (
     EN1 : out STD_LOGIC;
     EN2 : out STD_LOGIC;
@@ -713,7 +713,7 @@ architecture STRUCTURE of ZyboCarDesign is
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC
   );
-  end component ZyboCarDesign_MotorCtrl_0_0;
+  end component ZyboCarDesign_MotorCtrl_0_1;
   signal GND_1 : STD_LOGIC;
   signal MotorCtrl_0_DIR1 : STD_LOGIC;
   signal MotorCtrl_0_DIR2 : STD_LOGIC;
@@ -812,7 +812,7 @@ GND: unisim.vcomponents.GND
     port map (
       G => GND_1
     );
-MotorCtrl_0: component ZyboCarDesign_MotorCtrl_0_0
+MotorCtrl_0: component ZyboCarDesign_MotorCtrl_0_1
     port map (
       DIR1 => MotorCtrl_0_DIR1,
       DIR2 => MotorCtrl_0_DIR2,

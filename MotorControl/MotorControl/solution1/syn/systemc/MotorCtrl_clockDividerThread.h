@@ -33,12 +33,12 @@ struct MotorCtrl_clockDividerThread : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    sc_signal< sc_lv<1> > tmp_7_fu_129_p2;
-    sc_signal< sc_lv<1> > tmp_7_reg_135;
+    sc_signal< sc_lv<1> > tmp_5_fu_131_p2;
+    sc_signal< sc_lv<1> > tmp_5_reg_137;
     sc_signal< sc_lv<3> > ap_CS_fsm;
     sc_signal< sc_logic > ap_sig_cseq_ST_st2_fsm_1;
     sc_signal< bool > ap_sig_bdd_23;
-    sc_signal< sc_lv<32> > MotorCtrl_dividerCount_V_assig_fu_122_p2;
+    sc_signal< sc_lv<32> > MotorCtrl_dividerCount_V_assig_fu_124_p2;
     sc_signal< sc_logic > ap_sig_cseq_ST_st3_fsm_2;
     sc_signal< bool > ap_sig_bdd_34;
     sc_signal< sc_lv<3> > ap_NS_fsm;
@@ -54,7 +54,7 @@ struct MotorCtrl_clockDividerThread : public sc_module {
     static const sc_lv<32> ap_const_lv32_19;
     // Thread declarations
     void thread_ap_clk_no_reset_();
-    void thread_MotorCtrl_dividerCount_V_assig_fu_122_p2();
+    void thread_MotorCtrl_dividerCount_V_assig_fu_124_p2();
     void thread_MotorCtrl_dividerCount_V_o();
     void thread_MotorCtrl_dividerCount_V_o_ap_vld();
     void thread_MotorCtrl_pwmClock_V();
@@ -63,7 +63,7 @@ struct MotorCtrl_clockDividerThread : public sc_module {
     void thread_ap_sig_bdd_34();
     void thread_ap_sig_cseq_ST_st2_fsm_1();
     void thread_ap_sig_cseq_ST_st3_fsm_2();
-    void thread_tmp_7_fu_129_p2();
+    void thread_tmp_5_fu_131_p2();
     void thread_ap_NS_fsm();
 };
 

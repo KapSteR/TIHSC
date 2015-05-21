@@ -155,17 +155,17 @@ set Pointer2200 "0"
 set Reference2200 "0"
 set Dims2200 [list 0]
 set Interface2200 "wire"
-set DataType2200 "[list sc_int 10 ]"
+set DataType2200 "[list sc_uint 10 ]"
 set Port2200 [list $PortName2200 $Interface2200 $DataType2200 $Pointer2200 $Dims2200 $Const2200 $Volatile2200 $ArrayOpt2200]
 lappend structMem220 $Port2200
 set structParameter220 [list "typename T" ]
-set structArgument220 [list "[list sc_int 10 ]" ]
-set DataType220 [list "sc_signal_in_if<sc_int<10> >" "struct sc_signal_in_if" $structMem220 1 0 $structParameter220 $structArgument220]
+set structArgument220 [list "[list sc_uint 10 ]" ]
+set DataType220 [list "sc_signal_in_if<sc_uint<10> >" "struct sc_signal_in_if" $structMem220 1 0 $structParameter220 $structArgument220]
 set Port220 [list $PortName220 $Interface220 $DataType220 $Pointer220 $Dims220 $Const220 $Volatile220 $ArrayOpt220]
 lappend structMem22 $Port220
 set structParameter22 [list "typename T" ]
-set structArgument22 [list "[list sc_int 10 ]" ]
-set DataType22 [list "sc_in<sc_int<10> >" "struct sc_in" $structMem22 1 0 $structParameter22 $structArgument22]
+set structArgument22 [list "[list sc_uint 10 ]" ]
+set DataType22 [list "sc_in<sc_uint<10> >" "struct sc_in" $structMem22 1 0 $structParameter22 $structArgument22]
 set Port22 [list $PortName22 $Interface22 $DataType22 $Pointer22 $Dims22 $Const22 $Volatile22 $ArrayOpt22]
 lappend structMem2 $Port22
 set PortName23 "pwmL"
@@ -197,17 +197,17 @@ set Pointer2300 "0"
 set Reference2300 "0"
 set Dims2300 [list 0]
 set Interface2300 "wire"
-set DataType2300 "[list sc_int 10 ]"
+set DataType2300 "[list sc_uint 10 ]"
 set Port2300 [list $PortName2300 $Interface2300 $DataType2300 $Pointer2300 $Dims2300 $Const2300 $Volatile2300 $ArrayOpt2300]
 lappend structMem230 $Port2300
 set structParameter230 [list "typename T" ]
-set structArgument230 [list "[list sc_int 10 ]" ]
-set DataType230 [list "sc_signal_in_if<sc_int<10> >" "struct sc_signal_in_if" $structMem230 1 0 $structParameter230 $structArgument230]
+set structArgument230 [list "[list sc_uint 10 ]" ]
+set DataType230 [list "sc_signal_in_if<sc_uint<10> >" "struct sc_signal_in_if" $structMem230 1 0 $structParameter230 $structArgument230]
 set Port230 [list $PortName230 $Interface230 $DataType230 $Pointer230 $Dims230 $Const230 $Volatile230 $ArrayOpt230]
 lappend structMem23 $Port230
 set structParameter23 [list "typename T" ]
-set structArgument23 [list "[list sc_int 10 ]" ]
-set DataType23 [list "sc_in<sc_int<10> >" "struct sc_in" $structMem23 1 0 $structParameter23 $structArgument23]
+set structArgument23 [list "[list sc_uint 10 ]" ]
+set DataType23 [list "sc_in<sc_uint<10> >" "struct sc_in" $structMem23 1 0 $structParameter23 $structArgument23]
 set Port23 [list $PortName23 $Interface23 $DataType23 $Pointer23 $Dims23 $Const23 $Volatile23 $ArrayOpt23]
 lappend structMem2 $Port23
 set PortName24 "Direction"
@@ -444,7 +444,7 @@ set Interface210 "wire"
 set DataType210 "[list sc_uint 32 ]"
 set Port210 [list $PortName210 $Interface210 $DataType210 $Pointer210 $Dims210 $Const210 $Volatile210 $ArrayOpt210]
 lappend structMem2 $Port210
-set PortName211 "pwmClock"
+set PortName211 "DIR"
 set BitWidth211 "8"
 set ArrayOpt211 ""
 set Const211 "0"
@@ -453,22 +453,34 @@ set Pointer211 "0"
 set Reference211 "0"
 set Dims211 [list 0]
 set Interface211 "wire"
-set structMem211 ""
-set PortName2110 "V"
-set BitWidth2110 "1"
-set ArrayOpt2110 ""
-set Const2110 "0"
-set Volatile2110 "0"
-set Pointer2110 "0"
-set Reference2110 "0"
-set Dims2110 [list 0]
-set Interface2110 "wire"
-set DataType2110 "uint1"
-set Port2110 [list $PortName2110 $Interface2110 $DataType2110 $Pointer2110 $Dims2110 $Const2110 $Volatile2110 $ArrayOpt2110]
-lappend structMem211 $Port2110
-set DataType211 [list "sc_logic" "struct sc_bit" $structMem211 0 0 ]
+set DataType211 "bool"
 set Port211 [list $PortName211 $Interface211 $DataType211 $Pointer211 $Dims211 $Const211 $Volatile211 $ArrayOpt211]
 lappend structMem2 $Port211
+set PortName212 "pwmClock"
+set BitWidth212 "8"
+set ArrayOpt212 ""
+set Const212 "0"
+set Volatile212 "0"
+set Pointer212 "0"
+set Reference212 "0"
+set Dims212 [list 0]
+set Interface212 "wire"
+set structMem212 ""
+set PortName2120 "V"
+set BitWidth2120 "1"
+set ArrayOpt2120 ""
+set Const2120 "0"
+set Volatile2120 "0"
+set Pointer2120 "0"
+set Reference2120 "0"
+set Dims2120 [list 0]
+set Interface2120 "wire"
+set DataType2120 "uint1"
+set Port2120 [list $PortName2120 $Interface2120 $DataType2120 $Pointer2120 $Dims2120 $Const2120 $Volatile2120 $ArrayOpt2120]
+lappend structMem212 $Port2120
+set DataType212 [list "sc_logic" "struct sc_bit" $structMem212 0 0 ]
+set Port212 [list $PortName212 $Interface212 $DataType212 $Pointer212 $Dims212 $Const212 $Volatile212 $ArrayOpt212]
+lappend structMem2 $Port212
 set DataType2 [list "MotorCtrl" "struct MotorCtrl" $structMem2 1 0 ]
 set Port2 [list $PortName2 $Interface2 $DataType2 $Pointer2 $Dims2 $Const2 $Volatile2 $ArrayOpt2]
 lappend PortList $Port2

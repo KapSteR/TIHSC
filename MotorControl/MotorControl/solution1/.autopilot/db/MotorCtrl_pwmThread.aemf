@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1432230145801">
+  <ports id="3" name="pwmR" type="PortType" originalName="MotorCtrl.pwmR.m_if.Val.V" coreName="AXI4LiteS" bitwidth="10">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="pwmL" type="PortType" originalName="MotorCtrl.pwmL.m_if.Val.V" coreName="AXI4LiteS" bitwidth="10">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="Direction" type="PortType" originalName="MotorCtrl.Direction.m_if.Val" coreName="AXI4LiteS" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="EN1" type="PortType" originalName="MotorCtrl.EN1.m_if.Val" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="7" name="EN2" type="PortType" originalName="MotorCtrl.EN2.m_if.Val" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="8" name="DIR1" type="PortType" originalName="MotorCtrl.DIR1.m_if.Val" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="9" name="DIR2" type="PortType" originalName="MotorCtrl.DIR2.m_if.Val" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="10" name="MotorCtrl_pwmCount_V" type="PortType" originalName="MotorCtrl.pwmCount.V" bitwidth="10" direction="DirInOut">
+    <dataOutputObjs>read</dataOutputObjs>
+    <dataOutputObjs>write</dataOutputObjs>
+  </ports>
+  <ports id="12" name="MotorCtrl_DIR" type="PortType" originalName="MotorCtrl.DIR" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="13" name="MotorCtrl_pwmClock_V" type="PortType" originalName="MotorCtrl.pwmClock.V" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="-10" name="MotorCtrl_pwmCount_V" type="PortType" originalName="MotorCtrl.pwmCount.V" bitwidth="10" direction="DirInOut">
+    <dataInputObjs>read</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="87" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="90" source_obj="//@ports.9" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="91" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="92" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="93" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="96" source_obj="//@ports.7" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="97" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="102" source_obj="//@ports.7" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="103" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="106" source_obj="//@ports.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="109" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@ports.8"/>
+  <edges id="110" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="113" source_obj="//@blocks.1/@node_objs.5" sink_obj="//@ports.5"/>
+  <edges id="114" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="116" source_obj="//@blocks.1/@node_objs.6" sink_obj="//@ports.6"/>
+  <edges id="117" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="120" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="121" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="122" source_obj="//@blocks.1/@node_objs.7" sink_obj="//@blocks.1/@node_objs.8"/>
+  <edges id="123" source_obj="//@blocks.1/@node_objs.8" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="124" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="125" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.9"/>
+  <edges id="127" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@ports.3"/>
+  <edges id="130" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="132" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@ports.3"/>
+  <edges id="135" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="137" source_obj="//@ports.1" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="138" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="139" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="140" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="141" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="142" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="144" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="146" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="148" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="150" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="151" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="154" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="327" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0"/>
+  <edges id="328" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="329" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.8"/>
+  <edges id="330" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="331" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="332" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.4"/>
+  <edges id="333" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="334" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.6"/>
+  <edges id="335" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="336" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.7"/>
+  <edges id="337" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7"/>
+  <edges id="338" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.8"/>
+  <edges id="339" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.0"/>
+  <edges id="-96" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@ports.10"/>
+  <edges id="-102" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@ports.10"/>
+  <blocks id="50" name="block_50" type="BlockType">
+    <controlInputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit</controlInputObjs>
+    <controlInputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit2</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_61</controlOutputObjs>
+    <controlOutputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="MotorCtrl_pwmClock_V_read" lineNumber="14" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" bitwidth="1" opcode="read" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="14" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataInputObjs>MotorCtrl_pwmClock_V</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="node_49" lineNumber="14" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="br" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="14" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataInputObjs>read</dataInputObjs>
+      <controlInputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit2</controlInputObjs>
+      <controlInputObjs>block_61</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MotorControl/main.cpp">
+      <validLinenumbers>14</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="61" name="block_61" type="BlockType">
+    <controlInputObjs>block_50</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_67</controlOutputObjs>
+    <controlOutputObjs>block_64</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="MotorCtrl_pwmCount_V_read" lineNumber="16" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" bitwidth="10" opcode="read" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="16" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataInputObjs>MotorCtrl_pwmCount_V</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>MotorCtrl_pwmCount_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="MotorCtrl_pwmCount_V_assign" lineNumber="16" fileName="MotorControl/main.cpp" fileDirectory=".." rtlName="MotorCtrl_pwmCount_V_assign_fu_188_p2" contextFuncName="pwmThread" bitwidth="10" opcode="add" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="16" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="node_53" lineNumber="16" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="write" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="16" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataInputObjs>MotorCtrl_pwmCount_V</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>MotorCtrl_pwmCount_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="tmp" lineNumber="19" originalName="tmp" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" bitwidth="1" opcode="read" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="19" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataInputObjs>Direction</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="node_55" lineNumber="19" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="write" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="19" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>MotorCtrl_DIR</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="node_56" lineNumber="20" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="write" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="20" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>DIR1</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="node_57" lineNumber="21" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="write" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="21" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>DIR2</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="val_V" lineNumber="27" originalName="val.V" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" bitwidth="10" opcode="read" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="27" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataInputObjs>pwmR</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="tmp_2" lineNumber="27" fileName="MotorControl/main.cpp" fileDirectory=".." rtlName="tmp_2_fu_195_p2" contextFuncName="pwmThread" bitwidth="1" opcode="icmp" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="27" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="node_60" lineNumber="27" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="br" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="27" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_64</controlInputObjs>
+      <controlInputObjs>block_67</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MotorControl/main.cpp">
+      <validLinenumbers>16</validLinenumbers>
+      <validLinenumbers>19</validLinenumbers>
+      <validLinenumbers>20</validLinenumbers>
+      <validLinenumbers>21</validLinenumbers>
+      <validLinenumbers>27</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="64" name="block_64" type="BlockType">
+    <controlInputObjs>block_61</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_71</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="node_62" lineNumber="30" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="write" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="30" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataOutputObjs>EN1</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="node_63" opcode="br" nodeLabel="2">
+      <controlInputObjs>block_71</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MotorControl/main.cpp">
+      <validLinenumbers>30</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="67" name="block_67" type="BlockType">
+    <controlInputObjs>block_61</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_71</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="node_65" lineNumber="28" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="write" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="28" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataOutputObjs>EN1</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="node_66" lineNumber="29" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="br" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="29" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <controlInputObjs>block_71</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MotorControl/main.cpp">
+      <validLinenumbers>28</validLinenumbers>
+      <validLinenumbers>29</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="71" name="block_71" type="BlockType">
+    <controlInputObjs>block_64</controlInputObjs>
+    <controlInputObjs>block_67</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_77</controlOutputObjs>
+    <controlOutputObjs>block_74</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="val_V_1" lineNumber="34" originalName="val.V" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" bitwidth="10" opcode="read" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="34" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataInputObjs>pwmL</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="tmp_3" lineNumber="34" fileName="MotorControl/main.cpp" fileDirectory=".." rtlName="tmp_3_fu_201_p2" contextFuncName="pwmThread" bitwidth="1" opcode="icmp" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="34" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="node_70" lineNumber="34" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="br" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="34" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_74</controlInputObjs>
+      <controlInputObjs>block_77</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MotorControl/main.cpp">
+      <validLinenumbers>34</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="74" name="block_74" type="BlockType">
+    <controlInputObjs>block_71</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_79</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="node_72" lineNumber="37" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="write" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="37" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataOutputObjs>EN2</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="node_73" opcode="br" nodeLabel="2">
+      <controlInputObjs>block_79</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MotorControl/main.cpp">
+      <validLinenumbers>37</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="77" name="block_77" type="BlockType">
+    <controlInputObjs>block_71</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_79</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="node_75" lineNumber="35" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="write" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="35" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <dataOutputObjs>EN2</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="node_76" lineNumber="36" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="br" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="36" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <controlInputObjs>block_79</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MotorControl/main.cpp">
+      <validLinenumbers>35</validLinenumbers>
+      <validLinenumbers>36</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="79" name="block_79" type="BlockType">
+    <controlInputObjs>block_74</controlInputObjs>
+    <controlInputObjs>block_77</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="node_78" lineNumber="39" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="br" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="39" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <controlInputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit2</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MotorControl/main.cpp">
+      <validLinenumbers>39</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="82" name="_ZN7_ap_sc_7sc_core4waitEi.exit2" type="BlockType">
+    <controlInputObjs>block_50</controlInputObjs>
+    <controlInputObjs>block_79</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_50</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="node_80" lineNumber="40" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="wait" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="40" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="node_81" lineNumber="41" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="br" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="41" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+      <controlInputObjs>block_50</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MotorControl/main.cpp">
+      <validLinenumbers>40</validLinenumbers>
+      <validLinenumbers>41</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="37" region_type="1" typeName="Protocol" id="196" RegionName="__ssdm_reset__">
+    <basic_blocks id="47" name="_ZN7_ap_sc_7sc_core4waitEi.exit" type="BlockType">
+      <controlOutputObjs>block_50</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="node_45" lineNumber="10" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="wait" nodeLabel="1">
+        <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="10" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="node_46" lineNumber="11" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="pwmThread" opcode="br" nodeLabel="1">
+        <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="11" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="pwmThread"/>
+        <controlInputObjs>block_50</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="MotorControl/main.cpp">
+        <validLinenumbers>10</validLinenumbers>
+        <validLinenumbers>11</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <expressionNodes realName="tmp_2_fu_195">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_201">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="MotorCtrl_pwmCount_V_assign_fu_188">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="grp_write_fu_178">
+    <nodeIds>72</nodeIds>
+    <nodeIds>75</nodeIds>
+  </ioNodes>
+  <ioNodes realName="stg_45_write_fu_149">
+    <nodeIds>57</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_163">
+    <nodeIds>62</nodeIds>
+    <nodeIds>65</nodeIds>
+  </ioNodes>
+  <ioNodes realName="stg_43_write_fu_133">
+    <nodeIds>55</nodeIds>
+  </ioNodes>
+  <ioNodes realName="val_V_read_fu_157">
+    <nodeIds>58</nodeIds>
+  </ioNodes>
+  <ioNodes realName="MotorCtrl_pwmClock_V_read_read_fu_108">
+    <nodeIds>48</nodeIds>
+  </ioNodes>
+  <ioNodes realName="MotorCtrl_pwmCount_V_read_read_fu_114">
+    <nodeIds>51</nodeIds>
+  </ioNodes>
+  <ioNodes realName="stg_41_write_fu_120">
+    <nodeIds>53</nodeIds>
+  </ioNodes>
+  <ioNodes realName="stg_44_write_fu_141">
+    <nodeIds>56</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_read_fu_127">
+    <nodeIds>54</nodeIds>
+  </ioNodes>
+  <ioNodes realName="val_V_1_read_fu_172">
+    <nodeIds>68</nodeIds>
+  </ioNodes>
+  <ioPorts name="DIR1">
+    <contents name="write">
+      <nodeIds>56</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="DIR2">
+    <contents name="write">
+      <nodeIds>57</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="Direction">
+    <contents name="read">
+      <nodeIds>54</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="EN1">
+    <contents name="write">
+      <nodeIds>65</nodeIds>
+      <nodeIds>62</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="EN2">
+    <contents name="write">
+      <nodeIds>75</nodeIds>
+      <nodeIds>72</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="MotorCtrl_DIR">
+    <contents name="write">
+      <nodeIds>55</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="MotorCtrl_pwmClock_V">
+    <contents name="read">
+      <nodeIds>48</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="MotorCtrl_pwmCount_V">
+    <contents name="read">
+      <nodeIds>51</nodeIds>
+    </contents>
+    <contents name="write">
+      <nodeIds>53</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="pwmL">
+    <contents name="read">
+      <nodeIds>68</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="pwmR">
+    <contents name="read">
+      <nodeIds>58</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="22"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="24"/>
+    </transitions>
+    <transitions inState="3" outState="3">
+      <condition id="26"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="MotorCtrl::MotorCtrl_MotorCtrl::pwmThread" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="3" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="-1">
+      <basicBlocks>47</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Loop 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="-1" mType="1">
+      <basicBlocks>50</basicBlocks>
+      <basicBlocks>61</basicBlocks>
+      <basicBlocks>64</basicBlocks>
+      <basicBlocks>67</basicBlocks>
+      <basicBlocks>71</basicBlocks>
+      <basicBlocks>74</basicBlocks>
+      <basicBlocks>77</basicBlocks>
+      <basicBlocks>79</basicBlocks>
+      <basicBlocks>82</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -154,7 +154,7 @@ proc create_root_design { parentCell } {
   set EN2 [ create_bd_port -dir O EN2 ]
 
   # Create instance: MotorCtrl_0, and set properties
-  set MotorCtrl_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:MotorCtrl:1.0 MotorCtrl_0 ]
+  set MotorCtrl_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:MotorCtrl:1.1 MotorCtrl_0 ]
 
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]

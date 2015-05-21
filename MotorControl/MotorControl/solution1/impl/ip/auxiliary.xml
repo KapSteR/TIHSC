@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="MotorCtrl" xd:componentRef="MotorCtrl" xd:initiationInterval="6" xd:clockPeriod="8.000000" xd:sequential="true" xd:hostMachine="64">
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="MotorCtrl" xd:componentRef="MotorCtrl" xd:initiationInterval="5" xd:clockPeriod="8.000000" xd:sequential="true" xd:hostMachine="64">
   <xd:arg xd:name="pwmR" xd:originalName="pwmR" xd:direction="in" xd:interfaceRef="S_AXI_SLV0" xd:busTypeRef="axilite" xd:offset="0x14" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="pwmL" xd:originalName="pwmL" xd:direction="in" xd:interfaceRef="S_AXI_SLV0" xd:busTypeRef="axilite" xd:offset="0x1C" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="Direction" xd:originalName="Direction" xd:direction="in" xd:interfaceRef="S_AXI_SLV0" xd:busTypeRef="axilite" xd:offset="0x24" xd:handshakeRef="ap_none"/>
@@ -7,6 +7,6 @@
   <xd:arg xd:name="EN2" xd:originalName="EN2" xd:direction="out" xd:interfaceRef="EN2" xd:busTypeRef="register" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="DIR1" xd:originalName="DIR1" xd:direction="out" xd:interfaceRef="DIR1" xd:busTypeRef="register" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="DIR2" xd:originalName="DIR2" xd:direction="out" xd:interfaceRef="DIR2" xd:busTypeRef="register" xd:handshakeRef="ap_none"/>
-  <xd:latencyEstimates xd:best-case="0" xd:worst-case="5" xd:average-case="3"/>
-  <xd:resourceEstimates xd:LUT="136" xd:FF="55" xd:BRAM="0" xd:DSP="0"/>
+  <xd:latencyEstimates xd:best-case="0" xd:worst-case="4" xd:average-case="2"/>
+  <xd:resourceEstimates xd:LUT="142" xd:FF="54" xd:BRAM="0" xd:DSP="0"/>
 </xd:acceleratorMap>

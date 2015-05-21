@@ -33,14 +33,14 @@ architecture behav of MotorCtrl_clockDividerThread is
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv32_19 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011001";
 
-    signal tmp_7_fu_129_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal tmp_7_reg_135 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_5_fu_131_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_5_reg_137 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm : STD_LOGIC_VECTOR (2 downto 0) := "010";
     attribute fsm_encoding : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_sig_cseq_ST_st2_fsm_1 : STD_LOGIC;
     signal ap_sig_bdd_23 : BOOLEAN;
-    signal MotorCtrl_dividerCount_V_assig_fu_122_p2 : STD_LOGIC_VECTOR (31 downto 0);
+    signal MotorCtrl_dividerCount_V_assig_fu_124_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_sig_cseq_ST_st3_fsm_2 : STD_LOGIC;
     signal ap_sig_bdd_34 : BOOLEAN;
     signal ap_NS_fsm : STD_LOGIC_VECTOR (2 downto 0);
@@ -69,7 +69,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_sig_cseq_ST_st2_fsm_1)) then
-                tmp_7_reg_135 <= tmp_7_fu_129_p2;
+                tmp_5_reg_137 <= tmp_5_fu_131_p2;
             end if;
         end if;
     end process;
@@ -86,15 +86,15 @@ begin
                 ap_NS_fsm <= "XXX";
         end case;
     end process;
-    MotorCtrl_dividerCount_V_assig_fu_122_p2 <= std_logic_vector(unsigned(MotorCtrl_dividerCount_V_i) + unsigned(ap_const_lv32_1));
+    MotorCtrl_dividerCount_V_assig_fu_124_p2 <= std_logic_vector(unsigned(MotorCtrl_dividerCount_V_i) + unsigned(ap_const_lv32_1));
 
     -- MotorCtrl_dividerCount_V_o assign process. --
-    MotorCtrl_dividerCount_V_o_assign_proc : process(tmp_7_reg_135, ap_sig_cseq_ST_st2_fsm_1, MotorCtrl_dividerCount_V_assig_fu_122_p2, ap_sig_cseq_ST_st3_fsm_2)
+    MotorCtrl_dividerCount_V_o_assign_proc : process(tmp_5_reg_137, ap_sig_cseq_ST_st2_fsm_1, MotorCtrl_dividerCount_V_assig_fu_124_p2, ap_sig_cseq_ST_st3_fsm_2)
     begin
-        if (((ap_const_logic_1 = ap_sig_cseq_ST_st3_fsm_2) and not((tmp_7_reg_135 = ap_const_lv1_0)))) then 
+        if (((ap_const_logic_1 = ap_sig_cseq_ST_st3_fsm_2) and not((tmp_5_reg_137 = ap_const_lv1_0)))) then 
             MotorCtrl_dividerCount_V_o <= ap_const_lv32_0;
         elsif ((ap_const_logic_1 = ap_sig_cseq_ST_st2_fsm_1)) then 
-            MotorCtrl_dividerCount_V_o <= MotorCtrl_dividerCount_V_assig_fu_122_p2;
+            MotorCtrl_dividerCount_V_o <= MotorCtrl_dividerCount_V_assig_fu_124_p2;
         else 
             MotorCtrl_dividerCount_V_o <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
@@ -102,9 +102,9 @@ begin
 
 
     -- MotorCtrl_dividerCount_V_o_ap_vld assign process. --
-    MotorCtrl_dividerCount_V_o_ap_vld_assign_proc : process(tmp_7_reg_135, ap_sig_cseq_ST_st2_fsm_1, ap_sig_cseq_ST_st3_fsm_2)
+    MotorCtrl_dividerCount_V_o_ap_vld_assign_proc : process(tmp_5_reg_137, ap_sig_cseq_ST_st2_fsm_1, ap_sig_cseq_ST_st3_fsm_2)
     begin
-        if (((ap_const_logic_1 = ap_sig_cseq_ST_st2_fsm_1) or ((ap_const_logic_1 = ap_sig_cseq_ST_st3_fsm_2) and not((tmp_7_reg_135 = ap_const_lv1_0))))) then 
+        if (((ap_const_logic_1 = ap_sig_cseq_ST_st2_fsm_1) or ((ap_const_logic_1 = ap_sig_cseq_ST_st3_fsm_2) and not((tmp_5_reg_137 = ap_const_lv1_0))))) then 
             MotorCtrl_dividerCount_V_o_ap_vld <= ap_const_logic_1;
         else 
             MotorCtrl_dividerCount_V_o_ap_vld <= ap_const_logic_0;
@@ -113,11 +113,11 @@ begin
 
 
     -- MotorCtrl_pwmClock_V assign process. --
-    MotorCtrl_pwmClock_V_assign_proc : process(tmp_7_fu_129_p2, tmp_7_reg_135, ap_sig_cseq_ST_st2_fsm_1, ap_sig_cseq_ST_st3_fsm_2)
+    MotorCtrl_pwmClock_V_assign_proc : process(tmp_5_fu_131_p2, tmp_5_reg_137, ap_sig_cseq_ST_st2_fsm_1, ap_sig_cseq_ST_st3_fsm_2)
     begin
-        if (((ap_const_logic_1 = ap_sig_cseq_ST_st3_fsm_2) and not((tmp_7_reg_135 = ap_const_lv1_0)))) then 
+        if (((ap_const_logic_1 = ap_sig_cseq_ST_st3_fsm_2) and not((tmp_5_reg_137 = ap_const_lv1_0)))) then 
             MotorCtrl_pwmClock_V <= ap_const_lv1_1;
-        elsif (((ap_const_logic_1 = ap_sig_cseq_ST_st2_fsm_1) and (tmp_7_fu_129_p2 = ap_const_lv1_0))) then 
+        elsif (((ap_const_logic_1 = ap_sig_cseq_ST_st2_fsm_1) and (tmp_5_fu_131_p2 = ap_const_lv1_0))) then 
             MotorCtrl_pwmClock_V <= ap_const_lv1_0;
         else 
             MotorCtrl_pwmClock_V <= "X";
@@ -126,9 +126,9 @@ begin
 
 
     -- MotorCtrl_pwmClock_V_ap_vld assign process. --
-    MotorCtrl_pwmClock_V_ap_vld_assign_proc : process(tmp_7_fu_129_p2, tmp_7_reg_135, ap_sig_cseq_ST_st2_fsm_1, ap_sig_cseq_ST_st3_fsm_2)
+    MotorCtrl_pwmClock_V_ap_vld_assign_proc : process(tmp_5_fu_131_p2, tmp_5_reg_137, ap_sig_cseq_ST_st2_fsm_1, ap_sig_cseq_ST_st3_fsm_2)
     begin
-        if ((((ap_const_logic_1 = ap_sig_cseq_ST_st3_fsm_2) and not((tmp_7_reg_135 = ap_const_lv1_0))) or ((ap_const_logic_1 = ap_sig_cseq_ST_st2_fsm_1) and (tmp_7_fu_129_p2 = ap_const_lv1_0)))) then 
+        if ((((ap_const_logic_1 = ap_sig_cseq_ST_st3_fsm_2) and not((tmp_5_reg_137 = ap_const_lv1_0))) or ((ap_const_logic_1 = ap_sig_cseq_ST_st2_fsm_1) and (tmp_5_fu_131_p2 = ap_const_lv1_0)))) then 
             MotorCtrl_pwmClock_V_ap_vld <= ap_const_logic_1;
         else 
             MotorCtrl_pwmClock_V_ap_vld <= ap_const_logic_0;
@@ -171,5 +171,5 @@ begin
         end if; 
     end process;
 
-    tmp_7_fu_129_p2 <= "1" when (MotorCtrl_dividerCount_V_i = ap_const_lv32_19) else "0";
+    tmp_5_fu_131_p2 <= "1" when (MotorCtrl_dividerCount_V_i = ap_const_lv32_19) else "0";
 end behav;

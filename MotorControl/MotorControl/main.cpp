@@ -13,9 +13,14 @@ void MotorCtrl::pwmThread() {
 
 		if (pwmClock == true) {
 
+			pwmCount++;
+
 			// Set DIR
-			DIR1.write(Direction.read());
-			DIR2.write(Direction.read());
+			DIR = Direction.read();
+			DIR1.write(DIR);
+			DIR2.write(DIR);
+			// DIR1.write(Direction.read());
+			// DIR2.write(Direction.read());
 
 			// Handle pwm count
 			// Right motor
@@ -26,14 +31,13 @@ void MotorCtrl::pwmThread() {
 			}
 
 			// Left motor
-			if (pwmCount < pwmR.read()) {
+			if (pwmCount < pwmL.read()) {
 				EN2.write(true);
 			} else {
 				EN2.write(false);
 			}
-
-			wait();
 		}
+		wait();
 	}
 }
 

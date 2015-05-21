@@ -11,7 +11,7 @@ set C_modelArgList {
 	{ clk int 1 unused {pointer 0}  }
 	{ reset int 1 unused {pointer 0}  }
 	{ pwmR int 10 regular {pointer 0 volatile }  }
-	{ pwmL int 10 unused {pointer 0}  }
+	{ pwmL int 10 regular {pointer 0 volatile }  }
 	{ Direction int 1 regular {pointer 0 volatile }  }
 	{ EN1 int 1 regular {pointer 1 volatile }  }
 	{ EN2 int 1 regular {pointer 1 volatile }  }
@@ -21,8 +21,8 @@ set C_modelArgList {
 set C_modelArgMapList {[ 
 	{ "Name" : "clk", "interface" : "wire", "bitwidth" : 1,"bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "MotorCtrl.clk.m_if.Val","cData": "bool","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "reset", "interface" : "wire", "bitwidth" : 1,"bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "MotorCtrl.reset.m_if.Val","cData": "bool","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
- 	{ "Name" : "pwmR", "interface" : "wire", "bitwidth" : 10,"bitSlice":[{"low":0,"up":9,"cElement": [{"cName": "MotorCtrl.pwmR.m_if.Val.V","cData": "int10","bit_use": { "low": 0,"up": 9},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
- 	{ "Name" : "pwmL", "interface" : "wire", "bitwidth" : 10,"bitSlice":[{"low":0,"up":9,"cElement": [{"cName": "MotorCtrl.pwmL.m_if.Val.V","cData": "int10","bit_use": { "low": 0,"up": 9},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
+ 	{ "Name" : "pwmR", "interface" : "wire", "bitwidth" : 10,"bitSlice":[{"low":0,"up":9,"cElement": [{"cName": "MotorCtrl.pwmR.m_if.Val.V","cData": "uint10","bit_use": { "low": 0,"up": 9},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
+ 	{ "Name" : "pwmL", "interface" : "wire", "bitwidth" : 10,"bitSlice":[{"low":0,"up":9,"cElement": [{"cName": "MotorCtrl.pwmL.m_if.Val.V","cData": "uint10","bit_use": { "low": 0,"up": 9},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "Direction", "interface" : "wire", "bitwidth" : 1,"bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "MotorCtrl.Direction.m_if.Val","cData": "bool","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "EN1", "interface" : "wire", "bitwidth" : 1,"bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "MotorCtrl.EN1.m_if.Val","cData": "bool","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "EN2", "interface" : "wire", "bitwidth" : 1,"bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "MotorCtrl.EN2.m_if.Val","cData": "bool","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 

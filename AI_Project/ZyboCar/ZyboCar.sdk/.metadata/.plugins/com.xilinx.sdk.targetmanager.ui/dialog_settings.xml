@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="ZyboCarDesign_wrapper.bit" key="ZyboCarDesign_wrapper_hw_platform_0-bitFile"/>
+	<item value="Auto Detect" key="ZyboCarDesign_wrapper_hw_platform_0-device"/>
+	<item value="ZyboCarDesign_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="" key="ZyboCarDesign_wrapper_hw_platform_0-bmmFile"/>
+	<item value="Local" key="ZyboCarDesign_wrapper_hw_platform_0-target"/>
+</section>

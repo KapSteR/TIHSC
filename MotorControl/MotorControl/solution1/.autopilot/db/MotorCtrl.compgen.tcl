@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 set corename slv0
 set opts {
     {
-        id 10
+        id 12
         name pwmR
         reset_level 1
         sync_rst true
@@ -21,7 +21,7 @@ set opts {
         mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
     }
     {
-        id 11
+        id 13
         name pwmL
         reset_level 1
         sync_rst true
@@ -31,7 +31,7 @@ set opts {
         mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
     }
     {
-        id 12
+        id 14
         name Direction
         reset_level 1
         sync_rst true
@@ -62,7 +62,7 @@ puts "@W Can not find gen function '::AESL_LIB_XILADAPTER::axi_slave_int_gen' in
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 13 \
+    id 15 \
     name EN1 \
     type other \
     dir O \
@@ -77,7 +77,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 14 \
+    id 16 \
     name EN2 \
     type other \
     dir O \
@@ -92,7 +92,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 15 \
+    id 17 \
     name DIR1 \
     type other \
     dir O \
@@ -107,7 +107,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 16 \
+    id 18 \
     name DIR2 \
     type other \
     dir O \

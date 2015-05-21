@@ -14,13 +14,12 @@ namespace ap_rtl {
 
 const sc_logic MotorCtrl_pwmThread::ap_const_logic_1 = sc_dt::Log_1;
 const sc_logic MotorCtrl_pwmThread::ap_const_logic_0 = sc_dt::Log_0;
-const sc_lv<4> MotorCtrl_pwmThread::ap_ST_st2_fsm_1 = "10";
-const sc_lv<4> MotorCtrl_pwmThread::ap_ST_st3_fsm_2 = "100";
-const sc_lv<4> MotorCtrl_pwmThread::ap_ST_st4_fsm_3 = "1000";
+const sc_lv<3> MotorCtrl_pwmThread::ap_ST_st2_fsm_1 = "10";
+const sc_lv<3> MotorCtrl_pwmThread::ap_ST_st3_fsm_2 = "100";
 const sc_lv<32> MotorCtrl_pwmThread::ap_const_lv32_2 = "10";
 const sc_lv<1> MotorCtrl_pwmThread::ap_const_lv1_1 = "1";
 const sc_lv<1> MotorCtrl_pwmThread::ap_const_lv1_0 = "0";
-const sc_lv<32> MotorCtrl_pwmThread::ap_const_lv32_3 = "11";
+const sc_lv<10> MotorCtrl_pwmThread::ap_const_lv10_1 = "1";
 
 MotorCtrl_pwmThread::MotorCtrl_pwmThread(sc_module_name name) : sc_module(name), mVcdFile(0) {
 
@@ -30,85 +29,91 @@ MotorCtrl_pwmThread::MotorCtrl_pwmThread(sc_module_name name) : sc_module(name),
 
     SC_METHOD(thread_DIR1);
     sensitive << ( Direction );
-    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_100_p2 );
+    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_108_p2 );
     sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
 
     SC_METHOD(thread_DIR1_ap_vld);
-    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_100_p2 );
+    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_108_p2 );
     sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
 
     SC_METHOD(thread_DIR2);
     sensitive << ( Direction );
-    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_100_p2 );
-    sensitive << ( ap_sig_cseq_ST_st4_fsm_3 );
+    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_108_p2 );
+    sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
 
     SC_METHOD(thread_DIR2_ap_vld);
-    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_100_p2 );
-    sensitive << ( ap_sig_cseq_ST_st4_fsm_3 );
+    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_108_p2 );
+    sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
 
     SC_METHOD(thread_EN1);
-    sensitive << ( tmp_2_fu_166_p2 );
-    sensitive << ( ap_sig_bdd_49 );
+    sensitive << ( tmp_2_fu_195_p2 );
+    sensitive << ( ap_sig_bdd_42 );
 
     SC_METHOD(thread_EN1_ap_vld);
-    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_100_p2 );
-    sensitive << ( ap_sig_cseq_ST_st4_fsm_3 );
-    sensitive << ( tmp_2_fu_166_p2 );
+    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_108_p2 );
+    sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
+    sensitive << ( tmp_2_fu_195_p2 );
 
     SC_METHOD(thread_EN2);
-    sensitive << ( tmp_4_fu_176_p2 );
-    sensitive << ( ap_sig_bdd_49 );
+    sensitive << ( tmp_3_fu_201_p2 );
+    sensitive << ( ap_sig_bdd_42 );
 
     SC_METHOD(thread_EN2_ap_vld);
-    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_100_p2 );
-    sensitive << ( ap_sig_cseq_ST_st4_fsm_3 );
-    sensitive << ( tmp_4_fu_176_p2 );
+    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_108_p2 );
+    sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
+    sensitive << ( tmp_3_fu_201_p2 );
 
-    SC_METHOD(thread_MotorCtrl_pwmClock_V_read_read_fu_100_p2);
+    SC_METHOD(thread_MotorCtrl_DIR);
+    sensitive << ( Direction );
+    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_108_p2 );
+    sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
+
+    SC_METHOD(thread_MotorCtrl_DIR_ap_vld);
+    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_108_p2 );
+    sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
+
+    SC_METHOD(thread_MotorCtrl_pwmClock_V_read_read_fu_108_p2);
     sensitive << ( MotorCtrl_pwmClock_V );
     sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
 
-    SC_METHOD(thread_ap_sig_bdd_31);
+    SC_METHOD(thread_MotorCtrl_pwmCount_V_assign_fu_188_p2);
+    sensitive << ( MotorCtrl_pwmCount_V_i );
+
+    SC_METHOD(thread_MotorCtrl_pwmCount_V_o);
+    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_108_p2 );
+    sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
+    sensitive << ( MotorCtrl_pwmCount_V_assign_fu_188_p2 );
+
+    SC_METHOD(thread_MotorCtrl_pwmCount_V_o_ap_vld);
+    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_108_p2 );
+    sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
+
+    SC_METHOD(thread_ap_sig_bdd_34);
     sensitive << ( ap_CS_fsm );
 
-    SC_METHOD(thread_ap_sig_bdd_46);
-    sensitive << ( ap_CS_fsm );
-
-    SC_METHOD(thread_ap_sig_bdd_49);
-    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_100_p2 );
-    sensitive << ( ap_sig_cseq_ST_st4_fsm_3 );
+    SC_METHOD(thread_ap_sig_bdd_42);
+    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_108_p2 );
+    sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
 
     SC_METHOD(thread_ap_sig_cseq_ST_st3_fsm_2);
-    sensitive << ( ap_sig_bdd_31 );
+    sensitive << ( ap_sig_bdd_34 );
 
-    SC_METHOD(thread_ap_sig_cseq_ST_st4_fsm_3);
-    sensitive << ( ap_sig_bdd_46 );
-
-    SC_METHOD(thread_tmp_1_cast_fu_163_p1);
-    sensitive << ( val_V_reg_186 );
-
-    SC_METHOD(thread_tmp_2_fu_166_p2);
-    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_100_p2 );
-    sensitive << ( ap_sig_cseq_ST_st4_fsm_3 );
-    sensitive << ( tmp_cast_fu_159_p1 );
-    sensitive << ( tmp_1_cast_fu_163_p1 );
-
-    SC_METHOD(thread_tmp_3_cast_fu_172_p1);
+    SC_METHOD(thread_tmp_2_fu_195_p2);
     sensitive << ( pwmR );
+    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_108_p2 );
+    sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
+    sensitive << ( MotorCtrl_pwmCount_V_assign_fu_188_p2 );
 
-    SC_METHOD(thread_tmp_4_fu_176_p2);
-    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_100_p2 );
-    sensitive << ( ap_sig_cseq_ST_st4_fsm_3 );
-    sensitive << ( tmp_cast_fu_159_p1 );
-    sensitive << ( tmp_3_cast_fu_172_p1 );
-
-    SC_METHOD(thread_tmp_cast_fu_159_p1);
-    sensitive << ( MotorCtrl_pwmCount_V );
+    SC_METHOD(thread_tmp_3_fu_201_p2);
+    sensitive << ( pwmL );
+    sensitive << ( MotorCtrl_pwmClock_V_read_read_fu_108_p2 );
+    sensitive << ( ap_sig_cseq_ST_st3_fsm_2 );
+    sensitive << ( MotorCtrl_pwmCount_V_assign_fu_188_p2 );
 
     SC_METHOD(thread_ap_NS_fsm);
     sensitive << ( ap_CS_fsm );
 
-    ap_CS_fsm = "0010";
+    ap_CS_fsm = "010";
     static int apTFileNum = 0;
     stringstream apTFilenSS;
     apTFilenSS << "MotorCtrl_pwmThread_sc_trace_" << apTFileNum ++;
@@ -120,6 +125,7 @@ MotorCtrl_pwmThread::MotorCtrl_pwmThread(sc_module_name name) : sc_module(name),
     sc_trace(mVcdFile, ap_clk, "(port)ap_clk");
     sc_trace(mVcdFile, ap_rst, "(port)ap_rst");
     sc_trace(mVcdFile, pwmR, "(port)pwmR");
+    sc_trace(mVcdFile, pwmL, "(port)pwmL");
     sc_trace(mVcdFile, Direction, "(port)Direction");
     sc_trace(mVcdFile, EN1, "(port)EN1");
     sc_trace(mVcdFile, EN1_ap_vld, "(port)EN1_ap_vld");
@@ -129,24 +135,23 @@ MotorCtrl_pwmThread::MotorCtrl_pwmThread(sc_module_name name) : sc_module(name),
     sc_trace(mVcdFile, DIR1_ap_vld, "(port)DIR1_ap_vld");
     sc_trace(mVcdFile, DIR2, "(port)DIR2");
     sc_trace(mVcdFile, DIR2_ap_vld, "(port)DIR2_ap_vld");
-    sc_trace(mVcdFile, MotorCtrl_pwmCount_V, "(port)MotorCtrl_pwmCount_V");
+    sc_trace(mVcdFile, MotorCtrl_pwmCount_V_i, "(port)MotorCtrl_pwmCount_V_i");
+    sc_trace(mVcdFile, MotorCtrl_pwmCount_V_o, "(port)MotorCtrl_pwmCount_V_o");
+    sc_trace(mVcdFile, MotorCtrl_pwmCount_V_o_ap_vld, "(port)MotorCtrl_pwmCount_V_o_ap_vld");
+    sc_trace(mVcdFile, MotorCtrl_DIR, "(port)MotorCtrl_DIR");
+    sc_trace(mVcdFile, MotorCtrl_DIR_ap_vld, "(port)MotorCtrl_DIR_ap_vld");
     sc_trace(mVcdFile, MotorCtrl_pwmClock_V, "(port)MotorCtrl_pwmClock_V");
 #endif
 #ifdef __HLS_TRACE_LEVEL_INT__
-    sc_trace(mVcdFile, MotorCtrl_pwmClock_V_read_read_fu_100_p2, "MotorCtrl_pwmClock_V_read_read_fu_100_p2");
+    sc_trace(mVcdFile, MotorCtrl_pwmClock_V_read_read_fu_108_p2, "MotorCtrl_pwmClock_V_read_read_fu_108_p2");
     sc_trace(mVcdFile, ap_CS_fsm, "ap_CS_fsm");
     sc_trace(mVcdFile, ap_sig_cseq_ST_st3_fsm_2, "ap_sig_cseq_ST_st3_fsm_2");
-    sc_trace(mVcdFile, ap_sig_bdd_31, "ap_sig_bdd_31");
-    sc_trace(mVcdFile, val_V_reg_186, "val_V_reg_186");
-    sc_trace(mVcdFile, ap_sig_cseq_ST_st4_fsm_3, "ap_sig_cseq_ST_st4_fsm_3");
-    sc_trace(mVcdFile, ap_sig_bdd_46, "ap_sig_bdd_46");
-    sc_trace(mVcdFile, tmp_2_fu_166_p2, "tmp_2_fu_166_p2");
-    sc_trace(mVcdFile, tmp_4_fu_176_p2, "tmp_4_fu_176_p2");
-    sc_trace(mVcdFile, tmp_cast_fu_159_p1, "tmp_cast_fu_159_p1");
-    sc_trace(mVcdFile, tmp_1_cast_fu_163_p1, "tmp_1_cast_fu_163_p1");
-    sc_trace(mVcdFile, tmp_3_cast_fu_172_p1, "tmp_3_cast_fu_172_p1");
+    sc_trace(mVcdFile, ap_sig_bdd_34, "ap_sig_bdd_34");
+    sc_trace(mVcdFile, MotorCtrl_pwmCount_V_assign_fu_188_p2, "MotorCtrl_pwmCount_V_assign_fu_188_p2");
+    sc_trace(mVcdFile, tmp_2_fu_195_p2, "tmp_2_fu_195_p2");
+    sc_trace(mVcdFile, tmp_3_fu_201_p2, "tmp_3_fu_201_p2");
     sc_trace(mVcdFile, ap_NS_fsm, "ap_NS_fsm");
-    sc_trace(mVcdFile, ap_sig_bdd_49, "ap_sig_bdd_49");
+    sc_trace(mVcdFile, ap_sig_bdd_42, "ap_sig_bdd_42");
 #endif
 
     }
@@ -164,9 +169,6 @@ void MotorCtrl_pwmThread::thread_ap_clk_no_reset_() {
     } else {
         ap_CS_fsm = ap_NS_fsm.read();
     }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st3_fsm_2.read()) && !esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_100_p2.read(), ap_const_lv1_0))) {
-        val_V_reg_186 = pwmR.read();
-    }
 }
 
 void MotorCtrl_pwmThread::thread_DIR1() {
@@ -175,7 +177,7 @@ void MotorCtrl_pwmThread::thread_DIR1() {
 
 void MotorCtrl_pwmThread::thread_DIR1_ap_vld() {
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st3_fsm_2.read()) && 
-         !esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_100_p2.read(), ap_const_lv1_0))) {
+         !esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_108_p2.read(), ap_const_lv1_0))) {
         DIR1_ap_vld = ap_const_logic_1;
     } else {
         DIR1_ap_vld = ap_const_logic_0;
@@ -187,8 +189,8 @@ void MotorCtrl_pwmThread::thread_DIR2() {
 }
 
 void MotorCtrl_pwmThread::thread_DIR2_ap_vld() {
-    if ((!esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_100_p2.read(), ap_const_lv1_0) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st4_fsm_3.read()))) {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st3_fsm_2.read()) && 
+         !esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_108_p2.read(), ap_const_lv1_0))) {
         DIR2_ap_vld = ap_const_logic_1;
     } else {
         DIR2_ap_vld = ap_const_logic_0;
@@ -196,10 +198,10 @@ void MotorCtrl_pwmThread::thread_DIR2_ap_vld() {
 }
 
 void MotorCtrl_pwmThread::thread_EN1() {
-    if (ap_sig_bdd_49.read()) {
-        if (!esl_seteq<1,1,1>(ap_const_lv1_0, tmp_2_fu_166_p2.read())) {
+    if (ap_sig_bdd_42.read()) {
+        if (!esl_seteq<1,1,1>(ap_const_lv1_0, tmp_2_fu_195_p2.read())) {
             EN1 =  (sc_logic) (ap_const_lv1_1[0]);
-        } else if (esl_seteq<1,1,1>(ap_const_lv1_0, tmp_2_fu_166_p2.read())) {
+        } else if (esl_seteq<1,1,1>(ap_const_lv1_0, tmp_2_fu_195_p2.read())) {
             EN1 =  (sc_logic) (ap_const_lv1_0[0]);
         } else {
             EN1 = sc_logic('X');
@@ -210,12 +212,12 @@ void MotorCtrl_pwmThread::thread_EN1() {
 }
 
 void MotorCtrl_pwmThread::thread_EN1_ap_vld() {
-    if (((!esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_100_p2.read(), ap_const_lv1_0) && 
-          esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st4_fsm_3.read()) && 
-          esl_seteq<1,1,1>(ap_const_lv1_0, tmp_2_fu_166_p2.read())) || 
-         (!esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_100_p2.read(), ap_const_lv1_0) && 
-          esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st4_fsm_3.read()) && 
-          !esl_seteq<1,1,1>(ap_const_lv1_0, tmp_2_fu_166_p2.read())))) {
+    if (((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st3_fsm_2.read()) && 
+          !esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_108_p2.read(), ap_const_lv1_0) && 
+          esl_seteq<1,1,1>(ap_const_lv1_0, tmp_2_fu_195_p2.read())) || 
+         (esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st3_fsm_2.read()) && 
+          !esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_108_p2.read(), ap_const_lv1_0) && 
+          !esl_seteq<1,1,1>(ap_const_lv1_0, tmp_2_fu_195_p2.read())))) {
         EN1_ap_vld = ap_const_logic_1;
     } else {
         EN1_ap_vld = ap_const_logic_0;
@@ -223,10 +225,10 @@ void MotorCtrl_pwmThread::thread_EN1_ap_vld() {
 }
 
 void MotorCtrl_pwmThread::thread_EN2() {
-    if (ap_sig_bdd_49.read()) {
-        if (!esl_seteq<1,1,1>(ap_const_lv1_0, tmp_4_fu_176_p2.read())) {
+    if (ap_sig_bdd_42.read()) {
+        if (!esl_seteq<1,1,1>(ap_const_lv1_0, tmp_3_fu_201_p2.read())) {
             EN2 =  (sc_logic) (ap_const_lv1_1[0]);
-        } else if (esl_seteq<1,1,1>(ap_const_lv1_0, tmp_4_fu_176_p2.read())) {
+        } else if (esl_seteq<1,1,1>(ap_const_lv1_0, tmp_3_fu_201_p2.read())) {
             EN2 =  (sc_logic) (ap_const_lv1_0[0]);
         } else {
             EN2 = sc_logic('X');
@@ -237,68 +239,74 @@ void MotorCtrl_pwmThread::thread_EN2() {
 }
 
 void MotorCtrl_pwmThread::thread_EN2_ap_vld() {
-    if (((!esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_100_p2.read(), ap_const_lv1_0) && 
-          esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st4_fsm_3.read()) && 
-          esl_seteq<1,1,1>(ap_const_lv1_0, tmp_4_fu_176_p2.read())) || 
-         (!esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_100_p2.read(), ap_const_lv1_0) && 
-          esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st4_fsm_3.read()) && 
-          !esl_seteq<1,1,1>(ap_const_lv1_0, tmp_4_fu_176_p2.read())))) {
+    if (((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st3_fsm_2.read()) && 
+          !esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_108_p2.read(), ap_const_lv1_0) && 
+          esl_seteq<1,1,1>(ap_const_lv1_0, tmp_3_fu_201_p2.read())) || 
+         (esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st3_fsm_2.read()) && 
+          !esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_108_p2.read(), ap_const_lv1_0) && 
+          !esl_seteq<1,1,1>(ap_const_lv1_0, tmp_3_fu_201_p2.read())))) {
         EN2_ap_vld = ap_const_logic_1;
     } else {
         EN2_ap_vld = ap_const_logic_0;
     }
 }
 
-void MotorCtrl_pwmThread::thread_MotorCtrl_pwmClock_V_read_read_fu_100_p2() {
-    MotorCtrl_pwmClock_V_read_read_fu_100_p2 = MotorCtrl_pwmClock_V.read();
+void MotorCtrl_pwmThread::thread_MotorCtrl_DIR() {
+    MotorCtrl_DIR = Direction.read();
 }
 
-void MotorCtrl_pwmThread::thread_ap_sig_bdd_31() {
-    ap_sig_bdd_31 = esl_seteq<1,1,1>(ap_CS_fsm.read().range(2, 2), ap_const_lv1_1);
+void MotorCtrl_pwmThread::thread_MotorCtrl_DIR_ap_vld() {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st3_fsm_2.read()) && 
+         !esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_108_p2.read(), ap_const_lv1_0))) {
+        MotorCtrl_DIR_ap_vld = ap_const_logic_1;
+    } else {
+        MotorCtrl_DIR_ap_vld = ap_const_logic_0;
+    }
 }
 
-void MotorCtrl_pwmThread::thread_ap_sig_bdd_46() {
-    ap_sig_bdd_46 = esl_seteq<1,1,1>(ap_const_lv1_1, ap_CS_fsm.read().range(3, 3));
+void MotorCtrl_pwmThread::thread_MotorCtrl_pwmClock_V_read_read_fu_108_p2() {
+    MotorCtrl_pwmClock_V_read_read_fu_108_p2 = MotorCtrl_pwmClock_V.read();
 }
 
-void MotorCtrl_pwmThread::thread_ap_sig_bdd_49() {
-    ap_sig_bdd_49 = (!esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_100_p2.read(), ap_const_lv1_0) && esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st4_fsm_3.read()));
+void MotorCtrl_pwmThread::thread_MotorCtrl_pwmCount_V_assign_fu_188_p2() {
+    MotorCtrl_pwmCount_V_assign_fu_188_p2 = (!MotorCtrl_pwmCount_V_i.read().is_01() || !ap_const_lv10_1.is_01())? sc_lv<10>(): (sc_biguint<10>(MotorCtrl_pwmCount_V_i.read()) + sc_biguint<10>(ap_const_lv10_1));
+}
+
+void MotorCtrl_pwmThread::thread_MotorCtrl_pwmCount_V_o() {
+    MotorCtrl_pwmCount_V_o = MotorCtrl_pwmCount_V_assign_fu_188_p2.read();
+}
+
+void MotorCtrl_pwmThread::thread_MotorCtrl_pwmCount_V_o_ap_vld() {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st3_fsm_2.read()) && 
+         !esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_108_p2.read(), ap_const_lv1_0))) {
+        MotorCtrl_pwmCount_V_o_ap_vld = ap_const_logic_1;
+    } else {
+        MotorCtrl_pwmCount_V_o_ap_vld = ap_const_logic_0;
+    }
+}
+
+void MotorCtrl_pwmThread::thread_ap_sig_bdd_34() {
+    ap_sig_bdd_34 = esl_seteq<1,1,1>(ap_CS_fsm.read().range(2, 2), ap_const_lv1_1);
+}
+
+void MotorCtrl_pwmThread::thread_ap_sig_bdd_42() {
+    ap_sig_bdd_42 = (esl_seteq<1,1,1>(ap_const_logic_1, ap_sig_cseq_ST_st3_fsm_2.read()) && !esl_seteq<1,1,1>(MotorCtrl_pwmClock_V_read_read_fu_108_p2.read(), ap_const_lv1_0));
 }
 
 void MotorCtrl_pwmThread::thread_ap_sig_cseq_ST_st3_fsm_2() {
-    if (ap_sig_bdd_31.read()) {
+    if (ap_sig_bdd_34.read()) {
         ap_sig_cseq_ST_st3_fsm_2 = ap_const_logic_1;
     } else {
         ap_sig_cseq_ST_st3_fsm_2 = ap_const_logic_0;
     }
 }
 
-void MotorCtrl_pwmThread::thread_ap_sig_cseq_ST_st4_fsm_3() {
-    if (ap_sig_bdd_46.read()) {
-        ap_sig_cseq_ST_st4_fsm_3 = ap_const_logic_1;
-    } else {
-        ap_sig_cseq_ST_st4_fsm_3 = ap_const_logic_0;
-    }
+void MotorCtrl_pwmThread::thread_tmp_2_fu_195_p2() {
+    tmp_2_fu_195_p2 = (!MotorCtrl_pwmCount_V_assign_fu_188_p2.read().is_01() || !pwmR.read().is_01())? sc_lv<1>(): (sc_biguint<10>(MotorCtrl_pwmCount_V_assign_fu_188_p2.read()) < sc_biguint<10>(pwmR.read()));
 }
 
-void MotorCtrl_pwmThread::thread_tmp_1_cast_fu_163_p1() {
-    tmp_1_cast_fu_163_p1 = esl_sext<11,10>(val_V_reg_186.read());
-}
-
-void MotorCtrl_pwmThread::thread_tmp_2_fu_166_p2() {
-    tmp_2_fu_166_p2 = (!tmp_cast_fu_159_p1.read().is_01() || !tmp_1_cast_fu_163_p1.read().is_01())? sc_lv<1>(): (sc_bigint<11>(tmp_cast_fu_159_p1.read()) < sc_bigint<11>(tmp_1_cast_fu_163_p1.read()));
-}
-
-void MotorCtrl_pwmThread::thread_tmp_3_cast_fu_172_p1() {
-    tmp_3_cast_fu_172_p1 = esl_sext<11,10>(pwmR.read());
-}
-
-void MotorCtrl_pwmThread::thread_tmp_4_fu_176_p2() {
-    tmp_4_fu_176_p2 = (!tmp_cast_fu_159_p1.read().is_01() || !tmp_3_cast_fu_172_p1.read().is_01())? sc_lv<1>(): (sc_bigint<11>(tmp_cast_fu_159_p1.read()) < sc_bigint<11>(tmp_3_cast_fu_172_p1.read()));
-}
-
-void MotorCtrl_pwmThread::thread_tmp_cast_fu_159_p1() {
-    tmp_cast_fu_159_p1 = esl_zext<11,10>(MotorCtrl_pwmCount_V.read());
+void MotorCtrl_pwmThread::thread_tmp_3_fu_201_p2() {
+    tmp_3_fu_201_p2 = (!MotorCtrl_pwmCount_V_assign_fu_188_p2.read().is_01() || !pwmL.read().is_01())? sc_lv<1>(): (sc_biguint<10>(MotorCtrl_pwmCount_V_assign_fu_188_p2.read()) < sc_biguint<10>(pwmL.read()));
 }
 
 void MotorCtrl_pwmThread::thread_ap_NS_fsm() {
@@ -307,13 +315,10 @@ void MotorCtrl_pwmThread::thread_ap_NS_fsm() {
             ap_NS_fsm = ap_ST_st3_fsm_2;
             break;
         case 4 : 
-            ap_NS_fsm = ap_ST_st4_fsm_3;
-            break;
-        case 8 : 
             ap_NS_fsm = ap_ST_st3_fsm_2;
             break;
         default : 
-            ap_NS_fsm = "XXXX";
+            ap_NS_fsm = "XXX";
             break;
     }
 }

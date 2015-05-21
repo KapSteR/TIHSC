@@ -15,10 +15,11 @@
 namespace ap_rtl {
 
 struct MotorCtrl_pwmThread : public sc_module {
-    // Port declarations 14
+    // Port declarations 19
     sc_in_clk ap_clk;
     sc_in< sc_logic > ap_rst;
     sc_in< sc_lv<10> > pwmR;
+    sc_in< sc_lv<10> > pwmL;
     sc_in< sc_logic > Direction;
     sc_out< sc_logic > EN1;
     sc_out< sc_logic > EN1_ap_vld;
@@ -28,7 +29,11 @@ struct MotorCtrl_pwmThread : public sc_module {
     sc_out< sc_logic > DIR1_ap_vld;
     sc_out< sc_logic > DIR2;
     sc_out< sc_logic > DIR2_ap_vld;
-    sc_in< sc_lv<10> > MotorCtrl_pwmCount_V;
+    sc_in< sc_lv<10> > MotorCtrl_pwmCount_V_i;
+    sc_out< sc_lv<10> > MotorCtrl_pwmCount_V_o;
+    sc_out< sc_logic > MotorCtrl_pwmCount_V_o_ap_vld;
+    sc_out< sc_logic > MotorCtrl_DIR;
+    sc_out< sc_logic > MotorCtrl_DIR_ap_vld;
     sc_in< sc_lv<1> > MotorCtrl_pwmClock_V;
 
 
@@ -40,29 +45,23 @@ struct MotorCtrl_pwmThread : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    sc_signal< sc_lv<1> > MotorCtrl_pwmClock_V_read_read_fu_100_p2;
-    sc_signal< sc_lv<4> > ap_CS_fsm;
+    sc_signal< sc_lv<1> > MotorCtrl_pwmClock_V_read_read_fu_108_p2;
+    sc_signal< sc_lv<3> > ap_CS_fsm;
     sc_signal< sc_logic > ap_sig_cseq_ST_st3_fsm_2;
-    sc_signal< bool > ap_sig_bdd_31;
-    sc_signal< sc_lv<10> > val_V_reg_186;
-    sc_signal< sc_logic > ap_sig_cseq_ST_st4_fsm_3;
-    sc_signal< bool > ap_sig_bdd_46;
-    sc_signal< sc_lv<1> > tmp_2_fu_166_p2;
-    sc_signal< sc_lv<1> > tmp_4_fu_176_p2;
-    sc_signal< sc_lv<11> > tmp_cast_fu_159_p1;
-    sc_signal< sc_lv<11> > tmp_1_cast_fu_163_p1;
-    sc_signal< sc_lv<11> > tmp_3_cast_fu_172_p1;
-    sc_signal< sc_lv<4> > ap_NS_fsm;
-    sc_signal< bool > ap_sig_bdd_49;
+    sc_signal< bool > ap_sig_bdd_34;
+    sc_signal< sc_lv<10> > MotorCtrl_pwmCount_V_assign_fu_188_p2;
+    sc_signal< sc_lv<1> > tmp_2_fu_195_p2;
+    sc_signal< sc_lv<1> > tmp_3_fu_201_p2;
+    sc_signal< sc_lv<3> > ap_NS_fsm;
+    sc_signal< bool > ap_sig_bdd_42;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
-    static const sc_lv<4> ap_ST_st2_fsm_1;
-    static const sc_lv<4> ap_ST_st3_fsm_2;
-    static const sc_lv<4> ap_ST_st4_fsm_3;
+    static const sc_lv<3> ap_ST_st2_fsm_1;
+    static const sc_lv<3> ap_ST_st3_fsm_2;
     static const sc_lv<32> ap_const_lv32_2;
     static const sc_lv<1> ap_const_lv1_1;
     static const sc_lv<1> ap_const_lv1_0;
-    static const sc_lv<32> ap_const_lv32_3;
+    static const sc_lv<10> ap_const_lv10_1;
     // Thread declarations
     void thread_ap_clk_no_reset_();
     void thread_DIR1();
@@ -73,17 +72,17 @@ struct MotorCtrl_pwmThread : public sc_module {
     void thread_EN1_ap_vld();
     void thread_EN2();
     void thread_EN2_ap_vld();
-    void thread_MotorCtrl_pwmClock_V_read_read_fu_100_p2();
-    void thread_ap_sig_bdd_31();
-    void thread_ap_sig_bdd_46();
-    void thread_ap_sig_bdd_49();
+    void thread_MotorCtrl_DIR();
+    void thread_MotorCtrl_DIR_ap_vld();
+    void thread_MotorCtrl_pwmClock_V_read_read_fu_108_p2();
+    void thread_MotorCtrl_pwmCount_V_assign_fu_188_p2();
+    void thread_MotorCtrl_pwmCount_V_o();
+    void thread_MotorCtrl_pwmCount_V_o_ap_vld();
+    void thread_ap_sig_bdd_34();
+    void thread_ap_sig_bdd_42();
     void thread_ap_sig_cseq_ST_st3_fsm_2();
-    void thread_ap_sig_cseq_ST_st4_fsm_3();
-    void thread_tmp_1_cast_fu_163_p1();
-    void thread_tmp_2_fu_166_p2();
-    void thread_tmp_3_cast_fu_172_p1();
-    void thread_tmp_4_fu_176_p2();
-    void thread_tmp_cast_fu_159_p1();
+    void thread_tmp_2_fu_195_p2();
+    void thread_tmp_3_fu_201_p2();
     void thread_ap_NS_fsm();
 };
 

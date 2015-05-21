@@ -15,8 +15,8 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboCarDesign_p
 # IP: bd/ZyboCarDesign/ip/ZyboCarDesign_rst_processing_system7_0_100M_0/ZyboCarDesign_rst_processing_system7_0_100M_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboCarDesign_rst_processing_system7_0_100M_0 || ORIG_REF_NAME==ZyboCarDesign_rst_processing_system7_0_100M_0}]
 
-# IP: bd/ZyboCarDesign/ip/ZyboCarDesign_MotorCtrl_0_0/ZyboCarDesign_MotorCtrl_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboCarDesign_MotorCtrl_0_0 || ORIG_REF_NAME==ZyboCarDesign_MotorCtrl_0_0}]
+# IP: bd/ZyboCarDesign/ip/ZyboCarDesign_MotorCtrl_0_1/ZyboCarDesign_MotorCtrl_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboCarDesign_MotorCtrl_0_1 || ORIG_REF_NAME==ZyboCarDesign_MotorCtrl_0_1}]
 
 # IP: bd/ZyboCarDesign/ip/ZyboCarDesign_auto_pc_0/ZyboCarDesign_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboCarDesign_auto_pc_0 || ORIG_REF_NAME==ZyboCarDesign_auto_pc_0}]
@@ -32,7 +32,7 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/ZyboCarDesign/ip/ZyboCarDesign_rst_processing_system7_0_100M_0/ZyboCarDesign_rst_processing_system7_0_100M_0_ooc.xdc
 
-# XDC: ipshared/xilinx.com/MotorCtrl_v1_0/a365a38e/constraints/MotorCtrl_ooc.xdc
+# XDC: ipshared/xilinx.com/MotorCtrl_v1_1/c3e9c909/constraints/MotorCtrl_ooc.xdc
 
 # XDC: bd/ZyboCarDesign/ip/ZyboCarDesign_auto_pc_0/ZyboCarDesign_auto_pc_0_ooc.xdc
 

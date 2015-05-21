@@ -1,0 +1,6 @@
+20:20:50 **** Incremental Build of configuration Debug for project SimpleZyboTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+
+20:20:50 Build Finished (took 245ms)
+

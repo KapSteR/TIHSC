@@ -509,13 +509,13 @@
 #pragma line 2 "C:/Xilinx/Vivado_HLS/2014.4/common/technology/autopilot/ap_sysc\\systemc.h" 2 ::: 33513
 #pragma line 7 "MotorControl/main.h" 2 ::: 33514
 #pragma line 8 "MotorControl/main.h" ::: 33516
-#pragma line 47 "MotorControl/main.h" ::: 33563
-#pragma line 2 "MotorControl/main.cpp" 2 ::: 33568
-#pragma line 3 "MotorControl/main.cpp" ::: 33570
-#pragma line 5 "MotorControl/main.cpp" ::: 33595
-#pragma line 6 "MotorControl/main.cpp" ::: 33597
-#pragma line 7 "MotorControl/main.cpp" ::: 33599
-#pragma line 10 "MotorControl/main.cpp" ::: 33601
-#pragma line 12 "MotorControl/main.cpp" ::: 33604
-#pragma line 40 "MotorControl/main.cpp" ::: 33634
-#pragma line 41 "MotorControl/main.cpp" ::: 33659
+#pragma line 39 "MotorControl/main.h" ::: 33565
+#pragma line 2 "MotorControl/main.cpp" 2 ::: 33570
+#pragma line 3 "MotorControl/main.cpp" ::: 33572
+#pragma line 5 "MotorControl/main.cpp" ::: 33598
+#pragma line 6 "MotorControl/main.cpp" ::: 33600
+#pragma line 7 "MotorControl/main.cpp" ::: 33602
+#pragma line 10 "MotorControl/main.cpp" ::: 33604
+#pragma line 12 "MotorControl/main.cpp" ::: 33607
+#pragma line 44 "MotorControl/main.cpp" ::: 33641
+#pragma line 45 "MotorControl/main.cpp" ::: 33667

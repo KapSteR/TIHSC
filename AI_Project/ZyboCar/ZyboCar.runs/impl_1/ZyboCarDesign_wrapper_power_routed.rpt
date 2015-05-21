@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
-| Date             : Wed May 20 15:38:21 2015
+| Date             : Thu May 21 19:59:39 2015
 | Host             : KASPER-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file ZyboCarDesign_wrapper_power_routed.rpt -pb ZyboCarDesign_wrapper_power_summary_routed.pb
 | Design           : ZyboCarDesign_wrapper
@@ -50,13 +50,13 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.003 |        3 |       --- |             --- |
-| Slice Logic             |     0.003 |     1475 |       --- |             --- |
-|   LUT as Logic          |     0.002 |      433 |     17600 |            2.46 |
-|   Register              |    <0.001 |      607 |     35200 |            1.72 |
-|   CARRY4                |    <0.001 |       20 |      4400 |            0.45 |
+| Slice Logic             |     0.003 |     1510 |       --- |             --- |
+|   LUT as Logic          |     0.003 |      457 |     17600 |            2.59 |
+|   Register              |    <0.001 |      605 |     35200 |            1.71 |
+|   CARRY4                |    <0.001 |       24 |      4400 |            0.54 |
 |   LUT as Shift Register |    <0.001 |       64 |      6000 |            1.06 |
-|   Others                |     0.000 |      202 |       --- |             --- |
-| Signals                 |     0.003 |      959 |       --- |             --- |
+|   Others                |     0.000 |      201 |       --- |             --- |
+| Signals                 |     0.003 |      975 |       --- |             --- |
 | I/O                     |    <0.001 |        4 |       100 |            4.00 |
 | PS7                     |     1.515 |        1 |       --- |             --- |
 | Static Power            |     0.131 |          |           |                 |
@@ -151,8 +151,8 @@ Table of Contents
 |     MotorCtrl_0                                  |     0.001 |
 |       inst                                       |     0.001 |
 |         MotorCtrl_U                              |    <0.001 |
-|           grp_MotorCtrl_clockDividerThread_fu_88 |    <0.001 |
-|           grp_MotorCtrl_pwmThread_fu_116         |    <0.001 |
+|           grp_MotorCtrl_clockDividerThread_fu_90 |    <0.001 |
+|           grp_MotorCtrl_pwmThread_fu_120         |    <0.001 |
 |         MotorCtrl_slv0_if_U                      |    <0.001 |
 |     processing_system7_0                         |     1.515 |
 |       inst                                       |     1.515 |

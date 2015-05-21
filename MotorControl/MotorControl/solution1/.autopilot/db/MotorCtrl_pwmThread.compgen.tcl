@@ -22,6 +22,16 @@ set opts {
     }
     {
         id 3
+        name pwmL
+        reset_level 1
+        sync_rst true
+        type scalar
+        dir I
+        width 10
+        mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
+    }
+    {
+        id 4
         name Direction
         reset_level 1
         sync_rst true
@@ -52,7 +62,7 @@ puts "@W Can not find gen function '::AESL_LIB_XILADAPTER::axi_slave_int_gen' in
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4 \
+    id 5 \
     name EN1 \
     type other \
     dir O \
@@ -67,7 +77,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 5 \
+    id 6 \
     name EN2 \
     type other \
     dir O \
@@ -82,7 +92,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 6 \
+    id 7 \
     name DIR1 \
     type other \
     dir O \
@@ -97,7 +107,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 7 \
+    id 8 \
     name DIR2 \
     type other \
     dir O \
@@ -112,22 +122,37 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 8 \
+    id 9 \
     name MotorCtrl_pwmCount_V \
     type other \
-    dir I \
+    dir IO \
     reset_level 1 \
     sync_rst true \
     corename dc_MotorCtrl_pwmCount_V \
     op interface \
-    ports { MotorCtrl_pwmCount_V { I 10 vector } } \
+    ports { MotorCtrl_pwmCount_V_i { I 10 vector } MotorCtrl_pwmCount_V_o { O 10 vector } MotorCtrl_pwmCount_V_o_ap_vld { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 9 \
+    id 10 \
+    name MotorCtrl_DIR \
+    type other \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_MotorCtrl_DIR \
+    op interface \
+    ports { MotorCtrl_DIR { O 1 bit } MotorCtrl_DIR_ap_vld { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 11 \
     name MotorCtrl_pwmClock_V \
     type other \
     dir I \

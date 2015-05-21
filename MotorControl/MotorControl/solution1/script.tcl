@@ -5,8 +5,8 @@
 ############################################################
 open_project MotorControl
 set_top MotorCtrl
-add_files MotorControl/main.h
 add_files MotorControl/main.cpp
+add_files MotorControl/main.h
 open_solution "solution1"
 set_part {xc7z010clg400-1}
 create_clock -period 8 -name default
@@ -14,4 +14,4 @@ source "./MotorControl/solution1/directives.tcl"
 #csim_design
 csynth_design
 #cosim_design
-export_design -evaluate vhdl -format ip_catalog
+export_design -evaluate verilog -format ip_catalog -version "1.1"

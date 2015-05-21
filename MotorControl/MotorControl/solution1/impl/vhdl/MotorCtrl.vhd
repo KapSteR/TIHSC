@@ -26,40 +26,45 @@ end;
 architecture behav of MotorCtrl is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "MotorCtrl,hls_ip_2014_4,{HLS_INPUT_TYPE=sc,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010clg400-1,HLS_INPUT_CLOCK=8.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=2.518000,HLS_SYN_LAT=3,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=55,HLS_SYN_LUT=136}";
+    "MotorCtrl,hls_ip_2014_4,{HLS_INPUT_TYPE=sc,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010clg400-1,HLS_INPUT_CLOCK=8.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.909500,HLS_SYN_LAT=2,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=54,HLS_SYN_LUT=142}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
-    constant ap_const_lv10_0 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
 
+    signal MotorCtrl_pwmCount_V : STD_LOGIC_VECTOR (9 downto 0);
     signal MotorCtrl_dividerCount_V : STD_LOGIC_VECTOR (31 downto 0);
     signal MotorCtrl_pwmClock_V : STD_LOGIC_VECTOR (0 downto 0);
-    signal MotorCtrl_ssdm_thread_M_pwm_load_fu_145_p1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal MotorCtrl_ssdm_thread_M_pwm_load_fu_151_p1 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm : STD_LOGIC_VECTOR (1 downto 0);
     attribute fsm_encoding : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
-    signal grp_MotorCtrl_clockDividerThread_fu_88_MotorCtrl_dividerCount_V_i : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_MotorCtrl_clockDividerThread_fu_88_MotorCtrl_dividerCount_V_o : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_MotorCtrl_clockDividerThread_fu_88_MotorCtrl_dividerCount_V_o_ap_vld : STD_LOGIC;
-    signal grp_MotorCtrl_clockDividerThread_fu_88_MotorCtrl_pwmClock_V : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_MotorCtrl_clockDividerThread_fu_88_MotorCtrl_pwmClock_V_ap_vld : STD_LOGIC;
-    signal grp_MotorCtrl_pwmThread_fu_116_pwmR : STD_LOGIC_VECTOR (9 downto 0);
-    signal grp_MotorCtrl_pwmThread_fu_116_Direction : STD_LOGIC;
-    signal grp_MotorCtrl_pwmThread_fu_116_EN1 : STD_LOGIC;
-    signal grp_MotorCtrl_pwmThread_fu_116_EN1_ap_vld : STD_LOGIC;
-    signal grp_MotorCtrl_pwmThread_fu_116_EN2 : STD_LOGIC;
-    signal grp_MotorCtrl_pwmThread_fu_116_EN2_ap_vld : STD_LOGIC;
-    signal grp_MotorCtrl_pwmThread_fu_116_DIR1 : STD_LOGIC;
-    signal grp_MotorCtrl_pwmThread_fu_116_DIR1_ap_vld : STD_LOGIC;
-    signal grp_MotorCtrl_pwmThread_fu_116_DIR2 : STD_LOGIC;
-    signal grp_MotorCtrl_pwmThread_fu_116_DIR2_ap_vld : STD_LOGIC;
-    signal grp_MotorCtrl_pwmThread_fu_116_MotorCtrl_pwmCount_V : STD_LOGIC_VECTOR (9 downto 0);
-    signal grp_MotorCtrl_pwmThread_fu_116_MotorCtrl_pwmClock_V : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_i : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_o : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_o_ap_vld : STD_LOGIC;
+    signal grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_pwmClock_V : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_pwmClock_V_ap_vld : STD_LOGIC;
+    signal grp_MotorCtrl_pwmThread_fu_120_pwmR : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_MotorCtrl_pwmThread_fu_120_pwmL : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_MotorCtrl_pwmThread_fu_120_Direction : STD_LOGIC;
+    signal grp_MotorCtrl_pwmThread_fu_120_EN1 : STD_LOGIC;
+    signal grp_MotorCtrl_pwmThread_fu_120_EN1_ap_vld : STD_LOGIC;
+    signal grp_MotorCtrl_pwmThread_fu_120_EN2 : STD_LOGIC;
+    signal grp_MotorCtrl_pwmThread_fu_120_EN2_ap_vld : STD_LOGIC;
+    signal grp_MotorCtrl_pwmThread_fu_120_DIR1 : STD_LOGIC;
+    signal grp_MotorCtrl_pwmThread_fu_120_DIR1_ap_vld : STD_LOGIC;
+    signal grp_MotorCtrl_pwmThread_fu_120_DIR2 : STD_LOGIC;
+    signal grp_MotorCtrl_pwmThread_fu_120_DIR2_ap_vld : STD_LOGIC;
+    signal grp_MotorCtrl_pwmThread_fu_120_MotorCtrl_pwmCount_V_i : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_MotorCtrl_pwmThread_fu_120_MotorCtrl_pwmCount_V_o : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_MotorCtrl_pwmThread_fu_120_MotorCtrl_pwmCount_V_o_ap_vld : STD_LOGIC;
+    signal grp_MotorCtrl_pwmThread_fu_120_MotorCtrl_DIR : STD_LOGIC;
+    signal grp_MotorCtrl_pwmThread_fu_120_MotorCtrl_DIR_ap_vld : STD_LOGIC;
+    signal grp_MotorCtrl_pwmThread_fu_120_MotorCtrl_pwmClock_V : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_sig_cseq_ST_st2_fsm_1 : STD_LOGIC;
-    signal ap_sig_bdd_61 : BOOLEAN;
+    signal ap_sig_bdd_67 : BOOLEAN;
 
     component MotorCtrl_clockDividerThread IS
     port (
@@ -78,6 +83,7 @@ architecture behav of MotorCtrl is
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
         pwmR : IN STD_LOGIC_VECTOR (9 downto 0);
+        pwmL : IN STD_LOGIC_VECTOR (9 downto 0);
         Direction : IN STD_LOGIC;
         EN1 : OUT STD_LOGIC;
         EN1_ap_vld : OUT STD_LOGIC;
@@ -87,39 +93,48 @@ architecture behav of MotorCtrl is
         DIR1_ap_vld : OUT STD_LOGIC;
         DIR2 : OUT STD_LOGIC;
         DIR2_ap_vld : OUT STD_LOGIC;
-        MotorCtrl_pwmCount_V : IN STD_LOGIC_VECTOR (9 downto 0);
+        MotorCtrl_pwmCount_V_i : IN STD_LOGIC_VECTOR (9 downto 0);
+        MotorCtrl_pwmCount_V_o : OUT STD_LOGIC_VECTOR (9 downto 0);
+        MotorCtrl_pwmCount_V_o_ap_vld : OUT STD_LOGIC;
+        MotorCtrl_DIR : OUT STD_LOGIC;
+        MotorCtrl_DIR_ap_vld : OUT STD_LOGIC;
         MotorCtrl_pwmClock_V : IN STD_LOGIC_VECTOR (0 downto 0) );
     end component;
 
 
 
 begin
-    grp_MotorCtrl_clockDividerThread_fu_88 : component MotorCtrl_clockDividerThread
+    grp_MotorCtrl_clockDividerThread_fu_90 : component MotorCtrl_clockDividerThread
     port map (
         ap_clk => clk,
         ap_rst => reset,
-        MotorCtrl_dividerCount_V_i => grp_MotorCtrl_clockDividerThread_fu_88_MotorCtrl_dividerCount_V_i,
-        MotorCtrl_dividerCount_V_o => grp_MotorCtrl_clockDividerThread_fu_88_MotorCtrl_dividerCount_V_o,
-        MotorCtrl_dividerCount_V_o_ap_vld => grp_MotorCtrl_clockDividerThread_fu_88_MotorCtrl_dividerCount_V_o_ap_vld,
-        MotorCtrl_pwmClock_V => grp_MotorCtrl_clockDividerThread_fu_88_MotorCtrl_pwmClock_V,
-        MotorCtrl_pwmClock_V_ap_vld => grp_MotorCtrl_clockDividerThread_fu_88_MotorCtrl_pwmClock_V_ap_vld);
+        MotorCtrl_dividerCount_V_i => grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_i,
+        MotorCtrl_dividerCount_V_o => grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_o,
+        MotorCtrl_dividerCount_V_o_ap_vld => grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_o_ap_vld,
+        MotorCtrl_pwmClock_V => grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_pwmClock_V,
+        MotorCtrl_pwmClock_V_ap_vld => grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_pwmClock_V_ap_vld);
 
-    grp_MotorCtrl_pwmThread_fu_116 : component MotorCtrl_pwmThread
+    grp_MotorCtrl_pwmThread_fu_120 : component MotorCtrl_pwmThread
     port map (
         ap_clk => clk,
         ap_rst => reset,
-        pwmR => grp_MotorCtrl_pwmThread_fu_116_pwmR,
-        Direction => grp_MotorCtrl_pwmThread_fu_116_Direction,
-        EN1 => grp_MotorCtrl_pwmThread_fu_116_EN1,
-        EN1_ap_vld => grp_MotorCtrl_pwmThread_fu_116_EN1_ap_vld,
-        EN2 => grp_MotorCtrl_pwmThread_fu_116_EN2,
-        EN2_ap_vld => grp_MotorCtrl_pwmThread_fu_116_EN2_ap_vld,
-        DIR1 => grp_MotorCtrl_pwmThread_fu_116_DIR1,
-        DIR1_ap_vld => grp_MotorCtrl_pwmThread_fu_116_DIR1_ap_vld,
-        DIR2 => grp_MotorCtrl_pwmThread_fu_116_DIR2,
-        DIR2_ap_vld => grp_MotorCtrl_pwmThread_fu_116_DIR2_ap_vld,
-        MotorCtrl_pwmCount_V => grp_MotorCtrl_pwmThread_fu_116_MotorCtrl_pwmCount_V,
-        MotorCtrl_pwmClock_V => grp_MotorCtrl_pwmThread_fu_116_MotorCtrl_pwmClock_V);
+        pwmR => grp_MotorCtrl_pwmThread_fu_120_pwmR,
+        pwmL => grp_MotorCtrl_pwmThread_fu_120_pwmL,
+        Direction => grp_MotorCtrl_pwmThread_fu_120_Direction,
+        EN1 => grp_MotorCtrl_pwmThread_fu_120_EN1,
+        EN1_ap_vld => grp_MotorCtrl_pwmThread_fu_120_EN1_ap_vld,
+        EN2 => grp_MotorCtrl_pwmThread_fu_120_EN2,
+        EN2_ap_vld => grp_MotorCtrl_pwmThread_fu_120_EN2_ap_vld,
+        DIR1 => grp_MotorCtrl_pwmThread_fu_120_DIR1,
+        DIR1_ap_vld => grp_MotorCtrl_pwmThread_fu_120_DIR1_ap_vld,
+        DIR2 => grp_MotorCtrl_pwmThread_fu_120_DIR2,
+        DIR2_ap_vld => grp_MotorCtrl_pwmThread_fu_120_DIR2_ap_vld,
+        MotorCtrl_pwmCount_V_i => grp_MotorCtrl_pwmThread_fu_120_MotorCtrl_pwmCount_V_i,
+        MotorCtrl_pwmCount_V_o => grp_MotorCtrl_pwmThread_fu_120_MotorCtrl_pwmCount_V_o,
+        MotorCtrl_pwmCount_V_o_ap_vld => grp_MotorCtrl_pwmThread_fu_120_MotorCtrl_pwmCount_V_o_ap_vld,
+        MotorCtrl_DIR => grp_MotorCtrl_pwmThread_fu_120_MotorCtrl_DIR,
+        MotorCtrl_DIR_ap_vld => grp_MotorCtrl_pwmThread_fu_120_MotorCtrl_DIR_ap_vld,
+        MotorCtrl_pwmClock_V => grp_MotorCtrl_pwmThread_fu_120_MotorCtrl_pwmClock_V);
 
 
 
@@ -129,8 +144,8 @@ begin
     DIR1_assign_proc : process(clk)
     begin
         if (clk'event and clk =  '1') then
-            if ((ap_const_logic_1 = grp_MotorCtrl_pwmThread_fu_116_DIR1_ap_vld)) then 
-                DIR1 <= grp_MotorCtrl_pwmThread_fu_116_DIR1;
+            if ((ap_const_logic_1 = grp_MotorCtrl_pwmThread_fu_120_DIR1_ap_vld)) then 
+                DIR1 <= grp_MotorCtrl_pwmThread_fu_120_DIR1;
             end if; 
         end if;
     end process;
@@ -140,8 +155,8 @@ begin
     DIR2_assign_proc : process(clk)
     begin
         if (clk'event and clk =  '1') then
-            if ((ap_const_logic_1 = grp_MotorCtrl_pwmThread_fu_116_DIR2_ap_vld)) then 
-                DIR2 <= grp_MotorCtrl_pwmThread_fu_116_DIR2;
+            if ((ap_const_logic_1 = grp_MotorCtrl_pwmThread_fu_120_DIR2_ap_vld)) then 
+                DIR2 <= grp_MotorCtrl_pwmThread_fu_120_DIR2;
             end if; 
         end if;
     end process;
@@ -151,8 +166,8 @@ begin
     EN1_assign_proc : process(clk)
     begin
         if (clk'event and clk =  '1') then
-            if ((ap_const_logic_1 = grp_MotorCtrl_pwmThread_fu_116_EN1_ap_vld)) then 
-                EN1 <= grp_MotorCtrl_pwmThread_fu_116_EN1;
+            if ((ap_const_logic_1 = grp_MotorCtrl_pwmThread_fu_120_EN1_ap_vld)) then 
+                EN1 <= grp_MotorCtrl_pwmThread_fu_120_EN1;
             end if; 
         end if;
     end process;
@@ -162,8 +177,8 @@ begin
     EN2_assign_proc : process(clk)
     begin
         if (clk'event and clk =  '1') then
-            if ((ap_const_logic_1 = grp_MotorCtrl_pwmThread_fu_116_EN2_ap_vld)) then 
-                EN2 <= grp_MotorCtrl_pwmThread_fu_116_EN2;
+            if ((ap_const_logic_1 = grp_MotorCtrl_pwmThread_fu_120_EN2_ap_vld)) then 
+                EN2 <= grp_MotorCtrl_pwmThread_fu_120_EN2;
             end if; 
         end if;
     end process;
@@ -173,8 +188,8 @@ begin
     MotorCtrl_dividerCount_V_assign_proc : process(clk)
     begin
         if (clk'event and clk =  '1') then
-            if ((ap_const_logic_1 = grp_MotorCtrl_clockDividerThread_fu_88_MotorCtrl_dividerCount_V_o_ap_vld)) then 
-                MotorCtrl_dividerCount_V <= grp_MotorCtrl_clockDividerThread_fu_88_MotorCtrl_dividerCount_V_o;
+            if ((ap_const_logic_1 = grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_o_ap_vld)) then 
+                MotorCtrl_dividerCount_V <= grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_o;
             end if; 
         end if;
     end process;
@@ -184,35 +199,47 @@ begin
     MotorCtrl_pwmClock_V_assign_proc : process(clk)
     begin
         if (clk'event and clk =  '1') then
-            if ((ap_const_logic_1 = grp_MotorCtrl_clockDividerThread_fu_88_MotorCtrl_pwmClock_V_ap_vld)) then 
-                MotorCtrl_pwmClock_V <= grp_MotorCtrl_clockDividerThread_fu_88_MotorCtrl_pwmClock_V;
+            if ((ap_const_logic_1 = grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_pwmClock_V_ap_vld)) then 
+                MotorCtrl_pwmClock_V <= grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_pwmClock_V;
             end if; 
         end if;
     end process;
 
-    MotorCtrl_ssdm_thread_M_pwm_load_fu_145_p1 <= ap_const_lv1_0;
+
+    -- MotorCtrl_pwmCount_V assign process. --
+    MotorCtrl_pwmCount_V_assign_proc : process(clk)
+    begin
+        if (clk'event and clk =  '1') then
+            if ((ap_const_logic_1 = grp_MotorCtrl_pwmThread_fu_120_MotorCtrl_pwmCount_V_o_ap_vld)) then 
+                MotorCtrl_pwmCount_V <= grp_MotorCtrl_pwmThread_fu_120_MotorCtrl_pwmCount_V_o;
+            end if; 
+        end if;
+    end process;
+
+    MotorCtrl_ssdm_thread_M_pwm_load_fu_151_p1 <= ap_const_lv1_0;
     ap_CS_fsm <= ap_const_lv2_0;
 
-    -- ap_sig_bdd_61 assign process. --
-    ap_sig_bdd_61_assign_proc : process(ap_CS_fsm)
+    -- ap_sig_bdd_67 assign process. --
+    ap_sig_bdd_67_assign_proc : process(ap_CS_fsm)
     begin
-                ap_sig_bdd_61 <= (ap_const_lv1_1 = ap_CS_fsm(1 downto 1));
+                ap_sig_bdd_67 <= (ap_const_lv1_1 = ap_CS_fsm(1 downto 1));
     end process;
 
 
     -- ap_sig_cseq_ST_st2_fsm_1 assign process. --
-    ap_sig_cseq_ST_st2_fsm_1_assign_proc : process(ap_sig_bdd_61)
+    ap_sig_cseq_ST_st2_fsm_1_assign_proc : process(ap_sig_bdd_67)
     begin
-        if (ap_sig_bdd_61) then 
+        if (ap_sig_bdd_67) then 
             ap_sig_cseq_ST_st2_fsm_1 <= ap_const_logic_1;
         else 
             ap_sig_cseq_ST_st2_fsm_1 <= ap_const_logic_0;
         end if; 
     end process;
 
-    grp_MotorCtrl_clockDividerThread_fu_88_MotorCtrl_dividerCount_V_i <= MotorCtrl_dividerCount_V;
-    grp_MotorCtrl_pwmThread_fu_116_Direction <= Direction;
-    grp_MotorCtrl_pwmThread_fu_116_MotorCtrl_pwmClock_V <= MotorCtrl_pwmClock_V;
-    grp_MotorCtrl_pwmThread_fu_116_MotorCtrl_pwmCount_V <= ap_const_lv10_0;
-    grp_MotorCtrl_pwmThread_fu_116_pwmR <= pwmR;
+    grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_i <= MotorCtrl_dividerCount_V;
+    grp_MotorCtrl_pwmThread_fu_120_Direction <= Direction;
+    grp_MotorCtrl_pwmThread_fu_120_MotorCtrl_pwmClock_V <= MotorCtrl_pwmClock_V;
+    grp_MotorCtrl_pwmThread_fu_120_MotorCtrl_pwmCount_V_i <= MotorCtrl_pwmCount_V;
+    grp_MotorCtrl_pwmThread_fu_120_pwmL <= pwmL;
+    grp_MotorCtrl_pwmThread_fu_120_pwmR <= pwmR;
 end behav;
