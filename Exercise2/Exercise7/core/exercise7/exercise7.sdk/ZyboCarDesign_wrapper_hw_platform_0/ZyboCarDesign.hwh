@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May 20 14:27:52 2015" VIVADOVERSION="2014.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu May 21 19:54:51 2015" VIVADOVERSION="2014.4">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="ZyboCarDesign_imp" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -25,30 +25,30 @@
     <PORT DIR="IO" NAME="FIXED_IO_ps_srstb" SIGIS="undef"/>
     <PORT DIR="IO" NAME="FIXED_IO_ps_clk" SIGIS="undef"/>
     <PORT DIR="IO" NAME="FIXED_IO_ps_porb" SIGIS="undef"/>
-    <PORT DIR="O" NAME="EN1" SIGIS="undef" SIGNAME="MotorCtrl_EN1">
+    <PORT DIR="O" NAME="EN1" SIGIS="undef" SIGNAME="MotorCtrl_0_EN1">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="MotorCtrl" PORT="EN1"/>
+        <CONNECTION INSTANCE="MotorCtrl_0" PORT="EN1"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="DIR1" SIGIS="undef" SIGNAME="MotorCtrl_DIR1">
+    <PORT DIR="O" NAME="DIR1" SIGIS="undef" SIGNAME="MotorCtrl_0_DIR1">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="MotorCtrl" PORT="DIR1"/>
+        <CONNECTION INSTANCE="MotorCtrl_0" PORT="DIR1"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="EN2" SIGIS="undef" SIGNAME="MotorCtrl_EN2">
+    <PORT DIR="O" NAME="EN2" SIGIS="undef" SIGNAME="MotorCtrl_0_EN2">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="MotorCtrl" PORT="EN2"/>
+        <CONNECTION INSTANCE="MotorCtrl_0" PORT="EN2"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="DIR2" SIGIS="undef" SIGNAME="MotorCtrl_DIR2">
+    <PORT DIR="O" NAME="DIR2" SIGIS="undef" SIGNAME="MotorCtrl_0_DIR2">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="MotorCtrl" PORT="DIR2"/>
+        <CONNECTION INSTANCE="MotorCtrl_0" PORT="DIR2"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
 
   <MODULES>
-    <MODULE FULLNAME="/MotorCtrl" HWVERSION="1.0" INSTANCE="MotorCtrl" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MotorCtrl" VLNV="xilinx.com:hls:MotorCtrl:1.0">
+    <MODULE FULLNAME="/MotorCtrl_0" HWVERSION="1.1" INSTANCE="MotorCtrl_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MotorCtrl" VLNV="xilinx.com:hls:MotorCtrl:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_S_AXI_SLV0_ADDR_WIDTH" VALUE="6"/>
@@ -59,107 +59,107 @@
         <PARAMETER NAME="C_S_AXI_SLV0_HIGHADDR" VALUE="0x43C0FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" NAME="EN1" SIGIS="undef" SIGNAME="MotorCtrl_EN1">
+        <PORT DIR="O" NAME="EN1" SIGIS="undef" SIGNAME="MotorCtrl_0_EN1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="EN1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="EN2" SIGIS="undef" SIGNAME="MotorCtrl_EN2">
+        <PORT DIR="O" NAME="EN2" SIGIS="undef" SIGNAME="MotorCtrl_0_EN2">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="EN2"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="DIR1" SIGIS="undef" SIGNAME="MotorCtrl_DIR1">
+        <PORT DIR="O" NAME="DIR1" SIGIS="undef" SIGNAME="MotorCtrl_0_DIR1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="DIR1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="DIR2" SIGIS="undef" SIGNAME="MotorCtrl_DIR2">
+        <PORT DIR="O" NAME="DIR2" SIGIS="undef" SIGNAME="MotorCtrl_0_DIR2">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="DIR2"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="5" NAME="s_axi_slv0_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_AWADDR">
+        <PORT DIR="I" LEFT="5" NAME="s_axi_slv0_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_AWADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axi_slv0_AWVALID" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_AWVALID">
+        <PORT DIR="I" NAME="s_axi_slv0_AWVALID" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_AWVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axi_slv0_AWREADY" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_AWREADY">
+        <PORT DIR="O" NAME="s_axi_slv0_AWREADY" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_AWREADY">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="s_axi_slv0_WDATA" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_WDATA">
+        <PORT DIR="I" LEFT="31" NAME="s_axi_slv0_WDATA" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_WDATA">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="3" NAME="s_axi_slv0_WSTRB" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_WSTRB">
+        <PORT DIR="I" LEFT="3" NAME="s_axi_slv0_WSTRB" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_WSTRB">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axi_slv0_WVALID" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_WVALID">
+        <PORT DIR="I" NAME="s_axi_slv0_WVALID" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_WVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axi_slv0_WREADY" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_WREADY">
+        <PORT DIR="O" NAME="s_axi_slv0_WREADY" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_WREADY">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="1" NAME="s_axi_slv0_BRESP" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_BRESP">
+        <PORT DIR="O" LEFT="1" NAME="s_axi_slv0_BRESP" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_BRESP">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axi_slv0_BVALID" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_BVALID">
+        <PORT DIR="O" NAME="s_axi_slv0_BVALID" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_BVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axi_slv0_BREADY" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_BREADY">
+        <PORT DIR="I" NAME="s_axi_slv0_BREADY" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_BREADY">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="5" NAME="s_axi_slv0_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_ARADDR">
+        <PORT DIR="I" LEFT="5" NAME="s_axi_slv0_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_ARADDR">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axi_slv0_ARVALID" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_ARVALID">
+        <PORT DIR="I" NAME="s_axi_slv0_ARVALID" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_ARVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axi_slv0_ARREADY" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_ARREADY">
+        <PORT DIR="O" NAME="s_axi_slv0_ARREADY" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_ARREADY">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="s_axi_slv0_RDATA" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_RDATA">
+        <PORT DIR="O" LEFT="31" NAME="s_axi_slv0_RDATA" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_RDATA">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="1" NAME="s_axi_slv0_RRESP" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_RRESP">
+        <PORT DIR="O" LEFT="1" NAME="s_axi_slv0_RRESP" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_RRESP">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axi_slv0_RVALID" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_RVALID">
+        <PORT DIR="O" NAME="s_axi_slv0_RVALID" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_RVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axi_slv0_RREADY" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_RREADY">
+        <PORT DIR="I" NAME="s_axi_slv0_RREADY" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_RREADY">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_AXI_rready"/>
           </CONNECTIONS>
@@ -726,89 +726,89 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_RDATA"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="5" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_AWADDR">
+        <PORT DIR="O" LEFT="5" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_AWADDR">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_AWADDR"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_AWADDR"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_AWVALID">
+        <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_AWVALID">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_AWVALID"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_AWVALID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_AWREADY">
+        <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_AWREADY">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_AWREADY"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_AWREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_WDATA">
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_WDATA">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_WDATA"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_WDATA"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_WSTRB">
+        <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_WSTRB">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_WSTRB"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_WSTRB"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_WVALID">
+        <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_WVALID">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_WVALID"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_WVALID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_WREADY">
+        <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_WREADY">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_WREADY"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_WREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_BRESP">
+        <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_BRESP">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_BRESP"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_BRESP"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_BVALID">
+        <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_BVALID">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_BVALID"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_BVALID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_BREADY">
+        <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_BREADY">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_BREADY"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_BREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="5" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_ARADDR">
+        <PORT DIR="O" LEFT="5" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_ARADDR">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_ARADDR"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_ARADDR"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_ARVALID">
+        <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_ARVALID">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_ARVALID"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_ARVALID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_ARREADY">
+        <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_ARREADY">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_ARREADY"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_ARREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_RDATA">
+        <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_RDATA">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_RDATA"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_RDATA"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_RRESP">
+        <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_RRESP">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_RRESP"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_RRESP"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_RVALID">
+        <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_RVALID">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_RVALID"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_RVALID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef" SIGNAME="MotorCtrl_s_axi_slv0_RREADY">
+        <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef" SIGNAME="MotorCtrl_0_s_axi_slv0_RREADY">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="s_axi_slv0_RREADY"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="s_axi_slv0_RREADY"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -921,9 +921,9 @@
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="rst_processing_system7_0_100M_peripheral_aresetn">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="aresetn"/>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_ARESETN"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -957,10 +957,10 @@
             <CONNECTION INSTANCE="ps7_dev_cfg_0" PORT="FCLK0"/>
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
             <CONNECTION INSTANCE="rst_processing_system7_0_100M" PORT="slowest_sync_clk"/>
-            <CONNECTION INSTANCE="MotorCtrl" PORT="aclk"/>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="ACLK"/>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_ACLK"/>
+            <CONNECTION INSTANCE="MotorCtrl_0" PORT="aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="50000000" DIR="O" NAME="FCLK1" SIGIS="CLK" SIGNAME="ps7_clockc_0_FCLK1">
@@ -3091,7 +3091,7 @@
       <MEMORYMAP>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x0002FFFF" INSTANCE="ps7_ram_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x00100000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x1FFFFFFF" INSTANCE="ps7_ddr_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
-        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_S_AXI_SLV0_BASEADDR" BASEVALUE="0x43C00000" HIGHNAME="C_S_AXI_SLV0_HIGHADDR" HIGHVALUE="0x43C0FFFF" INSTANCE="MotorCtrl" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
+        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_S_AXI_SLV0_BASEADDR" BASEVALUE="0x43C00000" HIGHNAME="C_S_AXI_SLV0_HIGHADDR" HIGHVALUE="0x43C0FFFF" INSTANCE="MotorCtrl_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0001000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0001FFF" INSTANCE="ps7_uart_1" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE000D000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE000DFFF" INSTANCE="ps7_qspi_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0200000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0200FFF" INSTANCE="ps7_iop_bus_config_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
@@ -3125,7 +3125,7 @@
       <PERIPHERALS>
         <PERIPHERAL INSTANCE="ps7_ram_0"/>
         <PERIPHERAL INSTANCE="ps7_ddr_0"/>
-        <PERIPHERAL INSTANCE="MotorCtrl"/>
+        <PERIPHERAL INSTANCE="MotorCtrl_0"/>
         <PERIPHERAL INSTANCE="ps7_uart_1"/>
         <PERIPHERAL INSTANCE="ps7_qspi_0"/>
         <PERIPHERAL INSTANCE="ps7_iop_bus_config_0"/>
@@ -3310,7 +3310,7 @@
       <MEMORYMAP>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x0002FFFF" INSTANCE="ps7_ram_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x00100000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x1FFFFFFF" INSTANCE="ps7_ddr_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
-        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_S_AXI_SLV0_BASEADDR" BASEVALUE="0x43C00000" HIGHNAME="C_S_AXI_SLV0_HIGHADDR" HIGHVALUE="0x43C0FFFF" INSTANCE="MotorCtrl" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
+        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_S_AXI_SLV0_BASEADDR" BASEVALUE="0x43C00000" HIGHNAME="C_S_AXI_SLV0_HIGHADDR" HIGHVALUE="0x43C0FFFF" INSTANCE="MotorCtrl_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0001000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0001FFF" INSTANCE="ps7_uart_1" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE000D000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE000DFFF" INSTANCE="ps7_qspi_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0200000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0200FFF" INSTANCE="ps7_iop_bus_config_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
@@ -3344,7 +3344,7 @@
       <PERIPHERALS>
         <PERIPHERAL INSTANCE="ps7_ram_0"/>
         <PERIPHERAL INSTANCE="ps7_ddr_0"/>
-        <PERIPHERAL INSTANCE="MotorCtrl"/>
+        <PERIPHERAL INSTANCE="MotorCtrl_0"/>
         <PERIPHERAL INSTANCE="ps7_uart_1"/>
         <PERIPHERAL INSTANCE="ps7_qspi_0"/>
         <PERIPHERAL INSTANCE="ps7_iop_bus_config_0"/>

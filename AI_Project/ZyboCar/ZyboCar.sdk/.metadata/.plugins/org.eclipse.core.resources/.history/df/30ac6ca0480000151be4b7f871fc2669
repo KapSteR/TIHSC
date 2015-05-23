@@ -19,10 +19,6 @@ int main(void) {
 	motor.IsReady = XIL_COMPONENT_IS_READY;
 	motor.Slv0_BaseAddress = XPAR_MOTORCTRL_0_S_AXI_SLV0_BASEADDR;
 
-	XMotorctrl_SetPwmr(&motor, 0);
-	XMotorctrl_SetPwml(&motor, 0);
-	XMotorctrl_SetDirection(&motor, 0);
-
 //	XMotorctrl_SetDirection(&motor, 1);
 
 	while (1) {
@@ -31,7 +27,7 @@ int main(void) {
 		fgets(inString, 32, stdin);
 		R = atoi(inString);
 
-		xil_printf("Input PWM value for left motor:>");
+		xil_printf("Input PWM value for right motor:>");
 
 		fgets(inString, 32, stdin);
 		L = atoi(inString);

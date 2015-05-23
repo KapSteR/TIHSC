@@ -360,3 +360,13 @@ If this project was a BSP referenced by other C/C++ applications, then those app
  [Hsi 55-1594] Core iosc_top of version 1.0 not found in repositories
  [Hsi 55-1594] Core iosc_top of version 1.0 not found in repositories
 15:12:27 INFO  : BSP Project P/exercise7_bsp_0 has been successfully migrated.
+14:25:29 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+14:25:33 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1432231223342,  Project:1432125209552
+14:25:33 INFO  : Project ZyboCarDesign_wrapper_hw_platform_0's source hardware specification located at C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+14:25:41 INFO  : Copied contents of C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper.hdf into \ZyboCarDesign_wrapper_hw_platform_0\system.hdf.
+14:25:42 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+14:25:42 INFO  : Clearing existing target manager status.
+14:25:44 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+14:30:53 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/Exercise2/Exercise7/core/exercise7/exercise7.sdk/system_wrapper_hw_platform_1/system_wrapper.bit"
+14:31:24 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

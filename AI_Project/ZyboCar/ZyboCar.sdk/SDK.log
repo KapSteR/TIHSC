@@ -84,3 +84,80 @@
 20:18:09 INFO  : Processor reset is completed for ps7_cortexa9_0
 20:20:51 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
 20:21:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:03:40 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+08:03:49 INFO  : ps7_init is completed.
+08:03:49 INFO  : ps7_post_config is completed.
+08:03:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:05:11 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+08:05:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:06:06 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+08:06:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:54:36 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+08:54:59 INFO  : ps7_init is completed.
+08:54:59 INFO  : ps7_post_config is completed.
+08:55:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:55:44 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+08:55:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:58:14 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+09:04:32 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+09:04:58 INFO  : ps7_init is completed.
+09:04:58 INFO  : ps7_post_config is completed.
+09:04:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:05:24 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:05:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:06:59 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:07:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:31:00 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+09:31:34 INFO  : ps7_init is completed.
+09:31:34 INFO  : ps7_post_config is completed.
+09:31:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:32:47 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:32:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:33:48 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:33:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:35:39 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:35:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:50:10 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+09:50:22 INFO  : ps7_init is completed.
+09:50:22 INFO  : ps7_post_config is completed.
+09:50:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:50:27 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:50:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:51:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:51:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:51:44 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:51:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:55:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:55:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:55:16 ERROR : Port COM10 is already in use.
+11:55:16 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Failed to download ELF file
+
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:666)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:605)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:293)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+11:55:49 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+11:56:04 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:31:39 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+14:34:08 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+14:34:28 INFO  : ps7_init is completed.
+14:34:29 INFO  : ps7_post_config is completed.
+14:34:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:34:30 ERROR : Port COM10 is already in use.
+14:34:54 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+14:35:14 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+14:35:24 INFO  : ps7_init is completed.
+14:35:24 INFO  : ps7_post_config is completed.
+14:35:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:17:28 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
