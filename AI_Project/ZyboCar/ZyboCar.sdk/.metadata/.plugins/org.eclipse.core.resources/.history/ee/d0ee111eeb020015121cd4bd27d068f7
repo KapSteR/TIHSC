@@ -1,0 +1,65 @@
+/*
+ * Empty C++ Application
+ */
+
+#include <math.h>
+
+#define TURNRATE50 M_PI // SET THIS !!! rad/s
+#define MOVERATE50 330 // SET THIS !!! mm/s
+#define ONE_SECOND 100000000
+
+void move(float poseAngle, int distance, float heading);
+
+int main() {
+	return 0;
+}
+
+void move(float poseAngle, int distance, float heading) {
+
+	float h_p;
+	float p_h;
+	float turnAngle;
+
+	int turnSpeedRight;
+	int turnSpeedLeft;
+	int turnTime;
+	int moveTime;
+
+	h_p = fmod(heading-poseAngle,M_TWOPI);
+	p_h = fmod(poseAngle-heading,M_TWOPI);
+
+	if (h_p >= p_h) {  // Left turn
+
+		turnSpeedLeft = 0;
+		turnSpeedRight = 512; // 50%
+		turnAngle = p_h;
+
+
+	} else { // Right turn
+
+		turnSpeedLeft = 512; // 50%
+		turnSpeedRight = 0;
+		turnAngle = h_p;
+	}
+
+	// Calc turn time
+	turnTime = turnAngle * TURNRATE50 * ONE_SECOND;
+
+
+	// Start turn
+	// Set Timer
+	// Wait
+	// Stop turn
+
+	// Move
+	// Calc move time
+	// Start move
+	// Set timer
+	// wait
+	// Stop move
+
+	// Return
+
+
+}
+

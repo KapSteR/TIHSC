@@ -1,0 +1,25 @@
+/*
+ * Empty C++ Application
+ */
+
+#include <math.h>
+
+void move(float poseAngle, int distance, float heading) {
+
+	float diff_hp = fmod(heading-poseAngle,M_TWOPI);
+	float diff_ph = fmod(poseAngle-heading,M_TWOPI);
+
+	if (diff_hp >= diff_ph) {  // Left turn
+
+
+
+
+
+	} else { // Right turn
+
+	}
+}
+
+int main() {
+	return 0;
+}

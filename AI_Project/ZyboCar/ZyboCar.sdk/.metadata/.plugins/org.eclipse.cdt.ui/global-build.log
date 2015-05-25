@@ -953,3 +953,994 @@ make: Ingenting at gøre for 'all'.
 14:35:19 **** Incremental Build of configuration Debug for project SimpleZyboTest ****
 make all 
 make: Ingenting at gøre for 'all'.
+15:31:16 **** Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19500	   1152	  22556	  43208	   a8c8	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+15:32:45 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19536	   1152	  22556	  43244	   a8ec	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+15:33:45 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:7:6: error: expected primary-expression before ')' token
+  if () {  // Left turn
+      ^
+make: *** [src/main.o] Fejl 1
+15:34:08 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:12:1: error: expected unqualified-id before 'else'
+ else // Right Turn
+ ^
+../src/main.cc:17:1: error: expected declaration before '}' token
+ }
+ ^
+make: *** [src/main.o] Fejl 1
+15:35:05 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19536	   1152	  22556	  43244	   a8ec	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:01:29 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:9:26: error: invalid operands of types 'float' and 'int' to binary 'operator%'
+  if ((poseAngle-heading)%2*pi) {  // Left turn
+                          ^
+../src/main.cc:9:28: error: 'pi' was not declared in this scope
+  if ((poseAngle-heading)%2*pi) {  // Left turn
+                            ^
+make: *** [src/main.o] Fejl 1
+16:01:41 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:9:26: error: invalid operands of types 'float' and 'int' to binary 'operator%'
+  if ((poseAngle-heading)%2*pi()) {  // Left turn
+                          ^
+../src/main.cc:9:31: error: 'pi' was not declared in this scope
+  if ((poseAngle-heading)%2*pi()) {  // Left turn
+                               ^
+make: *** [src/main.o] Fejl 1
+16:02:57 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:9:26: error: invalid operands of types 'float' and 'int' to binary 'operator%'
+  if ((poseAngle-heading)%2*M_TWOPI) {  // Left turn
+                          ^
+make: *** [src/main.o] Fejl 1
+16:03:11 **** Incremental Build of configuration Debug for project SimpleZyboTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+16:03:12 **** Incremental Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:9:26: error: invalid operands of types 'float' and 'int' to binary 'operator%'
+  if ((poseAngle-heading)%2*M_TWOPI) {  // Left turn
+                          ^
+make: *** [src/main.o] Fejl 1
+16:06:42 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:9:38: error: expected ')' before '{' token
+  if (fmod(poseAngle-heading,M_TWOPI) {  // Left turn
+                                      ^
+../src/main.cc:14:1: error: expected primary-expression before '}' token
+ }
+ ^
+../src/main.cc:14:1: error: expected ';' before '}' token
+make: *** [src/main.o] Fejl 1
+16:08:27 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20928	   1156	  22556	  44640	   ae60	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:09:49 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20928	   1156	  22556	  44640	   ae60	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:10:38 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20928	   1156	  22556	  44640	   ae60	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:10:46 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20928	   1156	  22556	  44640	   ae60	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:14:41 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:18:18: error: expected ';' before numeric constant
+   turnSpeedRight 512; // 50%
+                  ^
+../src/main.cc:18:21: warning: statement has no effect [-Wunused-value]
+   turnSpeedRight 512; // 50%
+                     ^
+../src/main.cc:23:18: error: expected ';' before numeric constant
+   turnSpeedRight 0; // 50%
+                  ^
+../src/main.cc:23:19: warning: statement has no effect [-Wunused-value]
+   turnSpeedRight 0; // 50%
+                   ^
+make: *** [src/main.o] Fejl 1
+16:14:46 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:18:18: error: expected ';' before numeric constant
+   turnSpeedRight 512; // 50%
+                  ^
+../src/main.cc:18:21: warning: statement has no effect [-Wunused-value]
+   turnSpeedRight 512; // 50%
+                     ^
+make: *** [src/main.o] Fejl 1
+16:18:47 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:12:6: warning: variable 'turnSpeedRight' set but not used [-Wunused-but-set-variable]
+  int turnSpeedRight = 0;
+      ^
+../src/main.cc:13:6: warning: variable 'turnSpeedLeft' set but not used [-Wunused-but-set-variable]
+  int turnSpeedLeft = 0;
+      ^
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21000	   1156	  22556	  44712	   aea8	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:19:01 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:12:6: warning: variable 'turnSpeedRight' set but not used [-Wunused-but-set-variable]
+  int turnSpeedRight;
+      ^
+../src/main.cc:13:6: warning: variable 'turnSpeedLeft' set but not used [-Wunused-but-set-variable]
+  int turnSpeedLeft;
+      ^
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20984	   1156	  22556	  44696	   ae98	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:28:17 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:21:6: warning: variable 'turnSpeedRight' set but not used [-Wunused-but-set-variable]
+  int turnSpeedRight;
+      ^
+../src/main.cc:22:6: warning: variable 'turnSpeedLeft' set but not used [-Wunused-but-set-variable]
+  int turnSpeedLeft;
+      ^
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20984	   1156	  22556	  44696	   ae98	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:29:07 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:21:6: warning: variable 'turnSpeedRight' set but not used [-Wunused-but-set-variable]
+  int turnSpeedRight;
+      ^
+../src/main.cc:22:6: warning: variable 'turnSpeedLeft' set but not used [-Wunused-but-set-variable]
+  int turnSpeedLeft;
+      ^
+../src/main.cc:23:6: warning: unused variable 'turnTime' [-Wunused-variable]
+  int turnTime;
+      ^
+../src/main.cc:24:6: warning: unused variable 'moveTime' [-Wunused-variable]
+  int moveTime;
+      ^
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20984	   1156	  22556	  44696	   ae98	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:31:17 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:59:1: error: expected primary-expression before '}' token
+ }
+ ^
+../src/main.cc:59:1: error: expected ';' before '}' token
+../src/main.cc:21:8: warning: unused variable 'turnAngle' [-Wunused-variable]
+  float turnAngle;
+        ^
+../src/main.cc:26:6: warning: unused variable 'moveTime' [-Wunused-variable]
+  int moveTime;
+      ^
+make: *** [src/main.o] Fejl 1
+16:31:42 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:62:1: error: expected primary-expression before '}' token
+ }
+ ^
+../src/main.cc:62:1: error: expected ';' before '}' token
+../src/main.cc:21:8: warning: unused variable 'turnAngle' [-Wunused-variable]
+  float turnAngle;
+        ^
+../src/main.cc:26:6: warning: unused variable 'moveTime' [-Wunused-variable]
+  int moveTime;
+      ^
+make: *** [src/main.o] Fejl 1
+16:33:28 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:23:6: warning: variable 'turnSpeedRight' set but not used [-Wunused-but-set-variable]
+  int turnSpeedRight;
+      ^
+../src/main.cc:24:6: warning: variable 'turnSpeedLeft' set but not used [-Wunused-but-set-variable]
+  int turnSpeedLeft;
+      ^
+../src/main.cc:25:6: warning: variable 'turnTime' set but not used [-Wunused-but-set-variable]
+  int turnTime;
+      ^
+../src/main.cc:26:6: warning: unused variable 'moveTime' [-Wunused-variable]
+  int moveTime;
+      ^
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21048	   1156	  22556	  44760	   aed8	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:34:15 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:23:6: warning: variable 'turnSpeedRight' set but not used [-Wunused-but-set-variable]
+  int turnSpeedRight;
+      ^
+../src/main.cc:24:6: warning: variable 'turnSpeedLeft' set but not used [-Wunused-but-set-variable]
+  int turnSpeedLeft;
+      ^
+../src/main.cc:25:6: warning: variable 'turnTime' set but not used [-Wunused-but-set-variable]
+  int turnTime;
+      ^
+../src/main.cc:26:6: warning: variable 'moveTime' set but not used [-Wunused-but-set-variable]
+  int moveTime;
+      ^
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21072	   1156	  22556	  44784	   aef0	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:35:30 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:47:22: error: 'motor' was not declared in this scope
+  XMotorctrl_SetPwmr(&motor, turnSpeedRight);
+                      ^
+../src/main.cc:47:43: error: 'XMotorctrl_SetPwmr' was not declared in this scope
+  XMotorctrl_SetPwmr(&motor, turnSpeedRight);
+                                           ^
+../src/main.cc:48:42: error: 'XMotorctrl_SetPwml' was not declared in this scope
+  XMotorctrl_SetPwml(&motor, turnSpeedLeft);
+                                          ^
+../src/main.cc:49:35: error: 'XMotorctrl_SetDirection' was not declared in this scope
+  XMotorctrl_SetDirection(&motor, 1);
+                                   ^
+make: *** [src/main.o] Fejl 1
+16:35:47 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:49:22: error: 'motor' was not declared in this scope
+  XMotorctrl_SetPwmr(&motor, turnSpeedRight);
+                      ^
+make: *** [src/main.o] Fejl 1
+16:38:30 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:51:22: error: 'motor' was not declared in this scope
+  XMotorctrl_SetPwmr(&motor, turnSpeedRight);
+                      ^
+../src/main.cc: In function 'void initMotor(XMotorctrl*)':
+../src/main.cc:74:9: error: request for member 'IsReady' in 'motor', which is of pointer type 'XMotorctrl*' (maybe you meant to use '->' ?)
+  &motor.IsReady = XIL_COMPONENT_IS_READY;
+         ^
+../src/main.cc:75:9: error: request for member 'Slv0_BaseAddress' in 'motor', which is of pointer type 'XMotorctrl*' (maybe you meant to use '->' ?)
+  &motor.Slv0_BaseAddress = XPAR_MOTORCTRL_0_S_AXI_SLV0_BASEADDR;
+         ^
+../src/main.cc:77:30: error: cannot convert 'XMotorctrl**' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwmr(XMotorctrl*, u32)'
+  XMotorctrl_SetPwmr(&motor, 0);
+                              ^
+../src/main.cc:78:30: error: cannot convert 'XMotorctrl**' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwml(XMotorctrl*, u32)'
+  XMotorctrl_SetPwml(&motor, 0);
+                              ^
+../src/main.cc:79:35: error: cannot convert 'XMotorctrl**' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetDirection(XMotorctrl*, u32)'
+  XMotorctrl_SetDirection(&motor, 0);
+                                   ^
+make: *** [src/main.o] Fejl 1
+16:38:57 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:51:22: error: 'motor' was not declared in this scope
+  XMotorctrl_SetPwmr(&motor, turnSpeedRight);
+                      ^
+../src/main.cc: In function 'void initMotor(XMotorctrl*)':
+../src/main.cc:74:18: error: lvalue required as left operand of assignment
+  &motor->IsReady = XIL_COMPONENT_IS_READY;
+                  ^
+../src/main.cc:75:27: error: lvalue required as left operand of assignment
+  &motor->Slv0_BaseAddress = XPAR_MOTORCTRL_0_S_AXI_SLV0_BASEADDR;
+                           ^
+../src/main.cc:77:30: error: cannot convert 'XMotorctrl**' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwmr(XMotorctrl*, u32)'
+  XMotorctrl_SetPwmr(&motor, 0);
+                              ^
+../src/main.cc:78:30: error: cannot convert 'XMotorctrl**' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwml(XMotorctrl*, u32)'
+  XMotorctrl_SetPwml(&motor, 0);
+                              ^
+../src/main.cc:79:35: error: cannot convert 'XMotorctrl**' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetDirection(XMotorctrl*, u32)'
+  XMotorctrl_SetDirection(&motor, 0);
+                                   ^
+make: *** [src/main.o] Fejl 1
+16:39:30 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:51:22: error: 'motor' was not declared in this scope
+  XMotorctrl_SetPwmr(&motor, turnSpeedRight);
+                      ^
+../src/main.cc: In function 'void initMotor(XMotorctrl*)':
+../src/main.cc:75:8: error: request for member 'Slv0_BaseAddress' in 'motor', which is of pointer type 'XMotorctrl*' (maybe you meant to use '->' ?)
+  motor.Slv0_BaseAddress = XPAR_MOTORCTRL_0_S_AXI_SLV0_BASEADDR;
+        ^
+../src/main.cc:77:30: error: cannot convert 'XMotorctrl**' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwmr(XMotorctrl*, u32)'
+  XMotorctrl_SetPwmr(&motor, 0);
+                              ^
+../src/main.cc:78:30: error: cannot convert 'XMotorctrl**' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwml(XMotorctrl*, u32)'
+  XMotorctrl_SetPwml(&motor, 0);
+                              ^
+../src/main.cc:79:35: error: cannot convert 'XMotorctrl**' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetDirection(XMotorctrl*, u32)'
+  XMotorctrl_SetDirection(&motor, 0);
+                                   ^
+make: *** [src/main.o] Fejl 1
+16:39:35 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:51:22: error: 'motor' was not declared in this scope
+  XMotorctrl_SetPwmr(&motor, turnSpeedRight);
+                      ^
+../src/main.cc: In function 'void initMotor(XMotorctrl*)':
+../src/main.cc:77:30: error: cannot convert 'XMotorctrl**' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwmr(XMotorctrl*, u32)'
+  XMotorctrl_SetPwmr(&motor, 0);
+                              ^
+../src/main.cc:78:30: error: cannot convert 'XMotorctrl**' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwml(XMotorctrl*, u32)'
+  XMotorctrl_SetPwml(&motor, 0);
+                              ^
+../src/main.cc:79:35: error: cannot convert 'XMotorctrl**' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetDirection(XMotorctrl*, u32)'
+  XMotorctrl_SetDirection(&motor, 0);
+                                   ^
+make: *** [src/main.o] Fejl 1
+16:39:52 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:51:22: error: 'motor' was not declared in this scope
+  XMotorctrl_SetPwmr(&motor, turnSpeedRight);
+                      ^
+make: *** [src/main.o] Fejl 1
+16:41:04 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float, XMotorctrl*)':
+../src/main.cc:53:35: error: cannot convert 'XMotorctrl**' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetDirection(XMotorctrl*, u32)'
+  XMotorctrl_SetDirection(&motor, 1);
+                                   ^
+../src/main.cc:57:30: error: cannot convert 'XMotorctrl**' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwmr(XMotorctrl*, u32)'
+  XMotorctrl_SetPwmr(&motor, 0);
+                              ^
+../src/main.cc:58:30: error: cannot convert 'XMotorctrl**' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwml(XMotorctrl*, u32)'
+  XMotorctrl_SetPwml(&motor, 0);
+                              ^
+make: *** [src/main.o] Fejl 1
+16:41:12 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float, XMotorctrl*)':
+../src/main.cc:29:6: warning: variable 'turnTime' set but not used [-Wunused-but-set-variable]
+  int turnTime;
+      ^
+../src/main.cc:30:6: warning: variable 'moveTime' set but not used [-Wunused-but-set-variable]
+  int moveTime;
+      ^
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33420	   2196	  22628	  58244	   e384	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:41:53 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'int main()':
+../src/main.cc:20:12: error: too few arguments to function 'void initMotor(XMotorctrl*)'
+  initMotor()
+            ^
+../src/main.cc:15:6: note: declared here
+ void initMotor(XMotorctrl* motor);
+      ^
+../src/main.cc:23:2: error: expected ';' before 'return'
+  return 0;
+  ^
+../src/main.cc:19:13: warning: unused variable 'motor' [-Wunused-variable]
+  XMotorctrl motor;
+             ^
+make: *** [src/main.o] Fejl 1
+16:42:00 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float, XMotorctrl*)':
+../src/main.cc:34:6: warning: variable 'turnTime' set but not used [-Wunused-but-set-variable]
+  int turnTime;
+      ^
+../src/main.cc:35:6: warning: variable 'moveTime' set but not used [-Wunused-but-set-variable]
+  int moveTime;
+      ^
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33432	   2196	  22628	  58256	   e390	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:43:08 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float, XMotorctrl*)':
+../src/main.cc:34:6: warning: variable 'turnTime' set but not used [-Wunused-but-set-variable]
+  int turnTime;
+      ^
+../src/main.cc:35:6: warning: variable 'moveTime' set but not used [-Wunused-but-set-variable]
+  int moveTime;
+      ^
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33496	   2196	  22628	  58320	   e3d0	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:43:18 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float, XMotorctrl*)':
+../src/main.cc:34:6: warning: variable 'turnTime' set but not used [-Wunused-but-set-variable]
+  int turnTime;
+      ^
+../src/main.cc:35:6: warning: variable 'moveTime' set but not used [-Wunused-but-set-variable]
+  int moveTime;
+      ^
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33496	   2196	  22628	  58320	   e3d0	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:43:41 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float, XMotorctrl*)':
+../src/main.cc:34:6: warning: variable 'turnTime' set but not used [-Wunused-but-set-variable]
+  int turnTime;
+      ^
+../src/main.cc:35:6: warning: variable 'moveTime' set but not used [-Wunused-but-set-variable]
+  int moveTime;
+      ^
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33496	   2196	  22628	  58320	   e3d0	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:48:34 **** Incremental Build of configuration Debug for project SimpleZyboTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+16:48:34 **** Incremental Build of configuration Debug for project MoveTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+16:49:41 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:56:21: error: 'motor' was not declared in this scope
+  XMotorctrl_SetPwmr(motor, turnSpeedRight);
+                     ^
+make: *** [src/main.o] Fejl 1
+16:51:10 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:56:22: error: 'motor' was not declared in this scope
+  XMotorctrl_SetPwmr(&motor, turnSpeedRight);
+                      ^
+make: *** [src/main.o] Fejl 1
+16:51:37 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float, XMotorctrl*)':
+../src/main.cc:34:6: warning: variable 'turnTime' set but not used [-Wunused-but-set-variable]
+  int turnTime;
+      ^
+../src/main.cc:35:6: warning: variable 'moveTime' set but not used [-Wunused-but-set-variable]
+  int moveTime;
+      ^
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33496	   2196	  22628	  58320	   e3d0	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:52:28 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:58:42: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwmr(XMotorctrl*, u32)'
+  XMotorctrl_SetPwmr(motor, turnSpeedRight);
+                                          ^
+../src/main.cc:59:41: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwml(XMotorctrl*, u32)'
+  XMotorctrl_SetPwml(motor, turnSpeedLeft);
+                                         ^
+../src/main.cc:60:34: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetDirection(XMotorctrl*, u32)'
+  XMotorctrl_SetDirection(motor, 1);
+                                  ^
+../src/main.cc:64:29: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwmr(XMotorctrl*, u32)'
+  XMotorctrl_SetPwmr(motor, 0);
+                             ^
+../src/main.cc:65:29: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwml(XMotorctrl*, u32)'
+  XMotorctrl_SetPwml(motor, 0);
+                             ^
+../src/main.cc:71:31: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwmr(XMotorctrl*, u32)'
+  XMotorctrl_SetPwmr(motor, 512);
+                               ^
+../src/main.cc:72:31: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwml(XMotorctrl*, u32)'
+  XMotorctrl_SetPwml(motor, 512);
+                               ^
+../src/main.cc:73:34: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetDirection(XMotorctrl*, u32)'
+  XMotorctrl_SetDirection(motor, 1);
+                                  ^
+../src/main.cc:77:29: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwmr(XMotorctrl*, u32)'
+  XMotorctrl_SetPwmr(motor, 0);
+                             ^
+../src/main.cc:78:29: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwml(XMotorctrl*, u32)'
+  XMotorctrl_SetPwml(motor, 0);
+                             ^
+make: *** [src/main.o] Fejl 1
+16:52:34 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:59:41: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwml(XMotorctrl*, u32)'
+  XMotorctrl_SetPwml(motor, turnSpeedLeft);
+                                         ^
+../src/main.cc:60:34: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetDirection(XMotorctrl*, u32)'
+  XMotorctrl_SetDirection(motor, 1);
+                                  ^
+../src/main.cc:64:29: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwmr(XMotorctrl*, u32)'
+  XMotorctrl_SetPwmr(motor, 0);
+                             ^
+../src/main.cc:65:29: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwml(XMotorctrl*, u32)'
+  XMotorctrl_SetPwml(motor, 0);
+                             ^
+../src/main.cc:71:31: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwmr(XMotorctrl*, u32)'
+  XMotorctrl_SetPwmr(motor, 512);
+                               ^
+../src/main.cc:72:31: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwml(XMotorctrl*, u32)'
+  XMotorctrl_SetPwml(motor, 512);
+                               ^
+../src/main.cc:73:34: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetDirection(XMotorctrl*, u32)'
+  XMotorctrl_SetDirection(motor, 1);
+                                  ^
+../src/main.cc:77:29: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwmr(XMotorctrl*, u32)'
+  XMotorctrl_SetPwmr(motor, 0);
+                             ^
+../src/main.cc:78:29: error: cannot convert 'XMotorctrl' to 'XMotorctrl*' for argument '1' to 'void XMotorctrl_SetPwml(XMotorctrl*, u32)'
+  XMotorctrl_SetPwml(motor, 0);
+                             ^
+make: *** [src/main.o] Fejl 1
+16:52:52 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:36:6: warning: variable 'turnTime' set but not used [-Wunused-but-set-variable]
+  int turnTime;
+      ^
+../src/main.cc:37:6: warning: variable 'moveTime' set but not used [-Wunused-but-set-variable]
+  int moveTime;
+      ^
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33560	   2196	  22644	  58400	   e420	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+16:53:33 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
+ #include "xmotorctrl.h"'
+                        ^
+../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
+../src/main.cc: In function 'void move(float, int, float)':
+../src/main.cc:35:6: warning: variable 'turnTime' set but not used [-Wunused-but-set-variable]
+  int turnTime;
+      ^
+../src/main.cc:36:6: warning: variable 'moveTime' set but not used [-Wunused-but-set-variable]
+  int moveTime;
+      ^
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33560	   2196	  22644	  58400	   e420	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 

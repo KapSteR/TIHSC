@@ -1,0 +1,29 @@
+/*
+ * Empty C++ Application
+ */
+
+#include <math.h>
+
+void move(float poseAngle, int distance, float heading) {
+
+	float h_p = fmod(heading-poseAngle,M_TWOPI);
+	float p_h = fmod(poseAngle-heading,M_TWOPI);
+
+	int turnSpeedRight = 0;
+	int turnSpeedLeft = 0;
+
+	if (h_p >= p_h) {  // Left turn
+
+		turnSpeedLeft = 0;
+		turnSpeedRight 512; // 50%
+
+	} else { // Right turn
+
+		turnSpeedLeft = 512;
+		turnSpeedRight 0; // 50%
+	}
+}
+
+int main() {
+	return 0;
+}

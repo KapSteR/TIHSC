@@ -1,0 +1,14 @@
+/*
+ * Empty C++ Application
+ */
+
+void move(float poseAngle, int distance, float heading) {
+
+	if (true) {  // Left turn
+
+	}
+}
+
+int main() {
+	return 0;
+}

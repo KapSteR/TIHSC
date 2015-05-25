@@ -1,0 +1,18 @@
+/*
+ * Empty C++ Application
+ */
+
+#include <math.h>
+
+void move(float poseAngle, int distance, float heading) {
+
+	if (fmod(poseAngle-heading,M_TWOPI) {  // Left turn
+
+	} else { // Right turn
+
+	}
+}
+
+int main() {
+	return 0;
+}
