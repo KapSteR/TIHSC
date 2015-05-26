@@ -164,3 +164,57 @@ java.lang.RuntimeException: Failed to download ELF file
 15:30:41 INFO  : Processing command line option -hwspec C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper.hdf.
 15:30:43 INFO  : Checking for hwspec changes in the project ZyboCarDesign_wrapper_hw_platform_0.
 15:30:43 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+20:09:42 INFO  : Example project standalone_bsp_0_xscutimer_intr_example_1 has been created successfully.
+20:09:42 INFO  : Example project standalone_bsp_0_xscutimer_polled_example_1 has been created successfully.
+20:39:16 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+20:39:35 INFO  : ps7_init is completed.
+20:39:35 INFO  : ps7_post_config is completed.
+20:39:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:40:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:40:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:41:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:42:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:51:27 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:51:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:53:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:55:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:55:46 ERROR : Port COM10 is already in use.
+20:58:06 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:59:28 INFO  : Processing command line option -hwspec C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper.hdf.
+21:59:30 INFO  : Checking for hwspec changes in the project ZyboCarDesign_wrapper_hw_platform_0.
+21:59:30 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+22:00:46 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+22:01:10 INFO  : ps7_init is completed.
+22:01:11 INFO  : ps7_post_config is completed.
+22:01:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:03:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:04:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:05:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:08:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:10:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:10:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:11:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:12:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:14:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:15:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:21:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:22:02 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:22:07 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:22:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:26:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:39:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:06:16 INFO  : Project MyFirstBootloader_bsp was a BSP project. Please update references.
+23:06:16 ERROR : SDK has detected that project MyFirstBootloader_bsp has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references.
+23:06:50 INFO  : Refreshed build settings on project MoveTest
+23:06:50 INFO  : Refreshed build settings on project SimpleZyboTest
+23:06:50 INFO  : Refreshed build settings on project standalone_bsp_0_xscutimer_intr_example_1
+23:06:50 INFO  : Refreshed build settings on project standalone_bsp_0_xscutimer_polled_example_1
+23:09:36 INFO  : Refreshed build settings on project MoveTest
+23:09:36 INFO  : Refreshed build settings on project SimpleZyboTest
+23:09:36 INFO  : Refreshed build settings on project standalone_bsp_0_xscutimer_intr_example_1
+23:09:36 INFO  : Refreshed build settings on project standalone_bsp_0_xscutimer_polled_example_1
+23:14:39 INFO  : Invoking Bootgen: bootgen -image MoveTest.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\bootimage\MoveTest.mcs
+23:14:39 INFO  : Creating new bif file C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\bootimage\MoveTest.bif
+23:14:43 INFO  : Bootgen command execution is done.
+00:09:54 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

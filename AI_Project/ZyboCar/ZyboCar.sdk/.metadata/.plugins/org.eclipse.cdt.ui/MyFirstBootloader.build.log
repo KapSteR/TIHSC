@@ -1,0 +1,6 @@
+23:06:18 **** Auto Build of configuration Debug for project MyFirstBootloader ****
+make all 
+make: Ingenting at gøre for 'all'.
+
+23:06:19 Build Finished (took 336ms)
+

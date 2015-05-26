@@ -1,32 +1,6 @@
-16:53:33 **** Auto Build of configuration Debug for project MoveTest ****
+23:14:43 **** Auto Build of configuration Debug for project MoveTest ****
 make all 
-Building file: ../src/main.cc
-Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
-../src/main.cc:7:24: warning: missing terminating ' character [enabled by default]
- #include "xmotorctrl.h"'
-                        ^
-../src/main.cc:7:24: warning: extra tokens at end of #include directive [enabled by default]
-../src/main.cc: In function 'void move(float, int, float)':
-../src/main.cc:35:6: warning: variable 'turnTime' set but not used [-Wunused-but-set-variable]
-  int turnTime;
-      ^
-../src/main.cc:36:6: warning: variable 'moveTime' set but not used [-Wunused-but-set-variable]
-  int moveTime;
-      ^
-Finished building: ../src/main.cc
- 
-Building target: MoveTest.elf
-Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-Finished building target: MoveTest.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  33560	   2196	  22644	  58400	   e420	MoveTest.elf
-Finished building: MoveTest.elf.size
- 
+make: Ingenting at gøre for 'all'.
 
-16:53:34 Build Finished (took 829ms)
+23:14:43 Build Finished (took 271ms)
 

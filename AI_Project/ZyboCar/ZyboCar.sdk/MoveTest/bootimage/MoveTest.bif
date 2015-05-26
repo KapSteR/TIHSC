@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MyFirstFSBL\Release\MyFirstFSBL.elf
+	C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0\ZyboCarDesign_wrapper.bit
+	C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\Debug\MoveTest.elf
+}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="" key="ZyboCarDesign_wrapper_hw_platform_0-imgFile"/>
+	<item value="C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\bootimage\MoveTest.mcs" key="ZyboCarDesign_wrapper_hw_platform_0-imgFile"/>
 	<item value="qspi_single" key="ZyboCarDesign_wrapper_hw_platform_0-flashType"/>
 	<item value="false" key="ZyboCarDesign_wrapper_hw_platform_0-verifyFlash"/>
 	<item value="" key="ZyboCarDesign_wrapper_hw_platform_0-fsblFile"/>

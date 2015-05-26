@@ -4,22 +4,38 @@
 
 #include <math.h>
 #include "xparameters.h"
-#include "xmotorctrl.h"'
+#include "xmotorctrl.h"
+#include "xscutimer.h"
+
+#define TIMER_DEVICE_ID		XPAR_XSCUTIMER_0_DEVICE_ID
 
 #define TURNRATE50 M_PI // SET THIS !!! rad/s
 #define MOVERATE50 330 // SET THIS !!! mm/s
-#define ONE_SECOND 100000000
+#define ONE_SECOND 325000000
 
+
+// Function Declarations
 void move(float poseAngle, int distance, float heading);
-
+int ScuTimerWait(u16 DeviceId, u32 timeOut);
 void initMotor(XMotorctrl* motor);
 
-XMotorctrl motor;
+XMotorctrl motor; // Motor controller instance
+XScuTimer Timer;		/* Cortex A9 SCU Private Timer Instance */
 
 int main() {
 
+	xil_printf("Start of program. Robot assumed to be heading east\r\n");
+
 	initMotor(&motor);
 
+	xil_printf("Move 1 meter north\r\n");
+	move(0,1000,M_PI_2);
+	xil_printf("Wait one second\r\n");
+	ScuTimerWait(TIMER_DEVICE_ID,ONE_SECOND);
+	xil_printf("Move 0.5 meters south\r\n");
+	move(90,500,(3*M_PI_2));
+
+;	xil_printf("End of program\r\n");
 
 	return 0;
 }
@@ -57,8 +73,10 @@ void move(float poseAngle, int distance, float heading) {
 	XMotorctrl_SetPwmr(&motor, turnSpeedRight);
 	XMotorctrl_SetPwml(&motor, turnSpeedLeft);
 	XMotorctrl_SetDirection(&motor, 1);
-	// Set Timer
-	// Wait
+	// Set Timer	// Wait
+
+	ScuTimerWait(TIMER_DEVICE_ID,turnTime);
+
 	// Stop turn
 	XMotorctrl_SetPwmr(&motor, 0);
 	XMotorctrl_SetPwml(&motor, 0);
@@ -70,8 +88,10 @@ void move(float poseAngle, int distance, float heading) {
 	XMotorctrl_SetPwmr(&motor, 512);
 	XMotorctrl_SetPwml(&motor, 512);
 	XMotorctrl_SetDirection(&motor, 1);
-	// Set timer
-	// wait
+	// Set timer	// wait
+
+	ScuTimerWait(TIMER_DEVICE_ID,moveTime);
+
 	// Stop move
 	XMotorctrl_SetPwmr(&motor, 0);
 	XMotorctrl_SetPwml(&motor, 0);
@@ -89,5 +109,47 @@ void initMotor(XMotorctrl* motor){
 	XMotorctrl_SetPwmr(motor, 0);
 	XMotorctrl_SetPwml(motor, 0);
 	XMotorctrl_SetDirection(motor, 0);
+}
+
+int ScuTimerWait(u16 DeviceId, u32 timeOut) // Timeout in timer ticks
+{
+	int Status;
+	XScuTimer_Config *ConfigPtr;
+	XScuTimer *TimerInstancePtr = &Timer;
+
+	/*
+	 * Initialize the Scu Private Timer so that it is ready to use.
+	 */
+	ConfigPtr = XScuTimer_LookupConfig(DeviceId);
+
+	/*
+	 * This is where the virtual address would be used, this example
+	 * uses physical address.
+	 */
+	Status = XScuTimer_CfgInitialize(TimerInstancePtr, ConfigPtr,
+				 ConfigPtr->BaseAddr);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Load the timer decrement register.
+	 */
+	XScuTimer_LoadTimer(TimerInstancePtr, timeOut);
+
+	/*
+	 * Start the Scu Private Timer device.
+	 */
+	XScuTimer_Start(TimerInstancePtr);
+
+	while (XScuTimer_GetCounterValue(TimerInstancePtr) != 0) {
+
+		// Wait for timer to expire
+
+	}
+	// Stop timer after use
+	XScuTimer_Stop(TimerInstancePtr);
+
+	return XST_SUCCESS;
 }
 

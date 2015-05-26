@@ -1,6 +1,21 @@
-16:48:34 **** Incremental Build of configuration Debug for project SimpleZyboTest ****
+23:11:59 **** Auto Build of configuration Debug for project SimpleZyboTest ****
 make all 
-make: Ingenting at gøre for 'all'.
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: SimpleZyboTest.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "SimpleZyboTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: SimpleZyboTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size SimpleZyboTest.elf  |tee "SimpleZyboTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33492	   2200	  22628	  58320	   e3d0	SimpleZyboTest.elf
+Finished building: SimpleZyboTest.elf.size
+ 
 
-16:48:34 Build Finished (took 200ms)
+23:12:00 Build Finished (took 871ms)
 
