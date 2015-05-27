@@ -14,8 +14,8 @@
 ############################
 # LIDAR				       #
 ############################
-#set_property PACKAGE_PIN V12 [get_ports LDS_TX]
-#set_property IOSTANDARD LVCMOS33 [get_ports LDS_TX]
+set_property PACKAGE_PIN V12 [get_ports LDS_TX]
+set_property IOSTANDARD LVCMOS33 [get_ports LDS_TX]
 
 
 ############################

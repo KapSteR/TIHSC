@@ -24,6 +24,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboCarDesign_a
 # IP: bd/ZyboCarDesign/ip/ZyboCarDesign_xbar_0/ZyboCarDesign_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboCarDesign_xbar_0 || ORIG_REF_NAME==ZyboCarDesign_xbar_0}]
 
+# IP: bd/ZyboCarDesign/ip/ZyboCarDesign_axi_uartlite_0_0/ZyboCarDesign_axi_uartlite_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboCarDesign_axi_uartlite_0_0 || ORIG_REF_NAME==ZyboCarDesign_axi_uartlite_0_0}]
+
 # IP: bd/ZyboCarDesign/ip/ZyboCarDesign_auto_pc_0/ZyboCarDesign_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboCarDesign_auto_pc_0 || ORIG_REF_NAME==ZyboCarDesign_auto_pc_0}]
 
@@ -49,6 +52,14 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==ZyboCarDesign_axi_gpio_0_0 || ORIG_REF_NAME==ZyboCarDesign_axi_gpio_0_0}] {/U0 }]/U0 ]]
 
 # XDC: bd/ZyboCarDesign/ip/ZyboCarDesign_xbar_0/ZyboCarDesign_xbar_0_ooc.xdc
+
+# XDC: bd/ZyboCarDesign/ip/ZyboCarDesign_axi_uartlite_0_0/ZyboCarDesign_axi_uartlite_0_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==ZyboCarDesign_axi_uartlite_0_0 || ORIG_REF_NAME==ZyboCarDesign_axi_uartlite_0_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/ZyboCarDesign/ip/ZyboCarDesign_axi_uartlite_0_0/ZyboCarDesign_axi_uartlite_0_0_ooc.xdc
+
+# XDC: bd/ZyboCarDesign/ip/ZyboCarDesign_axi_uartlite_0_0/ZyboCarDesign_axi_uartlite_0_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==ZyboCarDesign_axi_uartlite_0_0 || ORIG_REF_NAME==ZyboCarDesign_axi_uartlite_0_0}] {/U0 }]/U0 ]]
 
 # XDC: bd/ZyboCarDesign/ip/ZyboCarDesign_auto_pc_0/ZyboCarDesign_auto_pc_0_ooc.xdc
 

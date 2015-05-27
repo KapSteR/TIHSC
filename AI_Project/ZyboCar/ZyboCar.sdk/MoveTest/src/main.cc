@@ -5,6 +5,7 @@
 #include "xparameters.h"
 #include "move.h"
 #include "WaitforStart.h"
+#include "xuartps.h"
 
 int main() {
 

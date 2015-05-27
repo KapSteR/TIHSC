@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
-| Date             : Wed May 27 13:07:53 2015
+| Date             : Wed May 27 14:47:20 2015
 | Host             : KASPER-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file ZyboCarDesign_wrapper_power_routed.rpt -pb ZyboCarDesign_wrapper_power_summary_routed.pb
 | Design           : ZyboCarDesign_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.655 |
-| Dynamic (W)              | 1.524 |
+| Total On-Chip Power (W)  | 1.656 |
+| Dynamic (W)              | 1.525 |
 | Device Static (W)        | 0.131 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 65.9  |
@@ -49,18 +49,18 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.004 |        3 |       --- |             --- |
-| Slice Logic             |     0.002 |     2002 |       --- |             --- |
-|   LUT as Logic          |     0.002 |      639 |     17600 |            3.63 |
-|   Register              |    <0.001 |      844 |     35200 |            2.39 |
+| Clocks                  |     0.005 |        3 |       --- |             --- |
+| Slice Logic             |     0.002 |     2222 |       --- |             --- |
+|   LUT as Logic          |     0.002 |      727 |     17600 |            4.13 |
+|   Register              |    <0.001 |      930 |     35200 |            2.64 |
 |   CARRY4                |    <0.001 |       30 |      4400 |            0.68 |
-|   LUT as Shift Register |    <0.001 |       64 |      6000 |            1.06 |
-|   Others                |     0.000 |      225 |       --- |             --- |
-| Signals                 |     0.002 |     1362 |       --- |             --- |
-| I/O                     |    <0.001 |        8 |       100 |            8.00 |
+|   LUT as Shift Register |    <0.001 |       70 |      6000 |            1.16 |
+|   Others                |     0.000 |      248 |       --- |             --- |
+| Signals                 |     0.003 |     1508 |       --- |             --- |
+| I/O                     |    <0.001 |        9 |       100 |            9.00 |
 | PS7                     |     1.515 |        1 |       --- |             --- |
 | Static Power            |     0.131 |          |           |                 |
-| Total                   |     1.655 |          |           |                 |
+| Total                   |     1.656 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,7 +70,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.015 |       0.009 |      0.007 |
+| Vccint    |       1.000 |     0.017 |       0.010 |      0.007 |
 | Vccaux    |       1.800 |     0.012 |       0.000 |      0.012 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -146,8 +146,8 @@ Table of Contents
 +--------------------------------------------------+-----------+
 | Name                                             | Power (W) |
 +--------------------------------------------------+-----------+
-| ZyboCarDesign_wrapper                            |     1.524 |
-|   ZyboCarDesign_i                                |     1.524 |
+| ZyboCarDesign_wrapper                            |     1.525 |
+|   ZyboCarDesign_i                                |     1.525 |
 |     MotorCtrl_0                                  |    <0.001 |
 |       inst                                       |    <0.001 |
 |         MotorCtrl_U                              |    <0.001 |
@@ -161,6 +161,25 @@ Table of Contents
 |             I_DECODER                            |    <0.001 |
 |         gpio_core_1                              |    <0.001 |
 |           Not_Dual.INPUT_DOUBLE_REGS3            |    <0.001 |
+|     axi_uartlite_0                               |    <0.001 |
+|       U0                                         |    <0.001 |
+|         AXI_LITE_IPIF_I                          |    <0.001 |
+|           I_SLAVE_ATTACHMENT                     |    <0.001 |
+|             I_DECODER                            |    <0.001 |
+|         UARTLITE_CORE_I                          |    <0.001 |
+|           BAUD_RATE_I                            |    <0.001 |
+|           UARTLITE_RX_I                          |    <0.001 |
+|             DELAY_16_I                           |    <0.001 |
+|             INPUT_DOUBLE_REGS3                   |    <0.001 |
+|             SRL_FIFO_I                           |    <0.001 |
+|               I_SRL_FIFO_RBU_F                   |    <0.001 |
+|                 CNTR_INCR_DECR_ADDN_F_I          |    <0.001 |
+|                 DYNSHREG_F_I                     |    <0.001 |
+|           UARTLITE_TX_I                          |    <0.001 |
+|             MID_START_BIT_SRL16_I                |    <0.001 |
+|             SRL_FIFO_I                           |    <0.001 |
+|               I_SRL_FIFO_RBU_F                   |    <0.001 |
+|                 CNTR_INCR_DECR_ADDN_F_I          |    <0.001 |
 |     processing_system7_0                         |     1.515 |
 |       inst                                       |     1.515 |
 |     processing_system7_0_axi_periph              |     0.007 |

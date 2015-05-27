@@ -16,7 +16,9 @@ src/main.o src/main.d: ../src/main.cc \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xscutimer_hw.h \
  ../src/WaitforStart.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio.h \
- ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio_l.h
+ ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio_l.h \
+ ../../standalone_bsp_0/ps7_cortexa9_0/include/xuartps.h \
+ ../../standalone_bsp_0/ps7_cortexa9_0/include/xuartps_hw.h
 
 ../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h:
 
@@ -55,3 +57,7 @@ src/main.o src/main.d: ../src/main.cc \
 ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio.h:
 
 ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio_l.h:
+
+../../standalone_bsp_0/ps7_cortexa9_0/include/xuartps.h:
+
+../../standalone_bsp_0/ps7_cortexa9_0/include/xuartps_hw.h:

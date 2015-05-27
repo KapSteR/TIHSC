@@ -71,6 +71,10 @@ set rc [catch {
   set_property processing_order EARLY [get_files c:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.srcs/sources_1/bd/ZyboCarDesign/ip/ZyboCarDesign_axi_gpio_0_0/ZyboCarDesign_axi_gpio_0_0_board.xdc]
   read_xdc -ref ZyboCarDesign_axi_gpio_0_0 -cells U0 c:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.srcs/sources_1/bd/ZyboCarDesign/ip/ZyboCarDesign_axi_gpio_0_0/ZyboCarDesign_axi_gpio_0_0.xdc
   set_property processing_order EARLY [get_files c:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.srcs/sources_1/bd/ZyboCarDesign/ip/ZyboCarDesign_axi_gpio_0_0/ZyboCarDesign_axi_gpio_0_0.xdc]
+  read_xdc -prop_thru_buffers -ref ZyboCarDesign_axi_uartlite_0_0 -cells U0 c:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.srcs/sources_1/bd/ZyboCarDesign/ip/ZyboCarDesign_axi_uartlite_0_0/ZyboCarDesign_axi_uartlite_0_0_board.xdc
+  set_property processing_order EARLY [get_files c:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.srcs/sources_1/bd/ZyboCarDesign/ip/ZyboCarDesign_axi_uartlite_0_0/ZyboCarDesign_axi_uartlite_0_0_board.xdc]
+  read_xdc -ref ZyboCarDesign_axi_uartlite_0_0 -cells U0 c:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.srcs/sources_1/bd/ZyboCarDesign/ip/ZyboCarDesign_axi_uartlite_0_0/ZyboCarDesign_axi_uartlite_0_0.xdc
+  set_property processing_order EARLY [get_files c:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.srcs/sources_1/bd/ZyboCarDesign/ip/ZyboCarDesign_axi_uartlite_0_0/ZyboCarDesign_axi_uartlite_0_0.xdc]
   read_xdc C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.srcs/constrs_1/imports/PMOD/Constraints.xdc
   link_design -top ZyboCarDesign_wrapper -part xc7z010clg400-1
   close_msg_db -file init_design.pb
