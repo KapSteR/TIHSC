@@ -1,0 +1,1352 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date              : Wed May 27 13:07:52 2015
+| Host              : KASPER-PC running 64-bit major release  (build 9200)
+| Command           : report_timing_summary -warn_on_violation -max_paths 10 -file ZyboCarDesign_wrapper_timing_summary_routed.rpt -rpx ZyboCarDesign_wrapper_timing_summary_routed.rpx
+| Design            : ZyboCarDesign_wrapper
+| Device            : 7z010-clg400
+| Speed File        : -1  PRODUCTION 1.11 2014-09-11
+| Temperature Grade : C
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking unexpandable_clocks
+13. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 4 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 4 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking unexpandable_clocks
+--------------------------------
+ There are 0 unexpandable clock pairs.
+
+
+13. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      3.771        0.000                      0                 1783        0.009        0.000                      0                 1783        4.020        0.000                       0                   915  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock       Waveform(ns)       Period(ns)      Frequency(MHz)
+-----       ------------       ----------      --------------
+clk_fpga_0  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_fpga_0          3.771        0.000                      0                 1783        0.009        0.000                      0                 1783        4.020        0.000                       0                   915  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_fpga_0
+  To Clock:  clk_fpga_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        3.771ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.009ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.020ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             3.771ns  (required time - arrival time)
+  Source:                 ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_pwmCount_V_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/EN1_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        6.040ns  (logic 2.266ns (37.519%)  route 3.774ns (62.481%))
+  Logic Levels:           6  (CARRY4=2 LUT4=3 LUT6=1)
+  Clock Path Skew:        -0.066ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.693ns = ( 12.693 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.989ns
+    Clock Pessimism Removal (CPR):    0.231ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.681     2.989    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/aclk
+    SLICE_X12Y43                                                      r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_pwmCount_V_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X12Y43         FDRE (Prop_fdre_C_Q)         0.478     3.467 f  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_pwmCount_V_reg[2]/Q
+                         net (fo=12, routed)          1.061     4.528    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_pwmCount_V_reg__0[2]
+    SLICE_X12Y43         LUT4 (Prop_lut4_I3_O)        0.295     4.823 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_pwmCount_V[8]_i_3/O
+                         net (fo=8, routed)           0.891     5.714    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/n_0_MotorCtrl_pwmCount_V[8]_i_3
+    SLICE_X11Y40         LUT4 (Prop_lut4_I3_O)        0.150     5.864 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_pwmCount_V[7]_i_2/O
+                         net (fo=3, routed)           0.636     6.500    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/n_0_MotorCtrl_pwmCount_V[7]_i_2
+    SLICE_X10Y41         LUT6 (Prop_lut6_I0_O)        0.326     6.826 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/EN1_i_6/O
+                         net (fo=1, routed)           0.472     7.298    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/n_0_EN1_i_6
+    SLICE_X10Y42         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.396     7.694 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/EN1_reg_i_3/CO[3]
+                         net (fo=1, routed)           0.000     7.694    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/n_0_EN1_reg_i_3
+    SLICE_X10Y43         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.254     7.948 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/EN1_reg_i_2/CO[0]
+                         net (fo=1, routed)           0.713     8.662    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/grp_MotorCtrl_pwmThread_fu_120/I5[0]
+    SLICE_X15Y41         LUT4 (Prop_lut4_I0_O)        0.367     9.029 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/grp_MotorCtrl_pwmThread_fu_120/EN1_i_1/O
+                         net (fo=1, routed)           0.000     9.029    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/n_10_grp_MotorCtrl_pwmThread_fu_120
+    SLICE_X15Y41         FDRE                                         r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/EN1_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    11.192 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.500    12.692    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/aclk
+    SLICE_X15Y41                                                      r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/EN1_reg/C
+                         clock pessimism              0.231    12.923    
+                         clock uncertainty           -0.154    12.769    
+    SLICE_X15Y41         FDRE (Setup_fdre_C_D)        0.031    12.800    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/EN1_reg
+  -------------------------------------------------------------------
+                         required time                         12.800    
+                         arrival time                          -9.029    
+  -------------------------------------------------------------------
+                         slack                                  3.771    
+
+Slack (MET) :             3.981ns  (required time - arrival time)
+  Source:                 ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.grant_rnw_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.788ns  (logic 3.070ns (53.044%)  route 2.718ns (46.956%))
+  Logic Levels:           8  (CARRY4=4 LUT2=1 LUT3=1 LUT6=2)
+  Clock Path Skew:        -0.186ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.688ns = ( 12.688 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.990ns
+    Clock Pessimism Removal (CPR):    0.116ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.682     2.990    ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/aclk
+    SLICE_X7Y48                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.grant_rnw_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y48          FDRE (Prop_fdre_C_Q)         0.456     3.446 f  ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.grant_rnw_reg/Q
+                         net (fo=29, routed)          0.588     4.034    ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/aa_grant_rnw
+    SLICE_X7Y49          LUT2 (Prop_lut2_I1_O)        0.120     4.154 r  ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_axi_awready[0]_INST_0/O
+                         net (fo=7, routed)           0.890     5.044    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awready
+    SLICE_X3Y53          LUT6 (Prop_lut6_I5_O)        0.327     5.371 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/memory_reg[3][0]_srl4_i_1/O
+                         net (fo=44, routed)          0.885     6.256    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/O2
+    SLICE_X7Y51          LUT6 (Prop_lut6_I0_O)        0.124     6.380 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axaddr_incr[0]_i_10/O
+                         net (fo=1, routed)           0.000     6.380    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/S[1]
+    SLICE_X7Y51          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     6.930 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[0]_i_4/CO[3]
+                         net (fo=1, routed)           0.000     6.930    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/n_0_axaddr_incr_reg[0]_i_4
+    SLICE_X7Y52          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     7.264 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[4]_i_4/O[1]
+                         net (fo=1, routed)           0.355     7.619    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/data[5]
+    SLICE_X6Y52          LUT3 (Prop_lut3_I0_O)        0.303     7.922 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[5]_i_2/O
+                         net (fo=1, routed)           0.000     7.922    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/n_0_axaddr_incr[5]_i_2
+    SLICE_X6Y52          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.455 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[5]_i_3_CARRY4/CO[3]
+                         net (fo=1, routed)           0.000     8.455    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/n_0_axaddr_incr_reg[8]_i_3
+    SLICE_X6Y53          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     8.778 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[9]_i_3_CARRY4/O[1]
+                         net (fo=1, routed)           0.000     8.778    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/n_0_axaddr_incr_reg[9]_i_1
+    SLICE_X6Y53          FDRE                                         r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    11.192 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.496    12.688    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/aclk
+    SLICE_X6Y53                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[9]/C
+                         clock pessimism              0.116    12.804    
+                         clock uncertainty           -0.154    12.650    
+    SLICE_X6Y53          FDRE (Setup_fdre_C_D)        0.109    12.759    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[9]
+  -------------------------------------------------------------------
+                         required time                         12.759    
+                         arrival time                          -8.778    
+  -------------------------------------------------------------------
+                         slack                                  3.981    
+
+Slack (MET) :             3.990ns  (required time - arrival time)
+  Source:                 ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.grant_rnw_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.779ns  (logic 3.061ns (52.971%)  route 2.718ns (47.029%))
+  Logic Levels:           8  (CARRY4=4 LUT2=1 LUT3=1 LUT6=2)
+  Clock Path Skew:        -0.186ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.688ns = ( 12.688 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.990ns
+    Clock Pessimism Removal (CPR):    0.116ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.682     2.990    ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/aclk
+    SLICE_X7Y48                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.grant_rnw_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y48          FDRE (Prop_fdre_C_Q)         0.456     3.446 f  ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.grant_rnw_reg/Q
+                         net (fo=29, routed)          0.588     4.034    ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/aa_grant_rnw
+    SLICE_X7Y49          LUT2 (Prop_lut2_I1_O)        0.120     4.154 r  ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_axi_awready[0]_INST_0/O
+                         net (fo=7, routed)           0.890     5.044    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awready
+    SLICE_X3Y53          LUT6 (Prop_lut6_I5_O)        0.327     5.371 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/memory_reg[3][0]_srl4_i_1/O
+                         net (fo=44, routed)          0.885     6.256    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/O2
+    SLICE_X7Y51          LUT6 (Prop_lut6_I0_O)        0.124     6.380 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axaddr_incr[0]_i_10/O
+                         net (fo=1, routed)           0.000     6.380    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/S[1]
+    SLICE_X7Y51          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     6.930 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[0]_i_4/CO[3]
+                         net (fo=1, routed)           0.000     6.930    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/n_0_axaddr_incr_reg[0]_i_4
+    SLICE_X7Y52          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     7.264 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[4]_i_4/O[1]
+                         net (fo=1, routed)           0.355     7.619    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/data[5]
+    SLICE_X6Y52          LUT3 (Prop_lut3_I0_O)        0.303     7.922 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[5]_i_2/O
+                         net (fo=1, routed)           0.000     7.922    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/n_0_axaddr_incr[5]_i_2
+    SLICE_X6Y52          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.455 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[5]_i_3_CARRY4/CO[3]
+                         net (fo=1, routed)           0.000     8.455    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/n_0_axaddr_incr_reg[8]_i_3
+    SLICE_X6Y53          CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.314     8.769 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[9]_i_3_CARRY4/O[3]
+                         net (fo=1, routed)           0.000     8.769    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/n_0_axaddr_incr_reg[11]_i_1
+    SLICE_X6Y53          FDRE                                         r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    11.192 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.496    12.688    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/aclk
+    SLICE_X6Y53                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[11]/C
+                         clock pessimism              0.116    12.804    
+                         clock uncertainty           -0.154    12.650    
+    SLICE_X6Y53          FDRE (Setup_fdre_C_D)        0.109    12.759    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[11]
+  -------------------------------------------------------------------
+                         required time                         12.759    
+                         arrival time                          -8.769    
+  -------------------------------------------------------------------
+                         slack                                  3.990    
+
+Slack (MET) :             4.049ns  (required time - arrival time)
+  Source:                 ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_pwmCount_V_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/EN2_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.762ns  (logic 2.278ns (39.533%)  route 3.484ns (60.468%))
+  Logic Levels:           6  (CARRY4=2 LUT4=3 LUT6=1)
+  Clock Path Skew:        -0.066ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.693ns = ( 12.693 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.989ns
+    Clock Pessimism Removal (CPR):    0.231ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.681     2.989    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/aclk
+    SLICE_X12Y43                                                      r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_pwmCount_V_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X12Y43         FDRE (Prop_fdre_C_Q)         0.478     3.467 f  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_pwmCount_V_reg[2]/Q
+                         net (fo=12, routed)          1.061     4.528    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_pwmCount_V_reg__0[2]
+    SLICE_X12Y43         LUT4 (Prop_lut4_I3_O)        0.295     4.823 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_pwmCount_V[8]_i_3/O
+                         net (fo=8, routed)           0.891     5.714    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/n_0_MotorCtrl_pwmCount_V[8]_i_3
+    SLICE_X11Y40         LUT4 (Prop_lut4_I3_O)        0.150     5.864 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_pwmCount_V[7]_i_2/O
+                         net (fo=3, routed)           0.640     6.504    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/n_0_MotorCtrl_pwmCount_V[7]_i_2
+    SLICE_X10Y41         LUT6 (Prop_lut6_I0_O)        0.326     6.830 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/EN2_i_6/O
+                         net (fo=1, routed)           0.190     7.020    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/n_0_EN2_i_6
+    SLICE_X11Y41         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.385     7.405 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/EN2_reg_i_3/CO[3]
+                         net (fo=1, routed)           0.000     7.405    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/n_0_EN2_reg_i_3
+    SLICE_X11Y42         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     7.676 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/EN2_reg_i_2/CO[0]
+                         net (fo=1, routed)           0.702     8.378    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/grp_MotorCtrl_pwmThread_fu_120/CO[0]
+    SLICE_X15Y41         LUT4 (Prop_lut4_I0_O)        0.373     8.751 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/grp_MotorCtrl_pwmThread_fu_120/EN2_i_1/O
+                         net (fo=1, routed)           0.000     8.751    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/n_9_grp_MotorCtrl_pwmThread_fu_120
+    SLICE_X15Y41         FDRE                                         r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/EN2_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    11.192 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.500    12.692    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/aclk
+    SLICE_X15Y41                                                      r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/EN2_reg/C
+                         clock pessimism              0.231    12.923    
+                         clock uncertainty           -0.154    12.769    
+    SLICE_X15Y41         FDRE (Setup_fdre_C_D)        0.031    12.800    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/EN2_reg
+  -------------------------------------------------------------------
+                         required time                         12.800    
+                         arrival time                          -8.751    
+  -------------------------------------------------------------------
+                         slack                                  4.049    
+
+Slack (MET) :             4.062ns  (required time - arrival time)
+  Source:                 ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL_reg[0]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.471ns  (logic 1.909ns (34.894%)  route 3.562ns (65.106%))
+  Logic Levels:           3  (LUT5=3)
+  Clock Path Skew:        -0.144ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.699ns = ( 12.698 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.073ns
+    Clock Pessimism Removal (CPR):    0.231ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.765     3.073    ZyboCarDesign_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0                                                          r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7 (Prop_ps7_MAXIGP0ACLK_MAXIGP0WVALID)
+                                                      1.334     4.407 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0WVALID
+                         net (fo=5, routed)           1.774     6.180    ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_axi_wvalid[0]
+    SLICE_X10Y48         LUT5 (Prop_lut5_I1_O)        0.124     6.304 r  ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/m_axi_wvalid[0]_INST_0/O
+                         net (fo=3, routed)           0.557     6.861    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/s_axi_slv0_WVALID
+    SLICE_X11Y47         LUT5 (Prop_lut5_I2_O)        0.119     6.980 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmR[9]_i_3/O
+                         net (fo=3, routed)           0.593     7.574    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/n_0__pwmR[9]_i_3
+    SLICE_X9Y46          LUT5 (Prop_lut5_I2_O)        0.332     7.906 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL[9]_i_1/O
+                         net (fo=10, routed)          0.638     8.544    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/n_0__pwmL[9]_i_1
+    SLICE_X8Y42          FDRE                                         r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    11.192 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.506    12.698    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/aclk
+    SLICE_X8Y42                                                       r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL_reg[0]/C
+                         clock pessimism              0.231    12.929    
+                         clock uncertainty           -0.154    12.775    
+    SLICE_X8Y42          FDRE (Setup_fdre_C_CE)      -0.169    12.606    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL_reg[0]
+  -------------------------------------------------------------------
+                         required time                         12.606    
+                         arrival time                          -8.544    
+  -------------------------------------------------------------------
+                         slack                                  4.062    
+
+Slack (MET) :             4.062ns  (required time - arrival time)
+  Source:                 ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL_reg[2]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.471ns  (logic 1.909ns (34.894%)  route 3.562ns (65.106%))
+  Logic Levels:           3  (LUT5=3)
+  Clock Path Skew:        -0.144ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.699ns = ( 12.698 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.073ns
+    Clock Pessimism Removal (CPR):    0.231ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.765     3.073    ZyboCarDesign_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0                                                          r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7 (Prop_ps7_MAXIGP0ACLK_MAXIGP0WVALID)
+                                                      1.334     4.407 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0WVALID
+                         net (fo=5, routed)           1.774     6.180    ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_axi_wvalid[0]
+    SLICE_X10Y48         LUT5 (Prop_lut5_I1_O)        0.124     6.304 r  ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/m_axi_wvalid[0]_INST_0/O
+                         net (fo=3, routed)           0.557     6.861    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/s_axi_slv0_WVALID
+    SLICE_X11Y47         LUT5 (Prop_lut5_I2_O)        0.119     6.980 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmR[9]_i_3/O
+                         net (fo=3, routed)           0.593     7.574    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/n_0__pwmR[9]_i_3
+    SLICE_X9Y46          LUT5 (Prop_lut5_I2_O)        0.332     7.906 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL[9]_i_1/O
+                         net (fo=10, routed)          0.638     8.544    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/n_0__pwmL[9]_i_1
+    SLICE_X8Y42          FDRE                                         r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL_reg[2]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    11.192 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.506    12.698    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/aclk
+    SLICE_X8Y42                                                       r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL_reg[2]/C
+                         clock pessimism              0.231    12.929    
+                         clock uncertainty           -0.154    12.775    
+    SLICE_X8Y42          FDRE (Setup_fdre_C_CE)      -0.169    12.606    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL_reg[2]
+  -------------------------------------------------------------------
+                         required time                         12.606    
+                         arrival time                          -8.544    
+  -------------------------------------------------------------------
+                         slack                                  4.062    
+
+Slack (MET) :             4.062ns  (required time - arrival time)
+  Source:                 ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL_reg[6]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.471ns  (logic 1.909ns (34.894%)  route 3.562ns (65.106%))
+  Logic Levels:           3  (LUT5=3)
+  Clock Path Skew:        -0.144ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.699ns = ( 12.698 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.073ns
+    Clock Pessimism Removal (CPR):    0.231ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.765     3.073    ZyboCarDesign_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0                                                          r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7 (Prop_ps7_MAXIGP0ACLK_MAXIGP0WVALID)
+                                                      1.334     4.407 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0WVALID
+                         net (fo=5, routed)           1.774     6.180    ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_axi_wvalid[0]
+    SLICE_X10Y48         LUT5 (Prop_lut5_I1_O)        0.124     6.304 r  ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/m_axi_wvalid[0]_INST_0/O
+                         net (fo=3, routed)           0.557     6.861    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/s_axi_slv0_WVALID
+    SLICE_X11Y47         LUT5 (Prop_lut5_I2_O)        0.119     6.980 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmR[9]_i_3/O
+                         net (fo=3, routed)           0.593     7.574    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/n_0__pwmR[9]_i_3
+    SLICE_X9Y46          LUT5 (Prop_lut5_I2_O)        0.332     7.906 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL[9]_i_1/O
+                         net (fo=10, routed)          0.638     8.544    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/n_0__pwmL[9]_i_1
+    SLICE_X8Y42          FDRE                                         r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL_reg[6]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    11.192 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.506    12.698    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/aclk
+    SLICE_X8Y42                                                       r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL_reg[6]/C
+                         clock pessimism              0.231    12.929    
+                         clock uncertainty           -0.154    12.775    
+    SLICE_X8Y42          FDRE (Setup_fdre_C_CE)      -0.169    12.606    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL_reg[6]
+  -------------------------------------------------------------------
+                         required time                         12.606    
+                         arrival time                          -8.544    
+  -------------------------------------------------------------------
+                         slack                                  4.062    
+
+Slack (MET) :             4.062ns  (required time - arrival time)
+  Source:                 ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL_reg[7]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.471ns  (logic 1.909ns (34.894%)  route 3.562ns (65.106%))
+  Logic Levels:           3  (LUT5=3)
+  Clock Path Skew:        -0.144ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.699ns = ( 12.698 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.073ns
+    Clock Pessimism Removal (CPR):    0.231ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.765     3.073    ZyboCarDesign_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0                                                          r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+  -------------------------------------------------------------------    -------------------
+    PS7_X0Y0             PS7 (Prop_ps7_MAXIGP0ACLK_MAXIGP0WVALID)
+                                                      1.334     4.407 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0WVALID
+                         net (fo=5, routed)           1.774     6.180    ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_axi_wvalid[0]
+    SLICE_X10Y48         LUT5 (Prop_lut5_I1_O)        0.124     6.304 r  ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/m_axi_wvalid[0]_INST_0/O
+                         net (fo=3, routed)           0.557     6.861    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/s_axi_slv0_WVALID
+    SLICE_X11Y47         LUT5 (Prop_lut5_I2_O)        0.119     6.980 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmR[9]_i_3/O
+                         net (fo=3, routed)           0.593     7.574    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/n_0__pwmR[9]_i_3
+    SLICE_X9Y46          LUT5 (Prop_lut5_I2_O)        0.332     7.906 r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL[9]_i_1/O
+                         net (fo=10, routed)          0.638     8.544    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/n_0__pwmL[9]_i_1
+    SLICE_X8Y42          FDRE                                         r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL_reg[7]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    11.192 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.506    12.698    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/aclk
+    SLICE_X8Y42                                                       r  ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL_reg[7]/C
+                         clock pessimism              0.231    12.929    
+                         clock uncertainty           -0.154    12.775    
+    SLICE_X8Y42          FDRE (Setup_fdre_C_CE)      -0.169    12.606    ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_slv0_if_U/_pwmL_reg[7]
+  -------------------------------------------------------------------
+                         required time                         12.606    
+                         arrival time                          -8.544    
+  -------------------------------------------------------------------
+                         slack                                  4.062    
+
+Slack (MET) :             4.065ns  (required time - arrival time)
+  Source:                 ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.grant_rnw_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[10]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.704ns  (logic 2.986ns (52.352%)  route 2.718ns (47.648%))
+  Logic Levels:           8  (CARRY4=4 LUT2=1 LUT3=1 LUT6=2)
+  Clock Path Skew:        -0.186ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.688ns = ( 12.688 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.990ns
+    Clock Pessimism Removal (CPR):    0.116ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.682     2.990    ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/aclk
+    SLICE_X7Y48                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.grant_rnw_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y48          FDRE (Prop_fdre_C_Q)         0.456     3.446 f  ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.grant_rnw_reg/Q
+                         net (fo=29, routed)          0.588     4.034    ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/aa_grant_rnw
+    SLICE_X7Y49          LUT2 (Prop_lut2_I1_O)        0.120     4.154 r  ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_axi_awready[0]_INST_0/O
+                         net (fo=7, routed)           0.890     5.044    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awready
+    SLICE_X3Y53          LUT6 (Prop_lut6_I5_O)        0.327     5.371 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/memory_reg[3][0]_srl4_i_1/O
+                         net (fo=44, routed)          0.885     6.256    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/O2
+    SLICE_X7Y51          LUT6 (Prop_lut6_I0_O)        0.124     6.380 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axaddr_incr[0]_i_10/O
+                         net (fo=1, routed)           0.000     6.380    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/S[1]
+    SLICE_X7Y51          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     6.930 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[0]_i_4/CO[3]
+                         net (fo=1, routed)           0.000     6.930    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/n_0_axaddr_incr_reg[0]_i_4
+    SLICE_X7Y52          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     7.264 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[4]_i_4/O[1]
+                         net (fo=1, routed)           0.355     7.619    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/data[5]
+    SLICE_X6Y52          LUT3 (Prop_lut3_I0_O)        0.303     7.922 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[5]_i_2/O
+                         net (fo=1, routed)           0.000     7.922    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/n_0_axaddr_incr[5]_i_2
+    SLICE_X6Y52          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.455 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[5]_i_3_CARRY4/CO[3]
+                         net (fo=1, routed)           0.000     8.455    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/n_0_axaddr_incr_reg[8]_i_3
+    SLICE_X6Y53          CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     8.694 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[9]_i_3_CARRY4/O[2]
+                         net (fo=1, routed)           0.000     8.694    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/n_0_axaddr_incr_reg[10]_i_1
+    SLICE_X6Y53          FDRE                                         r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    11.192 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.496    12.688    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/aclk
+    SLICE_X6Y53                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[10]/C
+                         clock pessimism              0.116    12.804    
+                         clock uncertainty           -0.154    12.650    
+    SLICE_X6Y53          FDRE (Setup_fdre_C_D)        0.109    12.759    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[10]
+  -------------------------------------------------------------------
+                         required time                         12.759    
+                         arrival time                          -8.694    
+  -------------------------------------------------------------------
+                         slack                                  4.065    
+
+Slack (MET) :             4.086ns  (required time - arrival time)
+  Source:                 ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.grant_rnw_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.683ns  (logic 2.965ns (52.176%)  route 2.718ns (47.824%))
+  Logic Levels:           8  (CARRY4=4 LUT2=1 LUT3=1 LUT6=2)
+  Clock Path Skew:        -0.186ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.688ns = ( 12.688 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.990ns
+    Clock Pessimism Removal (CPR):    0.116ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.308 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.682     2.990    ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/aclk
+    SLICE_X7Y48                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.grant_rnw_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y48          FDRE (Prop_fdre_C_Q)         0.456     3.446 f  ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/gen_no_arbiter.grant_rnw_reg/Q
+                         net (fo=29, routed)          0.588     4.034    ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/aa_grant_rnw
+    SLICE_X7Y49          LUT2 (Prop_lut2_I1_O)        0.120     4.154 r  ZyboCarDesign_i/processing_system7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_axi_awready[0]_INST_0/O
+                         net (fo=7, routed)           0.890     5.044    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_axi_awready
+    SLICE_X3Y53          LUT6 (Prop_lut6_I5_O)        0.327     5.371 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/memory_reg[3][0]_srl4_i_1/O
+                         net (fo=44, routed)          0.885     6.256    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/O2
+    SLICE_X7Y51          LUT6 (Prop_lut6_I0_O)        0.124     6.380 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axaddr_incr[0]_i_10/O
+                         net (fo=1, routed)           0.000     6.380    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/S[1]
+    SLICE_X7Y51          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     6.930 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[0]_i_4/CO[3]
+                         net (fo=1, routed)           0.000     6.930    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/n_0_axaddr_incr_reg[0]_i_4
+    SLICE_X7Y52          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     7.264 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[4]_i_4/O[1]
+                         net (fo=1, routed)           0.355     7.619    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/data[5]
+    SLICE_X6Y52          LUT3 (Prop_lut3_I0_O)        0.303     7.922 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[5]_i_2/O
+                         net (fo=1, routed)           0.000     7.922    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/n_0_axaddr_incr[5]_i_2
+    SLICE_X6Y52          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.455 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[5]_i_3_CARRY4/CO[3]
+                         net (fo=1, routed)           0.000     8.455    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/n_0_axaddr_incr_reg[8]_i_3
+    SLICE_X6Y53          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.218     8.673 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[9]_i_3_CARRY4/O[0]
+                         net (fo=1, routed)           0.000     8.673    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/n_0_axaddr_incr_reg[8]_i_1
+    SLICE_X6Y53          FDRE                                         r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    11.192 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         1.496    12.688    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/aclk
+    SLICE_X6Y53                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[8]/C
+                         clock pessimism              0.116    12.804    
+                         clock uncertainty           -0.154    12.650    
+    SLICE_X6Y53          FDRE (Setup_fdre_C_D)        0.109    12.759    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[8]
+  -------------------------------------------------------------------
+                         required time                         12.759    
+                         arrival time                          -8.673    
+  -------------------------------------------------------------------
+                         slack                                  4.086    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.009ns  (arrival time - required time)
+  Source:                 ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awid_r_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][14]_srl4/D
+                            (rising edge-triggered cell SRL16E clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.335ns  (logic 0.128ns (38.185%)  route 0.207ns (61.815%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.270ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.224ns
+    Source Clock Delay      (SCD):    0.925ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.584     0.925    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aclk
+    SLICE_X5Y50                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awid_r_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y50          FDRE (Prop_fdre_C_Q)         0.128     1.053 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awid_r_reg[6]/Q
+                         net (fo=1, routed)           0.207     1.260    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/in[10]
+    SLICE_X4Y49          SRL16E                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][14]_srl4/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.854     1.224    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/aclk
+    SLICE_X4Y49                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][14]_srl4/CLK
+                         clock pessimism             -0.029     1.195    
+    SLICE_X4Y49          SRL16E (Hold_srl16e_CLK_D)
+                                                      0.056     1.251    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][14]_srl4
+  -------------------------------------------------------------------
+                         required time                         -1.251    
+                         arrival time                           1.260    
+  -------------------------------------------------------------------
+                         slack                                  0.009    
+
+Slack (MET) :             0.017ns  (arrival time - required time)
+  Source:                 ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awid_r_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][13]_srl4/D
+                            (rising edge-triggered cell SRL16E clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.335ns  (logic 0.128ns (38.223%)  route 0.207ns (61.777%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.270ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.224ns
+    Source Clock Delay      (SCD):    0.925ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.584     0.925    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aclk
+    SLICE_X5Y50                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awid_r_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y50          FDRE (Prop_fdre_C_Q)         0.128     1.053 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awid_r_reg[5]/Q
+                         net (fo=1, routed)           0.207     1.259    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/in[9]
+    SLICE_X4Y49          SRL16E                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][13]_srl4/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.854     1.224    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/aclk
+    SLICE_X4Y49                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][13]_srl4/CLK
+                         clock pessimism             -0.029     1.195    
+    SLICE_X4Y49          SRL16E (Hold_srl16e_CLK_D)
+                                                      0.048     1.243    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][13]_srl4
+  -------------------------------------------------------------------
+                         required time                         -1.243    
+                         arrival time                           1.259    
+  -------------------------------------------------------------------
+                         slack                                  0.017    
+
+Slack (MET) :             0.054ns  (arrival time - required time)
+  Source:                 ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[47]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awlen_r_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.339ns  (logic 0.148ns (43.641%)  route 0.191ns (56.359%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.223ns
+    Source Clock Delay      (SCD):    0.926ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.586     0.926    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/aclk
+    SLICE_X4Y48                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[47]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y48          FDRE (Prop_fdre_C_Q)         0.148     1.074 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[47]/Q
+                         net (fo=9, routed)           0.191     1.266    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/I1[18]
+    SLICE_X5Y52          FDRE                                         r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awlen_r_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.853     1.223    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aclk
+    SLICE_X5Y52                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awlen_r_reg[3]/C
+                         clock pessimism             -0.029     1.194    
+    SLICE_X5Y52          FDRE (Hold_fdre_C_D)         0.018     1.212    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awlen_r_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.212    
+                         arrival time                           1.266    
+  -------------------------------------------------------------------
+                         slack                                  0.054    
+
+Slack (MET) :             0.058ns  (arrival time - required time)
+  Source:                 ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[6]
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.316ns  (logic 0.128ns (40.494%)  route 0.188ns (59.506%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.311ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.263ns
+    Source Clock Delay      (SCD):    0.923ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.582     0.923    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/aclk
+    SLICE_X1Y50                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y50          FDRE (Prop_fdre_C_Q)         0.128     1.051 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[8]/Q
+                         net (fo=1, routed)           0.188     1.239    ZyboCarDesign_i/processing_system7_0/inst/M_AXI_GP0_BID[6]
+    PS7_X0Y0             PS7                                          r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.893     1.263    ZyboCarDesign_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0                                                          r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                         clock pessimism             -0.029     1.234    
+    PS7_X0Y0             PS7 (Hold_ps7_MAXIGP0ACLK_MAXIGP0BID[6])
+                                                     -0.053     1.181    ZyboCarDesign_i/processing_system7_0/inst/PS7_i
+  -------------------------------------------------------------------
+                         required time                         -1.181    
+                         arrival time                           1.239    
+  -------------------------------------------------------------------
+                         slack                                  0.058    
+
+Slack (MET) :             0.062ns  (arrival time - required time)
+  Source:                 ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[2]
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.320ns  (logic 0.128ns (39.960%)  route 0.192ns (60.040%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.311ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.263ns
+    Source Clock Delay      (SCD):    0.923ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.582     0.923    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/aclk
+    SLICE_X1Y50                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y50          FDRE (Prop_fdre_C_Q)         0.128     1.051 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[4]/Q
+                         net (fo=1, routed)           0.192     1.243    ZyboCarDesign_i/processing_system7_0/inst/M_AXI_GP0_BID[2]
+    PS7_X0Y0             PS7                                          r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[2]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.893     1.263    ZyboCarDesign_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0                                                          r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                         clock pessimism             -0.029     1.234    
+    PS7_X0Y0             PS7 (Hold_ps7_MAXIGP0ACLK_MAXIGP0BID[2])
+                                                     -0.053     1.181    ZyboCarDesign_i/processing_system7_0/inst/PS7_i
+  -------------------------------------------------------------------
+                         required time                         -1.181    
+                         arrival time                           1.243    
+  -------------------------------------------------------------------
+                         slack                                  0.062    
+
+Slack (MET) :             0.074ns  (arrival time - required time)
+  Source:                 ZyboCarDesign_i/rst_processing_system7_0_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].cs_out_i_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.465ns  (logic 0.186ns (40.041%)  route 0.279ns (59.959%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.270ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.205ns
+    Source Clock Delay      (SCD):    0.906ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.565     0.906    ZyboCarDesign_i/rst_processing_system7_0_100M/U0/slowest_sync_clk
+    SLICE_X13Y52                                                      r  ZyboCarDesign_i/rst_processing_system7_0_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y52         FDRE (Prop_fdre_C_Q)         0.141     1.047 r  ZyboCarDesign_i/rst_processing_system7_0_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/Q
+                         net (fo=4, routed)           0.279     1.325    ZyboCarDesign_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/s_axi_aresetn
+    SLICE_X10Y47         LUT6 (Prop_lut6_I2_O)        0.045     1.370 r  ZyboCarDesign_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].cs_out_i[0]_i_1/O
+                         net (fo=1, routed)           0.000     1.370    ZyboCarDesign_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/n_0_MEM_DECODE_GEN[0].cs_out_i[0]_i_1
+    SLICE_X10Y47         FDRE                                         r  ZyboCarDesign_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].cs_out_i_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.835     1.205    ZyboCarDesign_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/s_axi_aclk
+    SLICE_X10Y47                                                      r  ZyboCarDesign_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].cs_out_i_reg[0]/C
+                         clock pessimism             -0.029     1.176    
+    SLICE_X10Y47         FDRE (Hold_fdre_C_D)         0.120     1.296    ZyboCarDesign_i/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].cs_out_i_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.296    
+                         arrival time                           1.370    
+  -------------------------------------------------------------------
+                         slack                                  0.074    
+
+Slack (MET) :             0.083ns  (arrival time - required time)
+  Source:                 ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0BRESP[0]
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.392ns  (logic 0.141ns (35.955%)  route 0.251ns (64.045%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.309ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.263ns
+    Source Clock Delay      (SCD):    0.925ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.584     0.925    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/aclk
+    SLICE_X3Y50                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y50          FDRE (Prop_fdre_C_Q)         0.141     1.066 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[0]/Q
+                         net (fo=1, routed)           0.251     1.317    ZyboCarDesign_i/processing_system7_0/inst/M_AXI_GP0_BRESP[0]
+    PS7_X0Y0             PS7                                          r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0BRESP[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.893     1.263    ZyboCarDesign_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0                                                          r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                         clock pessimism             -0.029     1.234    
+    PS7_X0Y0             PS7 (Hold_ps7_MAXIGP0ACLK_MAXIGP0BRESP[0])
+                                                      0.000     1.234    ZyboCarDesign_i/processing_system7_0/inst/PS7_i
+  -------------------------------------------------------------------
+                         required time                         -1.234    
+                         arrival time                           1.317    
+  -------------------------------------------------------------------
+                         slack                                  0.083    
+
+Slack (MET) :             0.087ns  (arrival time - required time)
+  Source:                 ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[7]
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.344ns  (logic 0.128ns (37.189%)  route 0.216ns (62.811%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.311ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.263ns
+    Source Clock Delay      (SCD):    0.923ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.582     0.923    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/aclk
+    SLICE_X1Y50                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y50          FDRE (Prop_fdre_C_Q)         0.128     1.051 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[9]/Q
+                         net (fo=1, routed)           0.216     1.267    ZyboCarDesign_i/processing_system7_0/inst/M_AXI_GP0_BID[7]
+    PS7_X0Y0             PS7                                          r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.893     1.263    ZyboCarDesign_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0                                                          r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                         clock pessimism             -0.029     1.234    
+    PS7_X0Y0             PS7 (Hold_ps7_MAXIGP0ACLK_MAXIGP0BID[7])
+                                                     -0.054     1.180    ZyboCarDesign_i/processing_system7_0/inst/PS7_i
+  -------------------------------------------------------------------
+                         required time                         -1.180    
+                         arrival time                           1.267    
+  -------------------------------------------------------------------
+                         slack                                  0.087    
+
+Slack (MET) :             0.094ns  (arrival time - required time)
+  Source:                 ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[1]
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.403ns  (logic 0.141ns (35.004%)  route 0.262ns (64.996%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.309ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.263ns
+    Source Clock Delay      (SCD):    0.925ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.584     0.925    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/aclk
+    SLICE_X3Y50                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y50          FDRE (Prop_fdre_C_Q)         0.141     1.066 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[3]/Q
+                         net (fo=1, routed)           0.262     1.327    ZyboCarDesign_i/processing_system7_0/inst/M_AXI_GP0_BID[1]
+    PS7_X0Y0             PS7                                          r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.893     1.263    ZyboCarDesign_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0                                                          r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                         clock pessimism             -0.029     1.234    
+    PS7_X0Y0             PS7 (Hold_ps7_MAXIGP0ACLK_MAXIGP0BID[1])
+                                                      0.000     1.234    ZyboCarDesign_i/processing_system7_0/inst/PS7_i
+  -------------------------------------------------------------------
+                         required time                         -1.234    
+                         arrival time                           1.327    
+  -------------------------------------------------------------------
+                         slack                                  0.094    
+
+Slack (MET) :             0.097ns  (arrival time - required time)
+  Source:                 ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[3]
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.353ns  (logic 0.128ns (36.251%)  route 0.225ns (63.749%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.309ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.263ns
+    Source Clock Delay      (SCD):    0.925ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.341 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.584     0.925    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/aclk
+    SLICE_X3Y50                                                       r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y50          FDRE (Prop_fdre_C_Q)         0.128     1.053 r  ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/m_payload_i_reg[5]/Q
+                         net (fo=1, routed)           0.225     1.278    ZyboCarDesign_i/processing_system7_0/inst/M_AXI_GP0_BID[3]
+    PS7_X0Y0             PS7                                          r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[3]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    ZyboCarDesign_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.370 r  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=915, routed)         0.893     1.263    ZyboCarDesign_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0                                                          r  ZyboCarDesign_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                         clock pessimism             -0.029     1.234    
+    PS7_X0Y0             PS7 (Hold_ps7_MAXIGP0ACLK_MAXIGP0BID[3])
+                                                     -0.053     1.181    ZyboCarDesign_i/processing_system7_0/inst/PS7_i
+  -------------------------------------------------------------------
+                         required time                         -1.181    
+                         arrival time                           1.278    
+  -------------------------------------------------------------------
+                         slack                                  0.097    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_fpga_0
+Waveform:           { 0 5 }
+Period:             10.000
+Sources:            { ZyboCarDesign_i/processing_system7_0/inst/PS7_i/FCLKCLK[0] }
+
+Check Type        Corner  Lib Pin      Reference Pin  Required  Actual  Slack  Location       Pin                                                                                                                                                                        
+Min Period        n/a     BUFG/I       n/a            2.155     10.000  7.845  BUFGCTRL_X0Y0  ZyboCarDesign_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/I                                                                                              
+Min Period        n/a     FDRE/C       n/a            1.000     10.000  9.000  SLICE_X15Y41   ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/DIR1_reg/C                                                                                                                    
+Min Period        n/a     FDRE/C       n/a            1.000     10.000  9.000  SLICE_X15Y41   ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/EN1_reg/C                                                                                                                     
+Min Period        n/a     FDRE/C       n/a            1.000     10.000  9.000  SLICE_X15Y41   ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/EN2_reg/C                                                                                                                     
+Min Period        n/a     FDRE/C       n/a            1.000     10.000  9.000  SLICE_X14Y41   ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_dividerCount_V_reg[0]/C                                                                                             
+Min Period        n/a     FDRE/C       n/a            1.000     10.000  9.000  SLICE_X14Y43   ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_dividerCount_V_reg[10]/C                                                                                            
+Min Period        n/a     FDRE/C       n/a            1.000     10.000  9.000  SLICE_X14Y43   ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_dividerCount_V_reg[11]/C                                                                                            
+Min Period        n/a     FDRE/C       n/a            1.000     10.000  9.000  SLICE_X14Y44   ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_dividerCount_V_reg[12]/C                                                                                            
+Min Period        n/a     FDRE/C       n/a            1.000     10.000  9.000  SLICE_X14Y44   ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_dividerCount_V_reg[13]/C                                                                                            
+Min Period        n/a     FDRE/C       n/a            1.000     10.000  9.000  SLICE_X14Y44   ZyboCarDesign_i/MotorCtrl_0/inst/MotorCtrl_U/MotorCtrl_dividerCount_V_reg[14]/C                                                                                            
+Low Pulse Width   Slow    SRL16E/CLK   n/a            0.980     5.000   4.020  SLICE_X12Y55   ZyboCarDesign_i/rst_processing_system7_0_100M/U0/EXT_LPF/POR_SRL_I/CLK                                                                                                     
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X6Y42    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32/CLK   
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X6Y42    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32/CLK   
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X6Y40    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32/CLK  
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X6Y40    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32/CLK  
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X8Y41    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32/CLK  
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X8Y41    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32/CLK  
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X8Y41    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32/CLK  
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X8Y41    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32/CLK  
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X4Y43    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][17]_srl32/CLK  
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X4Y42    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32/CLK  
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X4Y42    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][14]_srl32/CLK  
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X4Y42    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][15]_srl32/CLK  
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X4Y42    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][16]_srl32/CLK  
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X6Y42    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32/CLK   
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X6Y40    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32/CLK  
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X8Y41    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32/CLK  
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X8Y41    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32/CLK  
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X4Y43    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][17]_srl32/CLK  
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980     5.000   4.020  SLICE_X4Y43    ZyboCarDesign_i/processing_system7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][18]_srl32/CLK  
+
+
+

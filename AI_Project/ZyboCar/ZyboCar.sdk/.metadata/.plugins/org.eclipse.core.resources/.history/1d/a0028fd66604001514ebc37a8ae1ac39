@@ -1,0 +1,20 @@
+/*
+ * WaitForStart.cpp
+ *
+ *  Created on: 27/05/2015
+ *      Author: Kasper
+ */
+
+#include "WaitForStart.h"
+
+WaitForStart::WaitForStart() {
+	// TODO Auto-generated constructor stub
+
+}
+
+WaitForStart::~WaitForStart() {
+	// TODO Auto-generated destructor stub
+
+}
+
+WaitForStart:

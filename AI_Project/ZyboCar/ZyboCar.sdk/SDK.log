@@ -442,3 +442,26 @@ java.lang.IllegalStateException: Cannot connect to processor before Hardware Pla
 12:28:49 INFO  : Processor reset is completed for ps7_cortexa9_0
 12:29:24 INFO  : Processor reset is completed for ps7_cortexa9_0
 12:30:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:09:04 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1432724911884,  Project:1432718289951
+13:09:04 INFO  : Project ZyboCarDesign_wrapper_hw_platform_0's source hardware specification located at C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+13:09:58 INFO  : Copied contents of C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper.hdf into \ZyboCarDesign_wrapper_hw_platform_0\system.hdf.
+13:10:31 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:11:04 INFO  : 
+13:11:11 INFO  : Updating hardware inferred compiler options for MoveTest.
+13:11:12 INFO  : Updating hardware inferred compiler options for MyFirstFSBL.
+13:11:12 INFO  : Clearing existing target manager status.
+13:11:12 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+13:30:25 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+13:30:40 INFO  : ps7_init is completed.
+13:30:40 INFO  : ps7_post_config is completed.
+13:30:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:31:17 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:31:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:33:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:08:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:08:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:09:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:11:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:12:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:13:47 INFO  : Processor reset is completed for ps7_cortexa9_0
