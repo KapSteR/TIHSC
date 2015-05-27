@@ -3,19 +3,19 @@
 
 <trans_list>
 
-<trans id="63" from="1" to="2">
+<trans id="64" from="1" to="2">
 <condition id="22">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="64" from="2" to="3">
+<trans id="65" from="2" to="3">
 <condition id="24">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="65" from="3" to="3">
+<trans id="66" from="3" to="3">
 <condition id="26">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -518,9 +518,24 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:31  call void (...)* @_ssdm_op_Wait(i32 1) nounw
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="46" bw="0" op_0_bw="0">
+<node id="46" bw="0" op_0_bw="0" op_1_bw="10" op_2_bw="10">
 <![CDATA[
-_ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
+_ZN7_ap_sc_7sc_core4waitEi.exit:32  call void @_ssdm_op_Write.ap_auto.i10P(i10* %MotorCtrl_pwmCount_V, i10 0)
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="37" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="47" bw="0" op_0_bw="0">
+<![CDATA[
+_ZN7_ap_sc_7sc_core4waitEi.exit:33  br label %0
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -529,21 +544,6 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 
 <state id="3" st_id="3">
 
-<operation id="37" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="2">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<node id="48" bw="1" op_0_bw="1" op_1_bw="1">
-<![CDATA[
-:0  %MotorCtrl_pwmClock_V_read = call i1 @_ssdm_op_Read.ap_auto.i1P(i1* %MotorCtrl_pwmClock_V)
-
-]]></node>
-<StgValue><ssdm name="MotorCtrl_pwmClock_V_read"/></StgValue>
-</operation>
-
 <operation id="38" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
@@ -551,7 +551,22 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="49" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<node id="49" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+:0  %MotorCtrl_pwmClock_V_read = call i1 @_ssdm_op_Read.ap_auto.i1P(i1* %MotorCtrl_pwmClock_V)
+
+]]></node>
+<StgValue><ssdm name="MotorCtrl_pwmClock_V_read"/></StgValue>
+</operation>
+
+<operation id="39" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="2">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="50" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
 :1  br i1 %MotorCtrl_pwmClock_V_read, label %1, label %_ZN7_ap_sc_7sc_core4waitEi.exit2
 
@@ -559,24 +574,8 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <StgValue><ssdm name=""/></StgValue>
 </operation>
 
-<operation id="39" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="4">
-<or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
-</and_exp></or_exp>
-</condition>
-
-<node id="51" bw="10" op_0_bw="10" op_1_bw="10">
-<![CDATA[
-:0  %MotorCtrl_pwmCount_V_read = call i10 @_ssdm_op_Read.ap_auto.i10P(i10* %MotorCtrl_pwmCount_V)
-
-]]></node>
-<StgValue><ssdm name="MotorCtrl_pwmCount_V_read"/></StgValue>
-</operation>
-
 <operation id="40" st_id="3" stage="1" lat="1">
-<core>AddSub</core>
+<core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="4">
 <or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
@@ -585,13 +584,29 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 
 <node id="52" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
+:0  %MotorCtrl_pwmCount_V_read = call i10 @_ssdm_op_Read.ap_auto.i10P(i10* %MotorCtrl_pwmCount_V)
+
+]]></node>
+<StgValue><ssdm name="MotorCtrl_pwmCount_V_read"/></StgValue>
+</operation>
+
+<operation id="41" st_id="3" stage="1" lat="1">
+<core>AddSub</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="4">
+<or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="53" bw="10" op_0_bw="10" op_1_bw="10">
+<![CDATA[
 :1  %MotorCtrl_pwmCount_V_assign = add i10 %MotorCtrl_pwmCount_V_read, 1
 
 ]]></node>
 <StgValue><ssdm name="MotorCtrl_pwmCount_V_assign"/></StgValue>
 </operation>
 
-<operation id="41" st_id="3" stage="1" lat="1">
+<operation id="42" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="4">
@@ -599,7 +614,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="53" bw="0" op_0_bw="0" op_1_bw="10" op_2_bw="10">
+<node id="54" bw="0" op_0_bw="0" op_1_bw="10" op_2_bw="10">
 <![CDATA[
 :2  call void @_ssdm_op_Write.ap_auto.i10P(i10* %MotorCtrl_pwmCount_V, i10 %MotorCtrl_pwmCount_V_assign)
 
@@ -607,7 +622,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <StgValue><ssdm name=""/></StgValue>
 </operation>
 
-<operation id="42" st_id="3" stage="1" lat="1">
+<operation id="43" st_id="3" stage="1" lat="1">
 <core>AXI4LiteS</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="4">
@@ -615,28 +630,12 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="54" bw="1" op_0_bw="1" op_1_bw="1">
+<node id="55" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
 :3  %tmp = call i1 @_ssdm_op_Read.ap_auto.volatile.i1P(i1* %Direction)
 
 ]]></node>
 <StgValue><ssdm name="tmp"/></StgValue>
-</operation>
-
-<operation id="43" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="4">
-<or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
-</and_exp></or_exp>
-</condition>
-
-<node id="55" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
-<![CDATA[
-:4  call void @_ssdm_op_Write.ap_auto.i1P(i1* %MotorCtrl_DIR, i1 %tmp)
-
-]]></node>
-<StgValue><ssdm name=""/></StgValue>
 </operation>
 
 <operation id="44" st_id="3" stage="1" lat="1">
@@ -649,7 +648,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 
 <node id="56" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
 <![CDATA[
-:5  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %DIR1, i1 %tmp)
+:4  call void @_ssdm_op_Write.ap_auto.i1P(i1* %MotorCtrl_DIR, i1 %tmp)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -665,13 +664,29 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 
 <node id="57" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
 <![CDATA[
-:6  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %DIR2, i1 %tmp)
+:5  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %DIR1, i1 %tmp)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
 </operation>
 
 <operation id="46" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="4">
+<or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="58" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
+<![CDATA[
+:6  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %DIR2, i1 %tmp)
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="47" st_id="3" stage="1" lat="1">
 <core>AXI4LiteS</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="4">
@@ -679,7 +694,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="58" bw="10" op_0_bw="10" op_1_bw="10">
+<node id="59" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
 :7  %val_V = call i10 @_ssdm_op_Read.ap_auto.volatile.i10P(i10* %pwmR)
 
@@ -687,7 +702,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <StgValue><ssdm name="val_V"/></StgValue>
 </operation>
 
-<operation id="47" st_id="3" stage="1" lat="1">
+<operation id="48" st_id="3" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="4">
@@ -695,7 +710,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="59" bw="1" op_0_bw="10" op_1_bw="10">
+<node id="60" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
 :8  %tmp_2 = icmp ult i10 %MotorCtrl_pwmCount_V_assign, %val_V
 
@@ -703,7 +718,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <StgValue><ssdm name="tmp_2"/></StgValue>
 </operation>
 
-<operation id="48" st_id="3" stage="1" lat="1">
+<operation id="49" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="4">
@@ -711,26 +726,9 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="60" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<node id="61" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
 :9  br i1 %tmp_2, label %2, label %3
-
-]]></node>
-<StgValue><ssdm name=""/></StgValue>
-</operation>
-
-<operation id="49" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="6">
-<or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
-<literal name="tmp_2" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<node id="62" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
-<![CDATA[
-:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN1, i1 false)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -745,9 +743,9 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="63" bw="0" op_0_bw="0">
+<node id="63" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
 <![CDATA[
-:1  br label %4
+:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN1, i1 false)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -756,15 +754,15 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <operation id="51" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
-<condition id="8">
+<condition id="6">
 <or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
-<literal name="tmp_2" val="1"/>
+<literal name="tmp_2" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<node id="65" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
+<node id="64" bw="0" op_0_bw="0">
 <![CDATA[
-:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN1, i1 true)
+:1  br label %4
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -779,7 +777,24 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="66" bw="0" op_0_bw="0">
+<node id="66" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
+<![CDATA[
+:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN1, i1 true)
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="53" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="8">
+<or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
+<literal name="tmp_2" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="67" bw="0" op_0_bw="0">
 <![CDATA[
 :1  br label %4
 
@@ -787,7 +802,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <StgValue><ssdm name=""/></StgValue>
 </operation>
 
-<operation id="53" st_id="3" stage="1" lat="1">
+<operation id="54" st_id="3" stage="1" lat="1">
 <core>AXI4LiteS</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="11">
@@ -795,7 +810,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="68" bw="10" op_0_bw="10" op_1_bw="10">
+<node id="69" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
 :0  %val_V_1 = call i10 @_ssdm_op_Read.ap_auto.volatile.i10P(i10* %pwmL)
 
@@ -803,7 +818,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <StgValue><ssdm name="val_V_1"/></StgValue>
 </operation>
 
-<operation id="54" st_id="3" stage="1" lat="1">
+<operation id="55" st_id="3" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="11">
@@ -811,7 +826,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="69" bw="1" op_0_bw="10" op_1_bw="10">
+<node id="70" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
 :1  %tmp_3 = icmp ult i10 %MotorCtrl_pwmCount_V_assign, %val_V_1
 
@@ -819,7 +834,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <StgValue><ssdm name="tmp_3"/></StgValue>
 </operation>
 
-<operation id="55" st_id="3" stage="1" lat="1">
+<operation id="56" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="11">
@@ -827,26 +842,9 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="70" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<node id="71" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
 :2  br i1 %tmp_3, label %5, label %6
-
-]]></node>
-<StgValue><ssdm name=""/></StgValue>
-</operation>
-
-<operation id="56" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="13">
-<or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
-<literal name="tmp_3" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<node id="72" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
-<![CDATA[
-:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN2, i1 false)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -861,9 +859,9 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="73" bw="0" op_0_bw="0">
+<node id="73" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
 <![CDATA[
-:1  br label %7
+:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN2, i1 false)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -872,15 +870,15 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <operation id="58" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
-<condition id="15">
+<condition id="13">
 <or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
-<literal name="tmp_3" val="1"/>
+<literal name="tmp_3" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<node id="75" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
+<node id="74" bw="0" op_0_bw="0">
 <![CDATA[
-:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN2, i1 true)
+:1  br label %7
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -895,9 +893,9 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="76" bw="0" op_0_bw="0">
+<node id="76" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
 <![CDATA[
-:1  br label %7
+:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN2, i1 true)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -906,14 +904,15 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <operation id="60" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
-<condition id="18">
+<condition id="15">
 <or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
+<literal name="tmp_3" val="1"/>
 </and_exp></or_exp>
 </condition>
 
-<node id="78" bw="0" op_0_bw="0">
+<node id="77" bw="0" op_0_bw="0">
 <![CDATA[
-:0  br label %_ZN7_ap_sc_7sc_core4waitEi.exit2
+:1  br label %7
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -922,13 +921,14 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <operation id="61" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
-<condition id="21">
-<or_exp><and_exp></and_exp></or_exp>
+<condition id="18">
+<or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
+</and_exp></or_exp>
 </condition>
 
-<node id="80" bw="0" op_0_bw="0" op_1_bw="32">
+<node id="79" bw="0" op_0_bw="0">
 <![CDATA[
-_ZN7_ap_sc_7sc_core4waitEi.exit2:0  call void (...)* @_ssdm_op_Wait(i32 1) nounwind
+:0  br label %_ZN7_ap_sc_7sc_core4waitEi.exit2
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -941,7 +941,22 @@ _ZN7_ap_sc_7sc_core4waitEi.exit2:0  call void (...)* @_ssdm_op_Wait(i32 1) nounw
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="81" bw="0" op_0_bw="0">
+<node id="81" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+_ZN7_ap_sc_7sc_core4waitEi.exit2:0  call void (...)* @_ssdm_op_Wait(i32 1) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="63" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="21">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="82" bw="0" op_0_bw="0">
 <![CDATA[
 _ZN7_ap_sc_7sc_core4waitEi.exit2:1  br label %0
 

@@ -851,8 +851,8 @@
 				<xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
 			</xilinx:taxonomies>
 			<xilinx:displayName>Motorctrl</xilinx:displayName>
-			<xilinx:coreRevision>1505211945</xilinx:coreRevision>
-			<xilinx:coreCreationDateTime>2015-05-21T17:45:23Z</xilinx:coreCreationDateTime>
+			<xilinx:coreRevision>1505271105</xilinx:coreRevision>
+			<xilinx:coreCreationDateTime>2015-05-27T09:05:48Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
 			<xilinx:xilinxVersion>2014.4</xilinx:xilinxVersion>

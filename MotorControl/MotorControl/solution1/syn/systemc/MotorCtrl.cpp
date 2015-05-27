@@ -15,6 +15,7 @@ namespace ap_rtl {
 const sc_logic MotorCtrl::ap_const_logic_1 = sc_dt::Log_1;
 const sc_logic MotorCtrl::ap_const_logic_0 = sc_dt::Log_0;
 const sc_lv<1> MotorCtrl::ap_const_lv1_0 = "0";
+const sc_lv<32> MotorCtrl::ap_const_lv32_0 = "00000000000000000000000000000000";
 const sc_lv<1> MotorCtrl::ap_const_lv1_1 = "1";
 const sc_lv<32> MotorCtrl::ap_const_lv32_1 = "1";
 const sc_lv<2> MotorCtrl::ap_const_lv2_0 = "00";
@@ -120,6 +121,7 @@ MotorCtrl::MotorCtrl(sc_module_name name) : sc_module(name), mVcdFile(0) {
     SC_THREAD(thread_hdltv_gen);
     sensitive << ( clk.pos() );
 
+    MotorCtrl_dividerCount_V = "00000000000000000000000000000000";
     static int apTFileNum = 0;
     stringstream apTFilenSS;
     apTFilenSS << "MotorCtrl_sc_trace_" << apTFileNum ++;
@@ -212,8 +214,12 @@ void MotorCtrl::thread_EN2() {
 }
 
 void MotorCtrl::thread_MotorCtrl_dividerCount_V() {
-    if (esl_seteq<1,1,1>(ap_const_logic_1, grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_o_ap_vld.read())) {
-        MotorCtrl_dividerCount_V = grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_o.read();
+    if ( reset.read() == ap_const_logic_1) {
+        MotorCtrl_dividerCount_V = ap_const_lv32_0;
+    } else {
+        if (esl_seteq<1,1,1>(ap_const_logic_1, grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_o_ap_vld.read())) {
+            MotorCtrl_dividerCount_V = grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_o.read();
+        }
     }
 }
 

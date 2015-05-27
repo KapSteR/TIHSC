@@ -68,17 +68,17 @@
 			</item>
 		</ports>
 		<nodes class_id="8" tracking_level="0" version="0">
-			<count>13</count>
+			<count>14</count>
 			<item_version>0</item_version>
 			<item class_id="9" tracking_level="1" version="0" object_id="_3">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>45</id>
+						<id>43</id>
 						<name></name>
 						<fileName>MotorControl/main.cpp</fileName>
 						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
-						<lineNumber>68</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>clockDividerThread</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -93,7 +93,7 @@
 											<first>MotorControl/main.cpp</first>
 											<second>clockDividerThread</second>
 										</first>
-										<second>68</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -105,21 +105,23 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>1</count>
+					<count>3</count>
 					<item_version>0</item_version>
-					<item>63</item>
+					<item>65</item>
+					<item>66</item>
+					<item>68</item>
 				</oprand_edges>
-				<opcode>br</opcode>
+				<opcode>write</opcode>
 			</item>
 			<item class_id_reference="9" object_id="_4">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>47</id>
+						<id>46</id>
 						<name></name>
 						<fileName>MotorControl/main.cpp</fileName>
 						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>clockDividerThread</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -134,7 +136,7 @@
 											<first>MotorControl/main.cpp</first>
 											<second>clockDividerThread</second>
 										</first>
-										<second>46</second>
+										<second>48</second>
 									</item>
 								</second>
 							</item>
@@ -146,394 +148,17 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>2</count>
+					<count>1</count>
 					<item_version>0</item_version>
-					<item>65</item>
-					<item>67</item>
+					<item>69</item>
 				</oprand_edges>
-				<opcode>wait</opcode>
+				<opcode>br</opcode>
 			</item>
 			<item class_id_reference="9" object_id="_5">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>t_V</name>
-						<fileName>MotorControl/main.cpp</fileName>
-						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
-						<lineNumber>48</lineNumber>
-						<contextFuncName>clockDividerThread</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>MotorControl/main.cpp</first>
-											<second>clockDividerThread</second>
-										</first>
-										<second>48</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>t.V</originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>69</item>
-					<item>70</item>
-					<item>276</item>
-				</oprand_edges>
-				<opcode>read</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_6">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>49</id>
-						<name>MotorCtrl_dividerCount_V_assig</name>
-						<fileName>MotorControl/main.cpp</fileName>
-						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
-						<lineNumber>48</lineNumber>
-						<contextFuncName>clockDividerThread</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>MotorControl/main.cpp</first>
-											<second>clockDividerThread</second>
-										</first>
-										<second>48</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>71</item>
-					<item>72</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_7">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>50</id>
-						<name></name>
-						<fileName>MotorControl/main.cpp</fileName>
-						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
-						<lineNumber>48</lineNumber>
-						<contextFuncName>clockDividerThread</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>MotorControl/main.cpp</first>
-											<second>clockDividerThread</second>
-										</first>
-										<second>48</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>5</count>
-					<item_version>0</item_version>
-					<item>74</item>
-					<item>75</item>
-					<item>76</item>
-					<item>277</item>
-					<item>281</item>
-				</oprand_edges>
-				<opcode>write</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_8">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>51</id>
-						<name>tmp_5</name>
-						<fileName>MotorControl/main.cpp</fileName>
-						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
-						<lineNumber>48</lineNumber>
-						<contextFuncName>clockDividerThread</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>MotorControl/main.cpp</first>
-											<second>clockDividerThread</second>
-										</first>
-										<second>48</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>77</item>
-					<item>79</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_9">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>52</id>
-						<name></name>
-						<fileName>MotorControl/main.cpp</fileName>
-						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
-						<lineNumber>48</lineNumber>
-						<contextFuncName>clockDividerThread</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>MotorControl/main.cpp</first>
-											<second>clockDividerThread</second>
-										</first>
-										<second>48</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>80</item>
-					<item>81</item>
-					<item>82</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_10">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>54</id>
-						<name></name>
-						<fileName>MotorControl/main.cpp</fileName>
-						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
-						<lineNumber>52</lineNumber>
-						<contextFuncName>clockDividerThread</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>MotorControl/main.cpp</first>
-											<second>clockDividerThread</second>
-										</first>
-										<second>52</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>4</count>
-					<item_version>0</item_version>
-					<item>93</item>
-					<item>94</item>
-					<item>96</item>
-					<item>278</item>
-				</oprand_edges>
-				<opcode>write</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_11">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>55</id>
-						<name></name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>97</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_12">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>57</id>
-						<name></name>
-						<fileName>MotorControl/main.cpp</fileName>
-						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
-						<lineNumber>49</lineNumber>
-						<contextFuncName>clockDividerThread</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>MotorControl/main.cpp</first>
-											<second>clockDividerThread</second>
-										</first>
-										<second>49</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>4</count>
-					<item_version>0</item_version>
-					<item>84</item>
-					<item>85</item>
-					<item>87</item>
-					<item>279</item>
-				</oprand_edges>
-				<opcode>write</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_13">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>58</id>
-						<name></name>
-						<fileName>MotorControl/main.cpp</fileName>
-						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
-						<lineNumber>50</lineNumber>
-						<contextFuncName>clockDividerThread</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>MotorControl/main.cpp</first>
-											<second>clockDividerThread</second>
-										</first>
-										<second>50</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>6</count>
-					<item_version>0</item_version>
-					<item>88</item>
-					<item>89</item>
-					<item>91</item>
-					<item>280</item>
-					<item>282</item>
-					<item>283</item>
-				</oprand_edges>
-				<opcode>write</opcode>
-			</item>
-			<item class_id_reference="9" object_id="_14">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>59</id>
 						<name></name>
 						<fileName>MotorControl/main.cpp</fileName>
 						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
@@ -564,17 +189,306 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>1</count>
+					<count>2</count>
 					<item_version>0</item_version>
-					<item>92</item>
+					<item>71</item>
+					<item>73</item>
 				</oprand_edges>
-				<opcode>br</opcode>
+				<opcode>wait</opcode>
 			</item>
-			<item class_id_reference="9" object_id="_15">
+			<item class_id_reference="9" object_id="_6">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>61</id>
+						<id>49</id>
+						<name>t_V</name>
+						<fileName>MotorControl/main.cpp</fileName>
+						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
+						<lineNumber>53</lineNumber>
+						<contextFuncName>clockDividerThread</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>MotorControl/main.cpp</first>
+											<second>clockDividerThread</second>
+										</first>
+										<second>53</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>t.V</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>4</count>
+					<item_version>0</item_version>
+					<item>75</item>
+					<item>76</item>
+					<item>280</item>
+					<item>286</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_7">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>50</id>
+						<name>MotorCtrl_dividerCount_V_assig</name>
+						<fileName>MotorControl/main.cpp</fileName>
+						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
+						<lineNumber>53</lineNumber>
+						<contextFuncName>clockDividerThread</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>MotorControl/main.cpp</first>
+											<second>clockDividerThread</second>
+										</first>
+										<second>53</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>77</item>
+					<item>78</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_8">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>51</id>
+						<name></name>
+						<fileName>MotorControl/main.cpp</fileName>
+						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
+						<lineNumber>53</lineNumber>
+						<contextFuncName>clockDividerThread</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>MotorControl/main.cpp</first>
+											<second>clockDividerThread</second>
+										</first>
+										<second>53</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>6</count>
+					<item_version>0</item_version>
+					<item>79</item>
+					<item>80</item>
+					<item>81</item>
+					<item>281</item>
+					<item>285</item>
+					<item>287</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_9">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>52</id>
+						<name>tmp_5</name>
+						<fileName>MotorControl/main.cpp</fileName>
+						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
+						<lineNumber>53</lineNumber>
+						<contextFuncName>clockDividerThread</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>MotorControl/main.cpp</first>
+											<second>clockDividerThread</second>
+										</first>
+										<second>53</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>82</item>
+					<item>84</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_10">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>53</id>
+						<name></name>
+						<fileName>MotorControl/main.cpp</fileName>
+						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
+						<lineNumber>53</lineNumber>
+						<contextFuncName>clockDividerThread</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>MotorControl/main.cpp</first>
+											<second>clockDividerThread</second>
+										</first>
+										<second>53</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>85</item>
+					<item>86</item>
+					<item>87</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_11">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>55</id>
+						<name></name>
+						<fileName>MotorControl/main.cpp</fileName>
+						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
+						<lineNumber>57</lineNumber>
+						<contextFuncName>clockDividerThread</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>MotorControl/main.cpp</first>
+											<second>clockDividerThread</second>
+										</first>
+										<second>57</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>4</count>
+					<item_version>0</item_version>
+					<item>97</item>
+					<item>98</item>
+					<item>100</item>
+					<item>282</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_12">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>56</id>
+						<name></name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>101</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_13">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>58</id>
 						<name></name>
 						<fileName>MotorControl/main.cpp</fileName>
 						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
@@ -605,9 +519,141 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<oprand_edges>
+					<count>4</count>
+					<item_version>0</item_version>
+					<item>89</item>
+					<item>90</item>
+					<item>92</item>
+					<item>283</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_14">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>59</id>
+						<name></name>
+						<fileName>MotorControl/main.cpp</fileName>
+						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
+						<lineNumber>55</lineNumber>
+						<contextFuncName>clockDividerThread</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>MotorControl/main.cpp</first>
+											<second>clockDividerThread</second>
+										</first>
+										<second>55</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>7</count>
+					<item_version>0</item_version>
+					<item>93</item>
+					<item>94</item>
+					<item>95</item>
+					<item>284</item>
+					<item>288</item>
+					<item>289</item>
+					<item>290</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_15">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>60</id>
+						<name></name>
+						<fileName>MotorControl/main.cpp</fileName>
+						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
+						<lineNumber>56</lineNumber>
+						<contextFuncName>clockDividerThread</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>MotorControl/main.cpp</first>
+											<second>clockDividerThread</second>
+										</first>
+										<second>56</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>98</item>
+					<item>96</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+			</item>
+			<item class_id_reference="9" object_id="_16">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>62</id>
+						<name></name>
+						<fileName>MotorControl/main.cpp</fileName>
+						<fileDirectory>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</fileDirectory>
+						<lineNumber>59</lineNumber>
+						<contextFuncName>clockDividerThread</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>MotorControl/main.cpp</first>
+											<second>clockDividerThread</second>
+										</first>
+										<second>59</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>102</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 			</item>
@@ -615,80 +661,11 @@
 		<consts class_id="15" tracking_level="0" version="0">
 			<count>5</count>
 			<item_version>0</item_version>
-			<item class_id="16" tracking_level="1" version="0" object_id="_16">
+			<item class_id="16" tracking_level="1" version="0" object_id="_17">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>66</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>1</content>
-			</item>
-			<item class_id_reference="16" object_id="_17">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>78</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>25</content>
-			</item>
-			<item class_id_reference="16" object_id="_18">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>86</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>1</content>
-			</item>
-			<item class_id_reference="16" object_id="_19">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>90</id>
+						<id>67</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -707,11 +684,80 @@
 				<const_type>0</const_type>
 				<content>0</content>
 			</item>
+			<item class_id_reference="16" object_id="_18">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>72</id>
+						<name>empty</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<const_type>0</const_type>
+				<content>1</content>
+			</item>
+			<item class_id_reference="16" object_id="_19">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>83</id>
+						<name>empty</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<const_type>0</const_type>
+				<content>25</content>
+			</item>
 			<item class_id_reference="16" object_id="_20">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>95</id>
+						<id>91</id>
+						<name>empty</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<const_type>0</const_type>
+				<content>1</content>
+			</item>
+			<item class_id_reference="16" object_id="_21">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>99</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -734,61 +780,10 @@
 		<blocks class_id="17" tracking_level="0" version="0">
 			<count>5</count>
 			<item_version>0</item_version>
-			<item class_id="18" tracking_level="1" version="0" object_id="_21">
+			<item class_id="18" tracking_level="1" version="0" object_id="_22">
 				<Obj>
 					<type>3</type>
-					<id>46</id>
-					<name></name>
-					<fileName></fileName>
-					<fileDirectory></fileDirectory>
-					<lineNumber>0</lineNumber>
-					<contextFuncName></contextFuncName>
-					<inlineStackInfo>
-						<count>0</count>
-						<item_version>0</item_version>
-					</inlineStackInfo>
-					<originalName></originalName>
-					<rtlName></rtlName>
-					<coreName></coreName>
-				</Obj>
-				<node_objs>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>45</item>
-				</node_objs>
-			</item>
-			<item class_id_reference="18" object_id="_22">
-				<Obj>
-					<type>3</type>
-					<id>53</id>
-					<name>_ZN7_ap_sc_7sc_core4waitEi.exit</name>
-					<fileName></fileName>
-					<fileDirectory></fileDirectory>
-					<lineNumber>0</lineNumber>
-					<contextFuncName></contextFuncName>
-					<inlineStackInfo>
-						<count>0</count>
-						<item_version>0</item_version>
-					</inlineStackInfo>
-					<originalName></originalName>
-					<rtlName></rtlName>
-					<coreName></coreName>
-				</Obj>
-				<node_objs>
-					<count>6</count>
-					<item_version>0</item_version>
-					<item>47</item>
-					<item>48</item>
-					<item>49</item>
-					<item>50</item>
-					<item>51</item>
-					<item>52</item>
-				</node_objs>
-			</item>
-			<item class_id_reference="18" object_id="_23">
-				<Obj>
-					<type>3</type>
-					<id>56</id>
+					<id>47</id>
 					<name></name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -805,14 +800,66 @@
 				<node_objs>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>54</item>
-					<item>55</item>
+					<item>43</item>
+					<item>46</item>
+				</node_objs>
+			</item>
+			<item class_id_reference="18" object_id="_23">
+				<Obj>
+					<type>3</type>
+					<id>54</id>
+					<name>_ZN7_ap_sc_7sc_core4waitEi.exit</name>
+					<fileName></fileName>
+					<fileDirectory></fileDirectory>
+					<lineNumber>0</lineNumber>
+					<contextFuncName></contextFuncName>
+					<inlineStackInfo>
+						<count>0</count>
+						<item_version>0</item_version>
+					</inlineStackInfo>
+					<originalName></originalName>
+					<rtlName></rtlName>
+					<coreName></coreName>
+				</Obj>
+				<node_objs>
+					<count>6</count>
+					<item_version>0</item_version>
+					<item>48</item>
+					<item>49</item>
+					<item>50</item>
+					<item>51</item>
+					<item>52</item>
+					<item>53</item>
 				</node_objs>
 			</item>
 			<item class_id_reference="18" object_id="_24">
 				<Obj>
 					<type>3</type>
-					<id>60</id>
+					<id>57</id>
+					<name></name>
+					<fileName></fileName>
+					<fileDirectory></fileDirectory>
+					<lineNumber>0</lineNumber>
+					<contextFuncName></contextFuncName>
+					<inlineStackInfo>
+						<count>0</count>
+						<item_version>0</item_version>
+					</inlineStackInfo>
+					<originalName></originalName>
+					<rtlName></rtlName>
+					<coreName></coreName>
+				</Obj>
+				<node_objs>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>55</item>
+					<item>56</item>
+				</node_objs>
+			</item>
+			<item class_id_reference="18" object_id="_25">
+				<Obj>
+					<type>3</type>
+					<id>61</id>
 					<name></name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -829,15 +876,15 @@
 				<node_objs>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>57</item>
 					<item>58</item>
 					<item>59</item>
+					<item>60</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_25">
+			<item class_id_reference="18" object_id="_26">
 				<Obj>
 					<type>3</type>
-					<id>62</id>
+					<id>63</id>
 					<name></name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -854,229 +901,259 @@
 				<node_objs>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>61</item>
+					<item>62</item>
 				</node_objs>
 			</item>
 		</blocks>
 		<edges class_id="19" tracking_level="0" version="0">
-			<count>35</count>
+			<count>40</count>
 			<item_version>0</item_version>
-			<item class_id="20" tracking_level="1" version="0" object_id="_26">
-				<id>63</id>
-				<edge_type>2</edge_type>
-				<source_obj>53</source_obj>
-				<sink_obj>45</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_27">
-				<id>67</id>
+			<item class_id="20" tracking_level="1" version="0" object_id="_27">
+				<id>66</id>
 				<edge_type>1</edge_type>
-				<source_obj>66</source_obj>
-				<sink_obj>47</sink_obj>
+				<source_obj>11</source_obj>
+				<sink_obj>43</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_28">
-				<id>70</id>
+				<id>68</id>
 				<edge_type>1</edge_type>
-				<source_obj>11</source_obj>
-				<sink_obj>48</sink_obj>
+				<source_obj>67</source_obj>
+				<sink_obj>43</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_29">
-				<id>71</id>
-				<edge_type>1</edge_type>
-				<source_obj>48</source_obj>
-				<sink_obj>49</sink_obj>
+				<id>69</id>
+				<edge_type>2</edge_type>
+				<source_obj>54</source_obj>
+				<sink_obj>46</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_30">
-				<id>72</id>
+				<id>73</id>
 				<edge_type>1</edge_type>
-				<source_obj>66</source_obj>
-				<sink_obj>49</sink_obj>
+				<source_obj>72</source_obj>
+				<sink_obj>48</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_31">
-				<id>75</id>
+				<id>76</id>
 				<edge_type>1</edge_type>
 				<source_obj>11</source_obj>
-				<sink_obj>50</sink_obj>
+				<sink_obj>49</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_32">
-				<id>76</id>
+				<id>77</id>
 				<edge_type>1</edge_type>
 				<source_obj>49</source_obj>
 				<sink_obj>50</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_33">
-				<id>77</id>
+				<id>78</id>
 				<edge_type>1</edge_type>
-				<source_obj>48</source_obj>
-				<sink_obj>51</sink_obj>
+				<source_obj>72</source_obj>
+				<sink_obj>50</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_34">
-				<id>79</id>
+				<id>80</id>
 				<edge_type>1</edge_type>
-				<source_obj>78</source_obj>
+				<source_obj>11</source_obj>
 				<sink_obj>51</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_35">
-				<id>80</id>
+				<id>81</id>
 				<edge_type>1</edge_type>
-				<source_obj>51</source_obj>
-				<sink_obj>52</sink_obj>
+				<source_obj>50</source_obj>
+				<sink_obj>51</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_36">
-				<id>81</id>
-				<edge_type>2</edge_type>
-				<source_obj>56</source_obj>
+				<id>82</id>
+				<edge_type>1</edge_type>
+				<source_obj>49</source_obj>
 				<sink_obj>52</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_37">
-				<id>82</id>
-				<edge_type>2</edge_type>
-				<source_obj>60</source_obj>
+				<id>84</id>
+				<edge_type>1</edge_type>
+				<source_obj>83</source_obj>
 				<sink_obj>52</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_38">
 				<id>85</id>
 				<edge_type>1</edge_type>
-				<source_obj>13</source_obj>
-				<sink_obj>57</sink_obj>
+				<source_obj>52</source_obj>
+				<sink_obj>53</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_39">
-				<id>87</id>
-				<edge_type>1</edge_type>
-				<source_obj>86</source_obj>
-				<sink_obj>57</sink_obj>
+				<id>86</id>
+				<edge_type>2</edge_type>
+				<source_obj>57</source_obj>
+				<sink_obj>53</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_40">
-				<id>89</id>
-				<edge_type>1</edge_type>
-				<source_obj>11</source_obj>
-				<sink_obj>58</sink_obj>
+				<id>87</id>
+				<edge_type>2</edge_type>
+				<source_obj>61</source_obj>
+				<sink_obj>53</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_41">
-				<id>91</id>
+				<id>90</id>
 				<edge_type>1</edge_type>
-				<source_obj>90</source_obj>
+				<source_obj>13</source_obj>
 				<sink_obj>58</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_42">
 				<id>92</id>
-				<edge_type>2</edge_type>
-				<source_obj>62</source_obj>
-				<sink_obj>59</sink_obj>
+				<edge_type>1</edge_type>
+				<source_obj>91</source_obj>
+				<sink_obj>58</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_43">
 				<id>94</id>
 				<edge_type>1</edge_type>
-				<source_obj>13</source_obj>
-				<sink_obj>54</sink_obj>
+				<source_obj>11</source_obj>
+				<sink_obj>59</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_44">
-				<id>96</id>
+				<id>95</id>
 				<edge_type>1</edge_type>
-				<source_obj>95</source_obj>
-				<sink_obj>54</sink_obj>
+				<source_obj>67</source_obj>
+				<sink_obj>59</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_45">
-				<id>97</id>
+				<id>96</id>
 				<edge_type>2</edge_type>
-				<source_obj>62</source_obj>
-				<sink_obj>55</sink_obj>
+				<source_obj>63</source_obj>
+				<sink_obj>60</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_46">
 				<id>98</id>
-				<edge_type>2</edge_type>
-				<source_obj>53</source_obj>
-				<sink_obj>61</sink_obj>
+				<edge_type>1</edge_type>
+				<source_obj>13</source_obj>
+				<sink_obj>55</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_47">
-				<id>270</id>
-				<edge_type>2</edge_type>
-				<source_obj>46</source_obj>
-				<sink_obj>53</sink_obj>
+				<id>100</id>
+				<edge_type>1</edge_type>
+				<source_obj>99</source_obj>
+				<sink_obj>55</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_48">
-				<id>271</id>
+				<id>101</id>
 				<edge_type>2</edge_type>
-				<source_obj>53</source_obj>
-				<sink_obj>60</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_49">
-				<id>272</id>
-				<edge_type>2</edge_type>
-				<source_obj>53</source_obj>
+				<source_obj>63</source_obj>
 				<sink_obj>56</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_50">
-				<id>273</id>
+			<item class_id_reference="20" object_id="_49">
+				<id>102</id>
 				<edge_type>2</edge_type>
-				<source_obj>56</source_obj>
+				<source_obj>54</source_obj>
 				<sink_obj>62</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_51">
+			<item class_id_reference="20" object_id="_50">
 				<id>274</id>
 				<edge_type>2</edge_type>
-				<source_obj>60</source_obj>
-				<sink_obj>62</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_52">
-				<id>275</id>
-				<edge_type>2</edge_type>
-				<source_obj>62</source_obj>
-				<sink_obj>53</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_53">
-				<id>276</id>
-				<edge_type>4</edge_type>
-				<source_obj>47</source_obj>
-				<sink_obj>48</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_54">
-				<id>277</id>
-				<edge_type>4</edge_type>
-				<source_obj>47</source_obj>
-				<sink_obj>50</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_55">
-				<id>278</id>
-				<edge_type>4</edge_type>
 				<source_obj>47</source_obj>
 				<sink_obj>54</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_56">
-				<id>279</id>
-				<edge_type>4</edge_type>
-				<source_obj>47</source_obj>
+			<item class_id_reference="20" object_id="_51">
+				<id>275</id>
+				<edge_type>2</edge_type>
+				<source_obj>54</source_obj>
+				<sink_obj>61</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_52">
+				<id>276</id>
+				<edge_type>2</edge_type>
+				<source_obj>54</source_obj>
 				<sink_obj>57</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_57">
+			<item class_id_reference="20" object_id="_53">
+				<id>277</id>
+				<edge_type>2</edge_type>
+				<source_obj>57</source_obj>
+				<sink_obj>63</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_54">
+				<id>278</id>
+				<edge_type>2</edge_type>
+				<source_obj>61</source_obj>
+				<sink_obj>63</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_55">
+				<id>279</id>
+				<edge_type>2</edge_type>
+				<source_obj>63</source_obj>
+				<sink_obj>54</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_56">
 				<id>280</id>
 				<edge_type>4</edge_type>
-				<source_obj>47</source_obj>
-				<sink_obj>58</sink_obj>
+				<source_obj>48</source_obj>
+				<sink_obj>49</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_58">
+			<item class_id_reference="20" object_id="_57">
 				<id>281</id>
 				<edge_type>4</edge_type>
 				<source_obj>48</source_obj>
-				<sink_obj>50</sink_obj>
+				<sink_obj>51</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_58">
+				<id>282</id>
+				<edge_type>4</edge_type>
+				<source_obj>48</source_obj>
+				<sink_obj>55</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_59">
-				<id>282</id>
+				<id>283</id>
 				<edge_type>4</edge_type>
 				<source_obj>48</source_obj>
 				<sink_obj>58</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_60">
-				<id>283</id>
+				<id>284</id>
 				<edge_type>4</edge_type>
-				<source_obj>50</source_obj>
-				<sink_obj>58</sink_obj>
+				<source_obj>48</source_obj>
+				<sink_obj>59</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_61">
+				<id>285</id>
+				<edge_type>4</edge_type>
+				<source_obj>49</source_obj>
+				<sink_obj>51</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_62">
+				<id>286</id>
+				<edge_type>4</edge_type>
+				<source_obj>43</source_obj>
+				<sink_obj>49</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_63">
+				<id>287</id>
+				<edge_type>4</edge_type>
+				<source_obj>43</source_obj>
+				<sink_obj>51</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_64">
+				<id>288</id>
+				<edge_type>4</edge_type>
+				<source_obj>43</source_obj>
+				<sink_obj>59</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_65">
+				<id>289</id>
+				<edge_type>4</edge_type>
+				<source_obj>49</source_obj>
+				<sink_obj>59</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_66">
+				<id>290</id>
+				<edge_type>4</edge_type>
+				<source_obj>51</source_obj>
+				<sink_obj>59</sink_obj>
 			</item>
 		</edges>
 	</cdfg>
 	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>3</count>
 		<item_version>0</item_version>
-		<item class_id="22" tracking_level="1" version="0" object_id="_61">
+		<item class_id="22" tracking_level="1" version="0" object_id="_67">
 			<mId>1</mId>
 			<mTag>MotorCtrl::MotorCtrl_MotorCtrl::clockDividerThread</mTag>
 			<mType>0</mType>
@@ -1099,7 +1176,7 @@
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_62">
+		<item class_id_reference="22" object_id="_68">
 			<mId>2</mId>
 			<mTag>Entry</mTag>
 			<mType>0</mType>
@@ -1110,7 +1187,7 @@
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>46</item>
+				<item>47</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
@@ -1121,7 +1198,7 @@
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
-		<item class_id_reference="22" object_id="_63">
+		<item class_id_reference="22" object_id="_69">
 			<mId>3</mId>
 			<mTag>Loop 1</mTag>
 			<mType>1</mType>
@@ -1132,10 +1209,10 @@
 			<basic_blocks>
 				<count>4</count>
 				<item_version>0</item_version>
-				<item>53</item>
-				<item>56</item>
-				<item>60</item>
-				<item>62</item>
+				<item>54</item>
+				<item>57</item>
+				<item>61</item>
+				<item>63</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
@@ -1148,7 +1225,7 @@
 		</item>
 	</cdfg_regions>
 	<fsm class_id="-1"></fsm>
-	<res class_id="25" tracking_level="1" version="0" object_id="_64">
+	<res class_id="25" tracking_level="1" version="0" object_id="_70">
 		<dp_component_resource class_id="26" tracking_level="0" version="0">
 			<count>0</count>
 			<item_version>0</item_version>
@@ -1191,19 +1268,19 @@
 		</dp_memory_map>
 	</res>
 	<node_label_latency class_id="28" tracking_level="0" version="0">
-		<count>13</count>
+		<count>14</count>
 		<item_version>0</item_version>
 		<item class_id="29" tracking_level="0" version="0">
-			<first>45</first>
+			<first>43</first>
 			<second class_id="30" tracking_level="0" version="0">
 				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>47</first>
+			<first>46</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -1243,7 +1320,7 @@
 			</second>
 		</item>
 		<item>
-			<first>54</first>
+			<first>53</first>
 			<second>
 				<first>1</first>
 				<second>0</second>
@@ -1257,9 +1334,9 @@
 			</second>
 		</item>
 		<item>
-			<first>57</first>
+			<first>56</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -1278,7 +1355,14 @@
 			</second>
 		</item>
 		<item>
-			<first>61</first>
+			<first>60</first>
+			<second>
+				<first>2</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>62</first>
 			<second>
 				<first>2</first>
 				<second>0</second>
@@ -1289,35 +1373,35 @@
 		<count>5</count>
 		<item_version>0</item_version>
 		<item class_id="32" tracking_level="0" version="0">
-			<first>46</first>
+			<first>47</first>
 			<second class_id="33" tracking_level="0" version="0">
 				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>53</first>
+			<first>54</first>
 			<second>
 				<first>1</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>56</first>
+			<first>57</first>
 			<second>
 				<first>1</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>60</first>
+			<first>61</first>
 			<second>
 				<first>2</first>
 				<second>2</second>
 			</second>
 		</item>
 		<item>
-			<first>62</first>
+			<first>63</first>
 			<second>
 				<first>2</first>
 				<second>2</second>
@@ -1327,21 +1411,22 @@
 	<regions class_id="34" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="35" tracking_level="1" version="0" object_id="_65">
+		<item class_id="35" tracking_level="1" version="0" object_id="_71">
 			<region_name>__ssdm_reset__</region_name>
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>46</item>
+				<item>47</item>
 			</basic_blocks>
 			<nodes>
-				<count>5</count>
+				<count>6</count>
 				<item_version>0</item_version>
 				<item>40</item>
 				<item>41</item>
 				<item>42</item>
 				<item>43</item>
 				<item>44</item>
+				<item>45</item>
 			</nodes>
 			<anchor_node>40</anchor_node>
 			<region_type>1</region_type>

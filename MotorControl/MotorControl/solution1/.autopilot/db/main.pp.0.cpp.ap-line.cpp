@@ -34267,6 +34267,8 @@ void MotorCtrl::pwmThread() {
  //Initialization
  wait();
 #pragma empty_line
+ pwmCount = 0;
+#pragma empty_line
  while (true) {
 #pragma empty_line
   if (pwmClock == true) {
@@ -34300,6 +34302,9 @@ void MotorCtrl::pwmThread() {
 }
 #pragma empty_line
 void MotorCtrl::clockDividerThread() {
+#pragma empty_line
+ dividerCount = 0;
+#pragma empty_line
  while (1) {
   wait();
 #pragma empty_line

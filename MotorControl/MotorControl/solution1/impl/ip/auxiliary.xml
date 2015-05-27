@@ -8,5 +8,5 @@
   <xd:arg xd:name="DIR1" xd:originalName="DIR1" xd:direction="out" xd:interfaceRef="DIR1" xd:busTypeRef="register" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="DIR2" xd:originalName="DIR2" xd:direction="out" xd:interfaceRef="DIR2" xd:busTypeRef="register" xd:handshakeRef="ap_none"/>
   <xd:latencyEstimates xd:best-case="0" xd:worst-case="4" xd:average-case="2"/>
-  <xd:resourceEstimates xd:LUT="142" xd:FF="54" xd:BRAM="0" xd:DSP="0"/>
+  <xd:resourceEstimates xd:LUT="152" xd:FF="54" xd:BRAM="0" xd:DSP="0"/>
 </xd:acceleratorMap>

@@ -40,7 +40,7 @@ struct MotorCtrl_clockDividerThread : public sc_module {
     sc_signal< bool > ap_sig_bdd_23;
     sc_signal< sc_lv<32> > MotorCtrl_dividerCount_V_assig_fu_124_p2;
     sc_signal< sc_logic > ap_sig_cseq_ST_st3_fsm_2;
-    sc_signal< bool > ap_sig_bdd_34;
+    sc_signal< bool > ap_sig_bdd_33;
     sc_signal< sc_lv<3> > ap_NS_fsm;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
@@ -60,7 +60,7 @@ struct MotorCtrl_clockDividerThread : public sc_module {
     void thread_MotorCtrl_pwmClock_V();
     void thread_MotorCtrl_pwmClock_V_ap_vld();
     void thread_ap_sig_bdd_23();
-    void thread_ap_sig_bdd_34();
+    void thread_ap_sig_bdd_33();
     void thread_ap_sig_cseq_ST_st2_fsm_1();
     void thread_ap_sig_cseq_ST_st3_fsm_2();
     void thread_tmp_5_fu_131_p2();

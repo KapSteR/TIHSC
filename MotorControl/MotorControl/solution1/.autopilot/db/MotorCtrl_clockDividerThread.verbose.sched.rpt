@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'MotorCtrl_clockDividerThread'
 ================================================================
-* Date:           Thu May 21 19:42:24 2015
+* Date:           Wed May 27 11:02:55 2015
 
 * Version:        2014.4 (Build 1071461 on Tue Nov 18 16:42:57 PM 2014)
 * Project:        MotorControl
@@ -221,18 +221,21 @@ ST_1: stg_31 [1/1] 0.00ns
 ST_1: p_ssdm_reset_v [1/1] 0.00ns
 :28  %p_ssdm_reset_v = call i32 (...)* @_ssdm_op_SpecStateBegin(i32 0, i32 0, i32 1) nounwind
 
+ST_1: stg_33 [1/1] 0.00ns
+:29  call void @_ssdm_op_Write.ap_auto.i32P(i32* %MotorCtrl_dividerCount_V, i32 0)
+
 ST_1: empty [1/1] 0.00ns
-:29  %empty = call i32 (...)* @_ssdm_op_SpecStateEnd(i32 %p_ssdm_reset_v) nounwind
+:30  %empty = call i32 (...)* @_ssdm_op_SpecStateEnd(i32 %p_ssdm_reset_v) nounwind
 
 ST_1: empty_3 [1/1] 0.00ns
-:30  %empty_3 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str13, i32 %tmp)
+:31  %empty_3 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str13, i32 %tmp)
 
-ST_1: stg_35 [1/1] 0.00ns
-:31  br label %_ZN7_ap_sc_7sc_core4waitEi.exit
+ST_1: stg_36 [1/1] 0.00ns
+:32  br label %_ZN7_ap_sc_7sc_core4waitEi.exit
 
 
  <State 2>: 2.52ns
-ST_2: stg_36 [1/1] 0.00ns
+ST_2: stg_37 [1/1] 0.00ns
 _ZN7_ap_sc_7sc_core4waitEi.exit:0  call void (...)* @_ssdm_op_Wait(i32 1) nounwind
 
 ST_2: t_V [1/1] 0.00ns
@@ -241,33 +244,33 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:1  %t_V = call i32 @_ssdm_op_Read.ap_auto.i32P(i
 ST_2: MotorCtrl_dividerCount_V_assig [1/1] 2.44ns
 _ZN7_ap_sc_7sc_core4waitEi.exit:2  %MotorCtrl_dividerCount_V_assig = add i32 %t_V, 1
 
-ST_2: stg_39 [1/1] 0.00ns
+ST_2: stg_40 [1/1] 0.00ns
 _ZN7_ap_sc_7sc_core4waitEi.exit:3  call void @_ssdm_op_Write.ap_auto.i32P(i32* %MotorCtrl_dividerCount_V, i32 %MotorCtrl_dividerCount_V_assig)
 
 ST_2: tmp_5 [1/1] 2.52ns
 _ZN7_ap_sc_7sc_core4waitEi.exit:4  %tmp_5 = icmp eq i32 %t_V, 25
 
-ST_2: stg_41 [1/1] 0.00ns
+ST_2: stg_42 [1/1] 0.00ns
 _ZN7_ap_sc_7sc_core4waitEi.exit:5  br i1 %tmp_5, label %1, label %2
 
-ST_2: stg_42 [1/1] 0.00ns
+ST_2: stg_43 [1/1] 0.00ns
 :0  call void @_ssdm_op_Write.ap_auto.i1P(i1* %MotorCtrl_pwmClock_V, i1 false)
 
-ST_2: stg_43 [1/1] 0.00ns
+ST_2: stg_44 [1/1] 0.00ns
 :1  br label %3
 
 
  <State 3>: 0.00ns
-ST_3: stg_44 [1/1] 0.00ns
+ST_3: stg_45 [1/1] 0.00ns
 :0  call void @_ssdm_op_Write.ap_auto.i1P(i1* %MotorCtrl_pwmClock_V, i1 true)
 
-ST_3: stg_45 [1/1] 0.00ns
+ST_3: stg_46 [1/1] 0.00ns
 :1  call void @_ssdm_op_Write.ap_auto.i32P(i32* %MotorCtrl_dividerCount_V, i32 0)
 
-ST_3: stg_46 [1/1] 0.00ns
+ST_3: stg_47 [1/1] 0.00ns
 :2  br label %3
 
-ST_3: stg_47 [1/1] 0.00ns
+ST_3: stg_48 [1/1] 0.00ns
 :0  br label %_ZN7_ap_sc_7sc_core4waitEi.exit
 
 

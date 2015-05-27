@@ -45,21 +45,25 @@ struct MotorCtrl_pwmThread : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    sc_signal< sc_lv<1> > MotorCtrl_pwmClock_V_read_read_fu_108_p2;
     sc_signal< sc_lv<3> > ap_CS_fsm;
-    sc_signal< sc_logic > ap_sig_cseq_ST_st3_fsm_2;
+    sc_signal< sc_logic > ap_sig_cseq_ST_st2_fsm_1;
     sc_signal< bool > ap_sig_bdd_34;
-    sc_signal< sc_lv<10> > MotorCtrl_pwmCount_V_assign_fu_188_p2;
-    sc_signal< sc_lv<1> > tmp_2_fu_195_p2;
-    sc_signal< sc_lv<1> > tmp_3_fu_201_p2;
+    sc_signal< sc_lv<10> > MotorCtrl_pwmCount_V_assign_fu_191_p2;
+    sc_signal< sc_logic > ap_sig_cseq_ST_st3_fsm_2;
+    sc_signal< bool > ap_sig_bdd_43;
+    sc_signal< sc_lv<1> > MotorCtrl_pwmClock_V_read_read_fu_118_p2;
+    sc_signal< sc_lv<1> > tmp_2_fu_198_p2;
+    sc_signal< sc_lv<1> > tmp_3_fu_204_p2;
     sc_signal< sc_lv<3> > ap_NS_fsm;
-    sc_signal< bool > ap_sig_bdd_42;
+    sc_signal< bool > ap_sig_bdd_50;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
     static const sc_lv<3> ap_ST_st2_fsm_1;
     static const sc_lv<3> ap_ST_st3_fsm_2;
-    static const sc_lv<32> ap_const_lv32_2;
+    static const sc_lv<10> ap_const_lv10_0;
+    static const sc_lv<32> ap_const_lv32_1;
     static const sc_lv<1> ap_const_lv1_1;
+    static const sc_lv<32> ap_const_lv32_2;
     static const sc_lv<1> ap_const_lv1_0;
     static const sc_lv<10> ap_const_lv10_1;
     // Thread declarations
@@ -74,15 +78,17 @@ struct MotorCtrl_pwmThread : public sc_module {
     void thread_EN2_ap_vld();
     void thread_MotorCtrl_DIR();
     void thread_MotorCtrl_DIR_ap_vld();
-    void thread_MotorCtrl_pwmClock_V_read_read_fu_108_p2();
-    void thread_MotorCtrl_pwmCount_V_assign_fu_188_p2();
+    void thread_MotorCtrl_pwmClock_V_read_read_fu_118_p2();
+    void thread_MotorCtrl_pwmCount_V_assign_fu_191_p2();
     void thread_MotorCtrl_pwmCount_V_o();
     void thread_MotorCtrl_pwmCount_V_o_ap_vld();
     void thread_ap_sig_bdd_34();
-    void thread_ap_sig_bdd_42();
+    void thread_ap_sig_bdd_43();
+    void thread_ap_sig_bdd_50();
+    void thread_ap_sig_cseq_ST_st2_fsm_1();
     void thread_ap_sig_cseq_ST_st3_fsm_2();
-    void thread_tmp_2_fu_195_p2();
-    void thread_tmp_3_fu_201_p2();
+    void thread_tmp_2_fu_198_p2();
+    void thread_tmp_3_fu_204_p2();
     void thread_ap_NS_fsm();
 };
 

@@ -1,4 +1,4 @@
-23:12:01 **** Auto Build of configuration Debug for project standalone_bsp_0_xscutimer_intr_example_1 ****
+09:12:32 **** Incremental Build of configuration Debug for project standalone_bsp_0_xscutimer_intr_example_1 ****
 make all 
 Building file: ../src/xscutimer_intr_example.c
 Invoking: ARM gcc compiler
@@ -17,5 +17,5 @@ arm-xilinx-eabi-size standalone_bsp_0_xscutimer_intr_example_1.elf  |tee "standa
 Finished building: standalone_bsp_0_xscutimer_intr_example_1.elf.size
  
 
-23:12:02 Build Finished (took 942ms)
+09:12:32 Build Finished (took 882ms)
 

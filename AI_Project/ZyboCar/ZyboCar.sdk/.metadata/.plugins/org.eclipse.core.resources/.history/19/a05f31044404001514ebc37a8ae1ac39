@@ -1,0 +1,33 @@
+/*
+ * Empty C++ Application
+ */
+
+#include "xparameters.h"
+#include "move.h"
+
+int main() {
+
+	MoveController* MC = new MoveController();
+
+	xil_printf("Start of program.");
+
+	MC->ScuTimerWait(TIMER_DEVICE_ID,ONE_SECOND);
+	xil_printf("Robot assumed to be heading east\r\n");
+
+	initMotor(&motor);
+
+	xil_printf("Move 1 meter north\r\n");
+	move(0,1000,M_PI_2);
+	xil_printf("Wait one second\r\n");
+	ScuTimerWait(TIMER_DEVICE_ID,ONE_SECOND);
+	xil_printf("Move 0.5 meters south\r\n");
+	move(90,500,(3*M_PI_2));
+
+	xil_printf("End of program\r\n");
+
+	return 0;
+}
+
+
+
+

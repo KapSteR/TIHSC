@@ -3,19 +3,19 @@
 
 <trans_list>
 
-<trans id="48" from="1" to="2">
+<trans id="49" from="1" to="2">
 <condition id="10">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="49" from="2" to="3">
+<trans id="50" from="2" to="3">
 <condition id="11">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="51" from="3" to="2">
+<trans id="52" from="3" to="2">
 <condition id="14">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -470,12 +470,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="43" bw="32" op_0_bw="32" op_1_bw="32">
+<node id="43" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-:29  %empty = call i32 (...)* @_ssdm_op_SpecStateEnd(i32 %p_ssdm_reset_v) nounwind
+:29  call void @_ssdm_op_Write.ap_auto.i32P(i32* %MotorCtrl_dividerCount_V, i32 0)
 
 ]]></node>
-<StgValue><ssdm name="empty"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </operation>
 
 <operation id="34" st_id="1" stage="1" lat="1">
@@ -485,12 +485,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="44" bw="32" op_0_bw="32" op_1_bw="8" op_2_bw="32">
+<node id="44" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-:30  %empty_3 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str13, i32 %tmp)
+:30  %empty = call i32 (...)* @_ssdm_op_SpecStateEnd(i32 %p_ssdm_reset_v) nounwind
 
 ]]></node>
-<StgValue><ssdm name="empty_3"/></StgValue>
+<StgValue><ssdm name="empty"/></StgValue>
 </operation>
 
 <operation id="35" st_id="1" stage="1" lat="1">
@@ -500,9 +500,24 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="45" bw="0" op_0_bw="0">
+<node id="45" bw="32" op_0_bw="32" op_1_bw="8" op_2_bw="32">
 <![CDATA[
-:31  br label %_ZN7_ap_sc_7sc_core4waitEi.exit
+:31  %empty_3 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str13, i32 %tmp)
+
+]]></node>
+<StgValue><ssdm name="empty_3"/></StgValue>
+</operation>
+
+<operation id="36" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="46" bw="0" op_0_bw="0">
+<![CDATA[
+:32  br label %_ZN7_ap_sc_7sc_core4waitEi.exit
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -511,21 +526,6 @@
 
 <state id="2" st_id="2">
 
-<operation id="36" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<node id="47" bw="0" op_0_bw="0" op_1_bw="32">
-<![CDATA[
-_ZN7_ap_sc_7sc_core4waitEi.exit:0  call void (...)* @_ssdm_op_Wait(i32 1) nounwind
-
-]]></node>
-<StgValue><ssdm name=""/></StgValue>
-</operation>
-
 <operation id="37" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
@@ -533,16 +533,16 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:0  call void (...)* @_ssdm_op_Wait(i32 1) nounwi
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="48" bw="32" op_0_bw="32" op_1_bw="32">
+<node id="48" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
-_ZN7_ap_sc_7sc_core4waitEi.exit:1  %t_V = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %MotorCtrl_dividerCount_V)
+_ZN7_ap_sc_7sc_core4waitEi.exit:0  call void (...)* @_ssdm_op_Wait(i32 1) nounwind
 
 ]]></node>
-<StgValue><ssdm name="t_V"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </operation>
 
 <operation id="38" st_id="2" stage="1" lat="1">
-<core>AddSub</core>
+<core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="1">
 <or_exp><and_exp></and_exp></or_exp>
@@ -550,20 +550,35 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:1  %t_V = call i32 @_ssdm_op_Read.ap_auto.i32P(i
 
 <node id="49" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
+_ZN7_ap_sc_7sc_core4waitEi.exit:1  %t_V = call i32 @_ssdm_op_Read.ap_auto.i32P(i32* %MotorCtrl_dividerCount_V)
+
+]]></node>
+<StgValue><ssdm name="t_V"/></StgValue>
+</operation>
+
+<operation id="39" st_id="2" stage="1" lat="1">
+<core>AddSub</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="50" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
 _ZN7_ap_sc_7sc_core4waitEi.exit:2  %MotorCtrl_dividerCount_V_assig = add i32 %t_V, 1
 
 ]]></node>
 <StgValue><ssdm name="MotorCtrl_dividerCount_V_assig"/></StgValue>
 </operation>
 
-<operation id="39" st_id="2" stage="1" lat="1">
+<operation id="40" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="50" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<node id="51" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
 <![CDATA[
 _ZN7_ap_sc_7sc_core4waitEi.exit:3  call void @_ssdm_op_Write.ap_auto.i32P(i32* %MotorCtrl_dividerCount_V, i32 %MotorCtrl_dividerCount_V_assig)
 
@@ -571,14 +586,14 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:3  call void @_ssdm_op_Write.ap_auto.i32P(i32* %
 <StgValue><ssdm name=""/></StgValue>
 </operation>
 
-<operation id="40" st_id="2" stage="1" lat="1">
+<operation id="41" st_id="2" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="51" bw="1" op_0_bw="32" op_1_bw="32">
+<node id="52" bw="1" op_0_bw="32" op_1_bw="32">
 <![CDATA[
 _ZN7_ap_sc_7sc_core4waitEi.exit:4  %tmp_5 = icmp eq i32 %t_V, 25
 
@@ -586,32 +601,16 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:4  %tmp_5 = icmp eq i32 %t_V, 25
 <StgValue><ssdm name="tmp_5"/></StgValue>
 </operation>
 
-<operation id="41" st_id="2" stage="1" lat="1">
+<operation id="42" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="52" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<node id="53" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
 _ZN7_ap_sc_7sc_core4waitEi.exit:5  br i1 %tmp_5, label %1, label %2
-
-]]></node>
-<StgValue><ssdm name=""/></StgValue>
-</operation>
-
-<operation id="42" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="3">
-<or_exp><and_exp><literal name="tmp_5" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<node id="54" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
-<![CDATA[
-:0  call void @_ssdm_op_Write.ap_auto.i1P(i1* %MotorCtrl_pwmClock_V, i1 false)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -625,7 +624,23 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:5  br i1 %tmp_5, label %1, label %2
 </and_exp></or_exp>
 </condition>
 
-<node id="55" bw="0" op_0_bw="0">
+<node id="55" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
+<![CDATA[
+:0  call void @_ssdm_op_Write.ap_auto.i1P(i1* %MotorCtrl_pwmClock_V, i1 false)
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="44" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="3">
+<or_exp><and_exp><literal name="tmp_5" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="56" bw="0" op_0_bw="0">
 <![CDATA[
 :1  br label %3
 
@@ -636,22 +651,6 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:5  br i1 %tmp_5, label %1, label %2
 
 <state id="3" st_id="3">
 
-<operation id="44" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="5">
-<or_exp><and_exp><literal name="tmp_5" val="1"/>
-</and_exp></or_exp>
-</condition>
-
-<node id="57" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
-<![CDATA[
-:0  call void @_ssdm_op_Write.ap_auto.i1P(i1* %MotorCtrl_pwmClock_V, i1 true)
-
-]]></node>
-<StgValue><ssdm name=""/></StgValue>
-</operation>
-
 <operation id="45" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
@@ -660,9 +659,9 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:5  br i1 %tmp_5, label %1, label %2
 </and_exp></or_exp>
 </condition>
 
-<node id="58" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<node id="58" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
 <![CDATA[
-:1  call void @_ssdm_op_Write.ap_auto.i32P(i32* %MotorCtrl_dividerCount_V, i32 0)
+:0  call void @_ssdm_op_Write.ap_auto.i1P(i1* %MotorCtrl_pwmClock_V, i1 true)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -676,9 +675,9 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:5  br i1 %tmp_5, label %1, label %2
 </and_exp></or_exp>
 </condition>
 
-<node id="59" bw="0" op_0_bw="0">
+<node id="59" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-:2  br label %3
+:1  call void @_ssdm_op_Write.ap_auto.i32P(i32* %MotorCtrl_dividerCount_V, i32 0)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -687,11 +686,27 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:5  br i1 %tmp_5, label %1, label %2
 <operation id="47" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
+<condition id="5">
+<or_exp><and_exp><literal name="tmp_5" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="60" bw="0" op_0_bw="0">
+<![CDATA[
+:2  br label %3
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="48" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
 <condition id="8">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="61" bw="0" op_0_bw="0">
+<node id="62" bw="0" op_0_bw="0">
 <![CDATA[
 :0  br label %_ZN7_ap_sc_7sc_core4waitEi.exit
 

@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
-| Date         : Thu May 21 19:47:40 2015
+| Date         : Wed May 27 11:08:38 2015
 | Host         : KASPER-PC running 64-bit major release  (build 9200)
 | Command      : report_io -file MotorCtrl_io_placed.rpt
 | Design       : MotorCtrl

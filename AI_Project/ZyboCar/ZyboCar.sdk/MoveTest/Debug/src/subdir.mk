@@ -9,15 +9,29 @@ LD_SRCS += \
 CC_SRCS += \
 ../src/main.cc 
 
+CPP_SRCS += \
+../src/move.cpp 
+
 CC_DEPS += \
 ./src/main.d 
 
 OBJS += \
-./src/main.o 
+./src/main.o \
+./src/move.o 
+
+CPP_DEPS += \
+./src/move.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
 src/%.o: ../src/%.cc
+	@echo 'Building file: $<'
+	@echo 'Invoking: ARM g++ compiler'
+	arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"$@" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/%.o: ../src/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM g++ compiler'
 	arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"$@" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"

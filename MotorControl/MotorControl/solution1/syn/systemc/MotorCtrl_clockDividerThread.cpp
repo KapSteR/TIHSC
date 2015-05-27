@@ -58,14 +58,14 @@ MotorCtrl_clockDividerThread::MotorCtrl_clockDividerThread(sc_module_name name) 
     SC_METHOD(thread_ap_sig_bdd_23);
     sensitive << ( ap_CS_fsm );
 
-    SC_METHOD(thread_ap_sig_bdd_34);
+    SC_METHOD(thread_ap_sig_bdd_33);
     sensitive << ( ap_CS_fsm );
 
     SC_METHOD(thread_ap_sig_cseq_ST_st2_fsm_1);
     sensitive << ( ap_sig_bdd_23 );
 
     SC_METHOD(thread_ap_sig_cseq_ST_st3_fsm_2);
-    sensitive << ( ap_sig_bdd_34 );
+    sensitive << ( ap_sig_bdd_33 );
 
     SC_METHOD(thread_tmp_5_fu_131_p2);
     sensitive << ( MotorCtrl_dividerCount_V_i );
@@ -99,7 +99,7 @@ MotorCtrl_clockDividerThread::MotorCtrl_clockDividerThread(sc_module_name name) 
     sc_trace(mVcdFile, ap_sig_bdd_23, "ap_sig_bdd_23");
     sc_trace(mVcdFile, MotorCtrl_dividerCount_V_assig_fu_124_p2, "MotorCtrl_dividerCount_V_assig_fu_124_p2");
     sc_trace(mVcdFile, ap_sig_cseq_ST_st3_fsm_2, "ap_sig_cseq_ST_st3_fsm_2");
-    sc_trace(mVcdFile, ap_sig_bdd_34, "ap_sig_bdd_34");
+    sc_trace(mVcdFile, ap_sig_bdd_33, "ap_sig_bdd_33");
     sc_trace(mVcdFile, ap_NS_fsm, "ap_NS_fsm");
 #endif
 
@@ -175,8 +175,8 @@ void MotorCtrl_clockDividerThread::thread_ap_sig_bdd_23() {
     ap_sig_bdd_23 = esl_seteq<1,1,1>(ap_CS_fsm.read().range(1, 1), ap_const_lv1_1);
 }
 
-void MotorCtrl_clockDividerThread::thread_ap_sig_bdd_34() {
-    ap_sig_bdd_34 = esl_seteq<1,1,1>(ap_const_lv1_1, ap_CS_fsm.read().range(2, 2));
+void MotorCtrl_clockDividerThread::thread_ap_sig_bdd_33() {
+    ap_sig_bdd_33 = esl_seteq<1,1,1>(ap_const_lv1_1, ap_CS_fsm.read().range(2, 2));
 }
 
 void MotorCtrl_clockDividerThread::thread_ap_sig_cseq_ST_st2_fsm_1() {
@@ -188,7 +188,7 @@ void MotorCtrl_clockDividerThread::thread_ap_sig_cseq_ST_st2_fsm_1() {
 }
 
 void MotorCtrl_clockDividerThread::thread_ap_sig_cseq_ST_st3_fsm_2() {
-    if (ap_sig_bdd_34.read()) {
+    if (ap_sig_bdd_33.read()) {
         ap_sig_cseq_ST_st3_fsm_2 = ap_const_logic_1;
     } else {
         ap_sig_cseq_ST_st3_fsm_2 = ap_const_logic_0;

@@ -12,18 +12,14 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="@W [SCA-202] Signal 'MotorCtrl_pwmClock_V' has no reset." projectName="MotorControl" solutionName="solution1" date="2015-05-21T19:42:24.933+0200" type="Warning"/>
-        <logs message="@W [SCA-202] Found reading to uninitialized signal/variable 'MotorCtrl_dividerCount_V'('t_V', 't.V', MotorControl/main.cpp:48), the signal/variable should be written or reset firstly, or it may introduce RTL simulation mismatch." projectName="MotorControl" solutionName="solution1" date="2015-05-21T19:42:24.911+0200" type="Warning"/>
-        <logs message="@W [SCA-202] Signal 'MotorCtrl_dividerCount_V' has no reset." projectName="MotorControl" solutionName="solution1" date="2015-05-21T19:42:24.889+0200" type="Warning"/>
-        <logs message="@W [SCA-202] Found reading to uninitialized signal/variable 'MotorCtrl_pwmCount_V'('MotorCtrl_pwmCount_V_read', MotorControl/main.cpp:16), the signal/variable should be written or reset firstly, or it may introduce RTL simulation mismatch." projectName="MotorControl" solutionName="solution1" date="2015-05-21T19:42:24.854+0200" type="Warning"/>
-        <logs message="@W [SCA-202] Signal 'MotorCtrl_pwmCount_V' has no reset." projectName="MotorControl" solutionName="solution1" date="2015-05-21T19:42:24.834+0200" type="Warning"/>
-        <logs message="@W [SCA-202] Port 'DIR2' has no reset." projectName="MotorControl" solutionName="solution1" date="2015-05-21T19:42:24.817+0200" type="Warning"/>
-        <logs message="@W [SCA-202] Port 'DIR1' has no reset." projectName="MotorControl" solutionName="solution1" date="2015-05-21T19:42:24.797+0200" type="Warning"/>
-        <logs message="@W [SCA-202] Port 'EN2' has no reset." projectName="MotorControl" solutionName="solution1" date="2015-05-21T19:42:24.769+0200" type="Warning"/>
-        <logs message="@W [SCA-202] Port 'EN1' has no reset." projectName="MotorControl" solutionName="solution1" date="2015-05-21T19:42:24.751+0200" type="Warning"/>
-        <logs message="@W [SCA-202] Non-channel variable 'MotorCtrl_pwmClock_V' of module 'MotorCtrl' is used for inter-process communications which may result in nondeterministic simulation behavior. Please consider changing it to an sc_signal." projectName="MotorControl" solutionName="solution1" date="2015-05-21T19:42:24.737+0200" type="Warning"/>
-        <logs message="@W [XFORM-561] 'Loop-1' (MotorControl/main.cpp:48:7) in function 'MotorCtrl::clockDividerThread' is an infinite loop." projectName="MotorControl" solutionName="solution1" date="2015-05-21T19:42:24.725+0200" type="Warning"/>
-        <logs message="@W [XFORM-561] 'Loop-1' (MotorControl/main.cpp:14:7) in function 'MotorCtrl::pwmThread' is an infinite loop." projectName="MotorControl" solutionName="solution1" date="2015-05-21T19:42:24.136+0200" type="Warning"/>
+        <logs message="@W [SCA-202] Signal 'MotorCtrl_pwmClock_V' has no reset." projectName="MotorControl" solutionName="solution1" date="2015-05-27T11:02:55.182+0200" type="Warning"/>
+        <logs message="@W [SCA-202] Port 'DIR2' has no reset." projectName="MotorControl" solutionName="solution1" date="2015-05-27T11:02:55.162+0200" type="Warning"/>
+        <logs message="@W [SCA-202] Port 'DIR1' has no reset." projectName="MotorControl" solutionName="solution1" date="2015-05-27T11:02:55.142+0200" type="Warning"/>
+        <logs message="@W [SCA-202] Port 'EN2' has no reset." projectName="MotorControl" solutionName="solution1" date="2015-05-27T11:02:55.132+0200" type="Warning"/>
+        <logs message="@W [SCA-202] Port 'EN1' has no reset." projectName="MotorControl" solutionName="solution1" date="2015-05-27T11:02:55.112+0200" type="Warning"/>
+        <logs message="@W [SCA-202] Non-channel variable 'MotorCtrl_pwmClock_V' of module 'MotorCtrl' is used for inter-process communications which may result in nondeterministic simulation behavior. Please consider changing it to an sc_signal." projectName="MotorControl" solutionName="solution1" date="2015-05-27T11:02:55.092+0200" type="Warning"/>
+        <logs message="@W [XFORM-561] 'Loop-1' (MotorControl/main.cpp:53:7) in function 'MotorCtrl::clockDividerThread' is an infinite loop." projectName="MotorControl" solutionName="solution1" date="2015-05-27T11:02:55.072+0200" type="Warning"/>
+        <logs message="@W [XFORM-561] 'Loop-1' (MotorControl/main.cpp:16:7) in function 'MotorCtrl::pwmThread' is an infinite loop." projectName="MotorControl" solutionName="solution1" date="2015-05-27T11:02:54.422+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

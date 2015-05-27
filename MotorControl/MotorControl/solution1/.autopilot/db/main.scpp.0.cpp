@@ -34283,6 +34283,8 @@ _ssdm_op_SpecResource(&Direction, "", "AXI4LiteS", "", -1, "", "", "-bus_bundle 
  //Initialization
  wait();
 #pragma empty_line
+ pwmCount = 0;
+#pragma empty_line
  while (true) {
 #pragma empty_line
   if (pwmClock == true) {
@@ -34316,6 +34318,9 @@ _ssdm_op_SpecResource(&Direction, "", "AXI4LiteS", "", -1, "", "", "-bus_bundle 
 }
 #pragma empty_line
 void MotorCtrl::clockDividerThread() {
+#pragma empty_line
+ dividerCount = 0;
+#pragma empty_line
  while (1) {
   wait();
 #pragma empty_line

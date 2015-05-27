@@ -48,7 +48,7 @@ reg    ap_sig_cseq_ST_st2_fsm_1;
 reg    ap_sig_bdd_23;
 wire   [31:0] MotorCtrl_dividerCount_V_assig_fu_124_p2;
 reg    ap_sig_cseq_ST_st3_fsm_2;
-reg    ap_sig_bdd_34;
+reg    ap_sig_bdd_33;
 reg   [2:0] ap_NS_fsm;
 
 
@@ -127,9 +127,9 @@ begin
 end
 
 /// ap_sig_cseq_ST_st3_fsm_2 assign process. ///
-always @ (ap_sig_bdd_34)
+always @ (ap_sig_bdd_33)
 begin
-    if (ap_sig_bdd_34) begin
+    if (ap_sig_bdd_33) begin
         ap_sig_cseq_ST_st3_fsm_2 = ap_const_logic_1;
     end else begin
         ap_sig_cseq_ST_st3_fsm_2 = ap_const_logic_0;
@@ -162,10 +162,10 @@ begin
     ap_sig_bdd_23 = (ap_CS_fsm[ap_const_lv32_1] == ap_const_lv1_1);
 end
 
-/// ap_sig_bdd_34 assign process. ///
+/// ap_sig_bdd_33 assign process. ///
 always @ (ap_CS_fsm)
 begin
-    ap_sig_bdd_34 = (ap_const_lv1_1 == ap_CS_fsm[ap_const_lv32_2]);
+    ap_sig_bdd_33 = (ap_const_lv1_1 == ap_CS_fsm[ap_const_lv32_2]);
 end
 assign tmp_5_fu_131_p2 = (MotorCtrl_dividerCount_V_i == ap_const_lv32_19? 1'b1: 1'b0);
 

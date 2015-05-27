@@ -42,7 +42,7 @@ architecture behav of MotorCtrl_clockDividerThread is
     signal ap_sig_bdd_23 : BOOLEAN;
     signal MotorCtrl_dividerCount_V_assig_fu_124_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_sig_cseq_ST_st3_fsm_2 : STD_LOGIC;
-    signal ap_sig_bdd_34 : BOOLEAN;
+    signal ap_sig_bdd_33 : BOOLEAN;
     signal ap_NS_fsm : STD_LOGIC_VECTOR (2 downto 0);
 
 
@@ -143,10 +143,10 @@ begin
     end process;
 
 
-    -- ap_sig_bdd_34 assign process. --
-    ap_sig_bdd_34_assign_proc : process(ap_CS_fsm)
+    -- ap_sig_bdd_33 assign process. --
+    ap_sig_bdd_33_assign_proc : process(ap_CS_fsm)
     begin
-                ap_sig_bdd_34 <= (ap_const_lv1_1 = ap_CS_fsm(2 downto 2));
+                ap_sig_bdd_33 <= (ap_const_lv1_1 = ap_CS_fsm(2 downto 2));
     end process;
 
 
@@ -162,9 +162,9 @@ begin
 
 
     -- ap_sig_cseq_ST_st3_fsm_2 assign process. --
-    ap_sig_cseq_ST_st3_fsm_2_assign_proc : process(ap_sig_bdd_34)
+    ap_sig_cseq_ST_st3_fsm_2_assign_proc : process(ap_sig_bdd_33)
     begin
-        if (ap_sig_bdd_34) then 
+        if (ap_sig_bdd_33) then 
             ap_sig_cseq_ST_st3_fsm_2 <= ap_const_logic_1;
         else 
             ap_sig_cseq_ST_st3_fsm_2 <= ap_const_logic_0;

@@ -73,6 +73,7 @@ struct MotorCtrl : public sc_module {
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
     static const sc_lv<1> ap_const_lv1_0;
+    static const sc_lv<32> ap_const_lv32_0;
     static const sc_lv<1> ap_const_lv1_1;
     static const sc_lv<32> ap_const_lv32_1;
     static const sc_lv<2> ap_const_lv2_0;

@@ -3,19 +3,19 @@
 
 <trans_list>
 
-<trans id="63" from="1" to="2">
+<trans id="64" from="1" to="2">
 <condition id="22">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="64" from="2" to="3">
+<trans id="65" from="2" to="3">
 <condition id="24">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="65" from="3" to="3">
+<trans id="66" from="3" to="3">
 <condition id="26">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -518,9 +518,24 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:31  call void (...)* @_ssdm_op_Wait(i32 1) nounw
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="46" bw="0" op_0_bw="0">
+<node id="46" bw="0" op_0_bw="0" op_1_bw="10" op_2_bw="10">
 <![CDATA[
-_ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
+_ZN7_ap_sc_7sc_core4waitEi.exit:32  call void @_ssdm_op_Write.ap_auto.i10P(i10* %MotorCtrl_pwmCount_V, i10 0)
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="37" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="47" bw="0" op_0_bw="0">
+<![CDATA[
+_ZN7_ap_sc_7sc_core4waitEi.exit:33  br label %0
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -529,21 +544,6 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 
 <state id="3" st_id="3">
 
-<operation id="37" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="2">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<node id="48" bw="1" op_0_bw="1" op_1_bw="1">
-<![CDATA[
-:0  %MotorCtrl_pwmClock_V_read = call i1 @_ssdm_op_Read.ap_auto.i1P(i1* %MotorCtrl_pwmClock_V)
-
-]]></node>
-<StgValue><ssdm name="MotorCtrl_pwmClock_V_read"/></StgValue>
-</operation>
-
 <operation id="38" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
@@ -551,7 +551,22 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="49" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<node id="49" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+:0  %MotorCtrl_pwmClock_V_read = call i1 @_ssdm_op_Read.ap_auto.i1P(i1* %MotorCtrl_pwmClock_V)
+
+]]></node>
+<StgValue><ssdm name="MotorCtrl_pwmClock_V_read"/></StgValue>
+</operation>
+
+<operation id="39" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="2">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="50" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
 :1  br i1 %MotorCtrl_pwmClock_V_read, label %1, label %_ZN7_ap_sc_7sc_core4waitEi.exit2
 
@@ -559,24 +574,8 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <StgValue><ssdm name=""/></StgValue>
 </operation>
 
-<operation id="39" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="4">
-<or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
-</and_exp></or_exp>
-</condition>
-
-<node id="51" bw="10" op_0_bw="10" op_1_bw="10">
-<![CDATA[
-:0  %MotorCtrl_pwmCount_V_read = call i10 @_ssdm_op_Read.ap_auto.i10P(i10* %MotorCtrl_pwmCount_V)
-
-]]></node>
-<StgValue><ssdm name="MotorCtrl_pwmCount_V_read"/></StgValue>
-</operation>
-
 <operation id="40" st_id="3" stage="1" lat="1">
-<core>AddSub</core>
+<core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="4">
 <or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
@@ -585,13 +584,29 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 
 <node id="52" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
+:0  %MotorCtrl_pwmCount_V_read = call i10 @_ssdm_op_Read.ap_auto.i10P(i10* %MotorCtrl_pwmCount_V)
+
+]]></node>
+<StgValue><ssdm name="MotorCtrl_pwmCount_V_read"/></StgValue>
+</operation>
+
+<operation id="41" st_id="3" stage="1" lat="1">
+<core>AddSub</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="4">
+<or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="53" bw="10" op_0_bw="10" op_1_bw="10">
+<![CDATA[
 :1  %MotorCtrl_pwmCount_V_assign = add i10 %MotorCtrl_pwmCount_V_read, 1
 
 ]]></node>
 <StgValue><ssdm name="MotorCtrl_pwmCount_V_assign"/></StgValue>
 </operation>
 
-<operation id="41" st_id="3" stage="1" lat="1">
+<operation id="42" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="4">
@@ -599,7 +614,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="53" bw="0" op_0_bw="0" op_1_bw="10" op_2_bw="10">
+<node id="54" bw="0" op_0_bw="0" op_1_bw="10" op_2_bw="10">
 <![CDATA[
 :2  call void @_ssdm_op_Write.ap_auto.i10P(i10* %MotorCtrl_pwmCount_V, i10 %MotorCtrl_pwmCount_V_assign)
 
@@ -607,7 +622,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <StgValue><ssdm name=""/></StgValue>
 </operation>
 
-<operation id="42" st_id="3" stage="1" lat="1">
+<operation id="43" st_id="3" stage="1" lat="1">
 <core>AXI4LiteS</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="4">
@@ -615,28 +630,12 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="54" bw="1" op_0_bw="1" op_1_bw="1">
+<node id="55" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
 :3  %tmp = call i1 @_ssdm_op_Read.ap_auto.volatile.i1P(i1* %Direction)
 
 ]]></node>
 <StgValue><ssdm name="tmp"/></StgValue>
-</operation>
-
-<operation id="43" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="4">
-<or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
-</and_exp></or_exp>
-</condition>
-
-<node id="55" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
-<![CDATA[
-:4  call void @_ssdm_op_Write.ap_auto.i1P(i1* %MotorCtrl_DIR, i1 %tmp)
-
-]]></node>
-<StgValue><ssdm name=""/></StgValue>
 </operation>
 
 <operation id="44" st_id="3" stage="1" lat="1">
@@ -649,7 +648,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 
 <node id="56" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
 <![CDATA[
-:5  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %DIR1, i1 %tmp)
+:4  call void @_ssdm_op_Write.ap_auto.i1P(i1* %MotorCtrl_DIR, i1 %tmp)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -665,13 +664,29 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 
 <node id="57" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
 <![CDATA[
-:6  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %DIR2, i1 %tmp)
+:5  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %DIR1, i1 %tmp)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
 </operation>
 
 <operation id="46" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="4">
+<or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="58" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
+<![CDATA[
+:6  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %DIR2, i1 %tmp)
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="47" st_id="3" stage="1" lat="1">
 <core>AXI4LiteS</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="4">
@@ -679,7 +694,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="58" bw="10" op_0_bw="10" op_1_bw="10">
+<node id="59" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
 :7  %val_V = call i10 @_ssdm_op_Read.ap_auto.volatile.i10P(i10* %pwmR)
 
@@ -687,7 +702,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <StgValue><ssdm name="val_V"/></StgValue>
 </operation>
 
-<operation id="47" st_id="3" stage="1" lat="1">
+<operation id="48" st_id="3" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="4">
@@ -695,7 +710,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="59" bw="1" op_0_bw="10" op_1_bw="10">
+<node id="60" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
 :8  %tmp_2 = icmp ult i10 %MotorCtrl_pwmCount_V_assign, %val_V
 
@@ -703,7 +718,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <StgValue><ssdm name="tmp_2"/></StgValue>
 </operation>
 
-<operation id="48" st_id="3" stage="1" lat="1">
+<operation id="49" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="4">
@@ -711,26 +726,9 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="60" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<node id="61" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
 :9  br i1 %tmp_2, label %2, label %3
-
-]]></node>
-<StgValue><ssdm name=""/></StgValue>
-</operation>
-
-<operation id="49" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="6">
-<or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
-<literal name="tmp_2" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<node id="62" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
-<![CDATA[
-:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN1, i1 false)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -745,9 +743,9 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="63" bw="0" op_0_bw="0">
+<node id="63" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
 <![CDATA[
-:1  br label %4
+:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN1, i1 false)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -756,15 +754,15 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <operation id="51" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
-<condition id="8">
+<condition id="6">
 <or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
-<literal name="tmp_2" val="1"/>
+<literal name="tmp_2" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<node id="65" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
+<node id="64" bw="0" op_0_bw="0">
 <![CDATA[
-:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN1, i1 true)
+:1  br label %4
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -779,7 +777,24 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="66" bw="0" op_0_bw="0">
+<node id="66" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
+<![CDATA[
+:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN1, i1 true)
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="53" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="8">
+<or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
+<literal name="tmp_2" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="67" bw="0" op_0_bw="0">
 <![CDATA[
 :1  br label %4
 
@@ -787,7 +802,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <StgValue><ssdm name=""/></StgValue>
 </operation>
 
-<operation id="53" st_id="3" stage="1" lat="1">
+<operation id="54" st_id="3" stage="1" lat="1">
 <core>AXI4LiteS</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="11">
@@ -795,7 +810,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="68" bw="10" op_0_bw="10" op_1_bw="10">
+<node id="69" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
 :0  %val_V_1 = call i10 @_ssdm_op_Read.ap_auto.volatile.i10P(i10* %pwmL)
 
@@ -803,7 +818,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <StgValue><ssdm name="val_V_1"/></StgValue>
 </operation>
 
-<operation id="54" st_id="3" stage="1" lat="1">
+<operation id="55" st_id="3" stage="1" lat="1">
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="11">
@@ -811,7 +826,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="69" bw="1" op_0_bw="10" op_1_bw="10">
+<node id="70" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
 :1  %tmp_3 = icmp ult i10 %MotorCtrl_pwmCount_V_assign, %val_V_1
 
@@ -819,7 +834,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <StgValue><ssdm name="tmp_3"/></StgValue>
 </operation>
 
-<operation id="55" st_id="3" stage="1" lat="1">
+<operation id="56" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="11">
@@ -827,26 +842,9 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="70" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<node id="71" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
 :2  br i1 %tmp_3, label %5, label %6
-
-]]></node>
-<StgValue><ssdm name=""/></StgValue>
-</operation>
-
-<operation id="56" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="13">
-<or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
-<literal name="tmp_3" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<node id="72" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
-<![CDATA[
-:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN2, i1 false)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -861,9 +859,9 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="73" bw="0" op_0_bw="0">
+<node id="73" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
 <![CDATA[
-:1  br label %7
+:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN2, i1 false)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -872,15 +870,15 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <operation id="58" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
-<condition id="15">
+<condition id="13">
 <or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
-<literal name="tmp_3" val="1"/>
+<literal name="tmp_3" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<node id="75" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
+<node id="74" bw="0" op_0_bw="0">
 <![CDATA[
-:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN2, i1 true)
+:1  br label %7
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -895,9 +893,9 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 </and_exp></or_exp>
 </condition>
 
-<node id="76" bw="0" op_0_bw="0">
+<node id="76" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
 <![CDATA[
-:1  br label %7
+:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN2, i1 true)
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -906,14 +904,15 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <operation id="60" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
-<condition id="18">
+<condition id="15">
 <or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
+<literal name="tmp_3" val="1"/>
 </and_exp></or_exp>
 </condition>
 
-<node id="78" bw="0" op_0_bw="0">
+<node id="77" bw="0" op_0_bw="0">
 <![CDATA[
-:0  br label %_ZN7_ap_sc_7sc_core4waitEi.exit2
+:1  br label %7
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -922,13 +921,14 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
 <operation id="61" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
-<condition id="21">
-<or_exp><and_exp></and_exp></or_exp>
+<condition id="18">
+<or_exp><and_exp><literal name="MotorCtrl_pwmClock_V_read" val="1"/>
+</and_exp></or_exp>
 </condition>
 
-<node id="80" bw="0" op_0_bw="0" op_1_bw="32">
+<node id="79" bw="0" op_0_bw="0">
 <![CDATA[
-_ZN7_ap_sc_7sc_core4waitEi.exit2:0  call void (...)* @_ssdm_op_Wait(i32 1) nounwind
+:0  br label %_ZN7_ap_sc_7sc_core4waitEi.exit2
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -941,7 +941,22 @@ _ZN7_ap_sc_7sc_core4waitEi.exit2:0  call void (...)* @_ssdm_op_Wait(i32 1) nounw
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<node id="81" bw="0" op_0_bw="0">
+<node id="81" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+_ZN7_ap_sc_7sc_core4waitEi.exit2:0  call void (...)* @_ssdm_op_Wait(i32 1) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="63" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="21">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="82" bw="0" op_0_bw="0">
 <![CDATA[
 _ZN7_ap_sc_7sc_core4waitEi.exit2:1  br label %0
 
@@ -953,434 +968,440 @@ _ZN7_ap_sc_7sc_core4waitEi.exit2:1  br label %0
 
 
 <ports>
-<port id="66" name="clk" dir="0" iftype="0">
+<port id="67" name="clk" dir="0" iftype="0">
 <core>NULL</core><StgValue><ssdm name="clk"/></StgValue>
 </port>
-<port id="67" name="reset" dir="0" iftype="0">
+<port id="68" name="reset" dir="0" iftype="0">
 <core>NULL</core><StgValue><ssdm name="reset"/></StgValue>
 </port>
-<port id="68" name="pwmR" dir="0" iftype="0">
+<port id="69" name="pwmR" dir="0" iftype="0">
 <core>AXI4LiteS</core><StgValue><ssdm name="pwmR"/></StgValue>
 </port>
-<port id="69" name="pwmL" dir="0" iftype="0">
+<port id="70" name="pwmL" dir="0" iftype="0">
 <core>AXI4LiteS</core><StgValue><ssdm name="pwmL"/></StgValue>
 </port>
-<port id="70" name="Direction" dir="0" iftype="0">
+<port id="71" name="Direction" dir="0" iftype="0">
 <core>AXI4LiteS</core><StgValue><ssdm name="Direction"/></StgValue>
 </port>
-<port id="71" name="EN1" dir="1" iftype="0">
+<port id="72" name="EN1" dir="1" iftype="0">
 <core>NULL</core><StgValue><ssdm name="EN1"/></StgValue>
 </port>
-<port id="72" name="EN2" dir="1" iftype="0">
+<port id="73" name="EN2" dir="1" iftype="0">
 <core>NULL</core><StgValue><ssdm name="EN2"/></StgValue>
 </port>
-<port id="73" name="DIR1" dir="1" iftype="0">
+<port id="74" name="DIR1" dir="1" iftype="0">
 <core>NULL</core><StgValue><ssdm name="DIR1"/></StgValue>
 </port>
-<port id="74" name="DIR2" dir="1" iftype="0">
+<port id="75" name="DIR2" dir="1" iftype="0">
 <core>NULL</core><StgValue><ssdm name="DIR2"/></StgValue>
 </port>
-<port id="75" name="MotorCtrl_pwmCount_V" dir="2" iftype="0">
+<port id="76" name="MotorCtrl_pwmCount_V" dir="2" iftype="0">
 <core>NULL</core><StgValue><ssdm name="MotorCtrl_pwmCount_V"/></StgValue>
 </port>
-<port id="76" name="MotorCtrl_dividerCount_V" dir="0" iftype="0">
+<port id="77" name="MotorCtrl_dividerCount_V" dir="0" iftype="0">
 <core>NULL</core><StgValue><ssdm name="MotorCtrl_dividerCount_V"/></StgValue>
 </port>
-<port id="77" name="MotorCtrl_DIR" dir="1" iftype="0">
+<port id="78" name="MotorCtrl_DIR" dir="1" iftype="0">
 <core>NULL</core><StgValue><ssdm name="MotorCtrl_DIR"/></StgValue>
 </port>
-<port id="78" name="MotorCtrl_pwmClock_V" dir="0" iftype="0">
+<port id="79" name="MotorCtrl_pwmClock_V" dir="0" iftype="0">
 <core>NULL</core><StgValue><ssdm name="MotorCtrl_pwmClock_V"/></StgValue>
 </port>
 </ports>
 
 
 <dataflows>
-<dataflow id="80" from="_ssdm_op_SpecBitsMap" to="stg_4" fromId="79" toId="4">
+<dataflow id="81" from="_ssdm_op_SpecBitsMap" to="stg_4" fromId="80" toId="4">
 </dataflow>
-<dataflow id="81" from="clk" to="stg_4" fromId="66" toId="4">
+<dataflow id="82" from="clk" to="stg_4" fromId="67" toId="4">
 </dataflow>
-<dataflow id="82" from="_ssdm_op_SpecBitsMap" to="stg_5" fromId="79" toId="5">
+<dataflow id="83" from="_ssdm_op_SpecBitsMap" to="stg_5" fromId="80" toId="5">
 </dataflow>
-<dataflow id="83" from="reset" to="stg_5" fromId="67" toId="5">
+<dataflow id="84" from="reset" to="stg_5" fromId="68" toId="5">
 </dataflow>
-<dataflow id="84" from="_ssdm_op_SpecBitsMap" to="stg_6" fromId="79" toId="6">
+<dataflow id="85" from="_ssdm_op_SpecBitsMap" to="stg_6" fromId="80" toId="6">
 </dataflow>
-<dataflow id="85" from="pwmR" to="stg_6" fromId="68" toId="6">
+<dataflow id="86" from="pwmR" to="stg_6" fromId="69" toId="6">
 </dataflow>
-<dataflow id="86" from="_ssdm_op_SpecBitsMap" to="stg_7" fromId="79" toId="7">
+<dataflow id="87" from="_ssdm_op_SpecBitsMap" to="stg_7" fromId="80" toId="7">
 </dataflow>
-<dataflow id="87" from="pwmL" to="stg_7" fromId="69" toId="7">
+<dataflow id="88" from="pwmL" to="stg_7" fromId="70" toId="7">
 </dataflow>
-<dataflow id="88" from="_ssdm_op_SpecBitsMap" to="stg_8" fromId="79" toId="8">
+<dataflow id="89" from="_ssdm_op_SpecBitsMap" to="stg_8" fromId="80" toId="8">
 </dataflow>
-<dataflow id="89" from="Direction" to="stg_8" fromId="70" toId="8">
+<dataflow id="90" from="Direction" to="stg_8" fromId="71" toId="8">
 </dataflow>
-<dataflow id="90" from="_ssdm_op_SpecBitsMap" to="stg_9" fromId="79" toId="9">
+<dataflow id="91" from="_ssdm_op_SpecBitsMap" to="stg_9" fromId="80" toId="9">
 </dataflow>
-<dataflow id="91" from="EN1" to="stg_9" fromId="71" toId="9">
+<dataflow id="92" from="EN1" to="stg_9" fromId="72" toId="9">
 </dataflow>
-<dataflow id="92" from="_ssdm_op_SpecBitsMap" to="stg_10" fromId="79" toId="10">
+<dataflow id="93" from="_ssdm_op_SpecBitsMap" to="stg_10" fromId="80" toId="10">
 </dataflow>
-<dataflow id="93" from="EN2" to="stg_10" fromId="72" toId="10">
+<dataflow id="94" from="EN2" to="stg_10" fromId="73" toId="10">
 </dataflow>
-<dataflow id="94" from="_ssdm_op_SpecBitsMap" to="stg_11" fromId="79" toId="11">
+<dataflow id="95" from="_ssdm_op_SpecBitsMap" to="stg_11" fromId="80" toId="11">
 </dataflow>
-<dataflow id="95" from="DIR1" to="stg_11" fromId="73" toId="11">
+<dataflow id="96" from="DIR1" to="stg_11" fromId="74" toId="11">
 </dataflow>
-<dataflow id="96" from="_ssdm_op_SpecBitsMap" to="stg_12" fromId="79" toId="12">
+<dataflow id="97" from="_ssdm_op_SpecBitsMap" to="stg_12" fromId="80" toId="12">
 </dataflow>
-<dataflow id="97" from="DIR2" to="stg_12" fromId="74" toId="12">
+<dataflow id="98" from="DIR2" to="stg_12" fromId="75" toId="12">
 </dataflow>
-<dataflow id="98" from="_ssdm_op_SpecBitsMap" to="stg_13" fromId="79" toId="13">
+<dataflow id="99" from="_ssdm_op_SpecBitsMap" to="stg_13" fromId="80" toId="13">
 </dataflow>
-<dataflow id="99" from="MotorCtrl_pwmCount_V" to="stg_13" fromId="75" toId="13">
+<dataflow id="100" from="MotorCtrl_pwmCount_V" to="stg_13" fromId="76" toId="13">
 </dataflow>
-<dataflow id="100" from="_ssdm_op_SpecBitsMap" to="stg_14" fromId="79" toId="14">
+<dataflow id="101" from="_ssdm_op_SpecBitsMap" to="stg_14" fromId="80" toId="14">
 </dataflow>
-<dataflow id="101" from="MotorCtrl_dividerCount_V" to="stg_14" fromId="76" toId="14">
+<dataflow id="102" from="MotorCtrl_dividerCount_V" to="stg_14" fromId="77" toId="14">
 </dataflow>
-<dataflow id="102" from="_ssdm_op_SpecBitsMap" to="stg_15" fromId="79" toId="15">
+<dataflow id="103" from="_ssdm_op_SpecBitsMap" to="stg_15" fromId="80" toId="15">
 </dataflow>
-<dataflow id="103" from="MotorCtrl_DIR" to="stg_15" fromId="77" toId="15">
+<dataflow id="104" from="MotorCtrl_DIR" to="stg_15" fromId="78" toId="15">
 </dataflow>
-<dataflow id="104" from="_ssdm_op_SpecBitsMap" to="stg_16" fromId="79" toId="16">
+<dataflow id="105" from="_ssdm_op_SpecBitsMap" to="stg_16" fromId="80" toId="16">
 </dataflow>
-<dataflow id="105" from="MotorCtrl_pwmClock_V" to="stg_16" fromId="78" toId="16">
+<dataflow id="106" from="MotorCtrl_pwmClock_V" to="stg_16" fromId="79" toId="16">
 </dataflow>
-<dataflow id="107" from="_ssdm_op_SpecPort" to="stg_17" fromId="106" toId="17">
+<dataflow id="108" from="_ssdm_op_SpecPort" to="stg_17" fromId="107" toId="17">
 </dataflow>
-<dataflow id="109" from="p_str" to="stg_17" fromId="108" toId="17">
+<dataflow id="110" from="p_str" to="stg_17" fromId="109" toId="17">
 </dataflow>
-<dataflow id="111" from="stg_110" to="stg_17" fromId="110" toId="17">
+<dataflow id="112" from="stg_111" to="stg_17" fromId="111" toId="17">
 </dataflow>
-<dataflow id="113" from="p_str1" to="stg_17" fromId="112" toId="17">
+<dataflow id="114" from="p_str1" to="stg_17" fromId="113" toId="17">
 </dataflow>
-<dataflow id="115" from="p_str2" to="stg_17" fromId="114" toId="17">
+<dataflow id="116" from="p_str2" to="stg_17" fromId="115" toId="17">
 </dataflow>
-<dataflow id="116" from="stg_110" to="stg_17" fromId="110" toId="17">
+<dataflow id="117" from="stg_111" to="stg_17" fromId="111" toId="17">
 </dataflow>
-<dataflow id="117" from="stg_110" to="stg_17" fromId="110" toId="17">
+<dataflow id="118" from="stg_111" to="stg_17" fromId="111" toId="17">
 </dataflow>
-<dataflow id="118" from="clk" to="stg_17" fromId="66" toId="17">
+<dataflow id="119" from="clk" to="stg_17" fromId="67" toId="17">
 </dataflow>
-<dataflow id="119" from="_ssdm_op_SpecPort" to="stg_18" fromId="106" toId="18">
+<dataflow id="120" from="_ssdm_op_SpecPort" to="stg_18" fromId="107" toId="18">
 </dataflow>
-<dataflow id="120" from="p_str" to="stg_18" fromId="108" toId="18">
+<dataflow id="121" from="p_str" to="stg_18" fromId="109" toId="18">
 </dataflow>
-<dataflow id="121" from="stg_110" to="stg_18" fromId="110" toId="18">
+<dataflow id="122" from="stg_111" to="stg_18" fromId="111" toId="18">
 </dataflow>
-<dataflow id="122" from="p_str1" to="stg_18" fromId="112" toId="18">
+<dataflow id="123" from="p_str1" to="stg_18" fromId="113" toId="18">
 </dataflow>
-<dataflow id="124" from="p_str3" to="stg_18" fromId="123" toId="18">
+<dataflow id="125" from="p_str3" to="stg_18" fromId="124" toId="18">
 </dataflow>
-<dataflow id="125" from="stg_110" to="stg_18" fromId="110" toId="18">
+<dataflow id="126" from="stg_111" to="stg_18" fromId="111" toId="18">
 </dataflow>
-<dataflow id="126" from="stg_110" to="stg_18" fromId="110" toId="18">
+<dataflow id="127" from="stg_111" to="stg_18" fromId="111" toId="18">
 </dataflow>
-<dataflow id="127" from="reset" to="stg_18" fromId="67" toId="18">
+<dataflow id="128" from="reset" to="stg_18" fromId="68" toId="18">
 </dataflow>
-<dataflow id="128" from="_ssdm_op_SpecPort" to="stg_19" fromId="106" toId="19">
+<dataflow id="129" from="_ssdm_op_SpecPort" to="stg_19" fromId="107" toId="19">
 </dataflow>
-<dataflow id="129" from="p_str" to="stg_19" fromId="108" toId="19">
+<dataflow id="130" from="p_str" to="stg_19" fromId="109" toId="19">
 </dataflow>
-<dataflow id="130" from="stg_110" to="stg_19" fromId="110" toId="19">
+<dataflow id="131" from="stg_111" to="stg_19" fromId="111" toId="19">
 </dataflow>
-<dataflow id="132" from="p_str4" to="stg_19" fromId="131" toId="19">
+<dataflow id="133" from="p_str4" to="stg_19" fromId="132" toId="19">
 </dataflow>
-<dataflow id="134" from="p_str5" to="stg_19" fromId="133" toId="19">
+<dataflow id="135" from="p_str5" to="stg_19" fromId="134" toId="19">
 </dataflow>
-<dataflow id="135" from="stg_110" to="stg_19" fromId="110" toId="19">
+<dataflow id="136" from="stg_111" to="stg_19" fromId="111" toId="19">
 </dataflow>
-<dataflow id="136" from="stg_110" to="stg_19" fromId="110" toId="19">
+<dataflow id="137" from="stg_111" to="stg_19" fromId="111" toId="19">
 </dataflow>
-<dataflow id="137" from="pwmR" to="stg_19" fromId="68" toId="19">
+<dataflow id="138" from="pwmR" to="stg_19" fromId="69" toId="19">
 </dataflow>
-<dataflow id="138" from="_ssdm_op_SpecPort" to="stg_20" fromId="106" toId="20">
+<dataflow id="139" from="_ssdm_op_SpecPort" to="stg_20" fromId="107" toId="20">
 </dataflow>
-<dataflow id="139" from="p_str" to="stg_20" fromId="108" toId="20">
+<dataflow id="140" from="p_str" to="stg_20" fromId="109" toId="20">
 </dataflow>
-<dataflow id="140" from="stg_110" to="stg_20" fromId="110" toId="20">
+<dataflow id="141" from="stg_111" to="stg_20" fromId="111" toId="20">
 </dataflow>
-<dataflow id="141" from="p_str4" to="stg_20" fromId="131" toId="20">
+<dataflow id="142" from="p_str4" to="stg_20" fromId="132" toId="20">
 </dataflow>
-<dataflow id="143" from="p_str6" to="stg_20" fromId="142" toId="20">
+<dataflow id="144" from="p_str6" to="stg_20" fromId="143" toId="20">
 </dataflow>
-<dataflow id="144" from="stg_110" to="stg_20" fromId="110" toId="20">
+<dataflow id="145" from="stg_111" to="stg_20" fromId="111" toId="20">
 </dataflow>
-<dataflow id="145" from="stg_110" to="stg_20" fromId="110" toId="20">
+<dataflow id="146" from="stg_111" to="stg_20" fromId="111" toId="20">
 </dataflow>
-<dataflow id="146" from="pwmL" to="stg_20" fromId="69" toId="20">
+<dataflow id="147" from="pwmL" to="stg_20" fromId="70" toId="20">
 </dataflow>
-<dataflow id="147" from="_ssdm_op_SpecPort" to="stg_21" fromId="106" toId="21">
+<dataflow id="148" from="_ssdm_op_SpecPort" to="stg_21" fromId="107" toId="21">
 </dataflow>
-<dataflow id="148" from="p_str" to="stg_21" fromId="108" toId="21">
+<dataflow id="149" from="p_str" to="stg_21" fromId="109" toId="21">
 </dataflow>
-<dataflow id="149" from="stg_110" to="stg_21" fromId="110" toId="21">
+<dataflow id="150" from="stg_111" to="stg_21" fromId="111" toId="21">
 </dataflow>
-<dataflow id="150" from="p_str1" to="stg_21" fromId="112" toId="21">
+<dataflow id="151" from="p_str1" to="stg_21" fromId="113" toId="21">
 </dataflow>
-<dataflow id="152" from="p_str7" to="stg_21" fromId="151" toId="21">
+<dataflow id="153" from="p_str7" to="stg_21" fromId="152" toId="21">
 </dataflow>
-<dataflow id="153" from="stg_110" to="stg_21" fromId="110" toId="21">
+<dataflow id="154" from="stg_111" to="stg_21" fromId="111" toId="21">
 </dataflow>
-<dataflow id="154" from="stg_110" to="stg_21" fromId="110" toId="21">
+<dataflow id="155" from="stg_111" to="stg_21" fromId="111" toId="21">
 </dataflow>
-<dataflow id="155" from="Direction" to="stg_21" fromId="70" toId="21">
+<dataflow id="156" from="Direction" to="stg_21" fromId="71" toId="21">
 </dataflow>
-<dataflow id="156" from="_ssdm_op_SpecPort" to="stg_22" fromId="106" toId="22">
+<dataflow id="157" from="_ssdm_op_SpecPort" to="stg_22" fromId="107" toId="22">
 </dataflow>
-<dataflow id="157" from="p_str" to="stg_22" fromId="108" toId="22">
+<dataflow id="158" from="p_str" to="stg_22" fromId="109" toId="22">
 </dataflow>
-<dataflow id="159" from="stg_158" to="stg_22" fromId="158" toId="22">
+<dataflow id="160" from="stg_159" to="stg_22" fromId="159" toId="22">
 </dataflow>
-<dataflow id="160" from="p_str1" to="stg_22" fromId="112" toId="22">
+<dataflow id="161" from="p_str1" to="stg_22" fromId="113" toId="22">
 </dataflow>
-<dataflow id="162" from="p_str8" to="stg_22" fromId="161" toId="22">
+<dataflow id="163" from="p_str8" to="stg_22" fromId="162" toId="22">
 </dataflow>
-<dataflow id="163" from="stg_110" to="stg_22" fromId="110" toId="22">
+<dataflow id="164" from="stg_111" to="stg_22" fromId="111" toId="22">
 </dataflow>
-<dataflow id="164" from="stg_110" to="stg_22" fromId="110" toId="22">
+<dataflow id="165" from="stg_111" to="stg_22" fromId="111" toId="22">
 </dataflow>
-<dataflow id="165" from="EN1" to="stg_22" fromId="71" toId="22">
+<dataflow id="166" from="EN1" to="stg_22" fromId="72" toId="22">
 </dataflow>
-<dataflow id="166" from="_ssdm_op_SpecPort" to="stg_23" fromId="106" toId="23">
+<dataflow id="167" from="_ssdm_op_SpecPort" to="stg_23" fromId="107" toId="23">
 </dataflow>
-<dataflow id="167" from="p_str" to="stg_23" fromId="108" toId="23">
+<dataflow id="168" from="p_str" to="stg_23" fromId="109" toId="23">
 </dataflow>
-<dataflow id="168" from="stg_158" to="stg_23" fromId="158" toId="23">
+<dataflow id="169" from="stg_159" to="stg_23" fromId="159" toId="23">
 </dataflow>
-<dataflow id="169" from="p_str1" to="stg_23" fromId="112" toId="23">
+<dataflow id="170" from="p_str1" to="stg_23" fromId="113" toId="23">
 </dataflow>
-<dataflow id="171" from="p_str9" to="stg_23" fromId="170" toId="23">
+<dataflow id="172" from="p_str9" to="stg_23" fromId="171" toId="23">
 </dataflow>
-<dataflow id="172" from="stg_110" to="stg_23" fromId="110" toId="23">
+<dataflow id="173" from="stg_111" to="stg_23" fromId="111" toId="23">
 </dataflow>
-<dataflow id="173" from="stg_110" to="stg_23" fromId="110" toId="23">
+<dataflow id="174" from="stg_111" to="stg_23" fromId="111" toId="23">
 </dataflow>
-<dataflow id="174" from="EN2" to="stg_23" fromId="72" toId="23">
+<dataflow id="175" from="EN2" to="stg_23" fromId="73" toId="23">
 </dataflow>
-<dataflow id="175" from="_ssdm_op_SpecPort" to="stg_24" fromId="106" toId="24">
+<dataflow id="176" from="_ssdm_op_SpecPort" to="stg_24" fromId="107" toId="24">
 </dataflow>
-<dataflow id="176" from="p_str" to="stg_24" fromId="108" toId="24">
+<dataflow id="177" from="p_str" to="stg_24" fromId="109" toId="24">
 </dataflow>
-<dataflow id="177" from="stg_158" to="stg_24" fromId="158" toId="24">
+<dataflow id="178" from="stg_159" to="stg_24" fromId="159" toId="24">
 </dataflow>
-<dataflow id="178" from="p_str1" to="stg_24" fromId="112" toId="24">
+<dataflow id="179" from="p_str1" to="stg_24" fromId="113" toId="24">
 </dataflow>
-<dataflow id="180" from="p_str10" to="stg_24" fromId="179" toId="24">
+<dataflow id="181" from="p_str10" to="stg_24" fromId="180" toId="24">
 </dataflow>
-<dataflow id="181" from="stg_110" to="stg_24" fromId="110" toId="24">
+<dataflow id="182" from="stg_111" to="stg_24" fromId="111" toId="24">
 </dataflow>
-<dataflow id="182" from="stg_110" to="stg_24" fromId="110" toId="24">
+<dataflow id="183" from="stg_111" to="stg_24" fromId="111" toId="24">
 </dataflow>
-<dataflow id="183" from="DIR1" to="stg_24" fromId="73" toId="24">
+<dataflow id="184" from="DIR1" to="stg_24" fromId="74" toId="24">
 </dataflow>
-<dataflow id="184" from="_ssdm_op_SpecPort" to="stg_25" fromId="106" toId="25">
+<dataflow id="185" from="_ssdm_op_SpecPort" to="stg_25" fromId="107" toId="25">
 </dataflow>
-<dataflow id="185" from="p_str" to="stg_25" fromId="108" toId="25">
+<dataflow id="186" from="p_str" to="stg_25" fromId="109" toId="25">
 </dataflow>
-<dataflow id="186" from="stg_158" to="stg_25" fromId="158" toId="25">
+<dataflow id="187" from="stg_159" to="stg_25" fromId="159" toId="25">
 </dataflow>
-<dataflow id="187" from="p_str1" to="stg_25" fromId="112" toId="25">
+<dataflow id="188" from="p_str1" to="stg_25" fromId="113" toId="25">
 </dataflow>
-<dataflow id="189" from="p_str11" to="stg_25" fromId="188" toId="25">
+<dataflow id="190" from="p_str11" to="stg_25" fromId="189" toId="25">
 </dataflow>
-<dataflow id="190" from="stg_110" to="stg_25" fromId="110" toId="25">
+<dataflow id="191" from="stg_111" to="stg_25" fromId="111" toId="25">
 </dataflow>
-<dataflow id="191" from="stg_110" to="stg_25" fromId="110" toId="25">
+<dataflow id="192" from="stg_111" to="stg_25" fromId="111" toId="25">
 </dataflow>
-<dataflow id="192" from="DIR2" to="stg_25" fromId="74" toId="25">
+<dataflow id="193" from="DIR2" to="stg_25" fromId="75" toId="25">
 </dataflow>
-<dataflow id="194" from="_ssdm_op_SpecProcessDef" to="stg_26" fromId="193" toId="26">
+<dataflow id="195" from="_ssdm_op_SpecProcessDef" to="stg_26" fromId="194" toId="26">
 </dataflow>
-<dataflow id="195" from="p_str" to="stg_26" fromId="108" toId="26">
+<dataflow id="196" from="p_str" to="stg_26" fromId="109" toId="26">
 </dataflow>
-<dataflow id="197" from="stg_196" to="stg_26" fromId="196" toId="26">
+<dataflow id="198" from="stg_197" to="stg_26" fromId="197" toId="26">
 </dataflow>
-<dataflow id="199" from="p_str12" to="stg_26" fromId="198" toId="26">
+<dataflow id="200" from="p_str12" to="stg_26" fromId="199" toId="26">
 </dataflow>
-<dataflow id="201" from="_ssdm_op_SpecRegionBegin" to="tmp_1" fromId="200" toId="27">
+<dataflow id="202" from="_ssdm_op_SpecRegionBegin" to="tmp_1" fromId="201" toId="27">
 </dataflow>
-<dataflow id="203" from="p_str13" to="tmp_1" fromId="202" toId="27">
+<dataflow id="204" from="p_str13" to="tmp_1" fromId="203" toId="27">
 </dataflow>
-<dataflow id="205" from="_ssdm_op_SpecProtocol" to="stg_28" fromId="204" toId="28">
+<dataflow id="206" from="_ssdm_op_SpecProtocol" to="stg_28" fromId="205" toId="28">
 </dataflow>
-<dataflow id="206" from="stg_158" to="stg_28" fromId="158" toId="28">
+<dataflow id="207" from="stg_159" to="stg_28" fromId="159" toId="28">
 </dataflow>
-<dataflow id="208" from="p_str14" to="stg_28" fromId="207" toId="28">
+<dataflow id="209" from="p_str14" to="stg_28" fromId="208" toId="28">
 </dataflow>
-<dataflow id="210" from="_ssdm_op_SpecStateBegin" to="p_ssdm_reset_v" fromId="209" toId="29">
+<dataflow id="211" from="_ssdm_op_SpecStateBegin" to="p_ssdm_reset_v" fromId="210" toId="29">
 </dataflow>
-<dataflow id="211" from="stg_110" to="p_ssdm_reset_v" fromId="110" toId="29">
+<dataflow id="212" from="stg_111" to="p_ssdm_reset_v" fromId="111" toId="29">
 </dataflow>
-<dataflow id="212" from="stg_110" to="p_ssdm_reset_v" fromId="110" toId="29">
+<dataflow id="213" from="stg_111" to="p_ssdm_reset_v" fromId="111" toId="29">
 </dataflow>
-<dataflow id="213" from="stg_158" to="p_ssdm_reset_v" fromId="158" toId="29">
+<dataflow id="214" from="stg_159" to="p_ssdm_reset_v" fromId="159" toId="29">
 </dataflow>
-<dataflow id="215" from="_ssdm_op_SpecIFCore" to="stg_30" fromId="214" toId="30">
+<dataflow id="216" from="_ssdm_op_SpecIFCore" to="stg_30" fromId="215" toId="30">
 </dataflow>
-<dataflow id="216" from="pwmR" to="stg_30" fromId="68" toId="30">
+<dataflow id="217" from="pwmR" to="stg_30" fromId="69" toId="30">
 </dataflow>
-<dataflow id="217" from="p_str14" to="stg_30" fromId="207" toId="30">
+<dataflow id="218" from="p_str14" to="stg_30" fromId="208" toId="30">
 </dataflow>
-<dataflow id="219" from="p_str20" to="stg_30" fromId="218" toId="30">
+<dataflow id="220" from="p_str20" to="stg_30" fromId="219" toId="30">
 </dataflow>
-<dataflow id="220" from="p_str14" to="stg_30" fromId="207" toId="30">
+<dataflow id="221" from="p_str14" to="stg_30" fromId="208" toId="30">
 </dataflow>
-<dataflow id="222" from="stg_221" to="stg_30" fromId="221" toId="30">
+<dataflow id="223" from="stg_222" to="stg_30" fromId="222" toId="30">
 </dataflow>
-<dataflow id="223" from="p_str14" to="stg_30" fromId="207" toId="30">
+<dataflow id="224" from="p_str14" to="stg_30" fromId="208" toId="30">
 </dataflow>
-<dataflow id="224" from="p_str14" to="stg_30" fromId="207" toId="30">
+<dataflow id="225" from="p_str14" to="stg_30" fromId="208" toId="30">
 </dataflow>
-<dataflow id="226" from="p_str21" to="stg_30" fromId="225" toId="30">
+<dataflow id="227" from="p_str21" to="stg_30" fromId="226" toId="30">
 </dataflow>
-<dataflow id="227" from="_ssdm_op_SpecIFCore" to="stg_31" fromId="214" toId="31">
+<dataflow id="228" from="_ssdm_op_SpecIFCore" to="stg_31" fromId="215" toId="31">
 </dataflow>
-<dataflow id="228" from="pwmL" to="stg_31" fromId="69" toId="31">
+<dataflow id="229" from="pwmL" to="stg_31" fromId="70" toId="31">
 </dataflow>
-<dataflow id="229" from="p_str14" to="stg_31" fromId="207" toId="31">
+<dataflow id="230" from="p_str14" to="stg_31" fromId="208" toId="31">
 </dataflow>
-<dataflow id="230" from="p_str20" to="stg_31" fromId="218" toId="31">
+<dataflow id="231" from="p_str20" to="stg_31" fromId="219" toId="31">
 </dataflow>
-<dataflow id="231" from="p_str14" to="stg_31" fromId="207" toId="31">
+<dataflow id="232" from="p_str14" to="stg_31" fromId="208" toId="31">
 </dataflow>
-<dataflow id="232" from="stg_221" to="stg_31" fromId="221" toId="31">
+<dataflow id="233" from="stg_222" to="stg_31" fromId="222" toId="31">
 </dataflow>
-<dataflow id="233" from="p_str14" to="stg_31" fromId="207" toId="31">
+<dataflow id="234" from="p_str14" to="stg_31" fromId="208" toId="31">
 </dataflow>
-<dataflow id="234" from="p_str14" to="stg_31" fromId="207" toId="31">
+<dataflow id="235" from="p_str14" to="stg_31" fromId="208" toId="31">
 </dataflow>
-<dataflow id="235" from="p_str21" to="stg_31" fromId="225" toId="31">
+<dataflow id="236" from="p_str21" to="stg_31" fromId="226" toId="31">
 </dataflow>
-<dataflow id="236" from="_ssdm_op_SpecIFCore" to="stg_32" fromId="214" toId="32">
+<dataflow id="237" from="_ssdm_op_SpecIFCore" to="stg_32" fromId="215" toId="32">
 </dataflow>
-<dataflow id="237" from="Direction" to="stg_32" fromId="70" toId="32">
+<dataflow id="238" from="Direction" to="stg_32" fromId="71" toId="32">
 </dataflow>
-<dataflow id="238" from="p_str14" to="stg_32" fromId="207" toId="32">
+<dataflow id="239" from="p_str14" to="stg_32" fromId="208" toId="32">
 </dataflow>
-<dataflow id="239" from="p_str20" to="stg_32" fromId="218" toId="32">
+<dataflow id="240" from="p_str20" to="stg_32" fromId="219" toId="32">
 </dataflow>
-<dataflow id="240" from="p_str14" to="stg_32" fromId="207" toId="32">
+<dataflow id="241" from="p_str14" to="stg_32" fromId="208" toId="32">
 </dataflow>
-<dataflow id="241" from="stg_221" to="stg_32" fromId="221" toId="32">
+<dataflow id="242" from="stg_222" to="stg_32" fromId="222" toId="32">
 </dataflow>
-<dataflow id="242" from="p_str14" to="stg_32" fromId="207" toId="32">
+<dataflow id="243" from="p_str14" to="stg_32" fromId="208" toId="32">
 </dataflow>
-<dataflow id="243" from="p_str14" to="stg_32" fromId="207" toId="32">
+<dataflow id="244" from="p_str14" to="stg_32" fromId="208" toId="32">
 </dataflow>
-<dataflow id="244" from="p_str21" to="stg_32" fromId="225" toId="32">
+<dataflow id="245" from="p_str21" to="stg_32" fromId="226" toId="32">
 </dataflow>
-<dataflow id="246" from="_ssdm_op_SpecStateEnd" to="empty" fromId="245" toId="33">
+<dataflow id="247" from="_ssdm_op_SpecStateEnd" to="empty" fromId="246" toId="33">
 </dataflow>
-<dataflow id="247" from="p_ssdm_reset_v" to="empty" fromId="29" toId="33">
+<dataflow id="248" from="p_ssdm_reset_v" to="empty" fromId="29" toId="33">
 </dataflow>
-<dataflow id="249" from="_ssdm_op_SpecRegionEnd" to="empty_2" fromId="248" toId="34">
+<dataflow id="250" from="_ssdm_op_SpecRegionEnd" to="empty_2" fromId="249" toId="34">
 </dataflow>
-<dataflow id="250" from="p_str13" to="empty_2" fromId="202" toId="34">
+<dataflow id="251" from="p_str13" to="empty_2" fromId="203" toId="34">
 </dataflow>
-<dataflow id="251" from="tmp_1" to="empty_2" fromId="27" toId="34">
+<dataflow id="252" from="tmp_1" to="empty_2" fromId="27" toId="34">
 </dataflow>
-<dataflow id="253" from="_ssdm_op_Wait" to="stg_35" fromId="252" toId="35">
+<dataflow id="254" from="_ssdm_op_Wait" to="stg_35" fromId="253" toId="35">
 </dataflow>
-<dataflow id="254" from="stg_158" to="stg_35" fromId="158" toId="35">
+<dataflow id="255" from="stg_159" to="stg_35" fromId="159" toId="35">
 </dataflow>
-<dataflow id="256" from="_ssdm_op_Read.ap_auto.i1P" to="MotorCtrl_pwmClock_V_read" fromId="255" toId="37">
+<dataflow id="257" from="_ssdm_op_Write.ap_auto.i10P" to="stg_36" fromId="256" toId="36">
 </dataflow>
-<dataflow id="257" from="MotorCtrl_pwmClock_V" to="MotorCtrl_pwmClock_V_read" fromId="78" toId="37">
+<dataflow id="258" from="MotorCtrl_pwmCount_V" to="stg_36" fromId="76" toId="36">
 </dataflow>
-<dataflow id="258" from="MotorCtrl_pwmClock_V_read" to="stg_38" fromId="37" toId="38">
+<dataflow id="260" from="stg_259" to="stg_36" fromId="259" toId="36">
 </dataflow>
-<dataflow id="260" from="_ssdm_op_Read.ap_auto.i10P" to="MotorCtrl_pwmCount_V_read" fromId="259" toId="39">
+<dataflow id="262" from="_ssdm_op_Read.ap_auto.i1P" to="MotorCtrl_pwmClock_V_read" fromId="261" toId="38">
 </dataflow>
-<dataflow id="261" from="MotorCtrl_pwmCount_V" to="MotorCtrl_pwmCount_V_read" fromId="75" toId="39">
+<dataflow id="263" from="MotorCtrl_pwmClock_V" to="MotorCtrl_pwmClock_V_read" fromId="79" toId="38">
 </dataflow>
-<dataflow id="262" from="MotorCtrl_pwmCount_V_read" to="MotorCtrl_pwmCount_V_assign" fromId="39" toId="40">
+<dataflow id="264" from="MotorCtrl_pwmClock_V_read" to="stg_39" fromId="38" toId="39">
 </dataflow>
-<dataflow id="264" from="stg_263" to="MotorCtrl_pwmCount_V_assign" fromId="263" toId="40">
+<dataflow id="266" from="_ssdm_op_Read.ap_auto.i10P" to="MotorCtrl_pwmCount_V_read" fromId="265" toId="40">
 </dataflow>
-<dataflow id="266" from="_ssdm_op_Write.ap_auto.i10P" to="stg_41" fromId="265" toId="41">
+<dataflow id="267" from="MotorCtrl_pwmCount_V" to="MotorCtrl_pwmCount_V_read" fromId="76" toId="40">
 </dataflow>
-<dataflow id="267" from="MotorCtrl_pwmCount_V" to="stg_41" fromId="75" toId="41">
+<dataflow id="268" from="MotorCtrl_pwmCount_V_read" to="MotorCtrl_pwmCount_V_assign" fromId="40" toId="41">
 </dataflow>
-<dataflow id="268" from="MotorCtrl_pwmCount_V_assign" to="stg_41" fromId="40" toId="41">
+<dataflow id="270" from="stg_269" to="MotorCtrl_pwmCount_V_assign" fromId="269" toId="41">
 </dataflow>
-<dataflow id="270" from="_ssdm_op_Read.ap_auto.volatile.i1P" to="tmp" fromId="269" toId="42">
+<dataflow id="271" from="_ssdm_op_Write.ap_auto.i10P" to="stg_42" fromId="256" toId="42">
 </dataflow>
-<dataflow id="271" from="Direction" to="tmp" fromId="70" toId="42">
+<dataflow id="272" from="MotorCtrl_pwmCount_V" to="stg_42" fromId="76" toId="42">
 </dataflow>
-<dataflow id="273" from="_ssdm_op_Write.ap_auto.i1P" to="stg_43" fromId="272" toId="43">
+<dataflow id="273" from="MotorCtrl_pwmCount_V_assign" to="stg_42" fromId="41" toId="42">
 </dataflow>
-<dataflow id="274" from="MotorCtrl_DIR" to="stg_43" fromId="77" toId="43">
+<dataflow id="275" from="_ssdm_op_Read.ap_auto.volatile.i1P" to="tmp" fromId="274" toId="43">
 </dataflow>
-<dataflow id="275" from="tmp" to="stg_43" fromId="42" toId="43">
+<dataflow id="276" from="Direction" to="tmp" fromId="71" toId="43">
 </dataflow>
-<dataflow id="277" from="_ssdm_op_Write.ap_auto.volatile.i1P" to="stg_44" fromId="276" toId="44">
+<dataflow id="278" from="_ssdm_op_Write.ap_auto.i1P" to="stg_44" fromId="277" toId="44">
 </dataflow>
-<dataflow id="278" from="DIR1" to="stg_44" fromId="73" toId="44">
+<dataflow id="279" from="MotorCtrl_DIR" to="stg_44" fromId="78" toId="44">
 </dataflow>
-<dataflow id="279" from="tmp" to="stg_44" fromId="42" toId="44">
+<dataflow id="280" from="tmp" to="stg_44" fromId="43" toId="44">
 </dataflow>
-<dataflow id="280" from="_ssdm_op_Write.ap_auto.volatile.i1P" to="stg_45" fromId="276" toId="45">
+<dataflow id="282" from="_ssdm_op_Write.ap_auto.volatile.i1P" to="stg_45" fromId="281" toId="45">
 </dataflow>
-<dataflow id="281" from="DIR2" to="stg_45" fromId="74" toId="45">
+<dataflow id="283" from="DIR1" to="stg_45" fromId="74" toId="45">
 </dataflow>
-<dataflow id="282" from="tmp" to="stg_45" fromId="42" toId="45">
+<dataflow id="284" from="tmp" to="stg_45" fromId="43" toId="45">
 </dataflow>
-<dataflow id="284" from="_ssdm_op_Read.ap_auto.volatile.i10P" to="val_V" fromId="283" toId="46">
+<dataflow id="285" from="_ssdm_op_Write.ap_auto.volatile.i1P" to="stg_46" fromId="281" toId="46">
 </dataflow>
-<dataflow id="285" from="pwmR" to="val_V" fromId="68" toId="46">
+<dataflow id="286" from="DIR2" to="stg_46" fromId="75" toId="46">
 </dataflow>
-<dataflow id="286" from="MotorCtrl_pwmCount_V_assign" to="tmp_2" fromId="40" toId="47">
+<dataflow id="287" from="tmp" to="stg_46" fromId="43" toId="46">
 </dataflow>
-<dataflow id="287" from="val_V" to="tmp_2" fromId="46" toId="47">
+<dataflow id="289" from="_ssdm_op_Read.ap_auto.volatile.i10P" to="val_V" fromId="288" toId="47">
 </dataflow>
-<dataflow id="288" from="tmp_2" to="stg_48" fromId="47" toId="48">
+<dataflow id="290" from="pwmR" to="val_V" fromId="69" toId="47">
 </dataflow>
-<dataflow id="289" from="_ssdm_op_Write.ap_auto.volatile.i1P" to="stg_49" fromId="276" toId="49">
+<dataflow id="291" from="MotorCtrl_pwmCount_V_assign" to="tmp_2" fromId="41" toId="48">
 </dataflow>
-<dataflow id="290" from="EN1" to="stg_49" fromId="71" toId="49">
+<dataflow id="292" from="val_V" to="tmp_2" fromId="47" toId="48">
 </dataflow>
-<dataflow id="292" from="stg_291" to="stg_49" fromId="291" toId="49">
+<dataflow id="293" from="tmp_2" to="stg_49" fromId="48" toId="49">
 </dataflow>
-<dataflow id="293" from="_ssdm_op_Write.ap_auto.volatile.i1P" to="stg_51" fromId="276" toId="51">
+<dataflow id="294" from="_ssdm_op_Write.ap_auto.volatile.i1P" to="stg_50" fromId="281" toId="50">
 </dataflow>
-<dataflow id="294" from="EN1" to="stg_51" fromId="71" toId="51">
+<dataflow id="295" from="EN1" to="stg_50" fromId="72" toId="50">
 </dataflow>
-<dataflow id="296" from="stg_295" to="stg_51" fromId="295" toId="51">
+<dataflow id="297" from="stg_296" to="stg_50" fromId="296" toId="50">
 </dataflow>
-<dataflow id="297" from="_ssdm_op_Read.ap_auto.volatile.i10P" to="val_V_1" fromId="283" toId="53">
+<dataflow id="298" from="_ssdm_op_Write.ap_auto.volatile.i1P" to="stg_52" fromId="281" toId="52">
 </dataflow>
-<dataflow id="298" from="pwmL" to="val_V_1" fromId="69" toId="53">
+<dataflow id="299" from="EN1" to="stg_52" fromId="72" toId="52">
 </dataflow>
-<dataflow id="299" from="MotorCtrl_pwmCount_V_assign" to="tmp_3" fromId="40" toId="54">
+<dataflow id="301" from="stg_300" to="stg_52" fromId="300" toId="52">
 </dataflow>
-<dataflow id="300" from="val_V_1" to="tmp_3" fromId="53" toId="54">
+<dataflow id="302" from="_ssdm_op_Read.ap_auto.volatile.i10P" to="val_V_1" fromId="288" toId="54">
 </dataflow>
-<dataflow id="301" from="tmp_3" to="stg_55" fromId="54" toId="55">
+<dataflow id="303" from="pwmL" to="val_V_1" fromId="70" toId="54">
 </dataflow>
-<dataflow id="302" from="_ssdm_op_Write.ap_auto.volatile.i1P" to="stg_56" fromId="276" toId="56">
+<dataflow id="304" from="MotorCtrl_pwmCount_V_assign" to="tmp_3" fromId="41" toId="55">
 </dataflow>
-<dataflow id="303" from="EN2" to="stg_56" fromId="72" toId="56">
+<dataflow id="305" from="val_V_1" to="tmp_3" fromId="54" toId="55">
 </dataflow>
-<dataflow id="304" from="stg_291" to="stg_56" fromId="291" toId="56">
+<dataflow id="306" from="tmp_3" to="stg_56" fromId="55" toId="56">
 </dataflow>
-<dataflow id="305" from="_ssdm_op_Write.ap_auto.volatile.i1P" to="stg_58" fromId="276" toId="58">
+<dataflow id="307" from="_ssdm_op_Write.ap_auto.volatile.i1P" to="stg_57" fromId="281" toId="57">
 </dataflow>
-<dataflow id="306" from="EN2" to="stg_58" fromId="72" toId="58">
+<dataflow id="308" from="EN2" to="stg_57" fromId="73" toId="57">
 </dataflow>
-<dataflow id="307" from="stg_295" to="stg_58" fromId="295" toId="58">
+<dataflow id="309" from="stg_296" to="stg_57" fromId="296" toId="57">
 </dataflow>
-<dataflow id="308" from="_ssdm_op_Wait" to="stg_61" fromId="252" toId="61">
+<dataflow id="310" from="_ssdm_op_Write.ap_auto.volatile.i1P" to="stg_59" fromId="281" toId="59">
 </dataflow>
-<dataflow id="309" from="stg_158" to="stg_61" fromId="158" toId="61">
+<dataflow id="311" from="EN2" to="stg_59" fromId="73" toId="59">
 </dataflow>
-<dataflow id="310" from="MotorCtrl_pwmClock_V_read" to="stg_3" fromId="37" toId="3">
+<dataflow id="312" from="stg_300" to="stg_59" fromId="300" toId="59">
 </dataflow>
-<dataflow id="311" from="tmp_2" to="stg_3" fromId="47" toId="3">
+<dataflow id="313" from="_ssdm_op_Wait" to="stg_62" fromId="253" toId="62">
 </dataflow>
-<dataflow id="312" from="tmp_3" to="stg_3" fromId="54" toId="3">
+<dataflow id="314" from="stg_159" to="stg_62" fromId="159" toId="62">
+</dataflow>
+<dataflow id="315" from="MotorCtrl_pwmClock_V_read" to="stg_3" fromId="38" toId="3">
+</dataflow>
+<dataflow id="316" from="tmp_2" to="stg_3" fromId="48" toId="3">
+</dataflow>
+<dataflow id="317" from="tmp_3" to="stg_3" fromId="55" toId="3">
 </dataflow>
 </dataflows>
 

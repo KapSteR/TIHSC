@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'MotorCtrl_pwmThread'
 ================================================================
-* Date:           Thu May 21 19:42:25 2015
+* Date:           Wed May 27 11:02:55 2015
 
 * Version:        2014.4 (Build 1071461 on Tue Nov 18 16:42:57 PM 2014)
 * Project:        MotorControl
@@ -233,14 +233,17 @@ ST_2: stg_35 [1/1] 0.00ns
 _ZN7_ap_sc_7sc_core4waitEi.exit:31  call void (...)* @_ssdm_op_Wait(i32 1) nounwind
 
 ST_2: stg_36 [1/1] 0.00ns
-_ZN7_ap_sc_7sc_core4waitEi.exit:32  br label %0
+_ZN7_ap_sc_7sc_core4waitEi.exit:32  call void @_ssdm_op_Write.ap_auto.i10P(i10* %MotorCtrl_pwmCount_V, i10 0)
+
+ST_2: stg_37 [1/1] 0.00ns
+_ZN7_ap_sc_7sc_core4waitEi.exit:33  br label %0
 
 
  <State 3>: 3.91ns
 ST_3: MotorCtrl_pwmClock_V_read [1/1] 0.00ns
 :0  %MotorCtrl_pwmClock_V_read = call i1 @_ssdm_op_Read.ap_auto.i1P(i1* %MotorCtrl_pwmClock_V)
 
-ST_3: stg_38 [1/1] 0.00ns
+ST_3: stg_39 [1/1] 0.00ns
 :1  br i1 %MotorCtrl_pwmClock_V_read, label %1, label %_ZN7_ap_sc_7sc_core4waitEi.exit2
 
 ST_3: MotorCtrl_pwmCount_V_read [1/1] 0.00ns
@@ -249,19 +252,19 @@ ST_3: MotorCtrl_pwmCount_V_read [1/1] 0.00ns
 ST_3: MotorCtrl_pwmCount_V_assign [1/1] 1.84ns
 :1  %MotorCtrl_pwmCount_V_assign = add i10 %MotorCtrl_pwmCount_V_read, 1
 
-ST_3: stg_41 [1/1] 0.00ns
+ST_3: stg_42 [1/1] 0.00ns
 :2  call void @_ssdm_op_Write.ap_auto.i10P(i10* %MotorCtrl_pwmCount_V, i10 %MotorCtrl_pwmCount_V_assign)
 
 ST_3: tmp [1/1] 0.00ns
 :3  %tmp = call i1 @_ssdm_op_Read.ap_auto.volatile.i1P(i1* %Direction)
 
-ST_3: stg_43 [1/1] 0.00ns
+ST_3: stg_44 [1/1] 0.00ns
 :4  call void @_ssdm_op_Write.ap_auto.i1P(i1* %MotorCtrl_DIR, i1 %tmp)
 
-ST_3: stg_44 [1/1] 0.00ns
+ST_3: stg_45 [1/1] 0.00ns
 :5  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %DIR1, i1 %tmp)
 
-ST_3: stg_45 [1/1] 0.00ns
+ST_3: stg_46 [1/1] 0.00ns
 :6  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %DIR2, i1 %tmp)
 
 ST_3: val_V [1/1] 0.00ns
@@ -270,19 +273,19 @@ ST_3: val_V [1/1] 0.00ns
 ST_3: tmp_2 [1/1] 2.07ns
 :8  %tmp_2 = icmp ult i10 %MotorCtrl_pwmCount_V_assign, %val_V
 
-ST_3: stg_48 [1/1] 0.00ns
+ST_3: stg_49 [1/1] 0.00ns
 :9  br i1 %tmp_2, label %2, label %3
 
-ST_3: stg_49 [1/1] 0.00ns
+ST_3: stg_50 [1/1] 0.00ns
 :0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN1, i1 false)
 
-ST_3: stg_50 [1/1] 0.00ns
+ST_3: stg_51 [1/1] 0.00ns
 :1  br label %4
 
-ST_3: stg_51 [1/1] 0.00ns
+ST_3: stg_52 [1/1] 0.00ns
 :0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN1, i1 true)
 
-ST_3: stg_52 [1/1] 0.00ns
+ST_3: stg_53 [1/1] 0.00ns
 :1  br label %4
 
 ST_3: val_V_1 [1/1] 0.00ns
@@ -291,28 +294,28 @@ ST_3: val_V_1 [1/1] 0.00ns
 ST_3: tmp_3 [1/1] 2.07ns
 :1  %tmp_3 = icmp ult i10 %MotorCtrl_pwmCount_V_assign, %val_V_1
 
-ST_3: stg_55 [1/1] 0.00ns
+ST_3: stg_56 [1/1] 0.00ns
 :2  br i1 %tmp_3, label %5, label %6
 
-ST_3: stg_56 [1/1] 0.00ns
+ST_3: stg_57 [1/1] 0.00ns
 :0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN2, i1 false)
 
-ST_3: stg_57 [1/1] 0.00ns
-:1  br label %7
-
 ST_3: stg_58 [1/1] 0.00ns
-:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN2, i1 true)
+:1  br label %7
 
 ST_3: stg_59 [1/1] 0.00ns
-:1  br label %7
+:0  call void @_ssdm_op_Write.ap_auto.volatile.i1P(i1* %EN2, i1 true)
 
 ST_3: stg_60 [1/1] 0.00ns
-:0  br label %_ZN7_ap_sc_7sc_core4waitEi.exit2
+:1  br label %7
 
 ST_3: stg_61 [1/1] 0.00ns
-_ZN7_ap_sc_7sc_core4waitEi.exit2:0  call void (...)* @_ssdm_op_Wait(i32 1) nounwind
+:0  br label %_ZN7_ap_sc_7sc_core4waitEi.exit2
 
 ST_3: stg_62 [1/1] 0.00ns
+_ZN7_ap_sc_7sc_core4waitEi.exit2:0  call void (...)* @_ssdm_op_Wait(i32 1) nounwind
+
+ST_3: stg_63 [1/1] 0.00ns
 _ZN7_ap_sc_7sc_core4waitEi.exit2:1  br label %0
 
 

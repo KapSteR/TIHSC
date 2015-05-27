@@ -5,8 +5,8 @@
 ############################################################
 open_project MotorControl
 set_top MotorCtrl
-add_files MotorControl/main.cpp
 add_files MotorControl/main.h
+add_files MotorControl/main.cpp
 open_solution "solution1"
 set_part {xc7z010clg400-1}
 create_clock -period 8 -name default

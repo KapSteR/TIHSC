@@ -1461,7 +1461,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>36</second>
+              <second>46</second>
             </item>
           </second>
         </item>

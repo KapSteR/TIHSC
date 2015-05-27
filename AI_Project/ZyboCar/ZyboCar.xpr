@@ -25,15 +25,17 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="ip/ZyboCarDesign_MotorCtrl_0_1/ZyboCarDesign_MotorCtrl_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="hw_handoff/ZyboCarDesign.hwh"/>
-        <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="ZyboCarDesign_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="hw_handoff/ZyboCarDesign_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="ip/ZyboCarDesign_auto_pc_0/ZyboCarDesign_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="ip/ZyboCarDesign_MotorCtrl_0_0/ZyboCarDesign_MotorCtrl_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="ip/ZyboCarDesign_processing_system7_0_0/ZyboCarDesign_processing_system7_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="ip/ZyboCarDesign_processing_system7_0_axi_periph_0/ZyboCarDesign_processing_system7_0_axi_periph_0.xci"/>
         <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="hdl/ZyboCarDesign.vhd"/>
         <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="ip/ZyboCarDesign_rst_processing_system7_0_100M_0/ZyboCarDesign_rst_processing_system7_0_100M_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="ip/ZyboCarDesign_processing_system7_0_axi_periph_0/ZyboCarDesign_processing_system7_0_axi_periph_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="ip/ZyboCarDesign_axi_gpio_0_0/ZyboCarDesign_axi_gpio_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="ip/ZyboCarDesign_auto_pc_0/ZyboCarDesign_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="ip/ZyboCarDesign_xbar_0/ZyboCarDesign_xbar_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="hw_handoff/ZyboCarDesign_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="hw_handoff/ZyboCarDesign.hwh"/>
+        <CompFileExtendedInfo CompFileName="ZyboCarDesign.bd" FileRelPathName="ZyboCarDesign_ooc.xdc"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/ZyboCarDesign/hdl/ZyboCarDesign_wrapper.vhd">
         <FileInfo>

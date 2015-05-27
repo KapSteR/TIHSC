@@ -1,4 +1,4 @@
-23:11:59 **** Auto Build of configuration Debug for project SimpleZyboTest ****
+09:12:22 **** Incremental Build of configuration Debug for project SimpleZyboTest ****
 make all 
 Building file: ../src/main.c
 Invoking: ARM gcc compiler
@@ -17,5 +17,5 @@ arm-xilinx-eabi-size SimpleZyboTest.elf  |tee "SimpleZyboTest.elf.size"
 Finished building: SimpleZyboTest.elf.size
  
 
-23:12:00 Build Finished (took 871ms)
+09:12:23 Build Finished (took 810ms)
 

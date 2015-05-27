@@ -1,7 +1,7 @@
 --Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
---Date        : Thu May 21 19:54:55 2015
+--Date        : Wed May 27 13:03:35 2015
 --Host        : KASPER-PC running 64-bit major release  (build 9200)
 --Command     : generate_target ZyboCarDesign_wrapper.bd
 --Design      : ZyboCarDesign_wrapper
@@ -37,7 +37,8 @@ entity ZyboCarDesign_wrapper is
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
 end ZyboCarDesign_wrapper;
 
@@ -68,7 +69,8 @@ architecture STRUCTURE of ZyboCarDesign_wrapper is
     EN1 : out STD_LOGIC;
     DIR1 : out STD_LOGIC;
     EN2 : out STD_LOGIC;
-    DIR2 : out STD_LOGIC
+    DIR2 : out STD_LOGIC;
+    btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component ZyboCarDesign;
 begin
@@ -98,6 +100,7 @@ ZyboCarDesign_i: component ZyboCarDesign
       FIXED_IO_mio(53 downto 0) => FIXED_IO_mio(53 downto 0),
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
-      FIXED_IO_ps_srstb => FIXED_IO_ps_srstb
+      FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
+      btns_4bits_tri_i(3 downto 0) => btns_4bits_tri_i(3 downto 0)
     );
 end STRUCTURE;

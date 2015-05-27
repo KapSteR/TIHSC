@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1432230145354">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1432717375812">
   <ports id="11" name="MotorCtrl_dividerCount_V" type="PortType" originalName="MotorCtrl.dividerCount.V" bitwidth="32" direction="DirInOut">
+    <dataOutputObjs>write</dataOutputObjs>
     <dataOutputObjs>read</dataOutputObjs>
     <dataOutputObjs>write</dataOutputObjs>
     <dataOutputObjs>write</dataOutputObjs>
@@ -10,145 +11,154 @@
     <dataInputObjs>write</dataInputObjs>
   </ports>
   <ports id="-11" name="MotorCtrl_dividerCount_V" type="PortType" originalName="MotorCtrl.dividerCount.V" bitwidth="32" direction="DirInOut">
+    <dataInputObjs>write</dataInputObjs>
     <dataInputObjs>read</dataInputObjs>
     <dataInputObjs>write</dataInputObjs>
     <dataInputObjs>write</dataInputObjs>
   </ports>
-  <edges id="63" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
-  <edges id="70" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.1"/>
-  <edges id="71" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
-  <edges id="75" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.3"/>
-  <edges id="76" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
-  <edges id="77" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
-  <edges id="80" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
-  <edges id="81" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.5"/>
-  <edges id="82" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.0/@node_objs.5"/>
-  <edges id="85" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@ports.1"/>
-  <edges id="89" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.1"/>
-  <edges id="92" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.2"/>
-  <edges id="94" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@ports.1"/>
-  <edges id="97" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.1"/>
-  <edges id="98" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.3/@node_objs.0"/>
-  <edges id="270" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0"/>
-  <edges id="271" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2"/>
-  <edges id="272" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
-  <edges id="273" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
-  <edges id="274" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
-  <edges id="275" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.0"/>
-  <edges id="-70" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@ports.2"/>
-  <edges id="-75" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@ports.2"/>
-  <edges id="-89" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@ports.2"/>
-  <blocks id="53" name="_ZN7_ap_sc_7sc_core4waitEi.exit" type="BlockType">
-    <controlInputObjs>block_46</controlInputObjs>
-    <controlInputObjs>block_62</controlInputObjs>
+  <edges id="66" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="69" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="76" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="77" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="80" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="81" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="82" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="85" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="86" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="87" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="90" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@ports.1"/>
+  <edges id="94" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="96" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="98" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@ports.1"/>
+  <edges id="101" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="102" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="274" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0"/>
+  <edges id="275" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="276" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="277" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="278" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="279" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.0"/>
+  <edges id="-66" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@ports.2"/>
+  <edges id="-76" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@ports.2"/>
+  <edges id="-80" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@ports.2"/>
+  <edges id="-94" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@ports.2"/>
+  <blocks id="54" name="_ZN7_ap_sc_7sc_core4waitEi.exit" type="BlockType">
+    <controlInputObjs>block_47</controlInputObjs>
+    <controlInputObjs>block_63</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>block_60</controlOutputObjs>
-    <controlOutputObjs>block_56</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="node_47" lineNumber="46" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="wait" nodeLabel="1">
-      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="46" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
+    <controlOutputObjs>block_61</controlOutputObjs>
+    <controlOutputObjs>block_57</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="node_48" lineNumber="51" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="wait" nodeLabel="1">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="51" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="t_V" lineNumber="48" originalName="t.V" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" bitwidth="32" opcode="read" nodeLabel="1">
-      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="48" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="t_V" lineNumber="53" originalName="t.V" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" bitwidth="32" opcode="read" nodeLabel="1">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="53" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
       <dataInputObjs>MotorCtrl_dividerCount_V</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>MotorCtrl_dividerCount_V</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="MotorCtrl_dividerCount_V_assig" lineNumber="48" fileName="MotorControl/main.cpp" fileDirectory=".." rtlName="MotorCtrl_dividerCount_V_assig_fu_124_p2" contextFuncName="clockDividerThread" bitwidth="32" opcode="add" nodeLabel="1">
-      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="48" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="MotorCtrl_dividerCount_V_assig" lineNumber="53" fileName="MotorControl/main.cpp" fileDirectory=".." rtlName="MotorCtrl_dividerCount_V_assig_fu_124_p2" contextFuncName="clockDividerThread" bitwidth="32" opcode="add" nodeLabel="1">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="53" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>write</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="node_50" lineNumber="48" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="write" nodeLabel="1">
-      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="48" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="node_51" lineNumber="53" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="write" nodeLabel="1">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="53" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
       <dataInputObjs>MotorCtrl_dividerCount_V</dataInputObjs>
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>MotorCtrl_dividerCount_V</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="tmp_5" lineNumber="48" fileName="MotorControl/main.cpp" fileDirectory=".." rtlName="tmp_5_fu_131_p2" contextFuncName="clockDividerThread" bitwidth="1" opcode="icmp" nodeLabel="1">
-      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="48" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="tmp_5" lineNumber="53" fileName="MotorControl/main.cpp" fileDirectory=".." rtlName="tmp_5_fu_131_p2" contextFuncName="clockDividerThread" bitwidth="1" opcode="icmp" nodeLabel="1">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="53" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="node_52" lineNumber="48" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="br" nodeLabel="1">
-      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="48" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="node_53" lineNumber="53" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="br" nodeLabel="1">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="53" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
       <dataInputObjs>icmp</dataInputObjs>
-      <controlInputObjs>block_56</controlInputObjs>
-      <controlInputObjs>block_60</controlInputObjs>
+      <controlInputObjs>block_57</controlInputObjs>
+      <controlInputObjs>block_61</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="MotorControl/main.cpp">
-      <validLinenumbers>46</validLinenumbers>
-      <validLinenumbers>48</validLinenumbers>
+      <validLinenumbers>51</validLinenumbers>
+      <validLinenumbers>53</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="56" name="block_56" type="BlockType">
+  <blocks id="57" name="block_57" type="BlockType">
     <controlInputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>block_62</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="node_54" lineNumber="52" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="write" nodeLabel="1">
-      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="52" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
+    <controlOutputObjs>block_63</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="node_55" lineNumber="57" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="write" nodeLabel="1">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="57" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
       <dataOutputObjs>MotorCtrl_pwmClock_V</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="node_55" opcode="br" nodeLabel="1">
-      <controlInputObjs>block_62</controlInputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="node_56" opcode="br" nodeLabel="1">
+      <controlInputObjs>block_63</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="MotorControl/main.cpp">
-      <validLinenumbers>52</validLinenumbers>
+      <validLinenumbers>57</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="60" name="block_60" type="BlockType">
+  <blocks id="61" name="block_61" type="BlockType">
     <controlInputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>block_62</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="node_57" lineNumber="49" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="write" nodeLabel="2">
-      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="49" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
+    <controlOutputObjs>block_63</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="node_58" lineNumber="54" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="write" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="54" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
       <dataOutputObjs>MotorCtrl_pwmClock_V</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="node_58" lineNumber="50" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="write" nodeLabel="2">
-      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="50" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="node_59" lineNumber="55" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="write" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="55" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
       <dataInputObjs>MotorCtrl_dividerCount_V</dataInputObjs>
       <dataOutputObjs>MotorCtrl_dividerCount_V</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="node_59" lineNumber="51" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="br" nodeLabel="2">
-      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="51" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
-      <controlInputObjs>block_62</controlInputObjs>
-    </node_objs>
-    <fileValidLineNumbers fileName="MotorControl/main.cpp">
-      <validLinenumbers>49</validLinenumbers>
-      <validLinenumbers>50</validLinenumbers>
-      <validLinenumbers>51</validLinenumbers>
-    </fileValidLineNumbers>
-  </blocks>
-  <blocks id="62" name="block_62" type="BlockType">
-    <controlInputObjs>block_56</controlInputObjs>
-    <controlInputObjs>block_60</controlInputObjs>
-    <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>br</controlOutputObjs>
-    <controlOutputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="node_61" lineNumber="54" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="br" nodeLabel="2">
-      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="54" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
-      <controlInputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit</controlInputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="node_60" lineNumber="56" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="br" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="56" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
+      <controlInputObjs>block_63</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="MotorControl/main.cpp">
       <validLinenumbers>54</validLinenumbers>
+      <validLinenumbers>55</validLinenumbers>
+      <validLinenumbers>56</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <regions anchor_node="40" region_type="1" typeName="Protocol" id="116" RegionName="__ssdm_reset__">
-    <basic_blocks id="46" name="block_46" type="BlockType">
+  <blocks id="63" name="block_63" type="BlockType">
+    <controlInputObjs>block_57</controlInputObjs>
+    <controlInputObjs>block_61</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="node_62" lineNumber="59" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="br" nodeLabel="2">
+      <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="59" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
+      <controlInputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MotorControl/main.cpp">
+      <validLinenumbers>59</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="40" region_type="1" typeName="Protocol" id="123" RegionName="__ssdm_reset__">
+    <basic_blocks id="47" name="block_47" type="BlockType">
       <controlOutputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="node_45" lineNumber="68" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="br">
-        <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="68" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="node_43" lineNumber="48" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="write">
+        <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="48" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
+        <dataInputObjs>MotorCtrl_dividerCount_V</dataInputObjs>
+        <dataOutputObjs>MotorCtrl_dividerCount_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="node_46" lineNumber="48" fileName="MotorControl/main.cpp" fileDirectory=".." contextFuncName="clockDividerThread" opcode="br">
+        <inlineStackInfo fileName="MotorControl/main.cpp" linenumber="48" fileDirectory="c:/Users/Kasper/Documents/GitHub/TIHSC/MotorControl" functionName="clockDividerThread"/>
         <controlInputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="MotorControl/main.cpp">
-        <validLinenumbers>68</validLinenumbers>
+        <validLinenumbers>48</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
   </regions>
@@ -156,38 +166,40 @@
   <ScheduleInfo time="1"/>
   <ScheduleInfo time="2"/>
   <regnodes realName="tmp_5_reg_137">
-    <nodeIds>51</nodeIds>
+    <nodeIds>52</nodeIds>
   </regnodes>
   <expressionNodes realName="MotorCtrl_dividerCount_V_assig_fu_124">
-    <nodeIds>49</nodeIds>
+    <nodeIds>50</nodeIds>
   </expressionNodes>
   <expressionNodes realName="tmp_5_fu_131">
-    <nodeIds>51</nodeIds>
+    <nodeIds>52</nodeIds>
   </expressionNodes>
-  <ioNodes realName="grp_write_fu_113">
-    <nodeIds>54</nodeIds>
-    <nodeIds>57</nodeIds>
-  </ioNodes>
-  <ioNodes realName="t_V_read_fu_100">
-    <nodeIds>48</nodeIds>
-  </ioNodes>
-  <ioNodes realName="grp_write_fu_106">
-    <nodeIds>50</nodeIds>
+  <ioNodes realName="grp_write_fu_114">
+    <nodeIds>55</nodeIds>
     <nodeIds>58</nodeIds>
+  </ioNodes>
+  <ioNodes realName="t_V_read_fu_108">
+    <nodeIds>49</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_100">
+    <nodeIds>43</nodeIds>
+    <nodeIds>51</nodeIds>
+    <nodeIds>59</nodeIds>
   </ioNodes>
   <ioPorts name="MotorCtrl_dividerCount_V">
     <contents name="read">
-      <nodeIds>48</nodeIds>
+      <nodeIds>49</nodeIds>
     </contents>
     <contents name="write">
-      <nodeIds>50</nodeIds>
-      <nodeIds>58</nodeIds>
+      <nodeIds>43</nodeIds>
+      <nodeIds>51</nodeIds>
+      <nodeIds>59</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="MotorCtrl_pwmClock_V">
     <contents name="write">
-      <nodeIds>57</nodeIds>
-      <nodeIds>54</nodeIds>
+      <nodeIds>58</nodeIds>
+      <nodeIds>55</nodeIds>
     </contents>
   </ioPorts>
   <fsm>
@@ -224,22 +236,23 @@
       <operations id="43" stage="1" latency="1"/>
       <operations id="44" stage="1" latency="1"/>
       <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
     </states>
     <states id="2">
-      <operations id="47" stage="1" latency="1"/>
       <operations id="48" stage="1" latency="1"/>
       <operations id="49" stage="1" latency="1"/>
       <operations id="50" stage="1" latency="1"/>
       <operations id="51" stage="1" latency="1"/>
       <operations id="52" stage="1" latency="1"/>
-      <operations id="54" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
       <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
     </states>
     <states id="3">
-      <operations id="57" stage="1" latency="1"/>
       <operations id="58" stage="1" latency="1"/>
       <operations id="59" stage="1" latency="1"/>
-      <operations id="61" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
     </states>
     <transitions inState="1" outState="2">
       <condition id="10"/>
@@ -258,14 +271,14 @@
       <mDfPipe/>
     </cfgRegions>
     <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
-      <basicBlocks>46</basicBlocks>
+      <basicBlocks>47</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
     <cfgRegions mId="3" mTag="Loop 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="2" mMaxLatency="-1" mType="1">
-      <basicBlocks>53</basicBlocks>
-      <basicBlocks>56</basicBlocks>
-      <basicBlocks>60</basicBlocks>
-      <basicBlocks>62</basicBlocks>
+      <basicBlocks>54</basicBlocks>
+      <basicBlocks>57</basicBlocks>
+      <basicBlocks>61</basicBlocks>
+      <basicBlocks>63</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
   </CFGRegionsRoot>

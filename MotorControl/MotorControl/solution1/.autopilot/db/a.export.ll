@@ -72,6 +72,7 @@ _ZN7_ap_sc_7sc_core4waitEi.exit:
   %empty = call i32 (...)* @_ssdm_op_SpecStateEnd(i32 %p_ssdm_reset_v) nounwind
   %empty_2 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str13, i32 %tmp_1)
   call void (...)* @_ssdm_op_Wait(i32 1) nounwind
+  call void @_ssdm_op_Write.ap_auto.i10P(i10* %MotorCtrl_pwmCount_V, i10 0)
   br label %0
 
 ; <label>:0                                       ; preds = %_ZN7_ap_sc_7sc_core4waitEi.exit2, %_ZN7_ap_sc_7sc_core4waitEi.exit
@@ -174,6 +175,7 @@ define void @"MotorCtrl::MotorCtrl_MotorCtrl::clockDividerThread"(i1* %clk, i1* 
   %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str13)
   call void (...)* @_ssdm_op_SpecProtocol(i32 1, [1 x i8]* @p_str14) nounwind
   %p_ssdm_reset_v = call i32 (...)* @_ssdm_op_SpecStateBegin(i32 0, i32 0, i32 1) nounwind
+  call void @_ssdm_op_Write.ap_auto.i32P(i32* %MotorCtrl_dividerCount_V, i32 0)
   %empty = call i32 (...)* @_ssdm_op_SpecStateEnd(i32 %p_ssdm_reset_v) nounwind
   %empty_3 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str13, i32 %tmp)
   br label %_ZN7_ap_sc_7sc_core4waitEi.exit

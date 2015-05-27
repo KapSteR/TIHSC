@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
-| Date             : Thu May 21 19:48:12 2015
+| Date             : Wed May 27 11:09:06 2015
 | Host             : KASPER-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file MotorCtrl_power_routed.rpt -pb MotorCtrl_power_summary_routed.pb
 | Design           : MotorCtrl
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.100 |
-| Dynamic (W)              | 0.000 |
+| Total On-Chip Power (W)  | 0.101 |
+| Dynamic (W)              | 0.001 |
 | Device Static (W)        | 0.100 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 83.8  |
@@ -50,14 +50,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.000 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      155 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       77 |     17600 |            0.43 |
+| Slice Logic    |    <0.001 |      158 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       79 |     17600 |            0.44 |
 |   CARRY4       |    <0.001 |       12 |      4400 |            0.27 |
-|   Register     |    <0.001 |       50 |     35200 |            0.14 |
+|   Register     |    <0.001 |       51 |     35200 |            0.14 |
 |   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |    <0.001 |       84 |       --- |             --- |
+| Signals        |    <0.001 |       95 |       --- |             --- |
 | Static Power   |     0.100 |          |           |                 |
-| Total          |     0.100 |          |           |                 |
+| Total          |     0.101 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,7 +67,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.004 |       0.000 |      0.004 |
+| Vccint    |       1.000 |     0.004 |       0.001 |      0.004 |
 | Vccaux    |       1.800 |     0.011 |       0.000 |      0.011 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |

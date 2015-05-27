@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
-| Date         : Thu May 21 19:47:37 2015
+| Date         : Wed May 27 11:08:36 2015
 | Host         : KASPER-PC running 64-bit major release  (build 9200)
 | Command      : report_drc
 ------------------------------------------------------------------------------------
@@ -39,7 +39,7 @@ Related violations: <none>
 
 NDRV-2#1 Warning
 Out of context terminal  
-Port DIR1, Direction, pwmR[9:0], EN1, pwmL[9:0], EN2, reset does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal %ELG. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
+Port DIR1, pwmR[9:0], EN1, pwmL[9:0], EN2, reset, Direction does not have an associated HD.PARTPIN_LOCS property, which will prevent the partial routing of the signal %ELG. Without this partial route, timing analysis to/from this port will not be accurate and no routing information for this port can be exported.
 Related violations: <none>
 
 ZPS7-1#1 Warning

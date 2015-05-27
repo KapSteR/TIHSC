@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="MotorCtrl,hls_ip_2014_4,{HLS_INPUT_TYPE=sc,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010clg400-1,HLS_INPUT_CLOCK=8.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.909500,HLS_SYN_LAT=2,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=54,HLS_SYN_LUT=142}" *)
+(* CORE_GENERATION_INFO="MotorCtrl,hls_ip_2014_4,{HLS_INPUT_TYPE=sc,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010clg400-1,HLS_INPUT_CLOCK=8.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.909500,HLS_SYN_LAT=2,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=54,HLS_SYN_LUT=152}" *)
 
 module MotorCtrl (
         clk,
@@ -24,6 +24,7 @@ module MotorCtrl (
 parameter    ap_const_logic_1 = 1'b1;
 parameter    ap_const_logic_0 = 1'b0;
 parameter    ap_const_lv1_0 = 1'b0;
+parameter    ap_const_lv32_0 = 32'b00000000000000000000000000000000;
 parameter    ap_const_lv1_1 = 1'b1;
 parameter    ap_const_lv32_1 = 32'b1;
 parameter    ap_const_lv2_0 = 2'b00;
@@ -44,7 +45,7 @@ reg EN2;
 reg DIR1;
 reg DIR2;
 reg   [9:0] MotorCtrl_pwmCount_V;
-reg   [31:0] MotorCtrl_dividerCount_V;
+reg   [31:0] MotorCtrl_dividerCount_V = 32'b00000000000000000000000000000000;
 reg   [0:0] MotorCtrl_pwmClock_V;
 wire   [0:0] MotorCtrl_ssdm_thread_M_pwm_load_fu_151_p1;
 wire   [1:0] ap_CS_fsm;
@@ -143,8 +144,12 @@ end
 /// MotorCtrl_dividerCount_V assign process. ///
 always @ (posedge clk)
 begin : ap_ret_MotorCtrl_dividerCount_V
-    if ((ap_const_logic_1 == grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_o_ap_vld)) begin
-        MotorCtrl_dividerCount_V <= grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_o;
+    if (reset == 1'b1) begin
+        MotorCtrl_dividerCount_V <= ap_const_lv32_0;
+    end else begin
+        if ((ap_const_logic_1 == grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_o_ap_vld)) begin
+            MotorCtrl_dividerCount_V <= grp_MotorCtrl_clockDividerThread_fu_90_MotorCtrl_dividerCount_V_o;
+        end
     end
 end
 

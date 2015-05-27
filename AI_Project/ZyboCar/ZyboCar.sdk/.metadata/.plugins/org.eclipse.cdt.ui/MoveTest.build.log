@@ -1,6 +1,6 @@
-23:14:43 **** Auto Build of configuration Debug for project MoveTest ****
+13:00:15 **** Auto Build of configuration Debug for project MoveTest ****
 make all 
 make: Ingenting at gøre for 'all'.
 
-23:14:43 Build Finished (took 271ms)
+13:00:15 Build Finished (took 251ms)
 
