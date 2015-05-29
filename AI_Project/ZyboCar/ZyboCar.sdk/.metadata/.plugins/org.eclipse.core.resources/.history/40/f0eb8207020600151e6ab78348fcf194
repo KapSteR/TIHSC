@@ -1,0 +1,28 @@
+#ifndef PARTICLE_H_
+#define PARTICLE_H_
+#define _USE_MATH_DEFINES
+#define -D__STRICT_ANSI__
+#include "math.h"
+#include "Position.h"
+#include "MoveBlock.h"
+
+
+
+#include "RangeArray.h"
+
+class Particle{
+public:
+	Particle();
+	Position pos;
+	float w;
+
+	void move(MoveBlock& MB);
+	float weightCalculation(int* dataArray);
+    
+private:
+    int noise = 1000;
+    int noiseSqr = noise*noise;
+    float normalizer = -0.5*log(2*M_PI) - 0.5*log(noiseSqr);
+};
+
+#endif /* PARTICLE_H_ */

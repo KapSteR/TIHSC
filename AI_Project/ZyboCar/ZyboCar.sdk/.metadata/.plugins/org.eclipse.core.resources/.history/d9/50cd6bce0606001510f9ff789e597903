@@ -1,0 +1,17 @@
+#ifndef ROBOTFRAME_H_
+#define ROBOTFRAME_H_
+#include "Position.h"
+#include "MoveBlock.h"
+
+#define _USE_MATH_DEFINES
+#include <math.h>
+
+class RobotFrame{
+public:
+	RobotFrame();
+	Position pos;
+
+	void move(MoveBlock& MB);
+};
+
+#endif /* ROBOTFRAME_H_ */
