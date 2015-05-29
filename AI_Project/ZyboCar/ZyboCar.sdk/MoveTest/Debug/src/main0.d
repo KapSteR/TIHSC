@@ -1,4 +1,4 @@
-src/main.o src/main.d: ../src/main.cc \
+src/main0.o src/main0.d: ../src/main0.cc \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xparameters_ps.h \
  ../src/move.h ../../standalone_bsp_0/ps7_cortexa9_0/include/xmotorctrl.h \

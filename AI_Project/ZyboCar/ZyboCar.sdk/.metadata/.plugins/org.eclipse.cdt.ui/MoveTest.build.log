@@ -1,25 +1,21 @@
-14:52:50 **** Auto Build of configuration Debug for project MoveTest ****
+10:33:32 **** Auto Build of configuration Debug for project MoveTest ****
 make all 
-Building file: ../src/main.cc
+Building file: ../src/LIDAR.cc
 Invoking: ARM g++ compiler
-arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
-../src/main.cc: In function 'int main()':
-../src/main.cc:14:6: warning: unused variable 'btn' [-Wunused-variable]
-  int btn = 0;
-      ^
-Finished building: ../src/main.cc
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
  
 Building target: MoveTest.elf
 Invoking: ARM g++ linker
-arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
 Finished building target: MoveTest.elf
  
 Invoking: ARM Print Size
 arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 118664	   2356	  25200	 146220	  23b2c	MoveTest.elf
+ 122072	   2372	  25208	 149652	  24894	MoveTest.elf
 Finished building: MoveTest.elf.size
  
 
-14:52:51 Build Finished (took 1s.46ms)
+10:33:33 Build Finished (took 855ms)
 

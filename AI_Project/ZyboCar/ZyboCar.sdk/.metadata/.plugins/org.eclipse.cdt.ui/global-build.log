@@ -748,3 +748,1510 @@ arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
  118664	   2356	  25200	 146220	  23b2c	MoveTest.elf
 Finished building: MoveTest.elf.size
  
+08:41:03 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118664	   2356	  25200	 146220	  23b2c	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+08:43:02 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+08:54:02 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+08:54:33 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+In file included from ../src/LIDAR.cc:1:0:
+../src/LIDAR.h:3:23: fatal error: xuartlite.h: No such file or directory
+ #include "xuartlite.h"
+                       ^
+compilation terminated.
+make: *** [src/LIDAR.o] Fejl 1
+08:55:42 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartlite_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartlite_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+'Finished building libraries'
+08:56:27 **** Auto Build of configuration Release for project MyFirstFSBL ****
+make all 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+../src/md5.c: In function 'MD5Final':
+../src/md5.c:445:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  ( (u32 *)context->intermediate )[ 14 ] = context->bits[ 0 ];
+  ^
+../src/md5.c:446:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  ( (u32 *)context->intermediate )[ 15 ] = context->bits[ 1 ];
+  ^
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c"
+Finished building: C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/rsa.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: MyFirstFSBL.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MyFirstFSBL\src" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MyFirstFSBL.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: MyFirstFSBL.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MyFirstFSBL.elf  |tee "MyFirstFSBL.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49256	   9728	  71812	 130796	  1feec	MyFirstFSBL.elf
+Finished building: MyFirstFSBL.elf.size
+ 
+08:56:31 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/WaitForStart.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/WaitForStart.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/WaitForStart.d" -MT"src/WaitForStart.d" -o "src/WaitForStart.o" "../src/WaitForStart.cpp"
+Finished building: ../src/WaitForStart.cpp
+ 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:6:0:
+../src/move.h:12:24: fatal error: xmotorctrl.h: No such file or directory
+ #include "xmotorctrl.h"
+                        ^
+compilation terminated.
+make: *** [src/main.o] Fejl 1
+09:00:43 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartlite_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling motorctrl_top"
+xmotorctrl_sinit.c: In function 'XMotorctrl_LookupConfig':
+xmotorctrl_sinit.c:21:26: error: 'XPAR_XMOTORCTRL_NUM_INSTANCES' undeclared (first use in this function)
+  for (Index = 0; Index < XPAR_XMOTORCTRL_NUM_INSTANCES; Index++) {
+                          ^
+xmotorctrl_sinit.c:21:26: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [libs] Fejl 1
+make: *** [ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src/make.libs] Fejl 2
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartlite_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+make: Målet 'all' ikke genskabt på grund af fejl.
+09:01:32 **** Auto Build of configuration Release for project MyFirstFSBL ****
+make all 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+../src/md5.c: In function 'MD5Final':
+../src/md5.c:445:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  ( (u32 *)context->intermediate )[ 14 ] = context->bits[ 0 ];
+  ^
+../src/md5.c:446:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  ( (u32 *)context->intermediate )[ 15 ] = context->bits[ 1 ];
+  ^
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c"
+Finished building: C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/rsa.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: MyFirstFSBL.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MyFirstFSBL\src" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MyFirstFSBL.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: MyFirstFSBL.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MyFirstFSBL.elf  |tee "MyFirstFSBL.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49256	   9728	  71812	 130796	  1feec	MyFirstFSBL.elf
+Finished building: MyFirstFSBL.elf.size
+ 
+09:01:36 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/WaitForStart.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/WaitForStart.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/WaitForStart.d" -MT"src/WaitForStart.d" -o "src/WaitForStart.o" "../src/WaitForStart.cpp"
+Finished building: ../src/WaitForStart.cpp
+ 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building file: ../src/move.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/move.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/move.d" -MT"src/move.d" -o "src/move.o" "../src/move.cpp"
+Finished building: ../src/move.cpp
+ 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/move.o: In function `MoveController::move(float, int, float)':
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\Debug/../src/move.cpp:51: undefined reference to `XMotorctrl_SetPwmr'
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\Debug/../src/move.cpp:52: undefined reference to `XMotorctrl_SetPwml'
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\Debug/../src/move.cpp:53: undefined reference to `XMotorctrl_SetDirection'
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\Debug/../src/move.cpp:59: undefined reference to `XMotorctrl_SetPwmr'
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\Debug/../src/move.cpp:60: undefined reference to `XMotorctrl_SetPwml'
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\Debug/../src/move.cpp:71: undefined reference to `XMotorctrl_SetPwmr'
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\Debug/../src/move.cpp:72: undefined reference to `XMotorctrl_SetPwml'
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\Debug/../src/move.cpp:73: undefined reference to `XMotorctrl_SetDirection'
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\Debug/../src/move.cpp:79: undefined reference to `XMotorctrl_SetPwmr'
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\Debug/../src/move.cpp:80: undefined reference to `XMotorctrl_SetPwml'
+./src/move.o: In function `MoveController::initMotor()':
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\Debug/../src/move.cpp:92: undefined reference to `XMotorctrl_SetPwmr'
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\Debug/../src/move.cpp:93: undefined reference to `XMotorctrl_SetPwml'
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\Debug/../src/move.cpp:94: undefined reference to `XMotorctrl_SetDirection'
+./src/move.o: In function `MoveController::~MoveController()':
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\Debug/../src/move.cpp:147: undefined reference to `XMotorctrl_SetPwmr'
+C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MoveTest\Debug/../src/move.cpp:148: undefined reference to `XMotorctrl_SetPwml'
+collect2.exe: error: ld returned 1 exit status
+make: *** [MoveTest.elf] Fejl 1
+09:02:21 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartlite_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling motorctrl_top"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartlite_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+'Finished building libraries'
+09:03:08 **** Auto Build of configuration Release for project MyFirstFSBL ****
+make all 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+../src/md5.c: In function 'MD5Final':
+../src/md5.c:445:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  ( (u32 *)context->intermediate )[ 14 ] = context->bits[ 0 ];
+  ^
+../src/md5.c:446:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  ( (u32 *)context->intermediate )[ 15 ] = context->bits[ 1 ];
+  ^
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c"
+Finished building: C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/rsa.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: MyFirstFSBL.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MyFirstFSBL\src" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MyFirstFSBL.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: MyFirstFSBL.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MyFirstFSBL.elf  |tee "MyFirstFSBL.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49256	   9728	  71812	 130796	  1feec	MyFirstFSBL.elf
+Finished building: MyFirstFSBL.elf.size
+ 
+09:03:12 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building file: ../src/WaitForStart.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/WaitForStart.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/WaitForStart.d" -MT"src/WaitForStart.d" -o "src/WaitForStart.o" "../src/WaitForStart.cpp"
+Finished building: ../src/WaitForStart.cpp
+ 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building file: ../src/move.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/move.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/move.d" -MT"src/move.d" -o "src/move.o" "../src/move.cpp"
+Finished building: ../src/move.cpp
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121168	   2372	  25200	 148740	  24504	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:12:15 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121168	   2372	  25200	 148740	  24504	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:14:53 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121168	   2372	  25200	 148740	  24504	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:15:24 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc:45:54: error: declaration of 'int LIDAR::checkData(u8*, int*)' outside of class is not definition [-fpermissive]
+ int LIDAR::checkData(u8 *packageStart, int *dataStart);
+                                                      ^
+make: *** [src/LIDAR.o] Fejl 1
+09:16:05 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'int LIDAR::checkData(u8*, int*)':
+../src/LIDAR.cc:47:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ };
+ ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121176	   2372	  25208	 148756	  24514	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:16:34 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121176	   2372	  25208	 148756	  24514	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:33:50 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121176	   2372	  25208	 148756	  24514	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:33:52 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'int LIDAR::checkData(u8*, int*)':
+../src/LIDAR.cc:47:6: warning: unused variable 'chk32' [-Wunused-variable]
+  u32 chk32, checksum;
+      ^
+../src/LIDAR.cc:47:13: warning: unused variable 'checksum' [-Wunused-variable]
+  u32 chk32, checksum;
+             ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121176	   2372	  25208	 148756	  24514	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:39:26 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc:45:5: error: prototype for 'int LIDAR::checkData(u8*, int*)' does not match any in class 'LIDAR'
+ int LIDAR::checkData(u8 *packageStart, int *dataStart){
+     ^
+In file included from ../src/LIDAR.cc:1:0:
+../src/LIDAR.h:20:6: error: candidate is: int LIDAR::checkData(int, int)
+  int checkData(int packageStartIdx, int dataStartIdx);
+      ^
+make: *** [src/LIDAR.o] Fejl 1
+09:39:45 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(int, int)':
+../src/LIDAR.cc:49:15: error: 'packageStart' was not declared in this scope
+  checksum = *(packageStart+PACKAGE_LENGTH-1) + *();
+               ^
+../src/LIDAR.cc:49:50: error: expected primary-expression before ')' token
+  checksum = *(packageStart+PACKAGE_LENGTH-1) + *();
+                                                  ^
+../src/LIDAR.cc:47:6: warning: unused variable 'chk32' [-Wunused-variable]
+  u32 chk32, checksum;
+      ^
+make: *** [src/LIDAR.o] Fejl 1
+09:40:52 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(u8*, int, int)':
+../src/LIDAR.cc:49:13: error: 'da' was not declared in this scope
+  checksum = da
+             ^
+../src/LIDAR.cc:56:2: error: expected ';' before 'return'
+  return 1;
+  ^
+../src/LIDAR.cc:47:6: warning: unused variable 'chk32' [-Wunused-variable]
+  u32 chk32, checksum;
+      ^
+../src/LIDAR.cc:57:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ };
+ ^
+make: *** [src/LIDAR.o] Fejl 1
+09:40:55 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(u8*, int, int)':
+../src/LIDAR.cc:49:13: error: 'da' was not declared in this scope
+  checksum = da
+             ^
+../src/LIDAR.cc:56:2: error: expected ';' before 'return'
+  return 1;
+  ^
+../src/LIDAR.cc:47:6: warning: unused variable 'chk32' [-Wunused-variable]
+  u32 chk32, checksum;
+      ^
+../src/LIDAR.cc:57:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ };
+ ^
+make: *** [src/LIDAR.o] Fejl 1
+09:41:05 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(u8*, int, int)':
+../src/LIDAR.cc:49:13: error: 'da' was not declared in this scope
+  checksum = da
+             ^
+../src/LIDAR.cc:56:2: error: expected ';' before 'return'
+  return 1;
+  ^
+../src/LIDAR.cc:47:6: warning: unused variable 'chk32' [-Wunused-variable]
+  u32 chk32, checksum;
+      ^
+../src/LIDAR.cc:57:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ };
+ ^
+make: *** [src/LIDAR.o] Fejl 1
+09:41:07 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(u8*, int, int)':
+../src/LIDAR.cc:56:2: error: expected primary-expression before 'return'
+  return 1;
+  ^
+../src/LIDAR.cc:56:2: error: expected ';' before 'return'
+../src/LIDAR.cc:47:6: warning: unused variable 'chk32' [-Wunused-variable]
+  u32 chk32, checksum;
+      ^
+../src/LIDAR.cc:57:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ };
+ ^
+make: *** [src/LIDAR.o] Fejl 1
+09:42:34 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(u8*, int, int)':
+../src/LIDAR.cc:49:56: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  checksum = buffer[packageStartIdx+NUM_PACKAGES-1]<<15 + buffer[packageStartIdx+NUM_PACKAGES-2];
+                                                        ^
+../src/LIDAR.cc:47:6: warning: unused variable 'chk32' [-Wunused-variable]
+  u32 chk32, checksum;
+      ^
+../src/LIDAR.cc:47:13: warning: variable 'checksum' set but not used [-Wunused-but-set-variable]
+  u32 chk32, checksum;
+             ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121240	   2372	  25208	 148820	  24554	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:43:59 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(u8*, int, int)':
+../src/LIDAR.cc:47:6: warning: unused variable 'chk32' [-Wunused-variable]
+  u32 chk32, checksum;
+      ^
+../src/LIDAR.cc:47:13: warning: variable 'checksum' set but not used [-Wunused-but-set-variable]
+  u32 chk32, checksum;
+             ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121240	   2372	  25208	 148820	  24554	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:44:29 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(u8*, int, int)':
+../src/LIDAR.cc:47:6: warning: unused variable 'chk32' [-Wunused-variable]
+  u32 chk32, checksum;
+      ^
+../src/LIDAR.cc:47:13: warning: variable 'checksum' set but not used [-Wunused-but-set-variable]
+  u32 chk32, checksum;
+             ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121240	   2372	  25208	 148820	  24554	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:45:49 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(u8*, int, int)':
+../src/LIDAR.cc:47:6: warning: unused variable 'chk32' [-Wunused-variable]
+  u32 chk32, checksum;
+      ^
+../src/LIDAR.cc:47:13: warning: variable 'checksum' set but not used [-Wunused-but-set-variable]
+  u32 chk32, checksum;
+             ^
+../src/LIDAR.cc:48:6: warning: unused variable 'wordList' [-Wunused-variable]
+  u32 wordList[10];
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121304	   2372	  25208	 148884	  24594	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:49:20 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(u8*, int, int)':
+../src/LIDAR.cc:47:6: warning: variable 'chk32' set but not used [-Wunused-but-set-variable]
+  u32 chk32, checksum;
+      ^
+../src/LIDAR.cc:47:13: warning: variable 'checksum' set but not used [-Wunused-but-set-variable]
+  u32 chk32, checksum;
+             ^
+../src/LIDAR.cc:48:6: warning: variable 'wordList' set but not used [-Wunused-but-set-variable]
+  u32 wordList[10];
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121432	   2372	  25208	 149012	  24614	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:50:08 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(u8*, int, int)':
+../src/LIDAR.cc:47:13: warning: variable 'checksum' set but not used [-Wunused-but-set-variable]
+  u32 chk32, checksum;
+             ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121496	   2372	  25208	 149076	  24654	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:52:30 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121496	   2372	  25208	 149076	  24654	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:53:25 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(u8*, int, int)':
+../src/LIDAR.cc:46:23: warning: variable 'checksumPackage' set but not used [-Wunused-but-set-variable]
+  u32 chk32, checksum, checksumPackage;
+                       ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121496	   2372	  25208	 149076	  24654	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:53:42 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(u8*, int, int)':
+../src/LIDAR.cc:46:23: warning: variable 'checksumPackage' set but not used [-Wunused-but-set-variable]
+  u32 chk32, checksum, checksumPackage;
+                       ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121496	   2372	  25208	 149076	  24654	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:59:03 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121560	   2372	  25208	 149140	  24694	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+09:59:29 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121560	   2372	  25208	 149140	  24694	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+10:00:42 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(u8*, int)':
+../src/LIDAR.cc:63:7: error: name lookup of 'i' changed for ISO 'for' scoping [-fpermissive]
+  for (i = 0; i < 10; ++i) {
+       ^
+../src/LIDAR.cc:63:7: note: (if you use '-fpermissive' G++ will accept your code)
+../src/LIDAR.cc:75:7: warning: unused variable 'index' [-Wunused-variable]
+   int index = buffer[1];
+       ^
+make: *** [src/LIDAR.o] Fejl 1
+10:01:08 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(u8*, int)':
+../src/LIDAR.cc:63:7: error: name lookup of 'i' changed for ISO 'for' scoping [-fpermissive]
+  for (i = 0; i < 10; ++i) {
+       ^
+../src/LIDAR.cc:63:7: note: (if you use '-fpermissive' G++ will accept your code)
+../src/LIDAR.cc:79:4: error: 'dataArray' was not declared in this scope
+    dataArray
+    ^
+../src/LIDAR.cc:85:3: error: expected ';' before '}' token
+   }
+   ^
+../src/LIDAR.cc:75:7: warning: unused variable 'index' [-Wunused-variable]
+   int index = buffer[1];
+       ^
+make: *** [src/LIDAR.o] Fejl 1
+10:01:35 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(u8*, int)':
+../src/LIDAR.cc:63:7: error: name lookup of 'i' changed for ISO 'for' scoping [-fpermissive]
+  for (i = 0; i < 10; ++i) {
+       ^
+../src/LIDAR.cc:63:7: note: (if you use '-fpermissive' G++ will accept your code)
+../src/LIDAR.cc:79:4: error: 'dataArray' was not declared in this scope
+    dataArray[index+i] = 0;
+    ^
+make: *** [src/LIDAR.o] Fejl 1
+10:02:08 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In function 'int checkData(u8*, int)':
+../src/LIDAR.cc:81:4: error: 'dataArray' was not declared in this scope
+    dataArray[index+i] = 0;
+    ^
+make: *** [src/LIDAR.o] Fejl 1
+10:02:44 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121624	   2372	  25208	 149204	  246d4	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+10:03:02 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121624	   2372	  25208	 149204	  246d4	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+10:08:08 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'int LIDAR::checkData(u8*, int)':
+../src/LIDAR.cc:84:7: error: expected '(' before '{' token
+    if { buffer[da]
+       ^
+../src/LIDAR.cc:77:7: warning: unused variable 'index' [-Wunused-variable]
+   int index = buffer[1];
+       ^
+../src/LIDAR.cc:97:1: error: expected '}' at end of input
+ ;
+ ^
+../src/LIDAR.cc:97:1: warning: control reaches end of non-void function [-Wreturn-type]
+ ;
+ ^
+make: *** [src/LIDAR.o] Fejl 1
+10:10:06 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'int LIDAR::checkData(u8*, int)':
+../src/LIDAR.cc:95:4: error: expected ';' before '}' token
+    }
+    ^
+make: *** [src/LIDAR.o] Fejl 1
+10:10:12 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'int LIDAR::checkData(u8*, int)':
+../src/LIDAR.cc:97:3: error: expected ';' before '}' token
+   }
+   ^
+../src/LIDAR.cc:105:1: error: expected '}' at end of input
+ ;
+ ^
+../src/LIDAR.cc:105:1: warning: control reaches end of non-void function [-Wreturn-type]
+ ;
+ ^
+make: *** [src/LIDAR.o] Fejl 1
+10:10:20 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121752	   2372	  25208	 149332	  24754	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+10:16:48 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'int LIDAR::checkData(u8*, int)':
+../src/LIDAR.cc:103:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121752	   2372	  25208	 149332	  24754	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+10:16:55 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc:44:5: error: prototype for 'int LIDAR::checkData(u8*, int)' does not match any in class 'LIDAR'
+ int LIDAR::checkData(u8 *buffer, int packageStartIdx) {
+     ^
+In file included from ../src/LIDAR.cc:1:0:
+../src/LIDAR.h:21:5: error: candidate is: u8 LIDAR::checkData(u8*, int)
+  u8 checkData(u8 *buffer, int packageStartIdx);
+     ^
+make: *** [src/LIDAR.o] Fejl 1
+10:17:00 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'u8 LIDAR::checkData(u8*, int)':
+../src/LIDAR.cc:103:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121752	   2372	  25208	 149332	  24754	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+10:23:30 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'u8 LIDAR::checkData(u8*, int)':
+../src/LIDAR.cc:92:4: error: expected ';' before '}' token
+    } else {
+    ^
+make: *** [src/LIDAR.o] Fejl 1
+10:23:40 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121880	   2372	  25208	 149460	  247d4	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+10:24:30 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 121880	   2372	  25208	 149460	  247d4	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+10:26:01 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122008	   2372	  25208	 149588	  24854	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+10:26:13 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122008	   2372	  25208	 149588	  24854	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+10:26:40 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122008	   2372	  25208	 149588	  24854	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+10:28:54 **** Clean-only build of configuration Debug for project MoveTest ****
+make clean 
+rm -rf  ./src/LIDAR.d ./src/main.d  ./src/LIDAR.o ./src/WaitForStart.o ./src/main.o ./src/move.o  ./src/WaitForStart.d ./src/move.d  MoveTest.elf.size  MoveTest.elf
+ 
+10:28:54 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building file: ../src/WaitForStart.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/WaitForStart.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/WaitForStart.d" -MT"src/WaitForStart.d" -o "src/WaitForStart.o" "../src/WaitForStart.cpp"
+Finished building: ../src/WaitForStart.cpp
+ 
+Building file: ../src/main0.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main0.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main0.d" -MT"src/main0.d" -o "src/main0.o" "../src/main0.cc"
+Finished building: ../src/main0.cc
+ 
+Building file: ../src/move.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/move.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/move.d" -MT"src/move.d" -o "src/move.o" "../src/move.cpp"
+Finished building: ../src/move.cpp
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122008	   2372	  25208	 149588	  24854	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+10:31:15 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:43:42: error: expected initializer before '<' token
+  for (int packageCount = 0, packageCount < NUM_PACKAGES; packageCount++) {
+                                          ^
+../src/LIDAR.cc:43:42: error: expected ';' before '<' token
+../src/LIDAR.cc:43:42: error: expected primary-expression before '<' token
+make: *** [src/LIDAR.o] Fejl 1
+10:31:26 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122008	   2372	  25208	 149588	  24854	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 
+10:32:32 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:45:53: error: no matching function for call to 'LIDAR::checkData(u8 (*)[1980], int)'
+   checkData(&RecvBuffer, packageCount*PACKAGE_LENGTH);
+                                                     ^
+../src/LIDAR.cc:45:53: note: candidate is:
+In file included from ../src/LIDAR.cc:1:0:
+../src/LIDAR.h:21:5: note: u8 LIDAR::checkData(u8*, int)
+  u8 checkData(u8 *buffer, int packageStartIdx);
+     ^
+../src/LIDAR.h:21:5: note:   no known conversion for argument 1 from 'u8 (*)[1980] {aka unsigned char (*)[1980]}' to 'u8* {aka unsigned char*}'
+make: *** [src/LIDAR.o] Fejl 1
+10:32:47 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:45:55: error: no matching function for call to 'LIDAR::checkData(u8 (*)[1980], int)'
+   checkData(&RecvBuffer, (packageCount*PACKAGE_LENGTH));
+                                                       ^
+../src/LIDAR.cc:45:55: note: candidate is:
+In file included from ../src/LIDAR.cc:1:0:
+../src/LIDAR.h:21:5: note: u8 LIDAR::checkData(u8*, int)
+  u8 checkData(u8 *buffer, int packageStartIdx);
+     ^
+../src/LIDAR.h:21:5: note:   no known conversion for argument 1 from 'u8 (*)[1980] {aka unsigned char (*)[1980]}' to 'u8* {aka unsigned char*}'
+make: *** [src/LIDAR.o] Fejl 1
+10:33:32 **** Auto Build of configuration Debug for project MoveTest ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building target: MoveTest.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MoveTest.elf"  ./src/LIDAR.o ./src/WaitForStart.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: MoveTest.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MoveTest.elf  |tee "MoveTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122072	   2372	  25208	 149652	  24894	MoveTest.elf
+Finished building: MoveTest.elf.size
+ 

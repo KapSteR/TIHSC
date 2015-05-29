@@ -1,4 +1,4 @@
-14:52:31 **** Auto Build of configuration Release for project MyFirstFSBL ****
+09:03:08 **** Auto Build of configuration Release for project MyFirstFSBL ****
 make all 
 Building file: ../src/fsbl_hooks.c
 Invoking: ARM gcc compiler
@@ -74,5 +74,5 @@ arm-xilinx-eabi-size MyFirstFSBL.elf  |tee "MyFirstFSBL.elf.size"
 Finished building: MyFirstFSBL.elf.size
  
 
-14:52:35 Build Finished (took 4s.21ms)
+09:03:12 Build Finished (took 3s.599ms)
 

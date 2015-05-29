@@ -1,0 +1,58 @@
+#include "LIDAR.h"
+
+LIDAR::LIDAR(){
+	int Status;
+
+	//Init
+	Status = XUartLite_Initialize(&UartLite, XPAR_UARTLITE_0_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("XST_FAILURE");
+	}
+	//Run self test
+	Status = XUartLite_SelfTest(&UartLite);
+	if (Status != XST_SUCCESS) {
+		xil_printf("XST_FAILURE");
+	}
+	memset(dataArray,0,sizeof(dataArray));
+}
+
+void LIDAR::senseData(void){
+	u8 temp;
+	int hold = 1;
+	unsigned int ReceivedCount = 0;
+	u8 RecvBuffer[TEST_BUFFER_SIZE];
+
+	while (1) {
+		while ((temp != 0xFA) && (hold == 1)){
+			XUartLite_Recv(&UartLite,&temp,1);
+		}
+		if (hold == 1){
+			RecvBuffer[0] = temp;
+			ReceivedCount++;
+			hold = 0;
+		}
+
+		ReceivedCount += XUartLite_Recv(&UartLite,
+				RecvBuffer + ReceivedCount,
+				TEST_BUFFER_SIZE - ReceivedCount);
+		if (ReceivedCount == TEST_BUFFER_SIZE) {
+			ReceivedCount = 0;
+			break;
+		}
+	}
+}
+
+int checkData(u8 *buffer, int packageStartIdx, int dataStartIdx){
+
+	u32 chk32, checksum;
+
+	checksum = (buffer[packageStartIdx+NUM_PACKAGES-1] << 8) + buffer[packageStartIdx+NUM_PACKAGES-2];
+
+
+
+
+
+	return 1;
+};
+
+

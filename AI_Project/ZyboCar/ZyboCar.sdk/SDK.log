@@ -478,3 +478,19 @@ java.lang.IllegalStateException: Cannot connect to processor before Hardware Pla
 14:51:28 INFO  : Updating hardware inferred compiler options for MyFirstFSBL.
 14:51:28 INFO  : Clearing existing target manager status.
 14:51:47 INFO  : No changes in MSS file content so not generating sources.
+15:14:27 ERROR : Unexpected error while fetching XMD's response: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.read(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess$CommandResultsReader.run(XMDJSONProcess.java:332)
+	at java.lang.Thread.run(Unknown Source)
+15:14:27 ERROR : Zero sized response read from XMD. This indicates a communication error or a programming error.
+08:32:05 INFO  : Processing command line option -hwspec C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper.hdf.
+08:32:07 INFO  : Checking for hwspec changes in the project ZyboCarDesign_wrapper_hw_platform_0.
+08:32:07 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
