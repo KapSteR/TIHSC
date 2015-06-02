@@ -25,6 +25,6 @@
 const int GOAL_X  = 8;
 const int GOAL_Y  = 10;
 const int GOAL_ORIENTATION = 0;
-const int NUMBEROFPARTICLES = 10;
+const int NUMBEROFPARTICLES = 200;
 
 #endif /* MAIN_H_ */

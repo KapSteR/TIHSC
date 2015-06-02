@@ -2176,3 +2176,1595 @@ make: Ingenting at gøre for 'all'.
 18:43:44 **** Incremental Build of configuration Debug for project MemoryTest ****
 make all 
 make: Ingenting at gøre for 'all'.
+18:53:51 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:20:69: error: 'NUMBEROFPARTICLES' was not declared in this scope
+  ParticleFilter* particleFilter = new ParticleFilter(pathMaker->map,NUMBEROFPARTICLES);
+                                                                     ^
+make: *** [src/main.o] Fejl 1
+18:53:54 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 574764	   2624	 178864	 756252	  b8a1c	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+18:54:05 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+18:54:06 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+18:54:06 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+18:54:22 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+18:54:23 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+18:54:23 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+18:56:00 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 574764	   2624	 178864	 756252	  b8a1c	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+18:56:02 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+18:56:02 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+18:56:03 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:07:57 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:07:57 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:07:58 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:08:24 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:08:25 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:08:25 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:09:15 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 574764	   2624	 178864	 756252	  b8a1c	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+19:09:17 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:09:18 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:09:19 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:12:13 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:12:13 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:12:14 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:17:22 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/ParticleFilter.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ParticleFilter.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ParticleFilter.d" -MT"src/ParticleFilter.d" -o "src/ParticleFilter.o" "../src/ParticleFilter.cc"
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::printParticles()':
+../src/ParticleFilter.cc:7:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i = 0; i<particles.size();i++){
+                                     ^
+../src/ParticleFilter.cc: In constructor 'ParticleFilter::ParticleFilter(std::vector<std::vector<int> >, int)':
+../src/ParticleFilter.cc:19:8: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+  float r;
+        ^
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::updateWeigths(int*, std::vector<std::vector<int> >)':
+../src/ParticleFilter.cc:54:41: error: expected ';' before 'dataArray'
+     std::cout <<  dataArray[0] << " - " dataArray[44] << " - " dataArray[90] << " - " dataArray[136] << " - " dataArray[180] << " - " dataArray[224] << " - " dataArray[270] << " - " dataArray[316] << std::endl;
+                                         ^
+../src/ParticleFilter.cc:58:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<particles.size();i++){
+                                  ^
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::resample()':
+../src/ParticleFilter.cc:84:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < particles.size(); i++){
+                                    ^
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::getNewPosition(Position&)':
+../src/ParticleFilter.cc:101:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < particles.size(); i++){
+                                    ^
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::moveParticles(MoveBlock&)':
+../src/ParticleFilter.cc:115:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < particles.size(); i++){
+                                    ^
+make: *** [src/ParticleFilter.o] Fejl 1
+19:17:56 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/ParticleFilter.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ParticleFilter.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ParticleFilter.d" -MT"src/ParticleFilter.d" -o "src/ParticleFilter.o" "../src/ParticleFilter.cc"
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::printParticles()':
+../src/ParticleFilter.cc:7:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i = 0; i<particles.size();i++){
+                                     ^
+../src/ParticleFilter.cc: In constructor 'ParticleFilter::ParticleFilter(std::vector<std::vector<int> >, int)':
+../src/ParticleFilter.cc:19:8: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+  float r;
+        ^
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::updateWeigths(int*, std::vector<std::vector<int> >)':
+../src/ParticleFilter.cc:58:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<particles.size();i++){
+                                  ^
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::resample()':
+../src/ParticleFilter.cc:84:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < particles.size(); i++){
+                                    ^
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::getNewPosition(Position&)':
+../src/ParticleFilter.cc:101:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < particles.size(); i++){
+                                    ^
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::moveParticles(MoveBlock&)':
+../src/ParticleFilter.cc:115:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < particles.size(); i++){
+                                    ^
+Finished building: ../src/ParticleFilter.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575156	   2624	 178864	 756644	  b8ba4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+19:18:02 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:18:02 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:18:03 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:20:45 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:20:45 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:20:46 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:20:58 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:20:58 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:20:59 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:23:44 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:23:44 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:23:45 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:30:57 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:30:57 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:30:58 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:35:37 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:35:37 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:35:38 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:37:56 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575156	   2624	 178864	 756644	  b8ba4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+19:40:43 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575092	   2624	 178864	 756580	  b8b64	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+19:41:04 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:41:05 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:41:05 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:41:12 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:41:12 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:41:13 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:45:24 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:43:44: error: expected identifier before numeric constant
+  while (RecvBuffer[startIndex] != 0xFA) && 0xFF == checkData(RecvBuffer, startIndex) {
+                                            ^
+../src/LIDAR.cc:43:44: error: expected ';' before numeric constant
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+make: *** [src/LIDAR.o] Fejl 1
+19:45:36 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:43:85: error: expected ')' before '{' token
+  while (RecvBuffer[startIndex] != 0xFA && 0xFF == checkData(RecvBuffer, startIndex) {
+                                                                                     ^
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+make: *** [src/LIDAR.o] Fejl 1
+19:45:48 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575156	   2624	 178864	 756644	  b8ba4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+19:46:07 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:46:08 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:46:08 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:48:12 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:48:12 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:48:13 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:54:30 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:54:31 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:54:31 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:59:46 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575156	   2624	 178864	 756644	  b8ba4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+19:59:54 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:59:55 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+19:59:55 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+20:00:44 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575156	   2624	 178864	 756644	  b8ba4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+20:03:49 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575156	   2624	 178864	 756644	  b8ba4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+20:03:54 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+20:03:54 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+20:03:55 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+20:07:16 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+20:07:17 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+20:07:17 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+20:09:46 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+20:09:47 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+20:09:47 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Ingenting at gøre for 'all'.
+08:34:24 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+08:34:27 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+08:35:27 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+08:35:28 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+08:39:34 **** Incremental Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartlite_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling motorctrl_top"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartlite_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+'Finished building libraries'
+08:40:13 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building file: ../src/RobotFrame.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/RobotFrame.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/RobotFrame.d" -MT"src/RobotFrame.d" -o "src/RobotFrame.o" "../src/RobotFrame.cc"
+Finished building: ../src/RobotFrame.cc
+ 
+Building file: ../src/WaitForStart.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/WaitForStart.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/WaitForStart.d" -MT"src/WaitForStart.d" -o "src/WaitForStart.o" "../src/WaitForStart.cpp"
+Finished building: ../src/WaitForStart.cpp
+ 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building file: ../src/move.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/move.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/move.d" -MT"src/move.d" -o "src/move.o" "../src/move.cpp"
+Finished building: ../src/move.cpp
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575156	   2624	 178864	 756644	  b8ba4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+08:40:21 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+../src/md5.c: In function 'MD5Final':
+../src/md5.c:445:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  ( (u32 *)context->intermediate )[ 14 ] = context->bits[ 0 ];
+  ^
+../src/md5.c:446:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  ( (u32 *)context->intermediate )[ 15 ] = context->bits[ 1 ];
+  ^
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c"
+Finished building: C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/rsa.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: MyFirstFSBL.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MyFirstFSBL\src" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MyFirstFSBL.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: MyFirstFSBL.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MyFirstFSBL.elf  |tee "MyFirstFSBL.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49256	   9728	  71812	 130796	  1feec	MyFirstFSBL.elf
+Finished building: MyFirstFSBL.elf.size
+ 
+08:42:46 **** Incremental Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartlite_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling motorctrl_top"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartlite_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+'Finished building libraries'
+08:43:24 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building file: ../src/RobotFrame.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/RobotFrame.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/RobotFrame.d" -MT"src/RobotFrame.d" -o "src/RobotFrame.o" "../src/RobotFrame.cc"
+Finished building: ../src/RobotFrame.cc
+ 
+Building file: ../src/WaitForStart.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/WaitForStart.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/WaitForStart.d" -MT"src/WaitForStart.d" -o "src/WaitForStart.o" "../src/WaitForStart.cpp"
+Finished building: ../src/WaitForStart.cpp
+ 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building file: ../src/move.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/move.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/move.d" -MT"src/move.d" -o "src/move.o" "../src/move.cpp"
+Finished building: ../src/move.cpp
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575156	   2624	 178864	 756644	  b8ba4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+08:43:28 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+../src/md5.c: In function 'MD5Final':
+../src/md5.c:445:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  ( (u32 *)context->intermediate )[ 14 ] = context->bits[ 0 ];
+  ^
+../src/md5.c:446:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  ( (u32 *)context->intermediate )[ 15 ] = context->bits[ 1 ];
+  ^
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c"
+Finished building: C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/rsa.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: MyFirstFSBL.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MyFirstFSBL\src" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MyFirstFSBL.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: MyFirstFSBL.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MyFirstFSBL.elf  |tee "MyFirstFSBL.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49256	   9728	  71812	 130796	  1feec	MyFirstFSBL.elf
+Finished building: MyFirstFSBL.elf.size
+ 
+08:47:09 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575156	   2624	 178864	 756644	  b8ba4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+08:47:24 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+08:47:24 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:01:55 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575156	   2624	 178864	 756644	  b8ba4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:02:08 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+../src/LIDAR.cc: At global scope:
+../src/LIDAR.cc:54:52: error: declaration of 'void LIDAR::getData(u8*, int)' outside of class is not definition [-fpermissive]
+ void LIDAR::getData(u8* buffer, int packageStartIdx);
+                                                    ^
+make: *** [src/LIDAR.o] Fejl 1
+09:02:14 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575220	   2624	 178864	 756708	  b8be4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:05:17 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575476	   2624	 178864	 756964	  b8ce4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:05:48 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575476	   2624	 178864	 756964	  b8ce4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:06:26 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575476	   2624	 178864	 756964	  b8ce4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:09:14 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+../src/LIDAR.cc: In member function 'void LIDAR::getData(u8*, int)':
+../src/LIDAR.cc:67:3: error: expected ';' before 'while'
+   while(1) {
+   ^
+../src/LIDAR.cc:157:1: error: expected '}' at end of input
+ ;
+ ^
+../src/LIDAR.cc:60:6: warning: unused variable 'dataOffset' [-Wunused-variable]
+  int dataOffset;
+      ^
+../src/LIDAR.cc:157:1: error: expected '}' at end of input
+ ;
+ ^
+make: *** [src/LIDAR.o] Fejl 1
+09:09:56 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575604	   2624	 178864	 757092	  b8d64	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:10:06 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575476	   2624	 178864	 756964	  b8ce4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:10:24 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575476	   2624	 178864	 756964	  b8ce4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:11:13 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575476	   2624	 178864	 756964	  b8ce4	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:12:26 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:37:4: error: expected primary-expression before '}' token
+    }
+    ^
+../src/main.cc:37:4: error: expected ';' before '}' token
+make: *** [src/main.o] Fejl 1
+09:13:02 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575604	   2624	 178864	 757092	  b8d64	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:13:41 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575676	   2624	 178864	 757164	  b8dac	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:14:13 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:14:14 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:19:50 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575676	   2624	 178864	 757164	  b8dac	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:21:15 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:21:16 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:31:27 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:31:28 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:32:50 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575676	   2624	 178864	 757164	  b8dac	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:32:52 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:32:53 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:36:12 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+../src/LIDAR.cc: In member function 'void LIDAR::getData(u8*, int)':
+../src/LIDAR.cc:77:3: error: 'cout' is not a member of 'std'
+   std::cout << "Angle: " << i << " Data1 " << buffer[dataOffset+1] << " Data 0 " << buffer[dataOffset] << std::endl;
+   ^
+../src/LIDAR.cc:77:107: error: 'endl' is not a member of 'std'
+   std::cout << "Angle: " << i << " Data1 " << buffer[dataOffset+1] << " Data 0 " << buffer[dataOffset] << std::endl;
+                                                                                                           ^
+make: *** [src/LIDAR.o] Fejl 1
+09:36:49 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 576056	   2628	 178856	 757540	  b8f24	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:37:11 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575856	   2628	 178856	 757340	  b8e5c	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:37:22 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575856	   2628	 178856	 757340	  b8e5c	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:37:24 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:37:25 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:38:33 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575920	   2628	 178856	 757404	  b8e9c	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:38:41 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:38:41 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:43:57 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575800	   2628	 178856	 757284	  b8e24	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:44:06 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:44:06 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:46:57 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575800	   2628	 178856	 757284	  b8e24	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:47:06 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:47:06 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:49:35 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575676	   2628	 178864	 757168	  b8db0	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:49:45 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575812	   2628	 178864	 757304	  b8e38	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+09:49:47 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+09:49:47 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.

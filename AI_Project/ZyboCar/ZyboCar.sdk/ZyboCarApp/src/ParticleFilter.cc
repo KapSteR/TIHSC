@@ -51,6 +51,9 @@ ParticleFilter::ParticleFilter(intMatrix map, int numberOfParticles){
 
 void ParticleFilter::updateWeigths(int* dataArray, intMatrix map){
     
+    std::cout <<  dataArray[0] << " - " << dataArray[44] << " - "  << dataArray[90] << " - " << dataArray[136] << " - "<< dataArray[180] << " - " << dataArray[224] << " - " << dataArray[270] << " - " << dataArray[316] << std::endl;
+
+
     maxWeight = 0;
 	for(int i = 0; i<particles.size();i++){
 

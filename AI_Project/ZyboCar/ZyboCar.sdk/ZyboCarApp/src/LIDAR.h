@@ -4,9 +4,10 @@
 #include "xparameters.h"
 #include "xstatus.h"
 #include "xgpio.h"
+#include <iostream>
 #define PACKAGE_LENGTH 22
 #define NUM_PACKAGES 90
-#define TEST_BUFFER_SIZE PACKAGE_LENGTH*NUM_PACKAGES
+#define TEST_BUFFER_SIZE PACKAGE_LENGTH*NUM_PACKAGES+PACKAGE_LENGTH
 #define INDEX_OFFSET 180
 
 class LIDAR{
@@ -19,6 +20,7 @@ public:
 private:
 	XUartLite UartLite;
 	u8 checkData(u8 *buffer, int packageStartIdx);
+	void getData(u8* buffer, int packageStartIdx);
 };
 
 
