@@ -28,7 +28,7 @@ void PrintFloatMatrix(floatMatrix& myMat);
 void PrintRobotInMap(Position &robotPosition, intMatrix& myMap);
 
 const int MAPHEIGHT = 12;
-const int MAPWIDTH = 10;
+const int MAPWIDTH = 19;
 
 #define M_E		2.7182818284590452354
 #define M_LOG2E		1.4426950408889634074

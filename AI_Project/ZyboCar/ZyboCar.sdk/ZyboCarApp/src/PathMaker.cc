@@ -194,13 +194,32 @@ void PathMaker::loadMap(){
         }
     }
     
+//    for(int y = MAPHEIGHT-1; y >= MAPHEIGHT-7; y--)
+//    {
+//    	for (int x = 1; x <=3 ; x++) {
+//
+//    		map[y][x] = 1;
+//    	}
+//    }
+
     for(int y = MAPHEIGHT-1; y >= MAPHEIGHT-7; y--)
     {
-    	for (int x = 1; x <=3 ; x++) {
-
-    		map[y][x] = 1;
-    	}
+        map[y][5] = 1;
+        map[y][6] = 1;
+        map[y][7] = 1;
     }
+
+//    for(int x = MAPWIDTH-1; x >= MAPWIDTH-8; x--)
+    for(int x = MAPWIDTH-1; x >= MAPWIDTH-5; x--)
+    {
+//        map[4][x] = 1;
+        map[5][x] = 1;
+        map[6][x] = 1;
+    }
+
+
+
+
 }
 
 void PathMaker::makeHeuristic()

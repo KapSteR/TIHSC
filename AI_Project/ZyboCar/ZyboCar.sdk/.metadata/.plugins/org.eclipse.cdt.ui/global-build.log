@@ -3768,3 +3768,409 @@ make: Ingenting at gøre for 'all'.
 09:49:47 **** Incremental Build of configuration Release for project MyFirstFSBL ****
 make all 
 make: Ingenting at gøre for 'all'.
+09:54:19 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575676	   2628	 178864	 757168	  b8db0	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+12:00:27 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+12:01:35 **** Clean-only build of configuration Debug for project ZyboCarApp ****
+make clean 
+rm -rf  ./src/LIDAR.d ./src/Particle.d ./src/ParticleFilter.d ./src/PathMaker.d ./src/RobotFrame.d ./src/main.d ./src/main0.d  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o  ./src/Utility.d ./src/WaitForStart.d ./src/move.d  ZyboCarApp.elf.size  ZyboCarApp.elf
+ 
+12:01:35 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+../src/LIDAR.cc: In member function 'void LIDAR::senseData()':
+../src/LIDAR.cc:20:5: warning: unused variable 'temp' [-Wunused-variable]
+  u8 temp;
+     ^
+../src/LIDAR.cc:21:6: warning: unused variable 'hold' [-Wunused-variable]
+  int hold = 1;
+      ^
+Finished building: ../src/LIDAR.cc
+ 
+Building file: ../src/Particle.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Particle.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/Particle.d" -MT"src/Particle.d" -o "src/Particle.o" "../src/Particle.cc"
+Finished building: ../src/Particle.cc
+ 
+Building file: ../src/ParticleFilter.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ParticleFilter.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ParticleFilter.d" -MT"src/ParticleFilter.d" -o "src/ParticleFilter.o" "../src/ParticleFilter.cc"
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::printParticles()':
+../src/ParticleFilter.cc:7:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i = 0; i<particles.size();i++){
+                                     ^
+../src/ParticleFilter.cc: In constructor 'ParticleFilter::ParticleFilter(std::vector<std::vector<int> >, int)':
+../src/ParticleFilter.cc:19:8: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+  float r;
+        ^
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::updateWeigths(int*, std::vector<std::vector<int> >)':
+../src/ParticleFilter.cc:58:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<particles.size();i++){
+                                  ^
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::resample()':
+../src/ParticleFilter.cc:84:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < particles.size(); i++){
+                                    ^
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::getNewPosition(Position&)':
+../src/ParticleFilter.cc:101:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < particles.size(); i++){
+                                    ^
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::moveParticles(MoveBlock&)':
+../src/ParticleFilter.cc:115:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < particles.size(); i++){
+                                    ^
+Finished building: ../src/ParticleFilter.cc
+ 
+Building file: ../src/PathMaker.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PathMaker.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/PathMaker.d" -MT"src/PathMaker.d" -o "src/PathMaker.o" "../src/PathMaker.cc"
+../src/PathMaker.cc: In member function 'void PathMaker::performAStar(Position&)':
+../src/PathMaker.cc:95:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < possibleMoves.size(); i++) {
+                                                        ^
+../src/PathMaker.cc:148:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int y=0; y<path.size();y++){
+                               ^
+Finished building: ../src/PathMaker.cc
+ 
+Building file: ../src/RobotFrame.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/RobotFrame.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/RobotFrame.d" -MT"src/RobotFrame.d" -o "src/RobotFrame.o" "../src/RobotFrame.cc"
+Finished building: ../src/RobotFrame.cc
+ 
+Building file: ../src/Utility.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Utility.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/Utility.d" -MT"src/Utility.d" -o "src/Utility.o" "../src/Utility.cpp"
+Finished building: ../src/Utility.cpp
+ 
+Building file: ../src/WaitForStart.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/WaitForStart.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/WaitForStart.d" -MT"src/WaitForStart.d" -o "src/WaitForStart.o" "../src/WaitForStart.cpp"
+Finished building: ../src/WaitForStart.cpp
+ 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building file: ../src/main0.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main0.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main0.d" -MT"src/main0.d" -o "src/main0.o" "../src/main0.cc"
+Finished building: ../src/main0.cc
+ 
+Building file: ../src/move.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/move.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/move.d" -MT"src/move.d" -o "src/move.o" "../src/move.cpp"
+Finished building: ../src/move.cpp
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575676	   2628	 178864	 757168	  b8db0	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+12:09:15 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+12:09:16 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+12:09:48 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575676	   2628	 178864	 757168	  b8db0	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+12:09:51 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+12:09:51 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+12:14:32 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/PathMaker.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PathMaker.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/PathMaker.d" -MT"src/PathMaker.d" -o "src/PathMaker.o" "../src/PathMaker.cc"
+../src/PathMaker.cc: In member function 'void PathMaker::performAStar(Position&)':
+../src/PathMaker.cc:95:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < possibleMoves.size(); i++) {
+                                                        ^
+../src/PathMaker.cc:148:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int y=0; y<path.size();y++){
+                               ^
+Finished building: ../src/PathMaker.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575676	   2628	 178864	 757168	  b8db0	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+12:18:29 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/PathMaker.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PathMaker.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/PathMaker.d" -MT"src/PathMaker.d" -o "src/PathMaker.o" "../src/PathMaker.cc"
+../src/PathMaker.cc: In member function 'void PathMaker::performAStar(Position&)':
+../src/PathMaker.cc:95:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < possibleMoves.size(); i++) {
+                                                        ^
+../src/PathMaker.cc:148:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int y=0; y<path.size();y++){
+                               ^
+Finished building: ../src/PathMaker.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575868	   2628	 178864	 757360	  b8e70	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+12:20:02 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/PathMaker.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PathMaker.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/PathMaker.d" -MT"src/PathMaker.d" -o "src/PathMaker.o" "../src/PathMaker.cc"
+../src/PathMaker.cc: In member function 'void PathMaker::performAStar(Position&)':
+../src/PathMaker.cc:95:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < possibleMoves.size(); i++) {
+                                                        ^
+../src/PathMaker.cc:148:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int y=0; y<path.size();y++){
+                               ^
+Finished building: ../src/PathMaker.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575868	   2628	 178864	 757360	  b8e70	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+12:20:19 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/PathMaker.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PathMaker.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/PathMaker.d" -MT"src/PathMaker.d" -o "src/PathMaker.o" "../src/PathMaker.cc"
+../src/PathMaker.cc: In member function 'void PathMaker::performAStar(Position&)':
+../src/PathMaker.cc:95:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < possibleMoves.size(); i++) {
+                                                        ^
+../src/PathMaker.cc:148:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int y=0; y<path.size();y++){
+                               ^
+Finished building: ../src/PathMaker.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575868	   2628	 178864	 757360	  b8e70	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+12:20:37 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/ParticleFilter.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ParticleFilter.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ParticleFilter.d" -MT"src/ParticleFilter.d" -o "src/ParticleFilter.o" "../src/ParticleFilter.cc"
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::printParticles()':
+../src/ParticleFilter.cc:7:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int i = 0; i<particles.size();i++){
+                                     ^
+../src/ParticleFilter.cc: In constructor 'ParticleFilter::ParticleFilter(std::vector<std::vector<int> >, int)':
+../src/ParticleFilter.cc:19:8: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+  float r;
+        ^
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::updateWeigths(int*, std::vector<std::vector<int> >)':
+../src/ParticleFilter.cc:58:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<particles.size();i++){
+                                  ^
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::resample()':
+../src/ParticleFilter.cc:84:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < particles.size(); i++){
+                                    ^
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::getNewPosition(Position&)':
+../src/ParticleFilter.cc:101:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < particles.size(); i++){
+                                    ^
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::moveParticles(MoveBlock&)':
+../src/ParticleFilter.cc:115:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < particles.size(); i++){
+                                    ^
+Finished building: ../src/ParticleFilter.cc
+ 
+Building file: ../src/PathMaker.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PathMaker.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/PathMaker.d" -MT"src/PathMaker.d" -o "src/PathMaker.o" "../src/PathMaker.cc"
+../src/PathMaker.cc: In member function 'void PathMaker::performAStar(Position&)':
+../src/PathMaker.cc:95:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < possibleMoves.size(); i++) {
+                                                        ^
+../src/PathMaker.cc:148:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int y=0; y<path.size();y++){
+                               ^
+Finished building: ../src/PathMaker.cc
+ 
+Building file: ../src/RobotFrame.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/RobotFrame.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/RobotFrame.d" -MT"src/RobotFrame.d" -o "src/RobotFrame.o" "../src/RobotFrame.cc"
+Finished building: ../src/RobotFrame.cc
+ 
+Building file: ../src/Utility.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Utility.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/Utility.d" -MT"src/Utility.d" -o "src/Utility.o" "../src/Utility.cpp"
+Finished building: ../src/Utility.cpp
+ 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building file: ../src/move.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/move.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/move.d" -MT"src/move.d" -o "src/move.o" "../src/move.cpp"
+Finished building: ../src/move.cpp
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575868	   2628	 178864	 757360	  b8e70	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+12:20:44 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+12:20:45 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+12:23:55 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+12:23:55 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+12:24:00 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/PathMaker.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PathMaker.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/PathMaker.d" -MT"src/PathMaker.d" -o "src/PathMaker.o" "../src/PathMaker.cc"
+../src/PathMaker.cc: In member function 'void PathMaker::performAStar(Position&)':
+../src/PathMaker.cc:95:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < possibleMoves.size(); i++) {
+                                                        ^
+../src/PathMaker.cc:148:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int y=0; y<path.size();y++){
+                               ^
+Finished building: ../src/PathMaker.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575868	   2628	 178864	 757360	  b8e70	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+12:24:09 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+12:24:10 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+12:26:12 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+12:26:19 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+12:26:19 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+12:27:21 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 575868	   2628	 178864	 757360	  b8e70	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+12:27:52 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+12:30:57 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.

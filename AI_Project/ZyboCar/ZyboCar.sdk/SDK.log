@@ -835,3 +835,55 @@ com.xilinx.sdk.targetmanager.TMException: Error downloading program to target:
 09:44:15 INFO  : Processor reset is completed for ps7_cortexa9_0
 09:47:14 INFO  : Processor reset is completed for ps7_cortexa9_0
 09:49:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:00:25 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\BOOT.bin
+12:00:26 INFO  : Bootgen command execution is done.
+12:01:32 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\ZyboCarApp.mcs
+12:01:35 INFO  : Bootgen command execution is done.
+12:09:14 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+12:09:26 INFO  : ps7_init is completed.
+12:09:26 INFO  : ps7_post_config is completed.
+12:09:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:09:52 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+12:09:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:20:14 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+12:20:57 INFO  : ps7_init is completed.
+12:20:57 INFO  : ps7_post_config is completed.
+12:20:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:23:57 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+12:23:57 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:372)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:378)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:287)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+12:24:03 ERROR : FPGA Configuration failed.Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+12:24:08 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+12:24:18 INFO  : ps7_init is completed.
+12:24:19 INFO  : ps7_post_config is completed.
+12:24:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:26:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:27:49 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\ZyboCarApp.mcs -w on
+12:27:52 INFO  : Bootgen command execution is done.
+12:30:54 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\ZyboCarApp.mcs -w on
+12:30:57 INFO  : Bootgen command execution is done.
+12:45:55 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

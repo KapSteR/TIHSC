@@ -23,18 +23,18 @@ int main(void){
 	MoveBlock nextMove;
 
 	WaitForStart *WFS = new WaitForStart();
-	//WFS->wait(3);
+	WFS->wait(3);
 
 	while(1){
-		WFS->wait(1);
+//		WFS->wait(1);
 		//Checking if the robot have reached its goal
 		if (pathMaker->checkGoal(robotFrame->pos) != true){
 			//Getting full rotation measurement from LIDAR and saving data
 			lidar->senseData();
 
-			for (int i = 0; i<360; i++) {
-				std::cout << "Angle: " << i << " - " << lidar->dataArray[i] << std::endl;
-			}
+//			for (int i = 0; i<360; i++) {
+//				std::cout << "Angle: " << i << " - " << lidar->dataArray[i] << std::endl;
+//			}
 
 			//Updating the weights of the particles
 			particleFilter->updateWeigths(lidar->dataArray, pathMaker->map);
