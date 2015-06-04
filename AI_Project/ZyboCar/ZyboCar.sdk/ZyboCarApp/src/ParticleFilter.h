@@ -22,6 +22,7 @@ public:
 private:
 	float maxWeight;
     void printParticles();
+    int bestParticle();
 };
 
 #endif /* PARTICLEFILTER_H_ */

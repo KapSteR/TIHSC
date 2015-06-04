@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
- 575868	   2628	 178864	 757360	  b8e70	ZyboCarApp.elf
+ 575772	   2628	204815024	205393424	c3e0e10	ZyboCarApp.elf

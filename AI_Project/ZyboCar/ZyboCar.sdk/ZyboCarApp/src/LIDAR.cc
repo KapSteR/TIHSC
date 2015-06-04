@@ -17,8 +17,6 @@ LIDAR::LIDAR() {
 }
 
 void LIDAR::senseData(void) {
-	u8 temp;
-	int hold = 1;
 	unsigned int ReceivedCount = 0;
 	u8 RecvBuffer[TEST_BUFFER_SIZE];
 
@@ -62,7 +60,7 @@ void LIDAR::getData(u8* buffer, int packageStartIdx) {
 
 	for (i = 0; i < 4; ++i) {
 
-		angleIndex = (((buffer[packageStartIdx + 1] - 207) * 4) - 2 + i) % 360;
+		angleIndex = (((buffer[packageStartIdx + 1] - 207) * 4) - 2 + i+7) % 360;
 		while(1) {
 
 			if (angleIndex < 0) {

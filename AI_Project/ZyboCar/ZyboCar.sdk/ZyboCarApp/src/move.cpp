@@ -31,29 +31,68 @@ void MoveController::move(float poseAngle, int distance, float heading) {
 			p_h += M_TWOPI;
 		}
 
-		if (h_p >= p_h) {  // Left turn
+		if (h_p < p_h) {  // Left turn
 
 			turnSpeedLeft = 0;
-			turnSpeedRight = 512; // 50%
-			turnAngle = p_h;
+			turnSpeedRight = RIGHT_MOTOR_ON; // 50%
+			turnAngle = h_p;
 
 		} else { // Right turn
 
-			turnSpeedLeft = 512; // 50%
+			turnSpeedLeft = LEFT_MOTOR_ON; // 50%
 			turnSpeedRight = 0;
-			turnAngle = h_p;
+			turnAngle = p_h;
 		}
 
 		// Calc turn time
-		turnTime = int((turnAngle / TURNRATE50) * ONE_SECOND);
-//	xil_printf("Turntime: %d | TurnAngle: %f",turnTime,turnAngle);
-		// Start turn
-		XMotorctrl_SetPwmr(&motor, turnSpeedRight);
-		XMotorctrl_SetPwml(&motor, turnSpeedLeft);
-		XMotorctrl_SetDirection(&motor, 1);
-		// Set Timer	// Wait
 
-		ScuTimerWait(TIMER_DEVICE_ID, turnTime);
+		if ((turnAngle <= (M_PI_2 + 0.001))
+				&& (turnAngle >= (M_PI_2 - 0.001))) {
+
+			xil_printf("Move 90\r\n");
+			if (turnSpeedLeft == 0) { // Turn 90 deg left
+
+				// Start turn
+				XMotorctrl_SetPwmr(&motor, turnSpeedRight);
+				XMotorctrl_SetPwml(&motor, turnSpeedLeft);
+				XMotorctrl_SetDirection(&motor, 1);
+				// Set Timer	// Wait
+				ScuTimerWait(TIMER_DEVICE_ID, TURNTIME90_LEFT);
+
+			} else if (turnSpeedRight == 0) { // Turn 90 deg right
+
+				// Start turn
+				XMotorctrl_SetPwmr(&motor, turnSpeedRight);
+				XMotorctrl_SetPwml(&motor, turnSpeedLeft);
+				XMotorctrl_SetDirection(&motor, 1);
+				// Set Timer	// Wait
+				ScuTimerWait(TIMER_DEVICE_ID, TURNTIME90_RIGHT);
+			}
+
+		} else if ((turnAngle <= (M_PI + 0.001))
+				&& (turnAngle >= (M_PI - 0.001))) {
+
+			xil_printf("Move 180\r\n");
+
+			// Start turn
+			XMotorctrl_SetPwmr(&motor, RIGHT_MOTOR_ON);
+			XMotorctrl_SetPwml(&motor, 0);
+			XMotorctrl_SetDirection(&motor, 1);
+			// Set Timer	// Wait
+			ScuTimerWait(TIMER_DEVICE_ID, TURNTIME180);
+
+		} else {
+
+			turnTime = int((turnAngle / TURNRATE50) * ONE_SECOND);
+			//	xil_printf("Turntime: %d | TurnAngle: %f",turnTime,turnAngle);
+			// Start turn
+			XMotorctrl_SetPwmr(&motor, turnSpeedRight);
+			XMotorctrl_SetPwml(&motor, turnSpeedLeft);
+			XMotorctrl_SetDirection(&motor, 1);
+			// Set Timer	// Wait
+
+			ScuTimerWait(TIMER_DEVICE_ID, turnTime);
+		}
 
 		// Stop turn
 		XMotorctrl_SetPwmr(&motor, 0);
@@ -61,15 +100,16 @@ void MoveController::move(float poseAngle, int distance, float heading) {
 
 		// Wait 0.5 seconds
 		ScuTimerWait(TIMER_DEVICE_ID, 112500000);
-
 	}
 
 	// Move
 	// Calc move time
-	moveTime = int(((float)distance / MOVERATE50) * ONE_SECOND);
+	moveTime = distance/GRID_SIZE*MOVETIME100;
+	// moveTime = int(((float) distance / MOVERATE50) * ONE_SECOND);
+	xil_printf("MoveTime: %d",moveTime);
 	// Start move
-	XMotorctrl_SetPwmr(&motor, 512);
-	XMotorctrl_SetPwml(&motor, 512);
+	XMotorctrl_SetPwmr(&motor, RIGHT_MOTOR_ON);
+	XMotorctrl_SetPwml(&motor, LEFT_MOTOR_ON);	//512);
 	XMotorctrl_SetDirection(&motor, 1);
 	// Set timer	// wait
 
@@ -81,7 +121,6 @@ void MoveController::move(float poseAngle, int distance, float heading) {
 
 	// Return
 	return;
-
 }
 
 MoveController::MoveController() {

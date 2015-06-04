@@ -887,3 +887,202 @@ com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
 12:30:54 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\ZyboCarApp.mcs -w on
 12:30:57 INFO  : Bootgen command execution is done.
 12:45:55 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:49:01 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+13:24:15 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+13:24:46 INFO  : ps7_init is completed.
+13:24:46 INFO  : ps7_post_config is completed.
+13:24:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:26:30 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:26:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:37:29 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:37:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:24:42 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\ZyboCarApp.mcs -w on
+14:24:45 INFO  : Bootgen command execution is done.
+14:25:34 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\ZyboCarApp.mcs -w on
+14:25:36 INFO  : Bootgen command execution is done.
+15:02:03 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+15:02:23 INFO  : ps7_init is completed.
+15:02:23 INFO  : ps7_post_config is completed.
+15:02:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:03:26 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:03:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:04:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:06:08 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:06:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:07:11 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:07:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:10:18 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:10:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:11:27 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:11:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:13:14 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:13:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:22:43 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:22:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:28:58 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\ZyboCarApp.mcs -w on
+15:29:01 INFO  : Bootgen command execution is done.
+15:41:38 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\ZyboCarApp.mcs -w on
+15:41:41 INFO  : Bootgen command execution is done.
+16:09:47 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+16:09:54 INFO  : ps7_init is completed.
+16:09:54 INFO  : ps7_post_config is completed.
+16:09:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:09:58 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Failed to download ELF file
+
+
+    Cannot flush JTAG buffers
+    Error Address = 0x00135000, Size = 0x00000004
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:666)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:605)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:293)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+16:10:21 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+16:10:54 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:11:26 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+16:11:49 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+16:12:01 INFO  : ps7_init is completed.
+16:12:01 INFO  : ps7_post_config is completed.
+16:12:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:19:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:20:11 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:20:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:22:10 INFO  : Inferring section assignments and sizes from elf file: C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\Debug\ZyboCarApp.elf
+16:22:52 INFO  : Successfully generated C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\src\lscript.ld.
+16:22:52 INFO  : Applying linker script to all configurations of project ZyboCarApp.
+16:22:52 INFO  : Setting rebuild state to true for all configurations of project ZyboCarApp.
+16:23:24 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:23:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:25:55 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\ZyboCarApp.mcs -w on
+16:25:58 INFO  : Bootgen command execution is done.
+16:47:59 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\ZyboCarApp.mcs -w on
+16:48:01 INFO  : Bootgen command execution is done.
+13:35:42 INFO  : Inferring section assignments and sizes from elf file: C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\Debug\ZyboCarApp.elf
+13:36:18 INFO  : Inferring section assignments and sizes from elf file: C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\Debug\ZyboCarApp.elf
+13:37:05 INFO  : Successfully generated C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\src\lscript.ld.
+13:37:05 INFO  : Applying linker script to all configurations of project ZyboCarApp.
+13:37:05 INFO  : Setting rebuild state to true for all configurations of project ZyboCarApp.
+13:47:51 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+13:48:05 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Debug Operation Not Supported on the Target, Current Processor State is not "Stopped"
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1069)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:482)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:584)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:293)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+13:48:21 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Debug Operation Not Supported on the Target, Current Processor State is not "Stopped"
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1069)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:482)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:584)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:293)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+13:48:48 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:51:06 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+13:53:18 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+13:53:27 INFO  : ps7_init is completed.
+13:53:27 INFO  : ps7_post_config is completed.
+13:53:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:11:23 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:11:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:13:51 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:14:03 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:14:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:21:20 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:21:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:31:27 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:31:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:34:01 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:34:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:35:07 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:35:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:36:13 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:36:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:38:04 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+14:39:27 INFO  : ps7_init is completed.
+14:39:28 INFO  : ps7_post_config is completed.
+14:39:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:41:32 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:41:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:54:15 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:54:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:59:08 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:59:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:41:10 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+15:41:36 INFO  : ps7_init is completed.
+15:41:36 INFO  : ps7_post_config is completed.
+15:41:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:42:35 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:42:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:43:19 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:43:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:43:42 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:43:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:45:47 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:45:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:48:20 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:48:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:50:09 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:50:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:51:54 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:51:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:53:15 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:53:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:53:52 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:53:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:54:34 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:54:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:55:04 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:55:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:57:03 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:57:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:58:28 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:58:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:59:47 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:59:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:00:28 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:00:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:01:03 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:01:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:02:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:02:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:02:41 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:02:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:03:10 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:03:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:06:02 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:06:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:07:40 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:07:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:09:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:09:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:19:39 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:19:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:20:17 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:21:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:24:35 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:24:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:25:23 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:25:24 INFO  : Processor reset is completed for ps7_cortexa9_0

@@ -30,7 +30,7 @@ void RobotFrame::move(MoveBlock& MB){
 //        pos.x += 1;
 //    }
 	std::cout << "Moving!" << MB.angle << std::endl;
-	MC->move(pos.orientation,MB.distance*500, MB.angle);
+	MC->move(pos.orientation,MB.distance*GRID_SIZE, MB.angle);
 
 }
 

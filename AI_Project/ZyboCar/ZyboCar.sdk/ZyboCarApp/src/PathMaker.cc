@@ -74,7 +74,7 @@ void PathMaker::performAStar(Position &robotPosition){
         }
         else
         {
-            //Sort Open with smallest value in the back
+            //Sort Open with smallest f value in the back
             std::sort(open.begin(), open.end(), sortingFunction);
             
             //Get last element (the element with the smallest f, and delete it)
