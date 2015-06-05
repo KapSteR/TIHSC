@@ -4,6 +4,7 @@
 #include "math.h"
 #include "Position.h"
 #include "MoveBlock.h"
+#include <random>
 
 #define M_E		2.7182818284590452354
 #define M_LOG2E		1.4426950408889634074
@@ -28,6 +29,8 @@
 #define M_LOG2_E        _M_LN2
 #define M_INVLN2        1.4426950408889633870E0  /* 1 / log(2) */
 
+#define NUM_ANGLES 180
+
 
 
 #include "RangeArray.h"
@@ -38,13 +41,19 @@ public:
 	Position pos;
 	float w;
 
-	void move(MoveBlock& MB);
+	float cont_x;
+	float cont_y;
+	int cont_orientation;
+
+	void move(MoveBlock& MB,float* sinTable,float* cosTable);
 	float weightCalculation(int* dataArray);
+	void quantizePosition();
     
 private:
     int noise = 1000;
     int noiseSqr = noise*noise;
     float normalizer = -0.5*log(2*M_PI) - 0.5*log(noiseSqr);
+
 };
 
 #endif /* PARTICLE_H_ */

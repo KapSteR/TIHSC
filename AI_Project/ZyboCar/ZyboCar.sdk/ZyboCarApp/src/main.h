@@ -22,9 +22,11 @@
 
 
 //DEFINES
-const int GOAL_X  = 2;
-const int GOAL_Y  = 9;
+const int GOAL_X  = 4;
+const int GOAL_Y  = 27;
 const int GOAL_ORIENTATION = 0;
-const int NUMBEROFPARTICLES = 1000;
+const int NUMBEROFPARTICLES = 20000;
+
+
 
 #endif /* MAIN_H_ */

@@ -1,0 +1,60 @@
+//
+//  Utility.cpp
+//  ZyboCar
+//
+//  Created by Jacob Hansen on 29/05/15.
+//  Copyright (c) 2015 JHHCons. All rights reserved.
+//
+
+#include "Utility.h"
+
+void PrintIntMatrix(intMatrix& myMat)
+{
+    for (int y=0; y<MAPHEIGHT;y++){
+        
+        for (int x=0; x<MAPWIDTH;x++){
+            
+            std::cout << std::setfill('0') << std::setw(2)<< myMat[y][x] << " ";
+        }
+        
+        std::cout << std::endl;
+    }
+}
+
+void PrintFloatMatrix(floatMatrix& myMat)
+{
+    for (int y=0; y<MAPHEIGHT;y++){
+        
+        for (int x=0; x<MAPWIDTH;x++){
+            
+            std::cout << std::setfill('-') << std::setw(4)<< myMat[y][x] << " ";
+        }
+        
+        std::cout << std::endl;
+    }
+}
+
+void PrintRobotInMap(Position &robotPosition, intMatrix& myMap)
+{
+    for (int y=0; y<MAPHEIGHT;y++){
+        
+        for (int x=0; x<MAPWIDTH;x++){
+            
+            if(x == robotPosition.x && y == robotPosition.y)
+                std::cout << "**" << " ";
+            else
+                std::cout << std::setfill('0') << std::setw(2)<< myMap[y][x] << " ";
+        }
+        
+        std::cout << std::endl;
+    }
+}
+
+void CreateSinusodialTables()
+{
+	for(int i = 0; i<360; i++)
+	{
+		//sinTable[i] = sin(i*M_PI/180);
+		//cosTable[i] = cos(i*M_PI/180);
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ZyboCarApp/src/siusodialTables.h&apos; to &apos;sinusodialTables.h&apos;" description="Rename resource &apos;siusodialTables.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/siusodialTables.h" name="sinusodialTables.h" stamp="1433503076149" updateReferences="true"/>
+</session>

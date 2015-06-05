@@ -1,6 +1,6 @@
-16:25:23 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+14:13:54 **** Incremental Build of configuration Release for project MyFirstFSBL ****
 make all 
 make: Ingenting at gøre for 'all'.
 
-16:25:23 Build Finished (took 332ms)
+14:13:55 Build Finished (took 347ms)
 

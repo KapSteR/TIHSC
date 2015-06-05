@@ -3,7 +3,8 @@
 
 struct MoveBlock{
 	int distance;
-	float angle;
+	int angle;
+	int turnAngle;
 };
 
 #endif /* POSITION_H_ */

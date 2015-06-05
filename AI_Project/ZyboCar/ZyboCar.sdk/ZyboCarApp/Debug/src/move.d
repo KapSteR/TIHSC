@@ -13,7 +13,7 @@ src/move.o src/move.d: ../src/move.cpp ../src/move.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xmotorctrl_hw.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xscutimer.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xscutimer_hw.h \
- ../src/Utility.h ../src/Position.h
+ ../src/Utility.h ../src/Position.h ../src/MoveBlock.h
 
 ../src/move.h:
 
@@ -48,3 +48,5 @@ src/move.o src/move.d: ../src/move.cpp ../src/move.h \
 ../src/Utility.h:
 
 ../src/Position.h:
+
+../src/MoveBlock.h:

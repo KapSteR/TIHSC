@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete 2 resources" deleteContents="false" description="Delete 2 resources" element1="/ZyboCarApp/src/move_old.cpp" element2="/ZyboCarApp/src/moveOld.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1433405413736"/>&#x0A;<refactoring comment="Delete resource &apos;ZyboCarApp/src/sinusodialTables.h&apos;" deleteContents="false" description="Delete resource &apos;ZyboCarApp/src/sinusodialTables.h&apos;" element1="/ZyboCarApp/src/sinusodialTables.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1433503714865"/>
+</session>

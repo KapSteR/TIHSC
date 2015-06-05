@@ -8,7 +8,7 @@
 #include "WaitForStart.h"
 
 WaitForStart::WaitForStart() {
-	// TODO Auto-generated constructor stub
+
 	XGpio_Initialize(&btns,XPAR_AXI_GPIO_0_DEVICE_ID);
 	XGpio_SetDataDirection(&btns, 1, 0xffffffff);
 
@@ -67,6 +67,7 @@ int WaitForStart::ScuTimerWait(u16 DeviceId, u32 timeOut) {
 
 void WaitForStart::wait(int waitTime = 2) {
 	// Wait for start signal
+	xil_printf("Waiting for button press\n\r");
 
 	int btn;
 

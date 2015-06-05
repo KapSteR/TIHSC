@@ -12,6 +12,7 @@
 #include "xmotorctrl.h"
 #include "xscutimer.h"
 #include "Utility.h"
+#include "MoveBlock.h"
 
 #define TIMER_DEVICE_ID		XPAR_XSCUTIMER_0_DEVICE_ID
 
@@ -36,7 +37,7 @@ class MoveController {
 public:
 	int ScuTimerWait(u16 DeviceId, u32 timeOut);
 	MoveController();
-	void move(float poseAngle, int distance, float heading);
+	void move(int poseAngle, MoveBlock& MB);
 	~MoveController();
 
 

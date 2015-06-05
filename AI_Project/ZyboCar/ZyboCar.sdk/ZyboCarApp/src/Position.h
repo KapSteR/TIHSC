@@ -4,7 +4,8 @@
 struct Position{
 	int x;
 	int y;
-	float orientation;
+//	float orientation;
+	int orientation;
 };
 
 #endif /* POSITION_H_ */

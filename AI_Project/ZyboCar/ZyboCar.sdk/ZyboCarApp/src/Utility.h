@@ -27,8 +27,10 @@ void PrintFloatMatrix(floatMatrix& myMat);
 
 void PrintRobotInMap(Position &robotPosition, intMatrix& myMap);
 
-const int MAPHEIGHT = 12;
-const int MAPWIDTH = 19;
+void CreateSinusodialTables();
+
+const int MAPHEIGHT = 32;
+const int MAPWIDTH = 32;
 
 #define GRID_SIZE 100
 
@@ -54,5 +56,7 @@ const int MAPWIDTH = 19;
 #define M_IVLN10        0.43429448190325182765 /* 1 / log(10) */
 #define M_LOG2_E        _M_LN2
 #define M_INVLN2        1.4426950408889633870E0  /* 1 / log(2) */
+
+#define DEBUG_FLAG 1
 
 #endif /* defined(__ZyboCar__Utility__) */

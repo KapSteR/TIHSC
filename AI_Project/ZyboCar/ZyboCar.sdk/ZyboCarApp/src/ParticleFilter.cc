@@ -8,33 +8,30 @@ void ParticleFilter::printParticles() {
 		map[par.pos.y][par.pos.x] = par.w; //(par.pos.orientation*180)/M_PI;
 	};
 
-	PrintFloatMatrix(map);
+		PrintFloatMatrix(map);
 }
 
 ParticleFilter::ParticleFilter(intMatrix map, int numberOfParticles) {
 	Particle temp;
 	int map_x,map_y;
-	float r;
 //    srand ((unsigned int)time(NULL) );
 
-	map_x = (int)map[0].size();
-	map_y = (int)map.size();
-
-	temp.pos.x = 1;
-	temp.pos.y = 1;
-	temp.pos.orientation = 0;
-	temp.w = 1/((float)numberOfParticles+1);
-	particles.push_back(temp);
+	calcSinTables();
 
 	for(int i = 0; i<numberOfParticles;i++) {
-		temp.pos.x = rand() % (map_x - 2) +1;
-		temp.pos.y = rand() % (map_y - 2) +1;
+//		temp.pos.x = rand() % (map_x - 2) +1;
+//		temp.pos.y = rand() % (map_y - 2) +1;
+		temp.cont_x = (static_cast <float> (rand()) / static_cast <float> (RAND_MAX/MAPWIDTH))*GRID_SIZE;
+		temp.cont_y = (static_cast <float> (rand()) / static_cast <float> (RAND_MAX/MAPHEIGHT))*GRID_SIZE;
+
+//		temp.cont_orientation = (rand() % 180) * 2;
+		temp.cont_orientation = (rand()%4)*90; // Initialize particles in grid orientations
+		temp.w = 1/((float)numberOfParticles);
+
+		temp.quantizePosition();
 
 		if(map[temp.pos.y][temp.pos.x] == 0)
 		{
-			r = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
-			temp.pos.orientation = (rand() % 4) * M_PI_2;
-			temp.w = 1/((float)numberOfParticles+1);
 			particles.push_back(temp);
 		}
 		else
@@ -42,33 +39,41 @@ ParticleFilter::ParticleFilter(intMatrix map, int numberOfParticles) {
 			--i;
 		}
 
-		std::cout << "Particle " << i << "Created" << std::endl;
+		if ((i%100) == 0) {
+			std::cout << "Particle " << i << "Created" << std::endl;
+		}
 	};
 }
 
 void ParticleFilter::updateWeigths(int* dataArray, intMatrix map) {
 
-	std::cout << dataArray[0] << " - " << dataArray[44] << " - " << dataArray[90] << " - " << dataArray[136] << " - "<< dataArray[180] << " - " << dataArray[224] << " - " << dataArray[270] << " - " << dataArray[316] << std::endl;
+//	std::cout << dataArray[0] << " - " << dataArray[44] << " - " << dataArray[90] << " - " << dataArray[136] << " - "<< dataArray[180] << " - " << dataArray[224] << " - " << dataArray[270] << " - " << dataArray[316] << std::endl;
 
 	maxWeight = 0;
 	for(int i = 0; i<particles.size();i++) {
 
-		if(map[particles[i].pos.y][particles[i].pos.x] == 1 )
-		{
+//		if(map[particles[i].pos.y][particles[i].pos.x] == 1 )
+		if ((particles[i].pos.y < 0 || particles[i].pos.y >= MAPHEIGHT) || (particles[i].pos.x < 0 || particles[i].pos.x >= MAPWIDTH)) {
+			particles[i].w = 0;
+
+		} else if (map[particles[i].pos.y][particles[i].pos.x] == 1 ) {
+
 			particles[i].w = 0;
 		}
-		else
-		{
+
+		else {
+
 			particles[i].w = particles[i].weightCalculation(dataArray);
 
 			if (particles[i].w > maxWeight) {
 				maxWeight = particles[i].w;
 			}
 		}
-
 	}
 
-	printParticles();
+	if (DEBUG_FLAG) {
+		printParticles();
+	}
 }
 
 void ParticleFilter::resample(void) {
@@ -77,7 +82,7 @@ void ParticleFilter::resample(void) {
 	float beta = 0;
 	float r;
 
-	for (int i = 0; i < particles.size(); i++) {
+	for (int i = 0; i < NUMBEROFPARTICLES; i++) {
 		r = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
 		beta += r * 2 * maxWeight;
 		while (beta > particles[index].w) {
@@ -117,8 +122,8 @@ void ParticleFilter::getNewPosition(Position& robotPosition) {
 }
 
 void ParticleFilter::moveParticles(MoveBlock& MB) {
-	for (int i = 0; i < particles.size(); i++) {
-		particles[i].move(MB);
+	for (int i = 0; i < NUMBEROFPARTICLES; i++) {
+		particles[i].move(MB,sinTable,cosTable);
 	}
 }
 
@@ -127,7 +132,7 @@ int ParticleFilter::bestParticle() {
 	int bestIdx = 0;
 	float bestWeigth = 0;
 
-	for (int i = 0; i < particles.size(); i++) {
+	for (int i = 0; i < NUMBEROFPARTICLES; i++) {
 
 		if (particles[i].w > bestWeigth) {
 			bestIdx = i;
@@ -138,3 +143,10 @@ int ParticleFilter::bestParticle() {
 	return bestIdx;
 };
 
+void ParticleFilter::calcSinTables(){
+	for(int i = 0; i<360; i++)
+	{
+		sinTable[i] = sin(i*M_PI/180);
+		cosTable[i] = cos(i*M_PI/180);
+	}
+}
