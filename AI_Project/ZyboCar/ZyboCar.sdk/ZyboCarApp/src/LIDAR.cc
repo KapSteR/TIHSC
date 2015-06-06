@@ -1,4 +1,5 @@
 #include "LIDAR.h"
+#include "Utility.h"
 
 LIDAR::LIDAR() {
 	int Status;
@@ -60,16 +61,7 @@ void LIDAR::getData(u8* buffer, int packageStartIdx) {
 
 	for (i = 0; i < 4; ++i) {
 
-		angleIndex = (((buffer[packageStartIdx + 1] - 207) * 4) - 2 + i+7) % 360;
-		while(1) {
-
-			if (angleIndex < 0) {
-				angleIndex += 360;
-
-			} else {
-				break;
-			}
-		}
+		angleIndex = modu((((buffer[packageStartIdx + 1] - 207) * 4) - 2 + i+7), 360);
 
 		dataOffset = packageStartIdx + 4 + i * 4;
 //		xil_printf("Angle: %d - Data1: %X - Data0: %X\r\n", angleIndex, buffer[dataOffset+1], buffer[dataOffset]);
@@ -123,7 +115,7 @@ u8 LIDAR::checkData(u8 *buffer, int packageStartIdx) {
 
 		for (i = 0; i < 4; ++i) {
 
-			angleIndex = (((buffer[1] * 47) * 4) - 2 + i) % 360;
+			angleIndex = modu((((buffer[1] * 47) * 4) - 2 + i), 360);
 
 			dataOffset = 4 + i * 4;
 
@@ -142,7 +134,7 @@ u8 LIDAR::checkData(u8 *buffer, int packageStartIdx) {
 	} else {
 		error = 0xFF;
 		for (i = 0; i < 4; ++i) {
-			angleIndex = (((buffer[1] * 47) * 4) - 2 + i) % 360;
+			angleIndex = modu((((buffer[1] * 47) * 4) - 2 + i), 360);
 			dataArray[angleIndex] = -1;
 		}
 	}

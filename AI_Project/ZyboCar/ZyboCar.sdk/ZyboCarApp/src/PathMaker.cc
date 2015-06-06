@@ -7,6 +7,8 @@
 PathMaker::PathMaker(){
 	// possibleTurns = { M_PI_2, M_PI, M_PI+M_PI_2, 0.0 };
 	possibleTurns = {90, 180, 270, 00} ;
+
+	makePenalty();
 }
 
 bool sortingFunction(const std::vector<int>& a, const std::vector<int>& b)
@@ -40,7 +42,7 @@ void PathMaker::performAStar(Position &robotPosition){
 
 	intMatrix closed = intMatrix(MAPHEIGHT, std::vector<int>(MAPWIDTH,0));
 	intMatrix action = intMatrix(MAPHEIGHT, std::vector<int>(MAPWIDTH,0));
-	int x, y, g, h, f;
+	int x, y, g, p, h, f;
 
 	closed[robotPosition.y][robotPosition.x] = 1;
 
@@ -52,9 +54,10 @@ void PathMaker::performAStar(Position &robotPosition){
 
 	x = robotPosition.x;
 	y = robotPosition.y,
-			h = aStarHeuristic[y][x];
+	h = aStarHeuristic[y][x];
+	p = aStarPenalty[y][x];
 	g = 0;
-	f = g+h;
+	f = g+h+p;
 
 	intMatrix open;
 	open.clear();
@@ -105,7 +108,8 @@ void PathMaker::performAStar(Position &robotPosition){
 						{
 							int g2  = g + 1;
 							int h2 = aStarHeuristic[y2][x2];
-							int f2 = g2+h2;
+							int p2 = aStarPenalty[y2][x2];
+							int f2 = g2+h2+p2;
 
 							open.push_back({f2,g2,h2,x2,y2});
 							closed[y2][x2] = 1;
@@ -197,14 +201,14 @@ void PathMaker::loadMap(){
 
 	map = intMatrix(MAPHEIGHT, std::vector<int>(MAPWIDTH,0));
 
-	    for (int y=0; y<MAPHEIGHT;y++){
-	        for (int x=0; x<MAPWIDTH;x++){
-	            if(x <= 1 || y <= 1 || x >= MAPWIDTH-2 || y >= MAPHEIGHT-2)
-	            {
-	                map[y][x] = 1;
-	            }
-	        }
-	    }
+//	    for (int y=0; y<MAPHEIGHT;y++){
+//	        for (int x=0; x<MAPWIDTH;x++){
+//	            if(x <= 1 || y <= 1 || x >= MAPWIDTH-2 || y >= MAPHEIGHT-2)
+//	            {
+//	                map[y][x] = 1;
+//	            }
+//	        }
+//	    }
 
 	//    for(int y = MAPHEIGHT-1; y >= MAPHEIGHT-7; y--)
 	//    {
@@ -228,25 +232,25 @@ void PathMaker::loadMap(){
 	//    	}
 	//    }
 
-	for (int y = 9; y < 21; y++)
+	for (int y = 10; y < 19; y++)
 	{
-		for (int x = 0; x < 7; x++)
+		for (int x = 0; x < 8; x++)
 		{
 			map[y][x] = 1;
 		}
 	}
 
-	for (int y = 0; y < 12; y++)
+	for (int y = 0; y < 10; y++)
 	{
-		for (int x = MAPWIDTH-7; x < MAPWIDTH; x++)
+		for (int x = MAPWIDTH-5; x < MAPWIDTH; x++)
 		{
 			map[y][x] = 1;
 		}
 	}
 
-	for (int y = MAPHEIGHT-12; y < MAPHEIGHT; y++)
+	for (int y = MAPHEIGHT-10; y < MAPHEIGHT; y++)
 	{
-		for (int x = MAPWIDTH-22; x < MAPWIDTH; x++)
+		for (int x = MAPWIDTH-20; x < MAPWIDTH; x++)
 		{
 			map[y][x] = 1;
 		}
@@ -262,6 +266,45 @@ void PathMaker::makeHeuristic()
 
 			aStarHeuristic[y][x] = abs(y-goal.y)+abs(x-goal.x);
 
+		}
+	}
+}
+
+void PathMaker::makePenalty()
+{
+	aStarPenalty = intMatrix(MAPHEIGHT, std::vector<int>(MAPWIDTH,0));
+
+	for (int y=0; y<MAPHEIGHT;y++){
+		for (int x=0; x<MAPWIDTH;x++){
+			if(x <= 2 || y <= 2 || x >= MAPWIDTH-3 || y >= MAPHEIGHT-3)
+			{
+				aStarPenalty[y][x] = 10;
+			}
+		}
+	}
+
+
+	for (int y = 8; y < 22; y++)
+	{
+		for (int x = 0; x < 8; x++)
+		{
+			aStarPenalty[y][x] = 10;
+		}
+	}
+
+	for (int y = 0; y < 13; y++)
+	{
+		for (int x = MAPWIDTH-8; x < MAPWIDTH; x++)
+		{
+			aStarPenalty[y][x] = 10;
+		}
+	}
+
+	for (int y = MAPHEIGHT-13; y < MAPHEIGHT; y++)
+	{
+		for (int x = MAPWIDTH-23; x < MAPWIDTH; x++)
+		{
+			aStarPenalty[y][x] = 10;
 		}
 	}
 }

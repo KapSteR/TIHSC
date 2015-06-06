@@ -49,3 +49,13 @@ void PrintRobotInMap(Position &robotPosition, intMatrix& myMap)
         std::cout << std::endl;
     }
 }
+
+int modu(int x, int y){
+
+	int temp = x%y;
+	if(temp <0 ){
+		temp += y;
+	}
+
+	return temp;
+}

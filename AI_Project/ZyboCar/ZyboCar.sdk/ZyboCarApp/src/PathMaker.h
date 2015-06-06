@@ -18,6 +18,7 @@ public:
 	vector< vector<int> > map;
     vector< vector<int> > path;
     vector< vector<int> > aStarHeuristic;
+    vector< vector<int> > aStarPenalty;
     
 	Position goal;
 
@@ -29,6 +30,7 @@ public:
     
 private:
     void makeHeuristic();
+    void makePenalty();
 
     vector<float> possibleTurns;
 };

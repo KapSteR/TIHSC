@@ -27,7 +27,7 @@ int main(void) {
 	WFS->wait(3);
 
 	while (1) {
-		WFS->wait(1);
+//		WFS->wait(3);
 //		Checking if the robot have reached its goal
 		if (pathMaker->checkGoal(robotFrame->pos) != true) {
 			//Getting full rotation measurement from LIDAR and saving data

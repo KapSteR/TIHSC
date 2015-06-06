@@ -17,36 +17,36 @@ void Particle::move(MoveBlock& MB,float* sinTable,float* cosTable){
 //    pos.y -= directionY;
 
 
-	int steering = (MB.turnAngle + (int)(distribution(generator)))%360;
-
+	int steering = modu((MB.turnAngle + (int)(distribution(generator))),360);
+	int axelOrientation = modu((cont_orientation-90),360);
 	// Rotation offset
-	float tempX = 7.5*cosTable[cont_orientation];
-	float tempY = 7.5*sinTable[cont_orientation];
+	float tempX = 75*cosTable[axelOrientation];
+	float tempY = 75*sinTable[axelOrientation];
 
 	if (steering == 180) {
 
 		cont_x += 2 * tempX;
-		cont_y += 2 * tempY;
+		cont_y -= 2 * tempY;
 
 
 	} else if (steering < 180) {
 
 		cont_x += tempX * cosTable[steering]- tempY*sinTable[steering] - tempX;
-		cont_y += tempX * sinTable[steering]+ tempY*cosTable[steering] - tempY;
+		cont_y -= tempX * sinTable[steering]+ tempY*cosTable[steering] - tempY;
 
 	} else if (steering > 180) {
 
 		cont_x += -tempX * cosTable[steering] + tempY*sinTable[steering] + tempX;
-		cont_y += -tempX * sinTable[steering] - tempY*cosTable[steering] + tempY;
+		cont_y -= -tempX * sinTable[steering] - tempY*cosTable[steering] + tempY;
 	}
 
-	cont_orientation += steering;
+	cont_orientation = modu((cont_orientation + steering),360);
 
 	int distance_noise;
 
 	distance_noise = (int)(distribution(generator));
 
-	float directionX = cosTable[cont_orientation] * (MB.distance*GRID_SIZE + distance_noise); // TODO: Make sin/con table ?
+	float directionX = cosTable[cont_orientation] * (MB.distance*GRID_SIZE + distance_noise);
 	cont_x += directionX;
 
 	float directionY = sinTable[cont_orientation] * (MB.distance*GRID_SIZE + distance_noise);
@@ -75,7 +75,6 @@ void Particle::quantizePosition() {
 	} else {
 
 		pos.orientation = 0;
-
 	}
 }
 
@@ -96,7 +95,7 @@ float Particle::weightCalculation(int* dataArray){
     for(int i = 0; i < NUM_ANGLES; i++){
         if (measurement[i] != -1){
 //            angleIndex = (int)(float(pos.orientation / M_PI_4) + i) % 8;
-        	angleIndex = ((pos.orientation/2)+i)%180;
+        	angleIndex = modu(((pos.orientation/2)+i),180);
             
             distDif = RangeArray[pos.y][pos.x][angleIndex]-measurement[i];
             prob += (normalizer - 0.5*(pow(distDif,2))/(noiseSqr));

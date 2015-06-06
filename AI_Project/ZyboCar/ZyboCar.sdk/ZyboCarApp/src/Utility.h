@@ -29,6 +29,8 @@ void PrintRobotInMap(Position &robotPosition, intMatrix& myMap);
 
 void CreateSinusodialTables();
 
+int modu(int x, int y);
+
 const int MAPHEIGHT = 32;
 const int MAPWIDTH = 32;
 
@@ -57,6 +59,6 @@ const int MAPWIDTH = 32;
 #define M_LOG2_E        _M_LN2
 #define M_INVLN2        1.4426950408889633870E0  /* 1 / log(2) */
 
-#define DEBUG_FLAG 1
+#define DEBUG_FLAG 0
 
 #endif /* defined(__ZyboCar__Utility__) */

@@ -1507,3 +1507,44 @@ java.lang.RuntimeException: Error in Resetting Target
 14:13:02 INFO  : Processor reset is completed for ps7_cortexa9_0
 14:13:55 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
 14:13:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:33:57 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:12:20 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:15:29 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\ZyboCarApp.mcs -w on
+15:15:34 INFO  : Bootgen command execution is done.
+16:01:53 INFO  : ps7_init is completed.
+16:01:53 INFO  : ps7_post_config is completed.
+16:01:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:06:21 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:06:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:06:31 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Target selection failed.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:774)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:295)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+16:06:50 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+16:07:07 INFO  : ps7_init is completed.
+16:07:07 INFO  : ps7_post_config is completed.
+16:07:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:26:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:40:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:54:38 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:54:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:02:40 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\ZyboCarApp.mcs -w on
+17:02:45 INFO  : Bootgen command execution is done.
+17:27:28 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\ZyboCarApp.mcs -w on
+17:27:33 INFO  : Bootgen command execution is done.
+17:51:42 INFO  : FPGA configured successfully with bitstream "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ZyboCarDesign_wrapper.bit"
+17:52:01 INFO  : ps7_init is completed.
+17:52:01 INFO  : ps7_post_config is completed.
+17:52:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:55:53 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\BOOT.bin -w on
+17:55:54 INFO  : Bootgen command execution is done.
+17:56:36 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\ZyboCarApp.mcs -w on
+17:56:41 INFO  : Bootgen command execution is done.
+17:58:16 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+17:32:29 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

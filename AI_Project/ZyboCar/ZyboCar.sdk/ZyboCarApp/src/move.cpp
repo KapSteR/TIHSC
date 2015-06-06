@@ -21,19 +21,13 @@ void MoveController::move(int poseAngle, MoveBlock& MB) {
 	int distance = MB.distance*GRID_SIZE;
 	int heading = MB.angle;
 
-	h_p = heading - poseAngle;
+	h_p = modu(heading - poseAngle,360);
 
 	if (h_p != 0) { // Only turn for angle != 0
 
-		while (h_p < 0) {
-			h_p += 360;
-		}
 		MB.turnAngle = h_p;
 
-		p_h = poseAngle - heading;
-		while (p_h < 0) {
-			p_h += 360;
-		}
+		p_h = modu(poseAngle - heading,360);
 
 		if (h_p < p_h) {  // Left turn
 
