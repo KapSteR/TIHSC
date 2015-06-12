@@ -1548,3 +1548,4 @@ java.lang.RuntimeException: Target selection failed.
 17:56:41 INFO  : Bootgen command execution is done.
 17:58:16 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
 17:32:29 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+09:24:40 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
