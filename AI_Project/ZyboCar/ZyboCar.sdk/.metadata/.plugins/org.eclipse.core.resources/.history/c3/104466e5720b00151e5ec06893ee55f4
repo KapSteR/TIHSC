@@ -1,9 +1,0 @@
-#ifndef MOVEBLOCK_H_
-#define MOVEBLOCK_H_
-
-struct MoveBlock{
-	int distance;
-	int angle;
-};
-
-#endif /* POSITION_H_ */

@@ -1,0 +1,55 @@
+\documentclass[11pt]{article}
+
+\include{Preamble}
+
+% Use FixME notes. 
+% Ex:	\fxnote{INSERT NOTE}
+%
+% Change "draft" to "final" when document is done
+\usepackage[footnote,draft,english,silent,nomargin]{fixme} 
+
+% Input data for title page
+\title{
+	{\Huge \courseTitle \\}
+	\bigskip
+	\courseCode\ - Q3 2015 \\
+	\medskip
+	Project Report
+	} 
+
+\author{
+	\emph{Authors:}\\
+	Kasper Nielsen | 10731\\
+	Jacob Harpøth Hansen | 10XXX\\
+	Kristian Mogensen | 10XXX\\
+	\-\\
+	\emph{Supervisor:}\\
+	Henrik Karstoft\\
+	\-\\
+	Aarhus University - Department of Engineering}
+	
+\date{\today} % \today inserts todays date
+  
+% Start document
+\begin{document}
+\maketitle	% Make title page
+\fxnote{Get correct numbers} 
+\listoffixmes % List FixME notes
+
+\newpage			% Insert page break
+\tableofcontents	% Make table of contents
+
+\newpage
+\subfile{Introduction} 
+
+\newpage
+% \bibliographystyle{IEEEtran}
+\bibliographystyle{plainnat}
+\bibliography{References}
+
+% Start appendix section
+% \newpage
+% \appendix
+% \subfile{Appendix}
+
+\end{document}
