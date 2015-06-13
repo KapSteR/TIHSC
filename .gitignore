@@ -59,7 +59,7 @@
 /**/Report/*.pdf
 /**/Report/**/*.pdf
 
-#### sdk
+#### sdk ####
 *.d
 *.mk
 *.log
