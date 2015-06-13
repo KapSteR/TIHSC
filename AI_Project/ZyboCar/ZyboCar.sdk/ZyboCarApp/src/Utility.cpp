@@ -14,7 +14,7 @@ void PrintIntMatrix(intMatrix& myMat)
         
         for (int x=0; x<MAPWIDTH;x++){
             
-            std::cout << std::setfill('0') << std::setw(2)<< myMat[y][x] << " ";
+            std::cout << std::setfill(' ') << std::setw(2)<< myMat[y][x] << " ";
         }
         
         std::cout << std::endl;
@@ -26,10 +26,24 @@ void PrintFloatMatrix(floatMatrix& myMat)
     for (int y=0; y<MAPHEIGHT;y++){
         
         for (int x=0; x<MAPWIDTH;x++){
-            
-            std::cout << std::setfill('-') << std::setw(4)<< myMat[y][x] << " ";
+           	std::cout << std::setfill(' ') << std::setw(4)<< myMat[y][x] << " ";
         }
         
+        std::cout << std::endl;
+    }
+}
+
+void PrintParticleMatrix(intMatrix& Mat, intMatrix& particleMat)
+{
+    for (int y=0; y<MAPHEIGHT;y++){
+
+        for (int x=0; x<MAPWIDTH;x++){
+        	if (Mat[y][x] == 1)
+        		std::cout << std::setfill(' ') << std::setw(4)<< -1 << " ";
+        	else
+        		std::cout << std::setfill(' ') << std::setw(4)<< particleMat[y][x] << " ";
+        }
+
         std::cout << std::endl;
     }
 }

@@ -16,7 +16,7 @@ src/pcap.o src/pcap.d: ../src/pcap.c ../src/pcap.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xpseudo_asm.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h \
  ../src/fsbl_debug.h \
- C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0/ps7_init.h \
+ C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0/ps7_init.h \
  ../src/image_mover.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_exception.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/sleep.h
@@ -61,7 +61,7 @@ src/pcap.o src/pcap.d: ../src/pcap.c ../src/pcap.h \
 
 ../src/fsbl_debug.h:
 
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0/ps7_init.h:
+C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0/ps7_init.h:
 
 ../src/image_mover.h:
 

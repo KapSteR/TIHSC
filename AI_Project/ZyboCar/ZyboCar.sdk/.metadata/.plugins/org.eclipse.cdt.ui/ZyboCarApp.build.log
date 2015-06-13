@@ -1,6 +1,68 @@
-17:56:41 **** Auto Build of configuration Debug for project ZyboCarApp ****
+10:35:21 **** Build of configuration Debug for project ZyboCarApp ****
 make all 
-make: Ingenting at gøre for 'all'.
+'Building file: ../src/LIDAR.cc'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+'Finished building: ../src/LIDAR.cc'
+' '
+'Building file: ../src/Particle.cc'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Particle.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/Particle.d" -MT"src/Particle.d" -o "src/Particle.o" "../src/Particle.cc"
+'Finished building: ../src/Particle.cc'
+' '
+'Building file: ../src/ParticleFilter.cc'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ParticleFilter.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ParticleFilter.d" -MT"src/ParticleFilter.d" -o "src/ParticleFilter.o" "../src/ParticleFilter.cc"
+'Finished building: ../src/ParticleFilter.cc'
+' '
+'Building file: ../src/PathMaker.cc'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PathMaker.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/PathMaker.d" -MT"src/PathMaker.d" -o "src/PathMaker.o" "../src/PathMaker.cc"
+../src/PathMaker.cc: In member function 'void PathMaker::performAStar(Position&)':
+../src/PathMaker.cc:89:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < possibleMoves.size(); i++) {
+                                            ^
+../src/PathMaker.cc:141:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int y = 0; y < path.size(); y++) {
+                                ^
+'Finished building: ../src/PathMaker.cc'
+' '
+'Building file: ../src/RobotFrame.cc'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/RobotFrame.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/RobotFrame.d" -MT"src/RobotFrame.d" -o "src/RobotFrame.o" "../src/RobotFrame.cc"
+'Finished building: ../src/RobotFrame.cc'
+' '
+'Building file: ../src/Utility.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Utility.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/Utility.d" -MT"src/Utility.d" -o "src/Utility.o" "../src/Utility.cpp"
+'Finished building: ../src/Utility.cpp'
+' '
+'Building file: ../src/WaitForStart.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/WaitForStart.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/WaitForStart.d" -MT"src/WaitForStart.d" -o "src/WaitForStart.o" "../src/WaitForStart.cpp"
+'Finished building: ../src/WaitForStart.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/main0.cc'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main0.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main0.d" -MT"src/main0.d" -o "src/main0.o" "../src/main0.cc"
+'Finished building: ../src/main0.cc'
+' '
+'Building file: ../src/move.cpp'
+'Invoking: ARM g++ compiler'
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/move.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/move.d" -MT"src/move.d" -o "src/move.o" "../src/move.cpp"
+'Finished building: ../src/move.cpp'
+' '
+'Building target: ZyboCarApp.elf'
+'Invoking: ARM g++ linker'
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2014.4/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.8.3/../../../../arm-xilinx-eabi/bin/ld.exe: cannot find -lxil
+collect2.exe: error: ld returned 1 exit status
+make: *** [ZyboCarApp.elf] Fejl 1
 
-17:56:42 Build Finished (took 266ms)
+10:36:00 Build Finished (took 39s.266ms)
 

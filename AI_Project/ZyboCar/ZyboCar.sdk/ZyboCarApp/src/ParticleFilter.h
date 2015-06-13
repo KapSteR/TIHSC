@@ -12,19 +12,19 @@
 
 class ParticleFilter{
 public:
-	ParticleFilter(intMatrix map, int numberOfParticles);
+	ParticleFilter(intMatrix map);
 	vector<Particle> particles;
 	float sinTable[360];
 	float cosTable[360];
     
 	void updateWeigths(int* dataArray, intMatrix map);
-	void resample(void);
+	void resample(intMatrix map);
 	void getNewPosition(Position& robotPosition);
 	void moveParticles(MoveBlock& MB);
 
 private:
 	float maxWeight;
-    void printParticles();
+    void printParticles(intMatrix map);
     int bestParticle();
     void calcSinTables();
 };

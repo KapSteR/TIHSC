@@ -17,8 +17,7 @@ int main(void) {
 	robotFrame->pos.x = 4;
 	robotFrame->pos.y = 4;
 
-	ParticleFilter* particleFilter = new ParticleFilter(pathMaker->map,
-			NUMBEROFPARTICLES);
+	ParticleFilter* particleFilter = new ParticleFilter(pathMaker->map);
 	LIDAR* lidar = new LIDAR();
 	//Making a MoveBlock object for the next movement of the robot and the particles
 	MoveBlock nextMove;
@@ -28,6 +27,9 @@ int main(void) {
 
 	while (1) {
 //		WFS->wait(3);
+//		std::cout << "Press ENTER to continue" <<std::endl;
+//		inbyte();
+//		inbyte();
 //		Checking if the robot have reached its goal
 		if (pathMaker->checkGoal(robotFrame->pos) != true) {
 			//Getting full rotation measurement from LIDAR and saving data
@@ -45,7 +47,7 @@ int main(void) {
 			std::cout << "Update Done" << std::endl;
 
 			//Resampling, to get a new particle set
-			particleFilter->resample();
+			particleFilter->resample(pathMaker->map);
 			std::cout << "Resample Done" << std::endl;
 
 			//Getting estimate of robot position and orientation
@@ -64,15 +66,15 @@ int main(void) {
 			particleFilter->moveParticles(nextMove);
 			std::cout << "Move particles Done" << std::endl;
 
-
-
-
-		} else {
+		}
+		else
+		{
 			std::cout << "Found Goal" << std::endl;
 			return 0;
+			//DANCE MY LITTLE ROBOT. DANCE!!!!!!!
 		}
 
-		//DANCE MY LITTLE ROBOT. DANCE!!!!!!!
+
 
 //		WFS->wait(1);
 //

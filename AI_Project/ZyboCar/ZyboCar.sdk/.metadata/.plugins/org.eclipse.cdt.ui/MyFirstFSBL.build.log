@@ -1,6 +1,52 @@
-17:51:45 **** Incremental Build of configuration Release for project MyFirstFSBL ****
+10:36:00 **** Build of configuration Release for project MyFirstFSBL ****
 make all 
-make: Ingenting at gøre for 'all'.
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_handoff.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+../src/md5.c: In function 'MD5Final':
+../src/md5.c:445:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  ( (u32 *)context->intermediate )[ 14 ] = context->bits[ 0 ];
+  ^
+../src/md5.c:446:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  ( (u32 *)context->intermediate )[ 15 ] = context->bits[ 1 ];
+  ^
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O2 -I"C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
 
-17:51:45 Build Finished (took 362ms)
+10:36:08 Build Finished (took 7s.881ms)
 

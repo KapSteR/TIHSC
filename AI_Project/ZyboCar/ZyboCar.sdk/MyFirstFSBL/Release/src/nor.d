@@ -16,7 +16,7 @@ src/nor.o src/nor.d: ../src/nor.c ../src/fsbl.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h \
  ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_assert.h \
  ../src/fsbl_debug.h \
- C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0/ps7_init.h \
+ C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0/ps7_init.h \
  ../src/nor.h ../../standalone_bsp_0/ps7_cortexa9_0/include/xstatus.h
 
 ../src/fsbl.h:
@@ -57,7 +57,7 @@ src/nor.o src/nor.d: ../src/nor.c ../src/fsbl.h \
 
 ../src/fsbl_debug.h:
 
-C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0/ps7_init.h:
+C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0/ps7_init.h:
 
 ../src/nor.h:
 

@@ -24,6 +24,7 @@ using std::vector;
 
 void PrintIntMatrix(intMatrix& myMat);
 void PrintFloatMatrix(floatMatrix& myMat);
+void PrintParticleMatrix(intMatrix& Mat, intMatrix& particleMat);
 
 void PrintRobotInMap(Position &robotPosition, intMatrix& myMap);
 
