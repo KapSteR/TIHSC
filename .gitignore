@@ -58,3 +58,12 @@
 
 /**/Report/*.pdf
 /**/Report/**/*.pdf
+
+#### sdk
+*.d
+*.mk
+*.log
+*.pdom
+*.index
+*.prefs
+*.resources
