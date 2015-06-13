@@ -4,10 +4,50 @@
 \begin{document}
 \section{Localization} % (fold)
 	\label{sec:localization}
+In the first lesson, the problem of localization is covered. 
+Localization is defined as “The ability for a machine to locate itself in space”. 
+GPS is a solution to this problem that is often used when precision is not essential, but when navigation inside a house, GPS is not precise enough. 
+Therefore alternative sensors like a LIDAR or an ultrasonic sensor is used. 
+These sensors only provides raw data, so localization is necessary to convert the raw sensor data and prior knowledge about the environment that is navigated in, into estimates of the most likely current location of a robot.
 
-	Lol text.
-	So \textbf{bold}, very \emph{cursive}.
+Two primary steps in a localization problem are introduced; Motion and Sensing.
+To improve the estimate of the robots position sensing is performed. 
+When sensing, raw data from a sensor is obtained, and compared with a map of the current environment to estimate the most likely current position of the robot. 
+This is done by using Bayes rule:
+\begin{equation}
+\label{eq:bayes_rule}
+P(X_{xy}|Z) = \frac{P(Z|X_{xy})\cdot P(X_{xy})}{P(Z)} = \frac{P(Z|X_{xy})\cdot P(X_{xy})}{\sum_{x} \sum_{y} P(Z|X_{xy})\cdot P(X_{xy})}
+\end{equation}
+Here, $P(X_{xy})$ is the prior probability of the gridcell, $X_{xy}$, before the measurement, $Z$.
+$P(X_{xy}|Z)$ is the posterior probability after the measurement. 
+$P(Z|X_{xy})$ is the probability of the measurement belonging to the specific gridcell and $P(Z)$ is a normalization factor, which can also be calculated by $\sum_{x} \sum_{y} P(Z|X_{xy})\cdot P(X_{xy})$.
 
+Motion is what happens when the robot moves. 
+This adds uncertainty to the current estimate of the robots position, as there might be errors associated with moving. 
+When turning, for example, a robot might turn 91 degrees instead of 90 degrees. 
+Therefore, moving a robot makes its position more uncertain, as there is a chance of over- or undershooting a movement.
+
+The concept of localization is best explained by example, so \autoref{fig:WallEOne}, \autoref{fig:WallETwo} and \autoref{fig:WallEThree} show three cycles of localization. 
+Notice how, between each figure, the previous posterior has become the new prior, with a movement and some uncertainty added. 
+After the second movement and sensing, the robot is fairly certain it is located at the second door to the right, simply by using Bayes Formula.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{./Figures/WallEOne.png}
+	\caption{Initial sensing}
+	\label{fig:WallEOne}
+\end{figure}\noindent
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{./Figures/WallETwo.png}
+	\caption{First Move and Second Measurement}
+	\label{fig:WallETwo}
+\end{figure}\noindent
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{./Figures/WallEThree.png}
+	\caption{Second move and third measurement}
+	\label{fig:WallEThree}
+\end{figure}\noindent 
 	% section introduction (end)
 
 \end{document}

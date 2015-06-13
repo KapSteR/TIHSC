@@ -5,9 +5,144 @@
 \section{Search} % (fold)
 	\label{sec:search}
 
-	Lol text.
-	So \textbf{bold}, very \emph{cursive}.
+This lesson covers the planning problem. 
+The planning problem is defined as the task of finding the optimal or “minimum cost” path to reach a certain goal position, given a map, a starting location, a goal location and a cost of movement.
 
+The cost of movement can be altered to prioritize specific paths. 
+An example could be increasing the cost of moving next to a wall, to prioritize paths away from walls. 
+
+A naive search algorithm, also known as Breath First Planning, is introduced, where the cost of moving from one cell to another is one. 
+The map on which this algorithm will be demonstrated is shown below.
+\begin{table}[H]
+	\centering
+	\begin{tabular}{cccccc}
+		R & 1 & 0 & 0 & 0 & 0  \\ 
+		0 & 1 & 0 & 0 & 0 & 0  \\ 
+		0 & 1 & 0 & 0 & 0 & 0  \\ 
+		0 & 1 & 0 & 0 & 0 & 0  \\  
+		0 & 0 & 0 & 0 & 0 & G  \\ 
+	\end{tabular}
+\caption{Grid map for demonstration}
+\label{table:grid_map} 
+\end{table} \noindent
+'0' is an empty cell, '1' is a cell containing a wall, 'R' is the location of the robot, and 'G' is the location of the goal.
+
+The naive search algorithm iteratively finds the next valid cell with the lowest cost, and expands it. 
+The expansion order and the cost are shown below. 
+Nodes that have not been visited have a value of '-1'.
+\begin{table}[H]
+	\begin{subtable}{0.5\linewidth}
+		\centering
+		\begin{tabular}{cccccc}
+			0 & -1 & -1 & -1 & -1 & -1  \\ 
+			1 & -1 & 12 & -1 & -1 & -1  \\ 
+			2 & -1 &  9 & 13 & -1 & -1  \\ 
+			3 & -1 &  7 & 10 & 14 & -1  \\  
+			4 &  5 &  6 &  8 & 11 & 15  \\ 
+		\end{tabular}
+	\caption{Expansion order}
+	\label{table:expansion_order} 
+	\end{subtable}
+	\begin{subtable}{0.5\linewidth}
+		\centering
+		\begin{tabular}{cccccc}
+			0 & -1 & -1 & -1 & -1 & -1  \\ 
+			1 & -1 &  9 & -1 & -1 & -1  \\ 
+			2 & -1 &  8 &  9 & -1 & -1  \\ 
+			3 & -1 &  7 &  8 &  9 & -1  \\  
+			4 &  5 &  6 &  7 &  8 &  9  \\ 
+		\end{tabular}
+	\caption{Cost}
+	\label{table:cost_order} 
+	\end{subtable}
+\caption{Breath First Planning}
+\end{table} \noindent
+Once the algorithm reaches the goal, after 15 expansions, it stops. 
+The path is then found by following the descending g values from the goal position to the start position.
+This creates the following path:
+\begin{table}[H]
+	\centering
+	\begin{tabular}{cccccc}
+		$\downarrow$ & 1 & 0 & 0 & 0 & 0  \\ 
+		$\downarrow$ & 1 & 0 & 0 & 0 & 0  \\ 
+		$\downarrow$ & 1 & 0 & 0 & 0 & 0  \\ 
+		$\downarrow$ & 1 & 0 & 0 & 0 & 0  \\  
+		$\rightarrow$ & $\rightarrow$ & $\rightarrow$ & $\rightarrow$ & $\rightarrow$ & G  \\ 
+	\end{tabular}
+\caption{Breath First Planning Path}
+\label{table:path_map} 
+\end{table} \noindent
+This algorithm works, but in a large grid this algorithm becomes very ineffective.
+
+Next A-star is introduced. 
+A-star works in much the same way as the naive algorithm, but the cost function is a little more nuanced.
+In the naive algorithm the cost was only based on movement. 
+In A-star the cost is the sum of the cost of movement, and a cost introduced by a heuristic function. 
+In the lesson a simple heuristic function is proposed, where the distance-to-goal for every point in the map is calculated. 
+The heuristic function for the presented map would look like this:
+\begin{table}[H]
+	\centering
+	\begin{tabular}{cccccc}
+		9 & 8 & 7 & 6 & 5 & 4  \\ 
+		8 & 7 & 6 & 5 & 4 & 3  \\ 
+		7 & 6 & 5 & 4 & 3 & 2  \\ 
+		6 & 5 & 4 & 3 & 2 & 1  \\  
+		5 & 4 & 3 & 2 & 1 & 0  \\ 
+	\end{tabular}
+\caption{Heuristic map}
+\label{table:heuristic_map} 
+\end{table} \noindent
+This means the cost of cells close to the path is lower, than the cost of cells far away from the goal.
+The algorithm then explores the nodes with the shortest distance-to-goal first. 
+This greatly reduces the number of nodes that have to be explored, and thus makes the algorithm more efficient. 
+The cost and the expansion order of A-star in the map from before is shown below.
+\begin{table}[H]
+	\begin{subtable}{0.5\linewidth}
+		\centering
+		\begin{tabular}{cccccc}
+			0 & -1 & -1 & -1 & -1 & -1  \\ 
+			1 & -1 & -1 & -1 & -1 & -1  \\ 
+			2 & -1 & -1 & -1 & -1 & -1  \\ 
+			3 & -1 & -1 & -1 & -1 & -1  \\  
+			4 &  5 &  6 &  7 &  8 &  9  \\ 
+		\end{tabular}
+	\caption{Expansion order}
+	\label{table:expansion_order_heuristic} 
+	\end{subtable}
+	\begin{subtable}{0.5\linewidth}
+		\centering
+		\begin{tabular}{cccccc}
+			9 & -1 & -1 & -1 & -1 & -1  \\ 
+			9 & -1 & -1 & -1 & -1 & -1  \\ 
+			9 & -1 & -1 & -1 & -1 & -1  \\ 
+			9 & -1 & 10 & 10 & 10 & -1  \\  
+			9 &  9 &  9 &  9 &  9 &  9  \\ 
+		\end{tabular}
+	\caption{Cost}
+	\label{table:cost_order_heuristic} 
+	\end{subtable}
+\caption{A-star}
+\end{table} \noindent
+This creates a path, which is exactly the same as the Breath First Planning, \autoref{table:path_map}.
+
+While the path of the naive algorithm and A-Star is the same, the path finding algorithm of A-Star is much more efficient, as it only has to do 10 expansions, compared to the naive approaches 15.
+
+The last planning method is based on dynamic programming. 
+Here the optimal path for any location on the map is pre-calculated. 
+This might be very computationally heavy up front, but it only has to be done once. 
+Dynamic programming would produce a map like the one below.
+\begin{table}[H]
+	\centering
+	\begin{tabular}{cccccc}
+		$\downarrow$ & 1 & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$  \\ 
+		$\downarrow$ & 1 & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$  \\ 
+		$\downarrow$ & 1 & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$  \\ 
+		$\downarrow$ & 1 & $\downarrow$ & $\downarrow$ & $\downarrow$ & $\downarrow$  \\  
+		$\rightarrow$ & $\rightarrow$ & $\rightarrow$ & $\rightarrow$ & $\rightarrow$ & G  \\ 
+	\end{tabular}
+\caption{Map for dynamic programming}
+\label{table:dynamic_map} 
+\end{table} \noindent
 	% section introduction (end)
 
 \end{document}

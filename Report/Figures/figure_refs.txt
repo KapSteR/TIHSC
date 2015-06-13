@@ -1,0 +1,9 @@
+baron_platform 		-	http://www.dfrobot.com/index.php?route=product/product&path=37_111&product_id=261#.VXwnPPntmko
+final_robot		-	self taken
+path_smoothing		- 	Udacity lessions
+WallEOne		-	self made
+WallETwo		-	self made
+WallEThree		-	self made
+ZYBO			-	Zybo board reference manual
+ZynqArch		-	Zybo board reference manual
+pid_controller		-	https://en.wikipedia.org/wiki/PID_controller#/media/File:PID_en_updated_feedback.svg

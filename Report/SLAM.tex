@@ -4,9 +4,24 @@
 \begin{document}
 \section{SLAM} % (fold)
 	\label{sec:slam}
+This lesson covers Simultaneous Localization and Mapping (SLAM). 
+SLAM adds another layer of complexity to the problems that have been looked at so far. 
+In all previous lessons, the map is assumed to be known. 
+In reality that is very seldom the case. 
+Therefore the robot not only has to localize itself, it also has to create the map it is localizing itself in.
 
-	Lol text.
-	So \textbf{bold}, very \emph{cursive}.
+Noget med hvorfor kortet er vigtigt.
+
+In this lesson a specific form of SLAM is presented called graph SLAM. 
+In graph slam, the initial location of the robot, relative movements of the robot and landmark locations are all used as constraints. 
+These constraints are combined to find the most likely path the robot has traveled along with the locations of the landmarks, hence SLAM.
+
+Graph slam is a way of reducing SLAM to the solution of a linear system. 
+This is done by solving the following equation
+\begin{equation}
+	\mu = \Omega^{-1} \cdot \xi
+\end{equation}
+Here $\Omega$ is the graph slam matrix, $\xi$ is the graph slam vector and µ is the estimated robots poses and landmarks. In the approach shown, the correspondences of landmarks are assumed to be known.
 
 	% section introduction (end)
 
