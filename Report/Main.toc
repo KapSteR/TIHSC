@@ -1,12 +1,22 @@
 \select@language {english}
-\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
-\contentsline {section}{\numberline {2}Theory}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}Localization}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Kalman}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Particle Filter}{4}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Search}{4}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}PID}{4}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}SLAM}{4}{subsection.2.6}
-\contentsline {section}{\numberline {3}Project}{5}{section.3}
-\contentsline {section}{\numberline {4}Improvements}{6}{section.4}
-\contentsline {section}{\numberline {5}Conclusion}{7}{section.5}
+\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}
+\contentsline {chapter}{\numberline {2}Theory}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}Localization}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Kalman}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Particle Filter}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}Search}{6}{section.2.4}
+\contentsline {section}{\numberline {2.5}PID}{6}{section.2.5}
+\contentsline {section}{\numberline {2.6}SLAM}{7}{section.2.6}
+\contentsline {chapter}{\numberline {3}Project}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}System Description}{8}{section.3.1}
+\contentsline {section}{\numberline {3.2}Robot Mechanics}{9}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Chassis}{9}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Propulsion}{9}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Motion model}{9}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Hardware}{10}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Platform}{10}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Sensors}{10}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Motor Control}{10}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Software}{11}{section.3.4}
+\contentsline {section}{\numberline {3.5}Improvements}{12}{section.3.5}
+\contentsline {chapter}{\numberline {4}Conclusion}{13}{chapter.4}
