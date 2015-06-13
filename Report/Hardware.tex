@@ -29,15 +29,28 @@
 			\caption{}		
 		\end{figure}
 
-		
+		Alongside the AP SoC the ZYBO features a range external hardware for power supply/management and interfacing.
+		It has push-buttons, throw-switches and LEDs for direct interface, USB-OTG, UART-to-USB and Ethernet for communication and HDMI, VGA and audio in/out out for Audio/Visual.
 
+		Lastly, the ZYBO features six PMOD GPIO ports along the perimeter (see Figure \ref{fig:ZYBO}), one directly connected to the PS and the others accessible through the PL.
+		They deliver 3.3V power to external devices as well as eight customizable 1.8V or 3.3V digital I/O ports each (see Figure \ref{fig:pmod}).
+		These are used for interfacing with the sensor and motor (see Section \fxnote{ref to sensors} and \fxnote{ref to mortors}, respectively).
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\linewidth]{PMOD_connector}
+			\caption{PMOD Connector}
+			\label{fig:pmod}
+		\end{figure}
 
 
 		\subsubsection{HW/SW Co-Design} % (fold)
 		\label{ssub:hw_sw_co_design}
 
 			The availability of FPGA logic on-chip enables rapid prototyping of HW acceleration blocks, through the use of High-Level Synthesis (HLS) tools.
-			Using HLS one can specify some desired functionality in C++/SystemC code and quickly synthesize it to HW-blocks to be implemented in FPGA logic.
+			Using HLS one can specify some desired functionality in C++/SystemC code and directly synthesize it to HW-blocks to be implemented in FPGA logic, without needing to explicitly design HW.
+
+			This is utilized for creating a PWM motor controller, described in Section \fxnote{ref to PWM controller HLS} .
 
 			% subsubsection hw_sw_co_design (end)
 	
