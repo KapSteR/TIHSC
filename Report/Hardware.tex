@@ -30,7 +30,7 @@
 		\end{figure}
 
 		Alongside the AP SoC the ZYBO features a range external hardware for power supply/management and interfacing.
-		It has push-buttons, throw-switches and LEDs for direct interface, USB-OTG, UART-to-USB and Ethernet for communication and HDMI, VGA and audio in/out out for Audio/Visual.
+		It has push-buttons, throw-switches and LEDs for direct interface, USB-OTG, UART-to-USB and Ethernet for communication and HDMI, VGA and an audio codec for Audio/Visual.
 
 		Lastly, the ZYBO features six PMOD GPIO ports along the perimeter (see Figure \ref{fig:ZYBO}), one directly connected to the PS and the others accessible through the PL.
 		They deliver 3.3V power to external devices as well as eight customizable 1.8V or 3.3V digital I/O ports each (see Figure \ref{fig:pmod}).
@@ -48,7 +48,7 @@
 		\label{ssub:hw_sw_co_design}
 
 			The availability of FPGA logic on-chip enables rapid prototyping of HW acceleration blocks, through the use of High-Level Synthesis (HLS) tools.
-			Using HLS one can specify some desired functionality in C++/SystemC code and directly synthesize it to HW-blocks to be implemented in FPGA logic, without needing to explicitly design HW.
+			Using HLS one can specify some desired functionality in C++/SystemC code and directly synthesize it to HW-blocks to be implemented in FPGA logic, without needing to explicitly design HW in a Hardware Description Language like VHDL or Verilog.
 
 			This is utilized for creating a PWM motor controller, described in Section \fxnote{ref to PWM controller HLS}.
 
@@ -69,7 +69,7 @@
 	\subsection{Motor Control} % (fold)
 	\label{sub:motor_control}
 
-		The motor control hardware consists of 
+		The motor control hardware consists of two major blocks, an external Dual H-Bridge for driving the power the the motors, and an on-chip PWM controller for controlling the motor driver.
 	
 		% subsection motor_control (end)
 

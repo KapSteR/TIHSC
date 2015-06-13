@@ -27,28 +27,30 @@ This adds uncertainty to the current estimate of the robots position, as there m
 When turning, for example, a robot might turn 91 degrees instead of 90 degrees. 
 Therefore, moving a robot makes its position more uncertain, as there is a chance of over- or undershooting a movement.
 
-The concept of localization is best explained by example, so \autoref{fig:WallEOne}, \autoref{fig:WallETwo} and \autoref{fig:WallEThree} show three cycles of localization. 
+The concept of localization is best explained by example, so \autoref{fig:WallE} shows three cycles of localization. 
 Notice how, between each figure, the previous posterior has become the new prior, with a movement and some uncertainty added. 
-After the second movement and sensing, the robot is fairly certain it is located at the second door to the right, simply by using Bayes Formula.\\
+After the second movement and sensing, the robot is fairly certain it is located at the second door to the right, simply by using Bayes Theorem.\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.35]{./Figures/WallEOne.png}
-	\caption{Initial sensing}
-	\label{fig:WallEOne}
-\end{figure}\noindent
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.35]{./Figures/WallETwo.png}
-	\caption{First Move and Second Measurement}
-	\label{fig:WallETwo}
-\end{figure}\noindent
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.35]{./Figures/WallEThree.png}
-	\caption{Second move and third measurement}
-	\label{fig:WallEThree}
-\end{figure}\noindent 
-	% section introduction (end)
-
+	\begin{subfigure}[b]{0.8\linewidth}
+		\includegraphics[width=\linewidth]{WallEOne}
+		\caption{Initial sensing}
+		\label{fig:WallEOne}
+	\end{subfigure}\\
+	\vspace{12pt} 
+	\begin{subfigure}[b]{0.8\linewidth}
+		\includegraphics[width=\linewidth]{WallETwo}
+		\caption{First move and second measurement}
+		\label{fig:WallETwo}
+	\end{subfigure}\\
+	\vspace{12pt}
+	\begin{subfigure}[b]{0.8\linewidth}
+		\includegraphics[width=\linewidth]{WallEThree}
+		\caption{Second move and third measurement}
+		\label{fig:WallEThree}
+	\end{subfigure}
+	\caption{Bayesian localization in three steps}
+	\label{fig:WallE}
+\end{figure}
 \end{document}
 

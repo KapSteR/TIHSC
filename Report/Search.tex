@@ -11,7 +11,7 @@ The planning problem is defined as the task of finding the optimal or “minimum
 The cost of movement can be altered to prioritize specific paths. 
 An example could be increasing the cost of moving next to a wall, to prioritize paths away from walls. 
 
-A naive search algorithm, also known as Breath First Planning, is introduced, where the cost of moving from one cell to another is one. 
+A naïve search algorithm, also known as Breath First Planning, is introduced, where the cost of moving from one cell to another is one. 
 The map on which this algorithm will be demonstrated is shown below.
 \begin{table}[H]
 	\centering
@@ -27,7 +27,7 @@ The map on which this algorithm will be demonstrated is shown below.
 \end{table} \noindent
 '0' is an empty cell, '1' is a cell containing a wall, 'R' is the location of the robot, and 'G' is the location of the goal.
 
-The naive search algorithm iteratively finds the next valid cell with the lowest cost, and expands it. 
+The naïve search algorithm iteratively finds the next valid cell with the lowest cost, and expands it. 
 The expansion order and the cost are shown below. 
 Nodes that have not been visited have a value of '-1'.
 \begin{table}[H]
@@ -75,8 +75,8 @@ This creates the following path:
 This algorithm works, but in a large grid this algorithm becomes very ineffective.
 
 Next A-star is introduced. 
-A-star works in much the same way as the naive algorithm, but the cost function is a little more nuanced.
-In the naive algorithm the cost was only based on movement. 
+A-star works in much the same way as the naïve algorithm, but the cost function is a little more nuanced.
+In the naïve algorithm the cost was only based on movement. 
 In A-star the cost is the sum of the cost of movement, and a cost introduced by a heuristic function. 
 In the lesson a simple heuristic function is proposed, where the distance-to-goal for every point in the map is calculated. 
 The heuristic function for the presented map would look like this:
@@ -125,7 +125,7 @@ The cost and the expansion order of A-star in the map from before is shown below
 \end{table} \noindent
 This creates a path, which is exactly the same as the Breath First Planning, \autoref{table:path_map}.
 
-While the path of the naive algorithm and A-Star is the same, the path finding algorithm of A-Star is much more efficient, as it only has to do 10 expansions, compared to the naive approaches 15.
+While the path of the naïve algorithm and A-Star is the same, the path finding algorithm of A-Star is much more efficient, as it only has to do 10 expansions, compared to the naïve approaches 15.
 
 The last planning method is based on dynamic programming. 
 Here the optimal path for any location on the map is pre-calculated. 
