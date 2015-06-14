@@ -13,12 +13,27 @@
 	\subsection{Environment} % (fold)
 	\label{sub:software_environment}
 
+<<<<<<< HEAD
 		Here you could write something about c++, Vivado SDK and the compiler that was used.
 	
 	\subsection{Structure} % (fold)
+=======
+		The software for this project was written in C++ using the Xilinx Software Development Kit.
+		C++ was chosen because it is a object oriented library, which gave some clear advantages when working in a three person team.
+		Furthermore, C++ has native support for an resizable array datatype known as a vector, which greatly reduced the complexity of manipulating array.
+		The software was written for the C++11 standard, since the standard gave some advantages in initialisation of vectors.
+		GitHub was used for version control	to manage and backup code.
+		
+	\subsection{Structure} % (fold)
+>>>>>>> 26f5c724e65058c0cc90ada9450d0d0a17e7fbe5
 	\label{sub:software_structure}
 	
-		The structure of the software will be covered by a class diagram.
+		A object-oriented approach was taken to the design, in order to modulize the different parts of the software. 
+		
+		This gave clear advantages when working multiple people on the same codebase, as the development of the different classes could be spread out between multiple people.
+		
+		The structure of the software is depicted in \autoref{fig:classdiagram} as a UML class diagram.
+		
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=\linewidth]{ClassDiagram}
@@ -26,10 +41,39 @@
 			\label{fig:classdiagram}
 		\end{figure}
 
+<<<<<<< HEAD
 	\subsection{Dataflowyo} % (fold)
 	\label{sub:software_dataflow}
+=======
+
+		The main components of the program is the LIDAR, PathMaker, RobotFrame and ParticleFilter classes. 
+		Each class has a distinct purpose, which maps directly to one of the four  actions in the main loop of \autoref{fig:systemact}.
+		The mapping can be see in \autoref{table:action_class_map}
+		 
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{|c|c|}
+			\hline
+				Action & Class \\ 
+			\hline
+				A2: Sense Data & LIDAR  \\ 
+			\hline
+				A3: Estimate Robot Position & ParticleFilter  \\ 
+			\hline
+				A4: Calculate Path & PathMaker  \\ 
+			\hline
+				A5: Move & RobotFrame  \\ 
+			\hline
+			\end{tabular}
+			\caption{Grid map for demonstration}
+			\label{table:action_class_map} 
+		\end{table} \noindent
+>>>>>>> 26f5c724e65058c0cc90ada9450d0d0a17e7fbe5
 		
-		The dataflow of the software will be coved by a Internal Block Diagram
+	\subsection{Behaviour} % (fold)
+	\label{sub:software_behaviour}
+	
+		The dataflow between the different classes is covered in the Internal Block Diagram in \autoref{fig:softwareibd}
 		
 		\begin{figure}[H]
 			\centering
@@ -37,6 +81,13 @@
 			\caption{Software Internal Block Diagram}
 			\label{fig:softwareibd}
 		\end{figure}
+
+		The raw sensor data from the Sensing block in \autoref{fig:systemibd} is sent to the LIDAR class, which  converts the raw sensor data to 360 distance values.
+		The sensor data is sent to the ParticleFilter class, which update its current particle weights. 
+		These weights are used to resample the particles using the low variance sampling technique presented in the course material.
+		The robots position is then estimated by taking the position of the particle with the biggest weight.
+		This position is used in the PathMaker, which performs AStar to find the best path to the goal. The next move from this path is then sent to both the RobotFrame class and the ParticleFilter, to move both the robot and the Particles along the expected path.
+		The RobotFrame class uses the MotorControl class to send a control signal to the Motion block from \autoref{fig:systemibd}, which converts the control to a PMW signal that controls the motors of the robot.
 
 		\begin{lstlisting}[caption=Example of CNN setup, style=Code-Matlab, label=lst:cnn_setup]
 

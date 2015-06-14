@@ -6,8 +6,9 @@
 \section{System Description} % (fold)
 \label{sec:system_description}
 
-	This section describes the system from a structural and a behavioural perspective, using SysML.
-	For the structural description, a Block Definition Diagram and a Internal Block Diagram are used. For the behavioural perspective, a Activity Diagram is used.
+	This section uses SysML to describe the system from a structural and a behavioural perspective.
+	For the structural description, a Block Definition Diagram and a Internal Block Diagram are used. 
+	For the behavioural perspective, an Activity Diagram is used.
 	
 	\subsection{Structure} % (fold)
 	\label{sub:system_structure}
@@ -30,19 +31,19 @@
 			\label{fig:systemibd}
 		\end{figure}
 		
-		In \ref{fig:systembdd} the main blocks of the system are shown. 
-		The central block is the ZyboCar, which all other blocks are composed of.
-		The sensing block contains the XV11 LIDAR, which is the sensor used for measuring distance at 360\degree.
-		This raw sensing data is transferred to the processing block, which uses the sensor data to construct the next control signal for the motor block.
+		The central block of the system is the ZyboCar, which all other blocks are composed of.
+		The sensing block contains the XV11 LIDAR, which is the sensor used for measuring distance at 360\degree around the robot.
+		This raw sensing data is transferred to the processing block, which uses the sensor data to construct a control signal for the motion block.
 		The motion block contains a motor controller, two motors, and a Dual H-Bridge block.
-		When the motor block receives a control signal from the localisation software, the motion controller converts the signal to a logical PWM signal, which the DHB then converts to a analoge PWM signal that can be used to control the Motor.
+		When the motion block receives a control signal from the localisation software, the motor controller converts the signal to a logical PWM signal. 
+		The Dual H-Bridge then converts the logical PWM signal to an analoge PWM signal that can be used to control the Motor.
 		
 	\subsection{Behaviour} % (fold)
 	\label{sub:system_behaviour}
 		
 		The behavioural description is used to describe what the system should do.
 		At the behavioural level, composition is abstracted away. 
-		Instead, emphasis is put on what actions should be made, what order they should be made in, and what input and output should come from each action.
+		Instead, emphasis is put on what actions should be made and what order they should be made in.
 		To depict this, a Activity Diagram is used. This can be seen in \ref{fig:systemact}.
 		
 		\begin{figure}[H]
@@ -52,14 +53,13 @@
 			\label{fig:systemact}
 		\end{figure}
 		
-		The system starts by setting up the robot, and it then enters a loop that continues until the goal is found.
+		The system starts by setting up the robot, and then enters a loop that continues until the goal is found.
 		
 		When the robot has not yet found its goal, it starts out by using its sensor.
-		Then it uses the sensordata to update the weights of its particles, and resample them.
-		
-		Using the resampled particels, the robots calculates its most probable current location.
+		The sensordata is then used to estimate the most probable current location of the robot.
 		With basis in this location, a path to the goal is generated.
 		Finally, the robot moves a step along the found path, and checks if it has reached the goal.
+		If not, it continues in the loop. Otherwise the activity ends.
 
 
 % section system_description (end)
