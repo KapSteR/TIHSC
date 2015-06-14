@@ -70,10 +70,78 @@
 	\label{sub:motor_control}
 
 		The motor control hardware consists of two major blocks, an external Dual H-Bridge for driving the power the the motors, and an on-chip PWM controller for controlling the motor driver.
-	
+
+		\subsubsection{External Dual H-Bridge} % (fold)
+		\label{ssub:external_dual_h_bridge}
+			
+			The \emph{DHB1} from Digilent in a dual- H-bridge motor controller that enables regular DC-motors to be driven in either direction with with a single ended power supply.
+			Further it provides logic level transistor switching so that higher voltages (up to 11.8V) and higher currents (1.5A RMS, 2A peak) can be used to drive the motor without loading the logic circuit.
+
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.5\linewidth]{PmodDHB1}
+				\caption{Digilent PmodPHB1 Dual H-Bridge Motor controller \cite{Digilent2014}}
+				\label{fig:DHB1}
+			\end{figure}
+
+			The DHB1 connects to the ZYBO via a PMOD connector. The individual signals signal are listed in \autoref{tab:dhb_pmod}.
+			The motor power source is connected to the DHB1 with screw terminals. The two motors are also connected with screw terminals, but the left motor is connected reversed polarity.
+			This is because the identical motors need to spin in different directions to achieve the same rotation in relation to the direction of travel.
+
+			\begin{table}[H]
+				\centering
+				\begin{subtable}[b]{0.6\linewidth}
+					\begin{tabular}{|c|l|l|}
+						\hline
+						{\bf Pin} & {\bf Signal} & {\bf Description}         \\ \hline
+						1         & EN1          & Motor 1 Enable            \\ \hline
+						2         & DIR1         & Motor 1 Direction         \\ \hline
+						3         & S1A          & Motor 1 Sensor A Feedback \\ \hline
+						4         & S1B          & Motor 1 Sensor B Feedback \\ \hline
+						5         & GND          & Power Supply Ground       \\ \hline
+						6         & $V_{CC}$     & Power Supply (3.3V)       \\ \hline
+						7         & EN2          & Motor 2 Enable            \\ \hline
+						8         & DIR2         & Motor 2 Direction         \\ \hline
+						9         & S2A          & Motor 2 Sensor A Feedback \\ \hline
+						10        & S2B          & Motor 2 Sensor B Feedback \\ \hline
+						11        & GND          & Power Supply Ground       \\ \hline
+						12        & $V_{CC}$   & Power Supply (3.3V)       \\ \hline
+					\end{tabular}
+					\caption{PMOD connection description}
+					\label{tab:dhb_pmod}
+				\end{subtable}
+				\begin{subtable}[b]{0.3\linewidth}
+					\centering
+					\begin{tabular}{ccl}
+						\hline
+						\multicolumn{1}{|c|}{{\bf DIR1}} & \multicolumn{1}{c|}{{\bf EN1}} & \multicolumn{1}{l|}{{\bf Result M1}} \\ \hline
+						\multicolumn{1}{|c|}{0}          & \multicolumn{1}{c|}{0}         & \multicolumn{1}{l|}{Stop}            \\ \hline
+						\multicolumn{1}{|c|}{0}          & \multicolumn{1}{c|}{1/PWM}     & \multicolumn{1}{l|}{Forward}         \\ \hline
+						\multicolumn{1}{|c|}{1}          & \multicolumn{1}{c|}{0}         & \multicolumn{1}{l|}{Stop}            \\ \hline
+						\multicolumn{1}{|c|}{1}          & \multicolumn{1}{c|}{1/PWM}     & \multicolumn{1}{l|}{Reverse}         \\ \hline
+						                                 &                                &                                      \\ \hline
+						\multicolumn{1}{|c|}{{\bf DIR2}} & \multicolumn{1}{c|}{{\bf EN2}} & \multicolumn{1}{l|}{{\bf Result M2}} \\ \hline
+						\multicolumn{1}{|c|}{0}          & \multicolumn{1}{c|}{0}         & \multicolumn{1}{l|}{Stop}            \\ \hline
+						\multicolumn{1}{|c|}{0}          & \multicolumn{1}{c|}{1/PWM}     & \multicolumn{1}{l|}{Forward}         \\ \hline
+						\multicolumn{1}{|c|}{1}          & \multicolumn{1}{c|}{0}         & \multicolumn{1}{l|}{Stop}            \\ \hline
+						\multicolumn{1}{|c|}{1}          & \multicolumn{1}{c|}{1/PWM}     & \multicolumn{1}{l|}{Reverse}         \\ \hline
+					\end{tabular}
+					\caption{Truth table for DHB-1 input}
+					\label{tab:motor_signal}
+				\end{subtable}
+				\caption{} 
+			\end{table} 
+
+			To control the direction of the motor one applies a logic level to the \emph{DIR} pin for the corresponding motor; 1 for forward, 0 for reverse.
+			The speed of the motors are controlled by applying a Pulse Width Modulated (PWM) signal to the EN pin for the corresponding motor (see \autoref{tab:motor_signal}).
+			The sensor feedback pins are not used as there are no sensors attached to the wheels.
+
+			For more information, see the reference manual \cite{Digilent2014}.
+
+			% subsubsection external_dual_h_bridge (end)
+		
 		% subsection motor_control (end)
 
-
-% section hardware (end)
+	% section hardware (end)
 
 \end{document}
