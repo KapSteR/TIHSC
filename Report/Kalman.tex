@@ -31,26 +31,25 @@ The cyclic behavior is shown in \autoref{fig:cyclic_beha_kf}.
 	\caption{The cyclic behavior of the Kalman Filter}
 	\label{fig:cyclic_beha_kf}
 \end{figure}\noindent
-Each of these states consists of several equations. The prediction state uses the state-space model to calculate a prediction of the state called the a priori state, \autoref{eq:kf_state_apriori}.
-A priori is marked with a '$^-$'.
+Each of these states consists of several equations. The prediction state uses the state-space model to calculate a prediction of the state called the a priori state from the previous corrected state called the posterior state, \autoref{eq:kf_state_apriori}.
+A priori is marked with a '$^-$', and posterior is marked with a '$^+$'.
 \begin{equation}
 \label{eq:kf_state_apriori}
-\mathbf{x}_k^-=\mathbf{A} \mathbf{x}_{k-1} + \mathbf{B} \mathbf{u}_k
+\mathbf{x}_k^-=\mathbf{A} \mathbf{x}_{k-1}^+ + \mathbf{B} \mathbf{u}_k
 \end{equation}
 Here it is assumed that the system and control matrices are constant at all time instances.
 It also predicts an a priori covariance of the state, that describes how certain the prediction is, \autoref{eq:kf_cov_apriori}.
 \begin{equation}
 \label{eq:kf_cov_apriori}
-\mathbf{P}_k^-=\mathbf{A} \mathbf{P}_{k-1} \mathbf{A}^T+\mathbf{Q}
+\mathbf{P}_k^-=\mathbf{A} \mathbf{P}_{k-1}^+ \mathbf{A}^T+\mathbf{Q}
 \end{equation}
 The correction state then starts by calculating the Kalman Gain. 
-The Kalman Gain is a matrix of weights, that show how much belief there is in the prediction and the measurement. \autoref{eq:kalman_gain} is the calculation of it.
+The Kalman Gain is a matrix of weights, that show how much belief there is in the prediction and the measurement. \autoref{eq:kf_kalman_gain} is the calculation of it.
 \begin{equation}
-\label{eq:kalman_gain}
+\label{eq:kf_kalman_gain}
 \mathbf{K}_k = \mathbf{P}_k^- \mathbf{H}^T (\mathbf{H} \mathbf{P}_k^- \mathbf{H}^T + \mathbf{R})^{-1}
 \end{equation}
-The Kalman Gain is then used to correct the states as shown in \autoref{eq:kf_state_posterior}, thereby calculation what is called the posterior state. 
-Posterior is marked with a '$^+$'.
+The Kalman Gain is then used to correct the states as shown in \autoref{eq:kf_state_posterior}, thereby calculation the posterior state. 
 \begin{equation}
 \label{eq:kf_state_posterior}
 \mathbf{x}_k^+ = \mathbf{x}_k^- + \mathbf{K}_k (\mathbf{z}_k - \mathbf{H} \mathbf{x}_k^-)
@@ -60,9 +59,15 @@ The a priori covariance is also corrected to the posterior covariance by using t
 \label{eq:kf_cov_posterior}
 \mathbf{P}_k^+ = (\mathbf{I} - \mathbf{K}_k \mathbf{H}) \mathbf{P}_k^-
 \end{equation}
+$\mathbf{I}$ is an identity matrix.
 By looking at these equations, it can be seen that a KF actually describes how mean and covariance of the states propagates in time.
 This becomes obvious when looking at an 1D example from \citep{Thrun2002}.
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Figures/kf_ex.png}
+	\caption{Kalman Filter 1D example, borrow from \citep{Thrun2002}}
+	\label{fig:kf_ex}
+\end{figure}\noindent
 In this example a robot is moving in 1D.
 \autoref{fig:kf_ex}a shows the a priori state and uncertainty, variance, of the robot.
 This mean that the KF is in its prediction state.
@@ -73,14 +78,48 @@ The robot then moves in \autoref{fig:kf_ex}d, thereby adding uncertainty to its 
 This uncertainty is, as described in \autoref{eq:kf_cov_apriori}, the process noise variance, $\mathbf{Q}$; KF is back in the prediction state.
 In \autoref{fig:kf_ex}e, it repeats the process from \autoref{fig:kf_ex}b.
 And in \autoref{fig:kf_ex}f, it corrects itself like in \autoref{fig:kf_ex}c.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\linewidth]{./Figures/kf_ex.png}
-	\caption{Kalman Filter 1D example, borrow from \citep{Thrun2002}}
-	\label{fig:kf_ex}
-\end{figure}\noindent
 
 \subsection{The Extended Kalman Filter}
+The EKF is, as mentioned earlier, a KF that takes into account that a system may not be linear, which is the case in most situations.
+The state-space model is now present in the form as shown in \autoref{eq:ss_state_eq3} and \autoref{eq:ss_state_eq4}.
+\begin{equation}
+\label{eq:ss_state_eq3}
+\mathbf{x}_k = g(\mathbf{u}_k,\mathbf{x}_{k-1}) + \mathbf{w}_k
+\end{equation}
+\begin{equation}
+\label{eq:ss_state_eq4}
+\mathbf{z}_k = h(\mathbf{x}_k) + \mathbf{v}_k
+\end{equation}
+Where $g$ and $h$ are the non-linear functions, that now describes the transform of the prior state and the control input instead of matrix $\mathbf{A_k}$ and $\mathbf{B_k}$, and the transform of the posterior state instead of $\mathbf{H_k}$ respectively.
+The downside of representing a system in the non-linear manner, is that the uncertainties no longer can be presented as gaussians.
+The EKF takes this into account and tries to correct it by doing linearization, which is the key concept of the EFK.
+By linearizing the system at every iteration, the uncertainties can again be approximated to be gaussians.
+The EFK linearize by making a First Order Taylor Expansion which calculates a tangent to the system at every iteration.
+
+The EFK algorithm is shown in \autoref{eq:ekf_state_apriori} to \autoref{eq:ekf_cov_posterior}.
+\begin{equation}
+\label{eq:ekf_state_apriori}
+\mathbf{x}_k^- = g(\mathbf{u}_k,\mathbf{x}_{k-1}^+) 
+\end{equation}
+\begin{equation}
+%\label{eq:ekf_cov_apriori}
+\mathbf{P}_k^- = \mathbf{G}_k \mathbf{P}_{k-1}^+ \mathbf{G}_k^T+\mathbf{Q}
+\end{equation}
+\begin{equation}
+%\label{eq:ekf_kalman_gain}
+\mathbf{K}_k = \mathbf{P}_k^- \mathbf{H}_k^T (\mathbf{H}_k \mathbf{P}_k^- \mathbf{H}_k^T + \mathbf{R})^{-1}
+\end{equation}
+\begin{equation}
+%\label{eq:ekf_state_posterior}
+\mathbf{x}_k^+ = \mathbf{x}_k^- + \mathbf{K}_k (\mathbf{z}_k - h(\mathbf{x}_k^-))
+\end{equation}
+\begin{equation}
+\label{eq:ekf_cov_posterior}
+\mathbf{P}_k^+ = (\mathbf{I} - \mathbf{K}_k \mathbf{H}_k) \mathbf{P}_k^-
+\end{equation}
+From these equations it is obvious that they are somewhat like the KF algorithm.
+The biggest changes are that the non-linear functions are used instead of the state-space matrices, and that $\mathbf{G}_k$ and $\mathbf{H}_k$ are the Jacobians of the non-linear functions.
+
 	% section introduction (end)
 
 \end{document}
