@@ -13,21 +13,17 @@
 	\subsection{Environment} % (fold)
 	\label{sub:software_environment}
 
-<<<<<<< HEAD
-
 		The software for this project was written in C++ using the Xilinx Software Development Kit.
 		C++ was chosen because it is a object oriented library, which gave some clear advantages when working in a three person team.
 		Furthermore, C++ has native support for an resizable array datatype known as a vector, which greatly reduced the complexity of manipulating array.
 		The software was written for the C++11 standard, since the standard gave some advantages in initialisation of vectors.
 		GitHub was used for version control	to manage and backup code.
 		
-		\fxnote{Write Something about Map}
+\fxnote{Write Something about Map}
 		
-		\subsection{Design} % (fold)
-		\label{sub:software_design}
+	\subsection{Design} % (fold)
+	\label{sub:software_design}
 
->>>>>>> origin/master
-	
 	\subsubsection{Structure} % (fold)
 	\label{subsub:software_structure}
 		A object-oriented approach was taken to the design, in order to modulize the different parts of the software. 
@@ -42,9 +38,7 @@
 			\caption{Class Diagram}
 			\label{fig:classdiagram}
 		\end{figure}
-
-<<<<<<< HEAD
-
+		
 		The main components of the program is the LIDAR, PathMaker, RobotFrame and ParticleFilter classes. 
 		Each class has a distinct purpose, which maps directly to one of the four  actions in the main loop of \autoref{fig:systemact}.
 		The mapping can be see in \autoref{table:action_class_map}
@@ -67,13 +61,10 @@
 			\caption{Grid map for demonstration}
 			\label{table:action_class_map} 
 		\end{table} \noindent
->>>>>>> 26f5c724e65058c0cc90ada9450d0d0a17e7fbe5
 		
-<<<<<<< HEAD
 	\subsubsection{Behaviour} % (fold)
 	\label{subsub:software_behaviour}
->>>>>>> origin/master
-	
+
 		The dataflow between the different classes is covered in the Internal Block Diagram in \autoref{fig:softwareibd}
 		
 		\begin{figure}[H]
@@ -89,20 +80,68 @@
 		The robots position is then estimated by taking the position of the particle with the biggest weight.
 		This position is used in the PathMaker, which performs AStar to find the best path to the goal. The next move from this path is then sent to both the RobotFrame class and the ParticleFilter, to move both the robot and the Particles along the expected path.
 		The RobotFrame class uses the MotorControl class to send a control signal to the Motion block from \autoref{fig:systemibd}, which converts the control to a PMW signal that controls the motors of the robot.
-<<<<<<< HEAD
+		
 	
 	\subsection{Implementation} % (fold)
 	\label{sub:software_implementation}
 	
 	The code was implemented according to the design. The code can be found in \fxnote{CodeBae Reference}.
 	
+	\begin{lstlisting}[caption=Main Function of Progam, style=Code-C++, label=lst:main_code]
+	
+	int main(void) {
+		//Creating goal
+		Position goal;
+		goal.x = GOAL_X;
+		goal.y = GOAL_Y;
+		goal.orientation = GOAL_ORIENTATION;
+	
+		//Creating PathMaker instance, loading map and setting the goal
+		PathMaker* pathMaker = new PathMaker();
+		pathMaker->setGoal(goal);
+		pathMaker->loadMap();
+	
+		//Creating instances of different objects
+		RobotFrame* robotFrame = new RobotFrame();
+		robotFrame->pos.x = 4;
+		robotFrame->pos.y = 4;
+	
+		ParticleFilter* particleFilter = new ParticleFilter(pathMaker->map);
+		LIDAR* lidar = new LIDAR();
+		//Making a MoveBlock object for the next movement of the robot and the particles
+		MoveBlock nextMove;
+	
+		WaitForStart *WFS = new WaitForStart();
+		WFS->wait(3);
+	
+		while (1) {
+			if (pathMaker->checkGoal(robotFrame->pos) != true) {
 
-		\begin{lstlisting}[caption=Example of CNN setup, style=Code-Matlab, label=lst:cnn_setup]
+				lidar->senseData();
+				
+				particleFilter->updateWeigths(lidar->dataArray, pathMaker->map);
+				particleFilter->resample(pathMaker->map);
+				particleFilter->getNewPosition(robotFrame->pos);
+				
+				pathMaker->performAStar(robotFrame->pos);
+				pathMaker->getNextMove(nextMove);
+				
+				robotFrame->move(nextMove);
+				particleFilter->moveParticles(nextMove);
+	
+			}
+			else
+			{
+				std::cout << "Found Goal" << std::endl;
+				return 0;
+			}
+	
+		}
+		return 0;
+	}
+	
+	\end{lstlisting}
 
-			% Insert code here
 
-		\end{lstlisting}
-
->>>>>>> origin/master
 % section software (end)
 \end{document}
