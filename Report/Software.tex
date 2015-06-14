@@ -136,6 +136,30 @@
 	
 	\end{lstlisting}
 
-
+	\subsubsection{ParticleFilter} % (fold)
+	\label{subsub:software_particlefilter}
+	Ingen landmarks, derfor ikke kalman
+	Kan trække raw data ind i partikle
+	Nemmere at implementere partiklefilter
+	10.000 partikler
+	Random på 5% af partikler
+	exp(Log - likehood) til at bestemme vægten
+	Der normaliseres med N
+	Så man får average likelyhood
+	Den med størst vægt bliver så det most probable position
+	Partilefilter - der laves et range map, med [32][32][180] sæt af distancer.
+	
+	\subsubsection{PathMaker} % (fold)
+	\label{subsub:software_pathmaker}
+	Gridded er en 32x32 med 10 cm grids
+	Cost bliver movement cost + heuristik + penalty map
+	Penality map fordi robotten er større end griddet.
+	Så for at undgå at robotten køre ind i vægene
+	A* bruges da det vil kunne undgå obstacels
+	
+	\subsubsection{MotrolControl} % (fold)
+	\label{subsub:software_motorcontrol}
+	Hvordan en global moveblock laves om til en movement control
+	
 % section software (end)
 \end{document}
