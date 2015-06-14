@@ -56,12 +56,10 @@
 		The system starts by setting up the robot, and then enters a loop that continues until the goal is found.
 		
 		When the robot has not yet found its goal, it starts out by using its sensor.
-		The sensordata is then used to update the weights of the particles, and resample them.
-		
-		Using the resampled particels, the robots calculates its most probable current location.
+		The sensordata is then used to estimate the most probable current location of the robot.
 		With basis in this location, a path to the goal is generated.
 		Finally, the robot moves a step along the found path, and checks if it has reached the goal.
-		If not, it continues in the loop. Otherwise the activity stops.
+		If not, it continues in the loop. Otherwise the activity ends.
 
 
 % section system_description (end)
