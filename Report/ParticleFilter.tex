@@ -20,7 +20,7 @@ As this shows, all the particles have their importance weight calculated at each
 The importance weight is a measure of how well a particle matches the measured position.
 This can for an example be calculated using a gaussian distribution:
 \begin{equation}
-	p(\mathbf{x}|\mathbf{z}) = \frac{1}{\sqrt{2\pi^2 \cdot |\mathbf{C}|}} \exp \left( -\frac{1}{2}\cdot (\mathbf{z}-\mathbf{x})^T \mathbf{C}^{-1} (\mathbf{z}-\mathbf{x}) \right)
+	p(\mathbf{x}|\mathbf{z}) = \frac{1}{\sqrt{2\pi^2 \cdot |\mathbf{C_z}|}} \exp \left( -\frac{1}{2}\cdot (\mathbf{z}-\mathbf{x})^T \mathbf{C_z}^{-1} (\mathbf{z}-\mathbf{x}) \right)
 \end{equation}
 
 
