@@ -19,9 +19,13 @@
 		The software was written for the C++11 standard, since the standard gave some advantages in initialisation of vectors.
 		GitHub was used for version control	to manage and backup code.
 		
-	\subsection{Structure} % (fold)
-	\label{sub:software_structure}
+		\fxnote{Write Something about Map}
+		
+	\subsection{Design} % (fold)
+	\label{sub:software_design}
 	
+	\subsubsection{Structure} % (fold)
+	\label{subsub:software_structure}
 		A object-oriented approach was taken to the design, in order to modulize the different parts of the software. 
 		
 		This gave clear advantages when working multiple people on the same codebase, as the development of the different classes could be spread out between multiple people.
@@ -59,8 +63,8 @@
 			\label{table:action_class_map} 
 		\end{table} \noindent
 		
-	\subsection{Behaviour} % (fold)
-	\label{sub:software_behaviour}
+	\subsubsection{Behaviour} % (fold)
+	\label{subsub:software_behaviour}
 	
 		The dataflow between the different classes is covered in the Internal Block Diagram in \autoref{fig:softwareibd}
 		
@@ -77,6 +81,11 @@
 		The robots position is then estimated by taking the position of the particle with the biggest weight.
 		This position is used in the PathMaker, which performs AStar to find the best path to the goal. The next move from this path is then sent to both the RobotFrame class and the ParticleFilter, to move both the robot and the Particles along the expected path.
 		The RobotFrame class uses the MotorControl class to send a control signal to the Motion block from \autoref{fig:systemibd}, which converts the control to a PMW signal that controls the motors of the robot.
+	
+	\subsection{Implementation} % (fold)
+	\label{sub:software_implementation}
+	
+	The code was implemented according to the design. The code can be found in \fxnote{CodeBae Reference}.
 	
 % section software (end)
 \end{document}
