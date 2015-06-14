@@ -63,6 +63,22 @@ The a priori covariance is also corrected to the posterior covariance by using t
 By looking at these equations, it can be seen that a KF actually describes how mean and covariance of the states propagates in time.
 This becomes obvious when looking at an 1D example from \citep{Thrun2002}.
 
+In this example a robot is moving in 1D.
+\autoref{fig:kf_ex}a shows the a priori state and uncertainty, variance, of the robot.
+This mean that the KF is in its prediction state.
+The robot measures its position at \autoref{fig:kf_ex}b, and the uncertainty here is described by the measurement noise variance, $\mathbf{R}$.
+The correction state calculates the Kalman Gain and finds the posterior state and uncertainty as seen in \autoref{fig:kf_ex}c.
+Notice that the uncertainty now has a higher peak and smaller width.
+The robot then moves in \autoref{fig:kf_ex}d, thereby adding uncertainty to its position.
+This uncertainty is, as described in \autoref{eq:kf_cov_apriori}, the process noise variance, $\mathbf{Q}$; KF is back in the prediction state.
+In \autoref{fig:kf_ex}e, it repeats the process from \autoref{fig:kf_ex}b.
+And in \autoref{fig:kf_ex}f, it corrects itself like in \autoref{fig:kf_ex}c.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{./Figures/kf_ex.png}
+	\caption{KF 1D example}
+	\label{fig:kf_ex}
+\end{figure}\noindent
 
 \subsection{The Extended Kalman Filter}
 	% section introduction (end)
