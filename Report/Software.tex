@@ -85,38 +85,33 @@
 	\subsection{Implementation} % (fold)
 	\label{sub:software_implementation}
 	
-	The code was implemented according to the design. The code can be found in \fxnote{CodeBae Reference}.
+	The code was implemented according to the design. 
+	The code can be found in \fxnote{CodeBae Reference}.
+	The main function of the program has been included to reflect how the design was implemented.
 	
 	\begin{lstlisting}[caption=Main Function of Progam, style=Code-C++, label=lst:main_code]
 	
 	int main(void) {
-		//Creating goal
 		Position goal;
 		goal.x = GOAL_X;
 		goal.y = GOAL_Y;
 		goal.orientation = GOAL_ORIENTATION;
 	
-		//Creating PathMaker instance, loading map and setting the goal
 		PathMaker* pathMaker = new PathMaker();
 		pathMaker->setGoal(goal);
 		pathMaker->loadMap();
 	
-		//Creating instances of different objects
 		RobotFrame* robotFrame = new RobotFrame();
 		robotFrame->pos.x = 4;
 		robotFrame->pos.y = 4;
 	
 		ParticleFilter* particleFilter = new ParticleFilter(pathMaker->map);
 		LIDAR* lidar = new LIDAR();
-		//Making a MoveBlock object for the next movement of the robot and the particles
 		MoveBlock nextMove;
-	
-		WaitForStart *WFS = new WaitForStart();
-		WFS->wait(3);
 	
 		while (1) {
 			if (pathMaker->checkGoal(robotFrame->pos) != true) {
-
+				
 				lidar->senseData();
 				
 				particleFilter->updateWeigths(lidar->dataArray, pathMaker->map);
@@ -128,7 +123,6 @@
 				
 				robotFrame->move(nextMove);
 				particleFilter->moveParticles(nextMove);
-	
 			}
 			else
 			{
