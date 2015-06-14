@@ -57,7 +57,7 @@
 *.tks
 
 /**/Report/*.pdf
-/**/Report/**/*.pdf
+#/**/Report/**/*.pdf
 
 #### sdk ####
 *.d
