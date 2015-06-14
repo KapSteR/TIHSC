@@ -70,11 +70,21 @@
 	\label{sub:motor_control}
 
 		The motor control hardware consists of two major blocks, an external Dual H-Bridge for driving the power the the motors, and an on-chip PWM controller for controlling the motor driver.
+		The connection between the two blocks are shown in the SysML internal block diagram of the Motion block (\autoref{fig:motion_ibd}), along with the two motors.
+		The \emph{Power}-signal comes from a battery, and \emph{Motor Control} is connected to the Processing System.
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1.0\linewidth]{MotionIBD}
+			\caption{SysML Internal Block Diagram of the Motion Block}
+			\label{fig:motion_ibd}
+		\end{figure}
+
 
 		\subsubsection{External Dual H-Bridge} % (fold)
 		\label{ssub:external_dual_h_bridge}
 			
-			The \emph{DHB1} from Digilent in a dual- H-bridge motor controller that enables regular DC-motors to be driven in either direction with with a single ended power supply.
+			The \emph{DHB1} from Digilent is a dual- H-bridge motor controller that enables regular DC-motors to be driven in either direction with with a single ended power supply.
 			Further it provides logic level transistor switching so that higher voltages (up to 11.8V) and higher currents (1.5A RMS, 2A peak) can be used to drive the motor without loading the logic circuit.
 
 			\begin{figure}[H]
@@ -139,6 +149,15 @@
 			For more information, see the reference manual \cite{Digilent2014}.
 
 			% subsubsection external_dual_h_bridge (end)
+
+		\subsubsection{PWM-controller} % (fold)
+		\label{ssub:pwm_controller}
+			
+			The PWM-controller 
+
+
+
+			% subsubsection pwm_controller (end)
 		
 		% subsection motor_control (end)
 

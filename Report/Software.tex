@@ -13,6 +13,8 @@
 	\subsection{Environment} % (fold)
 	\label{sub:software_environment}
 
+<<<<<<< HEAD
+
 		The software for this project was written in C++ using the Xilinx Software Development Kit.
 		C++ was chosen because it is a object oriented library, which gave some clear advantages when working in a three person team.
 		Furthermore, C++ has native support for an resizable array datatype known as a vector, which greatly reduced the complexity of manipulating array.
@@ -21,8 +23,10 @@
 		
 		\fxnote{Write Something about Map}
 		
-	\subsection{Design} % (fold)
-	\label{sub:software_design}
+		\subsection{Design} % (fold)
+		\label{sub:software_design}
+
+>>>>>>> origin/master
 	
 	\subsubsection{Structure} % (fold)
 	\label{subsub:software_structure}
@@ -39,6 +43,7 @@
 			\label{fig:classdiagram}
 		\end{figure}
 
+<<<<<<< HEAD
 
 		The main components of the program is the LIDAR, PathMaker, RobotFrame and ParticleFilter classes. 
 		Each class has a distinct purpose, which maps directly to one of the four  actions in the main loop of \autoref{fig:systemact}.
@@ -62,9 +67,12 @@
 			\caption{Grid map for demonstration}
 			\label{table:action_class_map} 
 		\end{table} \noindent
+>>>>>>> 26f5c724e65058c0cc90ada9450d0d0a17e7fbe5
 		
+<<<<<<< HEAD
 	\subsubsection{Behaviour} % (fold)
 	\label{subsub:software_behaviour}
+>>>>>>> origin/master
 	
 		The dataflow between the different classes is covered in the Internal Block Diagram in \autoref{fig:softwareibd}
 		
@@ -81,11 +89,20 @@
 		The robots position is then estimated by taking the position of the particle with the biggest weight.
 		This position is used in the PathMaker, which performs AStar to find the best path to the goal. The next move from this path is then sent to both the RobotFrame class and the ParticleFilter, to move both the robot and the Particles along the expected path.
 		The RobotFrame class uses the MotorControl class to send a control signal to the Motion block from \autoref{fig:systemibd}, which converts the control to a PMW signal that controls the motors of the robot.
+<<<<<<< HEAD
 	
 	\subsection{Implementation} % (fold)
 	\label{sub:software_implementation}
 	
 	The code was implemented according to the design. The code can be found in \fxnote{CodeBae Reference}.
 	
+
+		\begin{lstlisting}[caption=Example of CNN setup, style=Code-Matlab, label=lst:cnn_setup]
+
+			% Insert code here
+
+		\end{lstlisting}
+
+>>>>>>> origin/master
 % section software (end)
 \end{document}
