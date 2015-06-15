@@ -35,7 +35,7 @@ It then randomly select a particle, where all particles have the same probabilit
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.3\linewidth]{./Figures/low_var_resampling.png}
-	\caption{Low variance resampling example, borrow from \citep{Thrun2002}}
+	\caption{Low variance resampling example, borrowed from \citep{Thrun2002}}
 	\label{fig:low_var_resampling}
 \end{figure}\noindent
 A $\beta$ value is created using the largest importance weight and some randomness, \autoref{eq:beta_calc}.
@@ -68,6 +68,14 @@ To summarize, the algorithm works in the following steps:
 	\item Go to step 2
 \end{enumerate}
 \end{enumerate}
+Now that the functionality of the particle filter have been described an example of it is shown in 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\linewidth]{./Figures/low_var_resampling.png}
+	\caption{Low variance resampling example, borrowed from \citep{Thrun2002}}
+	\label{fig:low_var_resampling}
+\end{figure}\noindent
+
 skriv om particle filter rent generelt
 importance sampling
 resampling ways
