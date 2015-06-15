@@ -176,19 +176,27 @@
 				f_{PWMcycle} =
 				\frac{f_{PWMclock}}{2^{PWM\ resolution}} =
 				\frac{2\ \text{MHz}}{2^{10}} =
-				\frac{2\ \text{MHz}}{1024}} =
+				\frac{2\ \text{MHz}}{1024} =
 				1.953\ \text{kHz}
 				\approx 2\ \text{kHz}
 			\end{equation}
 
 			\texttt{clockDividerThread} signals \texttt{pwmThread} of a PWM clock tick by setting \texttt{pwmClock} for one PL clock-cycle every time a PWM clock tick is generated.
 
-			
-
+			\texttt{pwmThread} handles PWM output by counting up a 10 bit variable everytime it receives a PWM clock tick, and compares the count with value PWM settings for the left and right motors, \texttt{pwmL} and \texttt{pwmR} respectively.
+			If the count is below, the enable signal is held high, and if it is above is is held low.
+			This way the output duty cycle is determined by:
+			\begin{equation}
+				DC = \frac{PWM\ setting}{1024}
+				\quad \quad \text{Example: }
+				\frac{512}{1024} = 50\%
+			\end{equation}
 
 			\lstinputlisting[caption=PWM-Controller SystemC Definition, style=Code-C++, label=lst:pwm_definition, basicstyle=\scriptsize]{../MotorControl/MotorControl/main.cpp}
 
-			This model was then synthesized to VHDL code using the Vivado HLS tool and imported into the overall block design on 
+			This model was then synthesized to VHDL code using the Vivado HLS tool and imported into the overall block design.
+			Using special \texttt{\#pragma}'s the setting variables \texttt{pwmL}, \texttt{pwmR} and \texttt{DIR} are mapped onto the AXI memory bus of the AP SoC.
+			This way they are readily addressable from the PS as memory mapped registers.
 
 
 
