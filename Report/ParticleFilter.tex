@@ -5,19 +5,19 @@
 \section{Particle Filter} % (fold)
 	\label{sec:particlefilter}
 In this is about the Particle Filter. 
-Particle Filter can be used for localization by spread particles across the map and then use them as belief. This the last non-parametric method and also the last localization method presented in this course.
+Particle Filters can be used for localization by spreading particles across the map and then use them as belief. This the last non-parametric method and also the last localization method presented in this course.
 
-The basic idea with the particle filter in a localization application is to choose a number of particles, generate that many particles with random poses, and make them converges towards the robot position.
+The basic idea with the particle filter in a localization application is to choose a number of particles, generate that many particles with random poses, and make them converges towards the actual position.
 The basic algorithm is the following:
 \begin{enumerate}
 \item Generate a particle set $\chi$ of particles with random poses 
 \item Calculate the importance weights of the particles 
-\item Resample the particle set
+\item Resample the particle set based on importance weights
 \item Move the particles
 \item Go to point 2.
 \end{enumerate}
 As this shows, all the particles have their importance weight calculated at each iteration.
-The importance weight is a measure of how well a particle matches the measured position.
+The importance weight is a measure of how well a particle matches the measured pose.
 This can for an example be calculated using a gaussian distribution:
 \begin{equation}
 	p(\mathbf{x}|\mathbf{z}) = \frac{1}{\sqrt{2\pi^2 \cdot |\mathbf{C_z}|}} \exp \left( -\frac{1}{2}\cdot (\mathbf{z}-\mathbf{x})^T \mathbf{C_z}^{-1} (\mathbf{z}-\mathbf{x}) \right)
