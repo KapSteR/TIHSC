@@ -1,0 +1,15 @@
+TODO:
+	Mechanics
+		Motor characteristics
+
+	Hardware
+		Platform (Done)
+		HW/SW Co-design (Done)
+		Power	
+		Sensors / LIDAR (Done)
+		Motor Control (Done)
+		AP SoC Block Design
+		~continuity
+
+	Software
+		Move driver interface description

@@ -62,6 +62,7 @@
 		The robot is designed to use a LIDAR (Light Detection and Ranging) sensor for sensing its location.
 		The sensor chosen for this robot is a Neato XV-11 LDS (Laser Distance Sensor) (seen mounted atop the robot in \autoref{fig:final_robot}.
 		This sensor consists of a 1 dimensional LDS mounted on a rotating platform, enabling it to take measurement in a 2 dimensional plane in 1\degree\ increments.
+		The data is measured in mm and numeric range of 0-16384 (14 bits) and an operating range of ~150-6000 depending on lighting conditions and reflectivity of objects.
 
 		The top houses the sensor and computation unit. This measure the distance, measures rotational velocity of the sensor related to the base and handle communication of data.
 		It requires a 3.3V power supply, consumes about 145 mA of current when operating and communicates via serial-communication (see Section \ref{ssub:sensor_communication_protocol}).
@@ -104,10 +105,41 @@
 		\subsubsection{Sensor data protocol} % (fold)
 		\label{ssub:sensor_communication_protocol}
 		
+			The LDS transmits data via 3.3V RS-232 at 115200 BAUD.
+			It uses 8 databits, no parity and one stop bit (\textbf{8N1}).
+			Data is transmitted continuously while the sensor rotates, in packages of four readings, totaling in 90 packages per turn.
+
+			Each package has 22 bytes the following format:
+
+			{\footnotesize\texttt{<start> <index> <speed\_L> <speed\_H> [Data 0] [Data 1] [Data 2] [Data 3] <checksum\_L> <checksum\_H>}}
+
+			Where:
+			\vspace{-12pt}
+			\begin{itemize}
+				\item \texttt{start} is always 0xFA
+
+				\item \texttt{index} is the index byte in the 90 packets, going from 0xA0 (packet 0, readings 0 to 3) to 0xF9 (packet 89, readings 356 to 359)
+
+				\item \texttt{speed} is a two-byte information, little-endian. It represents the speed, in 64th of RPM (aka value in RPM represented in fixed point, with 6 bits used for the decimal part)
+
+				\item \texttt{[Data 0]} to \texttt{[Data 3]} are the 4 readings. Each one is 4 bytes long, and organized as follows 
+				\begin{itemize}
+					\item byte 0 : \texttt{<distance 7:0>}
+
+					\item byte 1 : \texttt{<"invalid data" flag> <"strength warning" flag> <distance 13:8>}
+
+					\item byte 2 : \texttt{<signal strength 7:0>}
+
+					\item byte 3 : \texttt{<signal strength 15:8>}
+				\end{itemize}
+			\end{itemize}
+
+			Data is only sensed and transmitted if the sensor is spinning at more than 180 PRM.
+			If the sensor exceeds 320 RPM the data becomes sparse, as only every one in two measurements are non-zero and valid.
+			Above 349 RPM the serial interface becomes a bottleneck and data is corrupted and packages are lost.
+			\fxnote{Noget med checksum} 
+
 			% subsubsection sensor_communication_protocol (end)
-
-
-
 	
 		% subsection sensor (end)
 
