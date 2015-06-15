@@ -6,16 +6,15 @@
 \section{Software} % (fold)
 \label{sec:software}
 
-	In this project, software was a vital part. 
-	While the course theory had presented ways of doing 
-	In this chapter, the coding environment, structure and behaviour of the codebase will be covered.
+	In this chapter, the coding environment, design and implementation of the software will be covered.
+	For reference, the entire codebase can be found in \fxnote{CodeBae Reference}.
 	
 	\subsection{Environment} % (fold)
 	\label{sub:software_environment}
 
 		The software for this project was written in C++ using the Xilinx Software Development Kit.
-		C++ was chosen because it is a object oriented library, which gave some clear advantages when working in a three person team.
-		Furthermore, C++ has native support for an resizable array datatype known as a vector, which greatly reduced the complexity of manipulating array.
+		C++ was chosen because it is a object oriented language, which gives some clear advantages when working in a team.
+		Furthermore, C++ has native support for an resizable array datatype known as a vector, which greatly reduced the complexity of manipulating arrays.
 		The software was written for the C++11 standard, since the standard gave some advantages in initialisation of vectors.
 		GitHub was used for version control	to manage and backup code.
 		
@@ -56,7 +55,7 @@
 				A5: Move & RobotFrame  \\ 
 			\hline
 			\end{tabular}
-			\caption{Grid map for demonstration}
+			\caption{Acton mapping of classes}
 			\label{table:action_class_map} 
 		\end{table} \noindent
 		
@@ -73,18 +72,19 @@
 		\end{figure}
 
 		The raw sensor data from the Sensing block in \autoref{fig:systemibd} is sent to the LIDAR class, which  converts the raw sensor data to 360 distance values.
-		The sensor data is sent to the ParticleFilter class, which update its current particle weights. 
+		The sensor data is sent to the ParticleFilter class, which updates its current particle weights. 
 		These weights are used to resample the particles using the low variance sampling technique presented in the course material.
-		The robots position is then estimated by taking the position of the particle with the biggest weight.
-		This position is used in the PathMaker, which performs AStar to find the best path to the goal. The next move from this path is then sent to both the RobotFrame class and the ParticleFilter, to move both the robot and the Particles along the expected path.
-		The RobotFrame class uses the MotorControl class to send a control signal to the Motion block from \autoref{fig:systemibd}, which converts the control to a PMW signal that controls the motors of the robot.
+		The robots position is then estimated as position and orientation of the particle with the largest weight.
+		This position is used in the PathMaker, which performs AStar to find the best path to the goal. 
+		The next move from this path is sent to both the RobotFrame class and the ParticleFilter, to move both the robot and the particles along the expected path.
+		The RobotFrame class uses the MotorControl class to send a control signal to the Motion block from \autoref{fig:systemibd}, which converts the control to a PWM signal that controls the motors of the robot.
 		
 	
 	\subsection{Implementation} % (fold)
 	\label{sub:software_implementation}
 	
-	This section will cover the implementation specific details of the software.
-	The software was implemented according to the design and the main function of the program is included in order to reflect this.
+	This section covers the implementation specific details of the software.
+	The software was implemented according to the design, as the programs main function, presented in \autoref{lst:main_code}, makes apparent.
 
 	\begin{lstlisting}[caption=Main Function of Progam, style=Code-C++, label=lst:main_code]
 	
@@ -133,23 +133,22 @@
 	
 	\end{lstlisting}
 
-	Focus in the following subsections has been put in the PathMaker, ParticleFilter and RobotFrame class, as they have required the most work during implementation.
-	For reference, the entire codebase can be found in \fxnote{CodeBae Reference}.
+	Focus in the following subsections has been put on the PathMaker, ParticleFilter and RobotFrame class, as they have required the most work during implementation.
 	
 	\subsubsection{ParticleFilter} % (fold)
 	\label{subsub:software_particlefilter}
 	
-	The ParticleFilter class responsibility for turning  sensor data into an estimate of the current best position. 
-	In this course, the two main techniques of doing so are particle filters and Kalman filters. 
+	The ParticleFilter class is responsible for turning  sensor data into an estimate of the robots current position. 
+	In this course, the two main techniques for doing so are particle filters and Kalman filters. 
 	Particle filters were chosen, which the name of this class implies, since particle filters are relatively easy to implement, and do not require landmarks.
 	
-	The ParticleFilter class uses a Particle object to represent a Particle. A particle therefore has attributes describing its position and orientation, much like the robot does. 
-	These particles are generated randomly in the constructor of the PartileFilter class. The generatio can be seen in 
+	The ParticleFilter class uses a Particle object to represent a particle. A particle has attributes describing its position and orientation, much like the robot does. 
+	These particles are generated randomly in the constructor of the ParticleFilter class.
 	
-	The ParticleFilter class is divided into three functions.
+	The ParticleFilter class has three main functions.
 	UpdateWeights, Resample and GetNewPosition.
-	The UpdateWeights function updates the weights. 
-	The weights are a averaged likelihoods, which are calculated for each particle, using the weightCalculation function which can be seen in \autoref{lst:weightCalculation}.
+	The UpdateWeights function updates the weights of the particels. 
+	The weights are averaged likelihoods, which are calculated by using the weightCalculation function of the particle objects that can be seen in \autoref{lst:weightCalculation}.
 	
 	\begin{lstlisting}[caption=weightCalculation function of particle class, style=Code-C++, label=lst:weightCalculation]
 			
@@ -183,21 +182,22 @@
 
 	\end{lstlisting}
 	
-	The measurement data is compared with the RangeArray, which is a pre-computed array with 32x32x180 floats, that contains the expected measurement data at all locations and all angels.
+	The measured data is compared with the RangeArray. The RangeArray is a pre-computed array with 32x32x180 floats, that contains the expected measurement data at all locations and angels in the map.
 	
 	\fxnote{Måge: noget med hvorfor vi regner probabilitien som vi gør?}	
 	
 	Once the new weights have been calculated, the Resampling function is invoked. 
 	The resampling function is the heart of the particle filter.
-	In this function, a new set of particles is constructed, by randomly picking particles from the current set, with the probability of picking a certain particle proportional to it's weights.
-	This is accomplished by using the \fxnote{hvad hedder hjulet?} random picker wheel presented in the course material.
-	Only 95 percent of the particles in the new set are made from actual resampling.
+	In this function, a new set of particles is constructed, by randomly choosing particles from the current set.
+	When choosing which particels to include in the new set, the probability of picking a certain particle is proportional to it's weight.
+	This is accomplished by using the low variance sampling technique presented in the course material.
+	Only 95 percent of the particles in the new set are made from resampling.
 	The last 5 percent are new particles, which are randomly placed on the map.
 	The randomly placed particels are needed if the robot misplaces itself in relations to its particle.
-	This can happen if the movement of the robot does not fit the motion model, or if the robot is physically moved by someone else. 
-	The function can be seen in \autoref{lst:resample}
+	This can happen if the movement of the robot does not fit the motion model, or if the robot is physically moved by someone else or "Kidnapped". 
+	The Resampling function can be seen in \autoref{lst:resample}
 	
-	\begin{lstlisting}[caption=Resampling function of particlefilter, style=Code-C++, label=lst:resample]
+	\begin{lstlisting}[caption=Resampling function of ParticleFilter, style=Code-C++, label=lst:resample]
 		void ParticleFilter::resample(intMatrix map) {
 			vector<Particle> tempSet;
 			int index = rand() % NUMBEROFPARTICLES;
@@ -243,12 +243,12 @@
 
 	Lastly the particle filter estimates the most probable current position of the robot. 
 	This is done by finding the particle with the largest weight.
-	In the course this was done by taking the average of all particles.
-	This does not work well with a multi-model distribution of particles.
-	If the particles are clustered in two equally likely  positions, the resulting position would always be wrong. 
-	By using the  larges weight, the position would only be wrong half the time.
+	The course material proposes to do this by averaging the parameters of all particles.
+	However, this does not work well with a multi-model distribution of particles.
+	If the particles are clustered in two equally likely clusters, the resulting position would always be in between the two clusters, and thus wrong.
+	By using the largest weight, the position would only be wrong half the time.
 	
-	Once the pathmaker class has used the estimate of the current position to find the next movement instructions for the robot, the same instructions are sent to the particlefilter.
+	Once the PathMaker class has used the estimate of the current position to find the next movement instructions for the robot, the same instructions are sent to the ParticleFilter.
 	The movement instructions are applied to all the particels, with 10 \degree noise added to the angle, and 10 mm noise added to the distance.
 	
 		\subsubsection{PathMaker} % (fold)
@@ -303,9 +303,9 @@
 		\label{table:realmap} 
 	\end{table} \noindent
 	
-	When the particle filter has estimated the position of the robot, the pathmaker should use that position to calculate a path to the goal.
+	When the ParticleFilter has estimated the position of the robot, the PathMaker should use that position to calculate a path to the goal.
 	
-	In this course, Breath First Planning, A-Star and Dynamic programming were presented as ways of calculating a Path.
+	In this course, Breath First Planning, A-Star and Dynamic Programming were presented as ways of calculating a Path.
 	A-Star was chosen because it is faster than breath first planning, and it is better at handling unexpected obstacles than dynamic programming.
 	
 	A heuristic map was made for the A-star algorithm. This is added to the movement cost to make the nodes closest to the goal, the first ones to be explored. 
@@ -356,7 +356,7 @@
 	
 	In addition to the heuristic map, a penalty map was also created.
 	The penalty map was also added to the movement cost. 
-	A penalty was given to the squares adjacent to walls, and this means the robot would prefer moving away from walls.
+	A penalty was given to the squares adjacent to walls, and therefore the robot should avoid moving next to walls.
 	The penalty map can be seen in \autoref{table:impl_penaltymap}
 		
 	\begin{table}[H]
@@ -397,7 +397,7 @@
 			\textbf{30} & 100 & 50 & 50 & 50 & 50 & 50 & 50 & 50 & 50 & 50 & 50 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 \\
 			\end{tabular}
 		}
-		\caption{Penalty map from implementation. The number is the additional cost the penalty add to the cost of movement}
+		\caption{Penalty map from implementation. The number is the additional cost the penalty adds to the cost of movement}
 		\label{table:impl_penaltymap} 
 	\end{table} \noindent
 	
@@ -445,7 +445,7 @@
 		\caption{Shortest path from implementation}
 		\label{table:impl_pathmap} 
 	\end{table} \noindent
-	Once the path has been generated, the next global move is send to the robot and the particles of the particle filter.
+	Once the path has been generated, the next move instruction is sent to both the robot and the particles of the particle filter.
 	
 	\subsubsection{RobotFrame} % (fold)
 	\label{subsub:software_robotframe}
