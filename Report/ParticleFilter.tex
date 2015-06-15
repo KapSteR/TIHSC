@@ -35,7 +35,7 @@ It then randomly select a particle, where all particles have the same probabilit
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.3\linewidth]{./Figures/low_var_resampling.png}
-	\caption{Low variance resampling example, borrowed from \citep{Thrun2002}}
+	\caption{Low variance resampling example, borrowed from \citep{Thrun2015}}
 	\label{fig:low_var_resampling}
 \end{figure}\noindent
 A $\beta$ value is created using the largest importance weight and some randomness, \autoref{eq:beta_calc}.
@@ -68,19 +68,27 @@ To summarize, the algorithm works in the following steps:
 	\item Go to step 2
 \end{enumerate}
 \end{enumerate}
-Now that the functionality of the particle filter have been described an example of it is shown in 
+Now that the functionality of the particle filter have been described, an example of it is shown in \autoref{fig:pf_ex} where it is possible to see how the particles change over time.
+\autoref{fig:pf_ex}a shows the initial particle set, where the height of the lines represent the importance weights. 
+In \autoref{fig:pf_ex}b a measurement have been made and the importance weight have been updated.
+Since the measurement shows a door, all the particles near door have a large weight compare to the rest.
+\autoref{fig:pf_ex}c show the result after resampling and movement.
+Notice how there are three larger densities of particles that matches the particles at the different doors after being moved.
+\autoref{fig:pf_ex}d shows the particles after another measurement and weight update. And \autoref{fig:pf_ex}e is another resampling and movement.
+From this it is obvious to see how the particles converges toward the robot position.
+
+The last thing that will be described is the so called "kidnapped robot" situation.
+This is where the particles converges toward a false pose, and the measurements suddenly does not match which means that the robot have no idea where it is since all the importance weight becomes small.
+The basic particle filter cannot handle this situation, but it can easily be extended so it can.
+One way to do it, is to only create, for an example, $90\%$ of the particle set from resampling and add $10\%$ newly generated particles.
+The number of new particles can also be chosen dynamic, like it is in the Augmented Monte Carlo Localization algorithm which is described in details in \citep{Thrun2002}.
+By adding new particles, there is a chance that one of these are near the true pose.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.3\linewidth]{./Figures/low_var_resampling.png}
-	\caption{Low variance resampling example, borrowed from \citep{Thrun2002}}
-	\label{fig:low_var_resampling}
+	\includegraphics[width=0.8\linewidth]{./Figures/pf_ex.png}
+	\caption{Particle filter example, borrowed from \citep{Thrun2002}}
+	\label{fig:pf_ex}
 \end{figure}\noindent
-
-skriv om particle filter rent generelt
-importance sampling
-resampling ways
-kidnapped robot solutions
-
 	% section introduction (end)
 
 \end{document}
