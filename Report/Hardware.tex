@@ -34,7 +34,7 @@
 
 		Lastly, the ZYBO features six PMOD GPIO ports along the perimeter (see Figure \ref{fig:ZYBO}), one directly connected to the PS and the others accessible through the PL.
 		They deliver 3.3V power to external devices as well as eight customizable 1.8V or 3.3V digital I/O ports each (see Figure \ref{fig:pmod}).
-		These are used for interfacing with the sensor and motor (see Section \fxnote{ref to sensors} and \fxnote{ref to mortors}, respectively).
+		These are used for interfacing with the sensor and motor (see Section \fxnote{ref to sensors} and \fxnote{ref to motors}, respectively).
 
 		\begin{figure}[H]
 			\centering
@@ -51,6 +51,7 @@
 			Using HLS one can specify some desired functionality in C++/SystemC code and directly synthesize it to HW-blocks to be implemented in FPGA logic, without needing to explicitly design HW in a Hardware Description Language like VHDL or Verilog.
 
 			This is utilized for creating a PWM motor controller, described in Section \fxnote{ref to PWM controller HLS}.
+			\fxnote{Section on Vidado desgin}
 
 			% subsubsection hw_sw_co_design (end)
 	
@@ -153,7 +154,49 @@
 		\subsubsection{PWM-controller} % (fold)
 		\label{ssub:pwm_controller}
 			
-			The PWM-controller 
+			The PWM-controller is implemented in as a hardware IP-Core in the FPGA logic of the AP SoC.
+			It has been modeled in SystemC code in the Vivado HLS tool.
+			\autoref{lst:pwm_header} shows the header defining the PWM-controller module, consisting of a clock dividing thread and a PWM handling thread.
+			It also defines the interface of \texttt{//Ports}, as designed in the IBD in \autoref{fig:motion_ibd}.
+
+			\lstinputlisting[caption=PWM-Controller SystemC Header, style=Code-C++, label=lst:pwm_header, basicstyle=\scriptsize]{../MotorControl/MotorControl/main.h}
+
+			\autoref{lst:pwm_definition} shows the definition of the module declared in \autoref{lst:pwm_header}.
+			The \texttt{clockDividerThread} is responsible for dividing the 100 MHz clock of the PL down to a 2 MHz clock that can be used for ticks in the \texttt{pwmThread}.
+			The use of a 2 MHz PWM-clock is based on the choice of a 10 bit resolution and a recommendation from \cite{Digilent2014} of a ~2 kHz PWM-cycle for the DHB1.
+
+			\begin{equation}
+				f_{PWMclock}
+				\frac{f_{PL}}{ONE\_TICK} =
+				\frac{100\ \text{MHz}}{25} =
+				2\ \text{MHz}
+			\end{equation}
+
+			\begin{equation}
+				f_{PWMcycle} =
+				\frac{f_{PWMclock}}{2^{PWM\ resolution}} =
+				\frac{2\ \text{MHz}}{2^{10}} =
+				\frac{2\ \text{MHz}}{1024} =
+				1.953\ \text{kHz}
+				\approx 2\ \text{kHz}
+			\end{equation}
+
+			\texttt{clockDividerThread} signals \texttt{pwmThread} of a PWM clock tick by setting \texttt{pwmClock} for one PL clock-cycle every time a PWM clock tick is generated.
+
+			\texttt{pwmThread} handles PWM output by counting up a 10 bit variable everytime it receives a PWM clock tick, and compares the count with value PWM settings for the left and right motors, \texttt{pwmL} and \texttt{pwmR} respectively.
+			If the count is below, the enable signal is held high, and if it is above is is held low.
+			This way the output duty cycle is determined by:
+			\begin{equation}
+				DC = \frac{PWM\ setting}{1024}
+				\quad \quad \text{Example: }
+				\frac{512}{1024} = 50\%
+			\end{equation}
+
+			\lstinputlisting[caption=PWM-Controller SystemC Definition, style=Code-C++, label=lst:pwm_definition, basicstyle=\scriptsize]{../MotorControl/MotorControl/main.cpp}
+
+			This model was then synthesized to VHDL code using the Vivado HLS tool and imported into the overall block design.
+			Using special \texttt{\#pragma}'s the setting variables \texttt{pwmL}, \texttt{pwmR} and \texttt{DIR} are mapped onto the AXI memory bus of the AP SoC.
+			This way they are readily addressable from the PS as memory mapped registers.
 
 
 
