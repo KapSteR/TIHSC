@@ -104,7 +104,7 @@
 
 		\subsubsection{Sensor data protocol} % (fold)
 		\label{ssub:sensor_communication_protocol}
-		
+			\fxnote{ref til XV-11 hacking site}
 			The LDS transmits data via 3.3V RS-232 at 115200 BAUD.
 			It uses 8 databits, no parity and one stop bit (\textbf{8N1}).
 			Data is transmitted continuously while the sensor rotates, in packages of four readings, totaling in 90 packages per turn.
@@ -124,13 +124,13 @@
 
 				\item \texttt{[Data 0]} to \texttt{[Data 3]} are the 4 readings. Each one is 4 bytes long, and organized as follows 
 				\begin{itemize}
-					\item byte 0 : \texttt{<distance 7:0>}
+					\item \texttt{<byte 0>} : \texttt{<distance 7:0>}
 
-					\item byte 1 : \texttt{<"invalid data" flag> <"strength warning" flag> <distance 13:8>}
+					\item \texttt{<byte 1>} : \texttt{<"invalid data" flag> <"strength warning" flag> <distance 13:8>}
 
-					\item byte 2 : \texttt{<signal strength 7:0>}
+					\item \texttt{<byte 2>} : \texttt{<signal strength 7:0>}
 
-					\item byte 3 : \texttt{<signal strength 15:8>}
+					\item \texttt{<byte 3>} : \texttt{<signal strength 15:8>}
 				\end{itemize}
 			\end{itemize}
 
@@ -148,7 +148,7 @@
 
 		The motor control hardware consists of two major blocks, an external Dual H-Bridge for driving the power the the motors, and an on-chip PWM controller for controlling the motor driver.
 		The connection between the two blocks are shown in the SysML internal block diagram of the Motion block (\autoref{fig:motion_ibd}), along with the two motors.
-		The \emph{Power}-signal comes from a battery \fxnote{Connect with section on power} , and \emph{Motor Control} is connected to the Processing System.
+		The \emph{Power}-signal comes from a battery \fxnote{Connect with section on power}, and \emph{Motor Control} is connected to the Processing System.
 
 		\begin{figure}[H]
 			\centering
@@ -273,6 +273,7 @@
 			This model was then synthesized to VHDL code using the Vivado HLS tool and imported into the overall block design.
 			Using special \texttt{\#pragma}'s the setting variables \texttt{pwmL}, \texttt{pwmR} and \texttt{DIR} are mapped onto the AXI memory bus of the AP SoC.
 			This way they are readily addressable from the PS as memory mapped registers.
+			The procedure for controlling the motors from software is described in Section \fxnote{reference to motor control section under software}.
 
 			% subsubsection pwm_controller (end)
 		
