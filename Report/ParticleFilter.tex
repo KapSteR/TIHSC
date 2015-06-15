@@ -14,16 +14,60 @@ The basic algorithm is the following:
 \item Calculate the importance weights of the particles 
 \item Resample the particle set based on importance weights
 \item Move the particles
-\item Go to point 2.
+\item Go to step 2.
 \end{enumerate}
-As this shows, all the particles have their importance weight calculated at each iteration.
+As shown i step 2, all the particles have their importance weight calculated at each iteration.
 The importance weight is a measure of how well a particle matches the measured pose.
-This can for an example be calculated using a gaussian distribution:
+The weight can therefore be use as the belief of the robot pose.
+It can for an example be calculated using a gaussian distribution:
 \begin{equation}
 	p(\mathbf{x}|\mathbf{z}) = \frac{1}{\sqrt{2\pi^2 \cdot |\mathbf{C_z}|}} \exp \left( -\frac{1}{2}\cdot (\mathbf{z}-\mathbf{x})^T \mathbf{C_z}^{-1} (\mathbf{z}-\mathbf{x}) \right)
 \end{equation}
-
-
+Where $\mathbf{x}$ is a particles pose, $\mathbf{z}$ is the measured pose and $\mathbf{C_z}$ is the measurement noise.
+By changing the measurement noise, the spread of the particles is also changed after resampling; the smaller the measurement noise, the smaller the spread.
+Resampling is the part of the algorithm where the particles should converges towards the true robot pose.
+The basic idea is that particles are chosen to be in the particle set, for the next iteration, with a probability which is proportional to the particles' importance weights.
+There are different way to resample.
+The method presented in this course is based upon the low variance resampling algorithm.
+This algorithm starts by sorting all the weights in the order of the particle index.
+It then randomly select a particle, where all particles have the same probability of being selected.
+\autoref{fig:low_var_resampling} is an example from \citep{Thrun2002} where the randomly selected particle is at index 6.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\linewidth]{./Figures/low_var_resampling.png}
+	\caption{Low variance resampling example, borrow from \citep{Thrun2002}}
+	\label{fig:low_var_resampling}
+\end{figure}\noindent
+A $\beta$ value is created using the largest importance weight and some randomness, \autoref{eq:beta_calc}.
+\begin{equation}
+\label{eq:beta_calc}
+	\beta = 2 \cdot w_{max} \cdot U(0,1)
+\end{equation}
+The maximum weight is multiplied by $2$ to make it possible to "jump over" the particle with that weight.
+The algorithm then checks if the $\beta$ value is larger than the weight at index i, $\beta > w_i$.
+If this is the case, the weight is then subtracted from $\beta$ and the index is incremented, otherwise the particle at the index is added to the particle set for the next iteration. 
+This process repeats until a particle is added to the set, and then repeats until a full set is created.
+In this example $\beta$ is larger than $w_6$, so $\beta$ becomes $w_6$ smaller and the index become $7$.
+$\beta$ is now smaller than $w_7$ which means that the particle at index $7$ is added to the next set. 
+A new $\beta$ is then calculate and it continues from index $7$.
+Using this algorithm insures a circular selection of the particles, where particles with high weight have a larger chance to be selected.
+To summarize, the algorithm works in the following steps:
+\begin{enumerate}
+\item Randomly select an index where all particle have equal chance, $i = U(1,N_{particles})$ 
+\item Calculate $\beta$ based on the maximum weight, \autoref{eq:beta_calc}
+\item Check if $\beta$ is larger than the weight at the index, $\beta > w_i$
+\item If true
+\begin{enumerate}
+	\item Subtract the weight from $\beta$, $\beta = \beta-w_i$
+	\item Increment the index, $i = i+1$
+	\item Go to step 3	
+\end{enumerate}
+\item If false
+\begin{enumerate}
+	\item Add the particle to the particle set for the next iteration, $add \:\: particle_i \:\: to \:\: \chi_{k+1}$
+	\item Go to step 2
+\end{enumerate}
+\end{enumerate}
 skriv om particle filter rent generelt
 importance sampling
 resampling ways
