@@ -5,43 +5,47 @@
 \section{Particle Filter} % (fold)
 	\label{sec:particlefilter}
 This lesson is about the Particle Filter. 
-Particle Filters can be used for localization by spreading particles across the map and then use them as belief. This the last non-parametric method and also the last localization method presented in this course.
+Particle Filters can be used for localization by spreading particles across the map and then use them as belief. 
+This the last localization method presented in this course.
 
 The basic idea with the particle filter in a localization application is to choose a number of particles, generate that many particles with random poses, and make them converges towards the actual position.
 The basic algorithm is the following:
 \begin{enumerate}
 \item Generate a particle set $\chi$ of particles with random poses 
 \item Calculate the importance weights of the particles 
-\item Resample the particle set based on importance weights
+\item Resample the particle set based on the importance weights
 \item Move the particles
 \item Go to step 2.
 \end{enumerate}
-As shown i step 2, all the particles have their importance weight calculated at each iteration.
+In both Section \ref{sec:localization} and \ref{sec:kalman} there was the two state of operation; sensing and moving.
+These two states also exists in the Particle Filter, where calculation of the importance weights and resampling matches sensing, and the movement of the particles matches the moving state.
+
+In step 2 it can be seen that all the particles have their importance weight calculated at each iteration.
 The importance weight is a measure of how well a particle matches the measured pose.
 The weight can therefore be use as the belief of the robot pose.
-It can for an example be calculated using a gaussian distribution:
+It can for an example be calculated using a Gaussian distribution:
 \begin{equation}
 	p(\mathbf{x}|\mathbf{z}) = \frac{1}{\sqrt{2\pi^2 \cdot |\mathbf{C_z}|}} \exp \left( -\frac{1}{2}\cdot (\mathbf{z}-\mathbf{x})^T \mathbf{C_z}^{-1} (\mathbf{z}-\mathbf{x}) \right)
 \end{equation}
 Where $\mathbf{x}$ is a particles pose, $\mathbf{z}$ is the measured pose and $\mathbf{C_z}$ is the measurement noise.
 By changing the measurement noise, the spread of the particles is also changed after resampling; the smaller the measurement noise, the smaller the spread.
+
 Resampling is the part of the algorithm where the particles should converges towards the true robot pose.
 The basic idea is that particles are chosen to be in the particle set, for the next iteration, with a probability which is proportional to the particles' importance weights.
-There are different way to resample.
-The method presented in this course is based upon the low variance resampling algorithm.
+There are different way to do resampling, but the method presented in this course is based upon the Low Variance Resampling algorithm.
 This algorithm starts by sorting all the weights in the order of the particle index.
 It then randomly select a particle, where all particles have the same probability of being selected.
 \autoref{fig:low_var_resampling} is an example from \citep{Thrun2002} where the randomly selected particle is at index 6.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.3\linewidth]{./Figures/low_var_resampling.png}
-	\caption{Low variance resampling example, borrowed from \citep{Thrun2015}}
+	\caption{Low Variance Resampling example, borrowed from \citep{Thrun2015}}
 	\label{fig:low_var_resampling}
 \end{figure}\noindent
 A $\beta$ value is created using the largest importance weight and some randomness, \autoref{eq:beta_calc}.
 \begin{equation}
 \label{eq:beta_calc}
-	\beta = 2 \cdot w_{max} \cdot U(0,1)
+	\beta = 2 \cdot w_{max} \cdot \mathcal{U}(0,1)
 \end{equation}
 The maximum weight is multiplied by $2$ to make it possible to "jump over" the particle with that weight.
 The algorithm then checks if the $\beta$ value is larger than the weight at index i, $\beta > w_i$.
@@ -53,7 +57,7 @@ A new $\beta$ is then calculate and it continues from index $7$.
 Using this algorithm insures a circular selection of the particles, where particles with high weight have a larger chance to be selected.
 To summarize, the algorithm works in the following steps:
 \begin{enumerate}
-\item Randomly select an index where all particle have equal chance, $i = U(1,N_{particles})$ 
+\item Randomly select an index where all particle have equal chance, $i = \mathcal{U}(1,N_{particles})$ 
 \item Calculate $\beta$ based on the maximum weight, \autoref{eq:beta_calc}
 \item Check if $\beta$ is larger than the weight at the index, $\beta > w_i$
 \item If true
@@ -85,7 +89,7 @@ The number of new particles can also be chosen dynamic, like it is in the Augmen
 By adding new particles, there is a chance that one of these are near the true pose.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./Figures/pf_ex.png}
+	\includegraphics[width=1\linewidth]{./Figures/pf_ex.png}
 	\caption{Particle filter example, borrowed from \citep{Thrun2002}}
 	\label{fig:pf_ex}
 \end{figure}\noindent
