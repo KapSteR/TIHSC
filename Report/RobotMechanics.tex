@@ -14,22 +14,25 @@ It consist of a lower frame where up to four DC motors can be attached, and a to
 \autoref{fig:baron_platform} shows a picture of the chassis where it is assembled with the default package items from dfrobots.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\linewidth]{./Figures/baron_platform.jpg}
-	\caption{The Baron-4WD platform}
-	\label{fig:baron_platform}
-\end{figure}\noindent
+	\begin{subfigure}[b]{0.55\linewidth}
+		\includegraphics[width=1\linewidth]{./Figures/baron_platform.jpg}
+		\caption{The Baron-4WD platform}
+		\label{fig:baron_platform}
+	\end{subfigure}	
+	\begin{subfigure}[b]{0.4\linewidth}
+		\includegraphics[width=1\linewidth]{./Figures/final_robot.png}
+		\caption{The final robot configuration}
+		\label{fig:final_robot}
+	\end{subfigure}
+\caption{}
+\label{fig:motion_models}
+\end{figure}
 In this project it was decide to only use two motors at the rear end of the chassis to make a simpler motion model for the robot; more about the motion model in \autoref{sub:motion_model}. 
 Instead of front wheels, a ball caster was attach to insure the turning ability. 
 By only using motors in the rear end, the lower frame had a lot of room where the power supplies could be place and thereby leaving the top plate free for the processing platform, a Zybo development board \fxnote{ref}, and mounting of the sensors. 
 The sensor used in this project was a LIDAR \fxnote{ref} which required a specific mounting pattern, that filled out most of the top plate's area, thereby only leaving a small area for the Zybo board. 
 The LIDAR was therefore mounted on a acrylic plate which then was mounted on top of the top plate. 
 The final robot configuration is shown in \autoref{fig:final_robot}.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.5\linewidth]{./Figures/final_robot.png}
-	\caption{The final robot configuration}
-	\label{fig:final_robot}
-\end{figure}\noindent
 		% subsection chassis (end)
 
 	\subsection{Motor characteristics} % (fold)
