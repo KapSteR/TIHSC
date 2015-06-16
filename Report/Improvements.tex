@@ -5,13 +5,41 @@
 \section{Improvements} % (fold)
 	\label{sec:improvements}
 
-	PID controller for the motor
+	This section highlights some of the improvements that could be made to the project.
+	The main reasons these improvements were not implemented were lack of time, technology or working software licenses.
 	
-	Better motion model that rotates around the robots axis
+	The motor controller is the first point that should be improved.
+	Currently the motor controller works by applying a PWM signal for a certain period of time.
+	This works in some circumstances, but factors like an uneven surface makes it very unreliable.
+	The motors do contain an odometer which in theory would make it possbile to get a more precise movement, by making a PID controller.
 	
-	Wireless connection to display data while the robot is driving
+	With a more precise movement, the possible turn angle can also be expanded.
+	Currently the robot is limited to 90 degree turns, which makes it hard for the robot to navigate back to its path.
+	Quantisizing the movement to 10 degrees instead of 90 degrees could make the robot able to make up for small errors in rotation.
 	
-	Wireless connection to control the robot (setting the map, changing the goal position)
+	In the current motion model a rotation also involves a translation.
+	This complicates the motion model, and adds a lot of uncertainty to a rotation.
+	This uncertainty could be greatly reduced by changing the motion model to  a pure rotation around the center of the robot.
+	This could be done by making the wheels of the robot move in opposite directions when turning.
+	Unfortunately, the license of the tool that was used for generating the hardware for the motor controller has expired, making this change impossible.
 	
+	Another improvement would be to add a wireless connection between the robot and a PC.
+	The wireless connection would provide two advantages.
+	The first advantage would be monitoring, which would greatly speed up the debugging process.
+	Currently the state of the robot is not easily accessible once the system is running.
+	This makes debugging very hard, as it requires a physical connection to the device through a cable.
+	
+	The other advantage would be the ability to control the parameters of the robot. 
+	This could involve changing the heuristic or penalty map, changing the position of the goal, or changing the number of particels.
+	Currently, implementing any change is a cumbersome process, as it involves re-flashing the device. 
+	This takes 5-10 minuts, making the debugging cycles very long.
+	
+	A wireless connection could be made by buying an additional PMOD for the ZYBO board, which adds support for a wireless connection.
+	
+	A final improvement would be to get the robot to move more continuously. 
+	This would require the update rate of the particle filter to be improved, since it is the current bottleneck of the system.
+	Especially the resampling can take a long time, because the current method of resampling takes non deterministic time, with a worst case of $O(n^2)$ time.
+	
+	If an approach like the tournament approach was used, the resampling would take $O(n)$ time.
 	% section introduction (end)
 \end{document}
