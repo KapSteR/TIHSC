@@ -40,25 +40,45 @@ The final robot configuration is shown in \autoref{fig:final_robot}.
 	\subsection{Motion model} % (fold)
 		\label{sub:motion_model}
 The motion model used in this project is based on a simple rotation and the move model.
-The rotation is however not just a change in orientation since the robot is not rotating around it's center of mass.
-When rotating, the robot is rotating around one of it's wheel which means that the center of mass is also being move during this.
-The difference between these to rotations are shown in
-\begin{figure}
-\begin{subfigure}
-\centering
-	\includegraphics[scale=1]{./Figures/final_robot.png}
-	\caption{The final robot configuration}
-	\label{fig:final_robot}
-\end{subfigure}
-\begin{subfigure}
-\centering
-	\includegraphics[width=0.5\linewidth]{./Figures/final_robot.png}
-	\caption{The final robot configuration}
-	\label{fig:final_robot}
-\end{subfigure}
-\caption{The final robot configuration}
-\label{fig:final_robot}
+The rotation is however not just a change in orientation since the robot is not rotating around it's center of mass, but around one of it's wheels.
+This means that during rotation the center of mass is also being moved.
+The difference between these two rotations is shown in \autoref{fig:motion_models}.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.45\linewidth}
+		\includegraphics[scale=0.8]{./Figures/motion_model1.png}
+		\caption{Around center of mass}
+		\label{fig:motion_model1}
+	\end{subfigure}	
+	\begin{subfigure}[b]{0.45\linewidth}
+		\includegraphics[scale=0.8]{./Figures/motion_model2.png}
+		\caption{Around wheel}
+		\label{fig:motion_model2}
+	\end{subfigure}
+\caption{Rotation models}
+\label{fig:motion_models}
 \end{figure}
+Where the thin lined figures are the robot before rotation, and the thick figures are after.
+
+To describe how the center of mass is being move when turning around the wheel, the following equation from \citep{Wikipedia2015} is used, which is just a 2D rotation matrix.
+\begin{equation}
+\begin{bmatrix} x' \\ y' \end{bmatrix} = \begin{bmatrix} \cos{\theta} & -\sin{\theta} \\ \sin{\theta} & \cos{\theta} \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix}
+\end{equation}
+In this equation $x$ and $y$ are the coordinates before the transformation, $x'$ and $y'$ are after transformation, and $\theta$ is the angle of how much the orientation is being changed.
+
+The movement is described simple by the change in the coordinates, \autoref{eq:translation_matrix}.
+\begin{equation}
+\label{eq:translation_matrix}
+\begin{bmatrix} x' \\ y' \end{bmatrix} = \begin{bmatrix}  d & 0 & x \\ 0 & d & y \end{bmatrix} \begin{bmatrix} \cos{\phi} \\ \sin{\phi} \\ 1 \end{bmatrix} 		
+\end{equation}
+Where $x$, $y$, $x'$ and $y'$ is the same as previous, $\phi$ is the orientation and $d$ is the distance of the movement.
+
+It was chosen to use this discrete model, where rotation and translation (movement) are done separately, above a continues model, where rotation is being done while translating \fxnote{er det rigtigt}.
+The reason for this was to keep model motion as simple as possible to begin with, and then extend it when a functional robot was made.
+To extend the model to continues would require that the motors are controlled by PI or PID controllers instead of just a simple PWM signal.
+
+Again for simplicity, it was decide that the change in orientation were constrainted to be in intervals of $90\degree$.
+This meant that the robot in theory only should be able to drive horizontal and vertical in the grid map. \fxnote{måske lidt bedre formulering tak:S}
 
 		% subsection motion_model (end)
 
