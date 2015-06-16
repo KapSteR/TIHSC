@@ -55,7 +55,7 @@
 				A5: Move & RobotFrame  \\ 
 			\hline
 			\end{tabular}
-			\caption{Acton mapping of classes}
+			\caption{Action mapping of classes}
 			\label{table:action_class_map} 
 		\end{table} \noindent
 		
@@ -86,7 +86,7 @@
 	This section covers the implementation specific details of the software.
 	The software was implemented according to the design, as the programs main function, presented in \autoref{lst:main_code}, makes apparent.
 
-	\begin{lstlisting}[caption=Main Function of Progam, style=Code-C++, label=lst:main_code]
+	\begin{lstlisting}[caption=Main Function of Progam, style=Code-C++, label=lst:main_code, basicstyle=\scriptsize]
 	
 	int main(void) {
 		Position goal;
@@ -126,7 +126,6 @@
 				std::cout << "Found Goal" << std::endl;
 				return 0;
 			}
-	
 		}
 		return 0;
 	}
@@ -150,7 +149,7 @@
 	The UpdateWeights function updates the weights of the particels. 
 	The weights are averaged likelihoods, which are calculated by using the weightCalculation function of the particle objects that can be seen in \autoref{lst:weightCalculation}.
 	
-	\begin{lstlisting}[caption=weightCalculation function of particle class, style=Code-C++, label=lst:weightCalculation]
+	\begin{lstlisting}[caption=weightCalculation function of particle class, style=Code-C++, label=lst:weightCalculation, basicstyle=\scriptsize]
 			
 		float Particle::weightCalculation(int* dataArray){
 	    
@@ -197,7 +196,7 @@
 	This can happen if the movement of the robot does not fit the motion model, or if the robot is physically moved by someone else or "Kidnapped". 
 	The Resampling function can be seen in \autoref{lst:resample}
 	
-	\begin{lstlisting}[caption=Resampling function of ParticleFilter, style=Code-C++, label=lst:resample]
+	\begin{lstlisting}[caption=Resampling function of ParticleFilter, style=Code-C++, label=lst:resample, basicstyle=\scriptsize]
 		void ParticleFilter::resample(intMatrix map) {
 			vector<Particle> tempSet;
 			int index = rand() % NUMBEROFPARTICLES;

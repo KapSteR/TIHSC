@@ -168,7 +168,7 @@
 				\includegraphics[width=0.5\linewidth]{PmodDHB1}
 				\caption{Digilent PmodPHB1 Dual H-Bridge Motor controller \cite{Digilent2014}}
 				\label{fig:DHB1}
-			\end{figure}
+			\end{figure}\fxnote{fix reference}
 
 			The DHB1 connects to the ZYBO via a PMOD connector. The individual signals signal are listed in \autoref{tab:dhb_pmod}.
 			The motor power source is connected to the DHB1 with screw terminals. The two motors are also connected with screw terminals, but the left motor is connected reversed polarity.
@@ -238,7 +238,7 @@
 
 			\autoref{lst:pwm_definition} shows the definition of the module declared in \autoref{lst:pwm_header}.
 			The \texttt{clockDividerThread} is responsible for dividing the 100 MHz clock of the PL down to a 2 MHz clock that can be used for ticks in the \texttt{pwmThread}.
-			The use of a 2 MHz PWM-clock is based on the choice of a 10 bit resolution and a recommendation from \cite{Digilent2014} of a ~2 kHz PWM-cycle for the DHB1.
+			The use of a 2 MHz PWM-clock is based on the choice of a 10 bit resolution and a recommendation from \cite{Digilent2014} \fxnote{fix reference}of a ~2 kHz PWM-cycle for the DHB1.
 
 			\begin{equation}
 				f_{PWMclock}
@@ -273,7 +273,7 @@
 			This model was then synthesized to VHDL code using the Vivado HLS tool and imported into the overall block design.
 			Using special \texttt{\#pragma}'s the setting variables \texttt{pwmL}, \texttt{pwmR} and \texttt{DIR} are mapped onto the AXI memory bus of the AP SoC.
 			This way they are readily addressable from the PS as memory mapped registers.
-			The procedure for controlling the motors from software is described in Section \fxnote{reference to motor control section under software}.
+			The procedure for controlling the motors from software is described in Section \fxnote{reference to motor control section under software}.A
 
 			% subsubsection pwm_controller (end)
 		
