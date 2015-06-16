@@ -76,12 +76,43 @@ And by introducing an integrator, bias can be avoided.
 \subsection{Twiddle/Coordinate Descent}
 
 \fxnote{Måge: skriv ind på en god måde :)}
-Coordinate descent is a proposed method for finding the parameters $\tau_p$, $\tau_d$ and $\tau_i$ for the PID controller.
+Coordinate descent is a proposed method for finding the parameters $\tau_p$, $\tau_d$ and $\tau_i$ for the PID controller, where the parameters iteratively are corrected towards a better value.
 
 The algorithm for coordinated decent is as follows:\\
-Build a parameter vector $\overrightarrow{p} = [0,0,0]$\\
-Build a vector of potential changes $\overrightarrow{dp} = [1,1,1]$\\
-SE RESTEN I WORD\\
+\begin{enumerate}
+\item Build a parameter vector, $\mathbf{p} = [0,0,0]$
+\item Build a vector of potential changes, $\mathbf{dp} = [1,1,1]$
+\item Add the potential change to the parameter at index i, $\mathbf{p}_i = \mathbf{p}_i + \mathbf{dp}_i$
+\item Calculate the CTE
+\item Check if the calculated CTE is smaller than the previous best, $CTE_{calc} < CTE_{best}$
+\item if true
+\begin{enumerate}
+	\item Set the calculated CTE to the best CTE, $CTE_{best} = CTE_{calc}$
+	\item Update the potential to a larger value, $\mathbf{dp}_i = \mathbf{dp}_i \cdot 1.1$
+	\item Go to step 3
+\end{enumerate}
+\item if false
+\begin{enumerate}
+	\item Subtract the potential change from the original parameter at index i, $\mathbf{p}_i = \mathbf{p}_i - 2 \cdot \mathbf{dp}_i$
+	\item Calculate the CTE
+	\item  Check if the calculated CTE is smaller than the previous best, $CTE_{calc} < CTE_{best}$
+	\item if true
+	\begin{enumerate}
+		\item Set the calculated CTE to the best CTE, $CTE_{best} = CTE_{calc}$
+		\item Update the potential to a larger value, $\mathbf{dp}_i = \mathbf{dp}_i \cdot 1.1$
+	\end{enumerate}
+	\item if false
+	\begin{enumerate}
+		\item Update the potential to a smaller value, $\mathbf{dp}_i = \mathbf{dp}_i \cdot 0.9$
+	\end{enumerate}
+	\item Go to step 3
+\end{enumerate}
+\end{enumerate} \fxnote{skal det være pseudokode istedet for?}
+This is done while sum of potential changes is larger than a given threshold, and repeats for all the parameters.
+As can be seen, the algorithm basically start by adding a change to one of the parameter.
+If this gives a better CTE, it makes the change for the next iteration bigger.
+If it is worse, it tries to subtract the change instead.
+It then checks the CTE again and then either increase or the decrease the change. 
 % subsection pid controllers (end)
 	% section introduction (end)
 
