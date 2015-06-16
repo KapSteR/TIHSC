@@ -4,12 +4,12 @@
 \begin{document}
 \section{Kalman} % (fold)
 	\label{sec:kalman}
-This lesson covers the theory about basic Kalman Filter (KF) and the Extended Kalman Filter (EKF).
+This lesson covers the theory about the basic Kalman Filter (KF) and the Extended Kalman Filter (EKF).
 \subsection{The Kalman Filter}
 The KF is a technique for filtering and predicting a linear system. 
 It can be extended to also work on non-linear system, thus the EFK. 
 The system in both KF and EKF is presented as a state-space model.
-\autoref{eq:ss_state_eq1} and \autoref{eq:ss_state_eq2} shows the state-space model equations for the KF.
+\autoref{eq:ss_state_eq1} and \autoref{eq:ss_state_eq2} show the state-space model equations for the KF.
 \begin{equation}
 \label{eq:ss_state_eq1}
 \mathbf{x}_k = \mathbf{A}_k \mathbf{x}_{k-1} + \mathbf{B}_k \mathbf{u}_k + \mathbf{w}_k
@@ -18,7 +18,7 @@ The system in both KF and EKF is presented as a state-space model.
 \label{eq:ss_state_eq2}
 \mathbf{z}_k = \mathbf{H}_k \mathbf{x}_k + \mathbf{v}_k
 \end{equation}
-In these equations $k$ is the time index, $\mathbf{x}_k$ and $\mathbf{x}_{k-1}$ is state vector at the different time instances, $\mathbf{u}_k$ is the control vector, $\mathbf{z}_k$ is the measurement vector, $\mathbf{A}_k$ is the state transition matrix of the system, $\mathbf{B}_k$ is the control matrix, $\mathbf{H}_k$ is the output measurement matrix, $\mathbf{w}_k$ is the process noise vector and $\mathbf{v}_k$ is the measurement noise vector.
+In these equations $k$ is the time index, $\mathbf{x}_k$ and $\mathbf{x}_{k-1}$ are state vectors at the different time instances, $\mathbf{u}_k$ is the control vector, $\mathbf{z}_k$ is the measurement vector, $\mathbf{A}_k$ is the state transition matrix of the system, $\mathbf{B}_k$ is the control matrix, $\mathbf{H}_k$ is the output measurement matrix, $\mathbf{w}_k$ is the process noise vector and $\mathbf{v}_k$ is the measurement noise vector.
 The two noise vector are assumed to be Gaussian zero-mean white noise with the covariances $\mathbf{Q}$ and $\mathbf{R}$, where $\mathbf{Q}$ describes the covariance for the process noise and $\mathbf{R}$ for the measurement noise. 
 It is also assumed that the noises are uncorrelated, \citep{Simon2006}.
 

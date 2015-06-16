@@ -75,6 +75,8 @@ The movement is described simple by the change in the coordinates, \autoref{eq:t
 \begin{bmatrix} x' \\ y' \end{bmatrix} = \begin{bmatrix}  d & 0 & x \\ 0 & d & y \end{bmatrix} \begin{bmatrix} \cos{\phi} \\ \sin{\phi} \\ 1 \end{bmatrix} 		
 \end{equation}
 Where $x$, $y$, $x'$ and $y'$ is the same as previous, $\phi$ is the orientation and $d$ is the distance of the movement.
+In this equation it is obvious to see that it is assumed that the robot moves with constant velocity.
+This means that it is assumed that the motors can produce the correct velocity in a step response.
 
 It was chosen to use this discrete model, where rotation and translation (movement) are done separately, above a continues model, where rotation is being done while translating \fxnote{er det rigtigt}.
 The reason for this was to keep model motion as simple as possible to begin with, and then extend it when a functional robot was made.

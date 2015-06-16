@@ -182,8 +182,17 @@
 	\end{lstlisting}
 	
 	The measured data is compared with the RangeArray. The RangeArray is a pre-computed array with 32x32x180 floats, that contains the expected measurement data at all locations and angels in the map.
-	
-	\fxnote{Måge: noget med hvorfor vi regner probabilitien som vi gør?}	
+		
+	As described in \fxnote{ref til PF teori} the weight can be calculated using a Gaussian distribution.
+	Since each particle compares 180 measurements with their expected ranges, the weights must be calculated as the product of likelihood, that are found using a Gaussian.
+	There is however a disadvantage using the likelihood directly due to that fact that it in numeric unstable because small numbers might be multiplied together.
+	It is instead an preferable to use the log likelihood instead while it turns the multiplications into additions, and then in the end find the likelihood by taking the exponential to the log likelihood value.
+	In this project the log likelihood is being divided by the number of measurement used in the iteration before it is turned into likelihood.
+	Thereby the weight is found as the likelihood given the exponential of the average log likelihood, \autoref{eq:weight_calc}	
+	\begin{equation}
+	\label{eq:weight_calc}
+	w_i = \mathcal{L} (\mathbf{x}_i|\mathbf{z}) = \exp \left( \frac{1}{N} \displaystyle\sum_k \ln \left( \frac{1}{\sqrt{2\pi^2 \cdot \sigma_\mathbf{z}^2}} \exp \left( - \frac{\frac{1}{2}\cdot (z_k-x_{i,k})^2}{\sigma_\mathbf{z}^2} \right) \right) \right)
+	\end{equation}
 	
 	Once the new weights have been calculated, the Resampling function is invoked. 
 	The resampling function is the heart of the particle filter.
