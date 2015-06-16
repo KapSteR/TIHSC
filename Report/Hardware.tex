@@ -273,7 +273,7 @@
 			This model was then synthesized to VHDL code using the Vivado HLS tool and imported into the overall block design.
 			Using special \texttt{\#pragma}'s the setting variables \texttt{pwmL}, \texttt{pwmR} and \texttt{DIR} are mapped onto the AXI memory bus of the AP SoC.
 			This way they are readily addressable from the PS as memory mapped registers.
-			The procedure for controlling the motors from software is described in Section \fxnote{reference to motor control section under software}.A
+			The procedure for controlling the motors from software is described in Section \fxnote{reference to motor control section under software}.
 
 			% subsubsection pwm_controller (end)
 		
@@ -282,7 +282,22 @@
 	\subsection{AP SoC Block Design} % (fold)
 	\label{sub:ap_soc_block_design}
 
-		\fxnote{Section on Vidado desgin}
+		\autoref{fig:zybocar_design} shows the final block design for AP SoC designed in \emph{Vivado}.
+		In the top left corner the Processing system is shows, below it is a reset controller and in the middle is the memory mapped AXI Interconnect Bus.
+		In the top right \emph{MotorCtrl} is the PWM controller, described in Section \ref{ssub:pwm_controller}.
+		Below \emph{MotorCtrl} is \emph{AXI GPIO}; a GPIO controller used to interface with the push-buttons on the ZYBO.
+		Lastly, in the bottom right corner, \emph{AXI Uartlite} is a UART synthesized in PL.
+		This is used to interface the LDS sensor with the PS via the AXI Interconnect bus.
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\linewidth]{ZyboCarDesign}
+			\caption{ZyboCar Hardware Platform Block Design}
+			\label{fig:zybocar_design}
+		\end{figure}
+
+		This block design is synthesized and a \emph{hardware wrapper}, along with a \emph{bitstream} for programming a device, is generated and exported for use with the \emph{Xilinx SDK} IDE.
+		The SDK is then used for writing the \emph{bitstream} to the ZYBO and programming the PS. 
 
 		% subsection ap_soc_block_design (end)
 
