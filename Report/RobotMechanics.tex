@@ -39,7 +39,27 @@ The final robot configuration is shown in \autoref{fig:final_robot}.
 
 	\subsection{Motion model} % (fold)
 		\label{sub:motion_model}
-		
+The motion model used in this project is based on a simple rotation and the move model.
+The rotation is however not just a change in orientation since the robot is not rotating around it's center of mass.
+When rotating, the robot is rotating around one of it's wheel which means that the center of mass is also being move during this.
+The difference between these to rotations are shown in
+\begin{figure}
+\begin{subfigure}
+\centering
+	\includegraphics[scale=1]{./Figures/final_robot.png}
+	\caption{The final robot configuration}
+	\label{fig:final_robot}
+\end{subfigure}
+\begin{subfigure}
+\centering
+	\includegraphics[width=0.5\linewidth]{./Figures/final_robot.png}
+	\caption{The final robot configuration}
+	\label{fig:final_robot}
+\end{subfigure}
+\caption{The final robot configuration}
+\label{fig:final_robot}
+\end{figure}
+
 		% subsection motion_model (end)
 
 	% subsection robot_mechanics (end)
