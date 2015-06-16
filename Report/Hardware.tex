@@ -34,7 +34,7 @@
 
 		Lastly, the ZYBO features six PMOD GPIO ports along the perimeter (see Figure \ref{fig:ZYBO}), one directly connected to the PS and the others accessible through the PL.
 		They deliver 3.3V power to external devices as well as eight customizable 1.8V or 3.3V digital I/O ports each (see Figure \ref{fig:pmod}).
-		These are used for interfacing with the sensor and motor (see Section \fxnote{ref to sensors} and \fxnote{ref to motors}, respectively).
+		These are used for interfacing with the sensor and motor (see Sections \ref{sub:sensor} \& \ref{sub:motor_control}, respectively).
 
 		\begin{figure}[H]
 			\centering
@@ -104,10 +104,9 @@
 
 		\subsubsection{Sensor data protocol} % (fold)
 		\label{ssub:sensor_communication_protocol}
-			\fxnote{ref til XV-11 hacking site}
 			The LDS transmits data via 3.3V RS-232 at 115200 BAUD.
 			It uses 8 databits, no parity and one stop bit (\textbf{8N1}).
-			Data is transmitted continuously while the sensor rotates, in packages of four readings, totaling in 90 packages per turn.
+			Data is transmitted continuously while the sensor rotates, in packages of four readings, totaling in 90 packages per turn \cite{OpenSource}.
 
 			Each package has 22 bytes the following format:
 
@@ -137,7 +136,9 @@
 			Data is only sensed and transmitted if the sensor is spinning at more than 180 PRM.
 			If the sensor exceeds 320 RPM the data becomes sparse, as only every one in two measurements are non-zero and valid.
 			Above 349 RPM the serial interface becomes a bottleneck and data is corrupted and packages are lost.
-			\fxnote{Noget med checksum} 
+
+			Because we operate at near or above the 320 RPM limit we only the even numbered measurements are used.
+			This way corruption will not occur with a varying amount of valid measurements being collected.
 
 			% subsubsection sensor_communication_protocol (end)
 	
@@ -148,7 +149,7 @@
 
 		The motor control hardware consists of two major blocks, an external Dual H-Bridge for driving the power the the motors, and an on-chip PWM controller for controlling the motor driver.
 		The connection between the two blocks are shown in the SysML internal block diagram of the Motion block (\autoref{fig:motion_ibd}), along with the two motors.
-		The \emph{Power}-signal comes from a battery \fxnote{Connect with section on power}, and \emph{Motor Control} is connected to the Processing System.
+		The \emph{Power}-signal comes from a battery (see Section \ref{sub:power}), and \emph{Motor Control} is connected to the Processing System.
 
 		\begin{figure}[H]
 			\centering
@@ -267,13 +268,13 @@
 				\frac{512}{1024} = 50\%
 			\end{equation}
 
-			\newpage
-			\lstinputlisting[caption=PWM-Controller SystemC Definition, style=Code-C++, label=lst:pwm_definition, basicstyle=\scriptsize]{../MotorControl/MotorControl/main.cpp}
-
 			This model was then synthesized to VHDL code using the Vivado HLS tool and imported into the overall block design.
 			Using special \texttt{\#pragma}'s the setting variables \texttt{pwmL}, \texttt{pwmR} and \texttt{DIR} are mapped onto the AXI memory bus of the AP SoC.
 			This way they are readily addressable from the PS as memory mapped registers.
-			The procedure for controlling the motors from software is described in Section \fxnote{reference to motor control section under software}.
+			The procedure for controlling the motors from software is described in Section \ref{subsub:software_robotframe}.
+
+			\newpage
+			\lstinputlisting[caption=PWM-Controller SystemC Definition, style=Code-C++, label=lst:pwm_definition, basicstyle=\scriptsize]{../MotorControl/MotorControl/main.cpp}
 
 			% subsubsection pwm_controller (end)
 		
