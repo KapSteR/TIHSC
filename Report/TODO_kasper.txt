@@ -5,10 +5,10 @@ TODO:
 	Hardware
 		Platform (Done)
 		HW/SW Co-design (Done)
-		Power	
+		Power (Done)
 		Sensors / LIDAR (Done)
 		Motor Control (Done)
-		AP SoC Block Design
+		AP SoC Block Design (Done)
 		~continuity
 
 	Software

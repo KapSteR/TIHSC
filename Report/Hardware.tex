@@ -60,7 +60,7 @@
 	\label{sub:sensor}
 
 		The robot is designed to use a LIDAR (Light Detection and Ranging) sensor for sensing its location.
-		The sensor chosen for this robot is a Neato XV-11 LDS (Laser Distance Sensor) (seen mounted atop the robot in \autoref{fig:final_robot}.
+		The sensor chosen for this robot is a Neato XV-11 LDS (Laser Distance Sensor) (seen mounted atop the robot in \autoref{fig:final_robot}).
 		This sensor consists of a 1 dimensional LDS mounted on a rotating platform, enabling it to take measurement in a 2 dimensional plane in 1\degree\ increments.
 		The data is measured in mm and numeric range of 0-16384 (14 bits) and an operating range of ~150-6000 depending on lighting conditions and reflectivity of objects.
 
@@ -166,9 +166,9 @@
 			\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.5\linewidth]{PmodDHB1}
-				\caption{Digilent PmodPHB1 Dual H-Bridge Motor controller \cite{Digilent2014}}
+				\caption{Digilent PmodPHB1 Dual H-Bridge Motor controller \cite{Digilent2013}}
 				\label{fig:DHB1}
-			\end{figure}\fxnote{fix reference}
+			\end{figure}
 
 			The DHB1 connects to the ZYBO via a PMOD connector. The individual signals signal are listed in \autoref{tab:dhb_pmod}.
 			The motor power source is connected to the DHB1 with screw terminals. The two motors are also connected with screw terminals, but the left motor is connected reversed polarity.
@@ -222,7 +222,7 @@
 			The speed of the motors are controlled by applying a Pulse Width Modulated (PWM) signal to the EN pin for the corresponding motor (see \autoref{tab:motor_signal}).
 			The sensor feedback pins are not used as there are no sensors attached to the wheels.
 
-			For more information, see the reference manual \cite{Digilent2014}.
+			For more information, see the reference manual \cite{Digilent2013}.
 
 			% subsubsection external_dual_h_bridge (end)
 
@@ -238,7 +238,7 @@
 
 			\autoref{lst:pwm_definition} shows the definition of the module declared in \autoref{lst:pwm_header}.
 			The \texttt{clockDividerThread} is responsible for dividing the 100 MHz clock of the PL down to a 2 MHz clock that can be used for ticks in the \texttt{pwmThread}.
-			The use of a 2 MHz PWM-clock is based on the choice of a 10 bit resolution and a recommendation from \cite{Digilent2014} \fxnote{fix reference}of a ~2 kHz PWM-cycle for the DHB1.
+			The use of a 2 MHz PWM-clock is based on the choice of a 10 bit resolution and a recommendation from \cite{Digilent2013} of a ~2 kHz PWM-cycle for the DHB1.
 
 			\begin{equation}
 				f_{PWMclock}
@@ -302,8 +302,31 @@
 		% subsection ap_soc_block_design (end)
 
 	\subsection{Power} % (fold)
-	\label{sub:power}	
-		
+	\label{sub:power}
+
+		This project uses three different power sources: 7.5V, 5V and 3.3V.
+		The 7.5V supply comes from a battery bank of 5 1.5V AA batteries\fxnote{Picture}.
+		This is used solely for powering the motors, and is connected to the DHB1.
+
+		The 5V supply comes from a micro-USB power bank. \fxnote{picture}
+		It is used to power the ZYBO.
+
+		The 3.3V supply is supplied by the ZYBO's on-board power regulator.
+		The ZYBO can supply a theoretical maximum of 2.5A (minus its own consumption $\sim150\ to\ 400\ mA$) with a maximum of 1A supplied to each PMOD.
+		The output is however limited by the output of the 5V power bank.
+		Assuming little to no conversion loss the the maximum current from the ZYBO 3.3V supply is:
+		\begin{equation}
+			P_{PB} = I_{PB} * V_{PB} = 
+			500\ mA * 5\ V =
+			2.5\ W
+		\end{equation}
+		\begin{equation}
+			I_{3V3} = 
+			\frac{P_{PB}}{3.3\ V} =
+			757.57\ mA
+		\end{equation}
+		The 3.3V supply is used to power the LDS top and motor through one PMOD and the DHB1 through another.
+
 		% subsection power (end)
 
 	% section hardware (end)
