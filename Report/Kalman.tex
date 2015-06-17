@@ -23,7 +23,7 @@ The two noise vector are assumed to be Gaussian zero-mean white noise with the c
 It is also assumed that the noises are uncorrelated, \citep{Simon2006}.
 
 The basic KF operates in a cyclic manner between two states; the time update state and the measurement update state, sometimes also called the prediction state and the correction state. 
-These two state can be compared to the ones described in Section \ref{sec:localization}; sensing and moving.
+These two state can be compared to the ones described in \autoref{sec:localization}; sensing and moving.
 Sensing matches the measurement update state, and moving matches the time update state.
 This and the following description of the cyclic behavior, is based on \cite{Simon2006}.
 The cyclic behavior is shown in \autoref{fig:cyclic_beha_kf}.
@@ -77,7 +77,7 @@ This mean that the KF is in its prediction state.
 The robot measures its position at \autoref{fig:kf_ex}b, and the uncertainty here is described by the measurement noise variance, $\mathbf{R}$.
 The correction state calculates the Kalman Gain and finds the posterior state and uncertainty as seen in \autoref{fig:kf_ex}c.
 Notice that the uncertainty now has a higher peak and smaller width.
-The robot then moves in \autoref{fig:kf_ex}d, thereby adding uncertainty to its position; like it does in Section \ref{sec:localization}.
+The robot then moves in \autoref{fig:kf_ex}d, thereby adding uncertainty to its position; like it does in \autoref{sec:localization}.
 This uncertainty is, as described in \autoref{eq:kf_cov_apriori}, the process noise variance, $\mathbf{Q}$; KF is back in the prediction state.
 In \autoref{fig:kf_ex}e, it repeats the process from \autoref{fig:kf_ex}b.
 And in \autoref{fig:kf_ex}f, it corrects itself like in \autoref{fig:kf_ex}c.

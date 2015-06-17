@@ -9,9 +9,9 @@
 	\subsection{Platform} % (fold)
 	\label{sub:platform}
 
-		The processing platform chosen for this project is a \emph{ZYBO Zynq™-7000 Development Board} from Digilent (see Figure \ref{fig:ZYBO}).
+		The processing platform chosen for this project is a \emph{ZYBO Zynq\-7000 Development Board} from Digilent (see \autoref{fig:ZYBO}).
 		The brains of the ZYBO is a Xilinx Zynq-7000 All Programmable System on a Chip (AP SoC).
-		The AP SoC (see Figure \ref{fig:ZynqArch}) features both a Processing System (PS) consisting of 650 MHz dual core ARM\textregistered{} Cortex A9 CPU with dedicated I/O, Memory and extensible FPGA Programmable Logic (PL) for HW synthesis.
+		The AP SoC (see \autoref{fig:ZynqArch}) features both a Processing System (PS) consisting of a 650 MHz dual core ARM\textregistered{} Cortex A9 CPU with dedicated I/O, Memory and extensible FPGA Programmable Logic (PL) for HW synthesis.
 
 		This enables the construction of a system with software, written in C++, running on the CPU, and with dedicated hardware for acceleration of computation and I/O handling.
 		\begin{figure}[H]
@@ -32,9 +32,9 @@
 		Alongside the AP SoC the ZYBO features a range of external hardware for power supply/management and interfacing.
 		It has push-buttons, throw-switches and LEDs for direct interface, USB-OTG, UART-to-USB and Ethernet for communication and HDMI, VGA and an audio codec for Audio/Visual.
 
-		Lastly, the ZYBO features six PMOD GPIO ports along the perimeter (see Figure \ref{fig:ZYBO}), one directly connected to the PS and the others accessible through the PL.
-		They deliver 3.3V power to external devices as well as eight customizable 1.8V or 3.3V digital I/O ports each (see Figure \ref{fig:pmod}).
-		These are used for interfacing with the sensor and motor (see Sections \ref{sub:sensor} \& \ref{sub:motor_control}, respectively).
+		Lastly, the ZYBO features six PMOD GPIO ports along the perimeter (see \autoref{fig:ZYBO}), one directly connected to the PS and the others accessible through the PL.
+		They deliver 3.3V power to external devices as well as eight customizable 1.8V or 3.3V digital I/O ports each (see \autoref{fig:pmod}).
+		These are used for interfacing with the sensor and motor (see \autoref{sub:sensor} and \autoref{sub:motor_control}, respectively).
 
 		\begin{figure}[H]
 			\centering
@@ -49,8 +49,8 @@
 			The availability of FPGA logic on-chip enables rapid prototyping of HW acceleration blocks, through the use of High-Level Synthesis (HLS) tools.
 			Using HLS one can specify some desired functionality in C++/SystemC code and directly synthesize it to HW-blocks to be implemented in FPGA logic, without needing to explicitly design HW in a Hardware Description Language like VHDL or Verilog.
 
-			This is utilized for creating a PWM motor controller, described in Section \ref{ssub:pwm_controller}.
-			A desciption of the final design of the processing hardware include PS and designs in PL is found Section \ref{sub:ap_soc_block_design}.
+			This is utilized for creating a PWM motor controller, described in \autoref{ssub:pwm_controller}.
+			A desciption of the final design of the processing hardware include PS and designs in PL is found \autoref{sub:ap_soc_block_design}.
 			
 			% subsubsection hw_sw_co_design (end)
 	
@@ -62,15 +62,15 @@
 		The robot is designed to use a LIDAR (Light Detection and Ranging) sensor for sensing its location.
 		The sensor chosen for this robot is a Neato XV-11 LDS (Laser Distance Sensor) (seen mounted atop the robot in \autoref{fig:final_robot}).
 		This sensor consists of a 1 dimensional LDS mounted on a rotating platform, enabling it to take measurement in a 2 dimensional plane in 1\degree\ increments.
-		The data is measured in mm at a numeric range of 0-16384 (14 bits) and an operating range of \~150-6000 depending on lighting conditions and reflectivity of objects.
+		The data is measured in mm at a numeric range of 0-16384 (14 bits) and an operating range of \textasciitilde 150-6000 mm depending on lighting conditions and reflectivity of objects.
 
 		The top houses the sensor and computation unit. This measures the distance, measures rotational velocity of the sensor related to the base and handles communication of data.
-		It requires a 3.3V power supply and consumes about 145 mA of current when operating and communicates via serial-communication (see Section \ref{ssub:sensor_communication_protocol}).
+		It requires a 3.3V power supply and consumes about 145 mA of current when operating and communicates via serial-communication (see \autoref{ssub:sensor_communication_protocol}).
 		The top has four wires, connected via a slip ring. 
 		The pinout is shown in \autoref{tab:lds_top}.
 
 		The base houses the motor that drives the rotating top.
-		The motor is designed to be powered by a pulse width modulated 12V power supply, but in this project the motor is power by a 3.3V continuous supply.
+		The motor is designed to be powered by a pulse width modulated \fxnote{bare pwm?} 12V power supply, but in this project the motor is power by a 3.3V continuous supply \fxnote{ref til table 3.1b?}.
 		This consumes approximately 60 mA.
 
 		\begin{table}[h]
@@ -149,7 +149,7 @@
 
 		The motor control hardware consists of two major blocks, an external Dual H-Bridge for driving the the motors, and an on-chip PWM controller for controlling the motor driver.
 		The connection between the two blocks are shown in the SysML internal block diagram of the Motion block (\autoref{fig:motion_ibd}), along with the two motors.
-		The \emph{Power}-signal comes from a battery (see Section \ref{sub:power}), and \emph{Motor Control} is connected to the Processing System.
+		The \emph{Power}-signal comes from a battery (see \autoref{sub:power}), and \emph{Motor Control} is connected to the Processing System.
 
 		\begin{figure}[H]
 			\centering
@@ -271,7 +271,7 @@
 			This model was then synthesized to VHDL code using the Vivado HLS tool and imported into the overall block design.
 			Using special \texttt{\#pragma}'s the setting variables \texttt{pwmL}, \texttt{pwmR} and \texttt{DIR} are mapped onto the AXI memory bus of the AP SoC.
 			This way they are readily addressable from the PS as memory mapped registers.
-			The procedure for controlling the motors from software is described in Section \ref{subsub:software_robotframe}.
+			The procedure for controlling the motors from software is described in \autoref{subsub:software_robotframe}.
 
 			\newpage
 			\lstinputlisting[caption=PWM-Controller SystemC Definition, style=Code-C++, label=lst:pwm_definition, basicstyle=\scriptsize]{../MotorControl/MotorControl/main.cpp}
@@ -286,7 +286,7 @@
 		\autoref{fig:zybocar_design} shows the final block design for the AP SoC designed in \emph{Vivado}.
 		In the top left corner the Processing system is shown and below it is a reset controller. 
 		In the middle is the memory mapped AXI Interconnect Bus.
-		In the top right \emph{MotorCtrl} is the PWM controller, described in Section \ref{ssub:pwm_controller}.
+		In the top right \emph{MotorCtrl} is the PWM controller, described in \autoref{ssub:pwm_controller}.
 		Below \emph{MotorCtrl} is \emph{AXI GPIO}; a GPIO controller used to interface with the push-buttons on the ZYBO.
 		Lastly, in the bottom right corner, \emph{AXI Uartlite} is a UART synthesized in PL.
 		This is used to interface the LDS sensor with the PS via the AXI Interconnect bus.
