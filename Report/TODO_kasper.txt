@@ -13,3 +13,9 @@ TODO:
 
 	Software
 		Move driver interface description (Done)
+
+	Ctrl-F
+		??
+		Zybo vs ZYBO
+		Zybo Board
+

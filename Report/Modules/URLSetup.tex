@@ -10,6 +10,11 @@
     citecolor	= black,		% HERE
 }
 % Make section and chapter references capitolized
-\renewcommand*{\sectionautorefname}{Section}
-\renewcommand*{\chapterautorefname}{Chapter}
+
+\AtBeginDocument{%
+	\renewcommand*{\sectionautorefname}{Section}
+	\renewcommand*{\chapterautorefname}{Chapter}
+	\renewcommand*{\subsectionautorefname}{Section}
+	\renewcommand*{\subsubsectionautorefname}{Section}
+}
 

@@ -10,7 +10,7 @@
 	\label{sub:chassis}
 		The chassis of the robot is a Baron-4WD mobile platform bought from the website dfrobots.com. 
 		It consist of a lower frame where up to four DC motors can be attached, and a top plate with holes for mounting of other devices. 
-		\autoref{fig:baron_platform} shows a picture of the chassis where it is assembled with the default package items from dfrobots.
+		\autoref{fig:baron_platform} shows a picture of the chassis where it is assembled with the default package items from dfrobots.\fxnote{ref to DF Robots}
 		\begin{figure}[H]
 			\centering
 			\begin{subfigure}[b]{0.55\linewidth}
@@ -35,10 +35,12 @@
 		
 		% subsection chassis (end)
 
-	\subsection{Motor characteristics} % (fold)
+	\subsection{Motor characteristics} % (fold
 	\label{sub:motor_characteristics}
 
-		
+		In order to have an estimate of wheel speed related to input voltage for use when designing a motion model (see \autoref{sub:motion_model}), a small experiment was carried out.
+		In this, a motor was powered in the same way i would be in the final robot (see \autoref{sub:motor_control}) and the steady-state rotation speed was recorded for different duty-cycles.
+		The results of this is shown in \autoref{fig:motor_speed_test} below.
 
 		\begin{figure}[H]
 			\centering
@@ -46,7 +48,19 @@
 			\caption{Motor rotational velocity [RPM] vs. PWM duty cycle [\%]}
 			\label{fig:motor_speed_test}
 		\end{figure}
-		
+
+		\autoref{fig:motor_speed_test} shows that the speed of the motor, overall, changes linearly with input voltage.
+		It is, however, apparent that at very low voltage the torque is not sufficient to get the motor to rotate.
+
+		The two major takeaways from this experiment and motor theory in general is:
+		\begin{enumerate}
+			\item
+			It is most optimal to operate in the mid to high range of input voltage, as this is the most linear region of operation.
+
+			\item
+			The motor input voltage may preferably be controlled by a PID controller to set a certain speed, instead of an open loop approach where transient acceleration due to inertia is more pronounced.
+		\end{enumerate}
+
 		% motor characteristics (end)
 
 	\subsection{Motion model} % (fold)
