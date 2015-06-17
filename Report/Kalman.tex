@@ -37,25 +37,25 @@ Each of these states consists of several equations.
 The prediction state uses the state-space model to calculate a prediction of the system state, called the a priori state, from the previous corrected system state, called the posterior state, \autoref{eq:kf_state_apriori}.
 A priori is marked with a '$^-$', and posterior is marked with a '$^+$'.
 \begin{equation}
-\label{eq:kf_state_apriori}
-\mathbf{x}_k^-=\mathbf{A} \mathbf{x}_{k-1}^+ + \mathbf{B} \mathbf{u}_k
+	\label{eq:kf_state_apriori}
+	\mathbf{x}_k^-=\mathbf{A} \mathbf{x}_{k-1}^+ + \mathbf{B} \mathbf{u}_k
 \end{equation}
 Here it is assumed that the system and control matrices are constant at all time instances.
 It also predicts an a priori covariance of the state, that describes how certain the prediction is, \autoref{eq:kf_cov_apriori}.
 \begin{equation}
-\label{eq:kf_cov_apriori}
-\mathbf{P}_k^-=\mathbf{A} \mathbf{P}_{k-1}^+ \mathbf{A}^T+\mathbf{Q}
+	\label{eq:kf_cov_apriori}
+	\mathbf{P}_k^-=\mathbf{A} \mathbf{P}_{k-1}^+ \mathbf{A}^T+\mathbf{Q}
 \end{equation}
 The correction state then starts by calculating the Kalman Gain. 
 The Kalman Gain is a matrix of weights, that show how much belief there is in the prediction and the measurement. \autoref{eq:kf_kalman_gain} is the calculation of it.
 \begin{equation}
-\label{eq:kf_kalman_gain}
-\mathbf{K}_k = \mathbf{P}_k^- \mathbf{H}^T (\mathbf{H} \mathbf{P}_k^- \mathbf{H}^T + \mathbf{R})^{-1}
+	\label{eq:kf_kalman_gain}
+	\mathbf{K}_k = \mathbf{P}_k^- \mathbf{H}^T (\mathbf{H} \mathbf{P}_k^- \mathbf{H}^T + \mathbf{R})^{-1}
 \end{equation}
 The Kalman Gain is then used to correct the states as shown in \autoref{eq:kf_state_posterior}, thereby calculation the posterior state. 
 \begin{equation}
-\label{eq:kf_state_posterior}
-\mathbf{x}_k^+ = \mathbf{x}_k^- + \mathbf{K}_k (\mathbf{z}_k - \mathbf{H} \mathbf{x}_k^-)
+	\label{eq:kf_state_posterior}
+	\mathbf{x}_k^+ = \mathbf{x}_k^- + \mathbf{K}_k (\mathbf{z}_k - \mathbf{H} \mathbf{x}_k^-)
 \end{equation}
 The a priori covariance is also corrected to the posterior covariance by using the Kalman Gain, \autoref{eq:kf_cov_posterior}.
 \begin{equation}
@@ -71,6 +71,8 @@ This becomes obvious when looking at an 1D example from \citep{Thrun2002}.
 	\caption{Kalman Filter 1D example, borrow from \citep{Thrun2002}}
 	\label{fig:kf_ex}
 \end{figure}\noindent
+
+\newpage
 In this example a robot is moving in 1D.
 \autoref{fig:kf_ex}a shows the a priori state and uncertainty, variance, of the robot.
 This mean that the KF is in its prediction state.

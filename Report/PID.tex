@@ -50,18 +50,19 @@ Therefore a P controller will decrease rise time but will always introduce overs
 	u = \tau_p \cdot CTE
 \end{equation}
 By introducing a differentiator, the controller avoids overshoot.
-This is because the differentiator tries to predict "the future" \fxnote{med eller uden "?} and by during this it tries to minimize the future error.
+This is because the differentiator tries to predict "the future" and by doing this it tries to minimize the future error.
 \begin{equation}
 	u = \tau_p \cdot CTE - \tau_d \cdot \frac{d}{dt} CTE
 \end{equation}
-And by introducing an integrator, the bias, steady state error, can be avoided.
-This is done because the integrator uses the past \fxnote{samme som ved the future} to minimize the error.
+And by introducing an integrator, the bias, or \emph{steady state error}, can be mnimized.
+This is done because the integrator uses "the past" to minimize the error.
 It therefore also helps in decreasing the rise time.
 \begin{equation}
 	u = \tau_p \cdot CTE - \tau_d \cdot \frac{d}{dt} CTE - \tau_i \cdot \int CTE dt
 \end{equation}
 % subsection pid controllers (end)
 
+\newpage
 \subsection{Twiddle/Coordinate Descent}
 
 Coordinate descent is a proposed method for finding the parameters $\tau_p$, $\tau_d$ and $\tau_i$ for the PID controller, where the parameters iteratively are corrected towards a better value.
@@ -95,7 +96,7 @@ The algorithm for coordinated decent is as follows:
 	\end{enumerate}
 	\item Go to step 3
 \end{enumerate}
-\end{enumerate} \fxnote{skal det være pseudokode istedet for?}
+\end{enumerate}
 This is done while sum of potential changes is larger than a given threshold, and repeats for all the parameters.
 As can be seen, the algorithm basically start by adding a change to one of the parameter.
 If this gives a better CTE, it makes the change for the next iteration bigger.

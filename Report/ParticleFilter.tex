@@ -2,6 +2,7 @@
 \documentclass[Main]{subfiles}
 
 \begin{document}
+\newpage
 \section{Particle Filter} % (fold)
 	\label{sec:particlefilter}
 This lesson is about the Particle Filter. 
@@ -41,7 +42,8 @@ It then randomly select a particle, where all particles have the same probabilit
 	\includegraphics[width=0.3\linewidth]{./Figures/low_var_resampling.png}
 	\caption{Low Variance Resampling example, borrowed from \citep{Thrun2015}}
 	\label{fig:low_var_resampling}
-\end{figure}\noindent
+\end{figure}
+\vspace{-12pt}
 A $\beta$ value is created using the largest importance weight and some randomness, \autoref{eq:beta_calc}.
 \begin{equation}
 \label{eq:beta_calc}
@@ -57,26 +59,27 @@ A new $\beta$ is then calculate and it continues from index $7$.
 Using this algorithm insures a circular selection of the particles, where particles with high weight have a larger chance to be selected.
 To summarize, the algorithm works in the following steps:
 \begin{enumerate}
-\item Randomly select an index where all particle have equal chance, $i = \mathcal{U}(1,N_{particles})$ 
-\item Calculate $\beta$ based on the maximum weight, \autoref{eq:beta_calc}
-\item Check if $\beta$ is larger than the weight at the index, $\beta > w_i$
-\item If true
-\begin{enumerate}
-	\item Subtract the weight from $\beta$, $\beta = \beta-w_i$
-	\item Increment the index, $i = i+1$
-	\item Go to step 3	
+	\item Randomly select an index where all particle have equal chance, $i = \mathcal{U}(1,N_{particles})$ 
+	\item Calculate $\beta$ based on the maximum weight, \autoref{eq:beta_calc}
+	\item Check if $\beta$ is larger than the weight at the index, $\beta > w_i$
+	\item If true
+	\begin{enumerate}
+		\item Subtract the weight from $\beta$, $\beta = \beta-w_i$
+		\item Increment the index, $i = i+1$
+		\item Go to step 3	
+	\end{enumerate}
+	\item If false
+	\begin{enumerate}
+		\item Add the particle to the particle set for the next iteration, $add \:\: particle_i \:\: to \:\: \chi_{k+1}$
+		\item Go to step 2
+	\end{enumerate}
 \end{enumerate}
-\item If false
-\begin{enumerate}
-	\item Add the particle to the particle set for the next iteration, $add \:\: particle_i \:\: to \:\: \chi_{k+1}$
-	\item Go to step 2
-\end{enumerate}
-\end{enumerate}\fxnote{skal det være pseudokode istedet for?}
 Now that the functionality of the particle filter have been described, an example of it is shown in \autoref{fig:pf_ex} where it is possible to see how the particles change over time.
 \autoref{fig:pf_ex}a shows the initial particle set, where the height of the lines represent the importance weights. 
 In \autoref{fig:pf_ex}b a measurement have been made and the importance weight have been updated.
 Since the measurement shows a door, all the particles near door have a large weight compare to the rest.
-\autoref{fig:pf_ex}c show the result after resampling and movement.
+
+\autoref{fig:pf_ex}c shows the result after resampling and movement.
 Notice how there are three larger densities of particles that matches the particles at the different doors after being moved.
 \autoref{fig:pf_ex}d shows the particles after another measurement and weight update. And \autoref{fig:pf_ex}e is another resampling and movement.
 From this it is obvious to see how the particles converges toward the robot position.
@@ -89,7 +92,7 @@ The number of new particles can also be chosen dynamic, like it is in the Augmen
 By adding new particles, there is a chance that one of these are near the true pose.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\linewidth]{./Figures/pf_ex.png}
+	\includegraphics[width=0.7\linewidth]{./Figures/pf_ex.png}
 	\caption{Particle filter example, borrowed from \citep{Thrun2002}}
 	\label{fig:pf_ex}
 \end{figure}\noindent

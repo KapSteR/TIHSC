@@ -8,6 +8,7 @@
 	This report contains a summary of the course material and a description of the project work from the Aarhus University reading course "AI in Robotics".
 	The first part of the report covers the course theory, which is mainly based on the Udacity course named "Artificial Intelligence for Robotics".
 	The Udacity course explains the concept of: localization, motion planning, motor control and SLAM, and presents some methods of how a robot can do these.
+	
 	The second part covers the project work, where the theory is put into practice.
 	Here, a robot that is capable of localizing itself in a pre-defined environment and drive to a pre-defined goal, is to be constructed.
 	SLAM will not be implemented in the project, due to the limited time this course has and due to the complexity of the SLAM theory.
@@ -15,11 +16,11 @@
 	The robot is build upon the Baron-4WD mobile platform from DFRobot.
 	This platform is by default equipped with four wheels that can be controlled individually, and is an open source hardware platform which means that there is room for mounting sensors and other things of interest.
 
-	A rotation Laser Distance Sensor, called a LIDAR (LIght Detection A Ranging), is used to provide range information to the robot.
-	Using a LIDAR makes it possible to collect range measurements in a horizontal plane in a 1$\degree$ resolution, with only one sensor.
+	LIDAR (LIght Detection And Ranging) is used to provide range information to the robot.
+	Using a rotating Laser Distance Sensor (LDS) it is possible to collect range measurements in a horizontal plane with a high resolution of 1$\degree$, with a single sensor.
 
-	The project is built on a ZYBO platform from Xilinx, which contains a Processing System with a dual-core ARM processor and reprogrammable FPGA logic.
-	Due to the fact that the platform have FPGA logic, it is possible to build customized hardware acceleration cores that can decrease execution time of the system.
+	The project is built on a ZYBO platform from Digilent, which contains a Xilinx Zynq-7000 Processing System with a dual-core ARM processor and reprogrammable FPGA logic.
+	Because the platform have FPGA logic, it is possible to build customized hardware acceleration cores that can decrease execution time of the system.
 	Therefore the challenge of the project is not only to build and program a robot that can do localization, motion planning and control, but also to learn the chosen platform.
 
 	% chapter introduction (end)

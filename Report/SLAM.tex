@@ -1,6 +1,7 @@
 %!TEX root = Main.tex
 \documentclass[Main]{subfiles}
 
+\newpage
 \begin{document}
 \section{SLAM} % (fold)
 	\label{sec:slam}
@@ -57,8 +58,8 @@
 	\end{subtable}
 \caption{Initial Graph SLAM components}
 \label{table:initialgraphslamtable} 
-\end{table} \noindent
-
+\end{table}
+\vspace{-12pt}
 Initially there is no correlation between the points of the matrix.
 If the robot moves 5 distance units, and makes a new estimate of its position, the relationship in a 1D environment between the previous position X0 and the current position, X1, will be
 
@@ -154,7 +155,7 @@ A landmark is measure at X2 with a distance of 9. The two equations that represe
 	\begin{equation}
 		X2 - L1 = -9
 	\end{equation}
-And the updated components become the ones seen in \autoref{table:landmark_graphslamtable}
+And the updated components become the ones seen in \autoref{table:landmark_graphslamtable}.
 
 \begin{table}[H]
 	\begin{subtable}{0.5\linewidth}

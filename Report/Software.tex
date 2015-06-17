@@ -20,6 +20,10 @@
 	\subsection{Design} % (fold)
 	\label{sub:software_design}
 
+	This section describes the design of the software system that will control the self-localizing robot.
+	First, a description of the intended structure of the system will be presentented, showing how the system level design maps to the software design.
+	Second, a description of the software's overall behavioral design is presented.
+
 	\subsubsection{Structure} % (fold)
 	\label{subsub:software_structure}
 		A object-oriented approach was taken to the design, in order to modulize the different parts of the software. 
@@ -30,7 +34,7 @@
 		
 		The main components of the program is the LIDAR, PathMaker, RobotFrame and ParticleFilter classes. 
 		Each class has a distinct purpose, which maps directly to one of the four  actions in the main loop of \autoref{fig:systemact}.
-		The mapping can be see in \autoref{table:action_class_map}
+		The mapping can be see in \autoref{table:action_class_map}.
 		 
 		\begin{table}[H]
 			\centering
