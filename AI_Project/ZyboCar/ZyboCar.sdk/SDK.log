@@ -1766,3 +1766,4 @@ java.lang.NullPointerException
 18:01:10 INFO  : Processor reset is completed for ps7_cortexa9_0
 18:05:16 INFO  : Invoking Bootgen: bootgen -image ZyboCarApp.bif -o C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarApp\bootimage\ZyboCarApp.mcs -w on
 18:05:21 INFO  : Bootgen command execution is done.
+13:00:43 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
