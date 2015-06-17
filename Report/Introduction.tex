@@ -5,15 +5,22 @@
 \part*{Introduction} % (fold)
 \label{cha:introduction}
 
-	This report contains a summary of the course material and a description of the project work from the course "AI in Robotics".
+	This report contains a summary of the course material and a description of the project work from the Aarhus University reading course "AI in Robotics".
 	The first part of the report covers the course theory, which is mainly based on the Udacity course named "Artificial Intelligence for Robotics".
+	The Udacity course explains the concept of: localization, motion planning, motor control and SLAM, and presents some methods of how a robot can do these.
 	The second part covers the project work, where the theory is put into practice.
-	Here, a robot capable of localizing itself in a pre-defined environment, is constructed.
+	Here, a robot that is capable of localizing itself in a pre-defined environment and drive to a pre-defined goal, is to be constructed.
+	SLAM will not be implemented in the project, due to the limited time this course has and due to the complexity of the SLAM theory.
 
-	LIDAR (Light Detection and Ranging) is used for distance sensing, in order to obtain information about the environment, as distances in all horizontal directions in 1\degree\ intervals.
+	The robot is build upon the Baron-4WD mobile platform from DFRobot.
+	This platform is by default equipped with four wheels that can be controlled individually, and is an open source hardware platform which means that there is room for mounting sensors and other things of interest.
 
-	The project is built on a ZYBO platform, which contains a Processing System with a dual-core ARM processor and reprogrammable FPGA logic.
-	Therefore the challenges of the project is not only to do localization, but also to learn the chosen platform.
+	A rotation Laser Distance Sensor, called a LIDAR (LIght Detection A Ranging), is used to provide range information to the robot.
+	Using a LIDAR makes it possible to collect range measurements in a horizontal plane in a 1$\degree$ resolution, with only one sensor.
+
+	The project is built on a ZYBO platform from Xilinx, which contains a Processing System with a dual-core ARM processor and reprogrammable FPGA logic.
+	Due to the fact that the platform have FPGA logic, it is possible to build customized hardware acceleration cores that can decrease execution time of the system.
+	Therefore the challenge of the project is not only to build and program a robot that can do localization, motion planning and control, but also to learn the chosen platform.
 
 	% chapter introduction (end)
 

@@ -220,7 +220,7 @@
 			\end{table} 
 
 			To control the direction of the motor one applies a logic level to the \emph{DIR} pin for the corresponding motor; 1 for forward, 0 for reverse.
-			The speed of the motors are controlled by applying a Pulse Width Modulated (PWM) signal to the EN pin for the corresponding motor (see \autoref{tab:motor_signal}).
+			The speed of the motors are controlled by applying a PWM signal to the EN pin for the corresponding motor (see \autoref{tab:motor_signal}).
 			The sensor feedback pins are not used as there are no sensors attached to the wheels.
 
 			For more information, see the reference manual \cite{Digilent2013}.
@@ -339,8 +339,8 @@
 		The output is however limited by the output of the 5V power bank.
 		Assuming little to no conversion loss the the maximum current from the ZYBO 3.3V supply is:
 		\begin{equation}
-			P_{PB} = I_{PB} * V_{PB} = 
-			500\ mA * 5\ V =
+			P_{PB} = I_{PB} \cdot V_{PB} = 
+			500\ mA \cdot 5\ V =
 			2.5\ W
 		\end{equation}
 		\begin{equation}
