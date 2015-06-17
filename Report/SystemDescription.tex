@@ -15,7 +15,7 @@
 
 		The structural description is used to describe what parts the system is composed of, and how the parts communicate with each other.
 		To depict this, a System Block Diagram is used to show composition, and a Internal Block Diagram is used to show dataflow. 
-		These can be seen in \ref{fig:systembdd} and \ref{fig:systemibd}.
+		These can be seen in \autoref{fig:systembdd} and \autoref{fig:systemibd}.
 		
 		\begin{figure}[H]
 			\centering
@@ -32,10 +32,10 @@
 		\end{figure}
 		
 		The central block of the system is the ZyboCar, which all other blocks are composed of.
-		The sensing block contains the XV11 LIDAR, which is the sensor used for measuring distance at 360\degree around the robot.
+		The sensing block contains the XV11 LIDAR, which is the sensor used for measuring distances at $360\degree$ around the robot.
 		This raw sensing data is transferred to the processing block, which uses the sensor data to construct a control signal for the motion block.
 		The motion block contains a motor controller, two motors, and a Dual H-Bridge block.
-		When the motion block receives a control signal from the localisation software, the motor controller converts the signal to a logical PWM signal. 
+		When the motion block receives a control signal from the localization software, the motor controller converts the signal to a logical PWM signal. 
 		The Dual H-Bridge then converts the logical PWM signal to an analoge PWM signal that can be used to control the Motor.
 		
 	\subsection{Behaviour} % (fold)
@@ -44,7 +44,7 @@
 		The behavioural description is used to describe what the system should do.
 		At the behavioural level, composition is abstracted away. 
 		Instead, emphasis is put on what actions should be made and what order they should be made in.
-		To depict this, a Activity Diagram is used. This can be seen in \ref{fig:systemact}.
+		To depict this, a Activity Diagram is used. This can be seen in \autoref{fig:systemact}.
 		
 		\begin{figure}[H]
 			\centering
@@ -56,7 +56,7 @@
 		The system starts by setting up the robot, and then enters a loop that continues until the goal is found.
 		
 		When the robot has not yet found its goal, it starts out by using its sensor.
-		The sensordata is then used to estimate the most probable current location of the robot.
+		The sensor data is then used to estimate the most probable current location of the robot.
 		With basis in this location, a path to the goal is generated.
 		Finally, the robot moves a step along the found path, and checks if it has reached the goal.
 		If not, it continues in the loop. Otherwise the activity ends.
