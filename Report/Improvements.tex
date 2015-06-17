@@ -28,17 +28,16 @@
 	The first advantage would be monitoring, which would greatly speed up the debugging process.
 	Currently the state of the robot is not easily accessible once the system is running.
 	This makes debugging very hard, as it requires a physical connection to the device through a cable.
-	
 	The other advantage would be the ability to control the parameters of the robot. 
-	This could involve changing the heuristic or penalty map, changing the position of the goal, or changing the number of particels.
+	This could involve changing the heuristic or penalty map, changing the position of the goal, or changing the number of particles.
 	Currently, implementing any change is a cumbersome process, as it involves re-flashing the device. 
-	This takes 5-10 minuts, making the debugging cycles very long.
+	This takes 5-10 minutes, making the debugging cycles very long.
 	
-	A wireless connection could be made by buying an additional PMOD for the ZYBO board, which adds support for a wireless connection.
+	A wireless connection could be made by buying an additional PMOD for the ZYBO, which adds support for a wireless connection.
 	
 	A final improvement would be to get the robot to move more continuously. 
 	This would require the update rate of the particle filter to be improved, since it is the current bottleneck of the system.
-	Especially the resampling can take a long time, because the current method of resampling takes non deterministic time, with a worst case of $O(n^2)$ time.
+	Especially the resampling can take a long time, because the current method of resampling takes a non deterministic time, with a worst case of $O(n^2)$ time.
 	
 	If an approach like the tournament approach was used, the resampling would take $O(n)$ time.
 	% section introduction (end)
