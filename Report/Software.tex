@@ -1,6 +1,5 @@
 %!TEX root = Main.tex
 \documentclass[Main]{subfiles}
-
 \begin{document}
 
 \section{Software} % (fold)
@@ -15,7 +14,7 @@
 		The software for this project was written in C++ using the Xilinx Software Development Kit.
 		C++ was chosen because it is a object oriented language, which gives some clear advantages when working in a team.
 		Furthermore, C++ has native support for an resizable array datatype known as a vector, which greatly reduced the complexity of manipulating arrays.
-		The software was written for the C++11 standard, since the standard gave some advantages in initialisation of vectors.
+		The software was written for the C++11 standard, since this standard gave some advantages in initialisation of vectors.
 		GitHub was used for version control	to manage and backup code.
 		
 	\subsection{Design} % (fold)
@@ -73,7 +72,7 @@
 
 		The raw sensor data from the Sensing block in \autoref{fig:systemibd} is sent to the LIDAR class, which  converts the raw sensor data to 360 distance values.
 		The sensor data is sent to the ParticleFilter class, which updates its current particle weights. 
-		These weights are used to resample the particles using the low variance sampling technique presented in the course material.
+		These weights are used to resample the particles using the Low Variance Resampling technique presented in the course material, \autoref{sec:particlefilter}.
 		The robots position is then estimated as position and orientation of the particle with the largest weight.
 		This position is used in the PathMaker, which performs AStar to find the best path to the goal. 
 		The next move from this path is sent to both the RobotFrame class and the ParticleFilter, to move both the robot and the particles along the expected path.
@@ -139,15 +138,15 @@
 	
 	The ParticleFilter class is responsible for turning  sensor data into an estimate of the robots current position. 
 	In this course, the two main techniques for doing so are particle filters and Kalman filters. 
-	Particle filters were chosen, which the name of this class implies, since particle filters are relatively easy to implement, and do not require landmarks.
+	Particle filters were chosen, which the name of this class implies, since particle filters are relatively easy to implement, and do not require landmarks; it can use raw measurements.
 	
 	The ParticleFilter class uses a Particle object to represent a particle. A particle has attributes describing its position and orientation, much like the robot does. 
 	These particles are generated randomly in the constructor of the ParticleFilter class.
 	
 	The ParticleFilter class has three main functions.
 	UpdateWeights, Resample and GetNewPosition.
-	The UpdateWeights function updates the weights of the particels. 
-	The weights are averaged likelihoods, which are calculated by using the weightCalculation function of the particle objects that can be seen in \autoref{lst:weightCalculation}.
+	The UpdateWeights function updates the weights of the particles. 
+	The weights are calculated by using the weightCalculation function of the particle objects that can be seen in \autoref{lst:weightCalculation}.
 	
 	\begin{lstlisting}[caption=weightCalculation function of particle class, style=Code-C++, label=lst:weightCalculation, basicstyle=\scriptsize]
 			
@@ -181,12 +180,12 @@
 
 	\end{lstlisting}
 	
-	The measured data is compared with the RangeArray. The RangeArray is a pre-computed array with 32x32x180 floats, that contains the expected measurement data at all locations and angels in the map.
+	The measured data is compared with the RangeArray. The RangeArray is a pre-computed array with 32x32x180 floats, that contains the expected measurement data at all grid cells and angels in the map.
 		
-	As described in \fxnote{ref til PF teori} the weight can be calculated using a Gaussian distribution.
-	Since each particle compares 180 measurements with their expected ranges, the weights must be calculated as the product of likelihood, that are found using a Gaussian.
+	As described in \autoref{sec:particlefilter} the weight can be calculated using a Gaussian distribution.
+	Since each particle compares 180 measurements with their expected ranges, the weights must be calculated as the product of likelihoods, that are found using a Gaussian.
 	There is however a disadvantage using the likelihood directly due to that fact that it in numeric unstable because small numbers might be multiplied together.
-	It is instead an preferable to use the log likelihood instead while it turns the multiplications into additions, and then in the end find the likelihood by taking the exponential to the log likelihood value.
+	It is instead preferable to use the log likelihood while it turns the multiplications into additions, and then in the end find the likelihood by taking the exponential to the log likelihood value.
 	In this project the log likelihood is being divided by the number of measurement used in the iteration before it is turned into likelihood.
 	Thereby the weight is found as the likelihood given the exponential of the average log likelihood, \autoref{eq:weight_calc}	
 	\begin{equation}
@@ -197,12 +196,12 @@
 	Once the new weights have been calculated, the Resampling function is invoked. 
 	The resampling function is the heart of the particle filter.
 	In this function, a new set of particles is constructed, by randomly choosing particles from the current set.
-	When choosing which particels to include in the new set, the probability of picking a certain particle is proportional to it's weight.
-	This is accomplished by using the low variance sampling technique presented in the course material.
-	Only 95 percent of the particles in the new set are made from resampling.
-	The last 5 percent are new particles, which are randomly placed on the map.
-	The randomly placed particels are needed if the robot misplaces itself in relations to its particle.
-	This can happen if the movement of the robot does not fit the motion model, or if the robot is physically moved by someone else or "Kidnapped". 
+	When choosing which particles to include in the new set, the probability of picking a certain particle is proportional to its weight.
+	This is accomplished by using the Low Variance Resampling technique presented in the course material.
+	Only 95$\%$ of the particles in the new set are made from resampling.
+	The last 5$\%$ are new particles, which are randomly placed on the map.
+	The randomly placed particles are needed if the robot misplaces itself in relations to its particle.
+	This can happen if the movement of the robot does not fit the motion model, or if the robot is physically moved by someone else or "Kidnapped"; hence the "kidnapped robot" situation described in \autoref{sec:particlefilter}. 
 	The Resampling function can be seen in \autoref{lst:resample}
 	
 	\begin{lstlisting}[caption=Resampling function of ParticleFilter, style=Code-C++, label=lst:resample, basicstyle=\scriptsize]
@@ -257,7 +256,7 @@
 	By using the largest weight, the position would only be wrong half the time.
 	
 	Once the PathMaker class has used the estimate of the current position to find the next movement instructions for the robot, the same instructions are sent to the ParticleFilter.
-	The movement instructions are applied to all the particels, with 10 \degree noise added to the angle, and 10 mm noise added to the distance.
+	The movement instructions are applied to all the particles, with a normal distributed noise with standard deviation of 10$\degree$ added to the angle, and a normal distributed noise with standard deviation of 10 mm added to the distance.
 	
 		\subsubsection{PathMaker} % (fold)
 	\label{subsub:software_pathmaker}
