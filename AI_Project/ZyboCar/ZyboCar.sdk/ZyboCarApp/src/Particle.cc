@@ -83,21 +83,22 @@ float Particle::weightCalculation(int* dataArray){
     float prob = 0.0;
     int distDif;
     int angleIndex;
-    int measurement[NUM_ANGLES]; //[8];
+//    int measurement[NUM_ANGLES]; //[8];
 
-    for (int i = 0; i < NUM_ANGLES ; i++ ) {
-
-    	measurement[i] = dataArray[2*i];
-    }
+//    for (int i = 0; i < NUM_ANGLES ; i++ ) {
+//
+//    	measurement[i] = dataArray[2*i];
+//    }
 
     int n = 0;
     
     for(int i = 0; i < NUM_ANGLES; i++){
-        if (measurement[i] != -1){
+        if (dataArray[i*2] != -1){
 //            angleIndex = (int)(float(pos.orientation / M_PI_4) + i) % 8;
         	angleIndex = modu(((pos.orientation/2)+i),180);
             
-            distDif = RangeArray[pos.y][pos.x][angleIndex]-measurement[i];
+//            distDif = RangeArray[pos.y][pos.x][angleIndex]-measurement[i];
+        	distDif = RangeArray[pos.y][pos.x][angleIndex]-dataArray[i*2];
             prob += (normalizer - 0.5*(pow(distDif,2))/(noiseSqr));
             n++;
         }

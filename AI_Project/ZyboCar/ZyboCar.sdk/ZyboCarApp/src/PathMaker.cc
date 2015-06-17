@@ -7,6 +7,7 @@ PathMaker::PathMaker() {
 	possibleTurns = {90, 180, 270, 00};
 
 	makePenalty();
+	PrintIntMatrix(aStarPenalty);
 }
 
 bool sortingFunction(const std::vector<int>& a, const std::vector<int>& b) {
@@ -126,7 +127,7 @@ void PathMaker::performAStar(Position &robotPosition) {
 	y = goal.y;
 
 	path.clear();
-	path.push_back( { y, x, action[y][x] });
+//	path.push_back( { y, x, action[y][x] });
 
 	while (x != robotPosition.x || y != robotPosition.y) {
 		int a = action[y][x];
@@ -277,7 +278,8 @@ void PathMaker::makePenalty() {
 		}
 	}
 
-	for (int i = 0; i<3; ++i) {
+//	for (int i = 0; i<3; ++i) {
+	for (int i = 0; i<2; ++i) {
 		for (int y = 9-i; y < 20+i; y++)
 		{
 			if (!(y < 0 || y > MAPHEIGHT-1)) {

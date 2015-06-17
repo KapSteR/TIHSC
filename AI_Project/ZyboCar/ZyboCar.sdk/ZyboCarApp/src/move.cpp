@@ -23,7 +23,7 @@ void MoveController::move(int poseAngle, MoveBlock& MB) {
 
 	h_p = modu(heading - poseAngle,360);
 
-	if (h_p != 0) { // Only turn for angle != 0
+	if (h_p >= 45 || h_p <= 325) { // Only turn for angle != 0
 
 		MB.turnAngle = h_p;
 
@@ -99,6 +99,8 @@ void MoveController::move(int poseAngle, MoveBlock& MB) {
 
 		// Wait 0.5 seconds
 		ScuTimerWait(TIMER_DEVICE_ID, 112500000);
+	} else {
+		MB.turnAngle = 0;
 	}
 
 	// Move

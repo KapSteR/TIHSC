@@ -1,4 +1,4 @@
-09:12:22 **** Incremental Build of configuration Debug for project SimpleZyboTest ****
+14:56:14 **** Build of configuration Debug for project SimpleZyboTest ****
 make all 
 Building file: ../src/main.c
 Invoking: ARM gcc compiler
@@ -7,15 +7,10 @@ Finished building: ../src/main.c
  
 Building target: SimpleZyboTest.elf
 Invoking: ARM gcc linker
-arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "SimpleZyboTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
-Finished building target: SimpleZyboTest.elf
- 
-Invoking: ARM Print Size
-arm-xilinx-eabi-size SimpleZyboTest.elf  |tee "SimpleZyboTest.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  33492	   2200	  22628	  58320	   e3d0	SimpleZyboTest.elf
-Finished building: SimpleZyboTest.elf.size
- 
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "SimpleZyboTest.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2014.4/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.8.3/../../../../arm-xilinx-eabi/bin/ld.exe: cannot find -lxil
+collect2.exe: error: ld returned 1 exit status
+make: *** [SimpleZyboTest.elf] Fejl 1
 
-09:12:23 Build Finished (took 810ms)
+14:56:14 Build Finished (took 901ms)
 

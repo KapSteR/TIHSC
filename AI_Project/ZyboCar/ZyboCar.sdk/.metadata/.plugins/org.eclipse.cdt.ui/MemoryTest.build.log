@@ -1,6 +1,6 @@
-20:09:47 **** Incremental Build of configuration Debug for project MemoryTest ****
+14:56:26 **** Build of configuration Debug for project MemoryTest ****
 make all 
 make: Ingenting at gøre for 'all'.
 
-20:09:48 Build Finished (took 150ms)
+14:56:27 Build Finished (took 270ms)
 

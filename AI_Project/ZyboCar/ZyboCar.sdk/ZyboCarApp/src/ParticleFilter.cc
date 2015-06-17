@@ -86,11 +86,17 @@ void ParticleFilter::updateWeigths(int* dataArray, intMatrix map) {
 	}
 }
 
+bool sortingFunction2(const Particle& a, const Particle& b) {
+	return a.w > b.w;
+}
+
 void ParticleFilter::resample(intMatrix map) {
 	vector<Particle> tempSet;
 	int index = rand() % NUMBEROFPARTICLES;
 	float beta = 0;
 	float r;
+	int r1;
+	vector<Particle> tournament;
 
 	for (int i = 0; i < NUMBEROFPARTICLES-NUMBEROFRANDOMPARTICLES; i++) {
 		r = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
@@ -101,6 +107,25 @@ void ParticleFilter::resample(intMatrix map) {
 		}
 		tempSet.push_back(particles[index]);
 	}
+
+//	for (int i = 0; i < NUMBEROFPARTICLES-NUMBEROFRANDOMPARTICLES; i++) {
+//		r1 = rand()%NUMBEROFPARTICLES;
+//
+//		tournament.clear();
+//
+//		for(int j; j<10;j++){
+//			r1 = rand()%NUMBEROFPARTICLES;
+//			tournament.push_back(particles[r1]);
+//		}
+//
+//		//Sort tournament with smallest f value in the back
+//		std::sort(tournament.begin(), tournament.end(), sortingFunction2);
+//
+//		Particle next = tournament.front();
+//		tempSet.push_back(next);
+//
+//	}
+
 
 	std::cout << "starting random" << std::endl;
 	Particle tempPar;
@@ -130,30 +155,35 @@ void ParticleFilter::resample(intMatrix map) {
 }
 
 void ParticleFilter::getNewPosition(Position& robotPosition) {
-	//	int x = 0;
-	//	int y = 0;
-	//	float orientation = 0;
-
-	//	for(int i = 0; i < particles.size(); i++){
-	//
-	//		x += particles[i].pos.x;
-	//		y += particles[i].pos.y;
-	//
-	//        float ori = (particles[i].pos.orientation - particles[0].pos.orientation + M_PI);
-	//		orientation += fmod(ori, 2 * M_PI) + particles[0].pos.orientation - M_PI;
-	//	}
-	//
-	//	robotPosition.x = x / particles.size();
-	//	robotPosition.y = y / particles.size();
-	//	robotPosition.orientation = orientation / particles.size();
-	//
+//		int x = 0;
+//		int y = 0;
+//		int ori = 0;
+//		int orientation = 0;
+//
+//		for(int i = 0; i < NUMBEROFPARTICLES-NUMBEROFRANDOMPARTICLES; i++){
+//
+//			x += particles[i].cont_x;
+//			y += particles[i].cont_y;
+//
+////			ori += particles[i].cont_orientation;
+//
+//			ori = (particles[i].cont_orientation - particles[0].cont_orientation + 180);
+//			orientation += modu(ori, 360) + particles[0].cont_orientation - 180;
+//
+//
+//
+//		}
+//
+//		robotPosition.x = (x / (NUMBEROFPARTICLES-NUMBEROFRANDOMPARTICLES))/GRID_SIZE;
+//		robotPosition.y = (y / (NUMBEROFPARTICLES-NUMBEROFRANDOMPARTICLES))/GRID_SIZE;
+//		robotPosition.orientation = orientation / (NUMBEROFPARTICLES-NUMBEROFRANDOMPARTICLES);
 
 	int bestIdx = bestParticle();
 
 	robotPosition.x = particles[bestIdx].pos.x;
 	robotPosition.y = particles[bestIdx].pos.y;
-	robotPosition.orientation = particles[bestIdx].pos.orientation;
-
+//	robotPosition.orientation = particles[bestIdx].pos.orientation;
+	robotPosition.orientation = particles[bestIdx].cont_orientation;
 }
 
 void ParticleFilter::moveParticles(MoveBlock& MB) {

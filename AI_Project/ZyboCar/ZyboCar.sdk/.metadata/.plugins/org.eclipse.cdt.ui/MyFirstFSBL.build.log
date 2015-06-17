@@ -1,52 +1,72 @@
-10:36:00 **** Build of configuration Release for project MyFirstFSBL ****
+14:56:15 **** Build of configuration Debug for project MyFirstFSBL ****
 make all 
-'Building file: ../src/fsbl_handoff.S'
-'Invoking: ARM gcc compiler'
-arm-xilinx-eabi-gcc -Wall -O2 -I"C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_handoff.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
-'Finished building: ../src/fsbl_handoff.S'
-' '
-'Building file: ../src/fsbl_hooks.c'
-'Invoking: ARM gcc compiler'
-arm-xilinx-eabi-gcc -Wall -O2 -I"C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
-'Finished building: ../src/fsbl_hooks.c'
-' '
-'Building file: ../src/image_mover.c'
-'Invoking: ARM gcc compiler'
-arm-xilinx-eabi-gcc -Wall -O2 -I"C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
-'Finished building: ../src/image_mover.c'
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM gcc compiler'
-arm-xilinx-eabi-gcc -Wall -O2 -I"C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building file: ../src/md5.c'
-'Invoking: ARM gcc compiler'
-arm-xilinx-eabi-gcc -Wall -O2 -I"C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
-../src/md5.c: In function 'MD5Final':
-../src/md5.c:445:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
-  ( (u32 *)context->intermediate )[ 14 ] = context->bits[ 0 ];
-  ^
-../src/md5.c:446:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
-  ( (u32 *)context->intermediate )[ 15 ] = context->bits[ 1 ];
-  ^
-'Finished building: ../src/md5.c'
-' '
-'Building file: ../src/nand.c'
-'Invoking: ARM gcc compiler'
-arm-xilinx-eabi-gcc -Wall -O2 -I"C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
-'Finished building: ../src/nand.c'
-' '
-'Building file: ../src/nor.c'
-'Invoking: ARM gcc compiler'
-arm-xilinx-eabi-gcc -Wall -O2 -I"C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
-'Finished building: ../src/nor.c'
-' '
-'Building file: ../src/pcap.c'
-'Invoking: ARM gcc compiler'
-arm-xilinx-eabi-gcc -Wall -O2 -I"C:\GitRepo\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
-'Finished building: ../src/pcap.c'
-' '
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_handoff.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c"
+Finished building: C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/rsa.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: MyFirstFSBL.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MyFirstFSBL\src" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MyFirstFSBL.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2014.4/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.8.3/../../../../arm-xilinx-eabi/bin/ld.exe: cannot find -lrsa
+c:/xilinx/sdk/2014.4/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.8.3/../../../../arm-xilinx-eabi/bin/ld.exe: cannot find -lxil
+collect2.exe: error: ld returned 1 exit status
+make: *** [MyFirstFSBL.elf] Fejl 1
 
-10:36:08 Build Finished (took 7s.881ms)
+14:56:21 Build Finished (took 6s.16ms)
 
