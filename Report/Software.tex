@@ -28,13 +28,6 @@
 		
 		The structure of the software is depicted in \autoref{fig:classdiagram} as a UML class diagram.
 		
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=\linewidth]{ClassDiagram}
-			\caption{Class Diagram}
-			\label{fig:classdiagram}
-		\end{figure}
-		
 		The main components of the program is the LIDAR, PathMaker, RobotFrame and ParticleFilter classes. 
 		Each class has a distinct purpose, which maps directly to one of the four  actions in the main loop of \autoref{fig:systemact}.
 		The mapping can be see in \autoref{table:action_class_map}
@@ -58,10 +51,27 @@
 			\label{table:action_class_map} 
 		\end{table} \noindent
 		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\linewidth]{ClassDiagram}
+			\caption{Class Diagram}
+			\label{fig:classdiagram}
+		\end{figure}
+		
 	\subsubsection{Behaviour} % (fold)
 	\label{subsub:software_behaviour}
 
-		The dataflow between the different classes is covered in the Internal Block Diagram in \autoref{fig:softwareibd}
+		The dataflow between the different classes is covered in the Internal Block Diagram in \autoref{fig:softwareibd}.
+
+		The raw sensor data from the Sensing block in \autoref{fig:systemibd} is sent to the LIDAR class, which  converts the raw sensor data to 360 distance values.
+		The sensor data is sent to the ParticleFilter class, which updates its current particle weights. 
+		These weights are used to resample the particles using the Low Variance Resampling technique presented in the course material, \autoref{sec:particlefilter}.
+		The robots position is then estimated as position and orientation of the particle with the largest weight.
+		This position is used in the PathMaker, which performs AStar to find the best path to the goal. 
+
+		The next move from this path is sent to both the RobotFrame class and the ParticleFilter, to move both the robot and the particles along the expected path.
+		The RobotFrame class uses the MotorControl class to send a control signal to the Motion block from \autoref{fig:systemibd}, which converts the control to a PWM signal that controls the motors of the robot.
+		
 		
 		\begin{figure}[H]
 			\centering
@@ -69,15 +79,6 @@
 			\caption{Software Internal Block Diagram}
 			\label{fig:softwareibd}
 		\end{figure}
-
-		The raw sensor data from the Sensing block in \autoref{fig:systemibd} is sent to the LIDAR class, which  converts the raw sensor data to 360 distance values.
-		The sensor data is sent to the ParticleFilter class, which updates its current particle weights. 
-		These weights are used to resample the particles using the Low Variance Resampling technique presented in the course material, \autoref{sec:particlefilter}.
-		The robots position is then estimated as position and orientation of the particle with the largest weight.
-		This position is used in the PathMaker, which performs AStar to find the best path to the goal. 
-		The next move from this path is sent to both the RobotFrame class and the ParticleFilter, to move both the robot and the particles along the expected path.
-		The RobotFrame class uses the MotorControl class to send a control signal to the Motion block from \autoref{fig:systemibd}, which converts the control to a PWM signal that controls the motors of the robot.
-		
 	
 	\subsection{Implementation} % (fold)
 	\label{sub:software_implementation}
@@ -85,8 +86,10 @@
 	This section covers the implementation specific details of the software.
 	The software was implemented according to the design, as the programs main function, presented in \autoref{lst:main_code}, makes apparent.
 
+	Focus in the following subsections has been put on the PathMaker, ParticleFilter and RobotFrame class, as they have required the most work during implementation.
+
+	\newpage
 	\begin{lstlisting}[caption=Main Function of Progam, style=Code-C++, label=lst:main_code, basicstyle=\scriptsize]
-	
 	int main(void) {
 		Position goal;
 		goal.x = GOAL_X;
@@ -130,8 +133,6 @@
 	}
 	
 	\end{lstlisting}
-
-	Focus in the following subsections has been put on the PathMaker, ParticleFilter and RobotFrame class, as they have required the most work during implementation.
 	
 	\subsubsection{ParticleFilter} % (fold)
 	\label{subsub:software_particlefilter}
@@ -142,7 +143,6 @@
 	
 	The ParticleFilter class uses a Particle object to represent a particle. A particle has attributes describing its position and orientation, much like the robot does. 
 	These particles are generated randomly in the constructor of the ParticleFilter class.
-	
 	The ParticleFilter class has three main functions.
 	UpdateWeights, Resample and GetNewPosition.
 	The UpdateWeights function updates the weights of the particles. 
@@ -193,17 +193,19 @@
 	w_i = \mathcal{L} (\mathbf{x}_i|\mathbf{z}) = \exp \left( \frac{1}{N} \displaystyle\sum_k \ln \left( \frac{1}{\sqrt{2\pi^2 \cdot \sigma_\mathbf{z}^2}} \exp \left( - \frac{\frac{1}{2}\cdot (z_k-x_{i,k})^2}{\sigma_\mathbf{z}^2} \right) \right) \right)
 	\end{equation}
 	
+	\newpage
 	Once the new weights have been calculated, the Resampling function is invoked. 
 	The resampling function is the heart of the particle filter.
 	In this function, a new set of particles is constructed, by randomly choosing particles from the current set.
 	When choosing which particles to include in the new set, the probability of picking a certain particle is proportional to its weight.
 	This is accomplished by using the Low Variance Resampling technique presented in the course material.
+
 	Only 95$\%$ of the particles in the new set are made from resampling.
 	The last 5$\%$ are new particles, which are randomly placed on the map.
 	The randomly placed particles are needed if the robot misplaces itself in relations to its particle.
 	This can happen if the movement of the robot does not fit the motion model, or if the robot is physically moved by someone else or "Kidnapped"; hence the "kidnapped robot" situation described in \autoref{sec:particlefilter}. 
 	The Resampling function can be seen in \autoref{lst:resample}
-	
+	\vspace{12pt}
 	\begin{lstlisting}[caption=Resampling function of ParticleFilter, style=Code-C++, label=lst:resample, basicstyle=\scriptsize]
 		void ParticleFilter::resample(intMatrix map) {
 			vector<Particle> tempSet;
@@ -262,11 +264,19 @@
 	\label{subsub:software_pathmaker}
 	
 	The PathMaker class is responsibly for managing the map the robot is navigating in, finding the shortest path to the goal position and getting the next move instruction that moves the robot and the particles along the generated path.
-	In the constructor of the PathMaker, a 32 x 32 grid is build, based on the real environmen in \fxnote{billede af banen}. 
+	In the constructor of the PathMaker, a 32 x 32 grid is build, based on the real environment, shown in \autoref{fig:real_world}. 
+	\vspace{12pt} 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.0\linewidth]{CourseImage}
+		\caption{Real-world environment}
+		\label{fig:real_world}
+	\end{figure}
+
+	\newpage
 	The grid map in which the robot will be driving, is divided into 10 x 10 cm squares. 
-	Open spaces are represented as '0', Obstacles are represented as '1' and the robot is represented as '**'.
-	
-	The grid map can be seen in \autoref{table:realmap}	
+	Open spaces are represented as '0', Obstacles are represented as '1' and the robot is represented as '**'. The grid map can be seen in \autoref{table:realmap}.	
+
 	\begin{table}[H]
 		\centering
 		\resizebox{\textwidth}{!}{
@@ -460,6 +470,7 @@
 	\texttt{MoveController} then calculates the required turn and translation to achieve the requested move.
 	This entails figuring out how much to turn and in which direction (clockwise/counter-clockwise) to turn.
 
+	\newpage
 	To execute the move the \texttt{MoveController} does the following:
 	\begin{enumerate}
 		\item

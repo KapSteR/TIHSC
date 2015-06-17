@@ -239,9 +239,6 @@
 			\newpage
 			\lstinputlisting[caption=PWM-Controller SystemC Header, style=Code-C++, label=lst:pwm_header, basicstyle=\scriptsize]{../MotorControl/MotorControl/main.h}
 
-			\newpage
-			\lstinputlisting[caption=PWM-Controller SystemC Definition, style=Code-C++, label=lst:pwm_definition, basicstyle=\scriptsize]{../MotorControl/MotorControl/main.cpp}
-
 			\autoref{lst:pwm_definition} shows the definition of the module declared in \autoref{lst:pwm_header}.
 			The \texttt{clockDividerThread} is responsible for dividing the 100 MHz clock of the PL down to a 2 MHz clock that can be used for ticks in the \texttt{pwmThread}.
 			The use of a 2 MHz PWM-clock is based on the choice of a 10 bit resolution and a recommendation from \cite{Digilent2013} of a ~2 kHz PWM-cycle for the DHB1.
@@ -263,6 +260,9 @@
 			\end{equation}
 
 			\texttt{clockDividerThread} signals \texttt{pwmThread} of a PWM clock tick by setting \texttt{pwmClock} for one PL clock-cycle every time a PWM clock tick is generated.
+
+			\newpage
+			\lstinputlisting[caption=PWM-Controller SystemC Definition, style=Code-C++, label=lst:pwm_definition, basicstyle=\scriptsize]{../MotorControl/MotorControl/main.cpp}
 
 			\texttt{pwmThread} handles PWM output by counting up a 10 bit variable everytime it receives a PWM clock tick, and compares the count with the PWM settings for the left and right motor, \texttt{pwmL} and \texttt{pwmR} respectively.
 			If the count is below the PWM setting, the enable signal is held high, and if it is above it is held low.
@@ -297,7 +297,7 @@
 
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=\linewidth]{ZyboCarDesign}
+			\includegraphics[width=0.9\linewidth]{ZyboCarDesign}
 			\caption{ZyboCar Hardware Platform Block Design}
 			\label{fig:zybocar_design}
 		\end{figure}
@@ -310,10 +310,29 @@
 	\label{sub:power}
 
 		This project uses three different power sources: 7.5V, 5V and 3.3V.
-		The 7.5V supply comes from a battery bank of 5 1.5V AA batteries\fxnote{Picture}.
+		The 7.5V supply comes from a battery bank of 5 1.5V AA batteries (see \autoref{fig:battery_pack}).
 		This is used solely for powering the motors, and is connected to the DHB1.
-		The 5V supply comes from a micro-USB power bank. \fxnote{picture}
+		The 5V supply comes from a micro-USB power bank (see \autoref{fig:power_bank}). 
 		It is used to power the ZYBO.
+
+		\begin{figure}[H]
+			\centering
+			\begin{subfigure}[t]{0.4\linewidth}
+				\centering
+				\includegraphics[height=40mm]{BatteryPack}
+				\caption{5 AA-Battery Pack}
+				\label{fig:battery_pack}
+			\end{subfigure}
+			\quad
+			\begin{subfigure}[t]{0.4\linewidth}
+				\centering
+				\includegraphics[height=40mm]{PowerBank}
+				\caption{5V USB Power Bank}
+				\label{fig:power_bank}
+			\end{subfigure}
+			\caption{Onboard power supplies} 
+		\end{figure}
+
 
 		The 3.3V supply is supplied by the ZYBO's on-board power regulator.
 		The ZYBO can supply a theoretical maximum of 2.5A (minus its own consumption $\sim150\ to\ 400\ mA$) with a maximum of 1A supplied to each PMOD.
