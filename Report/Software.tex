@@ -262,11 +262,11 @@
 	\label{subsub:software_pathmaker}
 	
 	The PathMaker class is responsibly for managing the map the robot is navigating in, finding the shortest path to the goal position and getting the next move instruction that moves the robot and the particles along the generated path.
-	In the constructor of the PathMaker, a 32 x 32 grid is build. The grid is based on the environment in which the robot will be driving, divided into 10 x 10 cm squares. 
+	In the constructor of the PathMaker, a 32 x 32 grid is build, based on the real environmen in \fxnote{billede af banen}. 
+	The grid map in which the robot will be driving, is divided into 10 x 10 cm squares. 
 	Open spaces are represented as '0', Obstacles are represented as '1' and the robot is represented as '**'.
 	
-	The map can be seen in \autoref{table:realmap}
-	
+	The grid map can be seen in \autoref{table:realmap}	
 	\begin{table}[H]
 		\centering
 		\resizebox{\textwidth}{!}{
@@ -308,16 +308,14 @@
 		}
 		\caption{Robot enviroment}
 		\label{table:realmap} 
-	\end{table} \noindent
-	
+	\end{table} \noindent	
 	When the ParticleFilter has estimated the position of the robot, the PathMaker should use that position to calculate a path to the goal.
 	
-	In this course, Breath First Planning, A-Star and Dynamic Programming were presented as ways of calculating a Path.
+	In this course, Breath First Planning, A-Star and Dynamic Programming were presented as ways of calculating a path.
 	A-Star was chosen because it is faster than breath first planning, and it is better at handling unexpected obstacles than dynamic programming.
 	
-	A heuristic map was made for the A-star algorithm. This is added to the movement cost to make the nodes closest to the goal, the first ones to be explored. 
+	A heuristic map was made for the A-Star algorithm. This is added to the movement cost to make the nodes closest to the goal, the first ones to be explored. 
 	The heuristic map can be seen in \autoref{table:impl_heuristicmap}.
-
 	\begin{table}[H]
 		\centering
 		\resizebox{\textwidth}{!}{
@@ -359,13 +357,11 @@
 		}
 		\caption{Heuristic map from implementation. The number is the additional cost the heuristic adds to the cost of movement}
 		\label{table:impl_heuristicmap} 
-	\end{table} \noindent
-	
+	\end{table} \noindent	
 	In addition to the heuristic map, a penalty map was also created.
 	The penalty map was also added to the movement cost. 
 	A penalty was given to the squares adjacent to walls, and therefore the robot should avoid moving next to walls.
-	The penalty map can be seen in \autoref{table:impl_penaltymap}
-		
+	The penalty map can be seen in \autoref{table:impl_penaltymap}.
 	\begin{table}[H]
 		\centering
 		\resizebox{\textwidth}{!}{
@@ -402,14 +398,13 @@
 			\textbf{28} & 100 & 50 & 10 &  0 &  G &  0 &  0 &  0 &  0 & 10 & 50 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 \\
 			\textbf{29} & 100 & 50 & 10 & 10 & 10 & 10 & 10 & 10 & 10 & 10 & 50 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 \\
 			\textbf{30} & 100 & 50 & 50 & 50 & 50 & 50 & 50 & 50 & 50 & 50 & 50 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 \\
+			\textbf{31} & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 & 100 \\
 			\end{tabular}
 		}
 		\caption{Penalty map from implementation. The number is the additional cost the penalty adds to the cost of movement}
 		\label{table:impl_penaltymap} 
 	\end{table} \noindent
-	
-	The final A-Star path is constructed as explained in the course theory, and the resulting path can be seen in \autoref{table:impl_pathmap}
-	
+	The final A-Star path is constructed as explained in the course theory, \autoref{sec:search}, and the resulting path can be seen in \autoref{table:impl_pathmap}.
 	\begin{table}[H]
 		\centering
 		\resizebox{\textwidth}{!}{
