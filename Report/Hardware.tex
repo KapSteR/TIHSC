@@ -70,10 +70,10 @@
 		The pinout is shown in \autoref{tab:lds_top}.
 
 		The base houses the motor that drives the rotating top.
-		The motor is designed to be powered by a pulse width modulated \fxnote{bare pwm?} 12V power supply, but in this project the motor is power by a 3.3V continuous supply \fxnote{ref til table 3.1b?}.
+		The motor is designed to be powered by a pulse width modulated 12V power supply, but in this project the motor is power by a 3.3V continuous supply \.
 		This consumes approximately 60 mA.
 
-		\begin{table}[h]
+		\begin{table}[H]
 			\begin{subtable}[b]{0.5\linewidth}
 				\centering
 					\begin{tabular}{|l|l|}
@@ -101,7 +101,7 @@
 			\caption{}
 		\end{table}
 
-
+		\newpage
 		\subsubsection{Sensor data protocol} % (fold)
 		\label{ssub:sensor_communication_protocol}
 			The LDS transmits data via 3.3V RS-232 at 115200 BAUD.
@@ -166,7 +166,7 @@
 
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.5\linewidth]{PmodDHB1}
+				\includegraphics[width=0.6\linewidth]{PmodDHB1}
 				\caption{Digilent PmodPHB1 Dual H-Bridge Motor controller \cite{Digilent2013}}
 				\label{fig:DHB1}
 			\end{figure}
@@ -175,7 +175,7 @@
 			The motor power source is connected to the DHB1 with screw terminals. The two motors are also connected with screw terminals, but the left motor is connected with reversed polarity.
 			This is because the identical motors need to spin in different directions to achieve the same rotation in relation to the direction of travel.
 
-			\begin{table}[H]
+			\begin{table}[h]
 				\centering
 				\begin{subtable}[b]{0.6\linewidth}
 					\begin{tabular}{|c|l|l|}
@@ -232,10 +232,15 @@
 			
 			The PWM-controller is implemented as a hardware IP-Core in the FPGA logic of the AP SoC.
 			It has been modeled in SystemC code in the Vivado HLS tool.
+
 			\autoref{lst:pwm_header} shows the header defining the PWM-controller module, consisting of a clock dividing thread and a PWM handling thread.
 			It also defines the interface of \texttt{//Ports}, as designed in the IBD in \autoref{fig:motion_ibd}.
 
+			\newpage
 			\lstinputlisting[caption=PWM-Controller SystemC Header, style=Code-C++, label=lst:pwm_header, basicstyle=\scriptsize]{../MotorControl/MotorControl/main.h}
+
+			\newpage
+			\lstinputlisting[caption=PWM-Controller SystemC Definition, style=Code-C++, label=lst:pwm_definition, basicstyle=\scriptsize]{../MotorControl/MotorControl/main.cpp}
 
 			\autoref{lst:pwm_definition} shows the definition of the module declared in \autoref{lst:pwm_header}.
 			The \texttt{clockDividerThread} is responsible for dividing the 100 MHz clock of the PL down to a 2 MHz clock that can be used for ticks in the \texttt{pwmThread}.
@@ -273,8 +278,6 @@
 			This way they are readily addressable from the PS as memory mapped registers.
 			The procedure for controlling the motors from software is described in \autoref{subsub:software_robotframe}.
 
-			\newpage
-			\lstinputlisting[caption=PWM-Controller SystemC Definition, style=Code-C++, label=lst:pwm_definition, basicstyle=\scriptsize]{../MotorControl/MotorControl/main.cpp}
 
 			% subsubsection pwm_controller (end)
 		
@@ -286,6 +289,7 @@
 		\autoref{fig:zybocar_design} shows the final block design for the AP SoC designed in \emph{Vivado}.
 		In the top left corner the Processing system is shown and below it is a reset controller. 
 		In the middle is the memory mapped AXI Interconnect Bus.
+
 		In the top right \emph{MotorCtrl} is the PWM controller, described in \autoref{ssub:pwm_controller}.
 		Below \emph{MotorCtrl} is \emph{AXI GPIO}; a GPIO controller used to interface with the push-buttons on the ZYBO.
 		Lastly, in the bottom right corner, \emph{AXI Uartlite} is a UART synthesized in PL.
@@ -297,7 +301,6 @@
 			\caption{ZyboCar Hardware Platform Block Design}
 			\label{fig:zybocar_design}
 		\end{figure}
-
 		This block design is synthesized and a \emph{hardware wrapper}, along with a \emph{bitstream} for programming a device, is generated and exported for use with the \emph{Xilinx SDK} IDE.
 		The SDK is then used for writing the \emph{bitstream} to the ZYBO and programming the PS. 
 
@@ -309,7 +312,6 @@
 		This project uses three different power sources: 7.5V, 5V and 3.3V.
 		The 7.5V supply comes from a battery bank of 5 1.5V AA batteries\fxnote{Picture}.
 		This is used solely for powering the motors, and is connected to the DHB1.
-
 		The 5V supply comes from a micro-USB power bank. \fxnote{picture}
 		It is used to power the ZYBO.
 

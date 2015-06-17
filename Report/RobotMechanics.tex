@@ -71,7 +71,7 @@
 		The rotation is however not just a change in orientation since the robot is not rotating around it's center of mass, but around one of it's wheels.
 		This means that during rotation the center of mass is also being moved.
 		The difference between these two rotations is shown in \autoref{fig:motion_models}.
-		\begin{figure}[H]
+		\begin{figure}[h]
 			\centering
 			\begin{subfigure}[b]{0.45\linewidth}
 				\includegraphics[scale=0.8]{./Figures/motion_model1.png}
@@ -100,15 +100,20 @@
 		\begin{bmatrix} x' \\ y' \end{bmatrix} = \begin{bmatrix}  d & 0 & x \\ 0 & d & y \end{bmatrix} \begin{bmatrix} \cos{\phi} \\ \sin{\phi} \\ 1 \end{bmatrix} 		
 		\end{equation}
 		Where $x$, $y$, $x'$ and $y'$ is the same as previous, $\phi$ is the orientation and $d$ is the distance of the movement.
-		In this equation it is obvious to see that it is assumed that the robot moves with constant velocity.
-		This means that it is assumed that the motors can produce the correct velocity in a step response.
+		
+		To set a certain rotation ($\theta$) or distance ($d$) one or two motors are set to run at a certain speed, and for a time linearly proportional to the change.
+		This motion model assumes constant velocity, which means that the robot accelerates to its final speed instantly.
+		This is of course impossible, but the assumption does break the model completely as the speed we are moving at is very low and so is the inertia of the robot.
+		
+		Preferably the motor speed would be controlled by a PID controller, in order to have maximum torque when accelerating, making the true robot motion more similar to the model.
+		This is however not implemented in this project because of time constraints.
+		In stead the motion suffers from noise caused by the transient nature of the open loop control.
 
-		It was chosen to use this discrete model, where rotation and translation (movement) are done separately, above a continues model, where rotation is being done while translating \fxnote{er det rigtigt}.
+		It was chosen to use this discrete model, where rotation and translation (movement) are done separately, above a continues model, where rotation is being done while translating.
 		The reason for this was to keep model motion as simple as possible to begin with, and then extend it when a functional robot was made.
-		To extend the model to continues would require that the motors are controlled by PI or PID controllers instead of just a simple PWM signal.
 
-		Again for simplicity, it was decide that the change in orientation were constrainted to be in intervals of $90\degree$.
-		This meant that the robot in theory only should be able to drive horizontal and vertical in the grid map. \fxnote{måske lidt bedre formulering tak:S}
+		For simplicity, it was also decided that the change in orientation would by constrained to intervals of $90\degree$.
+		This meant that the robot in theory should only be able to drive horizontally and vertically in the grid map.
 
 		% subsection motion_model (end)
 
