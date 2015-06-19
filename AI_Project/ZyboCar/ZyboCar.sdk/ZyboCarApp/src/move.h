@@ -25,6 +25,7 @@
 #define TURNTIME180 348000000
 #define MOVETIME100  80000000
 
+#define MINTURN 5 // Degrees
 
 
 class MoveController {

@@ -50,7 +50,7 @@ public:
 	void quantizePosition();
     
 private:
-    int noise = 100;
+    int noise = 200;
     int noiseSqr = noise*noise;
     float normalizer = -0.5*log(2*M_PI) - 0.5*log(noiseSqr);
 

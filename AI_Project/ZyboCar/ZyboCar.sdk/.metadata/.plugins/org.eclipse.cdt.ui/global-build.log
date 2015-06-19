@@ -2260,3 +2260,678 @@ Finished building: ZyboCarApp.elf.size
 18:05:21 **** Auto Build of configuration Debug for project ZyboCarApp ****
 make all 
 make: Ingenting at gøre for 'all'.
+13:12:56 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/ParticleFilter.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ParticleFilter.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ParticleFilter.d" -MT"src/ParticleFilter.d" -o "src/ParticleFilter.o" "../src/ParticleFilter.cc"
+../src/ParticleFilter.cc: In member function 'void ParticleFilter::resample(std::vector<std::vector<int> >)':
+../src/ParticleFilter.cc:95:6: warning: unused variable 'index' [-Wunused-variable]
+  int index = rand() % NUMBEROFPARTICLES;
+      ^
+../src/ParticleFilter.cc:96:8: warning: unused variable 'beta' [-Wunused-variable]
+  float beta = 0;
+        ^
+../src/ParticleFilter.cc:97:8: warning: unused variable 'r' [-Wunused-variable]
+  float r;
+        ^
+Finished building: ../src/ParticleFilter.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+3516044	   2632	204815024	208333700	c6aeb84	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+13:13:11 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/ParticleFilter.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ParticleFilter.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ParticleFilter.d" -MT"src/ParticleFilter.d" -o "src/ParticleFilter.o" "../src/ParticleFilter.cc"
+Finished building: ../src/ParticleFilter.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+3515980	   2632	204815024	208333636	c6aeb44	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+13:14:02 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/Particle.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Particle.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/Particle.d" -MT"src/Particle.d" -o "src/Particle.o" "../src/Particle.cc"
+Finished building: ../src/Particle.cc
+ 
+Building file: ../src/ParticleFilter.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ParticleFilter.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ParticleFilter.d" -MT"src/ParticleFilter.d" -o "src/ParticleFilter.o" "../src/ParticleFilter.cc"
+Finished building: ../src/ParticleFilter.cc
+ 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+3515980	   2632	204815024	208333636	c6aeb44	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+13:15:05 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/Particle.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Particle.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/Particle.d" -MT"src/Particle.d" -o "src/Particle.o" "../src/Particle.cc"
+Finished building: ../src/Particle.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+3515980	   2632	204815024	208333636	c6aeb44	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+13:16:35 **** Incremental Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+13:16:36 **** Incremental Build of configuration Debug for project MyFSBL ****
+make all 
+make: Ingenting at gøre for 'all'.
+13:18:27 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartlite_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling motorctrl_top"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartlite_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+'Finished building libraries'
+13:19:17 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building file: ../src/ParticleFilter.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ParticleFilter.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ParticleFilter.d" -MT"src/ParticleFilter.d" -o "src/ParticleFilter.o" "../src/ParticleFilter.cc"
+Finished building: ../src/ParticleFilter.cc
+ 
+Building file: ../src/RobotFrame.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/RobotFrame.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/RobotFrame.d" -MT"src/RobotFrame.d" -o "src/RobotFrame.o" "../src/RobotFrame.cc"
+Finished building: ../src/RobotFrame.cc
+ 
+Building file: ../src/WaitForStart.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/WaitForStart.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/WaitForStart.d" -MT"src/WaitForStart.d" -o "src/WaitForStart.o" "../src/WaitForStart.cpp"
+Finished building: ../src/WaitForStart.cpp
+ 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building file: ../src/move.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/move.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/move.d" -MT"src/move.d" -o "src/move.o" "../src/move.cpp"
+Finished building: ../src/move.cpp
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+3515980	   2632	204815024	208333636	c6aeb44	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+13:19:34 **** Auto Build of configuration Debug for project MyFSBL ****
+make all 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c"
+Finished building: C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/rsa.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: MyFSBL.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MyFSBL\src" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MyFSBL.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: MyFSBL.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MyFSBL.elf  |tee "MyFSBL.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55092	   9728	  71812	 136632	  215b8	MyFSBL.elf
+Finished building: MyFSBL.elf.size
+ 
+13:19:40 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartlite_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/motorctrl_top_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling motorctrl_top"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartlite_v3_0/src"
+make -C ps7_cortexa9_0/libsrc/uartlite_v3_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling XilFFs Library"
+"Creating archive libxilffs.a"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src"
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+'Finished building libraries'
+13:20:33 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/LIDAR.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LIDAR.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/LIDAR.d" -MT"src/LIDAR.d" -o "src/LIDAR.o" "../src/LIDAR.cc"
+Finished building: ../src/LIDAR.cc
+ 
+Building file: ../src/ParticleFilter.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ParticleFilter.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ParticleFilter.d" -MT"src/ParticleFilter.d" -o "src/ParticleFilter.o" "../src/ParticleFilter.cc"
+Finished building: ../src/ParticleFilter.cc
+ 
+Building file: ../src/RobotFrame.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/RobotFrame.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/RobotFrame.d" -MT"src/RobotFrame.d" -o "src/RobotFrame.o" "../src/RobotFrame.cc"
+Finished building: ../src/RobotFrame.cc
+ 
+Building file: ../src/WaitForStart.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/WaitForStart.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/WaitForStart.d" -MT"src/WaitForStart.d" -o "src/WaitForStart.o" "../src/WaitForStart.cpp"
+Finished building: ../src/WaitForStart.cpp
+ 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building file: ../src/move.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/move.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/move.d" -MT"src/move.d" -o "src/move.o" "../src/move.cpp"
+Finished building: ../src/move.cpp
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+3515980	   2632	204815024	208333636	c6aeb44	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+13:20:46 **** Auto Build of configuration Debug for project MyFSBL ****
+make all 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c"
+Finished building: C:/Users/Kasper/Documents/GitHub/TIHSC/AI_Project/ZyboCar/ZyboCar.sdk/ZyboCarDesign_wrapper_hw_platform_0/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/rsa.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\ZyboCarDesign_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: MyFSBL.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"C:\Users\Kasper\Documents\GitHub\TIHSC\AI_Project\ZyboCar\ZyboCar.sdk\MyFSBL\src" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MyFSBL.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: MyFSBL.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size MyFSBL.elf  |tee "MyFSBL.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55092	   9728	  71812	 136632	  215b8	MyFSBL.elf
+Finished building: MyFSBL.elf.size
+ 
+13:27:34 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/move.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/move.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/move.d" -MT"src/move.d" -o "src/move.o" "../src/move.cpp"
+Finished building: ../src/move.cpp
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+3515980	   2632	204815024	208333636	c6aeb44	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+13:28:01 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/move.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/move.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/move.d" -MT"src/move.d" -o "src/move.o" "../src/move.cpp"
+Finished building: ../src/move.cpp
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+3515980	   2632	204815024	208333636	c6aeb44	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+13:28:38 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+13:50:02 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/move.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/move.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/move.d" -MT"src/move.d" -o "src/move.o" "../src/move.cpp"
+Finished building: ../src/move.cpp
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+3515980	   2632	204815024	208333636	c6aeb44	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+13:50:26 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+14:10:42 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/ParticleFilter.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ParticleFilter.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ParticleFilter.d" -MT"src/ParticleFilter.d" -o "src/ParticleFilter.o" "../src/ParticleFilter.cc"
+Finished building: ../src/ParticleFilter.cc
+ 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+3515980	   2632	204815024	208333636	c6aeb44	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+14:11:52 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/ParticleFilter.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ParticleFilter.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ParticleFilter.d" -MT"src/ParticleFilter.d" -o "src/ParticleFilter.o" "../src/ParticleFilter.cc"
+Finished building: ../src/ParticleFilter.cc
+ 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+3515980	   2632	204815024	208333636	c6aeb44	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+14:23:56 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/ParticleFilter.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ParticleFilter.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ParticleFilter.d" -MT"src/ParticleFilter.d" -o "src/ParticleFilter.o" "../src/ParticleFilter.cc"
+Finished building: ../src/ParticleFilter.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+3515980	   2632	204815024	208333636	c6aeb44	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+14:25:24 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/ParticleFilter.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ParticleFilter.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ParticleFilter.d" -MT"src/ParticleFilter.d" -o "src/ParticleFilter.o" "../src/ParticleFilter.cc"
+Finished building: ../src/ParticleFilter.cc
+ 
+Building file: ../src/RobotFrame.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/RobotFrame.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/RobotFrame.d" -MT"src/RobotFrame.d" -o "src/RobotFrame.o" "../src/RobotFrame.cc"
+Finished building: ../src/RobotFrame.cc
+ 
+Building file: ../src/main.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building file: ../src/move.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/move.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/move.d" -MT"src/move.d" -o "src/move.o" "../src/move.cpp"
+Finished building: ../src/move.cpp
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+3515980	   2632	204815024	208333636	c6aeb44	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+14:25:39 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/move.cpp
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/move.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/move.d" -MT"src/move.d" -o "src/move.o" "../src/move.cpp"
+Finished building: ../src/move.cpp
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+3515980	   2632	204815024	208333636	c6aeb44	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+14:26:15 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.
+14:51:54 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+Building file: ../src/ParticleFilter.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ParticleFilter.o" -std=c++11 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/ParticleFilter.d" -MT"src/ParticleFilter.d" -o "src/ParticleFilter.o" "../src/ParticleFilter.cc"
+Finished building: ../src/ParticleFilter.cc
+ 
+Building target: ZyboCarApp.elf
+Invoking: ARM g++ linker
+arm-xilinx-eabi-g++ -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "ZyboCarApp.elf"  ./src/LIDAR.o ./src/Particle.o ./src/ParticleFilter.o ./src/PathMaker.o ./src/RobotFrame.o ./src/Utility.o ./src/WaitForStart.o ./src/main.o ./src/main0.o ./src/move.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: ZyboCarApp.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size ZyboCarApp.elf  |tee "ZyboCarApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+3515980	   2632	204815024	208333636	c6aeb44	ZyboCarApp.elf
+Finished building: ZyboCarApp.elf.size
+ 
+15:03:36 **** Auto Build of configuration Debug for project ZyboCarApp ****
+make all 
+make: Ingenting at gøre for 'all'.

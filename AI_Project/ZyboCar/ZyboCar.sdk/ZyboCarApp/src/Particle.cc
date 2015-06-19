@@ -8,7 +8,7 @@ Particle::Particle(){
 void Particle::move(MoveBlock& MB,float* sinTable,float* cosTable){
 
 	std::default_random_engine generator;
-	std::normal_distribution<double> distribution(0.0,10.0);
+	std::normal_distribution<double> distribution(0.0,20.0);
 //    pos.orientation = fmod((pos.orientation + MB.angle), 2*M_PI);
 //
 //    float directionX = cos(pos.orientation) * MB.distance;

@@ -92,39 +92,40 @@ bool sortingFunction2(const Particle& a, const Particle& b) {
 
 void ParticleFilter::resample(intMatrix map) {
 	vector<Particle> tempSet;
-	int index = rand() % NUMBEROFPARTICLES;
-	float beta = 0;
-	float r;
+//	int index = rand() % NUMBEROFPARTICLES;
+//	float beta = 0;
+//	float r;
 	int r1;
 	vector<Particle> tournament;
-
-	for (int i = 0; i < NUMBEROFPARTICLES-NUMBEROFRANDOMPARTICLES; i++) {
-		r = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
-		beta += r * 2 * maxWeight;
-		while (beta > particles[index].w) {
-			beta -= particles[index].w;
-			index = (index + 1) % NUMBEROFPARTICLES;
-		}
-		tempSet.push_back(particles[index]);
-	}
+	int tournamentSize = 10;
 
 //	for (int i = 0; i < NUMBEROFPARTICLES-NUMBEROFRANDOMPARTICLES; i++) {
-//		r1 = rand()%NUMBEROFPARTICLES;
-//
-//		tournament.clear();
-//
-//		for(int j; j<10;j++){
-//			r1 = rand()%NUMBEROFPARTICLES;
-//			tournament.push_back(particles[r1]);
+//		r = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+//		beta += r * 2 * maxWeight;
+//		while (beta > particles[index].w) {
+//			beta -= particles[index].w;
+//			index = (index + 1) % NUMBEROFPARTICLES;
 //		}
-//
-//		//Sort tournament with smallest f value in the back
-//		std::sort(tournament.begin(), tournament.end(), sortingFunction2);
-//
-//		Particle next = tournament.front();
-//		tempSet.push_back(next);
-//
+//		tempSet.push_back(particles[index]);
 //	}
+
+	for (int i = 0; i < NUMBEROFPARTICLES-NUMBEROFRANDOMPARTICLES; i++) {
+		r1 = rand()%NUMBEROFPARTICLES;
+
+		tournament.clear();
+
+		for(int j = 0; j<tournamentSize;j++){
+			r1 = rand()%NUMBEROFPARTICLES;
+			tournament.push_back(particles[r1]);
+		}
+
+		//Sort tournament with smallest f value in the back
+		std::sort(tournament.begin(), tournament.end(), sortingFunction2);
+
+		Particle next = tournament.front();
+		tempSet.push_back(next);
+
+	}
 
 
 	std::cout << "starting random" << std::endl;

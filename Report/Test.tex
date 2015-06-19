@@ -6,6 +6,23 @@
 \section{Test} % (fold)
 \label{sec:test}
 
+	Because of the probabilistic nature of the robot and because we get no data back from the robot as it moves, it is hard to give an estimate of its performance.
+	To be specific; it (sort of) works most off the time, eventually finding a goal.
+	This goal is not always within the target distance of the true goal.
+
+	A common issue is that it gets stuck at a corner, or along a wall.
+	This is likely due to the squarish shape the platform, and the less than ideal motion model. Solutions for this is discussed in \autoref{sec:improvements}.
+
+	As for the \emph{Kidnapped Robot Problem}, it is handled without much issue.
+	When the robot is moved during path-finding, the continuous addition of random particles seems to help it relocate itself within a few (2 to 5) sense/move cycles.
+	Again, it is next to impossible to know what the robot is "thinking" as it moves along.
+	Therefore we can only speculate as to the performance of the robot in the KRP from its subsequent actions.
+	Here it seems `confused' at first, but gradually starts moving in the right direction.
+
+	A large source of error in testing the robot is the surface of the test course.
+	The concrete floor seems smooth at first, but is filled with dips and cracks, that the ball caster front wheel gets stuck in, resulting in over/under rotation on turning and heading changes during forward translation.
+
+
 	% section test (end)
 
 

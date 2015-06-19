@@ -1,6 +1,6 @@
-18:05:21 **** Auto Build of configuration Debug for project ZyboCarApp ****
+15:03:36 **** Auto Build of configuration Debug for project ZyboCarApp ****
 make all 
 make: Ingenting at gøre for 'all'.
 
-18:05:21 Build Finished (took 302ms)
+15:03:36 Build Finished (took 260ms)
 

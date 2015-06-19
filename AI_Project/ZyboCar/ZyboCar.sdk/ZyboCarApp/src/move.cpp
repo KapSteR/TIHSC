@@ -23,7 +23,7 @@ void MoveController::move(int poseAngle, MoveBlock& MB) {
 
 	h_p = modu(heading - poseAngle,360);
 
-	if (h_p >= 45 || h_p <= 325) { // Only turn for angle != 0
+	if (h_p >= MINTURN && h_p <= 360-MINTURN) { // Only turn for angle != 0
 
 		MB.turnAngle = h_p;
 
